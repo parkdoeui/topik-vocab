@@ -1,0 +1,857 @@
+[
+    {
+        "문제_번호": 1,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "나는 오래전에 설악산을 ( ).",
+        "선택지": {
+            "1": "등산하고 싶다",
+            "2": "등산해도 된다",
+            "3": "등산할 것 같다",
+            "4": "등산한 적이 있다"
+        },
+        "정답": 4,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "오래전에",
+                "root": "오래전",
+                "english": "a long time ago"
+            },
+            {
+                "original_word": "설악산을",
+                "root": "설악산",
+                "english": "Mount Seorak"
+            },
+            {
+                "original_word": "(",
+                "root": "(",
+                "english": "open parenthesis"
+            },
+            {
+                "original_word": ")",
+                "root": ")",
+                "english": "close parenthesis"
+            }
+        ]
+    },
+    {
+        "문제_번호": 2,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "새집으로 ( ) 가구를 새로 샀다.",
+        "선택지": {
+            "1": "이사한 지",
+            "2": "이사하거든",
+            "3": "이사하려면",
+            "4": "이사하고 나서"
+        },
+        "정답": 4,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "새집으로",
+                "root": "새집",
+                "english": "to a new house"
+            },
+            {
+                "original_word": "(",
+                "root": "(",
+                "english": "open parenthesis"
+            },
+            {
+                "original_word": ")",
+                "root": ")",
+                "english": "close parenthesis"
+            },
+            {
+                "original_word": "가구를",
+                "root": "가구",
+                "english": "furniture"
+            },
+            {
+                "original_word": "새로",
+                "root": "새로",
+                "english": "newly"
+            },
+            {
+                "original_word": "샀다",
+                "root": "사다",
+                "english": "bought"
+            }
+        ]
+    },
+    {
+        "문제_번호": 3,
+        "지시문": "밑줄 친 부분과 의미가 가장 비슷한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "어려운 이웃을 돕고자 매년 봉사 활동에 참여하고 있다.",
+        "선택지": {
+            "1": "돕기 위해서",
+            "2": "돕는 대신에",
+            "3": "돕기 무섭게",
+            "4": "돕는 바람에"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "어려운",
+                "root": "어렵다",
+                "english": "difficult/in need"
+            },
+            {
+                "original_word": "이웃을",
+                "root": "이웃",
+                "english": "neighbor"
+            },
+            {
+                "original_word": "돕고자",
+                "root": "돕다",
+                "english": "to intend to help"
+            },
+            {
+                "original_word": "매년",
+                "root": "매년",
+                "english": "every year"
+            },
+            {
+                "original_word": "봉사",
+                "root": "봉사",
+                "english": "volunteer"
+            },
+            {
+                "original_word": "활동에",
+                "root": "활동",
+                "english": "activity"
+            },
+            {
+                "original_word": "참여하고",
+                "root": "참여하다",
+                "english": "to participate and"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "is/exist"
+            }
+        ]
+    },
+    {
+        "문제_번호": 4,
+        "지시문": "밑줄 친 부분과 의미가 가장 비슷한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "지난 3년 동안 영화를 한 편 봤으니 거의 안 본 셈이다.",
+        "선택지": {
+            "1": "본 척했다",
+            "2": "보기 나름이다",
+            "3": "볼 수밖에 없었다",
+            "4": "본 거나 마찬가지이다"
+        },
+        "정답": 4,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "지난",
+                "root": "지나다",
+                "english": "past"
+            },
+            {
+                "original_word": "3년",
+                "root": "3년",
+                "english": "3 years"
+            },
+            {
+                "original_word": "동안",
+                "root": "동안",
+                "english": "during"
+            },
+            {
+                "original_word": "영화를",
+                "root": "영화",
+                "english": "movie"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "편",
+                "root": "편",
+                "english": "counter for movies"
+            },
+            {
+                "original_word": "봤으니",
+                "root": "보다",
+                "english": "watched so"
+            },
+            {
+                "original_word": "거의",
+                "root": "거의",
+                "english": "almost"
+            },
+            {
+                "original_word": "안",
+                "root": "안",
+                "english": "not"
+            },
+            {
+                "original_word": "본",
+                "root": "보다",
+                "english": "watched"
+            },
+            {
+                "original_word": "셈이다",
+                "root": "셈이다",
+                "english": "it is like/practically"
+            }
+        ]
+    },
+    {
+        "문제_번호": 5,
+        "지시문": "다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "입속 치아 사이사이를 깨끗이!\n부드럽게 잘 닦여요~",
+        "선택지": {
+            "1": "비누",
+            "2": "칫솔",
+            "3": "안경",
+            "4": "수건"
+        },
+        "정답": 2,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "입속",
+                "root": "입속",
+                "english": "inside the mouth"
+            },
+            {
+                "original_word": "치아",
+                "root": "치아",
+                "english": "teeth"
+            },
+            {
+                "original_word": "사이사이를",
+                "root": "사이사이",
+                "english": "spaces between"
+            },
+            {
+                "original_word": "깨끗이",
+                "root": "깨끗이",
+                "english": "cleanly"
+            },
+            {
+                "original_word": "부드럽게",
+                "root": "부드럽다",
+                "english": "softly"
+            },
+            {
+                "original_word": "잘",
+                "root": "잘",
+                "english": "well"
+            },
+            {
+                "original_word": "닦여요",
+                "root": "닦이다",
+                "english": "is brushed/cleaned"
+            }
+        ]
+    },
+    {
+        "문제_번호": 6,
+        "지시문": "다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "아이들의 예쁜 꿈과 희망을 키워 주는 곳\n부모의 마음으로 보살핍니다.",
+        "선택지": {
+            "1": "은행",
+            "2": "서점",
+            "3": "유치원",
+            "4": "우체국"
+        },
+        "정답": 3,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "아이들의",
+                "root": "아이",
+                "english": "children's"
+            },
+            {
+                "original_word": "예쁜",
+                "root": "예쁘다",
+                "english": "pretty"
+            },
+            {
+                "original_word": "꿈과",
+                "root": "꿈",
+                "english": "dreams and"
+            },
+            {
+                "original_word": "희망을",
+                "root": "희망",
+                "english": "hopes"
+            },
+            {
+                "original_word": "키워",
+                "root": "키우다",
+                "english": "raise/nurture"
+            },
+            {
+                "original_word": "주는",
+                "root": "주다",
+                "english": "give"
+            },
+            {
+                "original_word": "곳",
+                "root": "곳",
+                "english": "place"
+            },
+            {
+                "original_word": "부모의",
+                "root": "부모",
+                "english": "parent's"
+            },
+            {
+                "original_word": "마음으로",
+                "root": "마음",
+                "english": "with heart"
+            },
+            {
+                "original_word": "보살핍니다",
+                "root": "보살피다",
+                "english": "take care of"
+            }
+        ]
+    },
+    {
+        "문제_번호": 7,
+        "지시문": "다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "계단으로 다니기! 하루 30분 운동하기!\n우리 몸을 위해 실천하세요.",
+        "선택지": {
+            "1": "건강 관리",
+            "2": "안전 운전",
+            "3": "전화 예절",
+            "4": "절약 습관"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "계단으로",
+                "root": "계단",
+                "english": "by stairs"
+            },
+            {
+                "original_word": "다니기",
+                "root": "다니다",
+                "english": "walking/using"
+            },
+            {
+                "original_word": "하루",
+                "root": "하루",
+                "english": "a day"
+            },
+            {
+                "original_word": "30분",
+                "root": "30분",
+                "english": "30 minutes"
+            },
+            {
+                "original_word": "운동하기",
+                "root": "운동하다",
+                "english": "exercising"
+            },
+            {
+                "original_word": "우리",
+                "root": "우리",
+                "english": "our"
+            },
+            {
+                "original_word": "몸을",
+                "root": "몸",
+                "english": "body"
+            },
+            {
+                "original_word": "위해",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "실천하세요",
+                "root": "실천하다",
+                "english": "put into practice"
+            }
+        ]
+    },
+    {
+        "문제_번호": 8,
+        "지시문": "다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "공연장 내에서는 사진 촬영을 금지합니다.\n휴대 전화는 전원을 끄거나 진동으로 해 주십시오.",
+        "선택지": {
+            "1": "관람 규칙",
+            "2": "제품 소개",
+            "3": "사용 방법",
+            "4": "예약 문의"
+        },
+        "정답": 1,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "공연장",
+                "root": "공연장",
+                "english": "theater/venue"
+            },
+            {
+                "original_word": "내에서는",
+                "root": "내",
+                "english": "inside"
+            },
+            {
+                "original_word": "사진",
+                "root": "사진",
+                "english": "photo"
+            },
+            {
+                "original_word": "촬영을",
+                "root": "촬영",
+                "english": "taking/shooting"
+            },
+            {
+                "original_word": "금지합니다",
+                "root": "금지하다",
+                "english": "prohibit"
+            },
+            {
+                "original_word": "휴대",
+                "root": "휴대",
+                "english": "mobile/portable"
+            },
+            {
+                "original_word": "전화는",
+                "root": "전화",
+                "english": "phone"
+            },
+            {
+                "original_word": "전원을",
+                "root": "전원",
+                "english": "power"
+            },
+            {
+                "original_word": "끄거나",
+                "root": "끄다",
+                "english": "turn off or"
+            },
+            {
+                "original_word": "진동으로",
+                "root": "진동",
+                "english": "to vibration"
+            },
+            {
+                "original_word": "해",
+                "root": "하다",
+                "english": "do/set"
+            },
+            {
+                "original_word": "주십시오",
+                "root": "주다",
+                "english": "please"
+            }
+        ]
+    },
+    {
+        "문제_번호": 9,
+        "지시문": "다음 글 또는 그래프의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "[인주시 야경 관광버스 운행 안내]\n10월의 아름다운 밤을 즐겨 보세요.\n- 관광 장소: 인주역 광장 출발 -> 인주산 전망대 -> 별빛공원\n- 출발 시간: 매일 18:00\n- 이용 요금: 성인 10,000원 / 학생 5,000원(7세 이하 무료)\n- 예약 방법: 출발 하루 전까지 홈페이지(www.inju-tour.com)에서 신청",
+        "선택지": {
+            "1": "성인과 학생의 버스 요금이 같다.",
+            "2": "이 버스는 별빛공원에서 출발한다.",
+            "3": "매일 오전에 이 버스를 탈 수 있다.",
+            "4": "이 버스를 타려면 미리 신청해야 한다."
+        },
+        "정답": 4,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "[인주시",
+                "root": "인주시",
+                "english": "Inju City"
+            },
+            {
+                "original_word": "야경",
+                "root": "야경",
+                "english": "night view"
+            },
+            {
+                "original_word": "관광버스",
+                "root": "관광버스",
+                "english": "tour bus"
+            },
+            {
+                "original_word": "운행",
+                "root": "운행",
+                "english": "operation"
+            },
+            {
+                "original_word": "안내]",
+                "root": "안내",
+                "english": "guide/notice"
+            },
+            {
+                "original_word": "10월의",
+                "root": "10월",
+                "english": "October's"
+            },
+            {
+                "original_word": "아름다운",
+                "root": "아름답다",
+                "english": "beautiful"
+            },
+            {
+                "original_word": "밤을",
+                "root": "밤",
+                "english": "night"
+            },
+            {
+                "original_word": "즐겨",
+                "root": "즐기다",
+                "english": "enjoy"
+            },
+            {
+                "original_word": "보세요",
+                "root": "보다",
+                "english": "try to"
+            },
+            {
+                "original_word": "-",
+                "root": "-",
+                "english": "hyphen"
+            },
+            {
+                "original_word": "관광",
+                "root": "관광",
+                "english": "tour"
+            },
+            {
+                "original_word": "장소",
+                "root": "장소",
+                "english": "place"
+            },
+            {
+                "original_word": "인주역",
+                "root": "인주역",
+                "english": "Inju Station"
+            },
+            {
+                "original_word": "광장",
+                "root": "광장",
+                "english": "plaza"
+            },
+            {
+                "original_word": "출발",
+                "root": "출발",
+                "english": "departure"
+            },
+            {
+                "original_word": "->",
+                "root": "->",
+                "english": "to"
+            },
+            {
+                "original_word": "인주산",
+                "root": "인주산",
+                "english": "Mount Inju"
+            },
+            {
+                "original_word": "전망대",
+                "root": "전망대",
+                "english": "observatory"
+            },
+            {
+                "original_word": "->",
+                "root": "->",
+                "english": "to"
+            },
+            {
+                "original_word": "별빛공원",
+                "root": "별빛공원",
+                "english": "Starlight Park"
+            },
+            {
+                "original_word": "-",
+                "root": "-",
+                "english": "hyphen"
+            },
+            {
+                "original_word": "출발",
+                "root": "출발",
+                "english": "departure"
+            },
+            {
+                "original_word": "시간",
+                "root": "시간",
+                "english": "time"
+            },
+            {
+                "original_word": "매일",
+                "root": "매일",
+                "english": "every day"
+            },
+            {
+                "original_word": "18:00",
+                "root": "18:00",
+                "english": "18:00"
+            },
+            {
+                "original_word": "-",
+                "root": "-",
+                "english": "hyphen"
+            },
+            {
+                "original_word": "이용",
+                "root": "이용",
+                "english": "use"
+            },
+            {
+                "original_word": "요금",
+                "root": "요금",
+                "english": "fare"
+            },
+            {
+                "original_word": "성인",
+                "root": "성인",
+                "english": "adult"
+            },
+            {
+                "original_word": "10,000원",
+                "root": "10,000원",
+                "english": "10,000 won"
+            },
+            {
+                "original_word": "/",
+                "root": "/",
+                "english": "slash"
+            },
+            {
+                "original_word": "학생",
+                "root": "학생",
+                "english": "student"
+            },
+            {
+                "original_word": "5,000원(7세",
+                "root": "5,000원",
+                "english": "5,000 won (7 years old"
+            },
+            {
+                "original_word": "이하",
+                "root": "이하",
+                "english": "under"
+            },
+            {
+                "original_word": "무료)",
+                "root": "무료",
+                "english": "free"
+            },
+            {
+                "original_word": "-",
+                "root": "-",
+                "english": "hyphen"
+            },
+            {
+                "original_word": "예약",
+                "root": "예약",
+                "english": "reservation"
+            },
+            {
+                "original_word": "방법",
+                "root": "방법",
+                "english": "method"
+            },
+            {
+                "original_word": "출발",
+                "root": "출발",
+                "english": "departure"
+            },
+            {
+                "original_word": "하루",
+                "root": "하루",
+                "english": "one day"
+            },
+            {
+                "original_word": "전까지",
+                "root": "전까지",
+                "english": "until before"
+            },
+            {
+                "original_word": "홈페이지(www.inju-tour.com)에서",
+                "root": "홈페이지",
+                "english": "on the website"
+            },
+            {
+                "original_word": "신청",
+                "root": "신청",
+                "english": "application"
+            }
+        ]
+    },
+    {
+        "문제_번호": 10,
+        "지시문": "다음 글 또는 그래프의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "[인주시 직장인, 출퇴근 시 이동 수단은? (그래프)]\n자가용: 31%(2012년) -> 39%(2022년)\n버스: 28%(2012년) -> 21%(2022년)\n지하철: 24%(2012년) -> 27%(2022년)\n걸어서: 11%(2012년) -> 5%(2022년)\n기타: 6%(2012년) -> 8%(2022년)",
+        "선택지": {
+            "1": "자가용으로 출퇴근한다고 응답한 직장인들의 비율이 줄었다.",
+            "2": "걸어서 출퇴근하는 직장인은 2012년보다 2022년이 더 적었다.",
+            "3": "2022년에는 지하철을 타고 출퇴근하는 직장인이 가장 많았다.",
+            "4": "2012년에 직장인들은 출퇴근할 때 버스를 제일 많이 이용했다."
+        },
+        "정답": 2,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "[인주시",
+                "root": "인주시",
+                "english": "Inju City"
+            },
+            {
+                "original_word": "직장인",
+                "root": "직장인",
+                "english": "office worker"
+            },
+            {
+                "original_word": "출퇴근",
+                "root": "출퇴근",
+                "english": "commuting"
+            },
+            {
+                "original_word": "시",
+                "root": "시",
+                "english": "time/when"
+            },
+            {
+                "original_word": "이동",
+                "root": "이동",
+                "english": "movement/transport"
+            },
+            {
+                "original_word": "수단은",
+                "root": "수단",
+                "english": "means/method"
+            },
+            {
+                "original_word": "(그래프)]",
+                "root": "(그래프)",
+                "english": "(graph)]"
+            },
+            {
+                "original_word": "자가용",
+                "root": "자가용",
+                "english": "personal car"
+            },
+            {
+                "original_word": "31%(2012년)",
+                "root": "31%",
+                "english": "31% (2012)"
+            },
+            {
+                "original_word": "->",
+                "root": "->",
+                "english": "to"
+            },
+            {
+                "original_word": "39%(2022년)",
+                "root": "39%",
+                "english": "39% (2022)"
+            },
+            {
+                "original_word": "버스",
+                "root": "버스",
+                "english": "bus"
+            },
+            {
+                "original_word": "28%(2012년)",
+                "root": "28%",
+                "english": "28% (2012)"
+            },
+            {
+                "original_word": "->",
+                "root": "->",
+                "english": "to"
+            },
+            {
+                "original_word": "21%(2022년)",
+                "root": "21%",
+                "english": "21% (2022)"
+            },
+            {
+                "original_word": "지하철",
+                "root": "지하철",
+                "english": "subway"
+            },
+            {
+                "original_word": "24%(2012년)",
+                "root": "24%",
+                "english": "24% (2012)"
+            },
+            {
+                "original_word": "->",
+                "root": "->",
+                "english": "to"
+            },
+            {
+                "original_word": "27%(2022년)",
+                "root": "27%",
+                "english": "27% (2022)"
+            },
+            {
+                "original_word": "걸어서",
+                "root": "걷다",
+                "english": "walking"
+            },
+            {
+                "original_word": "11%(2012년)",
+                "root": "11%",
+                "english": "11% (2012)"
+            },
+            {
+                "original_word": "->",
+                "root": "->",
+                "english": "to"
+            },
+            {
+                "original_word": "5%(2022년)",
+                "root": "5%",
+                "english": "5% (2022)"
+            },
+            {
+                "original_word": "기타",
+                "root": "기타",
+                "english": "others"
+            },
+            {
+                "original_word": "6%(2012년)",
+                "root": "6%",
+                "english": "6% (2012)"
+            },
+            {
+                "original_word": "->",
+                "root": "->",
+                "english": "to"
+            },
+            {
+                "original_word": "8%(2022년)",
+                "root": "8%",
+                "english": "8% (2022)"
+            }
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  /* Korean-optimized font stack */
+  font-family:
+    -apple-system,
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    system-ui,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* Prevent iOS rubber-band scroll showing white */
+  background-color: #f9fafb;
+}
+
+/* iOS safe-area padding for bottom drawer */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+/* Smooth card flip placeholder (unused now but reserve) */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

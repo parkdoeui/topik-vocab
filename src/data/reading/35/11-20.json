@@ -1,0 +1,2482 @@
+[
+    {
+        "문제_번호": 11,
+        "지시문": "다음 글 또는 그래프의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "인주시가 작년에 이어 올해도 10월 한 달간 '찾아가는 자전거 수리 센터'를 운영한다. 평일에는 여러 지역을 직접 방문해 고쳐 주고 주말에는 인주공원에서 수리 서비스를 제공한다. 전문 수리 기사가 자전거를 무료로 고쳐 주고 부품 교체가 필요한 경우에는 저렴한 가격으로 바꿔 준다. 시는 시민들의 자전거 타기 생활화를 위해 이 수리 센터를 운영하는 것이라고 밝혔다.",
+        "선택지": {
+            "1": "이 서비스는 일 년 내내 운영된다.",
+            "2": "올해 처음으로 이 센터가 운영되기 시작했다.",
+            "3": "주말에는 인주공원에서 수리를 받을 수 있다.",
+            "4": "이 수리 센터에서는 무료로 부품을 교체해 준다."
+        },
+        "정답": 3,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "인주시가",
+                "root": "인주시",
+                "english": "Inju City"
+            },
+            {
+                "original_word": "작년에",
+                "root": "작년",
+                "english": "last year"
+            },
+            {
+                "original_word": "이어",
+                "root": "잇다",
+                "english": "following"
+            },
+            {
+                "original_word": "올해도",
+                "root": "올해",
+                "english": "this year too"
+            },
+            {
+                "original_word": "10월",
+                "root": "10월",
+                "english": "October"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "달간",
+                "root": "달간",
+                "english": "for a month"
+            },
+            {
+                "original_word": "'찾아가는",
+                "root": "찾아가다",
+                "english": "visiting"
+            },
+            {
+                "original_word": "자전거",
+                "root": "자전거",
+                "english": "bicycle"
+            },
+            {
+                "original_word": "수리",
+                "root": "수리",
+                "english": "repair"
+            },
+            {
+                "original_word": "센터'를",
+                "root": "센터",
+                "english": "center"
+            },
+            {
+                "original_word": "운영한다",
+                "root": "운영하다",
+                "english": "operates"
+            },
+            {
+                "original_word": "평일에는",
+                "root": "평일",
+                "english": "on weekdays"
+            },
+            {
+                "original_word": "여러",
+                "root": "여러",
+                "english": "several"
+            },
+            {
+                "original_word": "지역을",
+                "root": "지역",
+                "english": "areas"
+            },
+            {
+                "original_word": "직접",
+                "root": "직접",
+                "english": "directly"
+            },
+            {
+                "original_word": "방문해",
+                "root": "방문하다",
+                "english": "visit and"
+            },
+            {
+                "original_word": "고쳐",
+                "root": "고치다",
+                "english": "fix"
+            },
+            {
+                "original_word": "주고",
+                "root": "주다",
+                "english": "give"
+            },
+            {
+                "original_word": "주말에는",
+                "root": "주말",
+                "english": "on weekends"
+            },
+            {
+                "original_word": "인주공원에서",
+                "root": "인주공원",
+                "english": "at Inju Park"
+            },
+            {
+                "original_word": "수리",
+                "root": "수리",
+                "english": "repair"
+            },
+            {
+                "original_word": "서비스를",
+                "root": "서비스",
+                "english": "service"
+            },
+            {
+                "original_word": "제공한다",
+                "root": "제공하다",
+                "english": "provides"
+            },
+            {
+                "original_word": "전문",
+                "root": "전문",
+                "english": "professional"
+            },
+            {
+                "original_word": "수리",
+                "root": "수리",
+                "english": "repair"
+            },
+            {
+                "original_word": "기사가",
+                "root": "기사",
+                "english": "mechanic"
+            },
+            {
+                "original_word": "자전거를",
+                "root": "자전거",
+                "english": "bicycle"
+            },
+            {
+                "original_word": "무료로",
+                "root": "무료",
+                "english": "for free"
+            },
+            {
+                "original_word": "고쳐",
+                "root": "고치다",
+                "english": "fix"
+            },
+            {
+                "original_word": "주고",
+                "root": "주다",
+                "english": "give"
+            },
+            {
+                "original_word": "부품",
+                "root": "부품",
+                "english": "parts"
+            },
+            {
+                "original_word": "교체가",
+                "root": "교체",
+                "english": "replacement"
+            },
+            {
+                "original_word": "필요한",
+                "root": "필요하다",
+                "english": "necessary"
+            },
+            {
+                "original_word": "경우에는",
+                "root": "경우",
+                "english": "in case"
+            },
+            {
+                "original_word": "저렴한",
+                "root": "저렴하다",
+                "english": "cheap"
+            },
+            {
+                "original_word": "가격으로",
+                "root": "가격",
+                "english": "at a price"
+            },
+            {
+                "original_word": "바꿔",
+                "root": "바꾸다",
+                "english": "change"
+            },
+            {
+                "original_word": "준다",
+                "root": "주다",
+                "english": "gives"
+            },
+            {
+                "original_word": "시는",
+                "root": "시",
+                "english": "the city"
+            },
+            {
+                "original_word": "시민들의",
+                "root": "시민",
+                "english": "citizens'"
+            },
+            {
+                "original_word": "자전거",
+                "root": "자전거",
+                "english": "bicycle"
+            },
+            {
+                "original_word": "타기",
+                "root": "타기",
+                "english": "riding"
+            },
+            {
+                "original_word": "생활화를",
+                "root": "생활화",
+                "english": "making it a habit"
+            },
+            {
+                "original_word": "위해",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "수리",
+                "root": "수리",
+                "english": "repair"
+            },
+            {
+                "original_word": "센터를",
+                "root": "센터",
+                "english": "center"
+            },
+            {
+                "original_word": "운영하는",
+                "root": "운영하다",
+                "english": "operating"
+            },
+            {
+                "original_word": "것이라고",
+                "root": "것",
+                "english": "that it is"
+            },
+            {
+                "original_word": "밝혔다",
+                "root": "밝히다",
+                "english": "stated"
+            }
+        ]
+    },
+    {
+        "문제_번호": 12,
+        "지시문": "다음 글 또는 그래프의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "피자 가게를 운영하는 김민수 씨의 사연이 잔잔한 감동을 주고 있다. 최근 김 씨는 피자를 배달하러 가다가 오토바이가 빗길에 미끄러지는 사고를 당했다. 다행히 사람이 다치는 피해는 없었지만 피자가 망가져서 배달에 문제가 생겼다. 배달이 늦어지는 것에 대해 김 씨가 고객에게 연락하자 고객은 \"천천히 오셔도 돼요. 몸은 괜찮나요?\"라며 따뜻한 말부터 전했다고 한다.",
+        "선택지": {
+            "1": "고객은 주문한 피자를 취소하겠다고 말했다.",
+            "2": "사고가 생겨서 배달 중이던 피자가 망가졌다.",
+            "3": "오토바이가 빗길에 미끄러져서 김 씨가 다쳤다.",
+            "4": "김 씨는 피자를 시킨 고객에게 연락하다 사고가 났다."
+        },
+        "정답": 2,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "피자",
+                "root": "피자",
+                "english": "pizza"
+            },
+            {
+                "original_word": "가게를",
+                "root": "가게",
+                "english": "store"
+            },
+            {
+                "original_word": "운영하는",
+                "root": "운영하다",
+                "english": "operating"
+            },
+            {
+                "original_word": "김민수",
+                "root": "김민수",
+                "english": "Kim Min-soo"
+            },
+            {
+                "original_word": "씨의",
+                "root": "씨",
+                "english": "Mr.'s"
+            },
+            {
+                "original_word": "사연이",
+                "root": "사연",
+                "english": "story"
+            },
+            {
+                "original_word": "잔잔한",
+                "root": "잔잔하다",
+                "english": "gentle"
+            },
+            {
+                "original_word": "감동을",
+                "root": "감동",
+                "english": "emotion/touching"
+            },
+            {
+                "original_word": "주고",
+                "root": "주다",
+                "english": "giving"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "is"
+            },
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recently"
+            },
+            {
+                "original_word": "김",
+                "root": "김",
+                "english": "Kim"
+            },
+            {
+                "original_word": "씨는",
+                "root": "씨",
+                "english": "Mr."
+            },
+            {
+                "original_word": "피자를",
+                "root": "피자",
+                "english": "pizza"
+            },
+            {
+                "original_word": "배달하러",
+                "root": "배달하다",
+                "english": "to deliver"
+            },
+            {
+                "original_word": "가다가",
+                "root": "가다",
+                "english": "while going"
+            },
+            {
+                "original_word": "오토바이가",
+                "root": "오토바이",
+                "english": "motorcycle"
+            },
+            {
+                "original_word": "빗길에",
+                "root": "빗길",
+                "english": "on a rainy road"
+            },
+            {
+                "original_word": "미끄러지는",
+                "root": "미끄러지다",
+                "english": "slipping"
+            },
+            {
+                "original_word": "사고를",
+                "root": "사고",
+                "english": "accident"
+            },
+            {
+                "original_word": "당했다",
+                "root": "당하다",
+                "english": "suffered"
+            },
+            {
+                "original_word": "다행히",
+                "root": "다행히",
+                "english": "fortunately"
+            },
+            {
+                "original_word": "사람이",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "다치는",
+                "root": "다치다",
+                "english": "getting hurt"
+            },
+            {
+                "original_word": "피해는",
+                "root": "피해",
+                "english": "damage"
+            },
+            {
+                "original_word": "없었지만",
+                "root": "없다",
+                "english": "was none but"
+            },
+            {
+                "original_word": "피자가",
+                "root": "피자",
+                "english": "pizza"
+            },
+            {
+                "original_word": "망가져서",
+                "root": "망가지다",
+                "english": "was ruined so"
+            },
+            {
+                "original_word": "배달에",
+                "root": "배달",
+                "english": "to delivery"
+            },
+            {
+                "original_word": "문제가",
+                "root": "문제",
+                "english": "problem"
+            },
+            {
+                "original_word": "생겼다",
+                "root": "생기다",
+                "english": "occurred"
+            },
+            {
+                "original_word": "배달이",
+                "root": "배달",
+                "english": "delivery"
+            },
+            {
+                "original_word": "늦어지는",
+                "root": "늦어지다",
+                "english": "being delayed"
+            },
+            {
+                "original_word": "것에",
+                "root": "것",
+                "english": "about the fact"
+            },
+            {
+                "original_word": "대해",
+                "root": "대하다",
+                "english": "about"
+            },
+            {
+                "original_word": "김",
+                "root": "김",
+                "english": "Kim"
+            },
+            {
+                "original_word": "씨가",
+                "root": "씨",
+                "english": "Mr."
+            },
+            {
+                "original_word": "고객에게",
+                "root": "고객",
+                "english": "to customer"
+            },
+            {
+                "original_word": "연락하자",
+                "root": "연락하다",
+                "english": "contacted and then"
+            },
+            {
+                "original_word": "고객은",
+                "root": "고객",
+                "english": "customer"
+            },
+            {
+                "original_word": "\"천천히",
+                "root": "천천히",
+                "english": "slowly"
+            },
+            {
+                "original_word": "오셔도",
+                "root": "오시다",
+                "english": "can come"
+            },
+            {
+                "original_word": "돼요",
+                "root": "되다",
+                "english": "it is okay"
+            },
+            {
+                "original_word": "몸은",
+                "root": "몸",
+                "english": "body"
+            },
+            {
+                "original_word": "괜찮나요?\"라며",
+                "root": "괜찮다",
+                "english": "asking if okay"
+            },
+            {
+                "original_word": "따뜻한",
+                "root": "따뜻하다",
+                "english": "warm"
+            },
+            {
+                "original_word": "말부터",
+                "root": "말",
+                "english": "words first"
+            },
+            {
+                "original_word": "전했다고",
+                "root": "전하다",
+                "english": "conveyed that"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "they say"
+            }
+        ]
+    },
+    {
+        "문제_번호": 13,
+        "지시문": "다음을 순서에 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 짧게는 하루, 길게는 한 달 정도 반짝 운영하는 임시 매장이다.\n(나) 사람이 붐비는 장소에서 짧은 기간 동안 운영하는 매장이 유행이다.\n(다) 기업은 이 임시 매장을 이용해 주로 특정 제품을 팔거나 홍보를 한다.\n(라) 또 기업 이미지를 친숙하게 만들기 위해 재미있는 행사를 열기도 한다.",
+        "선택지": {
+            "1": "(가)-(다)-(라)-(나)",
+            "2": "(나)-(가)-(다)-(라)",
+            "3": "(가)-(라)-(나)-(다)",
+            "4": "(나)-(라)-(다)-(가)"
+        },
+        "정답": 2,
+        "주제": "경제",
+        "단어맵": [
+            {
+                "original_word": "가",
+                "root": "가",
+                "english": "A"
+            },
+            {
+                "original_word": "짧게는",
+                "root": "짧다",
+                "english": "shortly"
+            },
+            {
+                "original_word": "하루",
+                "root": "하루",
+                "english": "one day"
+            },
+            {
+                "original_word": "길게는",
+                "root": "길다",
+                "english": "long"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "달",
+                "root": "달",
+                "english": "month"
+            },
+            {
+                "original_word": "정도",
+                "root": "정도",
+                "english": "about"
+            },
+            {
+                "original_word": "반짝",
+                "root": "반짝",
+                "english": "briefly/in a flash"
+            },
+            {
+                "original_word": "운영하는",
+                "root": "운영하다",
+                "english": "operating"
+            },
+            {
+                "original_word": "임시",
+                "root": "임시",
+                "english": "temporary"
+            },
+            {
+                "original_word": "매장이다",
+                "root": "매장",
+                "english": "is a store"
+            },
+            {
+                "original_word": "나",
+                "root": "나",
+                "english": "B"
+            },
+            {
+                "original_word": "사람이",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "붐비는",
+                "root": "붐비다",
+                "english": "crowded"
+            },
+            {
+                "original_word": "장소에서",
+                "root": "장소",
+                "english": "in a place"
+            },
+            {
+                "original_word": "짧은",
+                "root": "짧다",
+                "english": "short"
+            },
+            {
+                "original_word": "기간",
+                "root": "기간",
+                "english": "period"
+            },
+            {
+                "original_word": "동안",
+                "root": "동안",
+                "english": "during"
+            },
+            {
+                "original_word": "운영하는",
+                "root": "운영하다",
+                "english": "operating"
+            },
+            {
+                "original_word": "매장이",
+                "root": "매장",
+                "english": "store"
+            },
+            {
+                "original_word": "유행이다",
+                "root": "유행",
+                "english": "is a trend"
+            },
+            {
+                "original_word": "다",
+                "root": "다",
+                "english": "C"
+            },
+            {
+                "original_word": "기업은",
+                "root": "기업",
+                "english": "companies"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "임시",
+                "root": "임시",
+                "english": "temporary"
+            },
+            {
+                "original_word": "매장을",
+                "root": "매장",
+                "english": "store"
+            },
+            {
+                "original_word": "이용해",
+                "root": "이용하다",
+                "english": "use and"
+            },
+            {
+                "original_word": "주로",
+                "root": "주로",
+                "english": "mostly"
+            },
+            {
+                "original_word": "특정",
+                "root": "특정",
+                "english": "specific"
+            },
+            {
+                "original_word": "제품을",
+                "root": "제품",
+                "english": "product"
+            },
+            {
+                "original_word": "팔거나",
+                "root": "팔다",
+                "english": "sell or"
+            },
+            {
+                "original_word": "홍보를",
+                "root": "홍보",
+                "english": "promotion"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "do"
+            },
+            {
+                "original_word": "라",
+                "root": "라",
+                "english": "D"
+            },
+            {
+                "original_word": "또",
+                "root": "또",
+                "english": "also"
+            },
+            {
+                "original_word": "기업",
+                "root": "기업",
+                "english": "company"
+            },
+            {
+                "original_word": "이미지를",
+                "root": "이미지",
+                "english": "image"
+            },
+            {
+                "original_word": "친숙하게",
+                "root": "친숙하다",
+                "english": "familiarly"
+            },
+            {
+                "original_word": "만들기",
+                "root": "만들다",
+                "english": "making"
+            },
+            {
+                "original_word": "위해",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "재미있는",
+                "root": "재미있다",
+                "english": "fun/interesting"
+            },
+            {
+                "original_word": "행사를",
+                "root": "행사",
+                "english": "event"
+            },
+            {
+                "original_word": "열기도",
+                "root": "열다",
+                "english": "also hold"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "do"
+            }
+        ]
+    },
+    {
+        "문제_번호": 14,
+        "지시문": "다음을 순서에 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 그런데 전화를 끊고 뒤늦게 미안한 마음이 들었다.\n(나) 친구는 나의 합격 소식을 듣고 자신의 일처럼 기뻐했다.\n(다) 얼마 전 나는 회사 합격 소식을 듣고 친한 친구에게 전화했다.\n(라) 아직 취업 못 한 친구를 내가 배려하지 못했다는 생각 때문이었다.",
+        "선택지": {
+            "1": "(나)-(다)-(라)-(가)",
+            "2": "(나)-(라)-(가)-(다)",
+            "3": "(다)-(나)-(가)-(라)",
+            "4": "(다)-(나)-(라)-(가)"
+        },
+        "정답": 3,
+        "주제": "사회",
+        "단어맵": [
+            {
+                "original_word": "가",
+                "root": "가",
+                "english": "A"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "but"
+            },
+            {
+                "original_word": "전화를",
+                "root": "전화",
+                "english": "phone"
+            },
+            {
+                "original_word": "끊고",
+                "root": "끊다",
+                "english": "hang up and"
+            },
+            {
+                "original_word": "뒤늦게",
+                "root": "뒤늦다",
+                "english": "belatedly"
+            },
+            {
+                "original_word": "미안한",
+                "root": "미안하다",
+                "english": "sorry"
+            },
+            {
+                "original_word": "마음이",
+                "root": "마음",
+                "english": "heart/feeling"
+            },
+            {
+                "original_word": "들었다",
+                "root": "들다",
+                "english": "felt"
+            },
+            {
+                "original_word": "나",
+                "root": "나",
+                "english": "B"
+            },
+            {
+                "original_word": "친구는",
+                "root": "친구",
+                "english": "friend"
+            },
+            {
+                "original_word": "나의",
+                "root": "나",
+                "english": "my"
+            },
+            {
+                "original_word": "합격",
+                "root": "합격",
+                "english": "acceptance"
+            },
+            {
+                "original_word": "소식을",
+                "root": "소식",
+                "english": "news"
+            },
+            {
+                "original_word": "듣고",
+                "root": "듣다",
+                "english": "heard and"
+            },
+            {
+                "original_word": "자신의",
+                "root": "자신",
+                "english": "own"
+            },
+            {
+                "original_word": "일처럼",
+                "root": "일",
+                "english": "like their matter"
+            },
+            {
+                "original_word": "기뻐했다",
+                "root": "기뻐하다",
+                "english": "rejoiced"
+            },
+            {
+                "original_word": "다",
+                "root": "다",
+                "english": "C"
+            },
+            {
+                "original_word": "얼마",
+                "root": "얼마",
+                "english": "some"
+            },
+            {
+                "original_word": "전",
+                "root": "전",
+                "english": "ago"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "회사",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "합격",
+                "root": "합격",
+                "english": "acceptance"
+            },
+            {
+                "original_word": "소식을",
+                "root": "소식",
+                "english": "news"
+            },
+            {
+                "original_word": "듣고",
+                "root": "듣다",
+                "english": "heard and"
+            },
+            {
+                "original_word": "친한",
+                "root": "친하다",
+                "english": "close"
+            },
+            {
+                "original_word": "친구에게",
+                "root": "친구",
+                "english": "to friend"
+            },
+            {
+                "original_word": "전화했다",
+                "root": "전화하다",
+                "english": "called"
+            },
+            {
+                "original_word": "라",
+                "root": "라",
+                "english": "D"
+            },
+            {
+                "original_word": "아직",
+                "root": "아직",
+                "english": "yet"
+            },
+            {
+                "original_word": "취업",
+                "root": "취업",
+                "english": "employment"
+            },
+            {
+                "original_word": "못",
+                "root": "못",
+                "english": "cannot"
+            },
+            {
+                "original_word": "한",
+                "root": "하다",
+                "english": "do"
+            },
+            {
+                "original_word": "친구를",
+                "root": "친구",
+                "english": "friend"
+            },
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "배려하지",
+                "root": "배려하다",
+                "english": "considerate"
+            },
+            {
+                "original_word": "못했다는",
+                "root": "못하다",
+                "english": "could not do"
+            },
+            {
+                "original_word": "생각",
+                "root": "생각",
+                "english": "thought"
+            },
+            {
+                "original_word": "때문이었다",
+                "root": "때문",
+                "english": "was because of"
+            }
+        ]
+    },
+    {
+        "문제_번호": 15,
+        "지시문": "다음을 순서에 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 빵이나 고기를 구울 때 갈색으로 바뀌는 것이 그 예이다.\n(나) 갈색으로 바뀌면서 빵이나 고기의 맛도 더 깊어지고 풍부해진다.\n(다) 식품에 들어 있는 당과 단백질이 열을 만나면 색깔이 바뀌게 된다.\n(라) 만약 열이 너무 가해져서 검게 타게 되면 그런 맛을 낼 수가 없다.",
+        "선택지": {
+            "1": "(가)-(나)-(라)-(다)",
+            "2": "(다)-(가)-(나)-(라)",
+            "3": "(가)-(다)-(라)-(나)",
+            "4": "(다)-(라)-(나)-(가)"
+        },
+        "정답": 2,
+        "주제": "과학",
+        "단어맵": [
+            {
+                "original_word": "가",
+                "root": "가",
+                "english": "A"
+            },
+            {
+                "original_word": "빵이나",
+                "root": "빵",
+                "english": "bread or"
+            },
+            {
+                "original_word": "고기를",
+                "root": "고기",
+                "english": "meat"
+            },
+            {
+                "original_word": "구울",
+                "root": "굽다",
+                "english": "bake/grill"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "when"
+            },
+            {
+                "original_word": "갈색으로",
+                "root": "갈색",
+                "english": "to brown"
+            },
+            {
+                "original_word": "바뀌는",
+                "root": "바뀌다",
+                "english": "changing"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "the thing"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "예이다",
+                "root": "예",
+                "english": "is an example"
+            },
+            {
+                "original_word": "나",
+                "root": "나",
+                "english": "B"
+            },
+            {
+                "original_word": "갈색으로",
+                "root": "갈색",
+                "english": "to brown"
+            },
+            {
+                "original_word": "바뀌면서",
+                "root": "바뀌다",
+                "english": "changing while"
+            },
+            {
+                "original_word": "빵이나",
+                "root": "빵",
+                "english": "bread or"
+            },
+            {
+                "original_word": "고기의",
+                "root": "고기",
+                "english": "meat's"
+            },
+            {
+                "original_word": "맛도",
+                "root": "맛",
+                "english": "taste too"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "깊어지고",
+                "root": "깊어지다",
+                "english": "deepen and"
+            },
+            {
+                "original_word": "풍부해진다",
+                "root": "풍부해지다",
+                "english": "becomes rich"
+            },
+            {
+                "original_word": "다",
+                "root": "다",
+                "english": "C"
+            },
+            {
+                "original_word": "식품에",
+                "root": "식품",
+                "english": "in food"
+            },
+            {
+                "original_word": "들어",
+                "root": "들다",
+                "english": "contain"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "is"
+            },
+            {
+                "original_word": "당과",
+                "root": "당",
+                "english": "sugar and"
+            },
+            {
+                "original_word": "단백질이",
+                "root": "단백질",
+                "english": "protein"
+            },
+            {
+                "original_word": "열을",
+                "root": "열",
+                "english": "heat"
+            },
+            {
+                "original_word": "만나면",
+                "root": "만나다",
+                "english": "meets"
+            },
+            {
+                "original_word": "색깔이",
+                "root": "색깔",
+                "english": "color"
+            },
+            {
+                "original_word": "바뀌게",
+                "root": "바뀌다",
+                "english": "changing"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "becomes"
+            },
+            {
+                "original_word": "라",
+                "root": "라",
+                "english": "D"
+            },
+            {
+                "original_word": "만약",
+                "root": "만약",
+                "english": "if"
+            },
+            {
+                "original_word": "열이",
+                "root": "열",
+                "english": "heat"
+            },
+            {
+                "original_word": "너무",
+                "root": "너무",
+                "english": "too much"
+            },
+            {
+                "original_word": "가해져서",
+                "root": "가해지다",
+                "english": "is applied so"
+            },
+            {
+                "original_word": "검게",
+                "root": "검다",
+                "english": "blackly"
+            },
+            {
+                "original_word": "타게",
+                "root": "타다",
+                "english": "burn"
+            },
+            {
+                "original_word": "되면",
+                "root": "되다",
+                "english": "becomes"
+            },
+            {
+                "original_word": "그런",
+                "root": "그렇다",
+                "english": "such"
+            },
+            {
+                "original_word": "맛을",
+                "root": "맛",
+                "english": "taste"
+            },
+            {
+                "original_word": "낼",
+                "root": "내다",
+                "english": "make"
+            },
+            {
+                "original_word": "수가",
+                "root": "수",
+                "english": "way/possibility"
+            },
+            {
+                "original_word": "없다",
+                "root": "없다",
+                "english": "not exist"
+            }
+        ]
+    },
+    {
+        "문제_번호": 16,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "타조는 멀리서 적이 다가와도 머리를 모래에 파묻고 있다. 그래서 위험이나 위기를 모르는 척 피하는 사람을 타조에 비유하곤 한다. 그런데 사실 타조는 ( ) 위해 이런 행동을 한다. 시각보다 청각이 발달한 타조는 땅에서 울리는 발소리를 듣고 적이 오는지를 파악하려는 것이다.",
+        "선택지": {
+            "1": "적의 움직임을 알기",
+            "2": "먹이를 빨리 구하기",
+            "3": "머리를 깨끗이 씻기",
+            "4": "다른 타조를 공격하기"
+        },
+        "정답": 1,
+        "주제": "과학",
+        "단어맵": [
+            {
+                "original_word": "타조는",
+                "root": "타조",
+                "english": "ostrich"
+            },
+            {
+                "original_word": "멀리서",
+                "root": "멀다",
+                "english": "from afar"
+            },
+            {
+                "original_word": "적이",
+                "root": "적",
+                "english": "enemy"
+            },
+            {
+                "original_word": "다가와도",
+                "root": "다가오다",
+                "english": "approaches"
+            },
+            {
+                "original_word": "머리를",
+                "root": "머리",
+                "english": "head"
+            },
+            {
+                "original_word": "모래에",
+                "root": "모래",
+                "english": "in sand"
+            },
+            {
+                "original_word": "파묻고",
+                "root": "파묻다",
+                "english": "buries and"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "is"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "so"
+            },
+            {
+                "original_word": "위험이나",
+                "root": "위험",
+                "english": "danger or"
+            },
+            {
+                "original_word": "위기를",
+                "root": "위기",
+                "english": "crisis"
+            },
+            {
+                "original_word": "모르는",
+                "root": "모르다",
+                "english": "not knowing"
+            },
+            {
+                "original_word": "척",
+                "root": "척",
+                "english": "pretending"
+            },
+            {
+                "original_word": "피하는",
+                "root": "피하다",
+                "english": "avoiding"
+            },
+            {
+                "original_word": "사람을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "타조에",
+                "root": "타조",
+                "english": "to ostrich"
+            },
+            {
+                "original_word": "비유하곤",
+                "root": "비유하다",
+                "english": "often compare"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "do"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "however"
+            },
+            {
+                "original_word": "사실",
+                "root": "사실",
+                "english": "in fact"
+            },
+            {
+                "original_word": "타조는",
+                "root": "타조",
+                "english": "ostrich"
+            },
+            {
+                "original_word": "위해",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "이런",
+                "root": "이렇다",
+                "english": "this kind of"
+            },
+            {
+                "original_word": "행동을",
+                "root": "행동",
+                "english": "behavior"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "do"
+            },
+            {
+                "original_word": "시각보다",
+                "root": "시각",
+                "english": "than sight"
+            },
+            {
+                "original_word": "청각이",
+                "root": "청각",
+                "english": "hearing"
+            },
+            {
+                "original_word": "발달한",
+                "root": "발달하다",
+                "english": "developed"
+            },
+            {
+                "original_word": "타조는",
+                "root": "타조",
+                "english": "ostrich"
+            },
+            {
+                "original_word": "땅에서",
+                "root": "땅",
+                "english": "from ground"
+            },
+            {
+                "original_word": "울리는",
+                "root": "울리다",
+                "english": "ringing/resounding"
+            },
+            {
+                "original_word": "발소리를",
+                "root": "발소리",
+                "english": "footsteps"
+            },
+            {
+                "original_word": "듣고",
+                "root": "듣다",
+                "english": "hears and"
+            },
+            {
+                "original_word": "적이",
+                "root": "적",
+                "english": "enemy"
+            },
+            {
+                "original_word": "오는지를",
+                "root": "오다",
+                "english": "whether coming"
+            },
+            {
+                "original_word": "파악하려는",
+                "root": "파악하다",
+                "english": "trying to figure out"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것",
+                "english": "it is that"
+            }
+        ]
+    },
+    {
+        "문제_번호": 17,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "섬유 유연제는 섬유에 막을 씌워 옷감을 부드럽게 하고 향기도 남긴다. 그래서 세탁할 때 유연제를 넣는 사람들이 많다. 그런데 수건처럼 물기를 빠르게 흡수해야 하는 소재에는 유연제를 넣는 것이 좋은 것만은 아니다. 유연제가 만든 막이 오히려 섬유의 ( ) 때문이다.",
+        "선택지": {
+            "1": "향기를 없애기",
+            "2": "색깔을 변형시키기",
+            "3": "흡수력을 떨어뜨리기",
+            "4": "촉감을 거칠게 만들기"
+        },
+        "정답": 3,
+        "주제": "과학",
+        "단어맵": [
+            {
+                "original_word": "섬유",
+                "root": "섬유",
+                "english": "fabric/fiber"
+            },
+            {
+                "original_word": "유연제는",
+                "root": "유연제",
+                "english": "softener"
+            },
+            {
+                "original_word": "섬유에",
+                "root": "섬유",
+                "english": "to fabric"
+            },
+            {
+                "original_word": "막을",
+                "root": "막",
+                "english": "film/layer"
+            },
+            {
+                "original_word": "씌워",
+                "root": "씌우다",
+                "english": "cover"
+            },
+            {
+                "original_word": "옷감을",
+                "root": "옷감",
+                "english": "cloth"
+            },
+            {
+                "original_word": "부드럽게",
+                "root": "부드럽다",
+                "english": "softly"
+            },
+            {
+                "original_word": "하고",
+                "root": "하다",
+                "english": "do and"
+            },
+            {
+                "original_word": "향기도",
+                "root": "향기",
+                "english": "scent too"
+            },
+            {
+                "original_word": "남긴다",
+                "root": "남기다",
+                "english": "leaves"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "so"
+            },
+            {
+                "original_word": "세탁할",
+                "root": "세탁하다",
+                "english": "to wash"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "when"
+            },
+            {
+                "original_word": "유연제를",
+                "root": "유연제",
+                "english": "softener"
+            },
+            {
+                "original_word": "넣는",
+                "root": "넣다",
+                "english": "putting"
+            },
+            {
+                "original_word": "사람들이",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "많다",
+                "root": "많다",
+                "english": "many"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "however"
+            },
+            {
+                "original_word": "수건처럼",
+                "root": "수건",
+                "english": "like towel"
+            },
+            {
+                "original_word": "물기를",
+                "root": "물기",
+                "english": "moisture"
+            },
+            {
+                "original_word": "빠르게",
+                "root": "빠르다",
+                "english": "quickly"
+            },
+            {
+                "original_word": "흡수해야",
+                "root": "흡수하다",
+                "english": "need to absorb"
+            },
+            {
+                "original_word": "하는",
+                "root": "하다",
+                "english": "doing"
+            },
+            {
+                "original_word": "소재에는",
+                "root": "소재",
+                "english": "to materials"
+            },
+            {
+                "original_word": "유연제를",
+                "root": "유연제",
+                "english": "softener"
+            },
+            {
+                "original_word": "넣는",
+                "root": "넣다",
+                "english": "putting"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "좋은",
+                "root": "좋다",
+                "english": "good"
+            },
+            {
+                "original_word": "것만은",
+                "root": "것",
+                "english": "only thing"
+            },
+            {
+                "original_word": "아니다",
+                "root": "아니다",
+                "english": "is not"
+            },
+            {
+                "original_word": "유연제가",
+                "root": "유연제",
+                "english": "softener"
+            },
+            {
+                "original_word": "만든",
+                "root": "만들다",
+                "english": "made"
+            },
+            {
+                "original_word": "막이",
+                "root": "막",
+                "english": "film/layer"
+            },
+            {
+                "original_word": "오히려",
+                "root": "오히려",
+                "english": "rather"
+            },
+            {
+                "original_word": "섬유의",
+                "root": "섬유",
+                "english": "fabric's"
+            },
+            {
+                "original_word": "때문이다",
+                "root": "때문",
+                "english": "is because of"
+            }
+        ]
+    },
+    {
+        "문제_번호": 18,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "디지털 기기에 대한 의존도가 높아지면서 사람들이 무언가 직접 기억해야 할 일은 줄었다. 그래서 이전보다 ( ) 생각할 수 있다. 그런데 뇌를 사용하는 방식이 이전과 달라졌을 뿐 사용량이 줄어든 것이 아니다. 과거에는 단순히 정보를 기억하는 데 뇌를 썼다면 이제는 과거보다 압도적으로 많아진 정보를 처리하는 데 사용하고 있는 것이다.",
+        "선택지": {
+            "1": "뇌를 덜 사용한다고",
+            "2": "기억력이 좋아졌다고",
+            "3": "저장해야 할 정보가 많다고",
+            "4": "디지털 기기를 많이 쓴다고"
+        },
+        "정답": 1,
+        "주제": "과학",
+        "단어맵": [
+            {
+                "original_word": "디지털",
+                "root": "디지털",
+                "english": "digital"
+            },
+            {
+                "original_word": "기기에",
+                "root": "기기",
+                "english": "to device"
+            },
+            {
+                "original_word": "대한",
+                "root": "대하다",
+                "english": "about"
+            },
+            {
+                "original_word": "의존도가",
+                "root": "의존도",
+                "english": "dependency"
+            },
+            {
+                "original_word": "높아지면서",
+                "root": "높아지다",
+                "english": "as it increases"
+            },
+            {
+                "original_word": "사람들이",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "무언가",
+                "root": "무언가",
+                "english": "something"
+            },
+            {
+                "original_word": "직접",
+                "root": "직접",
+                "english": "directly"
+            },
+            {
+                "original_word": "기억해야",
+                "root": "기억하다",
+                "english": "must remember"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "일은",
+                "root": "일",
+                "english": "work/thing"
+            },
+            {
+                "original_word": "줄었다",
+                "root": "줄다",
+                "english": "decreased"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "so"
+            },
+            {
+                "original_word": "이전보다",
+                "root": "이전",
+                "english": "than before"
+            },
+            {
+                "original_word": "생각할",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "is"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "however"
+            },
+            {
+                "original_word": "뇌를",
+                "root": "뇌",
+                "english": "brain"
+            },
+            {
+                "original_word": "사용하는",
+                "root": "사용하다",
+                "english": "using"
+            },
+            {
+                "original_word": "방식이",
+                "root": "방식",
+                "english": "method"
+            },
+            {
+                "original_word": "이전과",
+                "root": "이전",
+                "english": "with before"
+            },
+            {
+                "original_word": "달라졌을",
+                "root": "달라지다",
+                "english": "might have changed"
+            },
+            {
+                "original_word": "뿐",
+                "root": "뿐",
+                "english": "only"
+            },
+            {
+                "original_word": "사용량이",
+                "root": "사용량",
+                "english": "usage amount"
+            },
+            {
+                "original_word": "줄어든",
+                "root": "줄어들다",
+                "english": "decreased"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "아니다",
+                "root": "아니다",
+                "english": "is not"
+            },
+            {
+                "original_word": "과거에는",
+                "root": "과거",
+                "english": "in the past"
+            },
+            {
+                "original_word": "단순히",
+                "root": "단순히",
+                "english": "simply"
+            },
+            {
+                "original_word": "정보를",
+                "root": "정보",
+                "english": "information"
+            },
+            {
+                "original_word": "기억하는",
+                "root": "기억하다",
+                "english": "remembering"
+            },
+            {
+                "original_word": "데",
+                "root": "데",
+                "english": "place/case"
+            },
+            {
+                "original_word": "뇌를",
+                "root": "뇌",
+                "english": "brain"
+            },
+            {
+                "original_word": "썼다면",
+                "root": "쓰다",
+                "english": "if used"
+            },
+            {
+                "original_word": "이제는",
+                "root": "이제",
+                "english": "now"
+            },
+            {
+                "original_word": "과거보다",
+                "root": "과거",
+                "english": "than the past"
+            },
+            {
+                "original_word": "압도적으로",
+                "root": "압도적",
+                "english": "overwhelmingly"
+            },
+            {
+                "original_word": "많아진",
+                "root": "많아지다",
+                "english": "increased"
+            },
+            {
+                "original_word": "정보를",
+                "root": "정보",
+                "english": "information"
+            },
+            {
+                "original_word": "처리하는",
+                "root": "처리하다",
+                "english": "processing"
+            },
+            {
+                "original_word": "데",
+                "root": "데",
+                "english": "place/case"
+            },
+            {
+                "original_word": "사용하고",
+                "root": "사용하다",
+                "english": "using"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "is"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것",
+                "english": "it is that"
+            }
+        ]
+    },
+    {
+        "문제_번호": 19,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "매서운 남극의 겨울, 황제펭귄들은 겹겹이 붙어 서로의 체온으로 추위를 견딘다. 무리 전체가 돌면서 바깥쪽과 안쪽에 있는 펭귄들이 계속 서로의 위치를 바꾼다. 안에서 몸을 데운 펭귄은 밖으로 나가고 밖에서 추위에 떨던 펭귄은 안으로 들어오는 것이다. ( ) 그 움직임은 아주 느리지만 쉬지 않고 이루어져 한 마리의 펭귄이 줄곧 찬바람을 맞고 서 있는 일이 없다. 그렇게 쉼 없이 둥글게 돌면서 펭귄들은 다 함께 살아남는다.",
+        "선택지": {
+            "1": "혹시",
+            "2": "또는",
+            "3": "비록",
+            "4": "만약"
+        },
+        "정답": 3,
+        "주제": "과학",
+        "단어맵": [
+            {
+                "original_word": "매서운",
+                "root": "매섭다",
+                "english": "fierce/bitter"
+            },
+            {
+                "original_word": "남극의",
+                "root": "남극",
+                "english": "Antarctica's"
+            },
+            {
+                "original_word": "겨울",
+                "root": "겨울",
+                "english": "winter"
+            },
+            {
+                "original_word": "황제펭귄들은",
+                "root": "황제펭귄",
+                "english": "emperor penguins"
+            },
+            {
+                "original_word": "겹겹이",
+                "root": "겹겹이",
+                "english": "in layers"
+            },
+            {
+                "original_word": "붙어",
+                "root": "붙다",
+                "english": "stick together"
+            },
+            {
+                "original_word": "서로의",
+                "root": "서로",
+                "english": "each other's"
+            },
+            {
+                "original_word": "체온으로",
+                "root": "체온",
+                "english": "with body heat"
+            },
+            {
+                "original_word": "추위를",
+                "root": "추위",
+                "english": "cold"
+            },
+            {
+                "original_word": "견딘다",
+                "root": "견디다",
+                "english": "endure"
+            },
+            {
+                "original_word": "무리",
+                "root": "무리",
+                "english": "group/flock"
+            },
+            {
+                "original_word": "전체가",
+                "root": "전체",
+                "english": "entire"
+            },
+            {
+                "original_word": "돌면서",
+                "root": "돌다",
+                "english": "while rotating"
+            },
+            {
+                "original_word": "바깥쪽과",
+                "root": "바깥쪽",
+                "english": "outside and"
+            },
+            {
+                "original_word": "안쪽에",
+                "root": "안쪽",
+                "english": "inside"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "are"
+            },
+            {
+                "original_word": "펭귄들이",
+                "root": "펭귄",
+                "english": "penguins"
+            },
+            {
+                "original_word": "계속",
+                "root": "계속",
+                "english": "continuously"
+            },
+            {
+                "original_word": "서로의",
+                "root": "서로",
+                "english": "each other's"
+            },
+            {
+                "original_word": "위치를",
+                "root": "위치",
+                "english": "position"
+            },
+            {
+                "original_word": "바꾼다",
+                "root": "바꾸다",
+                "english": "change"
+            },
+            {
+                "original_word": "안에서",
+                "root": "안",
+                "english": "from inside"
+            },
+            {
+                "original_word": "몸을",
+                "root": "몸",
+                "english": "body"
+            },
+            {
+                "original_word": "데운",
+                "root": "데우다",
+                "english": "warmed"
+            },
+            {
+                "original_word": "펭귄은",
+                "root": "펭귄",
+                "english": "penguin"
+            },
+            {
+                "original_word": "밖으로",
+                "root": "밖",
+                "english": "to outside"
+            },
+            {
+                "original_word": "나가고",
+                "root": "나가다",
+                "english": "go out and"
+            },
+            {
+                "original_word": "밖에서",
+                "root": "밖",
+                "english": "from outside"
+            },
+            {
+                "original_word": "추위에",
+                "root": "추위",
+                "english": "in the cold"
+            },
+            {
+                "original_word": "떨던",
+                "root": "떨다",
+                "english": "shivering"
+            },
+            {
+                "original_word": "펭귄은",
+                "root": "펭귄",
+                "english": "penguin"
+            },
+            {
+                "original_word": "안으로",
+                "root": "안",
+                "english": "to inside"
+            },
+            {
+                "original_word": "들어오는",
+                "root": "들어오다",
+                "english": "coming in"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것",
+                "english": "it is that"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "움직임은",
+                "root": "움직임",
+                "english": "movement"
+            },
+            {
+                "original_word": "아주",
+                "root": "아주",
+                "english": "very"
+            },
+            {
+                "original_word": "느리지만",
+                "root": "느리다",
+                "english": "slow but"
+            },
+            {
+                "original_word": "쉬지",
+                "root": "쉬다",
+                "english": "resting"
+            },
+            {
+                "original_word": "않고",
+                "root": "않다",
+                "english": "not and"
+            },
+            {
+                "original_word": "이루어져",
+                "root": "이루어지다",
+                "english": "is made"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "마리의",
+                "root": "마리",
+                "english": "animal counter's"
+            },
+            {
+                "original_word": "펭귄이",
+                "root": "펭귄",
+                "english": "penguin"
+            },
+            {
+                "original_word": "줄곧",
+                "root": "줄곧",
+                "english": "all the time"
+            },
+            {
+                "original_word": "찬바람을",
+                "root": "찬바람",
+                "english": "cold wind"
+            },
+            {
+                "original_word": "맞고",
+                "root": "맞다",
+                "english": "be hit by"
+            },
+            {
+                "original_word": "서",
+                "root": "서다",
+                "english": "stand"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "is"
+            },
+            {
+                "original_word": "일이",
+                "root": "일",
+                "english": "thing"
+            },
+            {
+                "original_word": "없다",
+                "root": "없다",
+                "english": "not exist"
+            },
+            {
+                "original_word": "그렇게",
+                "root": "그렇게",
+                "english": "like that"
+            },
+            {
+                "original_word": "쉼",
+                "root": "쉬다",
+                "english": "rest"
+            },
+            {
+                "original_word": "없이",
+                "root": "없다",
+                "english": "without"
+            },
+            {
+                "original_word": "둥글게",
+                "root": "둥글다",
+                "english": "roundly"
+            },
+            {
+                "original_word": "돌면서",
+                "root": "돌다",
+                "english": "while rotating"
+            },
+            {
+                "original_word": "펭귄들은",
+                "root": "펭귄",
+                "english": "penguins"
+            },
+            {
+                "original_word": "다",
+                "root": "다",
+                "english": "all"
+            },
+            {
+                "original_word": "함께",
+                "root": "함께",
+                "english": "together"
+            },
+            {
+                "original_word": "살아남는다",
+                "root": "살아남다",
+                "english": "survive"
+            }
+        ]
+    },
+    {
+        "문제_번호": 20,
+        "지시문": "윗글의 주제로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "매서운 남극의 겨울, 황제펭귄들은 겹겹이 붙어 서로의 체온으로 추위를 견딘다. 무리 전체가 돌면서 바깥쪽과 안쪽에 있는 펭귄들이 계속 서로의 위치를 바꾼다. 안에서 몸을 데운 펭귄은 밖으로 나가고 밖에서 추위에 떨던 펭귄은 안으로 들어오는 것이다. ( ) 그 움직임은 아주 느리지만 쉬지 않고 이루어져 한 마리의 펭귄이 줄곧 찬바람을 맞고 서 있는 일이 없다. 그렇게 쉼 없이 둥글게 돌면서 펭귄들은 다 함께 살아남는다.",
+        "선택지": {
+            "1": "황제펭귄은 서로 도우면서 추위에 맞서 생존해 왔다.",
+            "2": "황제펭귄은 둥글게 돌면서 날씨에 대한 정보를 알린다.",
+            "3": "황제펭귄은 추위에서 살아남기 위해 움직임이 느려졌다.",
+            "4": "황제펭귄은 무리 생활을 통해 경쟁에서 이기는 법을 배운다."
+        },
+        "정답": 1,
+        "주제": "과학",
+        "단어맵": [
+            {
+                "original_word": "매서운",
+                "root": "매섭다",
+                "english": "fierce/bitter"
+            },
+            {
+                "original_word": "남극의",
+                "root": "남극",
+                "english": "Antarctica's"
+            },
+            {
+                "original_word": "겨울",
+                "root": "겨울",
+                "english": "winter"
+            },
+            {
+                "original_word": "황제펭귄들은",
+                "root": "황제펭귄",
+                "english": "emperor penguins"
+            },
+            {
+                "original_word": "겹겹이",
+                "root": "겹겹이",
+                "english": "in layers"
+            },
+            {
+                "original_word": "붙어",
+                "root": "붙다",
+                "english": "stick together"
+            },
+            {
+                "original_word": "서로의",
+                "root": "서로",
+                "english": "each other's"
+            },
+            {
+                "original_word": "체온으로",
+                "root": "체온",
+                "english": "with body heat"
+            },
+            {
+                "original_word": "추위를",
+                "root": "추위",
+                "english": "cold"
+            },
+            {
+                "original_word": "견딘다",
+                "root": "견디다",
+                "english": "endure"
+            },
+            {
+                "original_word": "무리",
+                "root": "무리",
+                "english": "group/flock"
+            },
+            {
+                "original_word": "전체가",
+                "root": "전체",
+                "english": "entire"
+            },
+            {
+                "original_word": "돌면서",
+                "root": "돌다",
+                "english": "while rotating"
+            },
+            {
+                "original_word": "바깥쪽과",
+                "root": "바깥쪽",
+                "english": "outside and"
+            },
+            {
+                "original_word": "안쪽에",
+                "root": "안쪽",
+                "english": "inside"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "are"
+            },
+            {
+                "original_word": "펭귄들이",
+                "root": "펭귄",
+                "english": "penguins"
+            },
+            {
+                "original_word": "계속",
+                "root": "계속",
+                "english": "continuously"
+            },
+            {
+                "original_word": "서로의",
+                "root": "서로",
+                "english": "each other's"
+            },
+            {
+                "original_word": "위치를",
+                "root": "위치",
+                "english": "position"
+            },
+            {
+                "original_word": "바꾼다",
+                "root": "바꾸다",
+                "english": "change"
+            },
+            {
+                "original_word": "안에서",
+                "root": "안",
+                "english": "from inside"
+            },
+            {
+                "original_word": "몸을",
+                "root": "몸",
+                "english": "body"
+            },
+            {
+                "original_word": "데운",
+                "root": "데우다",
+                "english": "warmed"
+            },
+            {
+                "original_word": "펭귄은",
+                "root": "펭귄",
+                "english": "penguin"
+            },
+            {
+                "original_word": "밖으로",
+                "root": "밖",
+                "english": "to outside"
+            },
+            {
+                "original_word": "나가고",
+                "root": "나가다",
+                "english": "go out and"
+            },
+            {
+                "original_word": "밖에서",
+                "root": "밖",
+                "english": "from outside"
+            },
+            {
+                "original_word": "추위에",
+                "root": "추위",
+                "english": "in the cold"
+            },
+            {
+                "original_word": "떨던",
+                "root": "떨다",
+                "english": "shivering"
+            },
+            {
+                "original_word": "펭귄은",
+                "root": "펭귄",
+                "english": "penguin"
+            },
+            {
+                "original_word": "안으로",
+                "root": "안",
+                "english": "to inside"
+            },
+            {
+                "original_word": "들어오는",
+                "root": "들어오다",
+                "english": "coming in"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것",
+                "english": "it is that"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "움직임은",
+                "root": "움직임",
+                "english": "movement"
+            },
+            {
+                "original_word": "아주",
+                "root": "아주",
+                "english": "very"
+            },
+            {
+                "original_word": "느리지만",
+                "root": "느리다",
+                "english": "slow but"
+            },
+            {
+                "original_word": "쉬지",
+                "root": "쉬다",
+                "english": "resting"
+            },
+            {
+                "original_word": "않고",
+                "root": "않다",
+                "english": "not and"
+            },
+            {
+                "original_word": "이루어져",
+                "root": "이루어지다",
+                "english": "is made"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "마리의",
+                "root": "마리",
+                "english": "animal counter's"
+            },
+            {
+                "original_word": "펭귄이",
+                "root": "펭귄",
+                "english": "penguin"
+            },
+            {
+                "original_word": "줄곧",
+                "root": "줄곧",
+                "english": "all the time"
+            },
+            {
+                "original_word": "찬바람을",
+                "root": "찬바람",
+                "english": "cold wind"
+            },
+            {
+                "original_word": "맞고",
+                "root": "맞다",
+                "english": "be hit by"
+            },
+            {
+                "original_word": "서",
+                "root": "서다",
+                "english": "stand"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "is"
+            },
+            {
+                "original_word": "일이",
+                "root": "일",
+                "english": "thing"
+            },
+            {
+                "original_word": "없다",
+                "root": "없다",
+                "english": "not exist"
+            },
+            {
+                "original_word": "그렇게",
+                "root": "그렇게",
+                "english": "like that"
+            },
+            {
+                "original_word": "쉼",
+                "root": "쉬다",
+                "english": "rest"
+            },
+            {
+                "original_word": "없이",
+                "root": "없다",
+                "english": "without"
+            },
+            {
+                "original_word": "둥글게",
+                "root": "둥글다",
+                "english": "roundly"
+            },
+            {
+                "original_word": "돌면서",
+                "root": "돌다",
+                "english": "while rotating"
+            },
+            {
+                "original_word": "펭귄들은",
+                "root": "펭귄",
+                "english": "penguins"
+            },
+            {
+                "original_word": "다",
+                "root": "다",
+                "english": "all"
+            },
+            {
+                "original_word": "함께",
+                "root": "함께",
+                "english": "together"
+            },
+            {
+                "original_word": "살아남는다",
+                "root": "살아남다",
+                "english": "survive"
+            }
+        ]
+    }
+]

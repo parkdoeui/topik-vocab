@@ -1,0 +1,2747 @@
+[
+    {
+        "문제_번호": 21,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "최근 미술 전시회 수요가 증가하면서 돈벌이에 급급한 전시회가 늘고 있다. 일부 전시 관계자들이 전시 포스터 등 홍보 자료에 복제품 전시임을 밝히지 않고 입장료 수입만을 챙기는 것이다. 전시장을 찾아와서야 이런 사실을 알게 된 관람객들은 불만을 쏟아 내고 있다. 전문가들은 이런 전시 행태가 미술계 발전의 ( ) 수 있다고 우려한다. 전시회에 실망한 사람들이 미술에 대한 관심을 아예 끊을 수 있기 때문이다.",
+        "선택지": {
+            "1": "입맛에 맞을",
+            "2": "가슴을 울릴",
+            "3": "발목을 잡을",
+            "4": "손을 맞잡을"
+        },
+        "정답": 3,
+        "주제": "예술",
+        "단어맵": [
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recently"
+            },
+            {
+                "original_word": "미술",
+                "root": "미술",
+                "english": "art"
+            },
+            {
+                "original_word": "전시회",
+                "root": "전시회",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "수요가",
+                "root": "수요",
+                "english": "demand"
+            },
+            {
+                "original_word": "증가하면서",
+                "root": "증가하다",
+                "english": "while increasing"
+            },
+            {
+                "original_word": "돈벌이에",
+                "root": "돈벌이",
+                "english": "in making money"
+            },
+            {
+                "original_word": "급급한",
+                "root": "급급하다",
+                "english": "engrossed/busy"
+            },
+            {
+                "original_word": "전시회가",
+                "root": "전시회",
+                "english": "exhibitions"
+            },
+            {
+                "original_word": "늘고",
+                "root": "늘다",
+                "english": "increasing and"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "are"
+            },
+            {
+                "original_word": "일부",
+                "root": "일부",
+                "english": "some"
+            },
+            {
+                "original_word": "전시",
+                "root": "전시",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "관계자들이",
+                "root": "관계자",
+                "english": "officials/insiders"
+            },
+            {
+                "original_word": "전시",
+                "root": "전시",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "포스터",
+                "root": "포스터",
+                "english": "poster"
+            },
+            {
+                "original_word": "등",
+                "root": "등",
+                "english": "etc."
+            },
+            {
+                "original_word": "홍보",
+                "root": "홍보",
+                "english": "promotional"
+            },
+            {
+                "original_word": "자료에",
+                "root": "자료",
+                "english": "in materials"
+            },
+            {
+                "original_word": "복제품",
+                "root": "복제품",
+                "english": "replica/reproduction"
+            },
+            {
+                "original_word": "전시임을",
+                "root": "전시이다",
+                "english": "that it is an exhibition"
+            },
+            {
+                "original_word": "밝히지",
+                "root": "밝히다",
+                "english": "disclose"
+            },
+            {
+                "original_word": "않고",
+                "root": "않다",
+                "english": "not and"
+            },
+            {
+                "original_word": "입장료",
+                "root": "입장료",
+                "english": "admission fee"
+            },
+            {
+                "original_word": "수입만을",
+                "root": "수입",
+                "english": "only income"
+            },
+            {
+                "original_word": "챙기는",
+                "root": "챙기다",
+                "english": "taking/pocketing"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is that"
+            },
+            {
+                "original_word": "전시장을",
+                "root": "전시장",
+                "english": "exhibition hall"
+            },
+            {
+                "original_word": "찾아와서야",
+                "root": "찾아오다",
+                "english": "only after visiting"
+            },
+            {
+                "original_word": "이런",
+                "root": "이런",
+                "english": "this kind of"
+            },
+            {
+                "original_word": "사실을",
+                "root": "사실",
+                "english": "fact"
+            },
+            {
+                "original_word": "알게",
+                "root": "알다",
+                "english": "get to know"
+            },
+            {
+                "original_word": "된",
+                "root": "되다",
+                "english": "became"
+            },
+            {
+                "original_word": "관람객들은",
+                "root": "관람객",
+                "english": "visitors"
+            },
+            {
+                "original_word": "불만을",
+                "root": "불만",
+                "english": "complaint/dissatisfaction"
+            },
+            {
+                "original_word": "쏟아",
+                "root": "쏟다",
+                "english": "pour"
+            },
+            {
+                "original_word": "내고",
+                "root": "내다",
+                "english": "out and"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "are"
+            },
+            {
+                "original_word": "전문가들은",
+                "root": "전문가",
+                "english": "experts"
+            },
+            {
+                "original_word": "이런",
+                "root": "이런",
+                "english": "this kind of"
+            },
+            {
+                "original_word": "전시",
+                "root": "전시",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "행태가",
+                "root": "행태",
+                "english": "behavior"
+            },
+            {
+                "original_word": "미술계",
+                "root": "미술계",
+                "english": "art world"
+            },
+            {
+                "original_word": "발전의",
+                "root": "발전",
+                "english": "of development"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility/way"
+            },
+            {
+                "original_word": "있다고",
+                "root": "있다",
+                "english": "that there is"
+            },
+            {
+                "original_word": "우려한다",
+                "root": "우려하다",
+                "english": "worry"
+            },
+            {
+                "original_word": "전시회에",
+                "root": "전시회",
+                "english": "with the exhibition"
+            },
+            {
+                "original_word": "실망한",
+                "root": "실망하다",
+                "english": "disappointed"
+            },
+            {
+                "original_word": "사람들이",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "미술에",
+                "root": "미술",
+                "english": "in art"
+            },
+            {
+                "original_word": "대한",
+                "root": "대하다",
+                "english": "about"
+            },
+            {
+                "original_word": "관심을",
+                "root": "관심",
+                "english": "interest"
+            },
+            {
+                "original_word": "아예",
+                "root": "아예",
+                "english": "altogether/completely"
+            },
+            {
+                "original_word": "끊을",
+                "root": "끊다",
+                "english": "cut off"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "can"
+            },
+            {
+                "original_word": "있기",
+                "root": "있다",
+                "english": "because there is"
+            },
+            {
+                "original_word": "때문이다",
+                "root": "때문이다",
+                "english": "is the reason"
+            }
+        ]
+    },
+    {
+        "문제_번호": 22,
+        "지시문": "윗글의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "최근 미술 전시회 수요가 증가하면서 돈벌이에 급급한 전시회가 늘고 있다. 일부 전시 관계자들이 전시 포스터 등 홍보 자료에 복제품 전시임을 밝히지 않고 입장료 수입만을 챙기는 것이다. 전시장을 찾아와서야 이런 사실을 알게 된 관람객들은 불만을 쏟아 내고 있다. 전문가들은 이런 전시 행태가 미술계 발전의 ( ) 수 있다고 우려한다. 전시회에 실망한 사람들이 미술에 대한 관심을 아예 끊을 수 있기 때문이다.",
+        "선택지": {
+            "1": "복제품 전시회는 입장료를 받지 않는다.",
+            "2": "최근 미술 전시회를 찾는 사람들이 많지 않다.",
+            "3": "전시회에서 복제품을 전시하는 일이 점점 줄고 있다.",
+            "4": "복제품 전시회인지 모르고 전시회를 방문한 관람객들이 있다."
+        },
+        "정답": 4,
+        "주제": "예술",
+        "단어맵": [
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recently"
+            },
+            {
+                "original_word": "미술",
+                "root": "미술",
+                "english": "art"
+            },
+            {
+                "original_word": "전시회",
+                "root": "전시회",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "수요가",
+                "root": "수요",
+                "english": "demand"
+            },
+            {
+                "original_word": "증가하면서",
+                "root": "증가하다",
+                "english": "while increasing"
+            },
+            {
+                "original_word": "돈벌이에",
+                "root": "돈벌이",
+                "english": "in making money"
+            },
+            {
+                "original_word": "급급한",
+                "root": "급급하다",
+                "english": "engrossed/busy"
+            },
+            {
+                "original_word": "전시회가",
+                "root": "전시회",
+                "english": "exhibitions"
+            },
+            {
+                "original_word": "늘고",
+                "root": "늘다",
+                "english": "increasing and"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "are"
+            },
+            {
+                "original_word": "일부",
+                "root": "일부",
+                "english": "some"
+            },
+            {
+                "original_word": "전시",
+                "root": "전시",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "관계자들이",
+                "root": "관계자",
+                "english": "officials/insiders"
+            },
+            {
+                "original_word": "전시",
+                "root": "전시",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "포스터",
+                "root": "포스터",
+                "english": "poster"
+            },
+            {
+                "original_word": "등",
+                "root": "등",
+                "english": "etc."
+            },
+            {
+                "original_word": "홍보",
+                "root": "홍보",
+                "english": "promotional"
+            },
+            {
+                "original_word": "자료에",
+                "root": "자료",
+                "english": "in materials"
+            },
+            {
+                "original_word": "복제품",
+                "root": "복제품",
+                "english": "replica/reproduction"
+            },
+            {
+                "original_word": "전시임을",
+                "root": "전시이다",
+                "english": "that it is an exhibition"
+            },
+            {
+                "original_word": "밝히지",
+                "root": "밝히다",
+                "english": "disclose"
+            },
+            {
+                "original_word": "않고",
+                "root": "않다",
+                "english": "not and"
+            },
+            {
+                "original_word": "입장료",
+                "root": "입장료",
+                "english": "admission fee"
+            },
+            {
+                "original_word": "수입만을",
+                "root": "수입",
+                "english": "only income"
+            },
+            {
+                "original_word": "챙기는",
+                "root": "챙기다",
+                "english": "taking/pocketing"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is that"
+            },
+            {
+                "original_word": "전시장을",
+                "root": "전시장",
+                "english": "exhibition hall"
+            },
+            {
+                "original_word": "찾아와서야",
+                "root": "찾아오다",
+                "english": "only after visiting"
+            },
+            {
+                "original_word": "이런",
+                "root": "이런",
+                "english": "this kind of"
+            },
+            {
+                "original_word": "사실을",
+                "root": "사실",
+                "english": "fact"
+            },
+            {
+                "original_word": "알게",
+                "root": "알다",
+                "english": "get to know"
+            },
+            {
+                "original_word": "된",
+                "root": "되다",
+                "english": "became"
+            },
+            {
+                "original_word": "관람객들은",
+                "root": "관람객",
+                "english": "visitors"
+            },
+            {
+                "original_word": "불만을",
+                "root": "불만",
+                "english": "complaint/dissatisfaction"
+            },
+            {
+                "original_word": "쏟아",
+                "root": "쏟다",
+                "english": "pour"
+            },
+            {
+                "original_word": "내고",
+                "root": "내다",
+                "english": "out and"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "are"
+            },
+            {
+                "original_word": "전문가들은",
+                "root": "전문가",
+                "english": "experts"
+            },
+            {
+                "original_word": "이런",
+                "root": "이런",
+                "english": "this kind of"
+            },
+            {
+                "original_word": "전시",
+                "root": "전시",
+                "english": "exhibition"
+            },
+            {
+                "original_word": "행태가",
+                "root": "행태",
+                "english": "behavior"
+            },
+            {
+                "original_word": "미술계",
+                "root": "미술계",
+                "english": "art world"
+            },
+            {
+                "original_word": "발전의",
+                "root": "발전",
+                "english": "of development"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility/way"
+            },
+            {
+                "original_word": "있다고",
+                "root": "있다",
+                "english": "that there is"
+            },
+            {
+                "original_word": "우려한다",
+                "root": "우려하다",
+                "english": "worry"
+            },
+            {
+                "original_word": "전시회에",
+                "root": "전시회",
+                "english": "with the exhibition"
+            },
+            {
+                "original_word": "실망한",
+                "root": "실망하다",
+                "english": "disappointed"
+            },
+            {
+                "original_word": "사람들이",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "미술에",
+                "root": "미술",
+                "english": "in art"
+            },
+            {
+                "original_word": "대한",
+                "root": "대하다",
+                "english": "about"
+            },
+            {
+                "original_word": "관심을",
+                "root": "관심",
+                "english": "interest"
+            },
+            {
+                "original_word": "아예",
+                "root": "아예",
+                "english": "altogether/completely"
+            },
+            {
+                "original_word": "끊을",
+                "root": "끊다",
+                "english": "cut off"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "can"
+            },
+            {
+                "original_word": "있기",
+                "root": "있다",
+                "english": "because there is"
+            },
+            {
+                "original_word": "때문이다",
+                "root": "때문이다",
+                "english": "is the reason"
+            }
+        ]
+    },
+    {
+        "문제_번호": 23,
+        "지시문": "밑줄 친 부분에 나타난 '나'의 심정으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "꽃집을 지나다가 꽃말에 이끌려 금잔화 꽃씨를 샀다. 화분에 심어 사무실의 내 책상 위에 두었더니 어느 날 싹이 텄다. 때맞춰 물도 주며 나는 수시로 들여다보았다. 신기했다. 작고 여린 싹은 눈에 띄게 쑥쑥 자랐다. 그런데 내가 상상한 모습이 아니었다. 도대체 여기서 어떻게 꽃이 핀다는 건지. 무순처럼 길쭉하게 위로만 자라는 것이었다. 하루는 출근해 보니 금잔화가 쓰러져 있었다. 그럼 그렇지. 내가 무슨 식물을 키우나. 그날 나는 화분을 창가로 옮겨 놓았다. 죽을 것 같은 모습을 눈앞에서 보고 싶지 않았다. 그런데 어느 날부턴가 점점 줄기가 굵어지더니 잎도 제법 풍성해지기 시작했다. 어느 날에는 꽃망울도 올라와 있었다. 금잔화는 창문으로 들어오는 풍성한 햇볕 속에서 스스로 튼튼해졌다. 금잔화에게는 햇빛이 더 많이 필요했었나 보다. 사람도 식물도 사랑하려면 그 대상을 제대로 알아야 하는 건 똑같구나 싶었다. 씩씩하게 꽃피운 금잔화의 꽃말은 '반드시 올 행복'이다.",
+        "선택지": {
+            "1": "의심스럽다",
+            "2": "고통스럽다",
+            "3": "조심스럽다",
+            "4": "부담스럽다"
+        },
+        "정답": 1,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "꽃집을",
+                "root": "꽃집",
+                "english": "flower shop"
+            },
+            {
+                "original_word": "지나다가",
+                "root": "지나다",
+                "english": "passing by"
+            },
+            {
+                "original_word": "꽃말에",
+                "root": "꽃말",
+                "english": "to the flower language"
+            },
+            {
+                "original_word": "이끌려",
+                "root": "이끌리다",
+                "english": "drawn to"
+            },
+            {
+                "original_word": "금잔화",
+                "root": "금잔화",
+                "english": "marigold"
+            },
+            {
+                "original_word": "꽃씨를",
+                "root": "꽃씨",
+                "english": "flower seeds"
+            },
+            {
+                "original_word": "샀다",
+                "root": "사다",
+                "english": "bought"
+            },
+            {
+                "original_word": "화분에",
+                "root": "화분",
+                "english": "in a pot"
+            },
+            {
+                "original_word": "심어",
+                "root": "심다",
+                "english": "plant and"
+            },
+            {
+                "original_word": "사무실의",
+                "root": "사무실",
+                "english": "office's"
+            },
+            {
+                "original_word": "내",
+                "root": "내",
+                "english": "my"
+            },
+            {
+                "original_word": "책상",
+                "root": "책상",
+                "english": "desk"
+            },
+            {
+                "original_word": "위에",
+                "root": "위",
+                "english": "on"
+            },
+            {
+                "original_word": "두었더니",
+                "root": "두다",
+                "english": "placed and then"
+            },
+            {
+                "original_word": "어느",
+                "root": "어느",
+                "english": "one/some"
+            },
+            {
+                "original_word": "날",
+                "root": "날",
+                "english": "day"
+            },
+            {
+                "original_word": "싹이",
+                "root": "싹",
+                "english": "sprout"
+            },
+            {
+                "original_word": "텄다",
+                "root": "트다",
+                "english": "sprouted"
+            },
+            {
+                "original_word": "때맞춰",
+                "root": "때맞추다",
+                "english": "timely"
+            },
+            {
+                "original_word": "물도",
+                "root": "물",
+                "english": "water also"
+            },
+            {
+                "original_word": "주며",
+                "root": "주다",
+                "english": "giving and"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "수시로",
+                "root": "수시로",
+                "english": "frequently"
+            },
+            {
+                "original_word": "들여다보았다",
+                "root": "들여다보다",
+                "english": "looked into"
+            },
+            {
+                "original_word": "신기했다",
+                "root": "신기하다",
+                "english": "was amazing"
+            },
+            {
+                "original_word": "작고",
+                "root": "작다",
+                "english": "small and"
+            },
+            {
+                "original_word": "여린",
+                "root": "여리다",
+                "english": "tender"
+            },
+            {
+                "original_word": "싹은",
+                "root": "싹",
+                "english": "sprout"
+            },
+            {
+                "original_word": "눈에",
+                "root": "눈",
+                "english": "to the eye"
+            },
+            {
+                "original_word": "띄게",
+                "root": "띄다",
+                "english": "noticeably"
+            },
+            {
+                "original_word": "쑥쑥",
+                "root": "쑥쑥",
+                "english": "rapidly (growing)"
+            },
+            {
+                "original_word": "자랐다",
+                "root": "자라다",
+                "english": "grew"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "however"
+            },
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "상상한",
+                "root": "상상하다",
+                "english": "imagined"
+            },
+            {
+                "original_word": "모습이",
+                "root": "모습",
+                "english": "appearance"
+            },
+            {
+                "original_word": "아니었다",
+                "root": "아니다",
+                "english": "was not"
+            },
+            {
+                "original_word": "도대체",
+                "root": "도대체",
+                "english": "on earth"
+            },
+            {
+                "original_word": "여기서",
+                "root": "여기서",
+                "english": "here"
+            },
+            {
+                "original_word": "어떻게",
+                "root": "어떻게",
+                "english": "how"
+            },
+            {
+                "original_word": "꽃이",
+                "root": "꽃",
+                "english": "flower"
+            },
+            {
+                "original_word": "핀다는",
+                "root": "피다",
+                "english": "will bloom"
+            },
+            {
+                "original_word": "건지",
+                "root": "것인지",
+                "english": "the thing is"
+            },
+            {
+                "original_word": "무순처럼",
+                "root": "무순",
+                "english": "like radish sprouts"
+            },
+            {
+                "original_word": "길쭉하게",
+                "root": "길쭉하다",
+                "english": "long/elongated"
+            },
+            {
+                "original_word": "위로만",
+                "root": "위로",
+                "english": "only upwards"
+            },
+            {
+                "original_word": "자라는",
+                "root": "자라다",
+                "english": "growing"
+            },
+            {
+                "original_word": "것이었다",
+                "root": "것이다",
+                "english": "it was"
+            },
+            {
+                "original_word": "하루는",
+                "root": "하루",
+                "english": "one day"
+            },
+            {
+                "original_word": "출근해",
+                "root": "출근하다",
+                "english": "went to work and"
+            },
+            {
+                "original_word": "보니",
+                "root": "보다",
+                "english": "saw"
+            },
+            {
+                "original_word": "금잔화가",
+                "root": "금잔화",
+                "english": "marigold"
+            },
+            {
+                "original_word": "쓰러져",
+                "root": "쓰러지다",
+                "english": "collapsed"
+            },
+            {
+                "original_word": "있었다",
+                "root": "있다",
+                "english": "was"
+            },
+            {
+                "original_word": "그럼",
+                "root": "그럼",
+                "english": "of course/then"
+            },
+            {
+                "original_word": "그렇지",
+                "root": "그렇다",
+                "english": "it is so"
+            },
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "무슨",
+                "root": "무슨",
+                "english": "what kind of"
+            },
+            {
+                "original_word": "식물을",
+                "root": "식물",
+                "english": "plant"
+            },
+            {
+                "original_word": "키우나",
+                "root": "키우다",
+                "english": "can raise"
+            },
+            {
+                "original_word": "그날",
+                "root": "그날",
+                "english": "that day"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "화분을",
+                "root": "화분",
+                "english": "pot"
+            },
+            {
+                "original_word": "창가로",
+                "root": "창가",
+                "english": "to the window"
+            },
+            {
+                "original_word": "옮겨",
+                "root": "옮기다",
+                "english": "moved"
+            },
+            {
+                "original_word": "놓았다",
+                "root": "놓다",
+                "english": "placed"
+            },
+            {
+                "original_word": "죽을",
+                "root": "죽다",
+                "english": "dying"
+            },
+            {
+                "original_word": "것",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "같은",
+                "root": "같다",
+                "english": "like"
+            },
+            {
+                "original_word": "모습을",
+                "root": "모습",
+                "english": "appearance"
+            },
+            {
+                "original_word": "눈앞에서",
+                "root": "눈앞",
+                "english": "in front of eyes"
+            },
+            {
+                "original_word": "보고",
+                "root": "보다",
+                "english": "see"
+            },
+            {
+                "original_word": "싶지",
+                "root": "싶다",
+                "english": "want to"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "did not"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "but"
+            },
+            {
+                "original_word": "어느",
+                "root": "어느",
+                "english": "one"
+            },
+            {
+                "original_word": "날부턴가",
+                "root": "날부터인가",
+                "english": "from some day"
+            },
+            {
+                "original_word": "점점",
+                "root": "점점",
+                "english": "gradually"
+            },
+            {
+                "original_word": "줄기가",
+                "root": "줄기",
+                "english": "stem"
+            },
+            {
+                "original_word": "굵어지더니",
+                "root": "굵어지다",
+                "english": "got thicker and then"
+            },
+            {
+                "original_word": "잎도",
+                "root": "잎",
+                "english": "leaves also"
+            },
+            {
+                "original_word": "제법",
+                "root": "제법",
+                "english": "quite"
+            },
+            {
+                "original_word": "풍성해지기",
+                "root": "풍성해지다",
+                "english": "becoming abundant"
+            },
+            {
+                "original_word": "시작했다",
+                "root": "시작하다",
+                "english": "started"
+            },
+            {
+                "original_word": "어느",
+                "root": "어느",
+                "english": "one"
+            },
+            {
+                "original_word": "날에는",
+                "root": "날",
+                "english": "day"
+            },
+            {
+                "original_word": "꽃망울도",
+                "root": "꽃망울",
+                "english": "flower bud also"
+            },
+            {
+                "original_word": "올라와",
+                "root": "올라오다",
+                "english": "came up"
+            },
+            {
+                "original_word": "있었다",
+                "root": "있다",
+                "english": "was"
+            },
+            {
+                "original_word": "금잔화는",
+                "root": "금잔화",
+                "english": "marigold"
+            },
+            {
+                "original_word": "창문으로",
+                "root": "창문",
+                "english": "through the window"
+            },
+            {
+                "original_word": "들어오는",
+                "root": "들어오다",
+                "english": "coming in"
+            },
+            {
+                "original_word": "풍성한",
+                "root": "풍성하다",
+                "english": "abundant"
+            },
+            {
+                "original_word": "햇볕",
+                "root": "햇볕",
+                "english": "sunlight"
+            },
+            {
+                "original_word": "속에서",
+                "root": "속",
+                "english": "inside/amidst"
+            },
+            {
+                "original_word": "스스로",
+                "root": "스스로",
+                "english": "by itself"
+            },
+            {
+                "original_word": "튼튼해졌다",
+                "root": "튼튼해지다",
+                "english": "became strong"
+            },
+            {
+                "original_word": "금잔화에게는",
+                "root": "금잔화",
+                "english": "for the marigold"
+            },
+            {
+                "original_word": "햇빛이",
+                "root": "햇빛",
+                "english": "sunlight"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "많이",
+                "root": "많이",
+                "english": "much/a lot"
+            },
+            {
+                "original_word": "필요했었나",
+                "root": "필요하다",
+                "english": "might have needed"
+            },
+            {
+                "original_word": "보다",
+                "root": "보다",
+                "english": "seems"
+            },
+            {
+                "original_word": "사람도",
+                "root": "사람",
+                "english": "people also"
+            },
+            {
+                "original_word": "식물도",
+                "root": "식물",
+                "english": "plants also"
+            },
+            {
+                "original_word": "사랑하려면",
+                "root": "사랑하다",
+                "english": "to love"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "대상을",
+                "root": "대상",
+                "english": "target/object"
+            },
+            {
+                "original_word": "제대로",
+                "root": "제대로",
+                "english": "properly"
+            },
+            {
+                "original_word": "알아야",
+                "root": "알다",
+                "english": "must know"
+            },
+            {
+                "original_word": "하는",
+                "root": "하다",
+                "english": "doing"
+            },
+            {
+                "original_word": "건",
+                "root": "것은",
+                "english": "thing"
+            },
+            {
+                "original_word": "똑같구나",
+                "root": "똑같다",
+                "english": "is exactly the same"
+            },
+            {
+                "original_word": "싶었다",
+                "root": "싶다",
+                "english": "felt like"
+            },
+            {
+                "original_word": "씩씩하게",
+                "root": "씩씩하다",
+                "english": "bravely/vigorously"
+            },
+            {
+                "original_word": "꽃피운",
+                "root": "꽃피우다",
+                "english": "bloomed"
+            },
+            {
+                "original_word": "금잔화의",
+                "root": "금잔화",
+                "english": "marigold's"
+            },
+            {
+                "original_word": "꽃말은",
+                "root": "꽃말",
+                "english": "flower language"
+            },
+            {
+                "original_word": "'반드시",
+                "root": "반드시",
+                "english": "surely"
+            },
+            {
+                "original_word": "올",
+                "root": "오다",
+                "english": "to come"
+            },
+            {
+                "original_word": "행복'이다",
+                "root": "행복이다",
+                "english": "is happiness"
+            }
+        ]
+    },
+    {
+        "문제_번호": 24,
+        "지시문": "윗글의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "꽃집을 지나다가 꽃말에 이끌려 금잔화 꽃씨를 샀다. 화분에 심어 사무실의 내 책상 위에 두었더니 어느 날 싹이 텄다. 때맞춰 물도 주며 나는 수시로 들여다보았다. 신기했다. 작고 여린 싹은 눈에 띄게 쑥쑥 자랐다. 그런데 내가 상상한 모습이 아니었다. 도대체 여기서 어떻게 꽃이 핀다는 건지. 무순처럼 길쭉하게 위로만 자라는 것이었다. 하루는 출근해 보니 금잔화가 쓰러져 있었다. 그럼 그렇지. 내가 무슨 식물을 키우나. 그날 나는 화분을 창가로 옮겨 놓았다. 죽을 것 같은 모습을 눈앞에서 보고 싶지 않았다. 그런데 어느 날부턴가 점점 줄기가 굵어지더니 잎도 제법 풍성해지기 시작했다. 어느 날에는 꽃망울도 올라와 있었다. 금잔화는 창문으로 들어오는 풍성한 햇볕 속에서 스스로 튼튼해졌다. 금잔화에게는 햇빛이 더 많이 필요했었나 보다. 사람도 식물도 사랑하려면 그 대상을 제대로 알아야 하는 건 똑같구나 싶었다. 씩씩하게 꽃피운 금잔화의 꽃말은 '반드시 올 행복'이다.",
+        "선택지": {
+            "1": "내 책상 위에 둔 금잔화는 금방 말라 죽었다.",
+            "2": "나는 금잔화 화분에 물을 제대로 주지 못했다.",
+            "3": "나는 꽃집에서 금잔화가 피어 있는 화분을 샀다.",
+            "4": "내가 금잔화 화분을 옮긴 곳은 햇볕이 잘 들었다."
+        },
+        "정답": 4,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "꽃집을",
+                "root": "꽃집",
+                "english": "flower shop"
+            },
+            {
+                "original_word": "지나다가",
+                "root": "지나다",
+                "english": "passing by"
+            },
+            {
+                "original_word": "꽃말에",
+                "root": "꽃말",
+                "english": "to the flower language"
+            },
+            {
+                "original_word": "이끌려",
+                "root": "이끌리다",
+                "english": "drawn to"
+            },
+            {
+                "original_word": "금잔화",
+                "root": "금잔화",
+                "english": "marigold"
+            },
+            {
+                "original_word": "꽃씨를",
+                "root": "꽃씨",
+                "english": "flower seeds"
+            },
+            {
+                "original_word": "샀다",
+                "root": "사다",
+                "english": "bought"
+            },
+            {
+                "original_word": "화분에",
+                "root": "화분",
+                "english": "in a pot"
+            },
+            {
+                "original_word": "심어",
+                "root": "심다",
+                "english": "plant and"
+            },
+            {
+                "original_word": "사무실의",
+                "root": "사무실",
+                "english": "office's"
+            },
+            {
+                "original_word": "내",
+                "root": "내",
+                "english": "my"
+            },
+            {
+                "original_word": "책상",
+                "root": "책상",
+                "english": "desk"
+            },
+            {
+                "original_word": "위에",
+                "root": "위",
+                "english": "on"
+            },
+            {
+                "original_word": "두었더니",
+                "root": "두다",
+                "english": "placed and then"
+            },
+            {
+                "original_word": "어느",
+                "root": "어느",
+                "english": "one/some"
+            },
+            {
+                "original_word": "날",
+                "root": "날",
+                "english": "day"
+            },
+            {
+                "original_word": "싹이",
+                "root": "싹",
+                "english": "sprout"
+            },
+            {
+                "original_word": "텄다",
+                "root": "트다",
+                "english": "sprouted"
+            },
+            {
+                "original_word": "때맞춰",
+                "root": "때맞추다",
+                "english": "timely"
+            },
+            {
+                "original_word": "물도",
+                "root": "물",
+                "english": "water also"
+            },
+            {
+                "original_word": "주며",
+                "root": "주다",
+                "english": "giving and"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "수시로",
+                "root": "수시로",
+                "english": "frequently"
+            },
+            {
+                "original_word": "들여다보았다",
+                "root": "들여다보다",
+                "english": "looked into"
+            },
+            {
+                "original_word": "신기했다",
+                "root": "신기하다",
+                "english": "was amazing"
+            },
+            {
+                "original_word": "작고",
+                "root": "작다",
+                "english": "small and"
+            },
+            {
+                "original_word": "여린",
+                "root": "여리다",
+                "english": "tender"
+            },
+            {
+                "original_word": "싹은",
+                "root": "싹",
+                "english": "sprout"
+            },
+            {
+                "original_word": "눈에",
+                "root": "눈",
+                "english": "to the eye"
+            },
+            {
+                "original_word": "띄게",
+                "root": "띄다",
+                "english": "noticeably"
+            },
+            {
+                "original_word": "쑥쑥",
+                "root": "쑥쑥",
+                "english": "rapidly (growing)"
+            },
+            {
+                "original_word": "자랐다",
+                "root": "자라다",
+                "english": "grew"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "however"
+            },
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "상상한",
+                "root": "상상하다",
+                "english": "imagined"
+            },
+            {
+                "original_word": "모습이",
+                "root": "모습",
+                "english": "appearance"
+            },
+            {
+                "original_word": "아니었다",
+                "root": "아니다",
+                "english": "was not"
+            },
+            {
+                "original_word": "도대체",
+                "root": "도대체",
+                "english": "on earth"
+            },
+            {
+                "original_word": "여기서",
+                "root": "여기서",
+                "english": "here"
+            },
+            {
+                "original_word": "어떻게",
+                "root": "어떻게",
+                "english": "how"
+            },
+            {
+                "original_word": "꽃이",
+                "root": "꽃",
+                "english": "flower"
+            },
+            {
+                "original_word": "핀다는",
+                "root": "피다",
+                "english": "will bloom"
+            },
+            {
+                "original_word": "건지",
+                "root": "것인지",
+                "english": "the thing is"
+            },
+            {
+                "original_word": "무순처럼",
+                "root": "무순",
+                "english": "like radish sprouts"
+            },
+            {
+                "original_word": "길쭉하게",
+                "root": "길쭉하다",
+                "english": "long/elongated"
+            },
+            {
+                "original_word": "위로만",
+                "root": "위로",
+                "english": "only upwards"
+            },
+            {
+                "original_word": "자라는",
+                "root": "자라다",
+                "english": "growing"
+            },
+            {
+                "original_word": "것이었다",
+                "root": "것이다",
+                "english": "it was"
+            },
+            {
+                "original_word": "하루는",
+                "root": "하루",
+                "english": "one day"
+            },
+            {
+                "original_word": "출근해",
+                "root": "출근하다",
+                "english": "went to work and"
+            },
+            {
+                "original_word": "보니",
+                "root": "보다",
+                "english": "saw"
+            },
+            {
+                "original_word": "금잔화가",
+                "root": "금잔화",
+                "english": "marigold"
+            },
+            {
+                "original_word": "쓰러져",
+                "root": "쓰러지다",
+                "english": "collapsed"
+            },
+            {
+                "original_word": "있었다",
+                "root": "있다",
+                "english": "was"
+            },
+            {
+                "original_word": "그럼",
+                "root": "그럼",
+                "english": "of course/then"
+            },
+            {
+                "original_word": "그렇지",
+                "root": "그렇다",
+                "english": "it is so"
+            },
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "무슨",
+                "root": "무슨",
+                "english": "what kind of"
+            },
+            {
+                "original_word": "식물을",
+                "root": "식물",
+                "english": "plant"
+            },
+            {
+                "original_word": "키우나",
+                "root": "키우다",
+                "english": "can raise"
+            },
+            {
+                "original_word": "그날",
+                "root": "그날",
+                "english": "that day"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "화분을",
+                "root": "화분",
+                "english": "pot"
+            },
+            {
+                "original_word": "창가로",
+                "root": "창가",
+                "english": "to the window"
+            },
+            {
+                "original_word": "옮겨",
+                "root": "옮기다",
+                "english": "moved"
+            },
+            {
+                "original_word": "놓았다",
+                "root": "놓다",
+                "english": "placed"
+            },
+            {
+                "original_word": "죽을",
+                "root": "죽다",
+                "english": "dying"
+            },
+            {
+                "original_word": "것",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "같은",
+                "root": "같다",
+                "english": "like"
+            },
+            {
+                "original_word": "모습을",
+                "root": "모습",
+                "english": "appearance"
+            },
+            {
+                "original_word": "눈앞에서",
+                "root": "눈앞",
+                "english": "in front of eyes"
+            },
+            {
+                "original_word": "보고",
+                "root": "보다",
+                "english": "see"
+            },
+            {
+                "original_word": "싶지",
+                "root": "싶다",
+                "english": "want to"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "did not"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "but"
+            },
+            {
+                "original_word": "어느",
+                "root": "어느",
+                "english": "one"
+            },
+            {
+                "original_word": "날부턴가",
+                "root": "날부터인가",
+                "english": "from some day"
+            },
+            {
+                "original_word": "점점",
+                "root": "점점",
+                "english": "gradually"
+            },
+            {
+                "original_word": "줄기가",
+                "root": "줄기",
+                "english": "stem"
+            },
+            {
+                "original_word": "굵어지더니",
+                "root": "굵어지다",
+                "english": "got thicker and then"
+            },
+            {
+                "original_word": "잎도",
+                "root": "잎",
+                "english": "leaves also"
+            },
+            {
+                "original_word": "제법",
+                "root": "제법",
+                "english": "quite"
+            },
+            {
+                "original_word": "풍성해지기",
+                "root": "풍성해지다",
+                "english": "becoming abundant"
+            },
+            {
+                "original_word": "시작했다",
+                "root": "시작하다",
+                "english": "started"
+            },
+            {
+                "original_word": "어느",
+                "root": "어느",
+                "english": "one"
+            },
+            {
+                "original_word": "날에는",
+                "root": "날",
+                "english": "day"
+            },
+            {
+                "original_word": "꽃망울도",
+                "root": "꽃망울",
+                "english": "flower bud also"
+            },
+            {
+                "original_word": "올라와",
+                "root": "올라오다",
+                "english": "came up"
+            },
+            {
+                "original_word": "있었다",
+                "root": "있다",
+                "english": "was"
+            },
+            {
+                "original_word": "금잔화는",
+                "root": "금잔화",
+                "english": "marigold"
+            },
+            {
+                "original_word": "창문으로",
+                "root": "창문",
+                "english": "through the window"
+            },
+            {
+                "original_word": "들어오는",
+                "root": "들어오다",
+                "english": "coming in"
+            },
+            {
+                "original_word": "풍성한",
+                "root": "풍성하다",
+                "english": "abundant"
+            },
+            {
+                "original_word": "햇볕",
+                "root": "햇볕",
+                "english": "sunlight"
+            },
+            {
+                "original_word": "속에서",
+                "root": "속",
+                "english": "inside/amidst"
+            },
+            {
+                "original_word": "스스로",
+                "root": "스스로",
+                "english": "by itself"
+            },
+            {
+                "original_word": "튼튼해졌다",
+                "root": "튼튼해지다",
+                "english": "became strong"
+            },
+            {
+                "original_word": "금잔화에게는",
+                "root": "금잔화",
+                "english": "for the marigold"
+            },
+            {
+                "original_word": "햇빛이",
+                "root": "햇빛",
+                "english": "sunlight"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "많이",
+                "root": "많이",
+                "english": "much/a lot"
+            },
+            {
+                "original_word": "필요했었나",
+                "root": "필요하다",
+                "english": "might have needed"
+            },
+            {
+                "original_word": "보다",
+                "root": "보다",
+                "english": "seems"
+            },
+            {
+                "original_word": "사람도",
+                "root": "사람",
+                "english": "people also"
+            },
+            {
+                "original_word": "식물도",
+                "root": "식물",
+                "english": "plants also"
+            },
+            {
+                "original_word": "사랑하려면",
+                "root": "사랑하다",
+                "english": "to love"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "대상을",
+                "root": "대상",
+                "english": "target/object"
+            },
+            {
+                "original_word": "제대로",
+                "root": "제대로",
+                "english": "properly"
+            },
+            {
+                "original_word": "알아야",
+                "root": "알다",
+                "english": "must know"
+            },
+            {
+                "original_word": "하는",
+                "root": "하다",
+                "english": "doing"
+            },
+            {
+                "original_word": "건",
+                "root": "것은",
+                "english": "thing"
+            },
+            {
+                "original_word": "똑같구나",
+                "root": "똑같다",
+                "english": "is exactly the same"
+            },
+            {
+                "original_word": "싶었다",
+                "root": "싶다",
+                "english": "felt like"
+            },
+            {
+                "original_word": "씩씩하게",
+                "root": "씩씩하다",
+                "english": "bravely/vigorously"
+            },
+            {
+                "original_word": "꽃피운",
+                "root": "꽃피우다",
+                "english": "bloomed"
+            },
+            {
+                "original_word": "금잔화의",
+                "root": "금잔화",
+                "english": "marigold's"
+            },
+            {
+                "original_word": "꽃말은",
+                "root": "꽃말",
+                "english": "flower language"
+            },
+            {
+                "original_word": "'반드시",
+                "root": "반드시",
+                "english": "surely"
+            },
+            {
+                "original_word": "올",
+                "root": "오다",
+                "english": "to come"
+            },
+            {
+                "original_word": "행복'이다",
+                "root": "행복이다",
+                "english": "is happiness"
+            }
+        ]
+    },
+    {
+        "문제_번호": 25,
+        "지시문": "다음 신문 기사의 제목을 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "가수 진영, 3년 만의 콘서트에 구름 관중",
+        "선택지": {
+            "1": "가수 진영이 3년 만에 콘서트를 열자 수많은 관중이 몰렸다.",
+            "2": "가수 진영이 3년 내에 다시 콘서트를 열기로 관중에게 약속했다.",
+            "3": "가수 진영이 3년간 준비한 콘서트를 열었으나 관중의 호응이 적었다.",
+            "4": "가수 진영이 3년 만에 하는 콘서트에 많은 관중을 모으려고 홍보했다."
+        },
+        "정답": 1,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "가수",
+                "root": "가수",
+                "english": "singer"
+            },
+            {
+                "original_word": "진영",
+                "root": "진영",
+                "english": "Jin-young"
+            },
+            {
+                "original_word": "3년",
+                "root": "3년",
+                "english": "3 years"
+            },
+            {
+                "original_word": "만의",
+                "root": "만",
+                "english": "after a gap of"
+            },
+            {
+                "original_word": "콘서트에",
+                "root": "콘서트",
+                "english": "in concert"
+            },
+            {
+                "original_word": "구름",
+                "root": "구름",
+                "english": "cloud (large crowd)"
+            },
+            {
+                "original_word": "관중",
+                "root": "관중",
+                "english": "audience"
+            }
+        ]
+    },
+    {
+        "문제_번호": 26,
+        "지시문": "다음 신문 기사의 제목을 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "한국 탁구의 간판 김수미, 올해 국제 대회 금메달 싹쓸이",
+        "선택지": {
+            "1": "올해 국제 탁구 대회에서 한국 대표 김수미의 금메달 가능성이 높아졌다.",
+            "2": "한국 탁구계가 김수미를 내세워 올해 국제 대회의 금메달을 노리고 있다.",
+            "3": "한국의 대표 탁구 선수 김수미가 올해 국제 대회에서 모두 금메달을 땄다.",
+            "4": "한국 탁구 선수 김수미가 올해 국제 대회에서 금메달을 따고자 훈련 중이다."
+        },
+        "정답": 3,
+        "주제": "문화",
+        "단어맵": [
+            {
+                "original_word": "한국",
+                "root": "한국",
+                "english": "Korea"
+            },
+            {
+                "original_word": "탁구의",
+                "root": "탁구",
+                "english": "table tennis's"
+            },
+            {
+                "original_word": "간판",
+                "root": "간판",
+                "english": "representative/signboard"
+            },
+            {
+                "original_word": "김수미",
+                "root": "김수미",
+                "english": "Kim Su-mi"
+            },
+            {
+                "original_word": "올해",
+                "root": "올해",
+                "english": "this year"
+            },
+            {
+                "original_word": "국제",
+                "root": "국제",
+                "english": "international"
+            },
+            {
+                "original_word": "대회",
+                "root": "대회",
+                "english": "tournament/competition"
+            },
+            {
+                "original_word": "금메달",
+                "root": "금메달",
+                "english": "gold medal"
+            },
+            {
+                "original_word": "싹쓸이",
+                "root": "싹쓸이",
+                "english": "sweeping/winning all"
+            }
+        ]
+    },
+    {
+        "문제_번호": 27,
+        "지시문": "다음 신문 기사의 제목을 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "대출 금리 하락세, 부동산 시장 기지개",
+        "선택지": {
+            "1": "대출 금리가 떨어지면서 부동산 시장이 살아나기 시작했다.",
+            "2": "부동산 시장에 대한 규제가 대출 금리 하락에 영향을 미쳤다.",
+            "3": "대출 금리가 하락했지만 부동산 시장의 거래는 줄어들고 있다.",
+            "4": "부동산 시장을 활성화하려고 대출 금리 안정화 대책이 논의되고 있다."
+        },
+        "정답": 1,
+        "주제": "경제",
+        "단어맵": [
+            {
+                "original_word": "대출",
+                "root": "대출",
+                "english": "loan"
+            },
+            {
+                "original_word": "금리",
+                "root": "금리",
+                "english": "interest rate"
+            },
+            {
+                "original_word": "하락세",
+                "root": "하락세",
+                "english": "downtrend"
+            },
+            {
+                "original_word": "부동산",
+                "root": "부동산",
+                "english": "real estate"
+            },
+            {
+                "original_word": "시장",
+                "root": "시장",
+                "english": "market"
+            },
+            {
+                "original_word": "기지개",
+                "root": "기지개",
+                "english": "stretching (reviving)"
+            }
+        ]
+    },
+    {
+        "문제_번호": 28,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "선글라스는 보통 햇빛이 강할 때 눈 건강을 위해 쓴다. 그런데 선글라스의 렌즈는 사용 기한이 있다. 선글라스의 렌즈에는 자외선 차단을 위한 얇은 막이 입혀져 있는데 열에 계속 노출되면 자외선 차단 기능이 점점 떨어지게 된다. 자외선 차단 기능이 약해진 선글라스로는 눈을 보호하기 어려우므로 5년 정도 쓰고 나면 ( ) 것이 좋다.",
+        "선택지": {
+            "1": "렌즈를 바꿔 주는",
+            "2": "렌즈를 꼼꼼히 잘 닦는",
+            "3": "렌즈의 색을 어둡게 하는",
+            "4": "렌즈의 얇은 막을 벗겨 내는"
+        },
+        "정답": 1,
+        "주제": "과학",
+        "단어맵": [
+            {
+                "original_word": "선글라스는",
+                "root": "선글라스",
+                "english": "sunglasses"
+            },
+            {
+                "original_word": "보통",
+                "root": "보통",
+                "english": "usually"
+            },
+            {
+                "original_word": "햇빛이",
+                "root": "햇빛",
+                "english": "sunlight"
+            },
+            {
+                "original_word": "강할",
+                "root": "강하다",
+                "english": "strong"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "when"
+            },
+            {
+                "original_word": "눈",
+                "root": "눈",
+                "english": "eye"
+            },
+            {
+                "original_word": "건강을",
+                "root": "건강",
+                "english": "health"
+            },
+            {
+                "original_word": "위해",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "쓴다",
+                "root": "쓰다",
+                "english": "use/wear"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "however"
+            },
+            {
+                "original_word": "선글라스의",
+                "root": "선글라스",
+                "english": "sunglasses'"
+            },
+            {
+                "original_word": "렌즈는",
+                "root": "렌즈",
+                "english": "lens"
+            },
+            {
+                "original_word": "사용",
+                "root": "사용",
+                "english": "use"
+            },
+            {
+                "original_word": "기한이",
+                "root": "기한",
+                "english": "expiration date/limit"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "is/exists"
+            },
+            {
+                "original_word": "선글라스의",
+                "root": "선글라스",
+                "english": "sunglasses'"
+            },
+            {
+                "original_word": "렌즈에는",
+                "root": "렌즈",
+                "english": "on the lens"
+            },
+            {
+                "original_word": "자외선",
+                "root": "자외선",
+                "english": "ultraviolet"
+            },
+            {
+                "original_word": "차단을",
+                "root": "차단",
+                "english": "blocking"
+            },
+            {
+                "original_word": "위한",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "얇은",
+                "root": "얇다",
+                "english": "thin"
+            },
+            {
+                "original_word": "막이",
+                "root": "막",
+                "english": "film/layer"
+            },
+            {
+                "original_word": "입혀져",
+                "root": "입혀지다",
+                "english": "coated/applied"
+            },
+            {
+                "original_word": "있는데",
+                "root": "있다",
+                "english": "is but"
+            },
+            {
+                "original_word": "열에",
+                "root": "열",
+                "english": "to heat"
+            },
+            {
+                "original_word": "계속",
+                "root": "계속",
+                "english": "continuously"
+            },
+            {
+                "original_word": "노출되면",
+                "root": "노출되다",
+                "english": "if exposed"
+            },
+            {
+                "original_word": "자외선",
+                "root": "자외선",
+                "english": "ultraviolet"
+            },
+            {
+                "original_word": "차단",
+                "root": "차단",
+                "english": "blocking"
+            },
+            {
+                "original_word": "기능이",
+                "root": "기능",
+                "english": "function"
+            },
+            {
+                "original_word": "점점",
+                "root": "점점",
+                "english": "gradually"
+            },
+            {
+                "original_word": "떨어지게",
+                "root": "떨어지다",
+                "english": "drop/decline"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "becomes"
+            },
+            {
+                "original_word": "자외선",
+                "root": "자외선",
+                "english": "ultraviolet"
+            },
+            {
+                "original_word": "차단",
+                "root": "차단",
+                "english": "blocking"
+            },
+            {
+                "original_word": "기능이",
+                "root": "기능",
+                "english": "function"
+            },
+            {
+                "original_word": "약해진",
+                "root": "약해지다",
+                "english": "weakened"
+            },
+            {
+                "original_word": "선글라스로는",
+                "root": "선글라스",
+                "english": "with sunglasses"
+            },
+            {
+                "original_word": "눈을",
+                "root": "눈",
+                "english": "eye"
+            },
+            {
+                "original_word": "보호하기",
+                "root": "보호하다",
+                "english": "protecting"
+            },
+            {
+                "original_word": "어려우므로",
+                "root": "어렵다",
+                "english": "is difficult so"
+            },
+            {
+                "original_word": "5년",
+                "root": "5년",
+                "english": "5 years"
+            },
+            {
+                "original_word": "정도",
+                "root": "정도",
+                "english": "about/approximately"
+            },
+            {
+                "original_word": "쓰고",
+                "root": "쓰다",
+                "english": "use and"
+            },
+            {
+                "original_word": "나면",
+                "root": "나다",
+                "english": "after"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "좋다",
+                "root": "좋다",
+                "english": "is good"
+            }
+        ]
+    },
+    {
+        "문제_번호": 29,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "사진에서 구도는 전체적인 분위기를 살리는 중요한 요소이다. 보통 동적인 느낌을 주고 싶을 때는 대각선 구도를 쓰는데 도로나 폭포 등의 풍경 사진 등에 쓰여 생동감을 표현한다. 한편 전통적인 가족사진은 ( ) 위해서 삼각형 구도를 가장 많이 활용한다. 이 구도는 연장자를 중심으로 가족 구성원이 옆이나 뒤에 배치되어 전체적으로 편안하고 균형 잡힌 분위기를 만들어 낸다.",
+        "선택지": {
+            "1": "동적인 효과를 살리기",
+            "2": "안정적인 느낌을 주기",
+            "3": "풍경을 중앙에 배치하기",
+            "4": "긴장된 분위기를 연출하기"
+        },
+        "정답": 2,
+        "주제": "예술",
+        "단어맵": [
+            {
+                "original_word": "사진에서",
+                "root": "사진",
+                "english": "in photography"
+            },
+            {
+                "original_word": "구도는",
+                "root": "구도",
+                "english": "composition"
+            },
+            {
+                "original_word": "전체적인",
+                "root": "전체적",
+                "english": "overall"
+            },
+            {
+                "original_word": "분위기를",
+                "root": "분위기",
+                "english": "atmosphere"
+            },
+            {
+                "original_word": "살리는",
+                "root": "살리다",
+                "english": "bringing alive/saving"
+            },
+            {
+                "original_word": "중요한",
+                "root": "중요하다",
+                "english": "important"
+            },
+            {
+                "original_word": "요소이다",
+                "root": "요소이다",
+                "english": "is an element"
+            },
+            {
+                "original_word": "보통",
+                "root": "보통",
+                "english": "usually"
+            },
+            {
+                "original_word": "동적인",
+                "root": "동적",
+                "english": "dynamic"
+            },
+            {
+                "original_word": "느낌을",
+                "root": "느낌",
+                "english": "feeling"
+            },
+            {
+                "original_word": "주고",
+                "root": "주다",
+                "english": "give and"
+            },
+            {
+                "original_word": "싶을",
+                "root": "싶다",
+                "english": "want"
+            },
+            {
+                "original_word": "때는",
+                "root": "때",
+                "english": "when"
+            },
+            {
+                "original_word": "대각선",
+                "root": "대각선",
+                "english": "diagonal"
+            },
+            {
+                "original_word": "구도를",
+                "root": "구도",
+                "english": "composition"
+            },
+            {
+                "original_word": "쓰는데",
+                "root": "쓰다",
+                "english": "use but"
+            },
+            {
+                "original_word": "도로나",
+                "root": "도로",
+                "english": "road or"
+            },
+            {
+                "original_word": "폭포",
+                "root": "폭포",
+                "english": "waterfall"
+            },
+            {
+                "original_word": "등의",
+                "root": "등",
+                "english": "such as"
+            },
+            {
+                "original_word": "풍경",
+                "root": "풍경",
+                "english": "landscape/scenery"
+            },
+            {
+                "original_word": "사진",
+                "root": "사진",
+                "english": "photo"
+            },
+            {
+                "original_word": "등에",
+                "root": "등",
+                "english": "etc."
+            },
+            {
+                "original_word": "쓰여",
+                "root": "쓰이다",
+                "english": "is used"
+            },
+            {
+                "original_word": "생동감을",
+                "root": "생동감",
+                "english": "liveliness/vitality"
+            },
+            {
+                "original_word": "표현한다",
+                "root": "표현하다",
+                "english": "express"
+            },
+            {
+                "original_word": "한편",
+                "root": "한편",
+                "english": "on the other hand"
+            },
+            {
+                "original_word": "전통적인",
+                "root": "전통적",
+                "english": "traditional"
+            },
+            {
+                "original_word": "가족사진은",
+                "root": "가족사진",
+                "english": "family photo"
+            },
+            {
+                "original_word": "위해서",
+                "root": "위하다",
+                "english": "for the sake of"
+            },
+            {
+                "original_word": "삼각형",
+                "root": "삼각형",
+                "english": "triangle"
+            },
+            {
+                "original_word": "구도를",
+                "root": "구도",
+                "english": "composition"
+            },
+            {
+                "original_word": "가장",
+                "root": "가장",
+                "english": "most"
+            },
+            {
+                "original_word": "많이",
+                "root": "많이",
+                "english": "much/often"
+            },
+            {
+                "original_word": "활용한다",
+                "root": "활용하다",
+                "english": "utilize"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "구도는",
+                "root": "구도",
+                "english": "composition"
+            },
+            {
+                "original_word": "연장자를",
+                "root": "연장자",
+                "english": "elder/senior"
+            },
+            {
+                "original_word": "중심으로",
+                "root": "중심",
+                "english": "as the center"
+            },
+            {
+                "original_word": "가족",
+                "root": "가족",
+                "english": "family"
+            },
+            {
+                "original_word": "구성원이",
+                "root": "구성원",
+                "english": "member"
+            },
+            {
+                "original_word": "옆이나",
+                "root": "옆",
+                "english": "side or"
+            },
+            {
+                "original_word": "뒤에",
+                "root": "뒤",
+                "english": "behind"
+            },
+            {
+                "original_word": "배치되어",
+                "root": "배치되다",
+                "english": "is arranged"
+            },
+            {
+                "original_word": "전체적으로",
+                "root": "전체적",
+                "english": "overall"
+            },
+            {
+                "original_word": "편안하고",
+                "root": "편안하다",
+                "english": "comfortable and"
+            },
+            {
+                "original_word": "균형",
+                "root": "균형",
+                "english": "balance"
+            },
+            {
+                "original_word": "잡힌",
+                "root": "잡히다",
+                "english": "caught/kept"
+            },
+            {
+                "original_word": "분위기를",
+                "root": "분위기",
+                "english": "atmosphere"
+            },
+            {
+                "original_word": "만들어",
+                "root": "만들다",
+                "english": "make"
+            },
+            {
+                "original_word": "낸다",
+                "root": "내다",
+                "english": "produce/yield"
+            }
+        ]
+    },
+    {
+        "문제_번호": 30,
+        "지시문": "( )에 들어갈 말로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "풍부한 자원은 경제 성장의 필요조건이지 충분조건은 아니다. 풍부한 천연 자원을 갖추고 있음에도 ( ) 경우도 있다. 풍부한 자원에만 의존해 경제 성장의 중심 산업인 제조업이나 서비스업 등에 투자를 하지 않게 되는 것이다. 반면에 천연자원이 빈약해도 새로운 기술 개발이나 교육을 통해 생산 능력을 높이는 나라도 있다.",
+        "선택지": {
+            "1": "제조업에 의존하려는",
+            "2": "자원을 생산하지 못하는",
+            "3": "경제 발전을 이루지 못하는",
+            "4": "기술 개발에 무리하게 투자하는"
+        },
+        "정답": 3,
+        "주제": "경제",
+        "단어맵": [
+            {
+                "original_word": "풍부한",
+                "root": "풍부하다",
+                "english": "abundant"
+            },
+            {
+                "original_word": "자원은",
+                "root": "자원",
+                "english": "resources"
+            },
+            {
+                "original_word": "경제",
+                "root": "경제",
+                "english": "economic"
+            },
+            {
+                "original_word": "성장의",
+                "root": "성장",
+                "english": "of growth"
+            },
+            {
+                "original_word": "필요조건이지",
+                "root": "필요조건",
+                "english": "is a necessary condition but"
+            },
+            {
+                "original_word": "충분조건은",
+                "root": "충분조건",
+                "english": "sufficient condition"
+            },
+            {
+                "original_word": "아니다",
+                "root": "아니다",
+                "english": "is not"
+            },
+            {
+                "original_word": "풍부한",
+                "root": "풍부하다",
+                "english": "abundant"
+            },
+            {
+                "original_word": "천연",
+                "root": "천연",
+                "english": "natural"
+            },
+            {
+                "original_word": "자원을",
+                "root": "자원",
+                "english": "resources"
+            },
+            {
+                "original_word": "갖추고",
+                "root": "갖추다",
+                "english": "equipped with"
+            },
+            {
+                "original_word": "있음에도",
+                "root": "있다",
+                "english": "even though there is"
+            },
+            {
+                "original_word": "경우도",
+                "root": "경우",
+                "english": "case also"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "is/exists"
+            },
+            {
+                "original_word": "풍부한",
+                "root": "풍부하다",
+                "english": "abundant"
+            },
+            {
+                "original_word": "자원에만",
+                "root": "자원",
+                "english": "only on resources"
+            },
+            {
+                "original_word": "의존해",
+                "root": "의존하다",
+                "english": "rely on and"
+            },
+            {
+                "original_word": "경제",
+                "root": "경제",
+                "english": "economic"
+            },
+            {
+                "original_word": "성장의",
+                "root": "성장",
+                "english": "of growth"
+            },
+            {
+                "original_word": "중심",
+                "root": "중심",
+                "english": "core/center"
+            },
+            {
+                "original_word": "산업인",
+                "root": "산업이다",
+                "english": "which is the industry"
+            },
+            {
+                "original_word": "제조업이나",
+                "root": "제조업",
+                "english": "manufacturing industry or"
+            },
+            {
+                "original_word": "서비스업",
+                "root": "서비스업",
+                "english": "service industry"
+            },
+            {
+                "original_word": "등에",
+                "root": "등",
+                "english": "etc."
+            },
+            {
+                "original_word": "투자를",
+                "root": "투자",
+                "english": "investment"
+            },
+            {
+                "original_word": "하지",
+                "root": "하다",
+                "english": "do"
+            },
+            {
+                "original_word": "않게",
+                "root": "않다",
+                "english": "not"
+            },
+            {
+                "original_word": "되는",
+                "root": "되다",
+                "english": "becomes"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is that"
+            },
+            {
+                "original_word": "반면에",
+                "root": "반면",
+                "english": "on the other hand"
+            },
+            {
+                "original_word": "천연자원이",
+                "root": "천연자원",
+                "english": "natural resources"
+            },
+            {
+                "original_word": "빈약해도",
+                "root": "빈약하다",
+                "english": "even if poor/scant"
+            },
+            {
+                "original_word": "새로운",
+                "root": "새롭다",
+                "english": "new"
+            },
+            {
+                "original_word": "기술",
+                "root": "기술",
+                "english": "technology"
+            },
+            {
+                "original_word": "개발이나",
+                "root": "개발",
+                "english": "development or"
+            },
+            {
+                "original_word": "교육을",
+                "root": "교육",
+                "english": "education"
+            },
+            {
+                "original_word": "통해",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "생산",
+                "root": "생산",
+                "english": "production"
+            },
+            {
+                "original_word": "능력을",
+                "root": "능력",
+                "english": "ability"
+            },
+            {
+                "original_word": "높이는",
+                "root": "높이다",
+                "english": "raising"
+            },
+            {
+                "original_word": "나라도",
+                "root": "나라",
+                "english": "country also"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "is/exists"
+            }
+        ]
+    }
+]
