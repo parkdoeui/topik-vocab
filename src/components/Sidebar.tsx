@@ -3,7 +3,7 @@ import WordCard from "./WordCard";
 
 interface SidebarProps {
   basket: VocabWord[];
-  onWordRemoved: () => void;
+  onWordRemoved: (id: string) => void;
 }
 
 export default function Sidebar({ basket, onWordRemoved }: SidebarProps) {
