@@ -1,51 +1,23 @@
 // Google Sheets analytics via Apps Script web app.
 // Set VITE_ANALYTICS_URL in your .env file to enable.
-// If unset, events are logged to console only.
+// If unset, session data is logged to console only.
+
+import type { TestSession } from "./session";
 
 const ANALYTICS_URL = import.meta.env.VITE_ANALYTICS_URL as string | undefined;
 
-export type AnalyticsEvent =
-  | {
-      type: "word_saved";
-      testId: string;
-      questionNumber: number;
-      word: string;
-      theme: string;
-    }
-  | {
-      type: "word_removed";
-      testId: string;
-      questionNumber: number;
-      word: string;
-    }
-  | {
-      type: "question_changed";
-      testId: string;
-      questionNumber: number;
-      theme: string;
-    }
-  | {
-      type: "answer_selected";
-      testId: string;
-      questionNumber: number;
-      choice: number;
-      theme: string;
-    };
-
-export function sendEvent(event: AnalyticsEvent): void {
-  const payload = { ...event, timestamp: new Date().toISOString() };
+export function sendSessionData(session: TestSession): void {
+  const payload = JSON.stringify(session);
 
   if (!ANALYTICS_URL) {
-    console.debug("[analytics]", payload);
+    console.debug("[analytics] session submitted:", payload);
     return;
   }
 
-  // Fire-and-forget — don't block UI
-  fetch(ANALYTICS_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  }).catch(() => {
+  try {
+    const blob = new Blob([payload], { type: "text/plain;charset=utf-8" });
+    navigator.sendBeacon(ANALYTICS_URL, blob);
+  } catch {
     // Silently swallow — analytics must never break the app
-  });
+  }
 }
