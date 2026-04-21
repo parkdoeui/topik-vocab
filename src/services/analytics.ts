@@ -15,11 +15,8 @@ export function sendSessionData(session: TestSession): void {
   }
 
   try {
-    const url = `${ANALYTICS_URL}?data=${encodeURIComponent(payload)}`;
-    fetch(url, {
-      mode: "no-cors",
-      credentials: "omit",
-    }).catch(() => {});
+    const blob = new Blob([payload], { type: "text/plain;charset=utf-8" });
+    navigator.sendBeacon(ANALYTICS_URL, blob);
   } catch {
     // Silently swallow — analytics must never break the app
   }
