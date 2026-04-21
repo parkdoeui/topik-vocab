@@ -12,6 +12,7 @@ import Sidebar from "./components/Sidebar";
 import BasketDrawer from "./components/BasketDrawer";
 import AccessGate, { isAccessGranted } from "./components/AccessGate";
 import CompletionView from "./components/CompletionView";
+import SubmitModal from "./components/SubmitModal";
 
 export default function App() {
   const [accessGranted, setAccessGranted] = useState(() => isAccessGranted());
