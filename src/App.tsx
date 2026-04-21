@@ -191,16 +191,18 @@ export default function App() {
               onSelectAnswer={handleSelectAnswer}
               onWordSaved={handleWordSaved}
             />
-            {/* Submit button */}
-            <div className="mt-6 flex justify-end">
-              <button
-                type="button"
-                onClick={handleSubmit}
-                className="rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2.5 transition-colors"
-              >
-                Submit Test
-              </button>
-            </div>
+            {/* Submit modal trigger — only when all questions answered */}
+            {allAnswered && !showSubmitModal && (
+              <div className="mt-6 flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => setShowSubmitModal(true)}
+                  className="rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2.5 transition-colors"
+                >
+                  Submit Test
+                </button>
+              </div>
+            )}
           </div>
         </main>
 
