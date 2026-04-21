@@ -65,7 +65,7 @@ export default function App() {
       savedWords,
       score: { correct, total: selectedTest.questions.length },
     };
-  }, [answers, questionTimings, basket, selectedTestId, selectedTest]);
+  }, [answers, basket, selectedTestId, selectedTest]);
 
   // Auto-save session whenever answers, timings, or basket change
   useEffect(() => {
