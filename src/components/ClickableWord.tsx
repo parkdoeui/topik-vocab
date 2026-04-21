@@ -1,7 +1,5 @@
 import { useState, useRef, useCallback } from "react";
 import { lookup } from "../services/dictionary";
-import { addWord, getBasket } from "../services/storage";
-import { sendEvent } from "../services/analytics";
 import type { DictionaryResult, VocabEntry, VocabWord } from "../types";
 import WordTooltip from "./WordTooltip";
 
@@ -39,37 +37,38 @@ export default function ClickableWord({
     if (touchTimer.current) clearTimeout(touchTimer.current);
   };
 
-  const fetchAndShow = useCallback(async () => {
+  const fetchAndShow = useCallback(async (): Promise<DictionaryResult | null> => {
     if (result) {
       setTooltipVisible(true);
-      return;
+      return result;
     }
     setLoading(true);
     setTooltipVisible(true);
     const res = await lookup(word, apiKey, vocabMap);
     setResult(res);
     setLoading(false);
+    return res;
   }, [word, apiKey, vocabMap, result]);
 
-  const saveWord = useCallback(() => {
-    if (isSaved || !result) return;
-    const id = `${result.korean}-${testId}-${questionNumber}`;
+  const saveWord = useCallback((res: DictionaryResult) => {
+    if (isSaved) return;
+    const id = `${res.korean}-${testId}-${questionNumber}`;
     const existing = getBasket().find((w) => w.id === id);
     if (existing) return;
     const vocabWord: VocabWord = {
       id,
-      korean: result.korean,
-      english: result.english,
-      partOfSpeech: result.partOfSpeech,
+      korean: res.korean,
+      english: res.english,
+      partOfSpeech: res.partOfSpeech,
       exampleSentence,
       testId,
       questionNumber,
       savedAt: Date.now(),
     };
     addWord(vocabWord);
-    sendEvent({ type: "word_saved", testId, questionNumber, word: result.korean, theme });
+    sendEvent({ type: "word_saved", testId, questionNumber, word: res.korean, theme });
     onSaved();
-  }, [result, isSaved, testId, questionNumber, exampleSentence, onSaved]);
+  }, [isSaved, testId, questionNumber, exampleSentence, onSaved]);
 
   const handleMouseEnter = () => {
     clearTimers();
@@ -83,17 +82,17 @@ export default function ClickableWord({
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    if (result) saveWord();
-    else fetchAndShow().then(() => saveWord());
+    fetchAndShow().then((res) => { if (res) saveWord(res); });
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     e.preventDefault();
     e.stopPropagation();
     clearTimers();
-    fetchAndShow().then(() => {
+    fetchAndShow().then((res) => {
+      if (!res) return;
       touchTimer.current = setTimeout(() => {
-        saveWord();
+        saveWord(res);
         setTooltipVisible(false);
       }, 1500);
     });
