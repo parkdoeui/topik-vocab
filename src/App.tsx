@@ -132,9 +132,6 @@ export default function App() {
 
   const answerKey = `${selectedTestId}-${question.문제_번호}`;
   const selectedAnswer = answers[answerKey] ?? null;
-  const allAnswered = selectedTest.questions.every(
-    (q) => `${selectedTestId}-${q.문제_번호}` in answers
-  );
 
   if (!accessGranted) {
     return <AccessGate onGranted={() => setAccessGranted(true)} />;
