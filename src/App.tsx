@@ -2,7 +2,7 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { tests } from "./data/tests";
 import { sendSessionData } from "./services/analytics";
 import { saveSession } from "./services/session";
-import type { SavedWordRecord } from "./services/session";
+import type { SavedWordRecord, TestSession } from "./services/session";
 import type { VocabWord } from "./types";
 import Header from "./components/Header";
 import TestSelector from "./components/TestSelector";
@@ -23,7 +23,8 @@ export default function App() {
   const [apiKey, setApiKey] = useState<string>(
     () => localStorage.getItem("krdict-api-key") ?? ""
   );
-  const [answers, setAnswers] = useState<Record<string, { selected: number; correct: boolean; timeSpentMs: number }>>({});
+  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [questionTimings, setQuestionTimings] = useState<Record<string, number>>({});
 
   // Session timing refs (don't trigger re-renders)
   const sessionStartRef = useRef<number>(Date.now());
@@ -31,53 +32,66 @@ export default function App() {
 
   const selectedTest = tests.find((t) => t.id === selectedTestId) ?? tests[0];
   const question = selectedTest.questions[questionIndex];
-  console.log(selectedTest, question)
-  // Auto-save session whenever answers, timings, or basket change
-  useEffect(() => {
+
+  const buildSession = useCallback((timings: Record<string, number>): TestSession => {
     const now = Date.now();
     const savedWords: SavedWordRecord[] = basket
       .filter((w) => w.testId === selectedTestId)
       .map((w) => ({ korean: w.korean, english: w.english, questionNumber: w.questionNumber }));
 
     let correct = 0;
-    const answerRecords: Record<string, { selected: number; correct: boolean }> = {};
+    const answerRecords: Record<string, { selected: number; correct: boolean; timeSpentMs: number }> = {};
     for (const q of selectedTest.questions) {
       const key = `${selectedTestId}-${q.문제_번호}`;
+      const qNum = String(q.문제_번호);
+      const timeSpentMs = timings[qNum] ?? 0;
       if (key in answers) {
         const selected = answers[key];
         const isCorrect = selected === q.정답;
         if (isCorrect) correct++;
-        answerRecords[String(q.문제_번호)] = { selected, correct: isCorrect };
+        answerRecords[qNum] = { selected, correct: isCorrect, timeSpentMs };
+      } else if (timeSpentMs > 0) {
+        // Visited but not answered — record timing only
+        answerRecords[qNum] = { selected: 0, correct: false, timeSpentMs };
       }
     }
 
-    saveSession({
+    return {
       testId: selectedTestId,
       startedAt: new Date(sessionStartRef.current).toISOString(),
       completedAt: new Date(now).toISOString(),
       totalTimeMs: now - sessionStartRef.current,
-      questionTimings: Object.fromEntries(
-        Object.entries(questionTimings).map(([k, ms]) => [k, { timeSpentMs: ms }])
-      ),
       answers: answerRecords,
       savedWords,
       score: { correct, total: selectedTest.questions.length },
-    });
+    };
   }, [answers, questionTimings, basket, selectedTestId, selectedTest]);
 
-  const refreshBasket = useCallback(() => {
-    setBasket(getBasket());
+  // Auto-save session whenever answers, timings, or basket change
+  useEffect(() => {
+    saveSession(buildSession(questionTimings));
+  }, [answers, questionTimings, basket, selectedTestId, selectedTest]);
+
+  const handleWordSaved = useCallback((word: VocabWord) => {
+    setBasket((prev) => {
+      if (prev.find((w) => w.id === word.id)) return prev;
+      return [...prev, word];
+    });
+  }, []);
+
+  const handleWordRemoved = useCallback((id: string) => {
+    setBasket((prev) => prev.filter((w) => w.id !== id));
   }, []);
 
   const handleSelectTest = (id: string) => {
     setSelectedTestId(id);
     setQuestionIndex(0);
+    setAnswers({});
     setQuestionTimings({});
+    setBasket([]);
+    setCompleted(false);
     sessionStartRef.current = Date.now();
     questionEnteredAtRef.current = Date.now();
-    const newTest = tests.find((t) => t.id === id) ?? tests[0];
-    const firstQ = newTest.questions[0];
-    sendEvent({ type: "question_changed", testId: id, questionNumber: firstQ.문제_번호, theme: firstQ.주제 });
   };
 
   const handleQuestionChange = (newIndex: number) => {
@@ -90,17 +104,51 @@ export default function App() {
     }));
     questionEnteredAtRef.current = now;
     setQuestionIndex(newIndex);
-    const q = selectedTest.questions[newIndex];
-    sendEvent({ type: "question_changed", testId: selectedTestId, questionNumber: q.문제_번호, theme: q.주제 });
+  };
+
+  const handleSelectAnswer = (choice: number) => {
+    const answerKey = `${selectedTestId}-${question.문제_번호}`;
+    setAnswers((prev) => ({ ...prev, [answerKey]: choice }));
+  };
+
+  const handleSubmit = () => {
+    // Capture final question's elapsed time before sending
+    const now = Date.now();
+    const elapsed = now - questionEnteredAtRef.current;
+    const currQNum = String(question.문제_번호);
+    const finalTimings = {
+      ...questionTimings,
+      [currQNum]: (questionTimings[currQNum] ?? 0) + elapsed,
+    };
+    const session = buildSession(finalTimings);
+    saveSession(session);
+    sendSessionData(session);
+    setCompleted(true);
   };
 
   const answerKey = `${selectedTestId}-${question.문제_번호}`;
   const selectedAnswer = answers[answerKey] ?? null;
 
-  const handleSelectAnswer = (choice: number) => {
-    setAnswers((prev) => ({ ...prev, [answerKey]: choice }));
-    sendEvent({ type: "answer_selected", testId: selectedTestId, questionNumber: question.문제_번호, choice, theme: question.주제 });
-  };
+  if (!accessGranted) {
+    return <AccessGate onGranted={() => setAccessGranted(true)} />;
+  }
+
+  if (completed) {
+    return (
+      <CompletionView
+        session={buildSession(questionTimings)}
+        onRestart={() => {
+          setCompleted(false);
+          setAnswers({});
+          setQuestionTimings({});
+          setBasket([]);
+          setQuestionIndex(0);
+          sessionStartRef.current = Date.now();
+          questionEnteredAtRef.current = Date.now();
+        }}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -132,19 +180,29 @@ export default function App() {
               apiKey={apiKey}
               selectedAnswer={selectedAnswer}
               onSelectAnswer={handleSelectAnswer}
-              onWordSaved={refreshBasket}
+              onWordSaved={handleWordSaved}
             />
+            {/* Submit button */}
+            <div className="mt-6 flex justify-end">
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2.5 transition-colors"
+              >
+                Submit Test
+              </button>
+            </div>
           </div>
         </main>
 
-        <Sidebar basket={basket} onWordRemoved={refreshBasket} />
+        <Sidebar basket={basket} onWordRemoved={handleWordRemoved} />
       </div>
 
       <BasketDrawer
         open={drawerOpen}
         basket={basket}
         onClose={() => setDrawerOpen(false)}
-        onWordRemoved={refreshBasket}
+        onWordRemoved={handleWordRemoved}
       />
     </div>
   );
