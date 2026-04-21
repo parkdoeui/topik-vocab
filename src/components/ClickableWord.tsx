@@ -7,19 +7,17 @@ interface ClickableWordProps {
   word: string;
   testId: string;
   questionNumber: number;
-  theme?: string;
   exampleSentence: string;
   apiKey?: string;
   vocabMap?: VocabEntry[];
   isSaved: boolean;
-  onSaved: () => void;
+  onSaved: (word: VocabWord) => void;
 }
 
 export default function ClickableWord({
   word,
   testId,
   questionNumber,
-  theme = "",
   exampleSentence,
   apiKey,
   vocabMap,
@@ -53,8 +51,6 @@ export default function ClickableWord({
   const saveWord = useCallback((res: DictionaryResult) => {
     if (isSaved) return;
     const id = `${res.korean}-${testId}-${questionNumber}`;
-    const existing = getBasket().find((w) => w.id === id);
-    if (existing) return;
     const vocabWord: VocabWord = {
       id,
       korean: res.korean,
@@ -65,9 +61,7 @@ export default function ClickableWord({
       questionNumber,
       savedAt: Date.now(),
     };
-    addWord(vocabWord);
-    sendEvent({ type: "word_saved", testId, questionNumber, word: res.korean, theme });
-    onSaved();
+    onSaved(vocabWord);
   }, [isSaved, testId, questionNumber, exampleSentence, onSaved]);
 
   const handleMouseEnter = () => {
