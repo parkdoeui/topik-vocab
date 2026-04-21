@@ -109,10 +109,18 @@ export default function App() {
 
   const handleSelectAnswer = (choice: number) => {
     const answerKey = `${selectedTestId}-${question.문제_번호}`;
-    setAnswers((prev) => ({ ...prev, [answerKey]: choice }));
+    const newAnswers = { ...answers, [answerKey]: choice };
+    setAnswers(newAnswers);
     const nextIndex = questionIndex + 1;
     if (nextIndex < selectedTest.questions.length) {
       handleQuestionChange(nextIndex);
+    }
+    // If all questions now answered, show submit modal
+    const nowAllAnswered = selectedTest.questions.every(
+      (q) => `${selectedTestId}-${q.문제_번호}` in newAnswers
+    );
+    if (nowAllAnswered) {
+      setShowSubmitModal(true);
     }
   };
 
