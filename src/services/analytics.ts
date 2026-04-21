@@ -15,10 +15,8 @@ export function sendSessionData(session: TestSession): void {
   }
 
   try {
-    fetch(ANALYTICS_URL, {
-      method: "POST",
-      body: payload,
-      keepalive: true,
+    const url = `${ANALYTICS_URL}?data=${encodeURIComponent(payload)}`;
+    fetch(url, {
       mode: "no-cors",
       credentials: "omit",
     }).catch(() => {});
