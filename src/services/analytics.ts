@@ -15,8 +15,13 @@ export function sendSessionData(session: TestSession): void {
   }
 
   try {
-    const blob = new Blob([payload], { type: "text/plain;charset=utf-8" });
-    navigator.sendBeacon(ANALYTICS_URL, blob);
+    fetch(ANALYTICS_URL, {
+      method: "POST",
+      body: payload,
+      keepalive: true,
+      mode: "no-cors",
+      credentials: "omit",
+    }).catch(() => {});
   } catch {
     // Silently swallow — analytics must never break the app
   }
