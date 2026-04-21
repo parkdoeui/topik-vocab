@@ -109,6 +109,10 @@ export default function App() {
   const handleSelectAnswer = (choice: number) => {
     const answerKey = `${selectedTestId}-${question.문제_번호}`;
     setAnswers((prev) => ({ ...prev, [answerKey]: choice }));
+    const nextIndex = questionIndex + 1;
+    if (nextIndex < selectedTest.questions.length) {
+      handleQuestionChange(nextIndex);
+    }
   };
 
   const handleSubmit = () => {
