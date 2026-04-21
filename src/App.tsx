@@ -167,6 +167,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
+      <div className="bg-yellow-100 text-xs text-gray-700 px-2 py-1 font-mono truncate">
+        ANALYTICS_URL: {import.meta.env.VITE_ANALYTICS_URL ?? "(not set)"}
+      </div>
       <Header
         basketCount={basket.length}
         onBasketClick={() => setDrawerOpen(true)}
