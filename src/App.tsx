@@ -1,7 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { tests } from "./data/tests";
-import { getBasket } from "./services/storage";
-import { sendEvent } from "./services/analytics";
+import { sendSessionData } from "./services/analytics";
 import { saveSession } from "./services/session";
 import type { SavedWordRecord } from "./services/session";
 import type { VocabWord } from "./types";
@@ -11,6 +10,8 @@ import QuestionView from "./components/QuestionView";
 import QuestionNav from "./components/QuestionNav";
 import Sidebar from "./components/Sidebar";
 import BasketDrawer from "./components/BasketDrawer";
+import AccessGate, { isAccessGranted } from "./components/AccessGate";
+import CompletionView from "./components/CompletionView";
 
 export default function App() {
   const [selectedTestId, setSelectedTestId] = useState<string>(tests[0].id);
@@ -29,7 +30,7 @@ export default function App() {
 
   const selectedTest = tests.find((t) => t.id === selectedTestId) ?? tests[0];
   const question = selectedTest.questions[questionIndex];
-
+  console.log(selectedTest, question)
   // Auto-save session whenever answers, timings, or basket change
   useEffect(() => {
     const now = Date.now();
