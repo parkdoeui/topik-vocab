@@ -14,15 +14,16 @@ import AccessGate, { isAccessGranted } from "./components/AccessGate";
 import CompletionView from "./components/CompletionView";
 
 export default function App() {
+  const [accessGranted, setAccessGranted] = useState(() => isAccessGranted());
   const [selectedTestId, setSelectedTestId] = useState<string>(tests[0].id);
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [basket, setBasket] = useState<VocabWord[]>(() => getBasket());
+  const [basket, setBasket] = useState<VocabWord[]>([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [completed, setCompleted] = useState(false);
   const [apiKey, setApiKey] = useState<string>(
     () => localStorage.getItem("krdict-api-key") ?? ""
   );
-  const [answers, setAnswers] = useState<Record<string, number>>({});
-  const [questionTimings, setQuestionTimings] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, { selected: number; correct: boolean; timeSpentMs: number }>>({});
 
   // Session timing refs (don't trigger re-renders)
   const sessionStartRef = useRef<number>(Date.now());
