@@ -1,63 +1,29 @@
 import type { TopikTest, TopikQuestion } from "../types";
 
-// Legacy single-file tests (pending folder migration)
-import test91Raw from "./reading/91.json";
+// Test 35 — chunked with vocab map
+import chunk35_1_10 from "./reading/91/1-10.json";
+import chunk35_11_20 from "./reading/91/11-20.json";
+import chunk35_21_30 from "./reading/91/21-30.json";
+import chunk35_31_40 from "./reading/91/31-40.json";
+import chunk35_41_50 from "./reading/91/41-50.json";
 
-// Auto-discover chunk files from folder-based tests: reading/<testNum>/<range>.json
-const chunkModules = import.meta.glob("./reading/*/*.json", {
-  eager: true,
-  import: "default",
-}) as Record<string, TopikQuestion[]>;
+// To add a new test:
+// 1. Import its chunk files above
+// 2. Add an entry to TEST_REGISTRY below
 
-// Add one entry here when adding a new test folder
-const TEST_METADATA: Record<
-  number,
-  { id: string; title: string; level: TopikTest["level"] }
-> = {
-  35: { id: "topik2-35", title: "제35회 TOPIK II 읽기", level: "TOPIK II" },
-};
-
-function buildFolderTests(): TopikTest[] {
-  const grouped = new Map<
-    number,
-    Array<{ startNum: number; questions: TopikQuestion[] }>
-  >();
-
-  for (const [path, questions] of Object.entries(chunkModules)) {
-    // e.g. "./reading/35/11-20.json"
-    const match = path.match(/\.\/reading\/(\d+)\/(\d+)/);
-    if (!match) continue;
-    const testNum = parseInt(match[1], 10);
-    const startNum = parseInt(match[2], 10);
-    if (!grouped.has(testNum)) grouped.set(testNum, []);
-    grouped.get(testNum)!.push({ startNum, questions });
-  }
-
-  return Array.from(grouped.entries())
-    .filter(([testNum]) => testNum in TEST_METADATA)
-    .map(([testNum, chunks]) => {
-      chunks.sort((a, b) => a.startNum - b.startNum);
-      return {
-        ...TEST_METADATA[testNum],
-        questions: chunks.flatMap((c) => c.questions),
-      };
-    });
-}
-
-const legacyTests: TopikTest[] = [
+const TEST_REGISTRY: TopikTest[] = [
   {
-    id: "topik2-91",
-    title: "제91회 TOPIK II 읽기",
+    id: "topik2-35",
+    title: "제35회 TOPIK II 읽기",
     level: "TOPIK II",
-    questions: test91Raw as TopikQuestion[],
+    questions: [
+      ...chunk35_1_10,
+      ...chunk35_11_20,
+      ...chunk35_21_30,
+      ...chunk35_31_40,
+      ...chunk35_41_50,
+    ] as TopikQuestion[],
   },
 ];
 
-export const tests: TopikTest[] = [
-  ...buildFolderTests(),
-  ...legacyTests,
-].sort((a, b) => {
-  const aNum = parseInt(a.id.split("-").pop() ?? "0", 10);
-  const bNum = parseInt(b.id.split("-").pop() ?? "0", 10);
-  return bNum - aNum;
-});
+export const tests: TopikTest[] = TEST_REGISTRY;
