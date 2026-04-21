@@ -1,7 +1,6 @@
 import type { TopikQuestion, VocabWord } from "../types";
 import ClickableWord from "./ClickableWord";
 
-
 interface QuestionViewProps {
   question: TopikQuestion;
   testId: string;
@@ -9,7 +8,7 @@ interface QuestionViewProps {
   apiKey?: string;
   selectedAnswer: number | null;
   onSelectAnswer: (choice: number) => void;
-  onWordSaved: () => void;
+  onWordSaved: (word: VocabWord) => void;
 }
 
 function tokenize(text: string): string[] {
@@ -42,7 +41,7 @@ function ClickableText({
   basket: VocabWord[];
   apiKey?: string;
   vocabMap?: TopikQuestion["단어맵"];
-  onWordSaved: () => void;
+  onWordSaved: (word: VocabWord) => void;
 }) {
   const savedKoreanWords = new Set(basket.map((w) => w.korean));
   const savedOriginalWords = vocabMap
@@ -52,7 +51,6 @@ function ClickableText({
         .map((entry) => entry.original_word)
     )
     : null;
-  console.log("savedOriginalWord", savedOriginalWords);
   return (
     <>
       {tokenize(text).map((token, i) => {
@@ -91,11 +89,9 @@ export default function QuestionView({
   apiKey,
   selectedAnswer,
   onSelectAnswer,
-  onWordSaved: _onWordSaved,
+  onWordSaved,
 }: QuestionViewProps) {
   const choices = Object.entries(question.선택지);
-  const onWordSaved = _onWordSaved;
-  console.log("question", question);
   return (
     <article className="space-y-4">
       {/* Question number + points */}
