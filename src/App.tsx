@@ -139,7 +139,6 @@ export default function App() {
   if (completed) {
     return (
       <CompletionView
-        session={buildSession(questionTimings)}
         onRestart={() => {
           setCompleted(false);
           setAnswers({});
