@@ -215,6 +215,16 @@ export default function App() {
         onClose={() => setDrawerOpen(false)}
         onWordRemoved={handleWordRemoved}
       />
+
+      {showSubmitModal && (
+        <SubmitModal
+          onConfirm={() => {
+            setShowSubmitModal(false);
+            handleSubmit();
+          }}
+          onCancel={() => setShowSubmitModal(false)}
+        />
+      )}
     </div>
   );
 }
