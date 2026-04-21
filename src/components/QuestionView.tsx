@@ -1,6 +1,7 @@
 import type { TopikQuestion, VocabWord } from "../types";
 import ClickableWord from "./ClickableWord";
 
+
 interface QuestionViewProps {
   question: TopikQuestion;
   testId: string;
@@ -46,12 +47,12 @@ function ClickableText({
   const savedKoreanWords = new Set(basket.map((w) => w.korean));
   const savedOriginalWords = vocabMap
     ? new Set(
-        vocabMap
-          .filter((entry) => savedKoreanWords.has(entry.root))
-          .map((entry) => entry.original_word)
-      )
+      vocabMap
+        .filter((entry) => savedKoreanWords.has(entry.root))
+        .map((entry) => entry.original_word)
+    )
     : null;
-
+  console.log("savedOriginalWord", savedOriginalWords);
   return (
     <>
       {tokenize(text).map((token, i) => {
@@ -62,7 +63,7 @@ function ClickableText({
         }
         return (
           <ClickableWord
-            key={i}
+            key={`${questionNumber}-${i}-${wordOnly}`}
             word={token}
             testId={testId}
             questionNumber={questionNumber}
@@ -94,7 +95,7 @@ export default function QuestionView({
 }: QuestionViewProps) {
   const choices = Object.entries(question.선택지);
   const onWordSaved = _onWordSaved;
-
+  console.log("question", question);
   return (
     <article className="space-y-4">
       {/* Question number + points */}
@@ -140,21 +141,19 @@ export default function QuestionView({
           return (
             <div
               key={key}
-              className={`flex items-start gap-3 rounded-lg border p-3 transition-colors ${
-                isSelected
-                  ? "border-blue-500 bg-blue-50"
-                  : "border-gray-200 bg-white hover:border-gray-300"
-              }`}
+              className={`flex items-start gap-3 rounded-lg border p-3 transition-colors ${isSelected
+                ? "border-blue-500 bg-blue-50"
+                : "border-gray-200 bg-white hover:border-gray-300"
+                }`}
             >
               {/* Number label — click to select answer */}
               <button
                 type="button"
                 onClick={() => onSelectAnswer(choiceNum)}
-                className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-sm font-semibold transition-colors ${
-                  isSelected
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
+                className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-sm font-semibold transition-colors ${isSelected
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
               >
                 {CHOICE_LABELS[idx]}
               </button>
