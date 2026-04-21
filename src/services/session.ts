@@ -1,12 +1,9 @@
 const SESSION_KEY_PREFIX = "topik-session-";
 
-export interface QuestionTiming {
-  timeSpentMs: number;
-}
-
 export interface AnswerRecord {
   selected: number;
   correct: boolean;
+  timeSpentMs: number;
 }
 
 export interface SavedWordRecord {
@@ -20,7 +17,6 @@ export interface TestSession {
   startedAt: string;
   completedAt: string;
   totalTimeMs: number;
-  questionTimings: Record<string, QuestionTiming>;
   answers: Record<string, AnswerRecord>;
   savedWords: SavedWordRecord[];
   score: { correct: number; total: number };
