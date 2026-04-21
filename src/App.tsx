@@ -200,7 +200,7 @@ export default function App() {
               onWordSaved={handleWordSaved}
             />
             {/* Submit modal trigger — only when all questions answered */}
-            {allAnswered && !showSubmitModal && (
+            {!showSubmitModal && (
               <div className="mt-6 flex justify-end">
                 <button
                   type="button"
