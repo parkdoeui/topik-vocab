@@ -6,7 +6,7 @@ interface BasketDrawerProps {
   open: boolean;
   basket: VocabWord[];
   onClose: () => void;
-  onWordRemoved: () => void;
+  onWordRemoved: (id: string) => void;
 }
 
 export default function BasketDrawer({
