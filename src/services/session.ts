@@ -25,7 +25,7 @@ export interface TestSession {
 export function saveSession(session: TestSession): void {
   try {
     localStorage.setItem(
-      `${SESSION_KEY_PREFIX}${session.testId}`,
+      `${SESSION_KEY_PREFIX}${session.testId}-${session.startedAt}`,
       JSON.stringify(session)
     );
   } catch {
