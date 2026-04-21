@@ -1,19 +1,11 @@
-import { removeWord } from "../services/storage";
-import { sendEvent } from "../services/analytics";
 import type { VocabWord } from "../types";
 
 interface WordCardProps {
   word: VocabWord;
-  onRemoved: () => void;
+  onRemoved: (id: string) => void;
 }
 
 export default function WordCard({ word, onRemoved }: WordCardProps) {
-  const handleRemove = () => {
-    removeWord(word.id);
-    sendEvent({ type: "word_removed", testId: word.testId, questionNumber: word.questionNumber, word: word.korean });
-    onRemoved();
-  };
-
   return (
     <div className="flex items-start gap-2 py-3 border-b border-gray-100 last:border-0 group">
       <div className="flex-1 min-w-0">
@@ -29,7 +21,7 @@ export default function WordCard({ word, onRemoved }: WordCardProps) {
         </div>
       </div>
       <button
-        onClick={handleRemove}
+        onClick={() => onRemoved(word.id)}
         aria-label={`Remove ${word.korean}`}
         className="shrink-0 text-gray-300 hover:text-red-400 transition-colors mt-0.5 p-0.5 rounded opacity-0 group-hover:opacity-100 focus:opacity-100"
       >
