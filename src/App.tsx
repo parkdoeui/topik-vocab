@@ -131,8 +131,13 @@ export default function App() {
     setCompleted(true);
   };
 
+  const [showSubmitModal, setShowSubmitModal] = useState(false);
+
   const answerKey = `${selectedTestId}-${question.문제_번호}`;
   const selectedAnswer = answers[answerKey] ?? null;
+  const allAnswered = selectedTest.questions.every(
+    (q) => `${selectedTestId}-${q.문제_번호}` in answers
+  );
 
   if (!accessGranted) {
     return <AccessGate onGranted={() => setAccessGranted(true)} />;
