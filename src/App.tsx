@@ -207,7 +207,17 @@ export default function App() {
               <div className="mt-6 flex justify-end">
                 <button
                   type="button"
-                  onClick={() => setShowSubmitModal(true)}
+                  onClick={() => {
+                    const missing = selectedTest.questions
+                      .filter((q) => !(`${selectedTestId}-${q.문제_번호}` in answers))
+                      .map((q) => q.문제_번호)
+                      .sort((a, b) => a - b);
+                    if (missing.length > 0) {
+                      setIncompleteNumbers(missing);
+                    } else {
+                      setShowSubmitModal(true);
+                    }
+                  }}
                   className="rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2.5 transition-colors"
                 >
                   Submit Test
