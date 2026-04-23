@@ -246,6 +246,13 @@ export default function App() {
           onCancel={() => setShowSubmitModal(false)}
         />
       )}
+
+      {incompleteNumbers && (
+        <IncompleteModal
+          missingNumbers={incompleteNumbers}
+          onClose={() => setIncompleteNumbers(null)}
+        />
+      )}
     </div>
   );
 }
