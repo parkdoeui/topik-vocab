@@ -141,6 +141,7 @@ export default function App() {
   };
 
   const [showSubmitModal, setShowSubmitModal] = useState(false);
+  const [incompleteNumbers, setIncompleteNumbers] = useState<number[] | null>(null);
 
   const answerKey = `${selectedTestId}-${question.문제_번호}`;
   const selectedAnswer = answers[answerKey] ?? null;
