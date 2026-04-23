@@ -10,15 +10,20 @@ export default function WordCard({ word, onRemoved }: WordCardProps) {
     <div className="flex items-start gap-2 py-3 border-b border-gray-100 last:border-0 group">
       <div className="flex-1 min-w-0">
         <div className="flex items-baseline gap-1.5">
-          <span className="font-semibold text-gray-900 text-base">{word.korean}</span>
+          <span className="font-semibold text-gray-900 text-base">
+            {word.originalWord ?? word.korean}
+          </span>
           {word.partOfSpeech && (
             <span className="text-[10px] text-gray-400">{word.partOfSpeech}</span>
           )}
         </div>
+        {word.root && word.root !== (word.originalWord ?? word.korean) && (
+          <div className="text-sm text-gray-500 mt-0.5">
+            <span className="text-gray-400 text-xs mr-1">root</span>
+            {word.root}
+          </div>
+        )}
         <div className="text-sm text-gray-600 mt-0.5">{word.english}</div>
-        <div className="text-xs text-gray-400 mt-1 line-clamp-2 italic">
-          {word.exampleSentence}
-        </div>
       </div>
       <button
         onClick={() => onRemoved(word.id)}
