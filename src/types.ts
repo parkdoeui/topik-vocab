@@ -25,6 +25,8 @@ export interface TopikTest {
 export interface VocabWord {
   id: string;
   korean: string;
+  root?: string;
+  originalWord?: string;
   english: string;
   partOfSpeech?: string;
   exampleSentence: string;
@@ -35,6 +37,7 @@ export interface VocabWord {
 
 export interface DictionaryResult {
   korean: string;
+  root?: string;
   english: string;
   partOfSpeech?: string;
   pronunciation?: string;
