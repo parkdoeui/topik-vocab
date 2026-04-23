@@ -52,6 +52,7 @@ function lookupVocabMap(
   if (!entry) return null;
   return {
     korean: entry.root,
+    root: entry.root,
     english: entry.english,
     source: "vocab_map",
   };
