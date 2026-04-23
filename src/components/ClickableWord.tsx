@@ -54,6 +54,8 @@ export default function ClickableWord({
     const vocabWord: VocabWord = {
       id,
       korean: res.korean,
+      root: res.root ?? res.korean,
+      originalWord: word,
       english: res.english,
       partOfSpeech: res.partOfSpeech,
       exampleSentence,
@@ -62,7 +64,7 @@ export default function ClickableWord({
       savedAt: Date.now(),
     };
     onSaved(vocabWord);
-  }, [isSaved, testId, questionNumber, exampleSentence, onSaved]);
+  }, [isSaved, testId, questionNumber, exampleSentence, word, onSaved]);
 
   const handleMouseEnter = () => {
     clearTimers();
