@@ -1,0 +1,522 @@
+[
+    {
+        "문제_번호": 6,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "아프세요? 참지 마세요. 상담부터 수술까지 친절하게 도와 드리겠습니다.",
+        "선택지": {
+            "1": "학원",
+            "2": "병원",
+            "3": "박물관",
+            "4": "대사관"
+        },
+        "정답": 2,
+        "주제": "사회",
+        "토큰_개수": 8,
+        "단어맵": [
+            {
+                "original_word": "아프세요",
+                "root": "아프다",
+                "english": "to be sick/hurt"
+            },
+            {
+                "original_word": "참지",
+                "root": "참다",
+                "english": "to endure/bear"
+            },
+            {
+                "original_word": "마세요",
+                "root": "말다",
+                "english": "to stop/do not"
+            },
+            {
+                "original_word": "상담부터",
+                "root": "상담",
+                "english": "consultation (from)"
+            },
+            {
+                "original_word": "수술까지",
+                "root": "수술",
+                "english": "surgery (until/to)"
+            },
+            {
+                "original_word": "친절하게",
+                "root": "친절하다",
+                "english": "to be kind"
+            },
+            {
+                "original_word": "도와",
+                "root": "돕다",
+                "english": "to help"
+            },
+            {
+                "original_word": "드리겠습니다",
+                "root": "드리다",
+                "english": "to give (honorific)"
+            }
+        ]
+    },
+    {
+        "문제_번호": 7,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "숲에서 부는 시원한 바람 숲에서 사는 귀여운 동물 숲이 없어지면 이 모든 것이 없어집니다.",
+        "선택지": {
+            "1": "환경 보호",
+            "2": "공원 소개",
+            "3": "날씨 정보",
+            "4": "여행 계획"
+        },
+        "정답": 1,
+        "주제": "과학",
+        "토큰_개수": 14,
+        "단어맵": [
+            {
+                "original_word": "숲에서",
+                "root": "숲",
+                "english": "forest"
+            },
+            {
+                "original_word": "부는",
+                "root": "불다",
+                "english": "to blow"
+            },
+            {
+                "original_word": "시원한",
+                "root": "시원하다",
+                "english": "to be cool"
+            },
+            {
+                "original_word": "바람",
+                "root": "바람",
+                "english": "wind"
+            },
+            {
+                "original_word": "숲에서",
+                "root": "숲",
+                "english": "forest"
+            },
+            {
+                "original_word": "사는",
+                "root": "살다",
+                "english": "to live"
+            },
+            {
+                "original_word": "귀여운",
+                "root": "귀엽다",
+                "english": "to be cute"
+            },
+            {
+                "original_word": "동물",
+                "root": "동물",
+                "english": "animal"
+            },
+            {
+                "original_word": "숲이",
+                "root": "숲",
+                "english": "forest"
+            },
+            {
+                "original_word": "없어지면",
+                "root": "없어지다",
+                "english": "to disappear if"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "모든",
+                "root": "모든",
+                "english": "all"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "없어집니다",
+                "root": "없어지다",
+                "english": "to disappear"
+            }
+        ]
+    },
+    {
+        "문제_번호": 8,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "궁금하신 점은 서울화장품 홈페이지 고객 게시판에 남겨 주십시오. 상담원과 통화를 원하시면 080-987-6543으로 전화해 주십시오.",
+        "선택지": {
+            "1": "상품 안내",
+            "2": "모집 안내",
+            "3": "문의 방법",
+            "4": "사용 방법"
+        },
+        "정답": 3,
+        "주제": "사회",
+        "토큰_개수": 14,
+        "단어맵": [
+            {
+                "original_word": "궁금하신",
+                "root": "궁금하다",
+                "english": "to be curious"
+            },
+            {
+                "original_word": "점은",
+                "root": "점",
+                "english": "point/aspect"
+            },
+            {
+                "original_word": "서울화장품",
+                "root": "서울화장품",
+                "english": "Seoul Cosmetics"
+            },
+            {
+                "original_word": "홈페이지",
+                "root": "홈페이지",
+                "english": "homepage"
+            },
+            {
+                "original_word": "고객",
+                "root": "고객",
+                "english": "customer"
+            },
+            {
+                "original_word": "게시판에",
+                "root": "게시판",
+                "english": "bulletin board"
+            },
+            {
+                "original_word": "남겨",
+                "root": "남기다",
+                "english": "to leave"
+            },
+            {
+                "original_word": "주십시오",
+                "root": "주다",
+                "english": "to give/please do"
+            },
+            {
+                "original_word": "상담원과",
+                "root": "상담원",
+                "english": "counselor/agent"
+            },
+            {
+                "original_word": "통화를",
+                "root": "통화",
+                "english": "phone call"
+            },
+            {
+                "original_word": "원하시면",
+                "root": "원하다",
+                "english": "to want if"
+            },
+            {
+                "original_word": "080-987-6543으로",
+                "root": "080-987-6543",
+                "english": "phone number"
+            },
+            {
+                "original_word": "전화해",
+                "root": "전화하다",
+                "english": "to call"
+            },
+            {
+                "original_word": "주십시오",
+                "root": "주다",
+                "english": "to give/please do"
+            }
+        ]
+    },
+    {
+        "문제_번호": 9,
+        "지시문": "[9~12] 다음 글 또는 도표의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "제10회 서울국제꽃박람회 구분 입장료 일반 9,000원 단체 (20인 이상) 7,000원 특별권 10,000원 ※ 단체 요금은 평일에만 가능합니다. ※ 특별권 구입 시 행사장 내 놀이 시설을 무료로 이용하실 수 있습니다. ※ 대중교통을 이용하신 분은 입장료를 1,000원 할인해 드립니다.",
+        "선택지": {
+            "1": "주말에는 단체 할인을 받을 수 있다.",
+            "2": "이 행사는 이번에 처음 열리는 행사이다.",
+            "3": "특별권을 사면 놀이 시설 이용료가 할인된다.",
+            "4": "지하철을 타고 가면 입장권을 싸게 살 수 있다."
+        },
+        "정답": 4,
+        "주제": "문화",
+        "토큰_개수": 37,
+        "단어맵": [
+            {
+                "original_word": "제10회",
+                "root": "제10회",
+                "english": "10th"
+            },
+            {
+                "original_word": "서울국제꽃박람회",
+                "root": "서울국제꽃박람회",
+                "english": "Seoul International Flower Exhibition"
+            },
+            {
+                "original_word": "구분",
+                "root": "구분",
+                "english": "classification"
+            },
+            {
+                "original_word": "입장료",
+                "root": "입장료",
+                "english": "admission fee"
+            },
+            {
+                "original_word": "일반",
+                "root": "일반",
+                "english": "general"
+            },
+            {
+                "original_word": "9,000원",
+                "root": "9,000원",
+                "english": "9,000 won"
+            },
+            {
+                "original_word": "단체",
+                "root": "단체",
+                "english": "group"
+            },
+            {
+                "original_word": "20인",
+                "root": "20인",
+                "english": "20 people"
+            },
+            {
+                "original_word": "이상",
+                "root": "이상",
+                "english": "or more"
+            },
+            {
+                "original_word": "7,000원",
+                "root": "7,000원",
+                "english": "7,000 won"
+            },
+            {
+                "original_word": "특별권",
+                "root": "특별권",
+                "english": "special ticket"
+            },
+            {
+                "original_word": "10,000원",
+                "root": "10,000원",
+                "english": "10,000 won"
+            },
+            {
+                "original_word": "※",
+                "root": "※",
+                "english": "reference mark"
+            },
+            {
+                "original_word": "단체",
+                "root": "단체",
+                "english": "group"
+            },
+            {
+                "original_word": "요금은",
+                "root": "요금",
+                "english": "fee"
+            },
+            {
+                "original_word": "평일에만",
+                "root": "평일",
+                "english": "weekday"
+            },
+            {
+                "original_word": "가능합니다",
+                "root": "가능하다",
+                "english": "to be possible"
+            },
+            {
+                "original_word": "※",
+                "root": "※",
+                "english": "reference mark"
+            },
+            {
+                "original_word": "특별권",
+                "root": "특별권",
+                "english": "special ticket"
+            },
+            {
+                "original_word": "구입",
+                "root": "구입",
+                "english": "purchase"
+            },
+            {
+                "original_word": "시",
+                "root": "시",
+                "english": "time/when"
+            },
+            {
+                "original_word": "행사장",
+                "root": "행사장",
+                "english": "event venue"
+            },
+            {
+                "original_word": "내",
+                "root": "내",
+                "english": "inside"
+            },
+            {
+                "original_word": "놀이",
+                "root": "놀이",
+                "english": "play/amusement"
+            },
+            {
+                "original_word": "시설을",
+                "root": "시설",
+                "english": "facility"
+            },
+            {
+                "original_word": "무료로",
+                "root": "무료",
+                "english": "free of charge"
+            },
+            {
+                "original_word": "이용하실",
+                "root": "이용하다",
+                "english": "to use"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있습니다",
+                "root": "있다",
+                "english": "to exist/can"
+            },
+            {
+                "original_word": "※",
+                "root": "※",
+                "english": "reference mark"
+            },
+            {
+                "original_word": "대중교통을",
+                "root": "대중교통",
+                "english": "public transportation"
+            },
+            {
+                "original_word": "이용하신",
+                "root": "이용하다",
+                "english": "to use"
+            },
+            {
+                "original_word": "분은",
+                "root": "분",
+                "english": "person (honorific)"
+            },
+            {
+                "original_word": "입장료를",
+                "root": "입장료",
+                "english": "admission fee"
+            },
+            {
+                "original_word": "1,000원",
+                "root": "1,000원",
+                "english": "1,000 won"
+            },
+            {
+                "original_word": "할인해",
+                "root": "할인하다",
+                "english": "to discount"
+            },
+            {
+                "original_word": "드립니다",
+                "root": "드리다",
+                "english": "to give (honorific)"
+            }
+        ]
+    },
+    {
+        "문제_번호": 10,
+        "지시문": "[9~12] 다음 글 또는 도표의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "애완동물을 어디에서 구하셨습니까? 버려진 동물 7.2%, 인터넷 16.8%, 애완동물 가게 36.7%, 아는 사람 39.3%",
+        "선택지": {
+            "1": "주인 없는 동물을 데려와 키우는 사람이 가장 적다.",
+            "2": "인터넷에서 산 사람이 가게에서 산 사람보다 더 많다.",
+            "3": "가게에서 산 사람보다 아는 사람한테서 받은 사람이 더 적다.",
+            "4": "아는 사람한테서 동물을 데리고 온 사람은 전체의 반이 넘는다."
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 14,
+        "단어맵": [
+            {
+                "original_word": "애완동물을",
+                "root": "애완동물",
+                "english": "pet"
+            },
+            {
+                "original_word": "어디에서",
+                "root": "어디",
+                "english": "where"
+            },
+            {
+                "original_word": "구하셨습니까",
+                "root": "구하다",
+                "english": "to get/obtain"
+            },
+            {
+                "original_word": "버려진",
+                "root": "버려지다",
+                "english": "to be abandoned"
+            },
+            {
+                "original_word": "동물",
+                "root": "동물",
+                "english": "animal"
+            },
+            {
+                "original_word": "7.2%",
+                "root": "7.2%",
+                "english": "7.2 percent"
+            },
+            {
+                "original_word": "인터넷",
+                "root": "인터넷",
+                "english": "internet"
+            },
+            {
+                "original_word": "16.8%",
+                "root": "16.8%",
+                "english": "16.8 percent"
+            },
+            {
+                "original_word": "애완동물",
+                "root": "애완동물",
+                "english": "pet"
+            },
+            {
+                "original_word": "가게",
+                "root": "가게",
+                "english": "store"
+            },
+            {
+                "original_word": "36.7%",
+                "root": "36.7%",
+                "english": "36.7 percent"
+            },
+            {
+                "original_word": "아는",
+                "root": "알다",
+                "english": "to know"
+            },
+            {
+                "original_word": "사람",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "39.3%",
+                "root": "39.3%",
+                "english": "39.3 percent"
+            }
+        ]
+    }
+]

@@ -1,0 +1,3157 @@
+[
+  {
+    "문제_번호": 31,
+    "지시문": "[28~31] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "최근에는 미술 작품을 과학적 연구의 참고 자료로 활용하고 있다. 그중 하나가 풍경화에 사용된 색을 연구하여 그 시대의 대기 상태를 알아보는 것이다. 일반적으로 공기 중에 먼지가 많으면 해가 질 때 하늘은 더 붉게 보인다고 한다. 그런데 산업화가 진행된 20세기 말 그림 속에 표현된 하늘이 다른 시대의 그림보다 더 붉다. 우리는 그 그림을 통해 20세기 말에 ( ) 사실을 확인할 수 있다.",
+    "선택지": {
+      "1": "산업화로 인해 하늘이 오염되었다는",
+      "2": "대기 상태에 대한 연구가 이루어졌다는",
+      "3": "화가들이 그림에 다양한 색을 사용했다는",
+      "4": "풍경화를 그리는 화가들이 활발히 활동했다는"
+    },
+    "정답": 1,
+    "주제": "예술",
+    "토큰_개수": 59,
+    "단어맵": [
+      {
+        "original_word": "최근에는",
+        "root": "최근",
+        "english": "recently"
+      },
+      {
+        "original_word": "미술",
+        "root": "미술",
+        "english": "art"
+      },
+      {
+        "original_word": "작품을",
+        "root": "작품",
+        "english": "artwork"
+      },
+      {
+        "original_word": "과학적",
+        "root": "과학적",
+        "english": "scientific"
+      },
+      {
+        "original_word": "연구의",
+        "root": "연구",
+        "english": "research"
+      },
+      {
+        "original_word": "참고",
+        "root": "참고",
+        "english": "reference"
+      },
+      {
+        "original_word": "자료로",
+        "root": "자료",
+        "english": "data/material"
+      },
+      {
+        "original_word": "활용하고",
+        "root": "활용하다",
+        "english": "to utilize"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "그중",
+        "root": "그중",
+        "english": "among them"
+      },
+      {
+        "original_word": "하나가",
+        "root": "하나",
+        "english": "one"
+      },
+      {
+        "original_word": "풍경화에",
+        "root": "풍경화",
+        "english": "landscape painting"
+      },
+      {
+        "original_word": "사용된",
+        "root": "사용되다",
+        "english": "to be used"
+      },
+      {
+        "original_word": "색을",
+        "root": "색",
+        "english": "color"
+      },
+      {
+        "original_word": "연구하여",
+        "root": "연구하다",
+        "english": "to research"
+      },
+      {
+        "original_word": "그",
+        "root": "그",
+        "english": "that"
+      },
+      {
+        "original_word": "시대의",
+        "root": "시대",
+        "english": "era/period"
+      },
+      {
+        "original_word": "대기",
+        "root": "대기",
+        "english": "atmosphere"
+      },
+      {
+        "original_word": "상태를",
+        "root": "상태",
+        "english": "condition/state"
+      },
+      {
+        "original_word": "알아보는",
+        "root": "알아보다",
+        "english": "to find out/examine"
+      },
+      {
+        "original_word": "것이다",
+        "root": "것이다",
+        "english": "it is a thing"
+      },
+      {
+        "original_word": "일반적으로",
+        "root": "일반적",
+        "english": "generally"
+      },
+      {
+        "original_word": "공기",
+        "root": "공기",
+        "english": "air"
+      },
+      {
+        "original_word": "중에",
+        "root": "중",
+        "english": "among/in"
+      },
+      {
+        "original_word": "먼지가",
+        "root": "먼지",
+        "english": "dust"
+      },
+      {
+        "original_word": "많으면",
+        "root": "많다",
+        "english": "to be many/much"
+      },
+      {
+        "original_word": "해가",
+        "root": "해",
+        "english": "sun"
+      },
+      {
+        "original_word": "질",
+        "root": "지다",
+        "english": "to set/go down"
+      },
+      {
+        "original_word": "때",
+        "root": "때",
+        "english": "time"
+      },
+      {
+        "original_word": "하늘은",
+        "root": "하늘",
+        "english": "sky"
+      },
+      {
+        "original_word": "더",
+        "root": "더",
+        "english": "more"
+      },
+      {
+        "original_word": "붉게",
+        "root": "붉다",
+        "english": "to be red"
+      },
+      {
+        "original_word": "보인다고",
+        "root": "보이다",
+        "english": "to appear/look"
+      },
+      {
+        "original_word": "한다",
+        "root": "하다",
+        "english": "to do/say"
+      },
+      {
+        "original_word": "그런데",
+        "root": "그런데",
+        "english": "however"
+      },
+      {
+        "original_word": "산업화가",
+        "root": "산업화",
+        "english": "industrialization"
+      },
+      {
+        "original_word": "진행된",
+        "root": "진행되다",
+        "english": "to be progressed"
+      },
+      {
+        "original_word": "20세기",
+        "root": "20세기",
+        "english": "20th century"
+      },
+      {
+        "original_word": "말",
+        "root": "말",
+        "english": "end"
+      },
+      {
+        "original_word": "그림",
+        "root": "그림",
+        "english": "picture/painting"
+      },
+      {
+        "original_word": "속에",
+        "root": "속",
+        "english": "inside"
+      },
+      {
+        "original_word": "표현된",
+        "root": "표현되다",
+        "english": "to be expressed"
+      },
+      {
+        "original_word": "하늘이",
+        "root": "하늘",
+        "english": "sky"
+      },
+      {
+        "original_word": "다른",
+        "root": "다르다",
+        "english": "to be different"
+      },
+      {
+        "original_word": "시대의",
+        "root": "시대",
+        "english": "era"
+      },
+      {
+        "original_word": "그림보다",
+        "root": "그림",
+        "english": "picture"
+      },
+      {
+        "original_word": "더",
+        "root": "더",
+        "english": "more"
+      },
+      {
+        "original_word": "붉다",
+        "root": "붉다",
+        "english": "to be red"
+      },
+      {
+        "original_word": "우리는",
+        "root": "우리",
+        "english": "we"
+      },
+      {
+        "original_word": "그",
+        "root": "그",
+        "english": "that"
+      },
+      {
+        "original_word": "그림을",
+        "root": "그림",
+        "english": "picture"
+      },
+      {
+        "original_word": "통해",
+        "root": "통하다",
+        "english": "through"
+      },
+      {
+        "original_word": "20세기",
+        "root": "20세기",
+        "english": "20th century"
+      },
+      {
+        "original_word": "말에",
+        "root": "말",
+        "english": "end"
+      },
+      {
+        "original_word": "( )",
+        "root": "( )",
+        "english": "blank"
+      },
+      {
+        "original_word": "사실을",
+        "root": "사실",
+        "english": "fact"
+      },
+      {
+        "original_word": "확인할",
+        "root": "확인하다",
+        "english": "to confirm"
+      },
+      {
+        "original_word": "수",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist/can"
+      }
+    ]
+  },
+  {
+    "문제_번호": 32,
+    "지시문": "[32~34] 다음을 읽고 내용이 같은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "항공사들은 비행기 안에서 먹는 기내식의 맛을 살리기 위해 많은 노력을 한다. 먼저 건조한 기내 환경을 고려하여 음식의 수분이 날아가지 않도록 포장에 신경을 쓴다. 또한 고도가 높아졌을 때 사람들의 미각이 둔해지는 것에 대비해서 일부러 음식을 조금 짜게 만든다. 또 기내식은 미리 조리하여 냉동한 후 비행기에 싣기 때문에 손님들에게 내놓기 직전에 다시 따뜻하게 데운다.",
+    "선택지": {
+      "1": "기내가 건조해서 사람들의 입맛이 예민해진다.",
+      "2": "기내식은 좀 더 짜게 만들어야 맛을 낼 수 있다.",
+      "3": "음식 온도를 유지하기 위해 기내식을 포장해 놓는다.",
+      "4": "음식에 있는 수분을 줄여 기내식이 상하는 것을 방지한다."
+    },
+    "정답": 2,
+    "주제": "과학",
+    "토큰_개수": 52,
+    "단어맵": [
+      {
+        "original_word": "항공사들은",
+        "root": "항공사",
+        "english": "airline"
+      },
+      {
+        "original_word": "비행기",
+        "root": "비행기",
+        "english": "airplane"
+      },
+      {
+        "original_word": "안에서",
+        "root": "안",
+        "english": "inside"
+      },
+      {
+        "original_word": "먹는",
+        "root": "먹다",
+        "english": "to eat"
+      },
+      {
+        "original_word": "기내식의",
+        "root": "기내식",
+        "english": "in-flight meal"
+      },
+      {
+        "original_word": "맛을",
+        "root": "맛",
+        "english": "taste"
+      },
+      {
+        "original_word": "살리기",
+        "root": "살리다",
+        "english": "to save/bring out"
+      },
+      {
+        "original_word": "위해",
+        "root": "위하다",
+        "english": "for"
+      },
+      {
+        "original_word": "많은",
+        "root": "많다",
+        "english": "to be many"
+      },
+      {
+        "original_word": "노력을",
+        "root": "노력",
+        "english": "effort"
+      },
+      {
+        "original_word": "한다",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "먼저",
+        "root": "먼저",
+        "english": "first"
+      },
+      {
+        "original_word": "건조한",
+        "root": "건조하다",
+        "english": "to be dry"
+      },
+      {
+        "original_word": "기내",
+        "root": "기내",
+        "english": "in-flight"
+      },
+      {
+        "original_word": "환경을",
+        "root": "환경",
+        "english": "environment"
+      },
+      {
+        "original_word": "고려하여",
+        "root": "고려하다",
+        "english": "to consider"
+      },
+      {
+        "original_word": "음식의",
+        "root": "음식",
+        "english": "food"
+      },
+      {
+        "original_word": "수분이",
+        "root": "수분",
+        "english": "moisture"
+      },
+      {
+        "original_word": "날아가지",
+        "root": "날아가다",
+        "english": "to fly away/evaporate"
+      },
+      {
+        "original_word": "않도록",
+        "root": "않다",
+        "english": "to not do"
+      },
+      {
+        "original_word": "포장에",
+        "root": "포장",
+        "english": "packaging"
+      },
+      {
+        "original_word": "신경을",
+        "root": "신경",
+        "english": "care/nerve"
+      },
+      {
+        "original_word": "쓴다",
+        "root": "쓰다",
+        "english": "to use/pay (attention)"
+      },
+      {
+        "original_word": "또한",
+        "root": "또한",
+        "english": "also"
+      },
+      {
+        "original_word": "고도가",
+        "root": "고도",
+        "english": "altitude"
+      },
+      {
+        "original_word": "높아졌을",
+        "root": "높아지다",
+        "english": "to become high"
+      },
+      {
+        "original_word": "때",
+        "root": "때",
+        "english": "time"
+      },
+      {
+        "original_word": "사람들의",
+        "root": "사람",
+        "english": "person"
+      },
+      {
+        "original_word": "미각이",
+        "root": "미각",
+        "english": "sense of taste"
+      },
+      {
+        "original_word": "둔해지는",
+        "root": "둔해지다",
+        "english": "to become dull"
+      },
+      {
+        "original_word": "것에",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "대비해서",
+        "root": "대비하다",
+        "english": "to prepare for"
+      },
+      {
+        "original_word": "일부러",
+        "root": "일부러",
+        "english": "on purpose"
+      },
+      {
+        "original_word": "음식을",
+        "root": "음식",
+        "english": "food"
+      },
+      {
+        "original_word": "조금",
+        "root": "조금",
+        "english": "a little"
+      },
+      {
+        "original_word": "짜게",
+        "root": "짜다",
+        "english": "to be salty"
+      },
+      {
+        "original_word": "만든다",
+        "root": "만들다",
+        "english": "to make"
+      },
+      {
+        "original_word": "또",
+        "root": "또",
+        "english": "also/again"
+      },
+      {
+        "original_word": "기내식은",
+        "root": "기내식",
+        "english": "in-flight meal"
+      },
+      {
+        "original_word": "미리",
+        "root": "미리",
+        "english": "in advance"
+      },
+      {
+        "original_word": "조리하여",
+        "root": "조리하다",
+        "english": "to cook"
+      },
+      {
+        "original_word": "냉동한",
+        "root": "냉동하다",
+        "english": "to freeze"
+      },
+      {
+        "original_word": "후",
+        "root": "후",
+        "english": "after"
+      },
+      {
+        "original_word": "비행기에",
+        "root": "비행기",
+        "english": "airplane"
+      },
+      {
+        "original_word": "싣기",
+        "root": "싣다",
+        "english": "to load"
+      },
+      {
+        "original_word": "때문에",
+        "root": "때문",
+        "english": "because of"
+      },
+      {
+        "original_word": "손님들에게",
+        "root": "손님",
+        "english": "customer/guest"
+      },
+      {
+        "original_word": "내놓기",
+        "root": "내놓다",
+        "english": "to serve/put out"
+      },
+      {
+        "original_word": "직전에",
+        "root": "직전",
+        "english": "right before"
+      },
+      {
+        "original_word": "다시",
+        "root": "다시",
+        "english": "again"
+      },
+      {
+        "original_word": "따뜻하게",
+        "root": "따뜻하다",
+        "english": "to be warm"
+      },
+      {
+        "original_word": "데운다",
+        "root": "데우다",
+        "english": "to warm up"
+      }
+    ]
+  },
+  {
+    "문제_번호": 33,
+    "지시문": "[32~34] 다음을 읽고 내용이 같은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "요즘 도시에 벌의 수가 증가하여 이로 인한 피해가 종종 발생하고 있다. 한 연구팀은 도시가 벌이 살기에 적합한 환경이 된 것이 원인이라고 밝혔다. 도시 환경이 벌의 생존에 도움이 된다는 것이다. 도시의 공원에서 다양한 꽃과 식물이 자라고 있어 풍부한 먹이를 제공한다고 한다. 농촌에 비해 도시가 상대적으로 농약 사용이 적어 안전하다는 것도 도시에 벌이 많아진 또 하나의 이유라고 한다.",
+    "선택지": {
+      "1": "예전에 비해 도시에 사는 벌의 수가 줄었다.",
+      "2": "벌을 쫓기 위해 도시의 식물에 약을 뿌리고 있다.",
+      "3": "도시의 벌 피해 방지법에 대한 연구가 진행 중이다.",
+      "4": "도시의 공원이 벌이 살 수 있는 좋은 환경을 제공한다."
+    },
+    "정답": 4,
+    "주제": "과학",
+    "토큰_개수": 56,
+    "단어맵": [
+      {
+        "original_word": "요즘",
+        "root": "요즘",
+        "english": "these days"
+      },
+      {
+        "original_word": "도시에",
+        "root": "도시",
+        "english": "city"
+      },
+      {
+        "original_word": "벌의",
+        "root": "벌",
+        "english": "bee"
+      },
+      {
+        "original_word": "수가",
+        "root": "수",
+        "english": "number"
+      },
+      {
+        "original_word": "증가하여",
+        "root": "증가하다",
+        "english": "to increase"
+      },
+      {
+        "original_word": "이로",
+        "root": "이",
+        "english": "this"
+      },
+      {
+        "original_word": "인한",
+        "root": "인하다",
+        "english": "due to"
+      },
+      {
+        "original_word": "피해가",
+        "root": "피해",
+        "english": "damage"
+      },
+      {
+        "original_word": "종종",
+        "root": "종종",
+        "english": "often"
+      },
+      {
+        "original_word": "발생하고",
+        "root": "발생하다",
+        "english": "to occur"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "한",
+        "root": "한",
+        "english": "one"
+      },
+      {
+        "original_word": "연구팀은",
+        "root": "연구팀",
+        "english": "research team"
+      },
+      {
+        "original_word": "도시가",
+        "root": "도시",
+        "english": "city"
+      },
+      {
+        "original_word": "벌이",
+        "root": "벌",
+        "english": "bee"
+      },
+      {
+        "original_word": "살기에",
+        "root": "살다",
+        "english": "to live"
+      },
+      {
+        "original_word": "적합한",
+        "root": "적합하다",
+        "english": "to be suitable"
+      },
+      {
+        "original_word": "환경이",
+        "root": "환경",
+        "english": "environment"
+      },
+      {
+        "original_word": "된",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "것이",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "원인이라고",
+        "root": "원인",
+        "english": "cause"
+      },
+      {
+        "original_word": "밝혔다",
+        "root": "밝히다",
+        "english": "to reveal/clarify"
+      },
+      {
+        "original_word": "도시",
+        "root": "도시",
+        "english": "city"
+      },
+      {
+        "original_word": "환경이",
+        "root": "환경",
+        "english": "environment"
+      },
+      {
+        "original_word": "벌의",
+        "root": "벌",
+        "english": "bee"
+      },
+      {
+        "original_word": "생존에",
+        "root": "생존",
+        "english": "survival"
+      },
+      {
+        "original_word": "도움이",
+        "root": "도움",
+        "english": "help"
+      },
+      {
+        "original_word": "된다는",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "것이다",
+        "root": "것이다",
+        "english": "it is a thing"
+      },
+      {
+        "original_word": "도시의",
+        "root": "도시",
+        "english": "city"
+      },
+      {
+        "original_word": "공원에서",
+        "root": "공원",
+        "english": "park"
+      },
+      {
+        "original_word": "다양한",
+        "root": "다양하다",
+        "english": "to be various"
+      },
+      {
+        "original_word": "꽃과",
+        "root": "꽃",
+        "english": "flower"
+      },
+      {
+        "original_word": "식물이",
+        "root": "식물",
+        "english": "plant"
+      },
+      {
+        "original_word": "자라고",
+        "root": "자라다",
+        "english": "to grow"
+      },
+      {
+        "original_word": "있어",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "풍부한",
+        "root": "풍부하다",
+        "english": "to be abundant"
+      },
+      {
+        "original_word": "먹이를",
+        "root": "먹이",
+        "english": "food/prey"
+      },
+      {
+        "original_word": "제공한다고",
+        "root": "제공하다",
+        "english": "to provide"
+      },
+      {
+        "original_word": "한다",
+        "root": "하다",
+        "english": "to do/say"
+      },
+      {
+        "original_word": "농촌에",
+        "root": "농촌",
+        "english": "farming village"
+      },
+      {
+        "original_word": "비해",
+        "root": "비하다",
+        "english": "compared to"
+      },
+      {
+        "original_word": "도시가",
+        "root": "도시",
+        "english": "city"
+      },
+      {
+        "original_word": "상대적으로",
+        "root": "상대적",
+        "english": "relatively"
+      },
+      {
+        "original_word": "농약",
+        "root": "농약",
+        "english": "agricultural pesticide"
+      },
+      {
+        "original_word": "사용이",
+        "root": "사용",
+        "english": "use"
+      },
+      {
+        "original_word": "적어",
+        "root": "적다",
+        "english": "to be little/few"
+      },
+      {
+        "original_word": "안전하다는",
+        "root": "안전하다",
+        "english": "to be safe"
+      },
+      {
+        "original_word": "것도",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "도시에",
+        "root": "도시",
+        "english": "city"
+      },
+      {
+        "original_word": "벌이",
+        "root": "벌",
+        "english": "bee"
+      },
+      {
+        "original_word": "많아진",
+        "root": "많아지다",
+        "english": "to increase/become many"
+      },
+      {
+        "original_word": "또",
+        "root": "또",
+        "english": "another/also"
+      },
+      {
+        "original_word": "하나의",
+        "root": "하나",
+        "english": "one"
+      },
+      {
+        "original_word": "이유라고",
+        "root": "이유",
+        "english": "reason"
+      },
+      {
+        "original_word": "한다",
+        "root": "하다",
+        "english": "to do/say"
+      }
+    ]
+  },
+  {
+    "문제_번호": 34,
+    "지시문": "[32~34] 다음을 읽고 내용이 같은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "정부에서 ‘휴가 하루 더 가기’ 캠페인을 벌이고 있다. 국내 관광의 활성화를 목적으로 기업들과 근로자의 참여를 유도하겠다는 것이다. 국민들의 국내 휴가 일수가 하루 증가하면 소비가 2조 5천 억 원이 늘어 경제가 활성화된다. 또 관광업계에 5만 개 이상의 일자리가 생길 것으로 예상된다. 집중력이 떨어질 수 있는 더운 여름철, 근로자들의 사기를 높이는 데에도 도움이 될 것으로 보인다.",
+    "선택지": {
+      "1": "휴가 기간이 늘어나면 경제에 악영향을 끼친다.",
+      "2": "국내 관광업과 관련된 일자리는 5만 개 정도이다.",
+      "3": "관광업계에서 이 캠페인을 기획하여 진행하고 있다.",
+      "4": "이 캠페인은 국내 관광을 활성화하기 위해 시작되었다."
+    },
+    "정답": 4,
+    "주제": "경제",
+    "토큰_개수": 54,
+    "단어맵": [
+      {
+        "original_word": "정부에서",
+        "root": "정부",
+        "english": "government"
+      },
+      {
+        "original_word": "‘휴가",
+        "root": "휴가",
+        "english": "vacation"
+      },
+      {
+        "original_word": "하루",
+        "root": "하루",
+        "english": "one day"
+      },
+      {
+        "original_word": "더",
+        "root": "더",
+        "english": "more"
+      },
+      {
+        "original_word": "가기’",
+        "root": "가기",
+        "english": "going"
+      },
+      {
+        "original_word": "캠페인을",
+        "root": "캠페인",
+        "english": "campaign"
+      },
+      {
+        "original_word": "벌이고",
+        "root": "벌이다",
+        "english": "to wage/conduct"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "국내",
+        "root": "국내",
+        "english": "domestic"
+      },
+      {
+        "original_word": "관광의",
+        "root": "관광",
+        "english": "tourism"
+      },
+      {
+        "original_word": "활성화를",
+        "root": "활성화",
+        "english": "revitalization"
+      },
+      {
+        "original_word": "목적으로",
+        "root": "목적",
+        "english": "purpose"
+      },
+      {
+        "original_word": "기업들과",
+        "root": "기업",
+        "english": "enterprise/company"
+      },
+      {
+        "original_word": "근로자의",
+        "root": "근로자",
+        "english": "worker"
+      },
+      {
+        "original_word": "참여를",
+        "root": "참여",
+        "english": "participation"
+      },
+      {
+        "original_word": "유도하겠다는",
+        "root": "유도하다",
+        "english": "to induce"
+      },
+      {
+        "original_word": "것이다",
+        "root": "것이다",
+        "english": "it is a thing"
+      },
+      {
+        "original_word": "국민들의",
+        "root": "국민",
+        "english": "citizen/people"
+      },
+      {
+        "original_word": "국내",
+        "root": "국내",
+        "english": "domestic"
+      },
+      {
+        "original_word": "휴가",
+        "root": "휴가",
+        "english": "vacation"
+      },
+      {
+        "original_word": "일수가",
+        "root": "일수",
+        "english": "number of days"
+      },
+      {
+        "original_word": "하루",
+        "root": "하루",
+        "english": "one day"
+      },
+      {
+        "original_word": "증가하면",
+        "root": "증가하다",
+        "english": "to increase"
+      },
+      {
+        "original_word": "소비가",
+        "root": "소비",
+        "english": "consumption"
+      },
+      {
+        "original_word": "2조",
+        "root": "2조",
+        "english": "2 trillion"
+      },
+      {
+        "original_word": "5천",
+        "root": "5천",
+        "english": "5 thousand"
+      },
+      {
+        "original_word": "억",
+        "root": "억",
+        "english": "hundred million"
+      },
+      {
+        "original_word": "원이",
+        "root": "원",
+        "english": "won (currency)"
+      },
+      {
+        "original_word": "늘어",
+        "root": "늘다",
+        "english": "to increase"
+      },
+      {
+        "original_word": "경제가",
+        "root": "경제",
+        "english": "economy"
+      },
+      {
+        "original_word": "활성화된다",
+        "root": "활성화되다",
+        "english": "to be revitalized"
+      },
+      {
+        "original_word": "또",
+        "root": "또",
+        "english": "also"
+      },
+      {
+        "original_word": "관광업계에",
+        "root": "관광업계",
+        "english": "tourism industry"
+      },
+      {
+        "original_word": "5만",
+        "root": "5만",
+        "english": "50 thousand"
+      },
+      {
+        "original_word": "개",
+        "root": "개",
+        "english": "counter for items"
+      },
+      {
+        "original_word": "이상의",
+        "root": "이상",
+        "english": "more than"
+      },
+      {
+        "original_word": "일자리가",
+        "root": "일자리",
+        "english": "job"
+      },
+      {
+        "original_word": "생길",
+        "root": "생기다",
+        "english": "to be created/arise"
+      },
+      {
+        "original_word": "것으로",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "예상된다",
+        "root": "예상되다",
+        "english": "to be expected"
+      },
+      {
+        "original_word": "집중력이",
+        "root": "집중력",
+        "english": "concentration"
+      },
+      {
+        "original_word": "떨어질",
+        "root": "떨어지다",
+        "english": "to drop/fall"
+      },
+      {
+        "original_word": "수",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "있는",
+        "root": "있다",
+        "english": "to exist/can"
+      },
+      {
+        "original_word": "더운",
+        "root": "덥다",
+        "english": "to be hot"
+      },
+      {
+        "original_word": "여름철",
+        "root": "여름철",
+        "english": "summer season"
+      },
+      {
+        "original_word": "근로자들의",
+        "root": "근로자",
+        "english": "worker"
+      },
+      {
+        "original_word": "사기를",
+        "root": "사기",
+        "english": "morale"
+      },
+      {
+        "original_word": "높이는",
+        "root": "높이다",
+        "english": "to raise"
+      },
+      {
+        "original_word": "데에도",
+        "root": "데",
+        "english": "case/place"
+      },
+      {
+        "original_word": "도움이",
+        "root": "도움",
+        "english": "help"
+      },
+      {
+        "original_word": "될",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "것으로",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "보인다",
+        "root": "보이다",
+        "english": "to seem/appear"
+      }
+    ]
+  },
+  {
+    "문제_번호": 35,
+    "지시문": "[35~38] 다음 글의 주제로 가장 알맞은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "미혼이라는 말에는 결혼은 꼭 해야 하는 것이지만 아직 하지 않았다는 뜻이 포함되어 있다. 그러나 결혼은 필수가 아니라 선택이라고 생각하는 사람들이 증가함에 따라 미혼이라는 말 대신에 결혼을 선택하지 않는다는 의미의 비혼이라는 단어가 사용되기 시작하였다. 미혼, 독신 등의 단어들이 비혼이라는 단어에 자리를 내주게 된 것이다.",
+    "선택지": {
+      "1": "미혼이라는 말은 결혼에 대한 다양한 의미를 포괄한다.",
+      "2": "비혼이라는 말은 결혼에 대한 인식의 변화를 보여 준다.",
+      "3": "비혼과 미혼은 같은 대상을 가리키므로 의미의 차이는 없다.",
+      "4": "미혼이라는 말은 결혼을 계획하는 사람들에게 부적절한 표현이다."
+    },
+    "정답": 2,
+    "주제": "사회",
+    "토큰_개수": 43,
+    "단어맵": [
+      {
+        "original_word": "미혼이라는",
+        "root": "미혼",
+        "english": "unmarried"
+      },
+      {
+        "original_word": "말에는",
+        "root": "말",
+        "english": "word"
+      },
+      {
+        "original_word": "결혼은",
+        "root": "결혼",
+        "english": "marriage"
+      },
+      {
+        "original_word": "꼭",
+        "root": "꼭",
+        "english": "surely/must"
+      },
+      {
+        "original_word": "해야",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "하는",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "것이지만",
+        "root": "것이다",
+        "english": "it is a thing/but"
+      },
+      {
+        "original_word": "아직",
+        "root": "아직",
+        "english": "yet/still"
+      },
+      {
+        "original_word": "하지",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "않았다는",
+        "root": "않다",
+        "english": "to not do"
+      },
+      {
+        "original_word": "뜻이",
+        "root": "뜻",
+        "english": "meaning"
+      },
+      {
+        "original_word": "포함되어",
+        "root": "포함되다",
+        "english": "to be included"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "그러나",
+        "root": "그러나",
+        "english": "however"
+      },
+      {
+        "original_word": "결혼은",
+        "root": "결혼",
+        "english": "marriage"
+      },
+      {
+        "original_word": "필수가",
+        "root": "필수",
+        "english": "necessity"
+      },
+      {
+        "original_word": "아니라",
+        "root": "아니다",
+        "english": "to not be"
+      },
+      {
+        "original_word": "선택이라고",
+        "root": "선택",
+        "english": "choice"
+      },
+      {
+        "original_word": "생각하는",
+        "root": "생각하다",
+        "english": "to think"
+      },
+      {
+        "original_word": "사람들이",
+        "root": "사람",
+        "english": "person"
+      },
+      {
+        "original_word": "증가함에",
+        "root": "증가하다",
+        "english": "to increase"
+      },
+      {
+        "original_word": "따라",
+        "root": "따르다",
+        "english": "to follow/according to"
+      },
+      {
+        "original_word": "미혼이라는",
+        "root": "미혼",
+        "english": "unmarried"
+      },
+      {
+        "original_word": "말",
+        "root": "말",
+        "english": "word"
+      },
+      {
+        "original_word": "대신에",
+        "root": "대신",
+        "english": "instead of"
+      },
+      {
+        "original_word": "결혼을",
+        "root": "결혼",
+        "english": "marriage"
+      },
+      {
+        "original_word": "선택하지",
+        "root": "선택하다",
+        "english": "to choose"
+      },
+      {
+        "original_word": "않는다는",
+        "root": "않다",
+        "english": "to not do"
+      },
+      {
+        "original_word": "의미의",
+        "root": "의미",
+        "english": "meaning"
+      },
+      {
+        "original_word": "비혼이라는",
+        "root": "비혼",
+        "english": "unmarried by choice"
+      },
+      {
+        "original_word": "단어가",
+        "root": "단어",
+        "english": "word"
+      },
+      {
+        "original_word": "사용되기",
+        "root": "사용되다",
+        "english": "to be used"
+      },
+      {
+        "original_word": "시작하였다",
+        "root": "시작하다",
+        "english": "to start"
+      },
+      {
+        "original_word": "미혼",
+        "root": "미혼",
+        "english": "unmarried"
+      },
+      {
+        "original_word": "독신",
+        "root": "독신",
+        "english": "single"
+      },
+      {
+        "original_word": "등의",
+        "root": "등",
+        "english": "etc."
+      },
+      {
+        "original_word": "단어들이",
+        "root": "단어",
+        "english": "word"
+      },
+      {
+        "original_word": "비혼이라는",
+        "root": "비혼",
+        "english": "unmarried by choice"
+      },
+      {
+        "original_word": "단어에",
+        "root": "단어",
+        "english": "word"
+      },
+      {
+        "original_word": "자리를",
+        "root": "자리",
+        "english": "seat/place"
+      },
+      {
+        "original_word": "내주게",
+        "root": "내주다",
+        "english": "to yield/give away"
+      },
+      {
+        "original_word": "된",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "것이다",
+        "root": "것이다",
+        "english": "it is a thing"
+      }
+    ]
+  },
+  {
+    "문제_번호": 36,
+    "지시문": "[35~38] 다음 글의 주제로 가장 알맞은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "패션도 비즈니스의 일부이다. 비즈니스를 목적으로 누군가를 만나야 한다면 비즈니스 상황에 따라 입고 나갈 옷의 색상, 디자인, 소재 등을 고려하여 전략적으로 이미지를 연출하는 것이 중요하다. 강한 의지를 표명해야 한다면 빳빳한 소재의 무채색 옷을 선택하는 것이 바람직하다. 반면에 상대 회사와 협상을 해야 한다면 광택이 있는 부드러운 소재의 복장을 통해 편안한 분위기를 연출하는 것이 좋다. 상대 회사를 상징하는 색상의 셔츠나 넥타이로 친근감을 표현할 수도 있다.",
+    "선택지": {
+      "1": "회사의 이미지를 비즈니스 패션을 통해 연출하라.",
+      "2": "비즈니스 상황에 부합하는 패션 전략을 활용하라.",
+      "3": "회사를 상징하는 색상으로 편안한 분위기를 조성하라.",
+      "4": "부드러운 이미지 연출을 위한 비즈니스 전략을 세워라."
+    },
+    "정답": 2,
+    "주제": "경제",
+    "토큰_개수": 62,
+    "단어맵": [
+      {
+        "original_word": "패션도",
+        "root": "패션",
+        "english": "fashion"
+      },
+      {
+        "original_word": "비즈니스의",
+        "root": "비즈니스",
+        "english": "business"
+      },
+      {
+        "original_word": "일부이다",
+        "root": "일부이다",
+        "english": "to be a part"
+      },
+      {
+        "original_word": "비즈니스를",
+        "root": "비즈니스",
+        "english": "business"
+      },
+      {
+        "original_word": "목적으로",
+        "root": "목적",
+        "english": "purpose"
+      },
+      {
+        "original_word": "누군가를",
+        "root": "누군가",
+        "english": "someone"
+      },
+      {
+        "original_word": "만나야",
+        "root": "만나다",
+        "english": "to meet"
+      },
+      {
+        "original_word": "한다면",
+        "root": "하다",
+        "english": "if one does"
+      },
+      {
+        "original_word": "비즈니스",
+        "root": "비즈니스",
+        "english": "business"
+      },
+      {
+        "original_word": "상황에",
+        "root": "상황",
+        "english": "situation"
+      },
+      {
+        "original_word": "따라",
+        "root": "따르다",
+        "english": "according to"
+      },
+      {
+        "original_word": "입고",
+        "root": "입다",
+        "english": "to wear"
+      },
+      {
+        "original_word": "나갈",
+        "root": "나가다",
+        "english": "to go out"
+      },
+      {
+        "original_word": "옷의",
+        "root": "옷",
+        "english": "clothes"
+      },
+      {
+        "original_word": "색상",
+        "root": "색상",
+        "english": "color"
+      },
+      {
+        "original_word": "디자인",
+        "root": "디자인",
+        "english": "design"
+      },
+      {
+        "original_word": "소재",
+        "root": "소재",
+        "english": "material"
+      },
+      {
+        "original_word": "등을",
+        "root": "등",
+        "english": "etc."
+      },
+      {
+        "original_word": "고려하여",
+        "root": "고려하다",
+        "english": "to consider"
+      },
+      {
+        "original_word": "전략적으로",
+        "root": "전략적",
+        "english": "strategically"
+      },
+      {
+        "original_word": "이미지를",
+        "root": "이미지",
+        "english": "image"
+      },
+      {
+        "original_word": "연출하는",
+        "root": "연출하다",
+        "english": "to direct/present"
+      },
+      {
+        "original_word": "것이",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "중요하다",
+        "root": "중요하다",
+        "english": "to be important"
+      },
+      {
+        "original_word": "강한",
+        "root": "강하다",
+        "english": "to be strong"
+      },
+      {
+        "original_word": "의지를",
+        "root": "의지",
+        "english": "will"
+      },
+      {
+        "original_word": "표명해야",
+        "root": "표명하다",
+        "english": "to express/declare"
+      },
+      {
+        "original_word": "한다면",
+        "root": "하다",
+        "english": "if one does"
+      },
+      {
+        "original_word": "빳빳한",
+        "root": "빳빳하다",
+        "english": "to be stiff"
+      },
+      {
+        "original_word": "소재의",
+        "root": "소재",
+        "english": "material"
+      },
+      {
+        "original_word": "무채색",
+        "root": "무채색",
+        "english": "achromatic color"
+      },
+      {
+        "original_word": "옷을",
+        "root": "옷",
+        "english": "clothes"
+      },
+      {
+        "original_word": "선택하는",
+        "root": "선택하다",
+        "english": "to choose"
+      },
+      {
+        "original_word": "것이",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "바람직하다",
+        "root": "바람직하다",
+        "english": "to be desirable"
+      },
+      {
+        "original_word": "반면에",
+        "root": "반면",
+        "english": "on the other hand"
+      },
+      {
+        "original_word": "상대",
+        "root": "상대",
+        "english": "opponent/partner"
+      },
+      {
+        "original_word": "회사와",
+        "root": "회사",
+        "english": "company"
+      },
+      {
+        "original_word": "협상을",
+        "root": "협상",
+        "english": "negotiation"
+      },
+      {
+        "original_word": "해야",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "한다면",
+        "root": "하다",
+        "english": "if one does"
+      },
+      {
+        "original_word": "광택이",
+        "root": "광택",
+        "english": "gloss/shine"
+      },
+      {
+        "original_word": "있는",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "부드러운",
+        "root": "부드럽다",
+        "english": "to be soft"
+      },
+      {
+        "original_word": "소재의",
+        "root": "소재",
+        "english": "material"
+      },
+      {
+        "original_word": "복장을",
+        "root": "복장",
+        "english": "attire"
+      },
+      {
+        "original_word": "통해",
+        "root": "통하다",
+        "english": "through"
+      },
+      {
+        "original_word": "편안한",
+        "root": "편안하다",
+        "english": "to be comfortable"
+      },
+      {
+        "original_word": "분위기를",
+        "root": "분위기",
+        "english": "atmosphere"
+      },
+      {
+        "original_word": "연출하는",
+        "root": "연출하다",
+        "english": "to create/direct"
+      },
+      {
+        "original_word": "것이",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "좋다",
+        "root": "좋다",
+        "english": "to be good"
+      },
+      {
+        "original_word": "상대",
+        "root": "상대",
+        "english": "counterpart"
+      },
+      {
+        "original_word": "회사를",
+        "root": "회사",
+        "english": "company"
+      },
+      {
+        "original_word": "상징하는",
+        "root": "상징하다",
+        "english": "to symbolize"
+      },
+      {
+        "original_word": "색상의",
+        "root": "색상",
+        "english": "color"
+      },
+      {
+        "original_word": "셔츠나",
+        "root": "셔츠",
+        "english": "shirt"
+      },
+      {
+        "original_word": "넥타이로",
+        "root": "넥타이",
+        "english": "tie"
+      },
+      {
+        "original_word": "친근감을",
+        "root": "친근감",
+        "english": "sense of closeness"
+      },
+      {
+        "original_word": "표현할",
+        "root": "표현하다",
+        "english": "to express"
+      },
+      {
+        "original_word": "수도",
+        "root": "수",
+        "english": "ability/way"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      }
+    ]
+  },
+  {
+    "문제_번호": 37,
+    "지시문": "[35~38] 다음 글의 주제로 가장 알맞은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "육체적·정신적 피로로 인해 무기력한 상태가 지속된다면 소진증후군을 의심해 보아야 한다. 이 증후군의 대표적인 증상으로는 심한 불안감, 무기력, 삶에 대한 무관심 등을 들 수 있다. 일단 소진증후군을 앓게 되면 회복이 힘들다는 점을 고려할 때 휴식과 재충전을 통해 심신의 건강을 유지하려는 자세가 요구된다. 평소 작은 일에 기뻐하고 행복해 함으로써 삶의 활력을 유지하는 것도 이 증후군을 예방하는 데 도움이 된다.",
+    "선택지": {
+      "1": "소진증후군이 사회에 미치는 영향을 분석해야 한다.",
+      "2": "소진증후군의 원인과 증상의 관계를 파악해야 한다.",
+      "3": "소진증후군의 증상에 맞는 치료법을 개발해야 강구한다.",
+      "4": "소진증후군이 발생하지 않도록 사전에 노력해야 한다."
+    },
+    "정답": 4,
+    "주제": "사회",
+    "토큰_개수": 57,
+    "단어맵": [
+      {
+        "original_word": "육체적·정신적",
+        "root": "육체적·정신적",
+        "english": "physical and mental"
+      },
+      {
+        "original_word": "피로로",
+        "root": "피로",
+        "english": "fatigue"
+      },
+      {
+        "original_word": "인해",
+        "root": "인하다",
+        "english": "due to"
+      },
+      {
+        "original_word": "무기력한",
+        "root": "무기력하다",
+        "english": "to be lethargic"
+      },
+      {
+        "original_word": "상태가",
+        "root": "상태",
+        "english": "state"
+      },
+      {
+        "original_word": "지속된다면",
+        "root": "지속되다",
+        "english": "to continue"
+      },
+      {
+        "original_word": "소진증후군을",
+        "root": "소진증후군",
+        "english": "burnout syndrome"
+      },
+      {
+        "original_word": "의심해",
+        "root": "의심하다",
+        "english": "to suspect"
+      },
+      {
+        "original_word": "보아야",
+        "root": "보다",
+        "english": "to see/must do"
+      },
+      {
+        "original_word": "한다",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "이",
+        "root": "이",
+        "english": "this"
+      },
+      {
+        "original_word": "증후군의",
+        "root": "증후군",
+        "english": "syndrome"
+      },
+      {
+        "original_word": "대표적인",
+        "root": "대표적",
+        "english": "representative"
+      },
+      {
+        "original_word": "증상으로는",
+        "root": "증상",
+        "english": "symptom"
+      },
+      {
+        "original_word": "심한",
+        "root": "심하다",
+        "english": "to be severe"
+      },
+      {
+        "original_word": "불안감",
+        "root": "불안감",
+        "english": "anxiety"
+      },
+      {
+        "original_word": "무기력",
+        "root": "무기력",
+        "english": "lethargy"
+      },
+      {
+        "original_word": "삶에",
+        "root": "삶",
+        "english": "life"
+      },
+      {
+        "original_word": "대한",
+        "root": "대하다",
+        "english": "about"
+      },
+      {
+        "original_word": "무관심",
+        "root": "무관심",
+        "english": "indifference"
+      },
+      {
+        "original_word": "등을",
+        "root": "등",
+        "english": "etc."
+      },
+      {
+        "original_word": "들",
+        "root": "들다",
+        "english": "to bring up/cite"
+      },
+      {
+        "original_word": "수",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "일단",
+        "root": "일단",
+        "english": "once/first"
+      },
+      {
+        "original_word": "소진증후군을",
+        "root": "소진증후군",
+        "english": "burnout syndrome"
+      },
+      {
+        "original_word": "앓게",
+        "root": "앓다",
+        "english": "to suffer from"
+      },
+      {
+        "original_word": "되면",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "회복이",
+        "root": "회복",
+        "english": "recovery"
+      },
+      {
+        "original_word": "힘들다는",
+        "root": "힘들다",
+        "english": "to be hard"
+      },
+      {
+        "original_word": "점을",
+        "root": "점",
+        "english": "point"
+      },
+      {
+        "original_word": "고려할",
+        "root": "고려하다",
+        "english": "to consider"
+      },
+      {
+        "original_word": "때",
+        "root": "때",
+        "english": "time"
+      },
+      {
+        "original_word": "휴식과",
+        "root": "휴식",
+        "english": "rest"
+      },
+      {
+        "original_word": "재충전을",
+        "root": "재충전",
+        "english": "recharge"
+      },
+      {
+        "original_word": "통해",
+        "root": "통하다",
+        "english": "through"
+      },
+      {
+        "original_word": "심신의",
+        "root": "심신",
+        "english": "mind and body"
+      },
+      {
+        "original_word": "건강을",
+        "root": "건강",
+        "english": "health"
+      },
+      {
+        "original_word": "유지하려는",
+        "root": "유지하다",
+        "english": "to maintain"
+      },
+      {
+        "original_word": "자세가",
+        "root": "자세",
+        "english": "attitude/posture"
+      },
+      {
+        "original_word": "요구된다",
+        "root": "요구되다",
+        "english": "to be required"
+      },
+      {
+        "original_word": "평소",
+        "root": "평소",
+        "english": "usually"
+      },
+      {
+        "original_word": "작은",
+        "root": "작다",
+        "english": "to be small"
+      },
+      {
+        "original_word": "일에",
+        "root": "일",
+        "english": "thing/work"
+      },
+      {
+        "original_word": "기뻐하고",
+        "root": "기뻐하다",
+        "english": "to rejoice"
+      },
+      {
+        "original_word": "행복해",
+        "root": "행복하다",
+        "english": "to be happy"
+      },
+      {
+        "original_word": "함으로써",
+        "root": "하다",
+        "english": "by doing"
+      },
+      {
+        "original_word": "삶의",
+        "root": "삶",
+        "english": "life"
+      },
+      {
+        "original_word": "활력을",
+        "root": "활력",
+        "english": "vitality"
+      },
+      {
+        "original_word": "유지하는",
+        "root": "유지하다",
+        "english": "to maintain"
+      },
+      {
+        "original_word": "것도",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "이",
+        "root": "이",
+        "english": "this"
+      },
+      {
+        "original_word": "증후군을",
+        "root": "증후군",
+        "english": "syndrome"
+      },
+      {
+        "original_word": "예방하는",
+        "root": "예방하다",
+        "english": "to prevent"
+      },
+      {
+        "original_word": "데",
+        "root": "데",
+        "english": "case/place"
+      },
+      {
+        "original_word": "도움이",
+        "root": "도움",
+        "english": "help"
+      },
+      {
+        "original_word": "된다",
+        "root": "되다",
+        "english": "to become"
+      }
+    ]
+  },
+  {
+    "문제_번호": 38,
+    "지시문": "[35~38] 다음 글의 주제로 가장 알맞은 것을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "그동안 로봇이 주로 인간의 육체노동만을 대체해 왔다면 앞으로는 지식 노동까지도 대체하게 될 것이다. 이러한 로봇의 등장으로 사람들은 일자리를 잃게 될지도 모른다는 생각을 할 수도 있다. 그러나 남는 노동 자원을 로봇이 대체할 수 없는 일에 활용할 수 있다는 긍정적인 면도 있다. 예를 들어 기업의 실적이나 스포츠 경기의 결과에 대한 데이터 수집이나 분석과 같은 단순 업무는 ‘로봇기자’가 담당하고 기자들은 심층 분석이나 인터뷰와 같은 깊이 있는 기사 작성에 더 집중할 수 있게 될 것이다.",
+    "선택지": {
+      "1": "로봇의 등장으로 인간의 지식 노동 시간이 감소하게 될 것이다.",
+      "2": "로봇의 등장으로 인간은 육체노동의 시간을 줄일 수 있을 것이다.",
+      "3": "로봇의 등장으로 인간의 노동력 시장 규모가 점점 축소될 것이다.",
+      "4": "로봇의 등장으로 인간은 질적인 업무에 집중할 수 있게 될 것이다."
+    },
+    "정답": 4,
+    "주제": "사회",
+    "토큰_개수": 71,
+    "단어맵": [
+      {
+        "original_word": "그동안",
+        "root": "그동안",
+        "english": "meanwhile"
+      },
+      {
+        "original_word": "로봇이",
+        "root": "로봇",
+        "english": "robot"
+      },
+      {
+        "original_word": "주로",
+        "root": "주로",
+        "english": "mainly"
+      },
+      {
+        "original_word": "인간의",
+        "root": "인간",
+        "english": "human"
+      },
+      {
+        "original_word": "육체노동만을",
+        "root": "육체노동",
+        "english": "physical labor"
+      },
+      {
+        "original_word": "대체해",
+        "root": "대체하다",
+        "english": "to replace"
+      },
+      {
+        "original_word": "왔다면",
+        "root": "오다",
+        "english": "if has been"
+      },
+      {
+        "original_word": "앞으로는",
+        "root": "앞으로",
+        "english": "in the future"
+      },
+      {
+        "original_word": "지식",
+        "root": "지식",
+        "english": "knowledge"
+      },
+      {
+        "original_word": "노동까지도",
+        "root": "노동",
+        "english": "labor"
+      },
+      {
+        "original_word": "대체하게",
+        "root": "대체하다",
+        "english": "to replace"
+      },
+      {
+        "original_word": "될",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "것이다",
+        "root": "것이다",
+        "english": "it is a thing"
+      },
+      {
+        "original_word": "이러한",
+        "root": "이러하다",
+        "english": "such"
+      },
+      {
+        "original_word": "로봇의",
+        "root": "로봇",
+        "english": "robot"
+      },
+      {
+        "original_word": "등장으로",
+        "root": "등장",
+        "english": "appearance"
+      },
+      {
+        "original_word": "사람들은",
+        "root": "사람",
+        "english": "person"
+      },
+      {
+        "original_word": "일자리를",
+        "root": "일자리",
+        "english": "job"
+      },
+      {
+        "original_word": "잃게",
+        "root": "잃다",
+        "english": "to lose"
+      },
+      {
+        "original_word": "될지도",
+        "root": "되다",
+        "english": "to become (might)"
+      },
+      {
+        "original_word": "모른다는",
+        "root": "모르다",
+        "english": "to not know"
+      },
+      {
+        "original_word": "생각을",
+        "root": "생각",
+        "english": "thought"
+      },
+      {
+        "original_word": "할",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "수도",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "그러나",
+        "root": "그러나",
+        "english": "however"
+      },
+      {
+        "original_word": "남는",
+        "root": "남다",
+        "english": "to remain"
+      },
+      {
+        "original_word": "노동",
+        "root": "노동",
+        "english": "labor"
+      },
+      {
+        "original_word": "자원을",
+        "root": "자원",
+        "english": "resource"
+      },
+      {
+        "original_word": "로봇이",
+        "root": "로봇",
+        "english": "robot"
+      },
+      {
+        "original_word": "대체할",
+        "root": "대체하다",
+        "english": "to replace"
+      },
+      {
+        "original_word": "수",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "없는",
+        "root": "없다",
+        "english": "to not exist"
+      },
+      {
+        "original_word": "일에",
+        "root": "일",
+        "english": "work/task"
+      },
+      {
+        "original_word": "활용할",
+        "root": "활용하다",
+        "english": "to utilize"
+      },
+      {
+        "original_word": "수",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "있다는",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "긍정적인",
+        "root": "긍정적",
+        "english": "positive"
+      },
+      {
+        "original_word": "면도",
+        "root": "면",
+        "english": "aspect"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "예를",
+        "root": "예",
+        "english": "example"
+      },
+      {
+        "original_word": "들어",
+        "root": "들다",
+        "english": "to take"
+      },
+      {
+        "original_word": "기업의",
+        "root": "기업",
+        "english": "enterprise/company"
+      },
+      {
+        "original_word": "실적이나",
+        "root": "실적",
+        "english": "performance/results"
+      },
+      {
+        "original_word": "스포츠",
+        "root": "스포츠",
+        "english": "sports"
+      },
+      {
+        "original_word": "경기의",
+        "root": "경기",
+        "english": "match/game"
+      },
+      {
+        "original_word": "결과에",
+        "root": "결과",
+        "english": "result"
+      },
+      {
+        "original_word": "대한",
+        "root": "대하다",
+        "english": "about"
+      },
+      {
+        "original_word": "데이터",
+        "root": "데이터",
+        "english": "data"
+      },
+      {
+        "original_word": "수집이나",
+        "root": "수집",
+        "english": "collection"
+      },
+      {
+        "original_word": "분석과",
+        "root": "분석",
+        "english": "analysis"
+      },
+      {
+        "original_word": "같은",
+        "root": "같다",
+        "english": "to be like"
+      },
+      {
+        "original_word": "단순",
+        "root": "단순",
+        "english": "simple"
+      },
+      {
+        "original_word": "업무는",
+        "root": "업무",
+        "english": "task/work"
+      },
+      {
+        "original_word": "‘로봇기자’가",
+        "root": "로봇기자",
+        "english": "robot reporter"
+      },
+      {
+        "original_word": "담당하고",
+        "root": "담당하다",
+        "english": "to take charge"
+      },
+      {
+        "original_word": "기자들은",
+        "root": "기자",
+        "english": "reporter"
+      },
+      {
+        "original_word": "심층",
+        "root": "심층",
+        "english": "in-depth"
+      },
+      {
+        "original_word": "분석이나",
+        "root": "분석",
+        "english": "analysis"
+      },
+      {
+        "original_word": "인터뷰와",
+        "root": "인터뷰",
+        "english": "interview"
+      },
+      {
+        "original_word": "같은",
+        "root": "같다",
+        "english": "to be like"
+      },
+      {
+        "original_word": "깊이",
+        "root": "깊이",
+        "english": "depth"
+      },
+      {
+        "original_word": "있는",
+        "root": "있다",
+        "english": "to have/exist"
+      },
+      {
+        "original_word": "기사",
+        "root": "기사",
+        "english": "article"
+      },
+      {
+        "original_word": "작성에",
+        "root": "작성",
+        "english": "writing/creation"
+      },
+      {
+        "original_word": "더",
+        "root": "더",
+        "english": "more"
+      },
+      {
+        "original_word": "집중할",
+        "root": "집중하다",
+        "english": "to concentrate"
+      },
+      {
+        "original_word": "수",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "있게",
+        "root": "있다",
+        "english": "to exist/can"
+      },
+      {
+        "original_word": "될",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "것이다",
+        "root": "것이다",
+        "english": "it is a thing"
+      }
+    ]
+  },
+  {
+    "문제_번호": 39,
+    "지시문": "[39~41] 다음 글에서 <보기>의 문장이 들어가기에 가장 알맞은 곳을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "운전 시 안전과 직결되는 것 중의 하나가 바로 차선이다. ( ㉠ ) 야간 운전 중에 차선이 잘 보이지 않으면 크고 작은 사고들이 발생하게 될 것이다. ( ㉡ ) 반사 성능을 더욱 강화하고자 할 때에는 유리알이 혼합된 페인트를 사용할 수 있다. ( ㉢ ) 이렇게 하면 유리알이 불빛에 반사되어 차선이 더욱 잘 보이게 된다. ( ㉣ ) <보기> 이를 방지하기 위해 야간에 차선이 잘 보이도록 반사 기능이 있는 특수한 페인트를 사용한다.",
+    "선택지": {
+      "1": "㉠",
+      "2": "㉡",
+      "3": "㉢",
+      "4": "㉣"
+    },
+    "정답": 2,
+    "주제": "과학",
+    "토큰_개수": 70,
+    "단어맵": [
+      {
+        "original_word": "운전",
+        "root": "운전",
+        "english": "driving"
+      },
+      {
+        "original_word": "시",
+        "root": "시",
+        "english": "time/when"
+      },
+      {
+        "original_word": "안전과",
+        "root": "안전",
+        "english": "safety"
+      },
+      {
+        "original_word": "직결되는",
+        "root": "직결되다",
+        "english": "to be directly connected"
+      },
+      {
+        "original_word": "것",
+        "root": "것",
+        "english": "thing"
+      },
+      {
+        "original_word": "중의",
+        "root": "중",
+        "english": "among"
+      },
+      {
+        "original_word": "하나가",
+        "root": "하나",
+        "english": "one"
+      },
+      {
+        "original_word": "바로",
+        "root": "바로",
+        "english": "exactly/right"
+      },
+      {
+        "original_word": "차선이다",
+        "root": "차선이다",
+        "english": "to be a lane"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉠",
+        "root": "㉠",
+        "english": "A"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "야간",
+        "root": "야간",
+        "english": "nighttime"
+      },
+      {
+        "original_word": "운전",
+        "root": "운전",
+        "english": "driving"
+      },
+      {
+        "original_word": "중에",
+        "root": "중",
+        "english": "during/while"
+      },
+      {
+        "original_word": "차선이",
+        "root": "차선",
+        "english": "lane"
+      },
+      {
+        "original_word": "잘",
+        "root": "잘",
+        "english": "well"
+      },
+      {
+        "original_word": "보이지",
+        "root": "보이다",
+        "english": "to be seen"
+      },
+      {
+        "original_word": "않으면",
+        "root": "않다",
+        "english": "to not do"
+      },
+      {
+        "original_word": "크고",
+        "root": "크다",
+        "english": "to be big"
+      },
+      {
+        "original_word": "작은",
+        "root": "작다",
+        "english": "to be small"
+      },
+      {
+        "original_word": "사고들이",
+        "root": "사고",
+        "english": "accident"
+      },
+      {
+        "original_word": "발생하게",
+        "root": "발생하다",
+        "english": "to occur"
+      },
+      {
+        "original_word": "될",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "것이다",
+        "root": "것이다",
+        "english": "it is a thing"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉡",
+        "root": "㉡",
+        "english": "B"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "반사",
+        "root": "반사",
+        "english": "reflection"
+      },
+      {
+        "original_word": "성능을",
+        "root": "성능",
+        "english": "performance"
+      },
+      {
+        "original_word": "더욱",
+        "root": "더욱",
+        "english": "even more"
+      },
+      {
+        "original_word": "강화하고자",
+        "root": "강화하다",
+        "english": "to strengthen"
+      },
+      {
+        "original_word": "할",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "때에는",
+        "root": "때",
+        "english": "time"
+      },
+      {
+        "original_word": "유리알이",
+        "root": "유리알",
+        "english": "glass bead"
+      },
+      {
+        "original_word": "혼합된",
+        "root": "혼합되다",
+        "english": "to be mixed"
+      },
+      {
+        "original_word": "페인트를",
+        "root": "페인트",
+        "english": "paint"
+      },
+      {
+        "original_word": "사용할",
+        "root": "사용하다",
+        "english": "to use"
+      },
+      {
+        "original_word": "수",
+        "root": "수",
+        "english": "way/ability"
+      },
+      {
+        "original_word": "있다",
+        "root": "있다",
+        "english": "to exist"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉢",
+        "root": "㉢",
+        "english": "C"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "이렇게",
+        "root": "이렇게",
+        "english": "like this"
+      },
+      {
+        "original_word": "하면",
+        "root": "하다",
+        "english": "to do"
+      },
+      {
+        "original_word": "유리알이",
+        "root": "유리알",
+        "english": "glass bead"
+      },
+      {
+        "original_word": "불빛에",
+        "root": "불빛",
+        "english": "light"
+      },
+      {
+        "original_word": "반사되어",
+        "root": "반사되다",
+        "english": "to be reflected"
+      },
+      {
+        "original_word": "차선이",
+        "root": "차선",
+        "english": "lane"
+      },
+      {
+        "original_word": "더욱",
+        "root": "더욱",
+        "english": "even more"
+      },
+      {
+        "original_word": "잘",
+        "root": "잘",
+        "english": "well"
+      },
+      {
+        "original_word": "보이게",
+        "root": "보이다",
+        "english": "to make visible"
+      },
+      {
+        "original_word": "된다",
+        "root": "되다",
+        "english": "to become"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉣",
+        "root": "㉣",
+        "english": "D"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "<보기>",
+        "root": "<보기>",
+        "english": "example/view"
+      },
+      {
+        "original_word": "이를",
+        "root": "이",
+        "english": "this"
+      },
+      {
+        "original_word": "방지하기",
+        "root": "방지하다",
+        "english": "to prevent"
+      },
+      {
+        "original_word": "위해",
+        "root": "위하다",
+        "english": "for"
+      },
+      {
+        "original_word": "야간에",
+        "root": "야간",
+        "english": "nighttime"
+      },
+      {
+        "original_word": "차선이",
+        "root": "차선",
+        "english": "lane"
+      },
+      {
+        "original_word": "잘",
+        "root": "잘",
+        "english": "well"
+      },
+      {
+        "original_word": "보이도록",
+        "root": "보이다",
+        "english": "to be seen"
+      },
+      {
+        "original_word": "반사",
+        "root": "반사",
+        "english": "reflection"
+      },
+      {
+        "original_word": "기능이",
+        "root": "기능",
+        "english": "function"
+      },
+      {
+        "original_word": "있는",
+        "root": "있다",
+        "english": "to have"
+      },
+      {
+        "original_word": "특수한",
+        "root": "특수하다",
+        "english": "to be special"
+      },
+      {
+        "original_word": "페인트를",
+        "root": "페인트",
+        "english": "paint"
+      },
+      {
+        "original_word": "사용한다",
+        "root": "사용하다",
+        "english": "to use"
+      }
+    ]
+  },
+  {
+    "문제_번호": 40,
+    "지시문": "[39~41] 다음 글에서 <보기>의 문장이 들어가기에 가장 알맞은 곳을 고르십시오.",
+    "배점": "2점",
+    "문제_내용": "부자들을 대상으로 사업체 상속 계획에 대해 조사한 결과 부의 축적 유형에 따라 차이를 보였다. ( ㉠ ) 상속형 부자의 경우 절반 정도가 사업체를 자녀에게 물려주겠다고 응답했다. ( ㉡ ) 반면 자수성가형 부자는 자녀 상속 의향이 20% 정도에 지나지 않았다. ( ㉢ ) 상속형 부자는 자녀에게 기회를 주기 위해 물려준다고 응답한 반면 자수성가형 부자는 기술 및 비법 등을 전수하기 위해서 물려준다고 답했다. ( ㉣ ) <보기> 자녀에게 사업체를 물려주려는 이유에서도 두 집단이 차이를 보였다.",
+    "선택지": {
+      "1": "㉠",
+      "2": "㉡",
+      "3": "㉢",
+      "4": "㉣"
+    },
+    "정답": 3,
+    "주제": "경제",
+    "토큰_개수": 72,
+    "단어맵": [
+      {
+        "original_word": "부자들을",
+        "root": "부자",
+        "english": "rich person"
+      },
+      {
+        "original_word": "대상으로",
+        "root": "대상",
+        "english": "target/subject"
+      },
+      {
+        "original_word": "사업체",
+        "root": "사업체",
+        "english": "business/enterprise"
+      },
+      {
+        "original_word": "상속",
+        "root": "상속",
+        "english": "inheritance"
+      },
+      {
+        "original_word": "계획에",
+        "root": "계획",
+        "english": "plan"
+      },
+      {
+        "original_word": "대해",
+        "root": "대하다",
+        "english": "about"
+      },
+      {
+        "original_word": "조사한",
+        "root": "조사하다",
+        "english": "to investigate"
+      },
+      {
+        "original_word": "결과",
+        "root": "결과",
+        "english": "result"
+      },
+      {
+        "original_word": "부의",
+        "root": "부",
+        "english": "wealth"
+      },
+      {
+        "original_word": "축적",
+        "root": "축적",
+        "english": "accumulation"
+      },
+      {
+        "original_word": "유형에",
+        "root": "유형",
+        "english": "type"
+      },
+      {
+        "original_word": "따라",
+        "root": "따르다",
+        "english": "according to"
+      },
+      {
+        "original_word": "차이를",
+        "root": "차이",
+        "english": "difference"
+      },
+      {
+        "original_word": "보였다",
+        "root": "보이다",
+        "english": "to show"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉠",
+        "root": "㉠",
+        "english": "A"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "상속형",
+        "root": "상속형",
+        "english": "inheritance type"
+      },
+      {
+        "original_word": "부자의",
+        "root": "부자",
+        "english": "rich person"
+      },
+      {
+        "original_word": "경우",
+        "root": "경우",
+        "english": "case"
+      },
+      {
+        "original_word": "절반",
+        "root": "절반",
+        "english": "half"
+      },
+      {
+        "original_word": "정도가",
+        "root": "정도",
+        "english": "degree/about"
+      },
+      {
+        "original_word": "사업체를",
+        "root": "사업체",
+        "english": "business"
+      },
+      {
+        "original_word": "자녀에게",
+        "root": "자녀",
+        "english": "child"
+      },
+      {
+        "original_word": "물려주겠다고",
+        "root": "물려주다",
+        "english": "to pass down"
+      },
+      {
+        "original_word": "응답했다",
+        "root": "응답하다",
+        "english": "to answer/respond"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉡",
+        "root": "㉡",
+        "english": "B"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "반면",
+        "root": "반면",
+        "english": "on the other hand"
+      },
+      {
+        "original_word": "자수성가형",
+        "root": "자수성가형",
+        "english": "self-made type"
+      },
+      {
+        "original_word": "부자는",
+        "root": "부자",
+        "english": "rich person"
+      },
+      {
+        "original_word": "자녀",
+        "root": "자녀",
+        "english": "child"
+      },
+      {
+        "original_word": "상속",
+        "root": "상속",
+        "english": "inheritance"
+      },
+      {
+        "original_word": "의향이",
+        "root": "의향",
+        "english": "intention"
+      },
+      {
+        "original_word": "20%",
+        "root": "20%",
+        "english": "20 percent"
+      },
+      {
+        "original_word": "정도에",
+        "root": "정도",
+        "english": "degree/about"
+      },
+      {
+        "original_word": "지나지",
+        "root": "지나다",
+        "english": "to pass/exceed"
+      },
+      {
+        "original_word": "않았다",
+        "root": "않다",
+        "english": "to not do"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉢",
+        "root": "㉢",
+        "english": "C"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "상속형",
+        "root": "상속형",
+        "english": "inheritance type"
+      },
+      {
+        "original_word": "부자는",
+        "root": "부자",
+        "english": "rich person"
+      },
+      {
+        "original_word": "자녀에게",
+        "root": "자녀",
+        "english": "child"
+      },
+      {
+        "original_word": "기회를",
+        "root": "기회",
+        "english": "opportunity"
+      },
+      {
+        "original_word": "주기",
+        "root": "주다",
+        "english": "to give"
+      },
+      {
+        "original_word": "위해",
+        "root": "위하다",
+        "english": "for"
+      },
+      {
+        "original_word": "물려준다고",
+        "root": "물려주다",
+        "english": "to pass down"
+      },
+      {
+        "original_word": "응답한",
+        "root": "응답하다",
+        "english": "to answer/respond"
+      },
+      {
+        "original_word": "반면",
+        "root": "반면",
+        "english": "on the other hand"
+      },
+      {
+        "original_word": "자수성가형",
+        "root": "자수성가형",
+        "english": "self-made type"
+      },
+      {
+        "original_word": "부자는",
+        "root": "부자",
+        "english": "rich person"
+      },
+      {
+        "original_word": "기술",
+        "root": "기술",
+        "english": "technology/skill"
+      },
+      {
+        "original_word": "및",
+        "root": "및",
+        "english": "and"
+      },
+      {
+        "original_word": "비법",
+        "root": "비법",
+        "english": "secret method"
+      },
+      {
+        "original_word": "등을",
+        "root": "등",
+        "english": "etc."
+      },
+      {
+        "original_word": "전수하기",
+        "root": "전수하다",
+        "english": "to transmit/pass on"
+      },
+      {
+        "original_word": "위해서",
+        "root": "위하다",
+        "english": "for"
+      },
+      {
+        "original_word": "물려준다고",
+        "root": "물려주다",
+        "english": "to pass down"
+      },
+      {
+        "original_word": "답했다",
+        "root": "답하다",
+        "english": "to answer"
+      },
+      {
+        "original_word": "(",
+        "root": "(",
+        "english": "bracket"
+      },
+      {
+        "original_word": "㉣",
+        "root": "㉣",
+        "english": "D"
+      },
+      {
+        "original_word": ")",
+        "root": ")",
+        "english": "bracket"
+      },
+      {
+        "original_word": "<보기>",
+        "root": "<보기>",
+        "english": "example/view"
+      },
+      {
+        "original_word": "자녀에게",
+        "root": "자녀",
+        "english": "child"
+      },
+      {
+        "original_word": "사업체를",
+        "root": "사업체",
+        "english": "business"
+      },
+      {
+        "original_word": "물려주려는",
+        "root": "물려주다",
+        "english": "to pass down"
+      },
+      {
+        "original_word": "이유에서도",
+        "root": "이유",
+        "english": "reason"
+      },
+      {
+        "original_word": "두",
+        "root": "두",
+        "english": "two"
+      },
+      {
+        "original_word": "집단이",
+        "root": "집단",
+        "english": "group"
+      },
+      {
+        "original_word": "차이를",
+        "root": "차이",
+        "english": "difference"
+      },
+      {
+        "original_word": "보였다",
+        "root": "보이다",
+        "english": "to show"
+      }
+    ]
+  }
+]

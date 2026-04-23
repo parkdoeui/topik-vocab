@@ -1,0 +1,447 @@
+[
+    {
+        "문제_번호": 1,
+        "지시문": "[1~2] ( )에 들어갈 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "어제는 친구들과 같이 점심을 ( ) 바로 도서관에 갔다.",
+        "선택지": {
+            "1": "먹든지",
+            "2": "먹거나",
+            "3": "먹고 나서",
+            "4": "먹다 보면"
+        },
+        "정답": 3,
+        "주제": "사회",
+        "토큰_개수": 14,
+        "단어맵": [
+            {
+                "original_word": "어제는",
+                "root": "어제",
+                "english": "yesterday"
+            },
+            {
+                "original_word": "친구들과",
+                "root": "친구",
+                "english": "friend"
+            },
+            {
+                "original_word": "같이",
+                "root": "같이",
+                "english": "together"
+            },
+            {
+                "original_word": "점심을",
+                "root": "점심",
+                "english": "lunch"
+            },
+            {
+                "original_word": "( )",
+                "root": "( )",
+                "english": "blank"
+            },
+            {
+                "original_word": "바로",
+                "root": "바로",
+                "english": "immediately"
+            },
+            {
+                "original_word": "도서관에",
+                "root": "도서관",
+                "english": "library"
+            },
+            {
+                "original_word": "갔다",
+                "root": "가다",
+                "english": "to go"
+            },
+            {
+                "original_word": "먹든지",
+                "root": "먹다",
+                "english": "to eat (or)"
+            },
+            {
+                "original_word": "먹거나",
+                "root": "먹다",
+                "english": "to eat (or)"
+            },
+            {
+                "original_word": "먹고",
+                "root": "먹다",
+                "english": "to eat (and)"
+            },
+            {
+                "original_word": "나서",
+                "root": "나다",
+                "english": "after"
+            },
+            {
+                "original_word": "먹다",
+                "root": "먹다",
+                "english": "to eat"
+            },
+            {
+                "original_word": "보면",
+                "root": "보다",
+                "english": "if you see/do"
+            }
+        ]
+    },
+    {
+        "문제_번호": 2,
+        "지시문": "[1~2] ( )에 들어갈 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "이사 갈 집을 ( ) 방학 때 좀 바빴다.",
+        "선택지": {
+            "1": "찾더니",
+            "2": "찾으려면",
+            "3": "구하도록",
+            "4": "구하느라고"
+        },
+        "정답": 4,
+        "주제": "사회",
+        "토큰_개수": 12,
+        "단어맵": [
+            {
+                "original_word": "이사",
+                "root": "이사",
+                "english": "moving"
+            },
+            {
+                "original_word": "갈",
+                "root": "가다",
+                "english": "to go"
+            },
+            {
+                "original_word": "집을",
+                "root": "집",
+                "english": "house"
+            },
+            {
+                "original_word": "( )",
+                "root": "( )",
+                "english": "blank"
+            },
+            {
+                "original_word": "방학",
+                "root": "방학",
+                "english": "school vacation"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "좀",
+                "root": "조금",
+                "english": "a little"
+            },
+            {
+                "original_word": "바빴다",
+                "root": "바쁘다",
+                "english": "to be busy"
+            },
+            {
+                "original_word": "찾더니",
+                "root": "찾다",
+                "english": "to look for (but)"
+            },
+            {
+                "original_word": "찾으려면",
+                "root": "찾다",
+                "english": "to look for (if you intend to)"
+            },
+            {
+                "original_word": "구하도록",
+                "root": "구하다",
+                "english": "to seek (so that)"
+            },
+            {
+                "original_word": "구하느라고",
+                "root": "구하다",
+                "english": "to seek (because of doing)"
+            }
+        ]
+    },
+    {
+        "문제_번호": 3,
+        "지시문": "[3~4] 다음 밑줄 친 부분과 의미가 비슷한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "어제 본 공연은 눈물이 __날 정도로__ 감동적이었다.",
+        "선택지": {
+            "1": "날 만큼",
+            "2": "날까 봐",
+            "3": "나는 대로",
+            "4": "나는 대신에"
+        },
+        "정답": 1,
+        "주제": "문화",
+        "토큰_개수": 15,
+        "단어맵": [
+            {
+                "original_word": "어제",
+                "root": "어제",
+                "english": "yesterday"
+            },
+            {
+                "original_word": "본",
+                "root": "보다",
+                "english": "to see"
+            },
+            {
+                "original_word": "공연은",
+                "root": "공연",
+                "english": "performance"
+            },
+            {
+                "original_word": "눈물이",
+                "root": "눈물",
+                "english": "tear"
+            },
+            {
+                "original_word": "날",
+                "root": "나다",
+                "english": "to come out"
+            },
+            {
+                "original_word": "정도로",
+                "root": "정도",
+                "english": "degree/extent"
+            },
+            {
+                "original_word": "감동적이었다",
+                "root": "감동적이다",
+                "english": "to be touching/moving"
+            },
+            {
+                "original_word": "날",
+                "root": "나다",
+                "english": "to come out"
+            },
+            {
+                "original_word": "만큼",
+                "root": "만큼",
+                "english": "as much as"
+            },
+            {
+                "original_word": "날까",
+                "root": "나다",
+                "english": "to come out (wondering)"
+            },
+            {
+                "original_word": "봐",
+                "root": "보다",
+                "english": "to see / fear that"
+            },
+            {
+                "original_word": "나는",
+                "root": "나다",
+                "english": "to come out"
+            },
+            {
+                "original_word": "대로",
+                "root": "대로",
+                "english": "as"
+            },
+            {
+                "original_word": "나는",
+                "root": "나다",
+                "english": "to come out"
+            },
+            {
+                "original_word": "대신에",
+                "root": "대신",
+                "english": "instead of"
+            }
+        ]
+    },
+    {
+        "문제_번호": 4,
+        "지시문": "[3~4] 다음 밑줄 친 부분과 의미가 비슷한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "두 사람은 오랫동안 알고 지냈지만 직장 동료 __사이일 뿐이다__.",
+        "선택지": {
+            "1": "사이에 불과하다",
+            "2": "사이라면 좋겠다",
+            "3": "사이일지도 모른다",
+            "4": "사이라고 볼 수 없다"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 19,
+        "단어맵": [
+            {
+                "original_word": "두",
+                "root": "두",
+                "english": "two"
+            },
+            {
+                "original_word": "사람은",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "오랫동안",
+                "root": "오랫동안",
+                "english": "for a long time"
+            },
+            {
+                "original_word": "알고",
+                "root": "알다",
+                "english": "to know"
+            },
+            {
+                "original_word": "지냈지만",
+                "root": "지내다",
+                "english": "to spend time/live"
+            },
+            {
+                "original_word": "직장",
+                "root": "직장",
+                "english": "workplace"
+            },
+            {
+                "original_word": "동료",
+                "root": "동료",
+                "english": "colleague"
+            },
+            {
+                "original_word": "사이일",
+                "root": "사이",
+                "english": "relationship/between"
+            },
+            {
+                "original_word": "뿐이다",
+                "root": "뿐이다",
+                "english": "to be only/just"
+            },
+            {
+                "original_word": "사이에",
+                "root": "사이",
+                "english": "relationship/between"
+            },
+            {
+                "original_word": "불과하다",
+                "root": "불과하다",
+                "english": "to be nothing more than"
+            },
+            {
+                "original_word": "사이라면",
+                "root": "사이",
+                "english": "relationship/between"
+            },
+            {
+                "original_word": "좋겠다",
+                "root": "좋다",
+                "english": "to be good"
+            },
+            {
+                "original_word": "사이일지도",
+                "root": "사이",
+                "english": "relationship/between"
+            },
+            {
+                "original_word": "모른다",
+                "root": "모르다",
+                "english": "to not know"
+            },
+            {
+                "original_word": "사이라고",
+                "root": "사이",
+                "english": "relationship/between"
+            },
+            {
+                "original_word": "볼",
+                "root": "보다",
+                "english": "to see"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "없다",
+                "root": "없다",
+                "english": "to not exist/cannot"
+            }
+        ]
+    },
+    {
+        "문제_번호": 5,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "날마다 새로운 세상을 읽는다. 세상을 보는 눈 !",
+        "선택지": {
+            "1": "신문",
+            "2": "사전",
+            "3": "시계",
+            "4": "연필"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 12,
+        "단어맵": [
+            {
+                "original_word": "날마다",
+                "root": "날마다",
+                "english": "every day"
+            },
+            {
+                "original_word": "새로운",
+                "root": "새롭다",
+                "english": "to be new"
+            },
+            {
+                "original_word": "세상을",
+                "root": "세상",
+                "english": "world"
+            },
+            {
+                "original_word": "읽는다",
+                "root": "읽다",
+                "english": "to read"
+            },
+            {
+                "original_word": "세상을",
+                "root": "세상",
+                "english": "world"
+            },
+            {
+                "original_word": "보는",
+                "root": "보다",
+                "english": "to see"
+            },
+            {
+                "original_word": "눈",
+                "root": "눈",
+                "english": "eye"
+            },
+            {
+                "original_word": "!",
+                "root": "!",
+                "english": "exclamation mark"
+            },
+            {
+                "original_word": "신문",
+                "root": "신문",
+                "english": "newspaper"
+            },
+            {
+                "original_word": "사전",
+                "root": "사전",
+                "english": "dictionary"
+            },
+            {
+                "original_word": "시계",
+                "root": "시계",
+                "english": "clock"
+            },
+            {
+                "original_word": "연필",
+                "root": "연필",
+                "english": "pencil"
+            }
+        ]
+    }
+]

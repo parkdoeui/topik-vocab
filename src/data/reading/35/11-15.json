@@ -1,0 +1,1122 @@
+[
+    {
+        "문제_번호": 11,
+        "지시문": "[9~12] 다음 글 또는 도표의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "최근 70~80년대를 경험해 볼 수 있는 문화 공간이 생겼다. 서울시에서 새로 문을 연 '추억극장'이 바로 그곳이다. 입장료 2,000원만 내면 남녀노소 누구나 그때 유행했던 영화를 관람할 수 있으며 커피와 차, 과자 등 간단한 간식도 먹을 수 있다. 극장 내부에는 추억의 영화 포스터, 영화표 등이 전시되어 있다.",
+        "선택지": {
+            "1": "이곳에서 옛날 영화 포스터를 살 수 있다.",
+            "2": "얼마 전 추억의 문화 공간이 새로 만들어졌다.",
+            "3": "추억극장은 입장료가 없기 때문에 인기가 많다.",
+            "4": "추억극장에서는 최근에 나온 영화도 볼 수 있다."
+        },
+        "정답": 2,
+        "주제": "문화",
+        "토큰_개수": 45,
+        "단어맵": [
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recently"
+            },
+            {
+                "original_word": "70~80년대를",
+                "root": "70~80년대",
+                "english": "70s-80s"
+            },
+            {
+                "original_word": "경험해",
+                "root": "경험하다",
+                "english": "to experience"
+            },
+            {
+                "original_word": "볼",
+                "root": "보다",
+                "english": "to try/see"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "문화",
+                "root": "문화",
+                "english": "culture"
+            },
+            {
+                "original_word": "공간이",
+                "root": "공간",
+                "english": "space"
+            },
+            {
+                "original_word": "생겼다",
+                "root": "생기다",
+                "english": "to be formed/created"
+            },
+            {
+                "original_word": "서울시에서",
+                "root": "서울시",
+                "english": "Seoul city"
+            },
+            {
+                "original_word": "새로",
+                "root": "새로",
+                "english": "newly"
+            },
+            {
+                "original_word": "문을",
+                "root": "문",
+                "english": "door"
+            },
+            {
+                "original_word": "연",
+                "root": "열다",
+                "english": "to open"
+            },
+            {
+                "original_word": "'추억극장'이",
+                "root": "추억극장",
+                "english": "Memory Theater"
+            },
+            {
+                "original_word": "바로",
+                "root": "바로",
+                "english": "right/exactly"
+            },
+            {
+                "original_word": "그곳이다",
+                "root": "그곳이다",
+                "english": "to be that place"
+            },
+            {
+                "original_word": "입장료",
+                "root": "입장료",
+                "english": "admission fee"
+            },
+            {
+                "original_word": "2,000원만",
+                "root": "2,000원",
+                "english": "2,000 won"
+            },
+            {
+                "original_word": "내면",
+                "root": "내다",
+                "english": "to pay"
+            },
+            {
+                "original_word": "남녀노소",
+                "root": "남녀노소",
+                "english": "people of all ages and sexes"
+            },
+            {
+                "original_word": "누구나",
+                "root": "누구",
+                "english": "anyone"
+            },
+            {
+                "original_word": "그때",
+                "root": "그때",
+                "english": "that time"
+            },
+            {
+                "original_word": "유행했던",
+                "root": "유행하다",
+                "english": "to be popular/in fashion"
+            },
+            {
+                "original_word": "영화를",
+                "root": "영화",
+                "english": "movie"
+            },
+            {
+                "original_word": "관람할",
+                "root": "관람하다",
+                "english": "to watch/view"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있으며",
+                "root": "있다",
+                "english": "to exist/and"
+            },
+            {
+                "original_word": "커피와",
+                "root": "커피",
+                "english": "coffee"
+            },
+            {
+                "original_word": "차",
+                "root": "차",
+                "english": "tea"
+            },
+            {
+                "original_word": "과자",
+                "root": "과자",
+                "english": "snack"
+            },
+            {
+                "original_word": "등",
+                "root": "등",
+                "english": "etc."
+            },
+            {
+                "original_word": "간단한",
+                "root": "간단하다",
+                "english": "to be simple"
+            },
+            {
+                "original_word": "간식도",
+                "root": "간식",
+                "english": "snack"
+            },
+            {
+                "original_word": "먹을",
+                "root": "먹다",
+                "english": "to eat"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to exist/can"
+            },
+            {
+                "original_word": "극장",
+                "root": "극장",
+                "english": "theater"
+            },
+            {
+                "original_word": "내부에는",
+                "root": "내부",
+                "english": "inside"
+            },
+            {
+                "original_word": "추억의",
+                "root": "추억",
+                "english": "memory"
+            },
+            {
+                "original_word": "영화",
+                "root": "영화",
+                "english": "movie"
+            },
+            {
+                "original_word": "포스터",
+                "root": "포스터",
+                "english": "poster"
+            },
+            {
+                "original_word": "영화표",
+                "root": "영화표",
+                "english": "movie ticket"
+            },
+            {
+                "original_word": "등이",
+                "root": "등",
+                "english": "etc."
+            },
+            {
+                "original_word": "전시되어",
+                "root": "전시되다",
+                "english": "to be exhibited"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to exist"
+            }
+        ]
+    },
+    {
+        "문제_번호": 12,
+        "지시문": "[9~12] 다음 글 또는 도표의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "사람들은 가끔씩 지금과는 다른 내가 되고 싶어 한다. 이런 마음은 가면을 통해서 나타낼 수 있는데 가면을 쓰면 잠시 동안이지만 현실과 다른 나를 표현할 수 있다. 예를 들어 힘이 약한 사람이 호랑이 가면을 쓰게 되면 호랑이처럼 힘이 세다고 생각한다. 그래서 정말 힘센 사람처럼 행동하게 되고 이를 통해 스스로 만족하게 된다.",
+        "선택지": {
+            "1": "가면을 쓰면 성격을 바꿀 수 있다.",
+            "2": "가면을 쓰면 현실을 더 잘 볼 수 있다.",
+            "3": "가면으로 원하던 모습을 표현할 수 있다.",
+            "4": "힘을 자랑하기 위해서 호랑이 가면을 쓴다."
+        },
+        "정답": 3,
+        "주제": "문화",
+        "토큰_개수": 49,
+        "단어맵": [
+            {
+                "original_word": "사람들은",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "가끔씩",
+                "root": "가끔씩",
+                "english": "sometimes"
+            },
+            {
+                "original_word": "지금과는",
+                "root": "지금",
+                "english": "now"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "to be different"
+            },
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I/me"
+            },
+            {
+                "original_word": "되고",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "싶어",
+                "root": "싶다",
+                "english": "to want"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "이런",
+                "root": "이런",
+                "english": "such/this kind of"
+            },
+            {
+                "original_word": "마음은",
+                "root": "마음",
+                "english": "mind/heart"
+            },
+            {
+                "original_word": "가면을",
+                "root": "가면",
+                "english": "mask"
+            },
+            {
+                "original_word": "통해서",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "나타낼",
+                "root": "나타내다",
+                "english": "to express/show"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있는데",
+                "root": "있다",
+                "english": "to exist/but"
+            },
+            {
+                "original_word": "가면을",
+                "root": "가면",
+                "english": "mask"
+            },
+            {
+                "original_word": "쓰면",
+                "root": "쓰다",
+                "english": "to wear"
+            },
+            {
+                "original_word": "잠시",
+                "root": "잠시",
+                "english": "briefly"
+            },
+            {
+                "original_word": "동안이지만",
+                "root": "동안이다",
+                "english": "to be a duration/although"
+            },
+            {
+                "original_word": "현실과",
+                "root": "현실",
+                "english": "reality"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "to be different"
+            },
+            {
+                "original_word": "나를",
+                "root": "나",
+                "english": "me"
+            },
+            {
+                "original_word": "표현할",
+                "root": "표현하다",
+                "english": "to express"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "예를",
+                "root": "예",
+                "english": "example"
+            },
+            {
+                "original_word": "들어",
+                "root": "들다",
+                "english": "to take/lift"
+            },
+            {
+                "original_word": "힘이",
+                "root": "힘",
+                "english": "strength"
+            },
+            {
+                "original_word": "약한",
+                "root": "약하다",
+                "english": "to be weak"
+            },
+            {
+                "original_word": "사람이",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "호랑이",
+                "root": "호랑이",
+                "english": "tiger"
+            },
+            {
+                "original_word": "가면을",
+                "root": "가면",
+                "english": "mask"
+            },
+            {
+                "original_word": "쓰게",
+                "root": "쓰다",
+                "english": "to wear"
+            },
+            {
+                "original_word": "되면",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "호랑이처럼",
+                "root": "호랑이",
+                "english": "tiger"
+            },
+            {
+                "original_word": "힘이",
+                "root": "힘",
+                "english": "strength"
+            },
+            {
+                "original_word": "세다고",
+                "root": "세다",
+                "english": "to be strong"
+            },
+            {
+                "original_word": "생각한다",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "so/therefore"
+            },
+            {
+                "original_word": "정말",
+                "root": "정말",
+                "english": "really"
+            },
+            {
+                "original_word": "힘센",
+                "root": "힘세다",
+                "english": "to be strong"
+            },
+            {
+                "original_word": "사람처럼",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "행동하게",
+                "root": "행동하다",
+                "english": "to act/behave"
+            },
+            {
+                "original_word": "되고",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "이를",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "통해",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "스스로",
+                "root": "스스로",
+                "english": "oneself"
+            },
+            {
+                "original_word": "만족하게",
+                "root": "만족하다",
+                "english": "to be satisfied"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "to become"
+            }
+        ]
+    },
+    {
+        "문제_번호": 13,
+        "지시문": "[13~15] 다음을 순서대로 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 또한 재료 가격이 싸서 제작 비용도 적게 든다. (나) 그중 하나가 운동선수들의 유니폼을 만드는 것이다. (다) 플라스틱 병을 재활용하는 방법에는 여러 가지가 있다. (라) 플라스틱 병을 소재로 해서 운동복을 만들면 가볍고 시원하다.",
+        "선택지": {
+            "1": "(다)-(나)-(라)-(가)",
+            "2": "(다)-(라)-(나)-(가)",
+            "3": "(라)-(가)-(나)-(다)",
+            "4": "(라)-(나)-(가)-(다)"
+        },
+        "정답": 1,
+        "주제": "과학",
+        "토큰_개수": 33,
+        "단어맵": [
+            {
+                "original_word": "(가)",
+                "root": "(가)",
+                "english": "A"
+            },
+            {
+                "original_word": "또한",
+                "root": "또한",
+                "english": "also"
+            },
+            {
+                "original_word": "재료",
+                "root": "재료",
+                "english": "material"
+            },
+            {
+                "original_word": "가격이",
+                "root": "가격",
+                "english": "price"
+            },
+            {
+                "original_word": "싸서",
+                "root": "싸다",
+                "english": "to be cheap"
+            },
+            {
+                "original_word": "제작",
+                "root": "제작",
+                "english": "production"
+            },
+            {
+                "original_word": "비용도",
+                "root": "비용",
+                "english": "cost"
+            },
+            {
+                "original_word": "적게",
+                "root": "적다",
+                "english": "to be few/little"
+            },
+            {
+                "original_word": "든다",
+                "root": "들다",
+                "english": "to cost/take"
+            },
+            {
+                "original_word": "(나)",
+                "root": "(나)",
+                "english": "B"
+            },
+            {
+                "original_word": "그중",
+                "root": "그중",
+                "english": "among them"
+            },
+            {
+                "original_word": "하나가",
+                "root": "하나",
+                "english": "one"
+            },
+            {
+                "original_word": "운동선수들의",
+                "root": "운동선수",
+                "english": "athlete"
+            },
+            {
+                "original_word": "유니폼을",
+                "root": "유니폼",
+                "english": "uniform"
+            },
+            {
+                "original_word": "만드는",
+                "root": "만들다",
+                "english": "to make"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is a thing"
+            },
+            {
+                "original_word": "(다)",
+                "root": "(다)",
+                "english": "C"
+            },
+            {
+                "original_word": "플라스틱",
+                "root": "플라스틱",
+                "english": "plastic"
+            },
+            {
+                "original_word": "병을",
+                "root": "병",
+                "english": "bottle"
+            },
+            {
+                "original_word": "재활용하는",
+                "root": "재활용하다",
+                "english": "to recycle"
+            },
+            {
+                "original_word": "방법에는",
+                "root": "방법",
+                "english": "method"
+            },
+            {
+                "original_word": "여러",
+                "root": "여러",
+                "english": "several"
+            },
+            {
+                "original_word": "가지가",
+                "root": "가지",
+                "english": "kind/type"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "(라)",
+                "root": "(라)",
+                "english": "D"
+            },
+            {
+                "original_word": "플라스틱",
+                "root": "플라스틱",
+                "english": "plastic"
+            },
+            {
+                "original_word": "병을",
+                "root": "병",
+                "english": "bottle"
+            },
+            {
+                "original_word": "소재로",
+                "root": "소재",
+                "english": "material"
+            },
+            {
+                "original_word": "해서",
+                "root": "하다",
+                "english": "to do/make"
+            },
+            {
+                "original_word": "운동복을",
+                "root": "운동복",
+                "english": "sportswear"
+            },
+            {
+                "original_word": "만들면",
+                "root": "만들다",
+                "english": "to make"
+            },
+            {
+                "original_word": "가볍고",
+                "root": "가볍다",
+                "english": "to be light"
+            },
+            {
+                "original_word": "시원하다",
+                "root": "시원하다",
+                "english": "to be cool"
+            }
+        ]
+    },
+    {
+        "문제_번호": 14,
+        "지시문": "[13~15] 다음을 순서대로 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 그러자 남자는 다른 쪽 신발도 벗어 그 옆으로 떨어뜨렸다. (나) 남자가 신발을 주우려고 했지만 기차가 움직이기 시작했다. (다) 신발의 짝이 맞아야 누군가 신을 수 있다고 생각했기 때문이었다. (라) 남자가 기차에 타려는 순간 신발 한 짝이 벗겨져 아래로 떨어졌다.",
+        "선택지": {
+            "1": "(나)-(다)-(라)-(가)",
+            "2": "(나)-(라)-(다)-(가)",
+            "3": "(라)-(가)-(나)-(다)",
+            "4": "(라)-(나)-(가)-(다)"
+        },
+        "정답": 4,
+        "주제": "문화",
+        "토큰_개수": 39,
+        "단어맵": [
+            {
+                "original_word": "(가)",
+                "root": "(가)",
+                "english": "A"
+            },
+            {
+                "original_word": "그러자",
+                "root": "그러자",
+                "english": "thereupon/then"
+            },
+            {
+                "original_word": "남자는",
+                "root": "남자",
+                "english": "man"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "to be different"
+            },
+            {
+                "original_word": "쪽",
+                "root": "쪽",
+                "english": "side"
+            },
+            {
+                "original_word": "신발도",
+                "root": "신발",
+                "english": "shoe"
+            },
+            {
+                "original_word": "벗어",
+                "root": "벗다",
+                "english": "to take off"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "옆으로",
+                "root": "옆",
+                "english": "side"
+            },
+            {
+                "original_word": "떨어뜨렸다",
+                "root": "떨어뜨리다",
+                "english": "to drop"
+            },
+            {
+                "original_word": "(나)",
+                "root": "(나)",
+                "english": "B"
+            },
+            {
+                "original_word": "남자가",
+                "root": "남자",
+                "english": "man"
+            },
+            {
+                "original_word": "신발을",
+                "root": "신발",
+                "english": "shoe"
+            },
+            {
+                "original_word": "주우려고",
+                "root": "줍다",
+                "english": "to pick up"
+            },
+            {
+                "original_word": "했지만",
+                "root": "하다",
+                "english": "to do/but"
+            },
+            {
+                "original_word": "기차가",
+                "root": "기차",
+                "english": "train"
+            },
+            {
+                "original_word": "움직이기",
+                "root": "움직이다",
+                "english": "to move"
+            },
+            {
+                "original_word": "시작했다",
+                "root": "시작하다",
+                "english": "to start"
+            },
+            {
+                "original_word": "(다)",
+                "root": "(다)",
+                "english": "C"
+            },
+            {
+                "original_word": "신발의",
+                "root": "신발",
+                "english": "shoe"
+            },
+            {
+                "original_word": "짝이",
+                "root": "짝",
+                "english": "pair/mate"
+            },
+            {
+                "original_word": "맞아야",
+                "root": "맞다",
+                "english": "to match/fit"
+            },
+            {
+                "original_word": "누군가",
+                "root": "누군가",
+                "english": "someone"
+            },
+            {
+                "original_word": "신을",
+                "root": "신다",
+                "english": "to wear shoes"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있다고",
+                "root": "있다",
+                "english": "to exist/can"
+            },
+            {
+                "original_word": "생각했기",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "때문이었다",
+                "root": "때문이다",
+                "english": "to be because of"
+            },
+            {
+                "original_word": "(라)",
+                "root": "(라)",
+                "english": "D"
+            },
+            {
+                "original_word": "남자가",
+                "root": "남자",
+                "english": "man"
+            },
+            {
+                "original_word": "기차에",
+                "root": "기차",
+                "english": "train"
+            },
+            {
+                "original_word": "타려는",
+                "root": "타다",
+                "english": "to ride"
+            },
+            {
+                "original_word": "순간",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "신발",
+                "root": "신발",
+                "english": "shoe"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "짝이",
+                "root": "짝",
+                "english": "pair/mate"
+            },
+            {
+                "original_word": "벗겨져",
+                "root": "벗겨지다",
+                "english": "to come off"
+            },
+            {
+                "original_word": "아래로",
+                "root": "아래",
+                "english": "down/below"
+            },
+            {
+                "original_word": "떨어졌다",
+                "root": "떨어지다",
+                "english": "to fall"
+            }
+        ]
+    },
+    {
+        "문제_번호": 15,
+        "지시문": "[13~15] 다음을 순서대로 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 희망택시 지원 사업은 버스 운행에 비해 훨씬 적은 예산이 든다. (나) 그러므로 택시 요금을 지원하더라도 정부는 예산을 아낄 수 있다. (다) 이 택시의 이용 요금은 1,100원이고 추가 요금은 정부에서 부담한다. (라) 버스가 다니지 않는 시골 마을에 주민들을 위한 희망택시가 등장했다.",
+        "선택지": {
+            "1": "(가)-(라)-(나)-(다)",
+            "2": "(가)-(다)-(라)-(나)",
+            "3": "(라)-(나)-(다)-(가)",
+            "4": "(라)-(다)-(가)-(나)"
+        },
+        "정답": 4,
+        "주제": "경제",
+        "토큰_개수": 41,
+        "단어맵": [
+            {
+                "original_word": "(가)",
+                "root": "(가)",
+                "english": "A"
+            },
+            {
+                "original_word": "희망택시",
+                "root": "희망택시",
+                "english": "Hope Taxi"
+            },
+            {
+                "original_word": "지원",
+                "root": "지원",
+                "english": "support"
+            },
+            {
+                "original_word": "사업은",
+                "root": "사업",
+                "english": "business/project"
+            },
+            {
+                "original_word": "버스",
+                "root": "버스",
+                "english": "bus"
+            },
+            {
+                "original_word": "운행에",
+                "root": "운행",
+                "english": "operation"
+            },
+            {
+                "original_word": "비해",
+                "root": "비하다",
+                "english": "compared to"
+            },
+            {
+                "original_word": "훨씬",
+                "root": "훨씬",
+                "english": "much"
+            },
+            {
+                "original_word": "적은",
+                "root": "적다",
+                "english": "to be few/little"
+            },
+            {
+                "original_word": "예산이",
+                "root": "예산",
+                "english": "budget"
+            },
+            {
+                "original_word": "든다",
+                "root": "들다",
+                "english": "to cost/take"
+            },
+            {
+                "original_word": "(나)",
+                "root": "(나)",
+                "english": "B"
+            },
+            {
+                "original_word": "그러므로",
+                "root": "그러므로",
+                "english": "therefore"
+            },
+            {
+                "original_word": "택시",
+                "root": "택시",
+                "english": "taxi"
+            },
+            {
+                "original_word": "요금을",
+                "root": "요금",
+                "english": "fare"
+            },
+            {
+                "original_word": "지원하더라도",
+                "root": "지원하다",
+                "english": "to support even if"
+            },
+            {
+                "original_word": "정부는",
+                "root": "정부",
+                "english": "government"
+            },
+            {
+                "original_word": "예산을",
+                "root": "예산",
+                "english": "budget"
+            },
+            {
+                "original_word": "아낄",
+                "root": "아끼다",
+                "english": "to save"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to exist/can"
+            },
+            {
+                "original_word": "(다)",
+                "root": "(다)",
+                "english": "C"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "택시의",
+                "root": "택시",
+                "english": "taxi"
+            },
+            {
+                "original_word": "이용",
+                "root": "이용",
+                "english": "use"
+            },
+            {
+                "original_word": "요금은",
+                "root": "요금",
+                "english": "fare"
+            },
+            {
+                "original_word": "1,100원이고",
+                "root": "1,100원이다",
+                "english": "to be 1,100 won"
+            },
+            {
+                "original_word": "추가",
+                "root": "추가",
+                "english": "addition"
+            },
+            {
+                "original_word": "요금은",
+                "root": "요금",
+                "english": "fare"
+            },
+            {
+                "original_word": "정부에서",
+                "root": "정부",
+                "english": "government"
+            },
+            {
+                "original_word": "부담한다",
+                "root": "부담하다",
+                "english": "to bear/cover"
+            },
+            {
+                "original_word": "(라)",
+                "root": "(라)",
+                "english": "D"
+            },
+            {
+                "original_word": "버스가",
+                "root": "버스",
+                "english": "bus"
+            },
+            {
+                "original_word": "다니지",
+                "root": "다니다",
+                "english": "to go/run"
+            },
+            {
+                "original_word": "않는",
+                "root": "않다",
+                "english": "to not do"
+            },
+            {
+                "original_word": "시골",
+                "root": "시골",
+                "english": "countryside"
+            },
+            {
+                "original_word": "마을에",
+                "root": "마을",
+                "english": "village"
+            },
+            {
+                "original_word": "주민들을",
+                "root": "주민",
+                "english": "resident"
+            },
+            {
+                "original_word": "위한",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "희망택시가",
+                "root": "희망택시",
+                "english": "Hope Taxi"
+            },
+            {
+                "original_word": "등장했다",
+                "root": "등장하다",
+                "english": "to appear"
+            }
+        ]
+    }
+]

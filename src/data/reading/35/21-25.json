@@ -1,0 +1,1502 @@
+[
+    {
+        "문제_번호": 21,
+        "지시문": "[21~22] 다음을 읽고 물음에 답하십시오. / 21. ( )에 들어갈 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "사람들은 보통 선택을 할 때 여러 가지 중에서 고르면 더 좋은 선택을 할 수 있을 것이라고 생각한다. 그래서 선택이 필요할 때 정보를 많이 수집하려고 노력한다. 그러나 선택의 수가 늘어나면 고민의 양도 함께 증가한다. ( ) 결정을 내리지 못하는 상황이 되는 것이다. 후회 없는 선택을 위한 노력이 오히려 선택을 방해하는 결과를 불러오게 된다.",
+        "선택지": {
+            "1": "골치만 아프고",
+            "2": "콧대만 높아지고",
+            "3": "눈치만 빨라지고",
+            "4": "비행기만 태우고"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 51,
+        "단어맵": [
+            {
+                "original_word": "사람들은",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "보통",
+                "root": "보통",
+                "english": "usually"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "여러",
+                "root": "여러",
+                "english": "several"
+            },
+            {
+                "original_word": "가지",
+                "root": "가지",
+                "english": "kind"
+            },
+            {
+                "original_word": "중에서",
+                "root": "중",
+                "english": "among"
+            },
+            {
+                "original_word": "고르면",
+                "root": "고르다",
+                "english": "to choose"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "좋은",
+                "root": "좋다",
+                "english": "to be good"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "ability/way"
+            },
+            {
+                "original_word": "있을",
+                "root": "있다",
+                "english": "to exist/can"
+            },
+            {
+                "original_word": "것이라고",
+                "root": "것이다",
+                "english": "to be a thing"
+            },
+            {
+                "original_word": "생각한다",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "therefore"
+            },
+            {
+                "original_word": "선택이",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "필요할",
+                "root": "필요하다",
+                "english": "to be necessary"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "정보를",
+                "root": "정보",
+                "english": "information"
+            },
+            {
+                "original_word": "많이",
+                "root": "많이",
+                "english": "a lot"
+            },
+            {
+                "original_word": "수집하려고",
+                "root": "수집하다",
+                "english": "to collect"
+            },
+            {
+                "original_word": "노력한다",
+                "root": "노력하다",
+                "english": "to make an effort"
+            },
+            {
+                "original_word": "그러나",
+                "root": "그러나",
+                "english": "however"
+            },
+            {
+                "original_word": "선택의",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "수가",
+                "root": "수",
+                "english": "number"
+            },
+            {
+                "original_word": "늘어나면",
+                "root": "늘어나다",
+                "english": "to increase"
+            },
+            {
+                "original_word": "고민의",
+                "root": "고민",
+                "english": "worry/agony"
+            },
+            {
+                "original_word": "양도",
+                "root": "양",
+                "english": "amount"
+            },
+            {
+                "original_word": "함께",
+                "root": "함께",
+                "english": "together"
+            },
+            {
+                "original_word": "증가한다",
+                "root": "증가하다",
+                "english": "to increase"
+            },
+            {
+                "original_word": "( )",
+                "root": "( )",
+                "english": "blank"
+            },
+            {
+                "original_word": "결정을",
+                "root": "결정",
+                "english": "decision"
+            },
+            {
+                "original_word": "내리지",
+                "root": "내리다",
+                "english": "to make (a decision)"
+            },
+            {
+                "original_word": "못하는",
+                "root": "못하다",
+                "english": "to be unable to"
+            },
+            {
+                "original_word": "상황이",
+                "root": "상황",
+                "english": "situation"
+            },
+            {
+                "original_word": "되는",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is a thing"
+            },
+            {
+                "original_word": "후회",
+                "root": "후회",
+                "english": "regret"
+            },
+            {
+                "original_word": "없는",
+                "root": "없다",
+                "english": "to not exist"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "위한",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "노력이",
+                "root": "노력",
+                "english": "effort"
+            },
+            {
+                "original_word": "오히려",
+                "root": "오히려",
+                "english": "rather"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "방해하는",
+                "root": "방해하다",
+                "english": "to hinder"
+            },
+            {
+                "original_word": "결과를",
+                "root": "결과",
+                "english": "result"
+            },
+            {
+                "original_word": "불러오게",
+                "root": "불러오다",
+                "english": "to bring about"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "to become"
+            }
+        ]
+    },
+    {
+        "문제_번호": 22,
+        "지시문": "[21~22] 다음을 읽고 물음에 답하십시오. / 22. 이 글의 중심 생각을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "사람들은 보통 선택을 할 때 여러 가지 중에서 고르면 더 좋은 선택을 할 수 있을 것이라고 생각한다. 그래서 선택이 필요할 때 정보를 많이 수집하려고 노력한다. 그러나 선택의 수가 늘어나면 고민의 양도 함께 증가한다. ( ) 결정을 내리지 못하는 상황이 되는 것이다. 후회 없는 선택을 위한 노력이 오히려 선택을 방해하는 결과를 불러오게 된다.",
+        "선택지": {
+            "1": "고민할수록 더 좋은 선택을 할 수 있다.",
+            "2": "선택의 폭이 넓어지면 결정이 더 어려워진다.",
+            "3": "선택을 할 때는 먼저 방해 요인을 없애야 한다.",
+            "4": "후회 없는 선택을 하려면 풍부한 정보가 필요하다."
+        },
+        "정답": 2,
+        "주제": "사회",
+        "토큰_개수": 51,
+        "단어맵": [
+            {
+                "original_word": "사람들은",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "보통",
+                "root": "보통",
+                "english": "usually"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "여러",
+                "root": "여러",
+                "english": "several"
+            },
+            {
+                "original_word": "가지",
+                "root": "가지",
+                "english": "kind"
+            },
+            {
+                "original_word": "중에서",
+                "root": "중",
+                "english": "among"
+            },
+            {
+                "original_word": "고르면",
+                "root": "고르다",
+                "english": "to choose"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "좋은",
+                "root": "좋다",
+                "english": "to be good"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "ability/way"
+            },
+            {
+                "original_word": "있을",
+                "root": "있다",
+                "english": "to exist/can"
+            },
+            {
+                "original_word": "것이라고",
+                "root": "것이다",
+                "english": "to be a thing"
+            },
+            {
+                "original_word": "생각한다",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "therefore"
+            },
+            {
+                "original_word": "선택이",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "필요할",
+                "root": "필요하다",
+                "english": "to be necessary"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "정보를",
+                "root": "정보",
+                "english": "information"
+            },
+            {
+                "original_word": "많이",
+                "root": "많이",
+                "english": "a lot"
+            },
+            {
+                "original_word": "수집하려고",
+                "root": "수집하다",
+                "english": "to collect"
+            },
+            {
+                "original_word": "노력한다",
+                "root": "노력하다",
+                "english": "to make an effort"
+            },
+            {
+                "original_word": "그러나",
+                "root": "그러나",
+                "english": "however"
+            },
+            {
+                "original_word": "선택의",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "수가",
+                "root": "수",
+                "english": "number"
+            },
+            {
+                "original_word": "늘어나면",
+                "root": "늘어나다",
+                "english": "to increase"
+            },
+            {
+                "original_word": "고민의",
+                "root": "고민",
+                "english": "worry/agony"
+            },
+            {
+                "original_word": "양도",
+                "root": "양",
+                "english": "amount"
+            },
+            {
+                "original_word": "함께",
+                "root": "함께",
+                "english": "together"
+            },
+            {
+                "original_word": "증가한다",
+                "root": "증가하다",
+                "english": "to increase"
+            },
+            {
+                "original_word": "( )",
+                "root": "( )",
+                "english": "blank"
+            },
+            {
+                "original_word": "결정을",
+                "root": "결정",
+                "english": "decision"
+            },
+            {
+                "original_word": "내리지",
+                "root": "내리다",
+                "english": "to make (a decision)"
+            },
+            {
+                "original_word": "못하는",
+                "root": "못하다",
+                "english": "to be unable to"
+            },
+            {
+                "original_word": "상황이",
+                "root": "상황",
+                "english": "situation"
+            },
+            {
+                "original_word": "되는",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is a thing"
+            },
+            {
+                "original_word": "후회",
+                "root": "후회",
+                "english": "regret"
+            },
+            {
+                "original_word": "없는",
+                "root": "없다",
+                "english": "to not exist"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "위한",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "노력이",
+                "root": "노력",
+                "english": "effort"
+            },
+            {
+                "original_word": "오히려",
+                "root": "오히려",
+                "english": "rather"
+            },
+            {
+                "original_word": "선택을",
+                "root": "선택",
+                "english": "choice"
+            },
+            {
+                "original_word": "방해하는",
+                "root": "방해하다",
+                "english": "to hinder"
+            },
+            {
+                "original_word": "결과를",
+                "root": "결과",
+                "english": "result"
+            },
+            {
+                "original_word": "불러오게",
+                "root": "불러오다",
+                "english": "to bring about"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "to become"
+            }
+        ]
+    },
+    {
+        "문제_번호": 23,
+        "지시문": "[23~24] 다음을 읽고 물음에 답하십시오. / 23. 밑줄 친 부분에 나타난 나의 심정으로 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "내가 운영하는 회사의 사정이 점점 더 어려워졌다. 공장에 불이 나서 피해를 입은 데다가 매출까지 크게 감소한 것이다. 어쩔 수 없이 직원 수를 줄여야 했다. 나는 직원들을 한자리에 불러 모아 놓고도 한참을 아무 말도 할 수 없었다. 눈을 지그시 감고 겨우 입을 떼려는 순간 “사장님!” 한 직원이 나를 불렀다. 그 직원은 흰 봉투를 내 앞으로 내밀면서 말했다. “그동안 어려운 회사 살림 때문에 고생 많으셨습니다. 어려워진 회사에 도움이 될까 싶어서 저희들이 월급의 10퍼센트씩을 모았습니다. 적은 돈이지만 회사 운영에 도움이 되었으면 합니다.” 순간 나는 마치 천하를 얻은 듯 마음이 든든해졌다.",
+        "선택지": {
+            "1": "곤란하다",
+            "2": "섭섭하다",
+            "3": "부끄럽다",
+            "4": "당황하다"
+        },
+        "정답": 1,
+        "주제": "인물",
+        "토큰_개수": 87,
+        "단어맵": [
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "운영하는",
+                "root": "운영하다",
+                "english": "to run/operate"
+            },
+            {
+                "original_word": "회사의",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "사정이",
+                "root": "사정",
+                "english": "circumstance"
+            },
+            {
+                "original_word": "점점",
+                "root": "점점",
+                "english": "gradually"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "어려워졌다",
+                "root": "어려워지다",
+                "english": "to become difficult"
+            },
+            {
+                "original_word": "공장에",
+                "root": "공장",
+                "english": "factory"
+            },
+            {
+                "original_word": "불이",
+                "root": "불",
+                "english": "fire"
+            },
+            {
+                "original_word": "나서",
+                "root": "나다",
+                "english": "to break out"
+            },
+            {
+                "original_word": "피해를",
+                "root": "피해",
+                "english": "damage"
+            },
+            {
+                "original_word": "입은",
+                "root": "입다",
+                "english": "to suffer"
+            },
+            {
+                "original_word": "데다가",
+                "root": "데",
+                "english": "place/case (in addition to)"
+            },
+            {
+                "original_word": "매출까지",
+                "root": "매출",
+                "english": "sales"
+            },
+            {
+                "original_word": "크게",
+                "root": "크다",
+                "english": "to be big/greatly"
+            },
+            {
+                "original_word": "감소한",
+                "root": "감소하다",
+                "english": "to decrease"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is a thing"
+            },
+            {
+                "original_word": "어쩔",
+                "root": "어쩌다",
+                "english": "to do what"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way"
+            },
+            {
+                "original_word": "없이",
+                "root": "없이",
+                "english": "without"
+            },
+            {
+                "original_word": "직원",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "수를",
+                "root": "수",
+                "english": "number"
+            },
+            {
+                "original_word": "줄여야",
+                "root": "줄이다",
+                "english": "to reduce"
+            },
+            {
+                "original_word": "했다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "직원들을",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "한자리에",
+                "root": "한자리",
+                "english": "one place"
+            },
+            {
+                "original_word": "불러",
+                "root": "부르다",
+                "english": "to call"
+            },
+            {
+                "original_word": "모아",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "놓고도",
+                "root": "놓다",
+                "english": "to put/even after"
+            },
+            {
+                "original_word": "한참을",
+                "root": "한참",
+                "english": "for a long time"
+            },
+            {
+                "original_word": "아무",
+                "root": "아무",
+                "english": "any"
+            },
+            {
+                "original_word": "말도",
+                "root": "말",
+                "english": "word/talk"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "없었다",
+                "root": "없다",
+                "english": "to not exist/cannot"
+            },
+            {
+                "original_word": "눈을",
+                "root": "눈",
+                "english": "eye"
+            },
+            {
+                "original_word": "지그시",
+                "root": "지그시",
+                "english": "gently/lightly (closing)"
+            },
+            {
+                "original_word": "감고",
+                "root": "감다",
+                "english": "to close"
+            },
+            {
+                "original_word": "겨우",
+                "root": "겨우",
+                "english": "barely"
+            },
+            {
+                "original_word": "입을",
+                "root": "입",
+                "english": "mouth"
+            },
+            {
+                "original_word": "떼려는",
+                "root": "떼다",
+                "english": "to open/part"
+            },
+            {
+                "original_word": "순간",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "사장님",
+                "root": "사장님",
+                "english": "boss/CEO"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "직원이",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "나를",
+                "root": "나",
+                "english": "me"
+            },
+            {
+                "original_word": "불렀다",
+                "root": "부르다",
+                "english": "to call"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "직원은",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "흰",
+                "root": "희다",
+                "english": "to be white"
+            },
+            {
+                "original_word": "봉투를",
+                "root": "봉투",
+                "english": "envelope"
+            },
+            {
+                "original_word": "내",
+                "root": "내",
+                "english": "my"
+            },
+            {
+                "original_word": "앞으로",
+                "root": "앞",
+                "english": "front"
+            },
+            {
+                "original_word": "내밀면서",
+                "root": "내밀다",
+                "english": "to hand out/extend"
+            },
+            {
+                "original_word": "말했다",
+                "root": "말하다",
+                "english": "to say"
+            },
+            {
+                "original_word": "그동안",
+                "root": "그동안",
+                "english": "meanwhile/during that time"
+            },
+            {
+                "original_word": "어려운",
+                "root": "어렵다",
+                "english": "to be difficult"
+            },
+            {
+                "original_word": "회사",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "살림",
+                "root": "살림",
+                "english": "housekeeping/living"
+            },
+            {
+                "original_word": "때문에",
+                "root": "때문",
+                "english": "because of"
+            },
+            {
+                "original_word": "고생",
+                "root": "고생",
+                "english": "hardship"
+            },
+            {
+                "original_word": "많으셨습니다",
+                "root": "많다",
+                "english": "to be many/much"
+            },
+            {
+                "original_word": "어려워진",
+                "root": "어려워지다",
+                "english": "to become difficult"
+            },
+            {
+                "original_word": "회사에",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "도움이",
+                "root": "도움",
+                "english": "help"
+            },
+            {
+                "original_word": "될까",
+                "root": "되다",
+                "english": "to become (wondering)"
+            },
+            {
+                "original_word": "싶어서",
+                "root": "싶다",
+                "english": "to think/want"
+            },
+            {
+                "original_word": "저희들이",
+                "root": "저희",
+                "english": "we (humble)"
+            },
+            {
+                "original_word": "월급의",
+                "root": "월급",
+                "english": "salary"
+            },
+            {
+                "original_word": "10퍼센트씩을",
+                "root": "10퍼센트",
+                "english": "10 percent"
+            },
+            {
+                "original_word": "모았습니다",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "적은",
+                "root": "적다",
+                "english": "to be small"
+            },
+            {
+                "original_word": "돈이지만",
+                "root": "돈",
+                "english": "money/but"
+            },
+            {
+                "original_word": "회사",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "운영에",
+                "root": "운영",
+                "english": "operation"
+            },
+            {
+                "original_word": "도움이",
+                "root": "도움",
+                "english": "help"
+            },
+            {
+                "original_word": "되었으면",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "합니다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "순간",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "마치",
+                "root": "마치",
+                "english": "like/as if"
+            },
+            {
+                "original_word": "천하를",
+                "root": "천하",
+                "english": "the whole world"
+            },
+            {
+                "original_word": "얻은",
+                "root": "얻다",
+                "english": "to gain/get"
+            },
+            {
+                "original_word": "듯",
+                "root": "듯",
+                "english": "as if"
+            },
+            {
+                "original_word": "마음이",
+                "root": "마음",
+                "english": "mind/heart"
+            },
+            {
+                "original_word": "든든해졌다",
+                "root": "든든해지다",
+                "english": "to become reassured"
+            }
+        ]
+    },
+    {
+        "문제_번호": 24,
+        "지시문": "[23~24] 다음을 읽고 물음에 답하십시오. / 24. 이 글의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "내가 운영하는 회사의 사정이 점점 더 어려워졌다. 공장에 불이 나서 피해를 입은 데다가 매출까지 크게 감소한 것이다. 어쩔 수 없이 직원 수를 줄여야 했다. 나는 직원들을 한자리에 불러 모아 놓고도 한참을 아무 말도 할 수 없었다. 눈을 지그시 감고 겨우 입을 떼려는 순간 “사장님!” 한 직원이 나를 불렀다. 그 직원은 흰 봉투를 내 앞으로 내밀면서 말했다. “그동안 어려운 회사 살림 때문에 고생 많으셨습니다. 어려워진 회사에 도움이 될까 싶어서 저희들이 월급의 10퍼센트씩을 모았습니다. 적은 돈이지만 회사 운영에 도움이 되었으면 합니다.” 순간 나는 마치 천하를 얻은 듯 마음이 든든해졌다.",
+        "선택지": {
+            "1": "화재가 발생한 후 회사의 사정이 좋아졌다.",
+            "2": "나는 회사에서 일할 새로운 직원들을 뽑았다.",
+            "3": "직원들이 월급의 일부를 걷어 회사를 도왔다.",
+            "4": "흰 봉투 안에는 직원들이 쓴 편지가 들어 있었다."
+        },
+        "정답": 3,
+        "주제": "인물",
+        "토큰_개수": 87,
+        "단어맵": [
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "운영하는",
+                "root": "운영하다",
+                "english": "to run/operate"
+            },
+            {
+                "original_word": "회사의",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "사정이",
+                "root": "사정",
+                "english": "circumstance"
+            },
+            {
+                "original_word": "점점",
+                "root": "점점",
+                "english": "gradually"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "어려워졌다",
+                "root": "어려워지다",
+                "english": "to become difficult"
+            },
+            {
+                "original_word": "공장에",
+                "root": "공장",
+                "english": "factory"
+            },
+            {
+                "original_word": "불이",
+                "root": "불",
+                "english": "fire"
+            },
+            {
+                "original_word": "나서",
+                "root": "나다",
+                "english": "to break out"
+            },
+            {
+                "original_word": "피해를",
+                "root": "피해",
+                "english": "damage"
+            },
+            {
+                "original_word": "입은",
+                "root": "입다",
+                "english": "to suffer"
+            },
+            {
+                "original_word": "데다가",
+                "root": "데",
+                "english": "place/case (in addition to)"
+            },
+            {
+                "original_word": "매출까지",
+                "root": "매출",
+                "english": "sales"
+            },
+            {
+                "original_word": "크게",
+                "root": "크다",
+                "english": "to be big/greatly"
+            },
+            {
+                "original_word": "감소한",
+                "root": "감소하다",
+                "english": "to decrease"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is a thing"
+            },
+            {
+                "original_word": "어쩔",
+                "root": "어쩌다",
+                "english": "to do what"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way"
+            },
+            {
+                "original_word": "없이",
+                "root": "없이",
+                "english": "without"
+            },
+            {
+                "original_word": "직원",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "수를",
+                "root": "수",
+                "english": "number"
+            },
+            {
+                "original_word": "줄여야",
+                "root": "줄이다",
+                "english": "to reduce"
+            },
+            {
+                "original_word": "했다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "직원들을",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "한자리에",
+                "root": "한자리",
+                "english": "one place"
+            },
+            {
+                "original_word": "불러",
+                "root": "부르다",
+                "english": "to call"
+            },
+            {
+                "original_word": "모아",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "놓고도",
+                "root": "놓다",
+                "english": "to put/even after"
+            },
+            {
+                "original_word": "한참을",
+                "root": "한참",
+                "english": "for a long time"
+            },
+            {
+                "original_word": "아무",
+                "root": "아무",
+                "english": "any"
+            },
+            {
+                "original_word": "말도",
+                "root": "말",
+                "english": "word/talk"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "없었다",
+                "root": "없다",
+                "english": "to not exist/cannot"
+            },
+            {
+                "original_word": "눈을",
+                "root": "눈",
+                "english": "eye"
+            },
+            {
+                "original_word": "지그시",
+                "root": "지그시",
+                "english": "gently/lightly (closing)"
+            },
+            {
+                "original_word": "감고",
+                "root": "감다",
+                "english": "to close"
+            },
+            {
+                "original_word": "겨우",
+                "root": "겨우",
+                "english": "barely"
+            },
+            {
+                "original_word": "입을",
+                "root": "입",
+                "english": "mouth"
+            },
+            {
+                "original_word": "떼려는",
+                "root": "떼다",
+                "english": "to open/part"
+            },
+            {
+                "original_word": "순간",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "사장님",
+                "root": "사장님",
+                "english": "boss/CEO"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "직원이",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "나를",
+                "root": "나",
+                "english": "me"
+            },
+            {
+                "original_word": "불렀다",
+                "root": "부르다",
+                "english": "to call"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "직원은",
+                "root": "직원",
+                "english": "employee"
+            },
+            {
+                "original_word": "흰",
+                "root": "희다",
+                "english": "to be white"
+            },
+            {
+                "original_word": "봉투를",
+                "root": "봉투",
+                "english": "envelope"
+            },
+            {
+                "original_word": "내",
+                "root": "내",
+                "english": "my"
+            },
+            {
+                "original_word": "앞으로",
+                "root": "앞",
+                "english": "front"
+            },
+            {
+                "original_word": "내밀면서",
+                "root": "내밀다",
+                "english": "to hand out/extend"
+            },
+            {
+                "original_word": "말했다",
+                "root": "말하다",
+                "english": "to say"
+            },
+            {
+                "original_word": "그동안",
+                "root": "그동안",
+                "english": "meanwhile/during that time"
+            },
+            {
+                "original_word": "어려운",
+                "root": "어렵다",
+                "english": "to be difficult"
+            },
+            {
+                "original_word": "회사",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "살림",
+                "root": "살림",
+                "english": "housekeeping/living"
+            },
+            {
+                "original_word": "때문에",
+                "root": "때문",
+                "english": "because of"
+            },
+            {
+                "original_word": "고생",
+                "root": "고생",
+                "english": "hardship"
+            },
+            {
+                "original_word": "많으셨습니다",
+                "root": "많다",
+                "english": "to be many/much"
+            },
+            {
+                "original_word": "어려워진",
+                "root": "어려워지다",
+                "english": "to become difficult"
+            },
+            {
+                "original_word": "회사에",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "도움이",
+                "root": "도움",
+                "english": "help"
+            },
+            {
+                "original_word": "될까",
+                "root": "되다",
+                "english": "to become (wondering)"
+            },
+            {
+                "original_word": "싶어서",
+                "root": "싶다",
+                "english": "to think/want"
+            },
+            {
+                "original_word": "저희들이",
+                "root": "저희",
+                "english": "we (humble)"
+            },
+            {
+                "original_word": "월급의",
+                "root": "월급",
+                "english": "salary"
+            },
+            {
+                "original_word": "10퍼센트씩을",
+                "root": "10퍼센트",
+                "english": "10 percent"
+            },
+            {
+                "original_word": "모았습니다",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "적은",
+                "root": "적다",
+                "english": "to be small"
+            },
+            {
+                "original_word": "돈이지만",
+                "root": "돈",
+                "english": "money/but"
+            },
+            {
+                "original_word": "회사",
+                "root": "회사",
+                "english": "company"
+            },
+            {
+                "original_word": "운영에",
+                "root": "운영",
+                "english": "operation"
+            },
+            {
+                "original_word": "도움이",
+                "root": "도움",
+                "english": "help"
+            },
+            {
+                "original_word": "되었으면",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "합니다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "순간",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "마치",
+                "root": "마치",
+                "english": "like/as if"
+            },
+            {
+                "original_word": "천하를",
+                "root": "천하",
+                "english": "the whole world"
+            },
+            {
+                "original_word": "얻은",
+                "root": "얻다",
+                "english": "to gain/get"
+            },
+            {
+                "original_word": "듯",
+                "root": "듯",
+                "english": "as if"
+            },
+            {
+                "original_word": "마음이",
+                "root": "마음",
+                "english": "mind/heart"
+            },
+            {
+                "original_word": "든든해졌다",
+                "root": "든든해지다",
+                "english": "to become reassured"
+            }
+        ]
+    },
+    {
+        "문제_번호": 25,
+        "지시문": "[25~27] 다음은 신문 기사의 제목입니다. 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "한쪽으로 메는 가방, 허리 건강 '빨간 불'",
+        "선택지": {
+            "1": "허리 건강을 지키려면 가벼운 가방을 메어야 한다.",
+            "2": "허리 건강을 위해서는 가방을 메지 않는 것이 좋다.",
+            "3": "가방을 계속 같은 방향으로 메면 허리 건강에 좋지 않다.",
+            "4": "가방을 오랫동안 메는 것은 허리 건강에 해가 될 수 있다."
+        },
+        "정답": 3,
+        "주제": "사회",
+        "토큰_개수": 7,
+        "단어맵": [
+            {
+                "original_word": "한쪽으로",
+                "root": "한쪽",
+                "english": "one side"
+            },
+            {
+                "original_word": "메는",
+                "root": "메다",
+                "english": "to carry on one's shoulder"
+            },
+            {
+                "original_word": "가방",
+                "root": "가방",
+                "english": "bag"
+            },
+            {
+                "original_word": "허리",
+                "root": "허리",
+                "english": "waist/back"
+            },
+            {
+                "original_word": "건강",
+                "root": "건강",
+                "english": "health"
+            },
+            {
+                "original_word": "빨간",
+                "root": "빨갛다",
+                "english": "to be red"
+            },
+            {
+                "original_word": "불",
+                "root": "불",
+                "english": "light/fire"
+            }
+        ]
+    }
+]

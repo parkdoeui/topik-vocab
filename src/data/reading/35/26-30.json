@@ -1,0 +1,987 @@
+[
+    {
+        "문제_번호": 26,
+        "지시문": "[25~27] 다음은 신문 기사의 제목입니다. 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "독특한 모양의 간판, 지나가는 사람들의 시선 끌어",
+        "선택지": {
+            "1": "색다른 모양의 간판이 사람들의 눈길을 사로잡고 있다.",
+            "2": "간판의 모양을 통일시켜야 사람들이 한눈에 볼 수 있다.",
+            "3": "눈에 띄는 간판을 만들기 위해 사람들이 노력하고 있다.",
+            "4": "지나치게 큰 간판은 지나다니는 사람들에게 방해가 된다."
+        },
+        "정답": 1,
+        "주제": "문화",
+        "토큰_개수": 7,
+        "단어맵": [
+            {
+                "original_word": "독특한",
+                "root": "독특하다",
+                "english": "to be unique"
+            },
+            {
+                "original_word": "모양의",
+                "root": "모양",
+                "english": "shape"
+            },
+            {
+                "original_word": "간판",
+                "root": "간판",
+                "english": "sign/billboard"
+            },
+            {
+                "original_word": "지나가는",
+                "root": "지나가다",
+                "english": "to pass by"
+            },
+            {
+                "original_word": "사람들의",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "시선",
+                "root": "시선",
+                "english": "gaze/attention"
+            },
+            {
+                "original_word": "끌어",
+                "root": "끌다",
+                "english": "to draw/attract"
+            }
+        ]
+    },
+    {
+        "문제_번호": 27,
+        "지시문": "[25~27] 다음은 신문 기사의 제목입니다. 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "취업률 석 달째 제자리걸음, 정부의 현실적인 대책 필요해",
+        "선택지": {
+            "1": "정부의 새 대책으로 취업률이 올라가게 될 것이다.",
+            "2": "정부의 대책으로 취업률이 더 이상 떨어지지 않았다.",
+            "3": "취업률의 변화가 심하여 정부가 대책을 마련하고 있다.",
+            "4": "취업률을 높일 수 있는 정부의 실현 가능한 대책이 요구된다."
+        },
+        "정답": 4,
+        "주제": "경제",
+        "토큰_개수": 8,
+        "단어맵": [
+            {
+                "original_word": "취업률",
+                "root": "취업률",
+                "english": "employment rate"
+            },
+            {
+                "original_word": "석",
+                "root": "석",
+                "english": "three"
+            },
+            {
+                "original_word": "달째",
+                "root": "달",
+                "english": "month"
+            },
+            {
+                "original_word": "제자리걸음",
+                "root": "제자리걸음",
+                "english": "marking time/standstill"
+            },
+            {
+                "original_word": "정부의",
+                "root": "정부",
+                "english": "government"
+            },
+            {
+                "original_word": "현실적인",
+                "root": "현실적",
+                "english": "realistic"
+            },
+            {
+                "original_word": "대책",
+                "root": "대책",
+                "english": "countermeasure/plan"
+            },
+            {
+                "original_word": "필요해",
+                "root": "필요하다",
+                "english": "to need/be necessary"
+            }
+        ]
+    },
+    {
+        "문제_번호": 28,
+        "지시문": "[28~31] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "새를 상자 안에 넣으면 자꾸 밖으로 나오려고 한다. 그러나 반대로 자유로운 공간에서는 안정을 찾고 도망치려고 애쓰지 않는다. 아이도 이와 마찬가지다. 부모들이 ( ) 하면 아이는 이를 구속이라 생각하고 반발심을 가진다. 그러나 일어나는 시간, 방과 후 할 일 등 생활 규칙을 아이와 의논하여 정하게 되면 부모가 시키지 않아도 스스로 책임감을 가지고 잘 지키려고 노력한다.",
+        "선택지": {
+            "1": "방과 후에 공부를 시키려고",
+            "2": "친구와의 관계에 관여하려고",
+            "3": "규칙을 정하고 그대로 따르게",
+            "4": "집에서 동물을 키우지 못하게"
+        },
+        "정답": 3,
+        "주제": "사회",
+        "토큰_개수": 52,
+        "단어맵": [
+            {
+                "original_word": "새를",
+                "root": "새",
+                "english": "bird"
+            },
+            {
+                "original_word": "상자",
+                "root": "상자",
+                "english": "box"
+            },
+            {
+                "original_word": "안에",
+                "root": "안",
+                "english": "inside"
+            },
+            {
+                "original_word": "넣으면",
+                "root": "넣다",
+                "english": "to put in"
+            },
+            {
+                "original_word": "자꾸",
+                "root": "자꾸",
+                "english": "repeatedly"
+            },
+            {
+                "original_word": "밖으로",
+                "root": "밖",
+                "english": "outside"
+            },
+            {
+                "original_word": "나오려고",
+                "root": "나오다",
+                "english": "to come out"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "그러나",
+                "root": "그러나",
+                "english": "however"
+            },
+            {
+                "original_word": "반대로",
+                "root": "반대",
+                "english": "opposite"
+            },
+            {
+                "original_word": "자유로운",
+                "root": "자유롭다",
+                "english": "to be free"
+            },
+            {
+                "original_word": "공간에서는",
+                "root": "공간",
+                "english": "space"
+            },
+            {
+                "original_word": "안정을",
+                "root": "안정",
+                "english": "stability"
+            },
+            {
+                "original_word": "찾고",
+                "root": "찾다",
+                "english": "to find"
+            },
+            {
+                "original_word": "도망치려고",
+                "root": "도망치다",
+                "english": "to run away"
+            },
+            {
+                "original_word": "애쓰지",
+                "root": "애쓰다",
+                "english": "to make an effort"
+            },
+            {
+                "original_word": "않는다",
+                "root": "않다",
+                "english": "to not do"
+            },
+            {
+                "original_word": "아이도",
+                "root": "아이",
+                "english": "child"
+            },
+            {
+                "original_word": "이와",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "마찬가지다",
+                "root": "마찬가지다",
+                "english": "to be the same"
+            },
+            {
+                "original_word": "부모들이",
+                "root": "부모",
+                "english": "parents"
+            },
+            {
+                "original_word": "( )",
+                "root": "( )",
+                "english": "blank"
+            },
+            {
+                "original_word": "하면",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "아이는",
+                "root": "아이",
+                "english": "child"
+            },
+            {
+                "original_word": "이를",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "구속이라",
+                "root": "구속",
+                "english": "restriction/confinement"
+            },
+            {
+                "original_word": "생각하고",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "반발심을",
+                "root": "반발심",
+                "english": "feeling of resistance"
+            },
+            {
+                "original_word": "가진다",
+                "root": "가지다",
+                "english": "to have"
+            },
+            {
+                "original_word": "그러나",
+                "root": "그러나",
+                "english": "however"
+            },
+            {
+                "original_word": "일어나는",
+                "root": "일어나다",
+                "english": "to wake up/happen"
+            },
+            {
+                "original_word": "시간",
+                "root": "시간",
+                "english": "time"
+            },
+            {
+                "original_word": "방과",
+                "root": "방과",
+                "english": "after school"
+            },
+            {
+                "original_word": "후",
+                "root": "후",
+                "english": "after"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "일",
+                "root": "일",
+                "english": "work/thing"
+            },
+            {
+                "original_word": "등",
+                "root": "등",
+                "english": "etc."
+            },
+            {
+                "original_word": "생활",
+                "root": "생활",
+                "english": "daily life"
+            },
+            {
+                "original_word": "규칙을",
+                "root": "규칙",
+                "english": "rule"
+            },
+            {
+                "original_word": "아이와",
+                "root": "아이",
+                "english": "child"
+            },
+            {
+                "original_word": "의논하여",
+                "root": "의논하다",
+                "english": "to discuss"
+            },
+            {
+                "original_word": "정하게",
+                "root": "정하다",
+                "english": "to decide"
+            },
+            {
+                "original_word": "되면",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "부모가",
+                "root": "부모",
+                "english": "parents"
+            },
+            {
+                "original_word": "시키지",
+                "root": "시키다",
+                "english": "to make someone do"
+            },
+            {
+                "original_word": "않아도",
+                "root": "않다",
+                "english": "to not do"
+            },
+            {
+                "original_word": "스스로",
+                "root": "스스로",
+                "english": "oneself"
+            },
+            {
+                "original_word": "책임감을",
+                "root": "책임감",
+                "english": "sense of responsibility"
+            },
+            {
+                "original_word": "가지고",
+                "root": "가지다",
+                "english": "to have"
+            },
+            {
+                "original_word": "잘",
+                "root": "잘",
+                "english": "well"
+            },
+            {
+                "original_word": "지키려고",
+                "root": "지키다",
+                "english": "to keep/follow"
+            },
+            {
+                "original_word": "노력한다",
+                "root": "노력하다",
+                "english": "to make an effort"
+            }
+        ]
+    },
+    {
+        "문제_번호": 29,
+        "지시문": "[28~31] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "사람들은 문화생활을 위한 시간을 따로 내기가 어렵다고들 한다. 최근 이런 사람들을 위해 ( ) 새로운 문화 콘텐츠들이 등장하고 있다. 그중 하나가 웹 소설인데 이것은 5분 이내에 읽을 수 있는 짧은 분량의 인터넷 소설을 말한다. 이 소설은 컴퓨터 화면에서 읽어도 눈이 피로하지 않도록 줄 간격이 넓게 편집되어 있다. 그리고 소설의 내용을 쉽게 이해할 수 있도록 등장인물의 수를 제한하는 것도 특징이다.",
+        "선택지": {
+            "1": "재미있는 내용으로 관심을 끄는",
+            "2": "현대의 사람들을 등장인물로 하는",
+            "3": "유행했던 기존의 소설을 각색해서 만든",
+            "4": "짧은 시간 동안 부담 없이 즐길 수 있는"
+        },
+        "정답": 4,
+        "주제": "문화",
+        "토큰_개수": 58,
+        "단어맵": [
+            {
+                "original_word": "사람들은",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "문화생활을",
+                "root": "문화생활",
+                "english": "cultural life"
+            },
+            {
+                "original_word": "위한",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "시간을",
+                "root": "시간",
+                "english": "time"
+            },
+            {
+                "original_word": "따로",
+                "root": "따로",
+                "english": "separately"
+            },
+            {
+                "original_word": "내기가",
+                "root": "내다",
+                "english": "to make/spare"
+            },
+            {
+                "original_word": "어렵다고들",
+                "root": "어렵다",
+                "english": "to be difficult"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recently"
+            },
+            {
+                "original_word": "이런",
+                "root": "이런",
+                "english": "such"
+            },
+            {
+                "original_word": "사람들을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "위해",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "( )",
+                "root": "( )",
+                "english": "blank"
+            },
+            {
+                "original_word": "새로운",
+                "root": "새롭다",
+                "english": "to be new"
+            },
+            {
+                "original_word": "문화",
+                "root": "문화",
+                "english": "culture"
+            },
+            {
+                "original_word": "콘텐츠들이",
+                "root": "콘텐츠",
+                "english": "content"
+            },
+            {
+                "original_word": "등장하고",
+                "root": "등장하다",
+                "english": "to appear"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "그중",
+                "root": "그중",
+                "english": "among them"
+            },
+            {
+                "original_word": "하나가",
+                "root": "하나",
+                "english": "one"
+            },
+            {
+                "original_word": "웹",
+                "root": "웹",
+                "english": "web"
+            },
+            {
+                "original_word": "소설인데",
+                "root": "소설이다",
+                "english": "to be a novel"
+            },
+            {
+                "original_word": "이것은",
+                "root": "이것",
+                "english": "this"
+            },
+            {
+                "original_word": "5분",
+                "root": "5분",
+                "english": "5 minutes"
+            },
+            {
+                "original_word": "이내에",
+                "root": "이내",
+                "english": "within"
+            },
+            {
+                "original_word": "읽을",
+                "root": "읽다",
+                "english": "to read"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "짧은",
+                "root": "짧다",
+                "english": "to be short"
+            },
+            {
+                "original_word": "분량의",
+                "root": "분량",
+                "english": "amount/quantity"
+            },
+            {
+                "original_word": "인터넷",
+                "root": "인터넷",
+                "english": "internet"
+            },
+            {
+                "original_word": "소설을",
+                "root": "소설",
+                "english": "novel"
+            },
+            {
+                "original_word": "말한다",
+                "root": "말하다",
+                "english": "to say/mean"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "소설은",
+                "root": "소설",
+                "english": "novel"
+            },
+            {
+                "original_word": "컴퓨터",
+                "root": "컴퓨터",
+                "english": "computer"
+            },
+            {
+                "original_word": "화면에서",
+                "root": "화면",
+                "english": "screen"
+            },
+            {
+                "original_word": "읽어도",
+                "root": "읽다",
+                "english": "to read"
+            },
+            {
+                "original_word": "눈이",
+                "root": "눈",
+                "english": "eye"
+            },
+            {
+                "original_word": "피로하지",
+                "root": "피로하다",
+                "english": "to be tired"
+            },
+            {
+                "original_word": "않도록",
+                "root": "않다",
+                "english": "to not do"
+            },
+            {
+                "original_word": "줄",
+                "root": "줄",
+                "english": "line"
+            },
+            {
+                "original_word": "간격이",
+                "root": "간격",
+                "english": "interval/spacing"
+            },
+            {
+                "original_word": "넓게",
+                "root": "넓다",
+                "english": "to be wide"
+            },
+            {
+                "original_word": "편집되어",
+                "root": "편집되다",
+                "english": "to be edited"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "그리고",
+                "root": "그리고",
+                "english": "and"
+            },
+            {
+                "original_word": "소설의",
+                "root": "소설",
+                "english": "novel"
+            },
+            {
+                "original_word": "내용을",
+                "root": "내용",
+                "english": "content"
+            },
+            {
+                "original_word": "쉽게",
+                "root": "쉽다",
+                "english": "to be easy"
+            },
+            {
+                "original_word": "이해할",
+                "root": "이해하다",
+                "english": "to understand"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있도록",
+                "root": "있다",
+                "english": "to exist/can"
+            },
+            {
+                "original_word": "등장인물의",
+                "root": "등장인물",
+                "english": "character"
+            },
+            {
+                "original_word": "수를",
+                "root": "수",
+                "english": "number"
+            },
+            {
+                "original_word": "제한하는",
+                "root": "제한하다",
+                "english": "to limit"
+            },
+            {
+                "original_word": "것도",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "특징이다",
+                "root": "특징이다",
+                "english": "to be a characteristic"
+            }
+        ]
+    },
+    {
+        "문제_번호": 30,
+        "지시문": "[28~31] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "조선 시대에는 큰 명절이나 나라에 축하할 일이 생겼을 때 궁중에서 잔치를 열었다. 보통 잔치를 할 때에는 맛있고 귀한 음식을 가득 차려 놓고 성대하게 행사를 치렀다. 그러나 이 음식들은 잔치에 참석한 왕과 높은 지위의 일부 사람들만을 위한 것은 아니었다. 잔치가 끝난 뒤 가난한 백성들에게 나누어 주기 위해 일부러 많은 음식을 준비했던 것이다. 잔치를 통해 ( ) 의도에서였다.",
+        "선택지": {
+            "1": "왕의 능력을 과시하려는",
+            "2": "궁중의 풍습을 널리 알리려는",
+            "3": "높은 지위의 사람을 대접하려는",
+            "4": "나라의 기쁨을 백성들과 나누려는"
+        },
+        "정답": 4,
+        "주제": "역사",
+        "토큰_개수": 55,
+        "단어맵": [
+            {
+                "original_word": "조선",
+                "root": "조선",
+                "english": "Joseon"
+            },
+            {
+                "original_word": "시대에는",
+                "root": "시대",
+                "english": "era/period"
+            },
+            {
+                "original_word": "큰",
+                "root": "크다",
+                "english": "to be big"
+            },
+            {
+                "original_word": "명절이나",
+                "root": "명절",
+                "english": "traditional holiday"
+            },
+            {
+                "original_word": "나라에",
+                "root": "나라",
+                "english": "country"
+            },
+            {
+                "original_word": "축하할",
+                "root": "축하하다",
+                "english": "to celebrate"
+            },
+            {
+                "original_word": "일이",
+                "root": "일",
+                "english": "work/matter"
+            },
+            {
+                "original_word": "생겼을",
+                "root": "생기다",
+                "english": "to occur/happen"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "궁중에서",
+                "root": "궁중",
+                "english": "royal court"
+            },
+            {
+                "original_word": "잔치를",
+                "root": "잔치",
+                "english": "feast/banquet"
+            },
+            {
+                "original_word": "열었다",
+                "root": "열다",
+                "english": "to hold/open"
+            },
+            {
+                "original_word": "보통",
+                "root": "보통",
+                "english": "usually"
+            },
+            {
+                "original_word": "잔치를",
+                "root": "잔치",
+                "english": "feast"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "때에는",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "맛있고",
+                "root": "맛있다",
+                "english": "to be delicious"
+            },
+            {
+                "original_word": "귀한",
+                "root": "귀하다",
+                "english": "to be precious"
+            },
+            {
+                "original_word": "음식을",
+                "root": "음식",
+                "english": "food"
+            },
+            {
+                "original_word": "가득",
+                "root": "가득",
+                "english": "fully"
+            },
+            {
+                "original_word": "차려",
+                "root": "차리다",
+                "english": "to prepare/set"
+            },
+            {
+                "original_word": "놓고",
+                "root": "놓다",
+                "english": "to put"
+            },
+            {
+                "original_word": "성대하게",
+                "root": "성대하다",
+                "english": "to be grand"
+            },
+            {
+                "original_word": "행사를",
+                "root": "행사",
+                "english": "event"
+            },
+            {
+                "original_word": "치렀다",
+                "root": "치르다",
+                "english": "to hold/carry out"
+            },
+            {
+                "original_word": "그러나",
+                "root": "그러나",
+                "english": "however"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "음식들은",
+                "root": "음식",
+                "english": "food"
+            },
+            {
+                "original_word": "잔치에",
+                "root": "잔치",
+                "english": "feast"
+            },
+            {
+                "original_word": "참석한",
+                "root": "참석하다",
+                "english": "to attend"
+            },
+            {
+                "original_word": "왕과",
+                "root": "왕",
+                "english": "king"
+            },
+            {
+                "original_word": "높은",
+                "root": "높다",
+                "english": "to be high"
+            },
+            {
+                "original_word": "지위의",
+                "root": "지위",
+                "english": "status/position"
+            },
+            {
+                "original_word": "일부",
+                "root": "일부",
+                "english": "part/some"
+            },
+            {
+                "original_word": "사람들만을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "위한",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "것은",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "아니었다",
+                "root": "아니다",
+                "english": "to not be"
+            },
+            {
+                "original_word": "잔치가",
+                "root": "잔치",
+                "english": "feast"
+            },
+            {
+                "original_word": "끝난",
+                "root": "끝나다",
+                "english": "to end"
+            },
+            {
+                "original_word": "뒤",
+                "root": "뒤",
+                "english": "after"
+            },
+            {
+                "original_word": "가난한",
+                "root": "가난하다",
+                "english": "to be poor"
+            },
+            {
+                "original_word": "백성들에게",
+                "root": "백성",
+                "english": "people/subjects"
+            },
+            {
+                "original_word": "나누어",
+                "root": "나누다",
+                "english": "to share/divide"
+            },
+            {
+                "original_word": "주기",
+                "root": "주다",
+                "english": "to give"
+            },
+            {
+                "original_word": "위해",
+                "root": "위하다",
+                "english": "for"
+            },
+            {
+                "original_word": "일부러",
+                "root": "일부러",
+                "english": "intentionally"
+            },
+            {
+                "original_word": "많은",
+                "root": "많다",
+                "english": "to be many"
+            },
+            {
+                "original_word": "음식을",
+                "root": "음식",
+                "english": "food"
+            },
+            {
+                "original_word": "준비했던",
+                "root": "준비하다",
+                "english": "to prepare"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is a thing"
+            },
+            {
+                "original_word": "잔치를",
+                "root": "잔치",
+                "english": "feast"
+            },
+            {
+                "original_word": "통해",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "( )",
+                "root": "( )",
+                "english": "blank"
+            },
+            {
+                "original_word": "의도에서였다",
+                "root": "의도",
+                "english": "intention"
+            }
+        ]
+    }
+]
