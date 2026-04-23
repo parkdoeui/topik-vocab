@@ -18,10 +18,7 @@ export default function WordCard({ word, onRemoved }: WordCardProps) {
           )}
         </div>
         {word.root && word.root !== (word.originalWord ?? word.korean) && (
-          <div className="text-sm text-gray-500 mt-0.5">
-            <span className="text-gray-400 text-xs mr-1">root</span>
-            {word.root}
-          </div>
+          <div className="text-sm text-gray-500 mt-0.5">{word.root}</div>
         )}
         <div className="text-sm text-gray-600 mt-0.5">{word.english}</div>
       </div>
