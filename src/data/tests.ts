@@ -1,12 +1,5 @@
 import type { TopikTest, TopikQuestion } from "../types";
 
-// Test 91 — chunked with vocab map
-import chunk91_1_10 from "./reading/91/1-10.json";
-import chunk91_11_20 from "./reading/91/11-20.json";
-import chunk91_21_30 from "./reading/91/21-30.json";
-import chunk91_31_40 from "./reading/91/31-40.json";
-import chunk91_41_50 from "./reading/91/41-50.json";
-
 import chunk_35 from "./reading/35/index.ts";
 // To add a new test:
 // 1. Import its chunk files above
