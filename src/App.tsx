@@ -178,6 +178,8 @@ export default function App() {
         onBasketClick={() => setDrawerOpen(true)}
         apiKey={apiKey}
         onApiKeyChange={setApiKey}
+        showTranslation={showTranslation}
+        onToggleTranslation={() => setShowTranslation((v) => !v)}
       />
 
       <div className="flex flex-1 overflow-hidden">
