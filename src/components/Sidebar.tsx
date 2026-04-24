@@ -4,9 +4,10 @@ import WordCard from "./WordCard";
 interface SidebarProps {
   basket: VocabWord[];
   onWordRemoved: (id: string) => void;
+  showTranslation: boolean;
 }
 
-export default function Sidebar({ basket, onWordRemoved }: SidebarProps) {
+export default function Sidebar({ basket, onWordRemoved, showTranslation }: SidebarProps) {
   return (
     <aside className="hidden md:flex flex-col w-72 shrink-0 bg-white border-l border-gray-200 overflow-y-auto">
       <div className="px-4 py-3 border-b border-gray-100 sticky top-0 bg-white z-10">
