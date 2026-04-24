@@ -7,6 +7,7 @@ interface BasketDrawerProps {
   basket: VocabWord[];
   onClose: () => void;
   onWordRemoved: (id: string) => void;
+  showTranslation: boolean;
 }
 
 export default function BasketDrawer({
@@ -14,6 +15,7 @@ export default function BasketDrawer({
   basket,
   onClose,
   onWordRemoved,
+  showTranslation,
 }: BasketDrawerProps) {
   // Lock body scroll when drawer is open
   useEffect(() => {
