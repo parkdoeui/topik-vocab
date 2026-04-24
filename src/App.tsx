@@ -239,6 +239,7 @@ export default function App() {
         basket={basket}
         onClose={() => setDrawerOpen(false)}
         onWordRemoved={handleWordRemoved}
+        showTranslation={showTranslation}
       />
 
       {showSubmitModal && (
