@@ -69,6 +69,7 @@ export default function ClickableWord({
   }, [isSaved, testId, questionNumber, exampleSentence, word, onSaved]);
 
   const handleMouseEnter = () => {
+    if (!showTranslation) return;
     clearTimers();
     fetchAndShow();
   };
@@ -80,7 +81,12 @@ export default function ClickableWord({
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    fetchAndShow().then((res) => { if (res) saveWord(res); });
+    if (showTranslation) {
+      fetchAndShow().then((res) => { if (res) saveWord(res); });
+    } else {
+      // No tooltip — fetch silently and save
+      lookup(word, apiKey, vocabMap).then((res) => { if (res) saveWord(res); });
+    }
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
