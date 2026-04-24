@@ -76,6 +76,7 @@ function ClickableText({
               !!savedOriginalWords?.has(wordOnly)
             }
             onSaved={onWordSaved}
+            showTranslation={showTranslation}
           />
         );
       })}
