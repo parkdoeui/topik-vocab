@@ -35,6 +35,23 @@ export default function Header({
       </div>
 
       <div className="flex items-center gap-2">
+        {/* Translation toggle */}
+        <button
+          onClick={onToggleTranslation}
+          aria-label={showTranslation ? "Hide translations" : "Show translations"}
+          title={showTranslation ? "Hide translations" : "Show translations"}
+          className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+            showTranslation
+              ? "bg-blue-100 text-blue-700 hover:bg-blue-200"
+              : "bg-gray-100 text-gray-500 hover:bg-gray-200"
+          }`}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+            <path fillRule="evenodd" d="M7 2a1 1 0 0 1 .707.293l4 4a1 1 0 0 1-1.414 1.414L9 6.414V13a1 1 0 1 1-2 0V6.414L5.707 7.707A1 1 0 0 1 4.293 6.293l4-4A1 1 0 0 1 7 2Zm6 6a1 1 0 0 1 1 1v4.586l1.293-1.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L13 14.586V9a1 1 0 0 1 1-1Z" clipRule="evenodd" />
+          </svg>
+          <span className="hidden sm:inline">{showTranslation ? "번역 켜짐" : "번역 꺼짐"}</span>
+        </button>
+
         {/* Settings button */}
         <div className="relative">
           <button
