@@ -3,9 +3,10 @@ import type { VocabWord } from "../types";
 interface WordCardProps {
   word: VocabWord;
   onRemoved: (id: string) => void;
+  showTranslation: boolean;
 }
 
-export default function WordCard({ word, onRemoved }: WordCardProps) {
+export default function WordCard({ word, onRemoved, showTranslation }: WordCardProps) {
   return (
     <div className="flex items-start gap-2 py-3 border-b border-gray-100 last:border-0 group">
       <div className="flex-1 min-w-0">
