@@ -1,0 +1,687 @@
+[
+    {
+        "문제_번호": 1,
+        "지시문": "[1~2] ( )에 들어갈 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "형은 차가워 ( ) 마음은 따뜻하다.",
+        "선택지": {
+            "1": "보여도",
+            "2": "보여야",
+            "3": "보이다가",
+            "4": "보이든지"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 4,
+        "단어맵": [
+            {
+                "original_word": "형은",
+                "root": "형",
+                "english": "older brother"
+            },
+            {
+                "original_word": "차가워",
+                "root": "차갑다",
+                "english": "cold"
+            },
+            {
+                "original_word": "마음은",
+                "root": "마음",
+                "english": "heart/mind"
+            },
+            {
+                "original_word": "따뜻하다",
+                "root": "따뜻하다",
+                "english": "warm"
+            }
+        ]
+    },
+    {
+        "문제_번호": 2,
+        "지시문": "[1~2] ( )에 들어갈 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "집에 ( ) 비가 내리기 시작했다.",
+        "선택지": {
+            "1": "도착하거나",
+            "2": "도착하니까",
+            "3": "도착하거든",
+            "4": "도착하려고"
+        },
+        "정답": 2,
+        "주제": "사회",
+        "토큰_개수": 4,
+        "단어맵": [
+            {
+                "original_word": "집에",
+                "root": "집",
+                "english": "house/home"
+            },
+            {
+                "original_word": "비가",
+                "root": "비",
+                "english": "rain"
+            },
+            {
+                "original_word": "내리기",
+                "root": "내리다",
+                "english": "to fall/rain"
+            },
+            {
+                "original_word": "시작했다",
+                "root": "시작하다",
+                "english": "to start"
+            }
+        ]
+    },
+    {
+        "문제_번호": 3,
+        "지시문": "[3~4] 다음 밑줄 친 부분과 의미가 비슷한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "아기가 자고 있어서 __깨지 않게__ 조용히 방 안으로 들어갔다.",
+        "선택지": {
+            "1": "깨지 않는지",
+            "2": "깨지 않도록",
+            "3": "깨지 않더니",
+            "4": "깨지 않느라"
+        },
+        "정답": 2,
+        "주제": "사회",
+        "토큰_개수": 9,
+        "단어맵": [
+            {
+                "original_word": "아기가",
+                "root": "아기",
+                "english": "baby"
+            },
+            {
+                "original_word": "자고",
+                "root": "자다",
+                "english": "to sleep"
+            },
+            {
+                "original_word": "있어서",
+                "root": "있다",
+                "english": "to be/exist"
+            },
+            {
+                "original_word": "깨지",
+                "root": "깨다",
+                "english": "to wake up"
+            },
+            {
+                "original_word": "않게",
+                "root": "않다",
+                "english": "to not do/be"
+            },
+            {
+                "original_word": "조용히",
+                "root": "조용하다",
+                "english": "quiet"
+            },
+            {
+                "original_word": "방",
+                "root": "방",
+                "english": "room"
+            },
+            {
+                "original_word": "안으로",
+                "root": "안",
+                "english": "inside"
+            },
+            {
+                "original_word": "들어갔다",
+                "root": "들어가다",
+                "english": "to go in"
+            }
+        ]
+    },
+    {
+        "문제_번호": 4,
+        "지시문": "[3~4] 다음 밑줄 친 부분과 의미가 비슷한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "한국어 실력을 __늘리고자__ 한국 신문과 방송을 자주 봤다.",
+        "선택지": {
+            "1": "늘리기 위해서",
+            "2": "늘리기 무섭게",
+            "3": "늘리는 대신에",
+            "4": "늘리는 반면에"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 8,
+        "단어맵": [
+            {
+                "original_word": "한국어",
+                "root": "한국어",
+                "english": "Korean language"
+            },
+            {
+                "original_word": "실력을",
+                "root": "실력",
+                "english": "ability/skill"
+            },
+            {
+                "original_word": "늘리고자",
+                "root": "늘리다",
+                "english": "to increase/improve"
+            },
+            {
+                "original_word": "한국",
+                "root": "한국",
+                "english": "Korea"
+            },
+            {
+                "original_word": "신문과",
+                "root": "신문",
+                "english": "newspaper"
+            },
+            {
+                "original_word": "방송을",
+                "root": "방송",
+                "english": "broadcast"
+            },
+            {
+                "original_word": "자주",
+                "root": "자주",
+                "english": "often"
+            },
+            {
+                "original_word": "봤다",
+                "root": "보다",
+                "english": "to watch/see"
+            }
+        ]
+    },
+    {
+        "문제_번호": 5,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "시원한 바람을 만나다 맑고 깨끗한 자연 느낌 그대로!",
+        "선택지": {
+            "1": "청소기",
+            "2": "선풍기",
+            "3": "세탁기",
+            "4": "전화기"
+        },
+        "정답": 2,
+        "주제": "경제",
+        "토큰_개수": 8,
+        "단어맵": [
+            {
+                "original_word": "시원한",
+                "root": "시원하다",
+                "english": "cool"
+            },
+            {
+                "original_word": "바람을",
+                "root": "바람",
+                "english": "wind"
+            },
+            {
+                "original_word": "만나다",
+                "root": "만나다",
+                "english": "to meet"
+            },
+            {
+                "original_word": "맑고",
+                "root": "맑다",
+                "english": "clear"
+            },
+            {
+                "original_word": "깨끗한",
+                "root": "깨끗하다",
+                "english": "clean"
+            },
+            {
+                "original_word": "자연",
+                "root": "자연",
+                "english": "nature"
+            },
+            {
+                "original_word": "느낌",
+                "root": "느낌",
+                "english": "feeling"
+            },
+            {
+                "original_word": "그대로",
+                "root": "그대로",
+                "english": "as it is"
+            }
+        ]
+    },
+    {
+        "문제_번호": 6,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "안정된 내일을 위하여! 고객님의 지갑을 소중히 생각하겠습니다.",
+        "선택지": {
+            "1": "병원",
+            "2": "은행",
+            "3": "가게",
+            "4": "학원"
+        },
+        "정답": 2,
+        "주제": "경제",
+        "토큰_개수": 7,
+        "단어맵": [
+            {
+                "original_word": "안정된",
+                "root": "안정되다",
+                "english": "stable"
+            },
+            {
+                "original_word": "내일을",
+                "root": "내일",
+                "english": "tomorrow"
+            },
+            {
+                "original_word": "위하여",
+                "root": "위하다",
+                "english": "for the sake of"
+            },
+            {
+                "original_word": "고객님의",
+                "root": "고객",
+                "english": "customer"
+            },
+            {
+                "original_word": "지갑을",
+                "root": "지갑",
+                "english": "wallet"
+            },
+            {
+                "original_word": "소중히",
+                "root": "소중하다",
+                "english": "preciously/valuably"
+            },
+            {
+                "original_word": "생각하겠습니다",
+                "root": "생각하다",
+                "english": "to think"
+            }
+        ]
+    },
+    {
+        "문제_번호": 7,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "엄마, 잘 다녀왔습니다. 참 반가운 한마디! 우리 아이 학교 다니는 길을 지켜 주세요.",
+        "선택지": {
+            "1": "교통 안전",
+            "2": "전기 절약",
+            "3": "예절 교육",
+            "4": "환경 보호"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 13,
+        "단어맵": [
+            {
+                "original_word": "엄마",
+                "root": "엄마",
+                "english": "mom"
+            },
+            {
+                "original_word": "잘",
+                "root": "잘",
+                "english": "well"
+            },
+            {
+                "original_word": "다녀왔습니다",
+                "root": "다녀오다",
+                "english": "to go and come back"
+            },
+            {
+                "original_word": "참",
+                "root": "참",
+                "english": "truly/very"
+            },
+            {
+                "original_word": "반가운",
+                "root": "반갑다",
+                "english": "glad/welcoming"
+            },
+            {
+                "original_word": "한마디",
+                "root": "한마디",
+                "english": "one word"
+            },
+            {
+                "original_word": "우리",
+                "root": "우리",
+                "english": "our"
+            },
+            {
+                "original_word": "아이",
+                "root": "아이",
+                "english": "child"
+            },
+            {
+                "original_word": "학교",
+                "root": "학교",
+                "english": "school"
+            },
+            {
+                "original_word": "다니는",
+                "root": "다니다",
+                "english": "to attend/go"
+            },
+            {
+                "original_word": "길을",
+                "root": "길",
+                "english": "road/way"
+            },
+            {
+                "original_word": "지켜",
+                "root": "지키다",
+                "english": "to protect/guard"
+            },
+            {
+                "original_word": "주세요",
+                "root": "주다",
+                "english": "to give/please do"
+            }
+        ]
+    },
+    {
+        "문제_번호": 8,
+        "지시문": "[5~8] 다음은 무엇에 대한 글인지 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "세계로! 미래로! 대한자동차와 함께 성장해 나갈 여러분을 기다립니다.",
+        "선택지": {
+            "1": "사원 모집",
+            "2": "여행 소개",
+            "3": "제품 설명",
+            "4": "판매 안내"
+        },
+        "정답": 1,
+        "주제": "경제",
+        "토큰_개수": 8,
+        "단어맵": [
+            {
+                "original_word": "세계로",
+                "root": "세계",
+                "english": "world"
+            },
+            {
+                "original_word": "미래로",
+                "root": "미래",
+                "english": "future"
+            },
+            {
+                "original_word": "대한자동차와",
+                "root": "대한자동차",
+                "english": "Daehan Motors"
+            },
+            {
+                "original_word": "함께",
+                "root": "함께",
+                "english": "together"
+            },
+            {
+                "original_word": "성장해",
+                "root": "성장하다",
+                "english": "to grow"
+            },
+            {
+                "original_word": "나갈",
+                "root": "나가다",
+                "english": "to advance/go out"
+            },
+            {
+                "original_word": "여러분을",
+                "root": "여러분",
+                "english": "everyone"
+            },
+            {
+                "original_word": "기다립니다",
+                "root": "기다리다",
+                "english": "to wait"
+            }
+        ]
+    },
+    {
+        "문제_번호": 9,
+        "지시문": "[9~12] 다음 글 또는 도표의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "2015 청소년 과학 동아리 지원 사업 인주시가 여러분의 꿈과 희망을 응원합니다. 신청 대상: 중·고등학생 5명 이상의 동아리 교사 1명이 포함되어야 함 / 지원 금액: 최대 200만 원 / 사업 기간: 2015년 7월 1일~12월 31일",
+        "선택지": {
+            "1": "동아리 지원은 일 년 동안 계속된다.",
+            "2": "동아리는 고등학생들로만 구성되어야 한다.",
+            "3": "동아리 활동비는 이백만 원까지 받을 수 있다.",
+            "4": "동아리 인원이 두세 명인 경우에도 신청할 수 있다."
+        },
+        "정답": 3,
+        "주제": "과학",
+        "토큰_개수": 32,
+        "단어맵": [
+            {
+                "original_word": "2015",
+                "root": "2015",
+                "english": "2015"
+            },
+            {
+                "original_word": "청소년",
+                "root": "청소년",
+                "english": "youth"
+            },
+            {
+                "original_word": "과학",
+                "root": "과학",
+                "english": "science"
+            },
+            {
+                "original_word": "동아리",
+                "root": "동아리",
+                "english": "club"
+            },
+            {
+                "original_word": "지원",
+                "root": "지원",
+                "english": "support"
+            },
+            {
+                "original_word": "사업",
+                "root": "사업",
+                "english": "project/business"
+            },
+            {
+                "original_word": "인주시가",
+                "root": "인주시",
+                "english": "Inju City"
+            },
+            {
+                "original_word": "여러분의",
+                "root": "여러분",
+                "english": "everyone"
+            },
+            {
+                "original_word": "꿈과",
+                "root": "꿈",
+                "english": "dream"
+            },
+            {
+                "original_word": "희망을",
+                "root": "희망",
+                "english": "hope"
+            },
+            {
+                "original_word": "응원합니다",
+                "root": "응원하다",
+                "english": "to cheer/support"
+            },
+            {
+                "original_word": "신청",
+                "root": "신청",
+                "english": "application"
+            },
+            {
+                "original_word": "대상",
+                "root": "대상",
+                "english": "target"
+            },
+            {
+                "original_word": "중·고등학생",
+                "root": "중·고등학생",
+                "english": "middle and high school student"
+            },
+            {
+                "original_word": "5명",
+                "root": "5명",
+                "english": "5 people"
+            },
+            {
+                "original_word": "이상의",
+                "root": "이상",
+                "english": "more than"
+            },
+            {
+                "original_word": "동아리",
+                "root": "동아리",
+                "english": "club"
+            },
+            {
+                "original_word": "교사",
+                "root": "교사",
+                "english": "teacher"
+            },
+            {
+                "original_word": "1명이",
+                "root": "1명",
+                "english": "1 person"
+            },
+            {
+                "original_word": "포함되어야",
+                "root": "포함되다",
+                "english": "to be included"
+            },
+            {
+                "original_word": "함",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "지원",
+                "root": "지원",
+                "english": "support"
+            },
+            {
+                "original_word": "금액",
+                "root": "금액",
+                "english": "amount of money"
+            },
+            {
+                "original_word": "최대",
+                "root": "최대",
+                "english": "maximum"
+            },
+            {
+                "original_word": "200만",
+                "root": "200만",
+                "english": "2 million"
+            },
+            {
+                "original_word": "원",
+                "root": "원",
+                "english": "won"
+            },
+            {
+                "original_word": "사업",
+                "root": "사업",
+                "english": "project/business"
+            },
+            {
+                "original_word": "기간",
+                "root": "기간",
+                "english": "period"
+            },
+            {
+                "original_word": "2015년",
+                "root": "2015년",
+                "english": "year 2015"
+            },
+            {
+                "original_word": "7월",
+                "root": "7월",
+                "english": "July"
+            },
+            {
+                "original_word": "1일~12월",
+                "root": "1일~12월",
+                "english": "1st to December"
+            },
+            {
+                "original_word": "31일",
+                "root": "31일",
+                "english": "31st"
+            }
+        ]
+    },
+    {
+        "문제_번호": 10,
+        "지시문": "[9~12] 다음 글 또는 도표의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "면세점에서 많이 팔리는 상품은? 2013년: 화장품(40%) 의류(22%) 식료품(30%) 가방류(18%) / 2014년: 화장품(50%) 의류(17%) 식료품(22%) 가방류(10%)",
+        "선택지": {
+            "1": "식료품 구입이 2013년보다 늘었다.",
+            "2": "가방류 판매가 2013년에 비해 줄었다.",
+            "3": "두 해 모두 화장품이 가장 많이 판매되었다.",
+            "4": "2014년에는 의류가 먹을 것보다 많이 팔렸다."
+        },
+        "정답": 3,
+        "주제": "경제",
+        "토큰_개수": 10,
+        "단어맵": [
+            {
+                "original_word": "면세점에서",
+                "root": "면세점",
+                "english": "duty-free shop"
+            },
+            {
+                "original_word": "많이",
+                "root": "많다",
+                "english": "many/much"
+            },
+            {
+                "original_word": "팔리는",
+                "root": "팔리다",
+                "english": "to be sold"
+            },
+            {
+                "original_word": "상품은",
+                "root": "상품",
+                "english": "product"
+            },
+            {
+                "original_word": "2013년",
+                "root": "2013년",
+                "english": "year 2013"
+            },
+            {
+                "original_word": "2014년",
+                "root": "2014년",
+                "english": "year 2014"
+            },
+            {
+                "original_word": "화장품",
+                "root": "화장품",
+                "english": "cosmetics"
+            },
+            {
+                "original_word": "의류",
+                "root": "의류",
+                "english": "clothing"
+            },
+            {
+                "original_word": "식료품",
+                "root": "식료품",
+                "english": "groceries"
+            },
+            {
+                "original_word": "가방류",
+                "root": "가방류",
+                "english": "bags"
+            }
+        ]
+    }
+]

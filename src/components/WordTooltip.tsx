@@ -9,7 +9,7 @@ interface WordTooltipProps {
 export default function WordTooltip({ result, loading, visible }: WordTooltipProps) {
   if (!visible) return null;
 
-  return (
+  return (result ?
     <span
       role="tooltip"
       className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 z-30 pointer-events-none"
@@ -39,5 +39,5 @@ export default function WordTooltip({ result, loading, visible }: WordTooltipPro
         <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-200" />
       </span>
     </span>
-  );
+    : <></>);
 }

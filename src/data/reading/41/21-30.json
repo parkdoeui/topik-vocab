@@ -1,0 +1,2457 @@
+[
+    {
+        "문제_번호": 21,
+        "지시문": "[21] ( )에 들어갈 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "최근 한 할아버지가 거리를 청소하면서 모은 돈 100여 만 원을 장학금으로 내놓았다. ( ) 이라고 지난 5년 동안 바닥에 버려진 10원짜리 동전을 하나하나씩 주워 모은 것이다. 사람들은 큰돈이 있어야만 다른 사람을 도와 줄 수 있다고 생각한다. 하지만 참된 기부란 돈의 액수가 중요한 것이 아니라 다른 사람을 향한 사랑의 마음이다.",
+        "선택지": {
+            "1": "제 눈의 안경",
+            "2": "엎질러진 물",
+            "3": "싼 게 비지떡",
+            "4": "티끌 모아 태산"
+        },
+        "정답": 4,
+        "주제": "사회",
+        "토큰_개수": 47,
+        "단어맵": [
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recent"
+            },
+            {
+                "original_word": "한",
+                "root": "하다",
+                "english": "about/one"
+            },
+            {
+                "original_word": "할아버지가",
+                "root": "할아버지",
+                "english": "grandfather"
+            },
+            {
+                "original_word": "거리를",
+                "root": "거리",
+                "english": "street"
+            },
+            {
+                "original_word": "청소하면서",
+                "root": "청소하다",
+                "english": "to clean"
+            },
+            {
+                "original_word": "모은",
+                "root": "모으다",
+                "english": "to gather/collect"
+            },
+            {
+                "original_word": "돈",
+                "root": "돈",
+                "english": "money"
+            },
+            {
+                "original_word": "100여",
+                "root": "100여",
+                "english": "over 100"
+            },
+            {
+                "original_word": "만",
+                "root": "만",
+                "english": "ten thousand"
+            },
+            {
+                "original_word": "원을",
+                "root": "원",
+                "english": "won"
+            },
+            {
+                "original_word": "장학금으로",
+                "root": "장학금",
+                "english": "scholarship"
+            },
+            {
+                "original_word": "내놓았다",
+                "root": "내놓다",
+                "english": "to put out/donate"
+            },
+            {
+                "original_word": "이라고",
+                "root": "이다",
+                "english": "to be"
+            },
+            {
+                "original_word": "지난",
+                "root": "지나다",
+                "english": "past/last"
+            },
+            {
+                "original_word": "5년",
+                "root": "5년",
+                "english": "5 years"
+            },
+            {
+                "original_word": "동안",
+                "root": "동안",
+                "english": "during"
+            },
+            {
+                "original_word": "바닥에",
+                "root": "바닥",
+                "english": "floor/ground"
+            },
+            {
+                "original_word": "버려진",
+                "root": "버려지다",
+                "english": "to be thrown away"
+            },
+            {
+                "original_word": "10원짜리",
+                "root": "10원짜리",
+                "english": "10-won worth"
+            },
+            {
+                "original_word": "동전을",
+                "root": "동전",
+                "english": "coin"
+            },
+            {
+                "original_word": "하나하나씩",
+                "root": "하나하나씩",
+                "english": "one by one"
+            },
+            {
+                "original_word": "주워",
+                "root": "줍다",
+                "english": "to pick up"
+            },
+            {
+                "original_word": "모은",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "사람들은",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "큰돈이",
+                "root": "큰돈",
+                "english": "large sum of money"
+            },
+            {
+                "original_word": "있어야만",
+                "root": "있다",
+                "english": "to have/exist"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "other"
+            },
+            {
+                "original_word": "사람을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "도와",
+                "root": "돕다",
+                "english": "to help"
+            },
+            {
+                "original_word": "줄",
+                "root": "주다",
+                "english": "to give"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있다고",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "생각한다",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "하지만",
+                "root": "하지만",
+                "english": "however"
+            },
+            {
+                "original_word": "참된",
+                "root": "참되다",
+                "english": "true/genuine"
+            },
+            {
+                "original_word": "기부란",
+                "root": "기부",
+                "english": "donation"
+            },
+            {
+                "original_word": "돈의",
+                "root": "돈",
+                "english": "money"
+            },
+            {
+                "original_word": "액수가",
+                "root": "액수",
+                "english": "amount"
+            },
+            {
+                "original_word": "중요한",
+                "root": "중요하다",
+                "english": "important"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "아니라",
+                "root": "아니다",
+                "english": "not"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "other"
+            },
+            {
+                "original_word": "사람을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "향한",
+                "root": "향하다",
+                "english": "to direct/toward"
+            },
+            {
+                "original_word": "사랑의",
+                "root": "사랑",
+                "english": "love"
+            },
+            {
+                "original_word": "마음이다",
+                "root": "마음",
+                "english": "mind/heart"
+            }
+        ]
+    },
+    {
+        "문제_번호": 22,
+        "지시문": "[22] 이 글의 중심 생각을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "최근 한 할아버지가 거리를 청소하면서 모은 돈 100여 만 원을 장학금으로 내놓았다. ( ) 이라고 지난 5년 동안 바닥에 버려진 10원짜리 동전을 하나하나씩 주워 모은 것이다. 사람들은 큰돈이 있어야만 다른 사람을 도와 줄 수 있다고 생각한다. 하지만 참된 기부란 돈의 액수가 중요한 것이 아니라 다른 사람을 향한 사랑의 마음이다.",
+        "선택지": {
+            "1": "생활 속에서 동전의 활용성을 높여야 한다.",
+            "2": "다른 사람을 도와주려면 큰돈을 모아야 한다.",
+            "3": "참된 기부는 자신보다 남을 먼저 생각해야 한다.",
+            "4": "큰돈을 모으려면 아끼고 절약하는 습관을 길러야 한다."
+        },
+        "정답": 3,
+        "주제": "사회",
+        "토큰_개수": 47,
+        "단어맵": [
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recent"
+            },
+            {
+                "original_word": "한",
+                "root": "하다",
+                "english": "about/one"
+            },
+            {
+                "original_word": "할아버지가",
+                "root": "할아버지",
+                "english": "grandfather"
+            },
+            {
+                "original_word": "거리를",
+                "root": "거리",
+                "english": "street"
+            },
+            {
+                "original_word": "청소하면서",
+                "root": "청소하다",
+                "english": "to clean"
+            },
+            {
+                "original_word": "모은",
+                "root": "모으다",
+                "english": "to gather/collect"
+            },
+            {
+                "original_word": "돈",
+                "root": "돈",
+                "english": "money"
+            },
+            {
+                "original_word": "100여",
+                "root": "100여",
+                "english": "over 100"
+            },
+            {
+                "original_word": "만",
+                "root": "만",
+                "english": "ten thousand"
+            },
+            {
+                "original_word": "원을",
+                "root": "원",
+                "english": "won"
+            },
+            {
+                "original_word": "장학금으로",
+                "root": "장학금",
+                "english": "scholarship"
+            },
+            {
+                "original_word": "내놓았다",
+                "root": "내놓다",
+                "english": "to put out/donate"
+            },
+            {
+                "original_word": "이라고",
+                "root": "이다",
+                "english": "to be"
+            },
+            {
+                "original_word": "지난",
+                "root": "지나다",
+                "english": "past/last"
+            },
+            {
+                "original_word": "5년",
+                "root": "5년",
+                "english": "5 years"
+            },
+            {
+                "original_word": "동안",
+                "root": "동안",
+                "english": "during"
+            },
+            {
+                "original_word": "바닥에",
+                "root": "바닥",
+                "english": "floor/ground"
+            },
+            {
+                "original_word": "버려진",
+                "root": "버려지다",
+                "english": "to be thrown away"
+            },
+            {
+                "original_word": "10원짜리",
+                "root": "10원짜리",
+                "english": "10-won worth"
+            },
+            {
+                "original_word": "동전을",
+                "root": "동전",
+                "english": "coin"
+            },
+            {
+                "original_word": "하나하나씩",
+                "root": "하나하나씩",
+                "english": "one by one"
+            },
+            {
+                "original_word": "주워",
+                "root": "줍다",
+                "english": "to pick up"
+            },
+            {
+                "original_word": "모은",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "사람들은",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "큰돈이",
+                "root": "큰돈",
+                "english": "large sum of money"
+            },
+            {
+                "original_word": "있어야만",
+                "root": "있다",
+                "english": "to have/exist"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "other"
+            },
+            {
+                "original_word": "사람을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "도와",
+                "root": "돕다",
+                "english": "to help"
+            },
+            {
+                "original_word": "줄",
+                "root": "주다",
+                "english": "to give"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있다고",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "생각한다",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "하지만",
+                "root": "하지만",
+                "english": "however"
+            },
+            {
+                "original_word": "참된",
+                "root": "참되다",
+                "english": "true/genuine"
+            },
+            {
+                "original_word": "기부란",
+                "root": "기부",
+                "english": "donation"
+            },
+            {
+                "original_word": "돈의",
+                "root": "돈",
+                "english": "money"
+            },
+            {
+                "original_word": "액수가",
+                "root": "액수",
+                "english": "amount"
+            },
+            {
+                "original_word": "중요한",
+                "root": "중요하다",
+                "english": "important"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "아니라",
+                "root": "아니다",
+                "english": "not"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "other"
+            },
+            {
+                "original_word": "사람을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "향한",
+                "root": "향하다",
+                "english": "to direct/toward"
+            },
+            {
+                "original_word": "사랑의",
+                "root": "사랑",
+                "english": "love"
+            },
+            {
+                "original_word": "마음이다",
+                "root": "마음",
+                "english": "mind/heart"
+            }
+        ]
+    },
+    {
+        "문제_번호": 23,
+        "지시문": "[23~24] 밑줄 부분에 나타난 나의 심정으로 알맞는 것을 고르시오.",
+        "배점": "2점",
+        "문제_내용": "할머니를 시골에 두고 혼자 서울로 올라오는 발걸음은 가볍지 않았다. 하지만 무거웠던 마음은 며칠 가지 않았다. 할머니는 날마다 전화를 하더니 급기야 서울로 올라오시고 말았다. 할머니의 손자 사랑은 어쩔 수 없나 보다. 할머니는 청소며 빨래며 나에게는 안 보이던 온갖 집안일들을 찾아서 하기 시작했다. 그냥 쉬다가 내려가시라고 __아무리 말해도 들은 척도 하지 않았다.__ 서른이 넘은 나는 할머니가 보기엔 여전히 아이에 불과했다. 서울 살이 몇 주 만에 낯선 동네에서 친구까지 사귄 할머니는 친구를 따라 시장에 갔다가 넘어지시고 말았다. 병원에서 온 연락을 받고 걱정이 되어 정신없이 달려갔더니 할머니는 같은 병실 사람들을 모아 놓고 환하게 웃으며 이야기하고 있었다. 다리에 붕대를 감고서 말이다. 그 광경을 보고 난 할 말을 잃었다.",
+        "선택지": {
+            "1": "답답하다",
+            "2": "후련하다",
+            "3": "민망하다",
+            "4": "번거롭다"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 103,
+        "단어맵": [
+            {
+                "original_word": "할머니를",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "시골에",
+                "root": "시골",
+                "english": "countryside"
+            },
+            {
+                "original_word": "두고",
+                "root": "두다",
+                "english": "to leave behind"
+            },
+            {
+                "original_word": "혼자",
+                "root": "혼자",
+                "english": "alone"
+            },
+            {
+                "original_word": "서울로",
+                "root": "서울",
+                "english": "Seoul"
+            },
+            {
+                "original_word": "올라오는",
+                "root": "올라오다",
+                "english": "to come up"
+            },
+            {
+                "original_word": "발걸음은",
+                "root": "발걸음",
+                "english": "step"
+            },
+            {
+                "original_word": "가볍지",
+                "root": "가볍다",
+                "english": "light"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "not"
+            },
+            {
+                "original_word": "하지만",
+                "root": "하지만",
+                "english": "however"
+            },
+            {
+                "original_word": "무거웠던",
+                "root": "무겁다",
+                "english": "heavy"
+            },
+            {
+                "original_word": "마음은",
+                "root": "마음",
+                "english": "heart/mind"
+            },
+            {
+                "original_word": "며칠",
+                "root": "며칠",
+                "english": "a few days"
+            },
+            {
+                "original_word": "가지",
+                "root": "가다",
+                "english": "to go/last"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "not"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "날마다",
+                "root": "날마다",
+                "english": "everyday"
+            },
+            {
+                "original_word": "전화를",
+                "root": "전화",
+                "english": "phone call"
+            },
+            {
+                "original_word": "하더니",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "급기야",
+                "root": "급기야",
+                "english": "finally/in the end"
+            },
+            {
+                "original_word": "서울로",
+                "root": "서울",
+                "english": "Seoul"
+            },
+            {
+                "original_word": "올라오시고",
+                "root": "올라오다",
+                "english": "to come up"
+            },
+            {
+                "original_word": "말았다",
+                "root": "말다",
+                "english": "to end up doing"
+            },
+            {
+                "original_word": "할머니의",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "손자",
+                "root": "손자",
+                "english": "grandson"
+            },
+            {
+                "original_word": "사랑은",
+                "root": "사랑",
+                "english": "love"
+            },
+            {
+                "original_word": "어쩔",
+                "root": "어쩌다",
+                "english": "to do what"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way"
+            },
+            {
+                "original_word": "없나",
+                "root": "없다",
+                "english": "to not exist"
+            },
+            {
+                "original_word": "보다",
+                "root": "보다",
+                "english": "to seem"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "청소며",
+                "root": "청소",
+                "english": "cleaning"
+            },
+            {
+                "original_word": "빨래며",
+                "root": "빨래",
+                "english": "laundry"
+            },
+            {
+                "original_word": "나에게는",
+                "root": "나",
+                "english": "me"
+            },
+            {
+                "original_word": "안",
+                "root": "안",
+                "english": "not"
+            },
+            {
+                "original_word": "보이던",
+                "root": "보이다",
+                "english": "to be seen"
+            },
+            {
+                "original_word": "온갖",
+                "root": "온갖",
+                "english": "all kinds of"
+            },
+            {
+                "original_word": "집안일들을",
+                "root": "집안일",
+                "english": "housework"
+            },
+            {
+                "original_word": "찾아서",
+                "root": "찾다",
+                "english": "to find"
+            },
+            {
+                "original_word": "하기",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "시작했다",
+                "root": "시작하다",
+                "english": "to start"
+            },
+            {
+                "original_word": "그냥",
+                "root": "그냥",
+                "english": "just"
+            },
+            {
+                "original_word": "쉬다가",
+                "root": "쉬다",
+                "english": "to rest"
+            },
+            {
+                "original_word": "내려가시라고",
+                "root": "내려가다",
+                "english": "to go down"
+            },
+            {
+                "original_word": "아무리",
+                "root": "아무리",
+                "english": "no matter how"
+            },
+            {
+                "original_word": "말해도",
+                "root": "말하다",
+                "english": "to say/speak"
+            },
+            {
+                "original_word": "들은",
+                "root": "듣다",
+                "english": "to hear"
+            },
+            {
+                "original_word": "척도",
+                "root": "척",
+                "english": "pretending"
+            },
+            {
+                "original_word": "하지",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "not"
+            },
+            {
+                "original_word": "서른이",
+                "root": "서른",
+                "english": "thirty"
+            },
+            {
+                "original_word": "넘은",
+                "root": "넘다",
+                "english": "to pass/exceed"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "할머니가",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "보기엔",
+                "root": "보다",
+                "english": "to see/look"
+            },
+            {
+                "original_word": "여전히",
+                "root": "여전히",
+                "english": "still"
+            },
+            {
+                "original_word": "아이에",
+                "root": "아이",
+                "english": "child"
+            },
+            {
+                "original_word": "불과했다",
+                "root": "불과하다",
+                "english": "to be merely"
+            },
+            {
+                "original_word": "서울",
+                "root": "서울",
+                "english": "Seoul"
+            },
+            {
+                "original_word": "살이",
+                "root": "살이",
+                "english": "living"
+            },
+            {
+                "original_word": "몇",
+                "root": "몇",
+                "english": "a few"
+            },
+            {
+                "original_word": "주",
+                "root": "주",
+                "english": "week"
+            },
+            {
+                "original_word": "만에",
+                "root": "만",
+                "english": "after/since"
+            },
+            {
+                "original_word": "낯선",
+                "root": "낯설다",
+                "english": "unfamiliar"
+            },
+            {
+                "original_word": "동네에서",
+                "root": "동네",
+                "english": "neighborhood"
+            },
+            {
+                "original_word": "친구까지",
+                "root": "친구",
+                "english": "friend"
+            },
+            {
+                "original_word": "사귄",
+                "root": "사귀다",
+                "english": "to make friends"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "친구를",
+                "root": "친구",
+                "english": "friend"
+            },
+            {
+                "original_word": "따라",
+                "root": "따르다",
+                "english": "to follow"
+            },
+            {
+                "original_word": "시장에",
+                "root": "시장",
+                "english": "market"
+            },
+            {
+                "original_word": "갔다가",
+                "root": "가다",
+                "english": "to go"
+            },
+            {
+                "original_word": "넘어지시고",
+                "root": "넘어지다",
+                "english": "to fall down"
+            },
+            {
+                "original_word": "말았다",
+                "root": "말다",
+                "english": "to end up"
+            },
+            {
+                "original_word": "병원에서",
+                "root": "병원",
+                "english": "hospital"
+            },
+            {
+                "original_word": "온",
+                "root": "오다",
+                "english": "to come"
+            },
+            {
+                "original_word": "연락을",
+                "root": "연락",
+                "english": "contact"
+            },
+            {
+                "original_word": "받고",
+                "root": "받다",
+                "english": "to receive"
+            },
+            {
+                "original_word": "걱정이",
+                "root": "걱정",
+                "english": "worry"
+            },
+            {
+                "original_word": "되어",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "정신없이",
+                "root": "정신없다",
+                "english": "hectic/distracted"
+            },
+            {
+                "original_word": "달려갔더니",
+                "root": "달려가다",
+                "english": "to run to"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "같은",
+                "root": "같다",
+                "english": "same"
+            },
+            {
+                "original_word": "병실",
+                "root": "병실",
+                "english": "hospital room"
+            },
+            {
+                "original_word": "사람들을",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "모아",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "놓고",
+                "root": "놓다",
+                "english": "to put"
+            },
+            {
+                "original_word": "환하게",
+                "root": "환하다",
+                "english": "bright/radiant"
+            },
+            {
+                "original_word": "웃으며",
+                "root": "웃다",
+                "english": "to laugh/smile"
+            },
+            {
+                "original_word": "이야기하고",
+                "root": "이야기하다",
+                "english": "to talk"
+            },
+            {
+                "original_word": "있었다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "다리에",
+                "root": "다리",
+                "english": "leg"
+            },
+            {
+                "original_word": "붕대를",
+                "root": "붕대",
+                "english": "bandage"
+            },
+            {
+                "original_word": "감고서",
+                "root": "감다",
+                "english": "to wrap/wind"
+            },
+            {
+                "original_word": "말이다",
+                "root": "말",
+                "english": "words/speech"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "광경을",
+                "root": "광경",
+                "english": "sight/scene"
+            },
+            {
+                "original_word": "보고",
+                "root": "보다",
+                "english": "to see"
+            },
+            {
+                "original_word": "난",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "말을",
+                "root": "말",
+                "english": "words"
+            },
+            {
+                "original_word": "잃었다",
+                "root": "잃다",
+                "english": "to lose"
+            }
+        ]
+    },
+    {
+        "문제_번호": 24,
+        "지시문": "[23~24] 이 글의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "할머니를 시골에 두고 혼자 서울로 올라오는 발걸음은 가볍지 않았다. 하지만 무거웠던 마음은 며칠 가지 않았다. 할머니는 날마다 전화를 하더니 급기야 서울로 올라오시고 말았다. 할머니의 손자 사랑은 어쩔 수 없나 보다. 할머니는 청소며 빨래며 나에게는 안 보이던 온갖 집안일들을 찾아서 하기 시작했다. 그냥 쉬다가 내려가시라고 __아무리 말해도 들은 척도 하지 않았다.__ 서른이 넘은 나는 할머니가 보기엔 여전히 아이에 불과했다. 서울 살이 몇 주 만에 낯선 동네에서 친구까지 사귄 할머니는 친구를 따라 시장에 갔다가 넘어지시고 말았다. 병원에서 온 연락을 받고 걱정이 되어 정신없이 달려갔더니 할머니는 같은 병실 사람들을 모아 놓고 환하게 웃으며 이야기하고 있었다. 다리에 붕대를 감고서 말이다. 그 광경을 보고 난 할 말을 잃었다.",
+        "선택지": {
+            "1": "할머니께서는 내 말에 자주 귀를 기울이셨다.",
+            "2": "할머니께서는 시장에 갔다가 다리를 다치셨다.",
+            "3": "할머니께서는 나에게 온갖 집안일을 시키셨다.",
+            "4": "할머니께서는 친구를 만나려고 서울에 올라오셨다."
+        },
+        "정답": 2,
+        "주제": "사회",
+        "토큰_개수": 103,
+        "단어맵": [
+            {
+                "original_word": "할머니를",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "시골에",
+                "root": "시골",
+                "english": "countryside"
+            },
+            {
+                "original_word": "두고",
+                "root": "두다",
+                "english": "to leave behind"
+            },
+            {
+                "original_word": "혼자",
+                "root": "혼자",
+                "english": "alone"
+            },
+            {
+                "original_word": "서울로",
+                "root": "서울",
+                "english": "Seoul"
+            },
+            {
+                "original_word": "올라오는",
+                "root": "올라오다",
+                "english": "to come up"
+            },
+            {
+                "original_word": "발걸음은",
+                "root": "발걸음",
+                "english": "step"
+            },
+            {
+                "original_word": "가볍지",
+                "root": "가볍다",
+                "english": "light"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "not"
+            },
+            {
+                "original_word": "하지만",
+                "root": "하지만",
+                "english": "however"
+            },
+            {
+                "original_word": "무거웠던",
+                "root": "무겁다",
+                "english": "heavy"
+            },
+            {
+                "original_word": "마음은",
+                "root": "마음",
+                "english": "heart/mind"
+            },
+            {
+                "original_word": "며칠",
+                "root": "며칠",
+                "english": "a few days"
+            },
+            {
+                "original_word": "가지",
+                "root": "가다",
+                "english": "to go/last"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "not"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "날마다",
+                "root": "날마다",
+                "english": "everyday"
+            },
+            {
+                "original_word": "전화를",
+                "root": "전화",
+                "english": "phone call"
+            },
+            {
+                "original_word": "하더니",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "급기야",
+                "root": "급기야",
+                "english": "finally/in the end"
+            },
+            {
+                "original_word": "서울로",
+                "root": "서울",
+                "english": "Seoul"
+            },
+            {
+                "original_word": "올라오시고",
+                "root": "올라오다",
+                "english": "to come up"
+            },
+            {
+                "original_word": "말았다",
+                "root": "말다",
+                "english": "to end up doing"
+            },
+            {
+                "original_word": "할머니의",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "손자",
+                "root": "손자",
+                "english": "grandson"
+            },
+            {
+                "original_word": "사랑은",
+                "root": "사랑",
+                "english": "love"
+            },
+            {
+                "original_word": "어쩔",
+                "root": "어쩌다",
+                "english": "to do what"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way"
+            },
+            {
+                "original_word": "없나",
+                "root": "없다",
+                "english": "to not exist"
+            },
+            {
+                "original_word": "보다",
+                "root": "보다",
+                "english": "to seem"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "청소며",
+                "root": "청소",
+                "english": "cleaning"
+            },
+            {
+                "original_word": "빨래며",
+                "root": "빨래",
+                "english": "laundry"
+            },
+            {
+                "original_word": "나에게는",
+                "root": "나",
+                "english": "me"
+            },
+            {
+                "original_word": "안",
+                "root": "안",
+                "english": "not"
+            },
+            {
+                "original_word": "보이던",
+                "root": "보이다",
+                "english": "to be seen"
+            },
+            {
+                "original_word": "온갖",
+                "root": "온갖",
+                "english": "all kinds of"
+            },
+            {
+                "original_word": "집안일들을",
+                "root": "집안일",
+                "english": "housework"
+            },
+            {
+                "original_word": "찾아서",
+                "root": "찾다",
+                "english": "to find"
+            },
+            {
+                "original_word": "하기",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "시작했다",
+                "root": "시작하다",
+                "english": "to start"
+            },
+            {
+                "original_word": "그냥",
+                "root": "그냥",
+                "english": "just"
+            },
+            {
+                "original_word": "쉬다가",
+                "root": "쉬다",
+                "english": "to rest"
+            },
+            {
+                "original_word": "내려가시라고",
+                "root": "내려가다",
+                "english": "to go down"
+            },
+            {
+                "original_word": "아무리",
+                "root": "아무리",
+                "english": "no matter how"
+            },
+            {
+                "original_word": "말해도",
+                "root": "말하다",
+                "english": "to say/speak"
+            },
+            {
+                "original_word": "들은",
+                "root": "듣다",
+                "english": "to hear"
+            },
+            {
+                "original_word": "척도",
+                "root": "척",
+                "english": "pretending"
+            },
+            {
+                "original_word": "하지",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "않았다",
+                "root": "않다",
+                "english": "not"
+            },
+            {
+                "original_word": "서른이",
+                "root": "서른",
+                "english": "thirty"
+            },
+            {
+                "original_word": "넘은",
+                "root": "넘다",
+                "english": "to pass/exceed"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "할머니가",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "보기엔",
+                "root": "보다",
+                "english": "to see/look"
+            },
+            {
+                "original_word": "여전히",
+                "root": "여전히",
+                "english": "still"
+            },
+            {
+                "original_word": "아이에",
+                "root": "아이",
+                "english": "child"
+            },
+            {
+                "original_word": "불과했다",
+                "root": "불과하다",
+                "english": "to be merely"
+            },
+            {
+                "original_word": "서울",
+                "root": "서울",
+                "english": "Seoul"
+            },
+            {
+                "original_word": "살이",
+                "root": "살이",
+                "english": "living"
+            },
+            {
+                "original_word": "몇",
+                "root": "몇",
+                "english": "a few"
+            },
+            {
+                "original_word": "주",
+                "root": "주",
+                "english": "week"
+            },
+            {
+                "original_word": "만에",
+                "root": "만",
+                "english": "after/since"
+            },
+            {
+                "original_word": "낯선",
+                "root": "낯설다",
+                "english": "unfamiliar"
+            },
+            {
+                "original_word": "동네에서",
+                "root": "동네",
+                "english": "neighborhood"
+            },
+            {
+                "original_word": "친구까지",
+                "root": "친구",
+                "english": "friend"
+            },
+            {
+                "original_word": "사귄",
+                "root": "사귀다",
+                "english": "to make friends"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "친구를",
+                "root": "친구",
+                "english": "friend"
+            },
+            {
+                "original_word": "따라",
+                "root": "따르다",
+                "english": "to follow"
+            },
+            {
+                "original_word": "시장에",
+                "root": "시장",
+                "english": "market"
+            },
+            {
+                "original_word": "갔다가",
+                "root": "가다",
+                "english": "to go"
+            },
+            {
+                "original_word": "넘어지시고",
+                "root": "넘어지다",
+                "english": "to fall down"
+            },
+            {
+                "original_word": "말았다",
+                "root": "말다",
+                "english": "to end up"
+            },
+            {
+                "original_word": "병원에서",
+                "root": "병원",
+                "english": "hospital"
+            },
+            {
+                "original_word": "온",
+                "root": "오다",
+                "english": "to come"
+            },
+            {
+                "original_word": "연락을",
+                "root": "연락",
+                "english": "contact"
+            },
+            {
+                "original_word": "받고",
+                "root": "받다",
+                "english": "to receive"
+            },
+            {
+                "original_word": "걱정이",
+                "root": "걱정",
+                "english": "worry"
+            },
+            {
+                "original_word": "되어",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "정신없이",
+                "root": "정신없다",
+                "english": "hectic/distracted"
+            },
+            {
+                "original_word": "달려갔더니",
+                "root": "달려가다",
+                "english": "to run to"
+            },
+            {
+                "original_word": "할머니는",
+                "root": "할머니",
+                "english": "grandmother"
+            },
+            {
+                "original_word": "같은",
+                "root": "같다",
+                "english": "same"
+            },
+            {
+                "original_word": "병실",
+                "root": "병실",
+                "english": "hospital room"
+            },
+            {
+                "original_word": "사람들을",
+                "root": "사람",
+                "english": "people"
+            },
+            {
+                "original_word": "모아",
+                "root": "모으다",
+                "english": "to gather"
+            },
+            {
+                "original_word": "놓고",
+                "root": "놓다",
+                "english": "to put"
+            },
+            {
+                "original_word": "환하게",
+                "root": "환하다",
+                "english": "bright/radiant"
+            },
+            {
+                "original_word": "웃으며",
+                "root": "웃다",
+                "english": "to laugh/smile"
+            },
+            {
+                "original_word": "이야기하고",
+                "root": "이야기하다",
+                "english": "to talk"
+            },
+            {
+                "original_word": "있었다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "다리에",
+                "root": "다리",
+                "english": "leg"
+            },
+            {
+                "original_word": "붕대를",
+                "root": "붕대",
+                "english": "bandage"
+            },
+            {
+                "original_word": "감고서",
+                "root": "감다",
+                "english": "to wrap/wind"
+            },
+            {
+                "original_word": "말이다",
+                "root": "말",
+                "english": "words/speech"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "광경을",
+                "root": "광경",
+                "english": "sight/scene"
+            },
+            {
+                "original_word": "보고",
+                "root": "보다",
+                "english": "to see"
+            },
+            {
+                "original_word": "난",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "말을",
+                "root": "말",
+                "english": "words"
+            },
+            {
+                "original_word": "잃었다",
+                "root": "잃다",
+                "english": "to lose"
+            }
+        ]
+    },
+    {
+        "문제_번호": 25,
+        "지시문": "[25~27] 다음은 신문 기사의 제목입니다. 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "낮에는 화창, 밤부터 곳에 따라 빗방울 '뚝뚝'",
+        "선택지": {
+            "1": "낮에는 흐리고 밤부터 전국에 비가 내리겠다.",
+            "2": "낮에는 맑겠으나 밤부터 전국에 비가 내리겠다.",
+            "3": "낮에는 맑겠으나 밤부터 일부 지역에는 비가 오겠다.",
+            "4": "낮에는 흐리고 밤부터 일부 지역에는 비가 쏟아지겠다."
+        },
+        "정답": 3,
+        "주제": "과학",
+        "토큰_개수": 7,
+        "단어맵": [
+            {
+                "original_word": "낮에는",
+                "root": "낮",
+                "english": "daytime"
+            },
+            {
+                "original_word": "화창",
+                "root": "화창하다",
+                "english": "sunny/clear"
+            },
+            {
+                "original_word": "밤부터",
+                "root": "밤",
+                "english": "night"
+            },
+            {
+                "original_word": "곳에",
+                "root": "곳",
+                "english": "place"
+            },
+            {
+                "original_word": "따라",
+                "root": "따르다",
+                "english": "to follow/depend on"
+            },
+            {
+                "original_word": "빗방울",
+                "root": "빗방울",
+                "english": "raindrop"
+            },
+            {
+                "original_word": "뚝뚝",
+                "root": "뚝뚝",
+                "english": "dropping sound"
+            }
+        ]
+    },
+    {
+        "문제_번호": 26,
+        "지시문": "[25~27] 다음은 신문 기사의 제목입니다. 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "불황에도 포도주 소비 '껑충', 불붙은 판매 경쟁",
+        "선택지": {
+            "1": "불황에도 업체 간 경쟁 때문에 포도주의 소비가 늘었다.",
+            "2": "불황에도 포도주 판매 감소 때문에 포도주의 소비가 줄었다.",
+            "3": "불황에도 과도한 판매 경쟁 때문에 포도주의 공급이 증가했다.",
+            "4": "불황에도 포도주 소비 증가 때문에 포도주의 판매 경쟁이 심해졌다."
+        },
+        "정답": 4,
+        "주제": "경제",
+        "토큰_개수": 7,
+        "단어맵": [
+            {
+                "original_word": "불황에도",
+                "root": "불황",
+                "english": "recession/depression"
+            },
+            {
+                "original_word": "포도주",
+                "root": "포도주",
+                "english": "wine"
+            },
+            {
+                "original_word": "소비",
+                "root": "소비",
+                "english": "consumption"
+            },
+            {
+                "original_word": "껑충",
+                "root": "껑충",
+                "english": "jumping up"
+            },
+            {
+                "original_word": "불붙은",
+                "root": "불붙다",
+                "english": "to catch fire/ignite"
+            },
+            {
+                "original_word": "판매",
+                "root": "판매",
+                "english": "sales"
+            },
+            {
+                "original_word": "경쟁",
+                "root": "경쟁",
+                "english": "competition"
+            }
+        ]
+    },
+    {
+        "문제_번호": 27,
+        "지시문": "[25~27] 다음은 신문 기사의 제목입니다. 가장 잘 설명한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "마을 어르신들이 '지킴이' 역할 톡톡히, 주민 얼굴에 웃음 가득",
+        "선택지": {
+            "1": "노인들은 마을 주민들의 도움에 만족해하고 있다.",
+            "2": "노인들은 마을 주민들의 도움으로 즐겁게 일하고 있다.",
+            "3": "주민들은 안전을 위해 애쓰는 마을 노인들 덕에 기분이 좋다.",
+            "4": "주민들은 일을 잘하려고 노력하는 노인들에게 감사해하고 있다."
+        },
+        "정답": 3,
+        "주제": "사회",
+        "토큰_개수": 9,
+        "단어맵": [
+            {
+                "original_word": "마을",
+                "root": "마을",
+                "english": "village"
+            },
+            {
+                "original_word": "어르신들이",
+                "root": "어르신",
+                "english": "elder"
+            },
+            {
+                "original_word": "지킴이",
+                "root": "지킴이",
+                "english": "guard/keeper"
+            },
+            {
+                "original_word": "역할",
+                "root": "역할",
+                "english": "role"
+            },
+            {
+                "original_word": "톡톡히",
+                "root": "톡톡히",
+                "english": "properly/solidly"
+            },
+            {
+                "original_word": "주민",
+                "root": "주민",
+                "english": "resident"
+            },
+            {
+                "original_word": "얼굴에",
+                "root": "얼굴",
+                "english": "face"
+            },
+            {
+                "original_word": "웃음",
+                "root": "웃음",
+                "english": "smile/laughter"
+            },
+            {
+                "original_word": "가득",
+                "root": "가득하다",
+                "english": "full"
+            }
+        ]
+    },
+    {
+        "문제_번호": 28,
+        "지시문": "[28~31] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "동화는 어린이가 읽는 책이라는 인식이 지배적이었다. 그러나 요즘은 동화를 통해 ( ) 어른들이 늘고 있다. 동화 속 이야기는 지난 기억과 소중한 것들을 다시 일깨워 어른들을 동심의 세계로 인도한다. 이는 나이가 많든 적든 가난하든 부유하든 누구나 공감할 수 있는 이야기가 동화 속에 존재하기 때문에 가능하다.",
+        "선택지": {
+            "1": "아이들을 교육하려는",
+            "2": "어린 시절을 되돌아보려는",
+            "3": "가족 사랑을 확인해 보려는",
+            "4": "아이를 위한 글을 써 보려는"
+        },
+        "정답": 2,
+        "주제": "문화",
+        "토큰_개수": 42,
+        "단어맵": [
+            {
+                "original_word": "동화는",
+                "root": "동화",
+                "english": "fairy tale"
+            },
+            {
+                "original_word": "어린이가",
+                "root": "어린이",
+                "english": "child"
+            },
+            {
+                "original_word": "읽는",
+                "root": "읽다",
+                "english": "to read"
+            },
+            {
+                "original_word": "책이라는",
+                "root": "책",
+                "english": "book"
+            },
+            {
+                "original_word": "인식이",
+                "root": "인식",
+                "english": "awareness/perception"
+            },
+            {
+                "original_word": "지배적이었다",
+                "root": "지배적이다",
+                "english": "dominant"
+            },
+            {
+                "original_word": "그러나",
+                "root": "그러나",
+                "english": "however"
+            },
+            {
+                "original_word": "요즘은",
+                "root": "요즘",
+                "english": "these days"
+            },
+            {
+                "original_word": "동화를",
+                "root": "동화",
+                "english": "fairy tale"
+            },
+            {
+                "original_word": "통해",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "어른들이",
+                "root": "어른",
+                "english": "adult"
+            },
+            {
+                "original_word": "늘고",
+                "root": "늘다",
+                "english": "to increase"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "동화",
+                "root": "동화",
+                "english": "fairy tale"
+            },
+            {
+                "original_word": "속",
+                "root": "속",
+                "english": "inside"
+            },
+            {
+                "original_word": "이야기는",
+                "root": "이야기",
+                "english": "story"
+            },
+            {
+                "original_word": "지난",
+                "root": "지나다",
+                "english": "past/last"
+            },
+            {
+                "original_word": "기억과",
+                "root": "기억",
+                "english": "memory"
+            },
+            {
+                "original_word": "소중한",
+                "root": "소중하다",
+                "english": "precious"
+            },
+            {
+                "original_word": "것들을",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "다시",
+                "root": "다시",
+                "english": "again"
+            },
+            {
+                "original_word": "일깨워",
+                "root": "일깨우다",
+                "english": "to awaken/remind"
+            },
+            {
+                "original_word": "어른들을",
+                "root": "어른",
+                "english": "adult"
+            },
+            {
+                "original_word": "동심의",
+                "root": "동심",
+                "english": "child's mind"
+            },
+            {
+                "original_word": "세계로",
+                "root": "세계",
+                "english": "world"
+            },
+            {
+                "original_word": "인도한다",
+                "root": "인도하다",
+                "english": "to guide"
+            },
+            {
+                "original_word": "이는",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "나이가",
+                "root": "나이",
+                "english": "age"
+            },
+            {
+                "original_word": "많든",
+                "root": "많다",
+                "english": "many/much"
+            },
+            {
+                "original_word": "적든",
+                "root": "적다",
+                "english": "few/little"
+            },
+            {
+                "original_word": "가난하든",
+                "root": "가난하다",
+                "english": "poor"
+            },
+            {
+                "original_word": "부유하든",
+                "root": "부유하다",
+                "english": "wealthy/rich"
+            },
+            {
+                "original_word": "누구나",
+                "root": "누구",
+                "english": "anyone"
+            },
+            {
+                "original_word": "공감할",
+                "root": "공감하다",
+                "english": "to sympathize"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "way/ability"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "이야기가",
+                "root": "이야기",
+                "english": "story"
+            },
+            {
+                "original_word": "동화",
+                "root": "동화",
+                "english": "fairy tale"
+            },
+            {
+                "original_word": "속에",
+                "root": "속",
+                "english": "inside"
+            },
+            {
+                "original_word": "존재하기",
+                "root": "존재하다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "때문에",
+                "root": "때문",
+                "english": "because"
+            },
+            {
+                "original_word": "가능하다",
+                "root": "가능하다",
+                "english": "possible"
+            }
+        ]
+    },
+    {
+        "문제_번호": 29,
+        "지시문": "[28~31] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "훌륭한 예술가는 작품 활동을 하다가 벽에 부딪히면 돌파구를 찾아낸다. 화가들에게 ( )은 '독'이라기보다 '약'이었다. 손이 떨려 그릴 수 없었던 한 화가는 종이를 잘라 물감을 칠해 붙이는 방법으로 새로운 작품 세계를 열었다. 또 가난해서 그림 재료를 살 수 없었던 어떤 화가는 담배 포장지에 스케치를 했다. 이런 예술 작품을 통해 자신만의 예술 세계를 구축하였다.",
+        "선택지": {
+            "1": "재료의 부족과 호기심",
+            "2": "경제적 빈곤과 예술성",
+            "3": "신체적 장애와 열악한 환경",
+            "4": "예술적 한계와 정신적 고통"
+        },
+        "정답": 3,
+        "주제": "예술",
+        "토큰_개수": 51,
+        "단어맵": [
+            {
+                "original_word": "훌륭한",
+                "root": "훌륭하다",
+                "english": "excellent/great"
+            },
+            {
+                "original_word": "예술가는",
+                "root": "예술가",
+                "english": "artist"
+            },
+            {
+                "original_word": "작품",
+                "root": "작품",
+                "english": "artwork"
+            },
+            {
+                "original_word": "활동을",
+                "root": "활동",
+                "english": "activity"
+            },
+            {
+                "original_word": "하다가",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "벽에",
+                "root": "벽",
+                "english": "wall"
+            },
+            {
+                "original_word": "부딪히면",
+                "root": "부딪히다",
+                "english": "to hit/bump into"
+            },
+            {
+                "original_word": "돌파구를",
+                "root": "돌파구",
+                "english": "breakthrough"
+            },
+            {
+                "original_word": "찾아낸다",
+                "root": "찾아내다",
+                "english": "to find out"
+            },
+            {
+                "original_word": "화가들에게",
+                "root": "화가",
+                "english": "painter"
+            },
+            {
+                "original_word": "은",
+                "root": "은",
+                "english": "topic marker"
+            },
+            {
+                "original_word": "독이라기보다",
+                "root": "독",
+                "english": "poison"
+            },
+            {
+                "original_word": "약이었다",
+                "root": "약",
+                "english": "medicine"
+            },
+            {
+                "original_word": "손이",
+                "root": "손",
+                "english": "hand"
+            },
+            {
+                "original_word": "떨려",
+                "root": "떨리다",
+                "english": "to tremble/shake"
+            },
+            {
+                "original_word": "그릴",
+                "root": "그리다",
+                "english": "to draw"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "ability"
+            },
+            {
+                "original_word": "없었던",
+                "root": "없다",
+                "english": "not to exist"
+            },
+            {
+                "original_word": "한",
+                "root": "한",
+                "english": "one"
+            },
+            {
+                "original_word": "화가는",
+                "root": "화가",
+                "english": "painter"
+            },
+            {
+                "original_word": "종이를",
+                "root": "종이",
+                "english": "paper"
+            },
+            {
+                "original_word": "잘라",
+                "root": "자르다",
+                "english": "to cut"
+            },
+            {
+                "original_word": "물감을",
+                "root": "물감",
+                "english": "paint"
+            },
+            {
+                "original_word": "칠해",
+                "root": "칠하다",
+                "english": "to paint"
+            },
+            {
+                "original_word": "붙이는",
+                "root": "붙이다",
+                "english": "to attach/stick"
+            },
+            {
+                "original_word": "방법으로",
+                "root": "방법",
+                "english": "method"
+            },
+            {
+                "original_word": "새로운",
+                "root": "새롭다",
+                "english": "new"
+            },
+            {
+                "original_word": "작품",
+                "root": "작품",
+                "english": "artwork"
+            },
+            {
+                "original_word": "세계를",
+                "root": "세계",
+                "english": "world"
+            },
+            {
+                "original_word": "열었다",
+                "root": "열다",
+                "english": "to open"
+            },
+            {
+                "original_word": "또",
+                "root": "또",
+                "english": "also/again"
+            },
+            {
+                "original_word": "가난해서",
+                "root": "가난하다",
+                "english": "poor"
+            },
+            {
+                "original_word": "그림",
+                "root": "그림",
+                "english": "drawing/picture"
+            },
+            {
+                "original_word": "재료를",
+                "root": "재료",
+                "english": "material"
+            },
+            {
+                "original_word": "살",
+                "root": "사다",
+                "english": "to buy"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "ability"
+            },
+            {
+                "original_word": "없었던",
+                "root": "없다",
+                "english": "not to exist"
+            },
+            {
+                "original_word": "어떤",
+                "root": "어떤",
+                "english": "some/certain"
+            },
+            {
+                "original_word": "화가는",
+                "root": "화가",
+                "english": "painter"
+            },
+            {
+                "original_word": "담배",
+                "root": "담배",
+                "english": "cigarette"
+            },
+            {
+                "original_word": "포장지에",
+                "root": "포장지",
+                "english": "wrapping paper"
+            },
+            {
+                "original_word": "스케치를",
+                "root": "스케치",
+                "english": "sketch"
+            },
+            {
+                "original_word": "했다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "이런",
+                "root": "이렇다",
+                "english": "such/like this"
+            },
+            {
+                "original_word": "예술",
+                "root": "예술",
+                "english": "art"
+            },
+            {
+                "original_word": "작품을",
+                "root": "작품",
+                "english": "artwork"
+            },
+            {
+                "original_word": "통해",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "자신만의",
+                "root": "자신",
+                "english": "oneself"
+            },
+            {
+                "original_word": "예술",
+                "root": "예술",
+                "english": "art"
+            },
+            {
+                "original_word": "세계를",
+                "root": "세계",
+                "english": "world"
+            },
+            {
+                "original_word": "구축하였다",
+                "root": "구축하다",
+                "english": "to build/construct"
+            }
+        ]
+    },
+    {
+        "문제_번호": 30,
+        "지시문": "[28~31] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "지우개는 다른 문구류와 오래 닿으면 그것에 달라붙는 성질이 있다. 지우개를 만들 때 넣는 특수한 물질 때문이다. 지우개의 재료인 고무에 약품을 넣으면 고무 분자들이 결합하게 된다. 그런데 고무에 넣은 약품은 플라스틱에 들어가면 ( ) 한다. 이 때문에 지우개와 플라스틱 문구류를 함께 두면 잘 붙는다.",
+        "선택지": {
+            "1": "고무를 달라붙게",
+            "2": "고무를 딱딱하게",
+            "3": "문구류와 붙지 않게",
+            "4": "문구류에 닿지 않게"
+        },
+        "정답": 1,
+        "주제": "과학",
+        "토큰_개수": 41,
+        "단어맵": [
+            {
+                "original_word": "지우개는",
+                "root": "지우개",
+                "english": "eraser"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "other"
+            },
+            {
+                "original_word": "문구류와",
+                "root": "문구류",
+                "english": "stationery"
+            },
+            {
+                "original_word": "오래",
+                "root": "오래",
+                "english": "for a long time"
+            },
+            {
+                "original_word": "닿으면",
+                "root": "닿다",
+                "english": "to touch"
+            },
+            {
+                "original_word": "그것에",
+                "root": "그것",
+                "english": "that"
+            },
+            {
+                "original_word": "달라붙는",
+                "root": "달라붙다",
+                "english": "to stick/cling"
+            },
+            {
+                "original_word": "성질이",
+                "root": "성질",
+                "english": "nature/property"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "지우개를",
+                "root": "지우개",
+                "english": "eraser"
+            },
+            {
+                "original_word": "만들",
+                "root": "만들다",
+                "english": "to make"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "넣는",
+                "root": "넣다",
+                "english": "to put in"
+            },
+            {
+                "original_word": "특수한",
+                "root": "특수하다",
+                "english": "special"
+            },
+            {
+                "original_word": "물질",
+                "root": "물질",
+                "english": "matter/substance"
+            },
+            {
+                "original_word": "때문이다",
+                "root": "때문",
+                "english": "because"
+            },
+            {
+                "original_word": "지우개의",
+                "root": "지우개",
+                "english": "eraser"
+            },
+            {
+                "original_word": "재료인",
+                "root": "재료",
+                "english": "material/ingredient"
+            },
+            {
+                "original_word": "고무에",
+                "root": "고무",
+                "english": "rubber"
+            },
+            {
+                "original_word": "약품을",
+                "root": "약품",
+                "english": "medicine/chemical"
+            },
+            {
+                "original_word": "넣으면",
+                "root": "넣다",
+                "english": "to put in"
+            },
+            {
+                "original_word": "고무",
+                "root": "고무",
+                "english": "rubber"
+            },
+            {
+                "original_word": "분자들이",
+                "root": "분자",
+                "english": "molecule"
+            },
+            {
+                "original_word": "결합하게",
+                "root": "결합하다",
+                "english": "to combine/bond"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "그런데",
+                "root": "그런데",
+                "english": "but/however"
+            },
+            {
+                "original_word": "고무에",
+                "root": "고무",
+                "english": "rubber"
+            },
+            {
+                "original_word": "넣은",
+                "root": "넣다",
+                "english": "to put in"
+            },
+            {
+                "original_word": "약품은",
+                "root": "약품",
+                "english": "chemical/medicine"
+            },
+            {
+                "original_word": "플라스틱에",
+                "root": "플라스틱",
+                "english": "plastic"
+            },
+            {
+                "original_word": "들어가면",
+                "root": "들어가다",
+                "english": "to go in"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "때문에",
+                "root": "때문",
+                "english": "because"
+            },
+            {
+                "original_word": "지우개와",
+                "root": "지우개",
+                "english": "eraser"
+            },
+            {
+                "original_word": "플라스틱",
+                "root": "플라스틱",
+                "english": "plastic"
+            },
+            {
+                "original_word": "문구류를",
+                "root": "문구류",
+                "english": "stationery"
+            },
+            {
+                "original_word": "함께",
+                "root": "함께",
+                "english": "together"
+            },
+            {
+                "original_word": "두면",
+                "root": "두다",
+                "english": "to place/put"
+            },
+            {
+                "original_word": "잘",
+                "root": "잘",
+                "english": "well"
+            },
+            {
+                "original_word": "붙는다",
+                "root": "붙다",
+                "english": "to stick"
+            }
+        ]
+    }
+]

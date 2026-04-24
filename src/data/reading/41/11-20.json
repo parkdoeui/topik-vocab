@@ -1,0 +1,2252 @@
+[
+    {
+        "문제_번호": 11,
+        "지시문": "다음 글의 내용과 같은 것을 고르십시오",
+        "배점": "2점",
+        "문제_내용": "최근 초록 콩나물을 찾는 주부들이 늘고 있다. 노란 콩나물은 보통 검은색 천으로 덮어 어두운 곳에서 기른다. 그러나 초록 콩나물은 천으로 가리지 않고 밝은 곳에서 자라게 한다. 햇빛을 받아 초록색으로 변한 콩나물은 노란 콩나물보다 영양가가 높다. 특히 초록 콩나물은 노란 콩나물보다 비타민이 많이 들어 있어서 피로 회복에 좋다.",
+        "선택지": {
+            "1": "노란 콩나물은 햇빛을 받고 자란다.",
+            "2": "초록 콩나물은 검은색 천을 덮어서 키운다.",
+            "3": "노란 콩나물은 초록 콩나물보다 피로 회복에 좋다.",
+            "4": "초록 콩나물은 노란 콩나물에 비해 영양가가 많다."
+        },
+        "정답": 4,
+        "주제": "과학",
+        "토큰_개수": 47,
+        "단어맵": [
+            {
+                "original_word": "최근",
+                "root": "최근",
+                "english": "recent"
+            },
+            {
+                "original_word": "초록",
+                "root": "초록",
+                "english": "green"
+            },
+            {
+                "original_word": "콩나물을",
+                "root": "콩나물",
+                "english": "bean sprouts"
+            },
+            {
+                "original_word": "찾는",
+                "root": "찾다",
+                "english": "to look for/seek"
+            },
+            {
+                "original_word": "주부들이",
+                "root": "주부",
+                "english": "housewife"
+            },
+            {
+                "original_word": "늘고",
+                "root": "늘다",
+                "english": "to increase"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be/exist"
+            },
+            {
+                "original_word": "노란",
+                "root": "노랗다",
+                "english": "yellow"
+            },
+            {
+                "original_word": "콩나물은",
+                "root": "콩나물",
+                "english": "bean sprouts"
+            },
+            {
+                "original_word": "보통",
+                "root": "보통",
+                "english": "usually"
+            },
+            {
+                "original_word": "검은색",
+                "root": "검은색",
+                "english": "black"
+            },
+            {
+                "original_word": "천으로",
+                "root": "천",
+                "english": "cloth"
+            },
+            {
+                "original_word": "덮어",
+                "root": "덮다",
+                "english": "to cover"
+            },
+            {
+                "original_word": "어두운",
+                "root": "어둡다",
+                "english": "dark"
+            },
+            {
+                "original_word": "곳에서",
+                "root": "곳",
+                "english": "place"
+            },
+            {
+                "original_word": "기른다",
+                "root": "기르다",
+                "english": "to grow/raise"
+            },
+            {
+                "original_word": "그러나",
+                "root": "그러나",
+                "english": "however"
+            },
+            {
+                "original_word": "초록",
+                "root": "초록",
+                "english": "green"
+            },
+            {
+                "original_word": "콩나물은",
+                "root": "콩나물",
+                "english": "bean sprouts"
+            },
+            {
+                "original_word": "천으로",
+                "root": "천",
+                "english": "cloth"
+            },
+            {
+                "original_word": "가리지",
+                "root": "가리다",
+                "english": "to cover/hide"
+            },
+            {
+                "original_word": "않고",
+                "root": "않다",
+                "english": "to not do/be"
+            },
+            {
+                "original_word": "밝은",
+                "root": "밝다",
+                "english": "bright"
+            },
+            {
+                "original_word": "곳에서",
+                "root": "곳",
+                "english": "place"
+            },
+            {
+                "original_word": "자라게",
+                "root": "자라다",
+                "english": "to grow"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "햇빛을",
+                "root": "햇빛",
+                "english": "sunlight"
+            },
+            {
+                "original_word": "받아",
+                "root": "받다",
+                "english": "to receive"
+            },
+            {
+                "original_word": "초록색으로",
+                "root": "초록색",
+                "english": "green color"
+            },
+            {
+                "original_word": "변한",
+                "root": "변하다",
+                "english": "to change"
+            },
+            {
+                "original_word": "콩나물은",
+                "root": "콩나물",
+                "english": "bean sprouts"
+            },
+            {
+                "original_word": "노란",
+                "root": "노랗다",
+                "english": "yellow"
+            },
+            {
+                "original_word": "콩나물보다",
+                "root": "콩나물",
+                "english": "bean sprouts"
+            },
+            {
+                "original_word": "영양가가",
+                "root": "영양가",
+                "english": "nutritional value"
+            },
+            {
+                "original_word": "높다",
+                "root": "높다",
+                "english": "high"
+            },
+            {
+                "original_word": "특히",
+                "root": "특히",
+                "english": "especially"
+            },
+            {
+                "original_word": "초록",
+                "root": "초록",
+                "english": "green"
+            },
+            {
+                "original_word": "콩나물은",
+                "root": "콩나물",
+                "english": "bean sprouts"
+            },
+            {
+                "original_word": "노란",
+                "root": "노랗다",
+                "english": "yellow"
+            },
+            {
+                "original_word": "콩나물보다",
+                "root": "콩나물",
+                "english": "bean sprouts"
+            },
+            {
+                "original_word": "비타민이",
+                "root": "비타민",
+                "english": "vitamin"
+            },
+            {
+                "original_word": "많이",
+                "root": "많다",
+                "english": "many/much"
+            },
+            {
+                "original_word": "들어",
+                "root": "들다",
+                "english": "to contain/enter"
+            },
+            {
+                "original_word": "있어서",
+                "root": "있다",
+                "english": "to be/exist"
+            },
+            {
+                "original_word": "피로",
+                "root": "피로",
+                "english": "fatigue"
+            },
+            {
+                "original_word": "회복에",
+                "root": "회복",
+                "english": "recovery"
+            },
+            {
+                "original_word": "좋다",
+                "root": "좋다",
+                "english": "good"
+            }
+        ]
+    },
+    {
+        "문제_번호": 12,
+        "지시문": "다음 글의 내용과 같은 것을 고르십시오",
+        "배점": "2점",
+        "문제_내용": "손을 움직이는 것은 뇌와 관련이 있다. 그래서 손을 자주 움직이면 뇌 기능이 좋아질 수 있다. 특히 자주 사용하지 않는 손을 움직일 때 뇌가 더 효과적으로 자극될 수 있다. 평소에 오른손을 많이 쓴다면 왼손을, 왼손을 많이 쓴다면 오른손을 사용하는 것이다. 문을 열고 닫는 일처럼 간단한 일을 그렇게 하는 것만으로도 뇌 기능을 유지하는 데 도움이 된다.",
+        "선택지": {
+            "1": "뇌 건강과 손을 움직이는 것은 서로 관계가 없다.",
+            "2": "우리 몸과 달리 뇌는 간단한 일로 자극받지 않는다.",
+            "3": "뇌 활동을 위해 익숙한 방법으로 손을 쓰는 것이 더 좋다.",
+            "4": "자주 사용하지 않던 손을 사용하면 뇌 움직임이 활발해진다."
+        },
+        "정답": 4,
+        "주제": "과학",
+        "토큰_개수": 54,
+        "단어맵": [
+            {
+                "original_word": "손을",
+                "root": "손",
+                "english": "hand"
+            },
+            {
+                "original_word": "움직이는",
+                "root": "움직이다",
+                "english": "to move"
+            },
+            {
+                "original_word": "것은",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "뇌와",
+                "root": "뇌",
+                "english": "brain"
+            },
+            {
+                "original_word": "관련이",
+                "root": "관련",
+                "english": "relation"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be/exist"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "therefore"
+            },
+            {
+                "original_word": "손을",
+                "root": "손",
+                "english": "hand"
+            },
+            {
+                "original_word": "자주",
+                "root": "자주",
+                "english": "often"
+            },
+            {
+                "original_word": "움직이면",
+                "root": "움직이다",
+                "english": "to move"
+            },
+            {
+                "original_word": "뇌",
+                "root": "뇌",
+                "english": "brain"
+            },
+            {
+                "original_word": "기능이",
+                "root": "기능",
+                "english": "function"
+            },
+            {
+                "original_word": "좋아질",
+                "root": "좋아지다",
+                "english": "to improve"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility/way"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be/exist"
+            },
+            {
+                "original_word": "특히",
+                "root": "특히",
+                "english": "especially"
+            },
+            {
+                "original_word": "자주",
+                "root": "자주",
+                "english": "often"
+            },
+            {
+                "original_word": "사용하지",
+                "root": "사용하다",
+                "english": "to use"
+            },
+            {
+                "original_word": "않는",
+                "root": "않다",
+                "english": "to not do/be"
+            },
+            {
+                "original_word": "손을",
+                "root": "손",
+                "english": "hand"
+            },
+            {
+                "original_word": "움직일",
+                "root": "움직이다",
+                "english": "to move"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "뇌가",
+                "root": "뇌",
+                "english": "brain"
+            },
+            {
+                "original_word": "더",
+                "root": "더",
+                "english": "more"
+            },
+            {
+                "original_word": "효과적으로",
+                "root": "효과적",
+                "english": "effective"
+            },
+            {
+                "original_word": "자극될",
+                "root": "자극되다",
+                "english": "to be stimulated"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility/way"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be/exist"
+            },
+            {
+                "original_word": "평소에",
+                "root": "평소",
+                "english": "usual"
+            },
+            {
+                "original_word": "오른손을",
+                "root": "오른손",
+                "english": "right hand"
+            },
+            {
+                "original_word": "많이",
+                "root": "많다",
+                "english": "many/much"
+            },
+            {
+                "original_word": "쓴다면",
+                "root": "쓰다",
+                "english": "to use"
+            },
+            {
+                "original_word": "왼손을",
+                "root": "왼손",
+                "english": "left hand"
+            },
+            {
+                "original_word": "왼손을",
+                "root": "왼손",
+                "english": "left hand"
+            },
+            {
+                "original_word": "많이",
+                "root": "많다",
+                "english": "many/much"
+            },
+            {
+                "original_word": "쓴다면",
+                "root": "쓰다",
+                "english": "to use"
+            },
+            {
+                "original_word": "오른손을",
+                "root": "오른손",
+                "english": "right hand"
+            },
+            {
+                "original_word": "사용하는",
+                "root": "사용하다",
+                "english": "to use"
+            },
+            {
+                "original_word": "것이다",
+                "root": "것이다",
+                "english": "it is"
+            },
+            {
+                "original_word": "문을",
+                "root": "문",
+                "english": "door"
+            },
+            {
+                "original_word": "열고",
+                "root": "열다",
+                "english": "to open"
+            },
+            {
+                "original_word": "닫는",
+                "root": "닫다",
+                "english": "to close"
+            },
+            {
+                "original_word": "일처럼",
+                "root": "일",
+                "english": "work/task"
+            },
+            {
+                "original_word": "간단한",
+                "root": "간단하다",
+                "english": "simple"
+            },
+            {
+                "original_word": "일을",
+                "root": "일",
+                "english": "work/task"
+            },
+            {
+                "original_word": "그렇게",
+                "root": "그렇다",
+                "english": "so/like that"
+            },
+            {
+                "original_word": "하는",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "것만으로도",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "뇌",
+                "root": "뇌",
+                "english": "brain"
+            },
+            {
+                "original_word": "기능을",
+                "root": "기능",
+                "english": "function"
+            },
+            {
+                "original_word": "유지하는",
+                "root": "유지하다",
+                "english": "to maintain"
+            },
+            {
+                "original_word": "데",
+                "root": "데",
+                "english": "place/case"
+            },
+            {
+                "original_word": "도움이",
+                "root": "도움",
+                "english": "help"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "to become"
+            }
+        ]
+    },
+    {
+        "문제_번호": 13,
+        "지시문": "[13~15] 다음을 순서대로 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 이것으로 만든 차는 여름철에 마시면 특히 좋다. (나) 오미자는 다섯 가지 맛이 난다고 붙여진 이름이다. (다) 땀이 나지 않게 하고 배탈을 낫게 하는 효과가 있어서이다. (라) 또한 무더위에 지친 사람에게 입맛이 나게 하는 데도 도움이 된다.",
+        "선택지": {
+            "1": "(가)-(라)-(다)-(나)",
+            "2": "(가)-(다)-(라)-(나)",
+            "3": "(나)-(가)-(다)-(라)",
+            "4": "(나)-(다)-(가)-(라)"
+        },
+        "정답": 3,
+        "주제": "문화",
+        "토큰_개수": 33,
+        "단어맵": [
+            {
+                "original_word": "이것으로",
+                "root": "이것",
+                "english": "this"
+            },
+            {
+                "original_word": "만든",
+                "root": "만들다",
+                "english": "to make"
+            },
+            {
+                "original_word": "차는",
+                "root": "차",
+                "english": "tea"
+            },
+            {
+                "original_word": "여름철에",
+                "root": "여름철",
+                "english": "summer season"
+            },
+            {
+                "original_word": "마시면",
+                "root": "마시다",
+                "english": "to drink"
+            },
+            {
+                "original_word": "특히",
+                "root": "특히",
+                "english": "especially"
+            },
+            {
+                "original_word": "좋다",
+                "root": "좋다",
+                "english": "good"
+            },
+            {
+                "original_word": "오미자는",
+                "root": "오미자",
+                "english": "Omija/five-flavor berry"
+            },
+            {
+                "original_word": "다섯",
+                "root": "다섯",
+                "english": "five"
+            },
+            {
+                "original_word": "가지",
+                "root": "가지",
+                "english": "kind/type"
+            },
+            {
+                "original_word": "맛이",
+                "root": "맛",
+                "english": "taste"
+            },
+            {
+                "original_word": "난다고",
+                "root": "나다",
+                "english": "to occur/produce"
+            },
+            {
+                "original_word": "붙여진",
+                "root": "붙여지다",
+                "english": "to be named/attached"
+            },
+            {
+                "original_word": "이름이다",
+                "root": "이름",
+                "english": "name"
+            },
+            {
+                "original_word": "땀이",
+                "root": "땀",
+                "english": "sweat"
+            },
+            {
+                "original_word": "나지",
+                "root": "나다",
+                "english": "to occur/break out"
+            },
+            {
+                "original_word": "않게",
+                "root": "않다",
+                "english": "to not do/be"
+            },
+            {
+                "original_word": "하고",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "배탈을",
+                "root": "배탈",
+                "english": "stomachache"
+            },
+            {
+                "original_word": "낫게",
+                "root": "낫다",
+                "english": "to recover/cure"
+            },
+            {
+                "original_word": "하는",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "효과가",
+                "root": "효과",
+                "english": "effect"
+            },
+            {
+                "original_word": "있어서이다",
+                "root": "있다",
+                "english": "to be/exist"
+            },
+            {
+                "original_word": "또한",
+                "root": "또한",
+                "english": "also"
+            },
+            {
+                "original_word": "무더위에",
+                "root": "무더위",
+                "english": "sweltering heat"
+            },
+            {
+                "original_word": "지친",
+                "root": "지치다",
+                "english": "to be exhausted"
+            },
+            {
+                "original_word": "사람에게",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "입맛이",
+                "root": "입맛",
+                "english": "appetite"
+            },
+            {
+                "original_word": "나게",
+                "root": "나다",
+                "english": "to occur/gain"
+            },
+            {
+                "original_word": "하는",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "데도",
+                "root": "데",
+                "english": "case/situation"
+            },
+            {
+                "original_word": "도움이",
+                "root": "도움",
+                "english": "help"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "to become"
+            }
+        ]
+    },
+    {
+        "문제_번호": 14,
+        "지시문": "[13~15] 다음을 순서대로 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 이런 행복을 느낄 때도 있지만 가끔 힘들고 어려울 때도 있다. (나) 하지만 나는 그들을 가르칠 때마다 내가 국가대표라고 생각한다. (다) 한국어로 다른 문화권의 학생들과 교류하는 것은 참 행복한 일이다. (라) 나는 그들을 통해 세상을 보고 그들은 나를 통해 한국을 보기 때문이다.",
+        "선택지": {
+            "1": "(다)-(가)-(나)-(라)",
+            "2": "(다)-(나)-(가)-(라)",
+            "3": "(라)-(가)-(다)-(나)",
+            "4": "(라)-(다)-(가)-(나)"
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 38,
+        "단어맵": [
+            {
+                "original_word": "이런",
+                "root": "이렇다",
+                "english": "such/like this"
+            },
+            {
+                "original_word": "행복을",
+                "root": "행복",
+                "english": "happiness"
+            },
+            {
+                "original_word": "느낄",
+                "root": "느끼다",
+                "english": "to feel"
+            },
+            {
+                "original_word": "때도",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "있지만",
+                "root": "있다",
+                "english": "to exist/be"
+            },
+            {
+                "original_word": "가끔",
+                "root": "가끔",
+                "english": "sometimes"
+            },
+            {
+                "original_word": "힘들고",
+                "root": "힘들다",
+                "english": "hard/difficult"
+            },
+            {
+                "original_word": "어려울",
+                "root": "어렵다",
+                "english": "difficult"
+            },
+            {
+                "original_word": "때도",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "하지만",
+                "root": "하지만",
+                "english": "however"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "그들을",
+                "root": "그들",
+                "english": "they/them"
+            },
+            {
+                "original_word": "가르칠",
+                "root": "가르치다",
+                "english": "to teach"
+            },
+            {
+                "original_word": "때마다",
+                "root": "때마다",
+                "english": "whenever"
+            },
+            {
+                "original_word": "내가",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "국가대표라고",
+                "root": "국가대표",
+                "english": "national representative"
+            },
+            {
+                "original_word": "생각한다",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "한국어로",
+                "root": "한국어",
+                "english": "Korean language"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "different"
+            },
+            {
+                "original_word": "문화권의",
+                "root": "문화권",
+                "english": "cultural sphere"
+            },
+            {
+                "original_word": "학생들과",
+                "root": "학생",
+                "english": "student"
+            },
+            {
+                "original_word": "교류하는",
+                "root": "교류하다",
+                "english": "to exchange"
+            },
+            {
+                "original_word": "것은",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "참",
+                "root": "참",
+                "english": "truly"
+            },
+            {
+                "original_word": "행복한",
+                "root": "행복하다",
+                "english": "happy"
+            },
+            {
+                "original_word": "일이다",
+                "root": "일",
+                "english": "matter/work"
+            },
+            {
+                "original_word": "나는",
+                "root": "나",
+                "english": "I"
+            },
+            {
+                "original_word": "그들을",
+                "root": "그들",
+                "english": "they/them"
+            },
+            {
+                "original_word": "통해",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "세상을",
+                "root": "세상",
+                "english": "world"
+            },
+            {
+                "original_word": "보고",
+                "root": "보다",
+                "english": "to see"
+            },
+            {
+                "original_word": "그들은",
+                "root": "그들",
+                "english": "they"
+            },
+            {
+                "original_word": "나를",
+                "root": "나",
+                "english": "me"
+            },
+            {
+                "original_word": "통해",
+                "root": "통하다",
+                "english": "through"
+            },
+            {
+                "original_word": "한국을",
+                "root": "한국",
+                "english": "Korea"
+            },
+            {
+                "original_word": "보기",
+                "root": "보다",
+                "english": "to see"
+            },
+            {
+                "original_word": "때문이다",
+                "root": "때문",
+                "english": "because"
+            }
+        ]
+    },
+    {
+        "문제_번호": 15,
+        "지시문": "[13~15] 다음을 순서대로 맞게 배열한 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "(가) 정부에 건의할 내용이 있을 때 이곳을 활용할 수 있다. (나) 오늘날에는 '인터넷 신문고'가 이러한 역할을 하고 있다. (다) 과거에는 '신문고'라는 북을 설치해서 국민의 생각을 들었다. (라) 이렇게 시대는 달라져도 국가가 국민의 생각을 들으려는 노력은 계속된다.",
+        "선택지": {
+            "1": "(나)-(다)-(가)-(라)",
+            "2": "(나)-(라)-(다)-(가)",
+            "3": "(다)-(나)-(가)-(라)",
+            "4": "(다)-(라)-(나)-(가)"
+        },
+        "정답": 3,
+        "주제": "사회",
+        "토큰_개수": 32,
+        "단어맵": [
+            {
+                "original_word": "정부에",
+                "root": "정부",
+                "english": "government"
+            },
+            {
+                "original_word": "건의할",
+                "root": "건의하다",
+                "english": "to propose/suggest"
+            },
+            {
+                "original_word": "내용이",
+                "root": "내용",
+                "english": "content"
+            },
+            {
+                "original_word": "있을",
+                "root": "있다",
+                "english": "to exist"
+            },
+            {
+                "original_word": "때",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "이곳을",
+                "root": "이곳",
+                "english": "this place"
+            },
+            {
+                "original_word": "활용할",
+                "root": "활용하다",
+                "english": "to utilize"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility/way"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "오늘날에는",
+                "root": "오늘날",
+                "english": "today/nowadays"
+            },
+            {
+                "original_word": "인터넷",
+                "root": "인터넷",
+                "english": "internet"
+            },
+            {
+                "original_word": "신문고",
+                "root": "신문고",
+                "english": "Sinmungo/drum"
+            },
+            {
+                "original_word": "이러한",
+                "root": "이러하다",
+                "english": "such/like this"
+            },
+            {
+                "original_word": "역할을",
+                "root": "역할",
+                "english": "role"
+            },
+            {
+                "original_word": "하고",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "과거에는",
+                "root": "과거",
+                "english": "past"
+            },
+            {
+                "original_word": "신문고",
+                "root": "신문고",
+                "english": "Sinmungo"
+            },
+            {
+                "original_word": "북을",
+                "root": "북",
+                "english": "drum"
+            },
+            {
+                "original_word": "설치해서",
+                "root": "설치하다",
+                "english": "to install"
+            },
+            {
+                "original_word": "국민의",
+                "root": "국민",
+                "english": "citizen/people"
+            },
+            {
+                "original_word": "생각을",
+                "root": "생각",
+                "english": "thought"
+            },
+            {
+                "original_word": "들었다",
+                "root": "듣다",
+                "english": "to hear"
+            },
+            {
+                "original_word": "이렇게",
+                "root": "이렇다",
+                "english": "like this"
+            },
+            {
+                "original_word": "시대는",
+                "root": "시대",
+                "english": "times/era"
+            },
+            {
+                "original_word": "달라져도",
+                "root": "달라지다",
+                "english": "to change"
+            },
+            {
+                "original_word": "국가가",
+                "root": "국가",
+                "english": "nation/state"
+            },
+            {
+                "original_word": "국민의",
+                "root": "국민",
+                "english": "citizen/people"
+            },
+            {
+                "original_word": "생각을",
+                "root": "생각",
+                "english": "thought"
+            },
+            {
+                "original_word": "들으려는",
+                "root": "듣다",
+                "english": "to listen"
+            },
+            {
+                "original_word": "노력은",
+                "root": "노력",
+                "english": "effort"
+            },
+            {
+                "original_word": "계속된다",
+                "root": "계속되다",
+                "english": "to continue"
+            }
+        ]
+    },
+    {
+        "문제_번호": 16,
+        "지시문": "[16~18] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "막대에 학생들의 이름을 써서 통에 꽂아 놓고 하나씩 뽑아서 발표를 시키는 수업 방식이 있다. 이것은 ( ) 방식이다. 적극적인 학생들이 먼저 손을 들고 질문에 대답하면 소극적인 학생들이 대답할 기회를 놓치게 된다. 이 방식은 모든 학습자들에게 골고루 수업에 참여할 수 있게 한다는 긍정적인 면이 있다.",
+        "선택지": {
+            "1": "학생들의 이름을 빨리 기억하기 위한",
+            "2": "수업의 단계를 동일하게 맞추기 위한",
+            "3": "수업의 진행을 좀 더 부드럽게 하기 위한",
+            "4": "적극성이 떨어지는 학생에게도 기회를 주기 위한"
+        },
+        "정답": 4,
+        "주제": "사회",
+        "토큰_개수": 42,
+        "단어맵": [
+            {
+                "original_word": "막대에",
+                "root": "막대",
+                "english": "stick"
+            },
+            {
+                "original_word": "학생들의",
+                "root": "학생",
+                "english": "student"
+            },
+            {
+                "original_word": "이름을",
+                "root": "이름",
+                "english": "name"
+            },
+            {
+                "original_word": "써서",
+                "root": "쓰다",
+                "english": "to write"
+            },
+            {
+                "original_word": "통에",
+                "root": "통",
+                "english": "container/barrel"
+            },
+            {
+                "original_word": "꽂아",
+                "root": "꽂다",
+                "english": "to insert/stick"
+            },
+            {
+                "original_word": "놓고",
+                "root": "놓다",
+                "english": "to put"
+            },
+            {
+                "original_word": "하나씩",
+                "root": "하나씩",
+                "english": "one by one"
+            },
+            {
+                "original_word": "뽑아서",
+                "root": "뽑다",
+                "english": "to pull out/draw"
+            },
+            {
+                "original_word": "발표를",
+                "root": "발표",
+                "english": "presentation"
+            },
+            {
+                "original_word": "시키는",
+                "root": "시키다",
+                "english": "to make someone do"
+            },
+            {
+                "original_word": "수업",
+                "root": "수업",
+                "english": "class"
+            },
+            {
+                "original_word": "방식이",
+                "root": "방식",
+                "english": "method"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "이것은",
+                "root": "이것",
+                "english": "this"
+            },
+            {
+                "original_word": "방식이다",
+                "root": "방식",
+                "english": "method"
+            },
+            {
+                "original_word": "적극적인",
+                "root": "적극적",
+                "english": "active/proactive"
+            },
+            {
+                "original_word": "학생들이",
+                "root": "학생",
+                "english": "student"
+            },
+            {
+                "original_word": "먼저",
+                "root": "먼저",
+                "english": "first"
+            },
+            {
+                "original_word": "손을",
+                "root": "손",
+                "english": "hand"
+            },
+            {
+                "original_word": "들고",
+                "root": "들다",
+                "english": "to raise"
+            },
+            {
+                "original_word": "질문에",
+                "root": "질문",
+                "english": "question"
+            },
+            {
+                "original_word": "대답하면",
+                "root": "대답하다",
+                "english": "to answer"
+            },
+            {
+                "original_word": "소극적인",
+                "root": "소극적",
+                "english": "passive"
+            },
+            {
+                "original_word": "학생들이",
+                "root": "학생",
+                "english": "student"
+            },
+            {
+                "original_word": "대답할",
+                "root": "대답하다",
+                "english": "to answer"
+            },
+            {
+                "original_word": "기회를",
+                "root": "기회",
+                "english": "opportunity"
+            },
+            {
+                "original_word": "놓치게",
+                "root": "놓치다",
+                "english": "to miss"
+            },
+            {
+                "original_word": "된다",
+                "root": "되다",
+                "english": "to become"
+            },
+            {
+                "original_word": "이",
+                "root": "이",
+                "english": "this"
+            },
+            {
+                "original_word": "방식은",
+                "root": "방식",
+                "english": "method"
+            },
+            {
+                "original_word": "모든",
+                "root": "모든",
+                "english": "all"
+            },
+            {
+                "original_word": "학습자들에게",
+                "root": "학습자",
+                "english": "learner"
+            },
+            {
+                "original_word": "골고루",
+                "root": "골고루",
+                "english": "evenly"
+            },
+            {
+                "original_word": "수업에",
+                "root": "수업",
+                "english": "class"
+            },
+            {
+                "original_word": "참여할",
+                "root": "참여하다",
+                "english": "to participate"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility"
+            },
+            {
+                "original_word": "있게",
+                "root": "있다",
+                "english": "to be able to"
+            },
+            {
+                "original_word": "한다는",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "긍정적인",
+                "root": "긍정적",
+                "english": "positive"
+            },
+            {
+                "original_word": "면이",
+                "root": "면",
+                "english": "aspect/side"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            }
+        ]
+    },
+    {
+        "문제_번호": 17,
+        "지시문": "[16~18] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "어렸을 때부터 전자기기에 능숙한 청소년들을 가리켜 '디지털 원어민'이라 부른다. 이들은 하루의 대부분을 전자기기를 사용하는 데 쓰며 인터넷 가상공간에서 정보를 얻거나 다른 사람과의 관계를 형성하는 데 시간을 보낸다. 또한 이들은 유행에 뒤떨어지는 것을 두려워한다. 그래서 ( ) 못할 경우에 불안해하기도 한다.",
+        "선택지": {
+            "1": "부모의 관심을 받지",
+            "2": "학업 성적이 오르지",
+            "3": "모르는 사람의 정보를 얻지",
+            "4": "새로 출시된 신제품을 사지"
+        },
+        "정답": 4,
+        "주제": "사회",
+        "토큰_개수": 38,
+        "단어맵": [
+            {
+                "original_word": "어렸을",
+                "root": "어리다",
+                "english": "young"
+            },
+            {
+                "original_word": "때부터",
+                "root": "때",
+                "english": "time"
+            },
+            {
+                "original_word": "전자기기에",
+                "root": "전자기기",
+                "english": "electronic device"
+            },
+            {
+                "original_word": "능숙한",
+                "root": "능숙하다",
+                "english": "skilled/proficient"
+            },
+            {
+                "original_word": "청소년들을",
+                "root": "청소년",
+                "english": "youth"
+            },
+            {
+                "original_word": "가리켜",
+                "root": "가리키다",
+                "english": "to refer to"
+            },
+            {
+                "original_word": "디지털",
+                "root": "디지털",
+                "english": "digital"
+            },
+            {
+                "original_word": "원어민이라",
+                "root": "원어민",
+                "english": "native speaker"
+            },
+            {
+                "original_word": "부른다",
+                "root": "부르다",
+                "english": "to call"
+            },
+            {
+                "original_word": "이들은",
+                "root": "이들",
+                "english": "they"
+            },
+            {
+                "original_word": "하루의",
+                "root": "하루",
+                "english": "one day"
+            },
+            {
+                "original_word": "대부분을",
+                "root": "대부분",
+                "english": "most part"
+            },
+            {
+                "original_word": "전자기기를",
+                "root": "전자기기",
+                "english": "electronic device"
+            },
+            {
+                "original_word": "사용하는",
+                "root": "사용하다",
+                "english": "to use"
+            },
+            {
+                "original_word": "데",
+                "root": "데",
+                "english": "place/case"
+            },
+            {
+                "original_word": "쓰며",
+                "root": "쓰다",
+                "english": "to use/spend"
+            },
+            {
+                "original_word": "인터넷",
+                "root": "인터넷",
+                "english": "internet"
+            },
+            {
+                "original_word": "가상공간에서",
+                "root": "가상공간",
+                "english": "virtual space"
+            },
+            {
+                "original_word": "정보를",
+                "root": "정보",
+                "english": "information"
+            },
+            {
+                "original_word": "얻거나",
+                "root": "얻다",
+                "english": "to get/obtain"
+            },
+            {
+                "original_word": "다른",
+                "root": "다르다",
+                "english": "different/other"
+            },
+            {
+                "original_word": "사람과의",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "관계를",
+                "root": "관계",
+                "english": "relationship"
+            },
+            {
+                "original_word": "형성하는",
+                "root": "형성하다",
+                "english": "to form"
+            },
+            {
+                "original_word": "데",
+                "root": "데",
+                "english": "case/activity"
+            },
+            {
+                "original_word": "시간을",
+                "root": "시간",
+                "english": "time"
+            },
+            {
+                "original_word": "보낸다",
+                "root": "보내다",
+                "english": "to spend"
+            },
+            {
+                "original_word": "또한",
+                "root": "또한",
+                "english": "also"
+            },
+            {
+                "original_word": "이들은",
+                "root": "이들",
+                "english": "they"
+            },
+            {
+                "original_word": "유행에",
+                "root": "유행",
+                "english": "trend/fashion"
+            },
+            {
+                "original_word": "뒤떨어지는",
+                "root": "뒤떨어지다",
+                "english": "to fall behind"
+            },
+            {
+                "original_word": "것을",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "두려워한다",
+                "root": "두려워하다",
+                "english": "to fear"
+            },
+            {
+                "original_word": "그래서",
+                "root": "그래서",
+                "english": "therefore"
+            },
+            {
+                "original_word": "못할",
+                "root": "못하다",
+                "english": "to be unable to"
+            },
+            {
+                "original_word": "경우에",
+                "root": "경우",
+                "english": "case"
+            },
+            {
+                "original_word": "불안해하기도",
+                "root": "불안해하다",
+                "english": "to feel anxious"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            }
+        ]
+    },
+    {
+        "문제_번호": 18,
+        "지시문": "[16~18] 다음을 읽고 ( )에 들어갈 내용으로 가장 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "동양에서는 우리 몸에 흐르는 에너지를 '기'라고 한다. 한의학에서는 기가 잘 흐르는 사람을 건강한 사람으로 생각한다. 그리고 기가 잘 흐르지 않거나 막혀 있는 사람은 병에 걸리기 쉽다고 한다. 기가 막혀 병에 걸린 사람들을 한의학에서는 바늘처럼 생긴 침을 이용하여 치료한다. 침은 기가 막힌 곳을 자극해 ( ) 한다.",
+        "선택지": {
+            "1": "기의 흐름을 원활하게",
+            "2": "기의 방향을 확인하게",
+            "3": "환자의 질병을 예방하게",
+            "4": "환자의 통증을 진단하게"
+        },
+        "정답": 1,
+        "주제": "문화",
+        "토큰_개수": 44,
+        "단어맵": [
+            {
+                "original_word": "동양에서는",
+                "root": "동양",
+                "english": "East/Orient"
+            },
+            {
+                "original_word": "우리",
+                "root": "우리",
+                "english": "our"
+            },
+            {
+                "original_word": "몸에",
+                "root": "몸",
+                "english": "body"
+            },
+            {
+                "original_word": "흐르는",
+                "root": "흐르다",
+                "english": "to flow"
+            },
+            {
+                "original_word": "에너지를",
+                "root": "에너지",
+                "english": "energy"
+            },
+            {
+                "original_word": "기라고",
+                "root": "기",
+                "english": "Qi/energy"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "한의학에서는",
+                "root": "한의학",
+                "english": "Eastern medicine"
+            },
+            {
+                "original_word": "기가",
+                "root": "기",
+                "english": "Qi"
+            },
+            {
+                "original_word": "잘",
+                "root": "잘",
+                "english": "well"
+            },
+            {
+                "original_word": "흐르는",
+                "root": "흐르다",
+                "english": "to flow"
+            },
+            {
+                "original_word": "사람을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "건강한",
+                "root": "건강하다",
+                "english": "healthy"
+            },
+            {
+                "original_word": "사람으로",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "생각한다",
+                "root": "생각하다",
+                "english": "to think"
+            },
+            {
+                "original_word": "그리고",
+                "root": "그리고",
+                "english": "and"
+            },
+            {
+                "original_word": "기가",
+                "root": "기",
+                "english": "Qi"
+            },
+            {
+                "original_word": "잘",
+                "root": "잘",
+                "english": "well"
+            },
+            {
+                "original_word": "흐르지",
+                "root": "흐르다",
+                "english": "to flow"
+            },
+            {
+                "original_word": "않거나",
+                "root": "않다",
+                "english": "to not do"
+            },
+            {
+                "original_word": "막혀",
+                "root": "막히다",
+                "english": "to be blocked"
+            },
+            {
+                "original_word": "있는",
+                "root": "있다",
+                "english": "to be"
+            },
+            {
+                "original_word": "사람은",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "병에",
+                "root": "병",
+                "english": "disease"
+            },
+            {
+                "original_word": "걸리기",
+                "root": "걸리다",
+                "english": "to catch/contract"
+            },
+            {
+                "original_word": "쉽다고",
+                "root": "쉽다",
+                "english": "easy"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "기가",
+                "root": "기",
+                "english": "Qi"
+            },
+            {
+                "original_word": "막혀",
+                "root": "막히다",
+                "english": "to be blocked"
+            },
+            {
+                "original_word": "병에",
+                "root": "병",
+                "english": "disease"
+            },
+            {
+                "original_word": "걸린",
+                "root": "걸리다",
+                "english": "to catch/contract"
+            },
+            {
+                "original_word": "사람들을",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "한의학에서는",
+                "root": "한의학",
+                "english": "Eastern medicine"
+            },
+            {
+                "original_word": "바늘처럼",
+                "root": "바늘",
+                "english": "needle"
+            },
+            {
+                "original_word": "생긴",
+                "root": "생기다",
+                "english": "to look like/form"
+            },
+            {
+                "original_word": "침을",
+                "root": "침",
+                "english": "acupuncture needle"
+            },
+            {
+                "original_word": "이용하여",
+                "root": "이용하다",
+                "english": "to use"
+            },
+            {
+                "original_word": "치료한다",
+                "root": "치료하다",
+                "english": "to treat"
+            },
+            {
+                "original_word": "침은",
+                "root": "침",
+                "english": "acupuncture needle"
+            },
+            {
+                "original_word": "기가",
+                "root": "기",
+                "english": "Qi"
+            },
+            {
+                "original_word": "막힌",
+                "root": "막히다",
+                "english": "to be blocked"
+            },
+            {
+                "original_word": "곳을",
+                "root": "곳",
+                "english": "place"
+            },
+            {
+                "original_word": "자극해",
+                "root": "자극하다",
+                "english": "to stimulate"
+            },
+            {
+                "original_word": "한다",
+                "root": "하다",
+                "english": "to do"
+            }
+        ]
+    },
+    {
+        "문제_번호": 19,
+        "지시문": "[19~20] 다음 글을 읽고 물음에 답하십시오. 19. ( )에 들어갈 알맞은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "활쏘기는 쉬워 보이지만 판단력과 인내심이 필요한 운동이다. 활쏘기에서는 활을 쏘는 순간이 제일 중요하다. ( ) 언제 활을 쏘아야 할지 판단하는 것이 핵심이다. 또한 활을 쏘는 그 순간까지 숨을 멈추고 기다리는 인내심이 요구된다. 그렇기 때문에 판단력이 부족한 사람이나 인내심이 필요한 사람에게 매우 좋은 운동이라고 할 수 있다.",
+        "선택지": {
+            "1": "특히",
+            "2": "또는",
+            "3": "역시",
+            "4": "과연"
+        },
+        "정답": 1,
+        "주제": "문화",
+        "토큰_개수": 44,
+        "단어맵": [
+            {
+                "original_word": "활쏘기는",
+                "root": "활쏘기",
+                "english": "archery"
+            },
+            {
+                "original_word": "쉬워",
+                "root": "쉽다",
+                "english": "easy"
+            },
+            {
+                "original_word": "보이지만",
+                "root": "보이다",
+                "english": "to look/seem"
+            },
+            {
+                "original_word": "판단력과",
+                "root": "판단력",
+                "english": "judgment"
+            },
+            {
+                "original_word": "인내심이",
+                "root": "인내심",
+                "english": "patience"
+            },
+            {
+                "original_word": "필요한",
+                "root": "필요하다",
+                "english": "necessary"
+            },
+            {
+                "original_word": "운동이다",
+                "root": "운동",
+                "english": "exercise"
+            },
+            {
+                "original_word": "활쏘기에서는",
+                "root": "활쏘기",
+                "english": "archery"
+            },
+            {
+                "original_word": "활을",
+                "root": "활",
+                "english": "bow"
+            },
+            {
+                "original_word": "쏘는",
+                "root": "쏘다",
+                "english": "to shoot"
+            },
+            {
+                "original_word": "순간이",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "제일",
+                "root": "제일",
+                "english": "most/best"
+            },
+            {
+                "original_word": "중요하다",
+                "root": "중요하다",
+                "english": "important"
+            },
+            {
+                "original_word": "언제",
+                "root": "언제",
+                "english": "when"
+            },
+            {
+                "original_word": "활을",
+                "root": "활",
+                "english": "bow"
+            },
+            {
+                "original_word": "쏘아야",
+                "root": "쏘다",
+                "english": "to shoot"
+            },
+            {
+                "original_word": "할지",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "판단하는",
+                "root": "판단하다",
+                "english": "to judge"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "핵심이다",
+                "root": "핵심",
+                "english": "core"
+            },
+            {
+                "original_word": "또한",
+                "root": "또한",
+                "english": "also"
+            },
+            {
+                "original_word": "활을",
+                "root": "활",
+                "english": "bow"
+            },
+            {
+                "original_word": "쏘는",
+                "root": "쏘다",
+                "english": "to shoot"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "순간까지",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "숨을",
+                "root": "숨",
+                "english": "breath"
+            },
+            {
+                "original_word": "멈추고",
+                "root": "멈추다",
+                "english": "to stop"
+            },
+            {
+                "original_word": "기다리는",
+                "root": "기다리다",
+                "english": "to wait"
+            },
+            {
+                "original_word": "인내심이",
+                "root": "인내심",
+                "english": "patience"
+            },
+            {
+                "original_word": "요구된다",
+                "root": "요구되다",
+                "english": "to be required"
+            },
+            {
+                "original_word": "그렇기",
+                "root": "그렇다",
+                "english": "so"
+            },
+            {
+                "original_word": "때문에",
+                "root": "때문",
+                "english": "because"
+            },
+            {
+                "original_word": "판단력이",
+                "root": "판단력",
+                "english": "judgment"
+            },
+            {
+                "original_word": "부족한",
+                "root": "부족하다",
+                "english": "lacking"
+            },
+            {
+                "original_word": "사람이나",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "인내심이",
+                "root": "인내심",
+                "english": "patience"
+            },
+            {
+                "original_word": "필요한",
+                "root": "필요하다",
+                "english": "necessary"
+            },
+            {
+                "original_word": "사람에게",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "매우",
+                "root": "매우",
+                "english": "very"
+            },
+            {
+                "original_word": "좋은",
+                "root": "좋다",
+                "english": "good"
+            },
+            {
+                "original_word": "운동이라고",
+                "root": "운동",
+                "english": "exercise"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            }
+        ]
+    },
+    {
+        "문제_번호": 20,
+        "지시문": "[19~20] 다음 글을 읽고 물음에 답하십시오. 20. 이 글의 내용과 같은 것을 고르십시오.",
+        "배점": "2점",
+        "문제_내용": "활쏘기는 쉬워 보이지만 판단력과 인내심이 필요한 운동이다. 활쏘기에서는 활을 쏘는 순간이 제일 중요하다. ( ) 언제 활을 쏘아야 할지 판단하는 것이 핵심이다. 또한 활을 쏘는 그 순간까지 숨을 멈추고 기다리는 인내심이 요구된다. 그렇기 때문에 판단력이 부족한 사람이나 인내심이 필요한 사람에게 매우 좋은 운동이라고 할 수 있다.",
+        "선택지": {
+            "1": "활쏘기로 판단력을 높일 수 있다.",
+            "2": "활쏘기의 핵심은 숨을 참는 것이다.",
+            "3": "활쏘기로 참을성을 기르기가 어렵다.",
+            "4": "활쏘기는 단순한 운동이라 주목을 받았다."
+        },
+        "정답": 1,
+        "주제": "사회",
+        "토큰_개수": 44,
+        "단어맵": [
+            {
+                "original_word": "활쏘기는",
+                "root": "활쏘기",
+                "english": "archery"
+            },
+            {
+                "original_word": "쉬워",
+                "root": "쉽다",
+                "english": "easy"
+            },
+            {
+                "original_word": "보이지만",
+                "root": "보이다",
+                "english": "to look/seem"
+            },
+            {
+                "original_word": "판단력과",
+                "root": "판단력",
+                "english": "judgment"
+            },
+            {
+                "original_word": "인내심이",
+                "root": "인내심",
+                "english": "patience"
+            },
+            {
+                "original_word": "필요한",
+                "root": "필요하다",
+                "english": "necessary"
+            },
+            {
+                "original_word": "운동이다",
+                "root": "운동",
+                "english": "exercise"
+            },
+            {
+                "original_word": "활쏘기에서는",
+                "root": "활쏘기",
+                "english": "archery"
+            },
+            {
+                "original_word": "활을",
+                "root": "활",
+                "english": "bow"
+            },
+            {
+                "original_word": "쏘는",
+                "root": "쏘다",
+                "english": "to shoot"
+            },
+            {
+                "original_word": "순간이",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "제일",
+                "root": "제일",
+                "english": "most/best"
+            },
+            {
+                "original_word": "중요하다",
+                "root": "중요하다",
+                "english": "important"
+            },
+            {
+                "original_word": "언제",
+                "root": "언제",
+                "english": "when"
+            },
+            {
+                "original_word": "활을",
+                "root": "활",
+                "english": "bow"
+            },
+            {
+                "original_word": "쏘아야",
+                "root": "쏘다",
+                "english": "to shoot"
+            },
+            {
+                "original_word": "할지",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "판단하는",
+                "root": "판단하다",
+                "english": "to judge"
+            },
+            {
+                "original_word": "것이",
+                "root": "것",
+                "english": "thing"
+            },
+            {
+                "original_word": "핵심이다",
+                "root": "핵심",
+                "english": "core"
+            },
+            {
+                "original_word": "또한",
+                "root": "또한",
+                "english": "also"
+            },
+            {
+                "original_word": "활을",
+                "root": "활",
+                "english": "bow"
+            },
+            {
+                "original_word": "쏘는",
+                "root": "쏘다",
+                "english": "to shoot"
+            },
+            {
+                "original_word": "그",
+                "root": "그",
+                "english": "that"
+            },
+            {
+                "original_word": "순간까지",
+                "root": "순간",
+                "english": "moment"
+            },
+            {
+                "original_word": "숨을",
+                "root": "숨",
+                "english": "breath"
+            },
+            {
+                "original_word": "멈추고",
+                "root": "멈추다",
+                "english": "to stop"
+            },
+            {
+                "original_word": "기다리는",
+                "root": "기다리다",
+                "english": "to wait"
+            },
+            {
+                "original_word": "인내심이",
+                "root": "인내심",
+                "english": "patience"
+            },
+            {
+                "original_word": "요구된다",
+                "root": "요구되다",
+                "english": "to be required"
+            },
+            {
+                "original_word": "그렇기",
+                "root": "그렇다",
+                "english": "so"
+            },
+            {
+                "original_word": "때문에",
+                "root": "때문",
+                "english": "because"
+            },
+            {
+                "original_word": "판단력이",
+                "root": "판단력",
+                "english": "judgment"
+            },
+            {
+                "original_word": "부족한",
+                "root": "부족하다",
+                "english": "lacking"
+            },
+            {
+                "original_word": "사람이나",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "인내심이",
+                "root": "인내심",
+                "english": "patience"
+            },
+            {
+                "original_word": "필요한",
+                "root": "필요하다",
+                "english": "necessary"
+            },
+            {
+                "original_word": "사람에게",
+                "root": "사람",
+                "english": "person"
+            },
+            {
+                "original_word": "매우",
+                "root": "매우",
+                "english": "very"
+            },
+            {
+                "original_word": "좋은",
+                "root": "좋다",
+                "english": "good"
+            },
+            {
+                "original_word": "운동이라고",
+                "root": "운동",
+                "english": "exercise"
+            },
+            {
+                "original_word": "할",
+                "root": "하다",
+                "english": "to do"
+            },
+            {
+                "original_word": "수",
+                "root": "수",
+                "english": "possibility"
+            },
+            {
+                "original_word": "있다",
+                "root": "있다",
+                "english": "to be"
+            }
+        ]
+    }
+]
