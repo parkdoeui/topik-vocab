@@ -32,7 +32,7 @@ export default function Sidebar({ basket, onWordRemoved, showTranslation }: Side
             .slice()
             .reverse()
             .map((word) => (
-              <WordCard key={word.id} word={word} onRemoved={onWordRemoved} />
+              <WordCard key={word.id} word={word} onRemoved={onWordRemoved} showTranslation={showTranslation} />
             ))
         )}
       </div>
