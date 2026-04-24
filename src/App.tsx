@@ -204,6 +204,7 @@ export default function App() {
               selectedAnswer={selectedAnswer}
               onSelectAnswer={handleSelectAnswer}
               onWordSaved={handleWordSaved}
+              showTranslation={showTranslation}
             />
             {/* Submit modal trigger — only when all questions answered */}
             {!showSubmitModal && (
