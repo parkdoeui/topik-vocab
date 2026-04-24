@@ -114,7 +114,9 @@ export default function QuestionView({
       {/* Question content */}
       <div className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm">
         <p className="text-xs text-gray-400 mb-3">
-          Hover a word to see its translation · Click to save it
+          {showTranslation
+            ? "Hover a word to see its translation · Click to save it"
+            : "Click a word to save it"}
         </p>
         {question.문제_내용.split(/\n+/).map((line, li) => (
           <p
@@ -129,6 +131,7 @@ export default function QuestionView({
               apiKey={apiKey}
               vocabMap={question.단어맵}
               onWordSaved={onWordSaved}
+              showTranslation={showTranslation}
             />
           </p>
         ))}
