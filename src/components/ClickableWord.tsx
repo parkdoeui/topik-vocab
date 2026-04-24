@@ -117,7 +117,7 @@ export default function ClickableWord({
       >
         {word}
       </span>
-      <WordTooltip result={result} loading={loading} visible={tooltipVisible} />
+      {showTranslation && <WordTooltip result={result} loading={loading} visible={tooltipVisible} />}
     </span>
   );
 }
