@@ -12,6 +12,7 @@ interface ClickableWordProps {
   vocabMap?: VocabEntry[];
   isSaved: boolean;
   onSaved: (word: VocabWord) => void;
+  showTranslation: boolean;
 }
 
 export default function ClickableWord({
@@ -23,6 +24,7 @@ export default function ClickableWord({
   vocabMap,
   isSaved,
   onSaved,
+  showTranslation,
 }: ClickableWordProps) {
   const [tooltipVisible, setTooltipVisible] = useState(false);
   const [loading, setLoading] = useState(false);
