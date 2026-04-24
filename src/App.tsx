@@ -231,7 +231,7 @@ export default function App() {
           </div>
         </main>
 
-        <Sidebar basket={basket} onWordRemoved={handleWordRemoved} />
+        <Sidebar basket={basket} onWordRemoved={handleWordRemoved} showTranslation={showTranslation} />
       </div>
 
       <BasketDrawer
