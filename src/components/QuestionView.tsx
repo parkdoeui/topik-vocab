@@ -172,6 +172,7 @@ export default function QuestionView({
                   apiKey={apiKey}
                   vocabMap={question.단어맵}
                   onWordSaved={onWordSaved}
+                  showTranslation={showTranslation}
                 />
               </span>
             </div>
