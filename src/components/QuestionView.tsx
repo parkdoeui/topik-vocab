@@ -94,6 +94,7 @@ export default function QuestionView({
   selectedAnswer,
   onSelectAnswer,
   onWordSaved,
+  showTranslation,
 }: QuestionViewProps) {
   const choices = Object.entries(question.선택지);
   return (
