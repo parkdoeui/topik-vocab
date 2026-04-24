@@ -9,6 +9,7 @@ interface QuestionViewProps {
   selectedAnswer: number | null;
   onSelectAnswer: (choice: number) => void;
   onWordSaved: (word: VocabWord) => void;
+  showTranslation: boolean;
 }
 
 function tokenize(text: string): string[] {
