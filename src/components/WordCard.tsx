@@ -18,10 +18,12 @@ export default function WordCard({ word, onRemoved, showTranslation }: WordCardP
             <span className="text-[10px] text-gray-400">{word.partOfSpeech}</span>
           )}
         </div>
-        {word.root && word.root !== (word.originalWord ?? word.korean) && (
+        {showTranslation && word.root && word.root !== (word.originalWord ?? word.korean) && (
           <div className="text-sm text-gray-500 mt-0.5">{word.root}</div>
         )}
-        <div className="text-sm text-gray-600 mt-0.5">{word.english}</div>
+        {showTranslation && (
+          <div className="text-sm text-gray-600 mt-0.5">{word.english}</div>
+        )}
       </div>
       <button
         onClick={() => onRemoved(word.id)}
