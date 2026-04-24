@@ -92,7 +92,7 @@ export default function BasketDrawer({
               .slice()
               .reverse()
               .map((word) => (
-                <WordCard key={word.id} word={word} onRemoved={onWordRemoved} />
+                <WordCard key={word.id} word={word} onRemoved={onWordRemoved} showTranslation={showTranslation} />
               ))
           )}
         </div>
