@@ -22,6 +22,7 @@ export default function App() {
   const [basket, setBasket] = useState<VocabWord[]>([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [showTranslation, setShowTranslation] = useState(true);
   const [apiKey, setApiKey] = useState<string>(
     () => localStorage.getItem("krdict-api-key") ?? ""
   );
