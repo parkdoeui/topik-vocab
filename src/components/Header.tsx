@@ -5,6 +5,8 @@ interface HeaderProps {
   onBasketClick: () => void;
   apiKey: string;
   onApiKeyChange: (key: string) => void;
+  showTranslation: boolean;
+  onToggleTranslation: () => void;
 }
 
 export default function Header({
@@ -12,6 +14,8 @@ export default function Header({
   onBasketClick,
   apiKey,
   onApiKeyChange,
+  showTranslation,
+  onToggleTranslation,
 }: HeaderProps) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [keyInput, setKeyInput] = useState(apiKey);
