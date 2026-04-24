@@ -35,6 +35,7 @@ function ClickableText({
   apiKey,
   vocabMap,
   onWordSaved,
+  showTranslation,
 }: {
   text: string;
   testId: string;
@@ -43,6 +44,7 @@ function ClickableText({
   apiKey?: string;
   vocabMap?: TopikQuestion["단어맵"];
   onWordSaved: (word: VocabWord) => void;
+  showTranslation: boolean;
 }) {
   const savedKoreanWords = new Set(basket.map((w) => w.korean));
   const savedOriginalWords = vocabMap
