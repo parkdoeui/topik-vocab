@@ -3,23 +3,23 @@
     "quiz": [
       {
         "sentence": "그 범죄는 정말 (   ).",
-        "answer": "흉악"
+        "answer": "흉악하다"
       },
       {
         "sentence": "(   ) 사건이 발생했다.",
-        "answer": "흉악"
+        "answer": "흉악한"
       },
       {
         "sentence": "그는 (   ) 행동했다.",
-        "answer": "흉악"
+        "answer": "흉악하게"
       },
       {
         "sentence": "그 일은 너무 (   ) 모두 놀랐다.",
-        "answer": "흉악"
+        "answer": "흉악해서"
       },
       {
         "sentence": "어제는 (   ) 범죄자가 잡혔다.",
-        "answer": "흉악"
+        "answer": "흉악했던"
       }
     ]
   },
@@ -147,23 +147,23 @@
     "quiz": [
       {
         "sentence": "그의 아이디어는 (   ).",
-        "answer": "독창적"
+        "answer": "독창적이다"
       },
       {
         "sentence": "(   ) 디자인이 필요하다.",
-        "answer": "독창적"
+        "answer": "독창적인"
       },
       {
         "sentence": "그는 항상 (   ) 생각한다.",
-        "answer": "독창적"
+        "answer": "독창적으로"
       },
       {
         "sentence": "그의 작품은 (   ) 모두 좋아한다.",
-        "answer": "독창적"
+        "answer": "독창적이어서"
       },
       {
         "sentence": "그 아이디어는 (   ) 평가받았다.",
-        "answer": "독창적"
+        "answer": "독창적이었다"
       }
     ]
   },

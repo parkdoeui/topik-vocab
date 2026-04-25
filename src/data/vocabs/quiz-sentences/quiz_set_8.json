@@ -27,7 +27,7 @@
     "quiz": [
       {
         "sentence": "우리 회사는 (   ) 한다.",
-        "answer": "자율근무제"
+        "answer": "자율근무제를"
       },
       {
         "sentence": "(   ) 도입이 필요하다.",
@@ -39,11 +39,11 @@
       },
       {
         "sentence": "(   ) 대한 논의가 있다.",
-        "answer": "자율근무제"
+        "answer": "자율근무제에"
       },
       {
         "sentence": "(   ) 좋다고 생각한다.",
-        "answer": "자율근무제"
+        "answer": "자율근무제가"
       }
     ]
   },
@@ -51,7 +51,7 @@
     "quiz": [
       {
         "sentence": "(   ) 방식을 개선해야 한다.",
-        "answer": "기존"
+        "answer": "기존의"
       },
       {
         "sentence": "(   ) 것과 비교해 보세요.",
@@ -75,7 +75,7 @@
     "quiz": [
       {
         "sentence": "이상한 (   ) 나타났다.",
-        "answer": "현상"
+        "answer": "현상이"
       },
       {
         "sentence": "그것은 자연 (   ) 이다.",
@@ -83,15 +83,15 @@
       },
       {
         "sentence": "(   ) 분석하는 것이 중요하다.",
-        "answer": "현상"
+        "answer": "현상을"
       },
       {
         "sentence": "이런 (   ) 자주 발생한다.",
-        "answer": "현상"
+        "answer": "현상은"
       },
       {
         "sentence": "(   ) 대한 연구가 필요하다.",
-        "answer": "현상"
+        "answer": "현상에"
       }
     ]
   },
@@ -99,15 +99,15 @@
     "quiz": [
       {
         "sentence": "우리 (   ) 친절하다.",
-        "answer": "이웃"
+        "answer": "이웃은"
       },
       {
         "sentence": "(   ) 도왔다.",
-        "answer": "이웃"
+        "answer": "이웃을"
       },
       {
         "sentence": "(   ) 사이좋게 지내자.",
-        "answer": "이웃"
+        "answer": "이웃과"
       },
       {
         "sentence": "(   ) 집에서 소리가 들린다.",
@@ -123,7 +123,7 @@
     "quiz": [
       {
         "sentence": "(   ) 여행을 갈까?",
-        "answer": "올해"
+        "answer": "올해는"
       },
       {
         "sentence": "(   ) 날씨가 너무 덥다.",
@@ -131,7 +131,7 @@
       },
       {
         "sentence": "(   ) 목표를 세웠다.",
-        "answer": "올해"
+        "answer": "올해의"
       },
       {
         "sentence": "(   ) 시험에 합격했다.",
@@ -147,7 +147,7 @@
     "quiz": [
       {
         "sentence": "(   ) 다리가 길다.",
-        "answer": "타조"
+        "answer": "타조는"
       },
       {
         "sentence": "(   ) 알은 매우 크다.",
@@ -155,15 +155,15 @@
       },
       {
         "sentence": "(   ) 동물원에서 봤다.",
-        "answer": "타조"
+        "answer": "타조를"
       },
       {
         "sentence": "(   ) 달리기가 빠르다.",
-        "answer": "타조"
+        "answer": "타조의"
       },
       {
         "sentence": "(   ) 먹이를 주었다.",
-        "answer": "타조"
+        "answer": "타조에"
       }
     ]
   },
@@ -171,15 +171,15 @@
     "quiz": [
       {
         "sentence": "(   ) 나타났다.",
-        "answer": "적"
+        "answer": "적이"
       },
       {
         "sentence": "(   ) 물리쳤다.",
-        "answer": "적"
+        "answer": "적을"
       },
       {
         "sentence": "(   ) 친구가 될 수 있다.",
-        "answer": "적"
+        "answer": "적도"
       },
       {
         "sentence": "그는 나의 (   ) 이다.",
@@ -187,7 +187,7 @@
       },
       {
         "sentence": "(   ) 대한 정보를 모았다.",
-        "answer": "적"
+        "answer": "적에"
       }
     ]
   },
@@ -219,15 +219,15 @@
     "quiz": [
       {
         "sentence": "(   ) 예민한 동물이다.",
-        "answer": "청각"
+        "answer": "청각이"
       },
       {
         "sentence": "(   ) 문제가 생겼다.",
-        "answer": "청각"
+        "answer": "청각에"
       },
       {
         "sentence": "(   ) 보호하는 것이 좋다.",
-        "answer": "청각"
+        "answer": "청각을"
       },
       {
         "sentence": "(   ) 검사를 받았다.",
@@ -243,11 +243,11 @@
     "quiz": [
       {
         "sentence": "이 옷은 좋은 (   ) 만들었다.",
-        "answer": "섬유"
+        "answer": "섬유로"
       },
       {
         "sentence": "(   ) 종류가 매우 많다.",
-        "answer": "섬유"
+        "answer": "섬유의"
       },
       {
         "sentence": "(   ) 산업이 발전했다.",
@@ -259,7 +259,7 @@
       },
       {
         "sentence": "(   ) 염색을 했다.",
-        "answer": "섬유"
+        "answer": "섬유에"
       }
     ]
   },
@@ -291,19 +291,19 @@
     "quiz": [
       {
         "sentence": "(   ) 날씨는 매우 춥다.",
-        "answer": "남극"
+        "answer": "남극의"
       },
       {
         "sentence": "(   ) 탐험을 떠났다.",
-        "answer": "남극"
+        "answer": "남극으로"
       },
       {
         "sentence": "(   ) 동물들이 산다.",
-        "answer": "남극"
+        "answer": "남극에"
       },
       {
         "sentence": "(   ) 지구의 끝이다.",
-        "answer": "남극"
+        "answer": "남극은"
       },
       {
         "sentence": "(   ) 연구 기지가 있다.",
@@ -339,19 +339,19 @@
     "quiz": [
       {
         "sentence": "(   ) 증가로 가격이 올랐다.",
-        "answer": "수요"
+        "answer": "수요가"
       },
       {
         "sentence": "(   ) 공급의 균형이 중요하다.",
-        "answer": "수요"
+        "answer": "수요와"
       },
       {
         "sentence": "(   ) 예측하는 것이 어렵다.",
-        "answer": "수요"
+        "answer": "수요를"
       },
       {
         "sentence": "(   ) 대한 조사를 했다.",
-        "answer": "수요"
+        "answer": "수요에"
       },
       {
         "sentence": "(   ) 부족 현상이다.",
@@ -367,19 +367,19 @@
       },
       {
         "sentence": "(   ) 만들었다.",
-        "answer": "복제품"
+        "answer": "복제품을"
       },
       {
         "sentence": "(   ) 판매 금지다.",
-        "answer": "복제품"
+        "answer": "복제품은"
       },
       {
         "sentence": "(   ) 진품과 똑같다.",
-        "answer": "복제품"
+        "answer": "복제품이"
       },
       {
         "sentence": "(   ) 구별하기 어렵다.",
-        "answer": "복제품"
+        "answer": "복제품과"
       }
     ]
   },
@@ -387,19 +387,19 @@
     "quiz": [
       {
         "sentence": "(   ) 매우 많았다.",
-        "answer": "관람객"
+        "answer": "관람객이"
       },
       {
         "sentence": "(   ) 입장하고 있다.",
-        "answer": "관람객"
+        "answer": "관람객들이"
       },
       {
         "sentence": "(   ) 환영하는 행사다.",
-        "answer": "관람객"
+        "answer": "관람객을"
       },
       {
         "sentence": "(   ) 안전이 최우선이다.",
-        "answer": "관람객"
+        "answer": "관람객의"
       },
       {
         "sentence": "(   ) 위한 휴식 공간.",
@@ -435,15 +435,15 @@
     "quiz": [
       {
         "sentence": "샐러드에 (   ) 넣었다.",
-        "answer": "무순"
+        "answer": "무순을"
       },
       {
         "sentence": "(   ) 신선하고 맛있다.",
-        "answer": "무순"
+        "answer": "무순은"
       },
       {
         "sentence": "(   ) 비빔밥에 잘 어울린다.",
-        "answer": "무순"
+        "answer": "무순이"
       },
       {
         "sentence": "(   ) 재배하는 법을 배웠다.",
@@ -483,7 +483,7 @@
     "quiz": [
       {
         "sentence": "은행에서 (   ) 받았다.",
-        "answer": "대출"
+        "answer": "대출을"
       },
       {
         "sentence": "(   ) 금리가 인상됐다.",
@@ -507,7 +507,7 @@
     "quiz": [
       {
         "sentence": "(   ) 인상으로 부담이 크다.",
-        "answer": "금리"
+        "answer": "금리가"
       },
       {
         "sentence": "(   ) 인하를 기대한다.",
@@ -523,7 +523,7 @@
       },
       {
         "sentence": "(   ) 대한 논의가 활발하다.",
-        "answer": "금리"
+        "answer": "금리에"
       }
     ]
   },
@@ -531,19 +531,19 @@
     "quiz": [
       {
         "sentence": "주가가 (   ) 보였다.",
-        "answer": "하락세"
+        "answer": "하락세를"
       },
       {
         "sentence": "시장이 (   ) 접어들었다.",
-        "answer": "하락세"
+        "answer": "하락세에"
       },
       {
         "sentence": "(   ) 이어지고 있다.",
-        "answer": "하락세"
+        "answer": "하락세가"
       },
       {
         "sentence": "(   ) 멈출 기미가 없다.",
-        "answer": "하락세"
+        "answer": "하락세는"
       },
       {
         "sentence": "(   ) 반전이 필요하다.",
@@ -571,7 +571,7 @@
       },
       {
         "sentence": "(   ) 에 대한 규제가 있다.",
-        "answer": "부동산"
+        "answer": "부동산에"
       }
     ]
   },
@@ -579,11 +579,11 @@
     "quiz": [
       {
         "sentence": "아침에 (   ) 켰다.",
-        "answer": "기지개"
+        "answer": "기지개를"
       },
       {
         "sentence": "경제가 (   ) 켜고 있다.",
-        "answer": "기지개"
+        "answer": "기지개를"
       },
       {
         "sentence": "(   ) 켜는 운동을 한다.",
@@ -591,11 +591,11 @@
       },
       {
         "sentence": "(   ) 효과는 좋다.",
-        "answer": "기지개"
+        "answer": "기지개의"
       },
       {
         "sentence": "(   ) 켜는 것이 시원하다.",
-        "answer": "기지개"
+        "answer": "기지개는"
       }
     ]
   }

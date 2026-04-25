@@ -207,7 +207,7 @@
       },
       {
         "sentence": "(   ) 육아를 병행한다.",
-        "answer": "가사"
+        "answer": "가사와"
       },
       {
         "sentence": "(   ) 노동은 힘들다.",
@@ -279,7 +279,7 @@
       },
       {
         "sentence": "(   ) 맛이 좋다.",
-        "answer": "송편"
+        "answer": "송편의"
       },
       {
         "sentence": "(   ) 만들기 체험.",
@@ -331,7 +331,7 @@
       },
       {
         "sentence": "이것은 내 (   ).",
-        "answer": "일"
+        "answer": "일이다"
       }
     ]
   },
@@ -371,7 +371,7 @@
       },
       {
         "sentence": "(   )를 세어보자.",
-        "answer": "횟수"
+        "answer": "횟수로"
       },
       {
         "sentence": "(   ) 제한이 있다.",
@@ -651,7 +651,7 @@
     "quiz": [
       {
         "sentence": "일이 계속 (   ).",
-        "answer": "제자리걸음"
+        "answer": "제자리걸음이다"
       },
       {
         "sentence": "발전 없이 (   )만 한다.",
@@ -1203,7 +1203,7 @@
     "quiz": [
       {
         "sentence": "그는 평생 (   ).",
-        "answer": "독신"
+        "answer": "독신이다"
       },
       {
         "sentence": "나는 (   ) 생활이 좋다.",
@@ -1211,15 +1211,15 @@
       },
       {
         "sentence": "그녀는 (   ) 살고 있다.",
-        "answer": "독신"
+        "answer": "독신으로"
       },
       {
         "sentence": "혹시 (   )?",
-        "answer": "독신"
+        "answer": "독신이세요"
       },
       {
         "sentence": "그는 (   )이었다.",
-        "answer": "독신"
+        "answer": "독신이었어요"
       }
     ]
   },
@@ -1239,7 +1239,7 @@
       },
       {
         "sentence": "두 (   )이 잘 어울린다.",
-        "answer": "색상"
+        "answer": "색상과"
       },
       {
         "sentence": "그는 (   )에 민감하다.",
@@ -1651,7 +1651,7 @@
       },
       {
         "sentence": "이것은 빛을 (   ).",
-        "answer": "반사"
+        "answer": "반사한다"
       }
     ]
   },
@@ -1747,7 +1747,7 @@
       },
       {
         "sentence": "(   )은 학생들이다.",
-        "answer": "대상"
+        "answer": "대상이다"
       }
     ]
   },
@@ -1767,7 +1767,7 @@
       },
       {
         "sentence": "(   )세를 내야 한다.",
-        "answer": "상속"
+        "answer": "상속세"
       },
       {
         "sentence": "(   )받은 돈이 많다.",
@@ -2147,7 +2147,7 @@
       },
       {
         "sentence": "많은 (   )들이 모였다.",
-        "answer": "인재"
+        "answer": "인재들"
       },
       {
         "sentence": "(   )의 중요성을 강조했다.",
@@ -2427,23 +2427,23 @@
     "quiz": [
       {
         "sentence": "날씨가 갑자기 (   ).",
-        "answer": "악화"
+        "answer": "악화되었다"
       },
       {
         "sentence": "상황 (   ) 걱정이다.",
-        "answer": "악화"
+        "answer": "악화가"
       },
       {
         "sentence": "병이 더 (   ) 안 된다.",
-        "answer": "악화"
+        "answer": "악화되면"
       },
       {
         "sentence": "미세먼지는 건강 (   ) 요인이다.",
-        "answer": "악화"
+        "answer": "악화시키는"
       },
       {
         "sentence": "경제 (   ) 모두 힘들다.",
-        "answer": "악화"
+        "answer": "악화로"
       }
     ]
   },
@@ -2475,23 +2475,23 @@
     "quiz": [
       {
         "sentence": "그는 한국에 (   ).",
-        "answer": "정착"
+        "answer": "정착했다"
       },
       {
         "sentence": "새로운 곳에 (   ) 시간이 걸린다.",
-        "answer": "정착"
+        "answer": "정착하려면"
       },
       {
         "sentence": "그들은 도시에 (   ) 살고 있다.",
-        "answer": "정착"
+        "answer": "정착하여"
       },
       {
         "sentence": "외국인들의 (   ) 돕는다.",
-        "answer": "정착"
+        "answer": "정착을"
       },
       {
         "sentence": "이곳에 (   ) 사람들이 많다.",
-        "answer": "정착"
+        "answer": "정착한"
       }
     ]
   },
@@ -2523,23 +2523,23 @@
     "quiz": [
       {
         "sentence": "우리 팀이 (   ) 했다.",
-        "answer": "2위"
+        "answer": "2위를"
       },
       {
         "sentence": "그는 대회에서 (   ) 차지했다.",
-        "answer": "2위"
+        "answer": "2위를"
       },
       {
         "sentence": "이번 달 매출은 (   ) 올랐다.",
-        "answer": "2위"
+        "answer": "2위로"
       },
       {
         "sentence": "(   ) 팀은 상을 받는다.",
-        "answer": "2위"
+        "answer": "2위인"
       },
       {
         "sentence": "우리 회사가 시장 점유율 (   ).",
-        "answer": "2위"
+        "answer": "2위이다"
       }
     ]
   },
@@ -2571,19 +2571,19 @@
     "quiz": [
       {
         "sentence": "두 회사가 (   ) 결정했다.",
-        "answer": "합병"
+        "answer": "합병하기로"
       },
       {
         "sentence": "그들은 (   ) 논의 중이다.",
-        "answer": "합병"
+        "answer": "합병을"
       },
       {
         "sentence": "회사는 작년에 (   ).",
-        "answer": "합병"
+        "answer": "합병했다"
       },
       {
         "sentence": "(   ) 회사는 더 커졌다.",
-        "answer": "합병"
+        "answer": "합병된"
       },
       {
         "sentence": "(   ) 후 더 강해졌다.",
@@ -2623,7 +2623,7 @@
       },
       {
         "sentence": "(   ) 큰 이슈가 되었다.",
-        "answer": "재계"
+        "answer": "재계에서"
       },
       {
         "sentence": "(   ) 거물들이 참석했다.",
@@ -2631,11 +2631,11 @@
       },
       {
         "sentence": "(   ) 동향을 주시한다.",
-        "answer": "재계"
+        "answer": "재계는"
       },
       {
         "sentence": "한국 (   ) 영향력이 크다.",
-        "answer": "재계"
+        "answer": "재계의"
       }
     ]
   },
@@ -2695,15 +2695,15 @@
       },
       {
         "sentence": "우리는 (   ) 목표를 가지고 있다.",
-        "answer": "공동"
+        "answer": "공동의"
       },
       {
         "sentence": "이 문제는 우리 (   ) 숙제다.",
-        "answer": "공동"
+        "answer": "공동의"
       },
       {
         "sentence": "(   ) 작업을 마쳤다.",
-        "answer": "공동"
+        "answer": "공동으로"
       },
       {
         "sentence": "우리는 (   ) 운명이다.",
@@ -2719,11 +2719,11 @@
       },
       {
         "sentence": "이 상점은 (   ) 운영된다.",
-        "answer": "소규모"
+        "answer": "소규모로"
       },
       {
         "sentence": "(   ) 사업을 시작했다.",
-        "answer": "소규모"
+        "answer": "소규모의"
       },
       {
         "sentence": "(   ) 투자가 안전하다.",
@@ -2763,19 +2763,19 @@
     "quiz": [
       {
         "sentence": "코끼리는 (   ) 크다.",
-        "answer": "몸집"
+        "answer": "몸집이"
       },
       {
         "sentence": "작은 (   ) 강아지다.",
-        "answer": "몸집"
+        "answer": "몸집의"
       },
       {
         "sentence": "회사는 (   ) 키웠다.",
-        "answer": "몸집"
+        "answer": "몸집을"
       },
       {
         "sentence": "그의 (   ) 아주 작다.",
-        "answer": "몸집"
+        "answer": "몸집은"
       },
       {
         "sentence": "작은 (   ) 새들이 날아다닌다.",
@@ -2811,23 +2811,23 @@
     "quiz": [
       {
         "sentence": "새로운 법이 (   ).",
-        "answer": "제정"
+        "answer": "제정되었다"
       },
       {
         "sentence": "법 (   ) 논의 중이다.",
-        "answer": "제정"
+        "answer": "제정이"
       },
       {
         "sentence": "(   ) 법안이 통과되었다.",
-        "answer": "제정"
+        "answer": "제정된"
       },
       {
         "sentence": "새로운 법규를 (   ) 필요하다.",
-        "answer": "제정"
+        "answer": "제정할"
       },
       {
         "sentence": "법 (   ) 서둘러야 한다.",
-        "answer": "제정"
+        "answer": "제정을"
       }
     ]
   },
@@ -2835,19 +2835,19 @@
     "quiz": [
       {
         "sentence": "이 문제가 큰 (   ) 되었다.",
-        "answer": "쟁점"
+        "answer": "쟁점이"
       },
       {
         "sentence": "주요 (   ) 논의했다.",
-        "answer": "쟁점"
+        "answer": "쟁점을"
       },
       {
         "sentence": "토론의 (   ) 무엇인가?",
-        "answer": "쟁점"
+        "answer": "쟁점은"
       },
       {
         "sentence": "환경 문제가 (   ) 떠올랐다.",
-        "answer": "쟁점"
+        "answer": "쟁점으로"
       },
       {
         "sentence": "(   ) 사항을 정리했다.",
@@ -2907,23 +2907,23 @@
     "quiz": [
       {
         "sentence": "나는 그 의견에 (   ).",
-        "answer": "찬성"
+        "answer": "찬성한다"
       },
       {
         "sentence": "그의 제안에 (   ) 사람이 많다.",
-        "answer": "찬성"
+        "answer": "찬성하는"
       },
       {
         "sentence": "모두 (   ) 투표했다.",
-        "answer": "찬성"
+        "answer": "찬성하여"
       },
       {
         "sentence": "(   ) 반대가 나뉘었다.",
-        "answer": "찬성"
+        "answer": "찬성과"
       },
       {
         "sentence": "그녀는 그 계획에 (   ).",
-        "answer": "찬성"
+        "answer": "찬성했다"
       }
     ]
   },
@@ -2979,23 +2979,23 @@
     "quiz": [
       {
         "sentence": "이 문제에는 여러 (   ) 있다.",
-        "answer": "측면"
+        "answer": "측면이"
       },
       {
         "sentence": "긍정적인 (   ) 강조했다.",
-        "answer": "측면"
+        "answer": "측면을"
       },
       {
         "sentence": "모든 (   ) 고려해야 한다.",
-        "answer": "측면"
+        "answer": "측면에서"
       },
       {
         "sentence": "이것은 하나의 (   ) 불과하다.",
-        "answer": "측면"
+        "answer": "측면일"
       },
       {
         "sentence": "다른 (   ) 보면 다르다.",
-        "answer": "측면"
+        "answer": "측면으로"
       }
     ]
   },
@@ -3043,7 +3043,7 @@
       },
       {
         "sentence": "그는 (   )으로 고생했다.",
-        "answer": "부작용"
+        "answer": "부작용과"
       }
     ]
   },
@@ -3603,23 +3603,23 @@
     "quiz": [
       {
         "sentence": "나는 (   ) 게임을 한다.",
-        "answer": "가상공간"
+        "answer": "가상공간에서"
       },
       {
         "sentence": "(   ) 새로운 친구를 만났다.",
-        "answer": "가상공간"
+        "answer": "가상공간에서"
       },
       {
         "sentence": "(   ) 현실과 다르다.",
-        "answer": "가상공간"
+        "answer": "가상공간은"
       },
       {
         "sentence": "미래는 (   ) 더 중요해질 것이다.",
-        "answer": "가상공간"
+        "answer": "가상공간이"
       },
       {
         "sentence": "(   ) 탐험하는 것이 재미있다.",
-        "answer": "가상공간"
+        "answer": "가상공간을"
       }
     ]
   },
@@ -3627,23 +3627,23 @@
     "quiz": [
       {
         "sentence": "(   ) 몸의 균형을 강조한다.",
-        "answer": "한의학"
+        "answer": "한의학은"
       },
       {
         "sentence": "나는 (   ) 치료를 받았다.",
-        "answer": "한의학"
+        "answer": "한의학으로"
       },
       {
         "sentence": "(   ) 역사가 깊다.",
-        "answer": "한의학"
+        "answer": "한의학의"
       },
       {
         "sentence": "(   ) 공부하는 학생이다.",
-        "answer": "한의학"
+        "answer": "한의학을"
       },
       {
         "sentence": "(   ) 방법을 선호한다.",
-        "answer": "한의학"
+        "answer": "한의학적인"
       }
     ]
   },
@@ -3675,15 +3675,15 @@
     "quiz": [
       {
         "sentence": "창문에 (   ) 맺혔다.",
-        "answer": "빗방울"
+        "answer": "빗방울이"
       },
       {
         "sentence": "(   ) 하나둘 떨어졌다.",
-        "answer": "빗방울"
+        "answer": "빗방울이"
       },
       {
         "sentence": "나무잎에 (   ) 예쁘다.",
-        "answer": "빗방울"
+        "answer": "빗방울이"
       },
       {
         "sentence": "(   ) 소리가 들린다.",
@@ -3691,7 +3691,7 @@
       },
       {
         "sentence": "(   ) 옷에 튀었다.",
-        "answer": "빗방울"
+        "answer": "빗방울이"
       }
     ]
   },
@@ -3703,19 +3703,19 @@
       },
       {
         "sentence": "(   ) 많은 회사가 어렵다.",
-        "answer": "불황"
+        "answer": "불황에"
       },
       {
         "sentence": "우리는 (   ) 극복해야 한다.",
-        "answer": "불황"
+        "answer": "불황을"
       },
       {
         "sentence": "(   ) 지속될까 걱정이다.",
-        "answer": "불황"
+        "answer": "불황이"
       },
       {
         "sentence": "(   ) 불구하고 잘 버텼다.",
-        "answer": "불황"
+        "answer": "불황에도"
       }
     ]
   },
@@ -3747,23 +3747,23 @@
     "quiz": [
       {
         "sentence": "새로운 (   ) 필요하다.",
-        "answer": "돌파구"
+        "answer": "돌파구가"
       },
       {
         "sentence": "우리는 (   ) 찾고 있다.",
-        "answer": "돌파구"
+        "answer": "돌파구를"
       },
       {
         "sentence": "이것이 문제의 (   ) 될 수 있다.",
-        "answer": "돌파구"
+        "answer": "돌파구가"
       },
       {
         "sentence": "(   ) 마련하기 위해 노력했다.",
-        "answer": "돌파구"
+        "answer": "돌파구를"
       },
       {
         "sentence": "(   ) 찾아야만 한다.",
-        "answer": "돌파구"
+        "answer": "돌파구를"
       }
     ]
   },
@@ -3775,19 +3775,19 @@
       },
       {
         "sentence": "(   ) 그림을 그리고 있다.",
-        "answer": "화가"
+        "answer": "화가는"
       },
       {
         "sentence": "(   ) 작품이 전시되었다.",
-        "answer": "화가"
+        "answer": "화가의"
       },
       {
         "sentence": "나는 그 (   ) 존경한다.",
-        "answer": "화가"
+        "answer": "화가를"
       },
       {
         "sentence": "많은 (   ) 이 행사에 참여했다.",
-        "answer": "화가"
+        "answer": "화가들이"
       }
     ]
   },
@@ -3795,23 +3795,23 @@
     "quiz": [
       {
         "sentence": "나는 (   ) 사러 갔다.",
-        "answer": "문구류"
+        "answer": "문구류를"
       },
       {
         "sentence": "이 가게에는 (   ) 많다.",
-        "answer": "문구류"
+        "answer": "문구류가"
       },
       {
         "sentence": "(   ) 정리하는 중이다.",
-        "answer": "문구류"
+        "answer": "문구류를"
       },
       {
         "sentence": "(   ) 종류가 다양하다.",
-        "answer": "문구류"
+        "answer": "문구류는"
       },
       {
         "sentence": "새 (   ) 필요하다.",
-        "answer": "문구류"
+        "answer": "문구류가"
       }
     ]
   },
@@ -3823,11 +3823,11 @@
       },
       {
         "sentence": "(   ) 탄성이 좋다.",
-        "answer": "고무"
+        "answer": "고무는"
       },
       {
         "sentence": "(   ) 지우개를 만들었다.",
-        "answer": "고무"
+        "answer": "고무로"
       },
       {
         "sentence": "(   ) 장갑을 꼈다.",
@@ -3847,11 +3847,11 @@
       },
       {
         "sentence": "(   ) 안전하게 보관하세요.",
-        "answer": "약품"
+        "answer": "약품을"
       },
       {
         "sentence": "(   ) 유통기한이 중요하다.",
-        "answer": "약품"
+        "answer": "약품의"
       },
       {
         "sentence": "(   ) 사용 설명서를 읽었다.",
@@ -3859,7 +3859,7 @@
       },
       {
         "sentence": "(   ) 보관함에 넣었다.",
-        "answer": "약품"
+        "answer": "약품을"
       }
     ]
   },
@@ -3871,19 +3871,19 @@
       },
       {
         "sentence": "(   ) 움직임이 활발하다.",
-        "answer": "분자"
+        "answer": "분자들이"
       },
       {
         "sentence": "(   ) 구조를 연구한다.",
-        "answer": "분자"
+        "answer": "분자의"
       },
       {
         "sentence": "(   ) 매우 작다.",
-        "answer": "분자"
+        "answer": "분자는"
       },
       {
         "sentence": "(   ) 결합하여 물질을 만든다.",
-        "answer": "분자"
+        "answer": "분자들이"
       }
     ]
   },
@@ -3891,23 +3891,23 @@
     "quiz": [
       {
         "sentence": "그는 좀 (   ) 이다.",
-        "answer": "자아도취적"
+        "answer": "자아도취적이다"
       },
       {
         "sentence": "(   ) 태도는 좋지 않다.",
-        "answer": "자아도취적"
+        "answer": "자아도취적인"
       },
       {
         "sentence": "(   ) 행동을 보였다.",
-        "answer": "자아도취적"
+        "answer": "자아도취적인"
       },
       {
         "sentence": "그의 말은 (   ) 들렸다.",
-        "answer": "자아도취적"
+        "answer": "자아도취적으로"
       },
       {
         "sentence": "그는 과거에 (   ) 이었다.",
-        "answer": "자아도취적"
+        "answer": "자아도취적이었다"
       }
     ]
   },
@@ -3915,7 +3915,7 @@
     "quiz": [
       {
         "sentence": "보고서 (   ) 맞춰 작성했다.",
-        "answer": "형식"
+        "answer": "형식에"
       },
       {
         "sentence": "이 문서는 어떤 (   ) 인가?",
@@ -3923,15 +3923,15 @@
       },
       {
         "sentence": "(   ) 너무 얽매이지 마라.",
-        "answer": "형식"
+        "answer": "형식에"
       },
       {
         "sentence": "(   ) 중요하지만 내용도 중요하다.",
-        "answer": "형식"
+        "answer": "형식도"
       },
       {
         "sentence": "(   ) 절차를 따랐다.",
-        "answer": "형식"
+        "answer": "형식적인"
       }
     ]
   },
@@ -3939,23 +3939,23 @@
     "quiz": [
       {
         "sentence": "우리의 반응은 (   ) 이었다.",
-        "answer": "집단적"
+        "answer": "집단적이었다"
       },
       {
         "sentence": "(   ) 행동은 위험할 수 있다.",
-        "answer": "집단적"
+        "answer": "집단적인"
       },
       {
         "sentence": "그들은 (   ) 으로 움직였다.",
-        "answer": "집단적"
+        "answer": "집단적으로"
       },
       {
         "sentence": "(   ) 의사결정이 필요하다.",
-        "answer": "집단적"
+        "answer": "집단적인"
       },
       {
         "sentence": "(   ) 사고방식을 가지고 있다.",
-        "answer": "집단적"
+        "answer": "집단적인"
       }
     ]
   },
@@ -4011,7 +4011,7 @@
     "quiz": [
       {
         "sentence": "(   ) 역사를 기록한다.",
-        "answer": "사관"
+        "answer": "사관은"
       },
       {
         "sentence": "유명한 (   ) 이었다.",
@@ -4019,15 +4019,15 @@
       },
       {
         "sentence": "(   ) 객관적인 시각이 중요하다.",
-        "answer": "사관"
+        "answer": "사관에게"
       },
       {
         "sentence": "(   ) 연구는 계속된다.",
-        "answer": "사관"
+        "answer": "사관의"
       },
       {
         "sentence": "그는 (   ) 길을 택했다.",
-        "answer": "사관"
+        "answer": "사관의"
       }
     ]
   },
@@ -4035,23 +4035,23 @@
     "quiz": [
       {
         "sentence": "다른 사람 일에 (   ) 마세요.",
-        "answer": "간섭"
+        "answer": "간섭하지"
       },
       {
         "sentence": "(   ) 원치 않는다.",
-        "answer": "간섭"
+        "answer": "간섭을"
       },
       {
         "sentence": "그의 (   ) 싫었다.",
-        "answer": "간섭"
+        "answer": "간섭이"
       },
       {
         "sentence": "(   ) 문제를 더 키울 뿐이다.",
-        "answer": "간섭"
+        "answer": "간섭은"
       },
       {
         "sentence": "불필요한 (   ) 없어야 한다.",
-        "answer": "간섭"
+        "answer": "간섭이"
       }
     ]
   },
@@ -4059,23 +4059,23 @@
     "quiz": [
       {
         "sentence": "그의 (   ) 일치한다.",
-        "answer": "언행"
+        "answer": "언행이"
       },
       {
         "sentence": "(   ) 조심해야 한다.",
-        "answer": "언행"
+        "answer": "언행을"
       },
       {
         "sentence": "(   ) 그 사람을 보여준다.",
-        "answer": "언행"
+        "answer": "언행은"
       },
       {
         "sentence": "(   ) 신중해야 한다.",
-        "answer": "언행"
+        "answer": "언행에"
       },
       {
         "sentence": "(   ) 항상 바르다.",
-        "answer": "언행"
+        "answer": "언행이"
       }
     ]
   },
@@ -4091,7 +4091,7 @@
       },
       {
         "sentence": "운동은 (   ) 좋다.",
-        "answer": "심혈관"
+        "answer": "심혈관에"
       },
       {
         "sentence": "(   ) 질병은 위험하다.",
@@ -4107,11 +4107,11 @@
     "quiz": [
       {
         "sentence": "그는 희귀 (   ) 앓고 있다.",
-        "answer": "질환"
+        "answer": "질환을"
       },
       {
         "sentence": "(   ) 조기 진단이 중요하다.",
-        "answer": "질환"
+        "answer": "질환은"
       },
       {
         "sentence": "(   ) 예방이 최선이다.",
@@ -4119,11 +4119,11 @@
       },
       {
         "sentence": "만성 (   ) 고통받는다.",
-        "answer": "질환"
+        "answer": "질환으로"
       },
       {
         "sentence": "(   ) 치료법을 연구한다.",
-        "answer": "질환"
+        "answer": "질환의"
       }
     ]
   },
@@ -4131,23 +4131,23 @@
     "quiz": [
       {
         "sentence": "(   ) 잘 읽어보세요.",
-        "answer": "규약문"
+        "answer": "규약문을"
       },
       {
         "sentence": "(   ) 동의해야 한다.",
-        "answer": "규약문"
+        "answer": "규약문에"
       },
       {
         "sentence": "(   ) 중요한 내용이 많다.",
-        "answer": "규약문"
+        "answer": "규약문은"
       },
       {
         "sentence": "(   ) 내용을 변경했다.",
-        "answer": "규약문"
+        "answer": "규약문의"
       },
       {
         "sentence": "(   ) 서명했다.",
-        "answer": "규약문"
+        "answer": "규약문에"
       }
     ]
   },
@@ -4227,7 +4227,7 @@
     "quiz": [
       {
         "sentence": "우리 회사는 (   ) 한다.",
-        "answer": "자율근무제"
+        "answer": "자율근무제를"
       },
       {
         "sentence": "(   ) 도입이 필요하다.",
@@ -4239,11 +4239,11 @@
       },
       {
         "sentence": "(   ) 대한 논의가 있다.",
-        "answer": "자율근무제"
+        "answer": "자율근무제에"
       },
       {
         "sentence": "(   ) 좋다고 생각한다.",
-        "answer": "자율근무제"
+        "answer": "자율근무제가"
       }
     ]
   },
@@ -4251,7 +4251,7 @@
     "quiz": [
       {
         "sentence": "(   ) 방식을 개선해야 한다.",
-        "answer": "기존"
+        "answer": "기존의"
       },
       {
         "sentence": "(   ) 것과 비교해 보세요.",
@@ -4275,7 +4275,7 @@
     "quiz": [
       {
         "sentence": "이상한 (   ) 나타났다.",
-        "answer": "현상"
+        "answer": "현상이"
       },
       {
         "sentence": "그것은 자연 (   ) 이다.",
@@ -4283,15 +4283,15 @@
       },
       {
         "sentence": "(   ) 분석하는 것이 중요하다.",
-        "answer": "현상"
+        "answer": "현상을"
       },
       {
         "sentence": "이런 (   ) 자주 발생한다.",
-        "answer": "현상"
+        "answer": "현상은"
       },
       {
         "sentence": "(   ) 대한 연구가 필요하다.",
-        "answer": "현상"
+        "answer": "현상에"
       }
     ]
   },
@@ -4299,15 +4299,15 @@
     "quiz": [
       {
         "sentence": "우리 (   ) 친절하다.",
-        "answer": "이웃"
+        "answer": "이웃은"
       },
       {
         "sentence": "(   ) 도왔다.",
-        "answer": "이웃"
+        "answer": "이웃을"
       },
       {
         "sentence": "(   ) 사이좋게 지내자.",
-        "answer": "이웃"
+        "answer": "이웃과"
       },
       {
         "sentence": "(   ) 집에서 소리가 들린다.",
@@ -4323,7 +4323,7 @@
     "quiz": [
       {
         "sentence": "(   ) 여행을 갈까?",
-        "answer": "올해"
+        "answer": "올해는"
       },
       {
         "sentence": "(   ) 날씨가 너무 덥다.",
@@ -4331,7 +4331,7 @@
       },
       {
         "sentence": "(   ) 목표를 세웠다.",
-        "answer": "올해"
+        "answer": "올해의"
       },
       {
         "sentence": "(   ) 시험에 합격했다.",
@@ -4347,7 +4347,7 @@
     "quiz": [
       {
         "sentence": "(   ) 다리가 길다.",
-        "answer": "타조"
+        "answer": "타조는"
       },
       {
         "sentence": "(   ) 알은 매우 크다.",
@@ -4355,15 +4355,15 @@
       },
       {
         "sentence": "(   ) 동물원에서 봤다.",
-        "answer": "타조"
+        "answer": "타조를"
       },
       {
         "sentence": "(   ) 달리기가 빠르다.",
-        "answer": "타조"
+        "answer": "타조의"
       },
       {
         "sentence": "(   ) 먹이를 주었다.",
-        "answer": "타조"
+        "answer": "타조에"
       }
     ]
   },
@@ -4371,15 +4371,15 @@
     "quiz": [
       {
         "sentence": "(   ) 나타났다.",
-        "answer": "적"
+        "answer": "적이"
       },
       {
         "sentence": "(   ) 물리쳤다.",
-        "answer": "적"
+        "answer": "적을"
       },
       {
         "sentence": "(   ) 친구가 될 수 있다.",
-        "answer": "적"
+        "answer": "적도"
       },
       {
         "sentence": "그는 나의 (   ) 이다.",
@@ -4387,7 +4387,7 @@
       },
       {
         "sentence": "(   ) 대한 정보를 모았다.",
-        "answer": "적"
+        "answer": "적에"
       }
     ]
   },
@@ -4419,15 +4419,15 @@
     "quiz": [
       {
         "sentence": "(   ) 예민한 동물이다.",
-        "answer": "청각"
+        "answer": "청각이"
       },
       {
         "sentence": "(   ) 문제가 생겼다.",
-        "answer": "청각"
+        "answer": "청각에"
       },
       {
         "sentence": "(   ) 보호하는 것이 좋다.",
-        "answer": "청각"
+        "answer": "청각을"
       },
       {
         "sentence": "(   ) 검사를 받았다.",
@@ -4443,11 +4443,11 @@
     "quiz": [
       {
         "sentence": "이 옷은 좋은 (   ) 만들었다.",
-        "answer": "섬유"
+        "answer": "섬유로"
       },
       {
         "sentence": "(   ) 종류가 매우 많다.",
-        "answer": "섬유"
+        "answer": "섬유의"
       },
       {
         "sentence": "(   ) 산업이 발전했다.",
@@ -4459,7 +4459,7 @@
       },
       {
         "sentence": "(   ) 염색을 했다.",
-        "answer": "섬유"
+        "answer": "섬유에"
       }
     ]
   },
@@ -4491,19 +4491,19 @@
     "quiz": [
       {
         "sentence": "(   ) 날씨는 매우 춥다.",
-        "answer": "남극"
+        "answer": "남극의"
       },
       {
         "sentence": "(   ) 탐험을 떠났다.",
-        "answer": "남극"
+        "answer": "남극으로"
       },
       {
         "sentence": "(   ) 동물들이 산다.",
-        "answer": "남극"
+        "answer": "남극에"
       },
       {
         "sentence": "(   ) 지구의 끝이다.",
-        "answer": "남극"
+        "answer": "남극은"
       },
       {
         "sentence": "(   ) 연구 기지가 있다.",
@@ -4539,19 +4539,19 @@
     "quiz": [
       {
         "sentence": "(   ) 증가로 가격이 올랐다.",
-        "answer": "수요"
+        "answer": "수요가"
       },
       {
         "sentence": "(   ) 공급의 균형이 중요하다.",
-        "answer": "수요"
+        "answer": "수요와"
       },
       {
         "sentence": "(   ) 예측하는 것이 어렵다.",
-        "answer": "수요"
+        "answer": "수요를"
       },
       {
         "sentence": "(   ) 대한 조사를 했다.",
-        "answer": "수요"
+        "answer": "수요에"
       },
       {
         "sentence": "(   ) 부족 현상이다.",
@@ -4567,19 +4567,19 @@
       },
       {
         "sentence": "(   ) 만들었다.",
-        "answer": "복제품"
+        "answer": "복제품을"
       },
       {
         "sentence": "(   ) 판매 금지다.",
-        "answer": "복제품"
+        "answer": "복제품은"
       },
       {
         "sentence": "(   ) 진품과 똑같다.",
-        "answer": "복제품"
+        "answer": "복제품이"
       },
       {
         "sentence": "(   ) 구별하기 어렵다.",
-        "answer": "복제품"
+        "answer": "복제품과"
       }
     ]
   },
@@ -4587,19 +4587,19 @@
     "quiz": [
       {
         "sentence": "(   ) 매우 많았다.",
-        "answer": "관람객"
+        "answer": "관람객이"
       },
       {
         "sentence": "(   ) 입장하고 있다.",
-        "answer": "관람객"
+        "answer": "관람객들이"
       },
       {
         "sentence": "(   ) 환영하는 행사다.",
-        "answer": "관람객"
+        "answer": "관람객을"
       },
       {
         "sentence": "(   ) 안전이 최우선이다.",
-        "answer": "관람객"
+        "answer": "관람객의"
       },
       {
         "sentence": "(   ) 위한 휴식 공간.",
@@ -4635,15 +4635,15 @@
     "quiz": [
       {
         "sentence": "샐러드에 (   ) 넣었다.",
-        "answer": "무순"
+        "answer": "무순을"
       },
       {
         "sentence": "(   ) 신선하고 맛있다.",
-        "answer": "무순"
+        "answer": "무순은"
       },
       {
         "sentence": "(   ) 비빔밥에 잘 어울린다.",
-        "answer": "무순"
+        "answer": "무순이"
       },
       {
         "sentence": "(   ) 재배하는 법을 배웠다.",
@@ -4683,7 +4683,7 @@
     "quiz": [
       {
         "sentence": "은행에서 (   ) 받았다.",
-        "answer": "대출"
+        "answer": "대출을"
       },
       {
         "sentence": "(   ) 금리가 인상됐다.",
@@ -4707,7 +4707,7 @@
     "quiz": [
       {
         "sentence": "(   ) 인상으로 부담이 크다.",
-        "answer": "금리"
+        "answer": "금리가"
       },
       {
         "sentence": "(   ) 인하를 기대한다.",
@@ -4723,7 +4723,7 @@
       },
       {
         "sentence": "(   ) 대한 논의가 활발하다.",
-        "answer": "금리"
+        "answer": "금리에"
       }
     ]
   },
@@ -4731,19 +4731,19 @@
     "quiz": [
       {
         "sentence": "주가가 (   ) 보였다.",
-        "answer": "하락세"
+        "answer": "하락세를"
       },
       {
         "sentence": "시장이 (   ) 접어들었다.",
-        "answer": "하락세"
+        "answer": "하락세에"
       },
       {
         "sentence": "(   ) 이어지고 있다.",
-        "answer": "하락세"
+        "answer": "하락세가"
       },
       {
         "sentence": "(   ) 멈출 기미가 없다.",
-        "answer": "하락세"
+        "answer": "하락세는"
       },
       {
         "sentence": "(   ) 반전이 필요하다.",
@@ -4771,7 +4771,7 @@
       },
       {
         "sentence": "(   ) 에 대한 규제가 있다.",
-        "answer": "부동산"
+        "answer": "부동산에"
       }
     ]
   },
@@ -4779,11 +4779,11 @@
     "quiz": [
       {
         "sentence": "아침에 (   ) 켰다.",
-        "answer": "기지개"
+        "answer": "기지개를"
       },
       {
         "sentence": "경제가 (   ) 켜고 있다.",
-        "answer": "기지개"
+        "answer": "기지개를"
       },
       {
         "sentence": "(   ) 켜는 운동을 한다.",
@@ -4791,11 +4791,11 @@
       },
       {
         "sentence": "(   ) 효과는 좋다.",
-        "answer": "기지개"
+        "answer": "기지개의"
       },
       {
         "sentence": "(   ) 켜는 것이 시원하다.",
-        "answer": "기지개"
+        "answer": "기지개는"
       }
     ]
   },
@@ -4807,19 +4807,19 @@
       },
       {
         "sentence": "여름에는 (   ) 강하다.",
-        "answer": "자외선"
+        "answer": "자외선이"
       },
       {
         "sentence": "피부 보호를 위해 (   ) 바른다.",
-        "answer": "자외선"
+        "answer": "자외선을"
       },
       {
         "sentence": "(   ) 피부를 보호하자.",
-        "answer": "자외선"
+        "answer": "자외선으로부터"
       },
       {
         "sentence": "(   ) 노출을 피하세요.",
-        "answer": "자외선"
+        "answer": "자외선에"
       }
     ]
   },
@@ -4827,7 +4827,7 @@
     "quiz": [
       {
         "sentence": "그는 참 (   ) 사람이다.",
-        "answer": "동적"
+        "answer": "동적인"
       },
       {
         "sentence": "이 그림은 (   ) 느낌을 준다.",
@@ -4835,15 +4835,15 @@
       },
       {
         "sentence": "그의 움직임은 (   ) 변한다.",
-        "answer": "동적"
+        "answer": "동적으로"
       },
       {
         "sentence": "이것은 매우 (   ).",
-        "answer": "동적"
+        "answer": "동적이다"
       },
       {
         "sentence": "그 시스템은 (   ) 않았다.",
-        "answer": "동적"
+        "answer": "동적이지"
       }
     ]
   },
@@ -4855,19 +4855,19 @@
       },
       {
         "sentence": "(   ) 시원하게 흐른다.",
-        "answer": "폭포"
+        "answer": "폭포가"
       },
       {
         "sentence": "우리는 (   ) 보러 갔다.",
-        "answer": "폭포"
+        "answer": "폭포를"
       },
       {
         "sentence": "(   ) 물줄기가 떨어진다.",
-        "answer": "폭포"
+        "answer": "폭포에서"
       },
       {
         "sentence": "머리카락이 (   ) 내려온다.",
-        "answer": "폭포"
+        "answer": "폭포처럼"
       }
     ]
   },
@@ -4879,19 +4879,19 @@
       },
       {
         "sentence": "이 그림은 (   ) 있다.",
-        "answer": "생동감"
+        "answer": "생동감이"
       },
       {
         "sentence": "작가님은 (   ) 표현했다.",
-        "answer": "생동감"
+        "answer": "생동감을"
       },
       {
         "sentence": "(   ) 그림을 그렸다.",
-        "answer": "생동감"
+        "answer": "생동감 있는"
       },
       {
         "sentence": "그는 (   ) 연기를 보여줬다.",
-        "answer": "생동감"
+        "answer": "생동감 넘치는"
       }
     ]
   },
@@ -4927,19 +4927,19 @@
       },
       {
         "sentence": "(   ) 설교를 시작했다.",
-        "answer": "성직자"
+        "answer": "성직자가"
       },
       {
         "sentence": "사람들은 (   ) 존경한다.",
-        "answer": "성직자"
+        "answer": "성직자를"
       },
       {
         "sentence": "(   ) 삶은 경건하다.",
-        "answer": "성직자"
+        "answer": "성직자의"
       },
       {
         "sentence": "그는 (   ) 되었다.",
-        "answer": "성직자"
+        "answer": "성직자로"
       }
     ]
   },
@@ -4975,19 +4975,19 @@
       },
       {
         "sentence": "(   ) 성경이 따로 있다.",
-        "answer": "성직자용"
+        "answer": "성직자용의"
       },
       {
         "sentence": "그것은 (   ) 만들어졌다.",
-        "answer": "성직자용"
+        "answer": "성직자용으로"
       },
       {
         "sentence": "이 물건은 (   ).",
-        "answer": "성직자용"
+        "answer": "성직자용이다"
       },
       {
         "sentence": "교회에 (   ) 물품이 많다.",
-        "answer": "성직자용"
+        "answer": "성직자용품"
       }
     ]
   },
@@ -4999,19 +4999,19 @@
       },
       {
         "sentence": "(   ) 질병을 일으킨다.",
-        "answer": "세균"
+        "answer": "세균이"
       },
       {
         "sentence": "손을 씻어 (   ) 없앤다.",
-        "answer": "세균"
+        "answer": "세균을"
       },
       {
         "sentence": "물건이 (   ) 오염되었다.",
-        "answer": "세균"
+        "answer": "세균으로"
       },
       {
         "sentence": "(   ) 싸워야 한다.",
-        "answer": "세균"
+        "answer": "세균과"
       }
     ]
   },
@@ -5047,19 +5047,19 @@
       },
       {
         "sentence": "(   ) 확산되고 있다.",
-        "answer": "감염"
+        "answer": "감염이"
       },
       {
         "sentence": "(   ) 막는 것이 중요하다.",
-        "answer": "감염"
+        "answer": "감염을"
       },
       {
         "sentence": "(   ) 위험이 높다.",
-        "answer": "감염"
+        "answer": "감염의"
       },
       {
         "sentence": "(   ) 보호해야 한다.",
-        "answer": "감염"
+        "answer": "감염으로부터"
       }
     ]
   },
@@ -5119,19 +5119,19 @@
       },
       {
         "sentence": "(   ) 최선이다.",
-        "answer": "예방"
+        "answer": "예방이"
       },
       {
         "sentence": "우리는 질병 (   ) 노력한다.",
-        "answer": "예방"
+        "answer": "예방을"
       },
       {
         "sentence": "치료 (   ) 중요하다.",
-        "answer": "예방"
+        "answer": "예방과"
       },
       {
         "sentence": "(   ) 손을 씻자.",
-        "answer": "예방"
+        "answer": "예방을 위해"
       }
     ]
   },
@@ -5143,19 +5143,19 @@
       },
       {
         "sentence": "(   ) 농작물을 망친다.",
-        "answer": "병해충"
+        "answer": "병해충이"
       },
       {
         "sentence": "농부들은 (   ) 막는다.",
-        "answer": "병해충"
+        "answer": "병해충을"
       },
       {
         "sentence": "이 식물은 (   ) 강하다.",
-        "answer": "병해충"
+        "answer": "병해충에도"
       },
       {
         "sentence": "(   ) 보호해야 한다.",
-        "answer": "병해충"
+        "answer": "병해충으로부터"
       }
     ]
   },
@@ -5167,19 +5167,19 @@
       },
       {
         "sentence": "(   ) 사람들은 세금을 많이 낸다.",
-        "answer": "고소득"
+        "answer": "고소득자"
       },
       {
         "sentence": "(   ) 세율이 높다.",
-        "answer": "고소득"
+        "answer": "고소득층"
       },
       {
         "sentence": "(   ) 직업을 원한다.",
-        "answer": "고소득"
+        "answer": "고소득의"
       },
       {
         "sentence": "(   ) 생활한다.",
-        "answer": "고소득"
+        "answer": "고소득으로"
       }
     ]
   },
@@ -5191,19 +5191,19 @@
       },
       {
         "sentence": "(   ) 많은 책을 썼다.",
-        "answer": "서유구"
+        "answer": "서유구가"
       },
       {
         "sentence": "(   ) 실학자였다.",
-        "answer": "서유구"
+        "answer": "서유구는"
       },
       {
         "sentence": "(   ) 연구는 깊이가 있다.",
-        "answer": "서유구"
+        "answer": "서유구의"
       },
       {
         "sentence": "(   ) 대한 기록이 있다.",
-        "answer": "서유구"
+        "answer": "서유구에"
       }
     ]
   },
@@ -5239,19 +5239,19 @@
       },
       {
         "sentence": "(   ) 많아서 행복하다.",
-        "answer": "서적"
+        "answer": "서적이"
       },
       {
         "sentence": "나는 (   ) 읽는 것을 좋아한다.",
-        "answer": "서적"
+        "answer": "서적을"
       },
       {
         "sentence": "오래된 (   ) 연구했다.",
-        "answer": "서적"
+        "answer": "서적들을"
       },
       {
         "sentence": "(   ) 정보를 찾았다.",
-        "answer": "서적"
+        "answer": "서적에서"
       }
     ]
   },
@@ -5263,19 +5263,19 @@
       },
       {
         "sentence": "(   ) 날카롭다.",
-        "answer": "논평"
+        "answer": "논평이"
       },
       {
         "sentence": "기자는 (   ) 남겼다.",
-        "answer": "논평"
+        "answer": "논평을"
       },
       {
         "sentence": "기사와 (   ) 함께 실렸다.",
-        "answer": "논평"
+        "answer": "논평과"
       },
       {
         "sentence": "(   ) 질문이 많았다.",
-        "answer": "논평"
+        "answer": "논평에"
       }
     ]
   },
@@ -5287,19 +5287,19 @@
       },
       {
         "sentence": "그는 (   ) 지식이 깊다.",
-        "answer": "서지학적"
+        "answer": "서지학적인"
       },
       {
         "sentence": "문헌을 (   ) 분석했다.",
-        "answer": "서지학적"
+        "answer": "서지학적으로"
       },
       {
         "sentence": "이것은 매우 (   ).",
-        "answer": "서지학적"
+        "answer": "서지학적이다"
       },
       {
         "sentence": "그의 주장은 (   ) 않았다.",
-        "answer": "서지학적"
+        "answer": "서지학적이지"
       }
     ]
   },
@@ -5383,19 +5383,19 @@
       },
       {
         "sentence": "(   ) 청소해야 한다.",
-        "answer": "배설물"
+        "answer": "배설물을"
       },
       {
         "sentence": "(   ) 오염의 원인이다.",
-        "answer": "배설물"
+        "answer": "배설물이"
       },
       {
         "sentence": "(   ) 처리하는 방법.",
-        "answer": "배설물"
+        "answer": "배설물의"
       },
       {
         "sentence": "(   ) 쓰레기를 버렸다.",
-        "answer": "배설물"
+        "answer": "배설물과"
       }
     ]
   },
@@ -5411,15 +5411,15 @@
       },
       {
         "sentence": "(   ) 행성이 많다.",
-        "answer": "태양계"
+        "answer": "태양계에는"
       },
       {
         "sentence": "(   ) 중심은 태양이다.",
-        "answer": "태양계"
+        "answer": "태양계의"
       },
       {
         "sentence": "오늘은 (   ) 대해 배웠다.",
-        "answer": "태양계"
+        "answer": "태양계에"
       }
     ]
   },
@@ -5427,23 +5427,23 @@
     "quiz": [
       {
         "sentence": "(   ) 발견했다.",
-        "answer": "소행성"
+        "answer": "소행성을"
       },
       {
         "sentence": "(   ) 돌이 많다.",
-        "answer": "소행성"
+        "answer": "소행성에는"
       },
       {
         "sentence": "(   ) 크기가 다양하다.",
-        "answer": "소행성"
+        "answer": "소행성은"
       },
       {
         "sentence": "(   ) 탐사선이 착륙했다.",
-        "answer": "소행성"
+        "answer": "소행성에"
       },
       {
         "sentence": "(   ) 충돌할 수 있다.",
-        "answer": "소행성"
+        "answer": "소행성과"
       }
     ]
   },
@@ -5451,23 +5451,23 @@
     "quiz": [
       {
         "sentence": "이 돌에는 (   ) 많다.",
-        "answer": "광물"
+        "answer": "광물이"
       },
       {
         "sentence": "(   ) 채취했다.",
-        "answer": "광물"
+        "answer": "광물을"
       },
       {
         "sentence": "(   ) 종류가 다양하다.",
-        "answer": "광물"
+        "answer": "광물은"
       },
       {
         "sentence": "땅속에는 (   ) 있다.",
-        "answer": "광물"
+        "answer": "광물이"
       },
       {
         "sentence": "(   ) 만들어진 물건이다.",
-        "answer": "광물"
+        "answer": "광물로"
       }
     ]
   },
@@ -5475,11 +5475,11 @@
     "quiz": [
       {
         "sentence": "(   ) 채취했다.",
-        "answer": "시료"
+        "answer": "시료를"
       },
       {
         "sentence": "(   ) 부족하다.",
-        "answer": "시료"
+        "answer": "시료가"
       },
       {
         "sentence": "이것은 (   ) 이다.",
@@ -5487,11 +5487,11 @@
       },
       {
         "sentence": "(   ) 연구에 필요하다.",
-        "answer": "시료"
+        "answer": "시료는"
       },
       {
         "sentence": "(   ) 분석했다.",
-        "answer": "시료"
+        "answer": "시료를"
       }
     ]
   },
@@ -5523,7 +5523,7 @@
     "quiz": [
       {
         "sentence": "우주 (   ) 시작되었다.",
-        "answer": "탐사"
+        "answer": "탐사가"
       },
       {
         "sentence": "새로운 지역을 (   ) 한다.",
@@ -5531,15 +5531,15 @@
       },
       {
         "sentence": "(   ) 나섰다.",
-        "answer": "탐사"
+        "answer": "탐사에"
       },
       {
         "sentence": "달 (   ) 성공했다.",
-        "answer": "탐사"
+        "answer": "탐사는"
       },
       {
         "sentence": "(   ) 목적은 무엇인가?",
-        "answer": "탐사"
+        "answer": "탐사의"
       }
     ]
   },
@@ -5547,23 +5547,23 @@
     "quiz": [
       {
         "sentence": "경제가 (   ) 빠졌다.",
-        "answer": "침체"
+        "answer": "침체에"
       },
       {
         "sentence": "(   ) 길어지고 있다.",
-        "answer": "침체"
+        "answer": "침체가"
       },
       {
         "sentence": "(   ) 극복해야 한다.",
-        "answer": "침체"
+        "answer": "침체를"
       },
       {
         "sentence": "(   ) 시장은 어렵다.",
-        "answer": "침체"
+        "answer": "침체된"
       },
       {
         "sentence": "(   ) 벗어나야 한다.",
-        "answer": "침체"
+        "answer": "침체에서"
       }
     ]
   },
@@ -5571,15 +5571,15 @@
     "quiz": [
       {
         "sentence": "매달 (   ) 한다.",
-        "answer": "저축"
+        "answer": "저축을"
       },
       {
         "sentence": "(   ) 늘었다.",
-        "answer": "저축"
+        "answer": "저축이"
       },
       {
         "sentence": "(   ) 습관이 좋다.",
-        "answer": "저축"
+        "answer": "저축하는"
       },
       {
         "sentence": "은행에 (   ) 했다.",
@@ -5587,7 +5587,7 @@
       },
       {
         "sentence": "미래를 위해 (   ) 필요하다.",
-        "answer": "저축"
+        "answer": "저축은"
       }
     ]
   },
@@ -5595,23 +5595,23 @@
     "quiz": [
       {
         "sentence": "새로운 (   ) 창출했다.",
-        "answer": "고용"
+        "answer": "고용을"
       },
       {
         "sentence": "(   ) 늘었다.",
-        "answer": "고용"
+        "answer": "고용이"
       },
       {
         "sentence": "(   ) 안정적이다.",
-        "answer": "고용"
+        "answer": "고용은"
       },
       {
         "sentence": "회사는 그를 (   ).",
-        "answer": "고용"
+        "answer": "고용했다"
       },
       {
         "sentence": "(   ) 인원수가 많다.",
-        "answer": "고용"
+        "answer": "고용된"
       }
     ]
   },
@@ -5619,23 +5619,23 @@
     "quiz": [
       {
         "sentence": "(   ) 시행되었다.",
-        "answer": "쿼터제"
+        "answer": "쿼터제가"
       },
       {
         "sentence": "(   ) 도입했다.",
-        "answer": "쿼터제"
+        "answer": "쿼터제를"
       },
       {
         "sentence": "(   ) 목적은 공정성이다.",
-        "answer": "쿼터제"
+        "answer": "쿼터제의"
       },
       {
         "sentence": "(   ) 반대하는 사람도 있다.",
-        "answer": "쿼터제"
+        "answer": "쿼터제에"
       },
       {
         "sentence": "(   ) 찬성했다.",
-        "answer": "쿼터제"
+        "answer": "쿼터제에"
       }
     ]
   },
@@ -5667,23 +5667,23 @@
     "quiz": [
       {
         "sentence": "물고기 (   ) 금지되었다.",
-        "answer": "포획"
+        "answer": "포획이"
       },
       {
         "sentence": "(   ) 성공했다.",
-        "answer": "포획"
+        "answer": "포획에"
       },
       {
         "sentence": "동물 (   ) 허가받아야 한다.",
-        "answer": "포획"
+        "answer": "포획은"
       },
       {
         "sentence": "새를 (   ) 놓아주었다.",
-        "answer": "포획"
+        "answer": "포획하여"
       },
       {
         "sentence": "(   ) 새를 연구했다.",
-        "answer": "포획"
+        "answer": "포획된"
       }
     ]
   },
@@ -5691,23 +5691,23 @@
     "quiz": [
       {
         "sentence": "올해 (   ) 줄었다.",
-        "answer": "어획량"
+        "answer": "어획량이"
       },
       {
         "sentence": "(   ) 제한해야 한다.",
-        "answer": "어획량"
+        "answer": "어획량을"
       },
       {
         "sentence": "(   ) 감소가 심각하다.",
-        "answer": "어획량"
+        "answer": "어획량의"
       },
       {
         "sentence": "(   ) 많이 늘었다.",
-        "answer": "어획량"
+        "answer": "어획량이"
       },
       {
         "sentence": "(   ) 규제가 필요하다.",
-        "answer": "어획량"
+        "answer": "어획량에"
       }
     ]
   },
@@ -5739,7 +5739,7 @@
     "quiz": [
       {
         "sentence": "(   ) 물고기가 많다.",
-        "answer": "연안"
+        "answer": "연안에"
       },
       {
         "sentence": "(   ) 오염이 심각하다.",
@@ -5747,15 +5747,15 @@
       },
       {
         "sentence": "(   ) 조업이 금지되었다.",
-        "answer": "연안"
+        "answer": "연안에서"
       },
       {
         "sentence": "(   ) 보호가 필요하다.",
-        "answer": "연안"
+        "answer": "연안은"
       },
       {
         "sentence": "(   ) 생물 다양성이 높다.",
-        "answer": "연안"
+        "answer": "연안의"
       }
     ]
   },
@@ -5763,15 +5763,15 @@
     "quiz": [
       {
         "sentence": "(   ) 낮아졌다.",
-        "answer": "수온"
+        "answer": "수온이"
       },
       {
         "sentence": "(   ) 측정했다.",
-        "answer": "수온"
+        "answer": "수온을"
       },
       {
         "sentence": "(   ) 변화가 크다.",
-        "answer": "수온"
+        "answer": "수온의"
       },
       {
         "sentence": "(   ) 상승은 문제이다.",
@@ -5779,7 +5779,7 @@
       },
       {
         "sentence": "(   ) 올라갔다.",
-        "answer": "수온"
+        "answer": "수온이"
       }
     ]
   },
@@ -5815,11 +5815,11 @@
       },
       {
         "sentence": "(   ) 보호해야 한다.",
-        "answer": "개체"
+        "answer": "개체를"
       },
       {
         "sentence": "(   ) 수가 줄어들었다.",
-        "answer": "개체"
+        "answer": "개체가"
       },
       {
         "sentence": "(   ) 하나하나 소중하다.",
@@ -5827,7 +5827,7 @@
       },
       {
         "sentence": "(   ) 생명은 중요하다.",
-        "answer": "개체"
+        "answer": "개체의"
       }
     ]
   },
@@ -5835,15 +5835,15 @@
     "quiz": [
       {
         "sentence": "인구 (   ) 조사했다.",
-        "answer": "증감"
+        "answer": "증감을"
       },
       {
         "sentence": "(   ) 폭이 크다.",
-        "answer": "증감"
+        "answer": "증감의"
       },
       {
         "sentence": "(   ) 반복되었다.",
-        "answer": "증감"
+        "answer": "증감이"
       },
       {
         "sentence": "(   ) 요인을 분석해야 한다.",
@@ -5851,7 +5851,7 @@
       },
       {
         "sentence": "매년 (   ) 기록한다.",
-        "answer": "증감"
+        "answer": "증감을"
       }
     ]
   },
@@ -5883,23 +5883,23 @@
     "quiz": [
       {
         "sentence": "(   ) 필요하다.",
-        "answer": "융통성"
+        "answer": "융통성이"
       },
       {
         "sentence": "(   ) 발휘해야 한다.",
-        "answer": "융통성"
+        "answer": "융통성을"
       },
       {
         "sentence": "(   ) 좋다.",
-        "answer": "융통성"
+        "answer": "융통성이"
       },
       {
         "sentence": "(   ) 계획이 중요하다.",
-        "answer": "융통성"
+        "answer": "융통성 있는"
       },
       {
         "sentence": "(   ) 업무에 도움이 된다.",
-        "answer": "융통성"
+        "answer": "융통성은"
       }
     ]
   },
@@ -5907,23 +5907,23 @@
     "quiz": [
       {
         "sentence": "가격 (   ) 필요하다.",
-        "answer": "조정"
+        "answer": "조정이"
       },
       {
         "sentence": "(   ) 했다.",
-        "answer": "조정"
+        "answer": "조정을"
       },
       {
         "sentence": "(   ) 쉽지 않다.",
-        "answer": "조정"
+        "answer": "조정은"
       },
       {
         "sentence": "(   ) 예산을 사용했다.",
-        "answer": "조정"
+        "answer": "조정된"
       },
       {
         "sentence": "시간을 (   ) 만났다.",
-        "answer": "조정"
+        "answer": "조정하여"
       }
     ]
   },
@@ -5931,23 +5931,23 @@
     "quiz": [
       {
         "sentence": "(   ) 발명이었다.",
-        "answer": "획기적"
+        "answer": "획기적인"
       },
       {
         "sentence": "기술이 (   ) 발전했다.",
-        "answer": "획기적"
+        "answer": "획기적으로"
       },
       {
         "sentence": "(   ) 아이디어가 필요하다.",
-        "answer": "획기적"
+        "answer": "획기적인"
       },
       {
         "sentence": "그의 제안은 (   ).",
-        "answer": "획기적"
+        "answer": "획기적이다"
       },
       {
         "sentence": "(   ) 변화를 가져왔다.",
-        "answer": "획기적"
+        "answer": "획기적인"
       }
     ]
   },
@@ -5955,7 +5955,7 @@
     "quiz": [
       {
         "sentence": "최종 (   ) 발표했다.",
-        "answer": "선정"
+        "answer": "선정을"
       },
       {
         "sentence": "(   ) 결과가 나왔다.",
@@ -5963,15 +5963,15 @@
       },
       {
         "sentence": "(   ) 기준이 명확하다.",
-        "answer": "선정"
+        "answer": "선정의"
       },
       {
         "sentence": "(   ) 쉽지 않았다.",
-        "answer": "선정"
+        "answer": "선정이"
       },
       {
         "sentence": "(   ) 작품을 전시했다.",
-        "answer": "선정"
+        "answer": "선정된"
       }
     ]
   },
@@ -5979,23 +5979,23 @@
     "quiz": [
       {
         "sentence": "(   ) 결과였다.",
-        "answer": "필연적"
+        "answer": "필연적인"
       },
       {
         "sentence": "그것은 (   ) 일이다.",
-        "answer": "필연적"
+        "answer": "필연적인"
       },
       {
         "sentence": "(   ) 그렇게 될 것이다.",
-        "answer": "필연적"
+        "answer": "필연적으로"
       },
       {
         "sentence": "변화는 (   ).",
-        "answer": "필연적"
+        "answer": "필연적이다"
       },
       {
         "sentence": "(   ) 사건이었다.",
-        "answer": "필연적"
+        "answer": "필연적인"
       }
     ]
   },
@@ -6007,19 +6007,19 @@
       },
       {
         "sentence": "이곳은 법의 (   ) 입니다.",
-        "answer": "사각지대"
+        "answer": "사각지대이다"
       },
       {
         "sentence": "사회적 (   ) 없애야 합니다.",
-        "answer": "사각지대"
+        "answer": "사각지대를"
       },
       {
         "sentence": "그는 늘 (   ) 살았다.",
-        "answer": "사각지대"
+        "answer": "사각지대에서"
       },
       {
         "sentence": "(   ) 문제가 크다.",
-        "answer": "사각지대"
+        "answer": "사각지대의"
       }
     ]
   },
@@ -6027,23 +6027,23 @@
     "quiz": [
       {
         "sentence": "오늘 경기 (   ) 높았다.",
-        "answer": "득점"
+        "answer": "득점이"
       },
       {
         "sentence": "결승골로 (   ) 했다.",
-        "answer": "득점"
+        "answer": "득점했다"
       },
       {
         "sentence": "그 선수의 (   ) 대단하다.",
-        "answer": "득점"
+        "answer": "득점은"
       },
       {
         "sentence": "(   ) 을 많이 해야 한다.",
-        "answer": "득점"
+        "answer": "득점을"
       },
       {
         "sentence": "(   ) 찬스를 놓쳤다.",
-        "answer": "득점"
+        "answer": "득점할"
       }
     ]
   },
@@ -6055,7 +6055,7 @@
       },
       {
         "sentence": "(   ) 인터넷이 필요해요.",
-        "answer": "초고속"
+        "answer": "초고속의"
       },
       {
         "sentence": "(   ) 배송이 빠르다.",
@@ -6063,11 +6063,11 @@
       },
       {
         "sentence": "그는 (   ) 으로 달렸다.",
-        "answer": "초고속"
+        "answer": "초고속으로"
       },
       {
         "sentence": "(   ) 에 놀랐다.",
-        "answer": "초고속"
+        "answer": "초고속에"
       }
     ]
   },
@@ -6075,11 +6075,11 @@
     "quiz": [
       {
         "sentence": "(   ) 날씨가 좋다.",
-        "answer": "지중해"
+        "answer": "지중해는"
       },
       {
         "sentence": "(   ) 여행을 가고 싶다.",
-        "answer": "지중해"
+        "answer": "지중해로"
       },
       {
         "sentence": "(   ) 요리가 맛있다.",
@@ -6087,11 +6087,11 @@
       },
       {
         "sentence": "(   ) 섬들이 아름답다.",
-        "answer": "지중해"
+        "answer": "지중해의"
       },
       {
         "sentence": "(   ) 연안 국가가 많다.",
-        "answer": "지중해"
+        "answer": "지중해에"
       }
     ]
   },
@@ -6103,19 +6103,19 @@
       },
       {
         "sentence": "(   ) 두껍게 쌓였다.",
-        "answer": "퇴적층"
+        "answer": "퇴적층이"
       },
       {
         "sentence": "(   ) 분석이 필요하다.",
-        "answer": "퇴적층"
+        "answer": "퇴적층의"
       },
       {
         "sentence": "지하에서 (   ) 찾았다.",
-        "answer": "퇴적층"
+        "answer": "퇴적층을"
       },
       {
         "sentence": "(   ) 형성된 지형이다.",
-        "answer": "퇴적층"
+        "answer": "퇴적층으로"
       }
     ]
   },
@@ -6127,19 +6127,19 @@
       },
       {
         "sentence": "(   ) 이동설을 배웠다.",
-        "answer": "대륙"
+        "answer": "대륙의"
       },
       {
         "sentence": "(   ) 횡단 여행을 했다.",
-        "answer": "대륙"
+        "answer": "대륙을"
       },
       {
         "sentence": "(   ) 에서 살고 싶다.",
-        "answer": "대륙"
+        "answer": "대륙에서"
       },
       {
         "sentence": "(   ) 별로 나누었다.",
-        "answer": "대륙"
+        "answer": "대륙으로"
       }
     ]
   },
@@ -6147,23 +6147,23 @@
     "quiz": [
       {
         "sentence": "이곳 (   ) 좋다.",
-        "answer": "기후"
+        "answer": "기후가"
       },
       {
         "sentence": "한국의 (   ) 는 어때요?",
-        "answer": "기후"
+        "answer": "기후는"
       },
       {
         "sentence": "지역 (   ) 따라 다르다.",
-        "answer": "기후"
+        "answer": "기후에"
       },
       {
         "sentence": "(   ) 를 연구한다.",
-        "answer": "기후"
+        "answer": "기후를"
       },
       {
         "sentence": "(   ) 의 변화가 심각하다.",
-        "answer": "기후"
+        "answer": "기후의"
       }
     ]
   },
@@ -6243,15 +6243,15 @@
     "quiz": [
       {
         "sentence": "왕께 (   ) 올렸다.",
-        "answer": "상소문"
+        "answer": "상소문을"
       },
       {
         "sentence": "(   ) 내용이 중요하다.",
-        "answer": "상소문"
+        "answer": "상소문의"
       },
       {
         "sentence": "많은 (   ) 이 올라왔다.",
-        "answer": "상소문"
+        "answer": "상소문이"
       },
       {
         "sentence": "이것은 (   ) 이다.",
@@ -6259,7 +6259,7 @@
       },
       {
         "sentence": "(   ) 제출한 기록이다.",
-        "answer": "상소문"
+        "answer": "상소문으로"
       }
     ]
   },
@@ -6267,7 +6267,7 @@
     "quiz": [
       {
         "sentence": "이 책의 (   ) 누구인가?",
-        "answer": "저자"
+        "answer": "저자는"
       },
       {
         "sentence": "유명한 (   ) 이다.",
@@ -6275,15 +6275,15 @@
       },
       {
         "sentence": "(   ) 사인을 받았다.",
-        "answer": "저자"
+        "answer": "저자의"
       },
       {
         "sentence": "(   ) 직접 만났다.",
-        "answer": "저자"
+        "answer": "저자를"
       },
       {
         "sentence": "(   ) 함께 책을 썼다.",
-        "answer": "저자"
+        "answer": "저자와"
       }
     ]
   },
@@ -6291,7 +6291,7 @@
     "quiz": [
       {
         "sentence": "큰 (   ) 을 얻었다.",
-        "answer": "깨우침"
+        "answer": "깨우침을"
       },
       {
         "sentence": "인생의 (   ) 이었다.",
@@ -6299,15 +6299,15 @@
       },
       {
         "sentence": "(   ) 순간이 왔다.",
-        "answer": "깨우침"
+        "answer": "깨우침의"
       },
       {
         "sentence": "(   ) 덕분에 성장했다.",
-        "answer": "깨우침"
+        "answer": "깨우침으로"
       },
       {
         "sentence": "(   ) 이 필요하다.",
-        "answer": "깨우침"
+        "answer": "깨우침이"
       }
     ]
   },
@@ -6315,7 +6315,7 @@
     "quiz": [
       {
         "sentence": "스님이 (   ) 들었다.",
-        "answer": "죽비"
+        "answer": "죽비를"
       },
       {
         "sentence": "(   ) 소리가 울렸다.",
@@ -6323,15 +6323,15 @@
       },
       {
         "sentence": "(   ) 로 정신을 차렸다.",
-        "answer": "죽비"
+        "answer": "죽비로"
       },
       {
         "sentence": "(   ) 의 의미를 물었다.",
-        "answer": "죽비"
+        "answer": "죽비의"
       },
       {
         "sentence": "(   ) 는 수행 도구이다.",
-        "answer": "죽비"
+        "answer": "죽비는"
       }
     ]
   },
@@ -6347,15 +6347,15 @@
       },
       {
         "sentence": "(   ) 의 충고를 들었다.",
-        "answer": "신하"
+        "answer": "신하의"
       },
       {
         "sentence": "왕이 (   ) 를 불렀다.",
-        "answer": "신하"
+        "answer": "신하를"
       },
       {
         "sentence": "(   ) 에게 상을 내렸다.",
-        "answer": "신하"
+        "answer": "신하에게"
       }
     ]
   },
@@ -6363,23 +6363,23 @@
     "quiz": [
       {
         "sentence": "그의 (   ) 이 폭발했다.",
-        "answer": "노여움"
+        "answer": "노여움이"
       },
       {
         "sentence": "(   ) 을 참기 어려웠다.",
-        "answer": "노여움"
+        "answer": "노여움을"
       },
       {
         "sentence": "(   ) 에 찬 목소리였다.",
-        "answer": "노여움"
+        "answer": "노여움에"
       },
       {
         "sentence": "(   ) 으로 얼굴이 붉어졌다.",
-        "answer": "노여움"
+        "answer": "노여움으로"
       },
       {
         "sentence": "(   ) 의 표정을 보였다.",
-        "answer": "노여움"
+        "answer": "노여움의"
       }
     ]
   },
@@ -6411,7 +6411,7 @@
     "quiz": [
       {
         "sentence": "그리스 (   ) 를 좋아한다.",
-        "answer": "신화"
+        "answer": "신화를"
       },
       {
         "sentence": "(   ) 속 이야기가 흥미롭다.",
@@ -6419,15 +6419,15 @@
       },
       {
         "sentence": "(   ) 는 재미있는 이야기다.",
-        "answer": "신화"
+        "answer": "신화는"
       },
       {
         "sentence": "(   ) 속 영웅이 등장한다.",
-        "answer": "신화"
+        "answer": "신화의"
       },
       {
         "sentence": "(   ) 로부터 교훈을 얻었다.",
-        "answer": "신화"
+        "answer": "신화로부터"
       }
     ]
   },
@@ -6459,11 +6459,11 @@
     "quiz": [
       {
         "sentence": "(   ) 은 긴 강이다.",
-        "answer": "낙동강"
+        "answer": "낙동강은"
       },
       {
         "sentence": "(   ) 에 다리를 놓았다.",
-        "answer": "낙동강"
+        "answer": "낙동강에"
       },
       {
         "sentence": "(   ) 유역은 넓다.",
@@ -6471,11 +6471,11 @@
       },
       {
         "sentence": "(   ) 의 물이 흐른다.",
-        "answer": "낙동강"
+        "answer": "낙동강의"
       },
       {
         "sentence": "(   ) 을 따라 걸었다.",
-        "answer": "낙동강"
+        "answer": "낙동강을"
       }
     ]
   },
@@ -6483,7 +6483,7 @@
     "quiz": [
       {
         "sentence": "강 (   ) 에 살고 있다.",
-        "answer": "하류"
+        "answer": "하류에"
       },
       {
         "sentence": "(   ) 지역은 물이 깊다.",
@@ -6491,15 +6491,15 @@
       },
       {
         "sentence": "(   ) 로 내려갔다.",
-        "answer": "하류"
+        "answer": "하류로"
       },
       {
         "sentence": "(   ) 에서 물고기를 잡았다.",
-        "answer": "하류"
+        "answer": "하류에서"
       },
       {
         "sentence": "(   ) 의 물은 탁하다.",
-        "answer": "하류"
+        "answer": "하류의"
       }
     ]
   },
@@ -6507,7 +6507,7 @@
     "quiz": [
       {
         "sentence": "(   ) 을 낳는 거위.",
-        "answer": "황금알"
+        "answer": "황금알을"
       },
       {
         "sentence": "이것은 (   ) 이다.",
@@ -6519,11 +6519,11 @@
       },
       {
         "sentence": "(   ) 이 나올 줄 알았다.",
-        "answer": "황금알"
+        "answer": "황금알이"
       },
       {
         "sentence": "(   ) 의 가치는 높다.",
-        "answer": "황금알"
+        "answer": "황금알의"
       }
     ]
   },
@@ -6531,7 +6531,7 @@
     "quiz": [
       {
         "sentence": "오늘 (   ) 가 올랐다.",
-        "answer": "주가"
+        "answer": "주가가"
       },
       {
         "sentence": "(   ) 변동이 심하다.",
@@ -6539,15 +6539,15 @@
       },
       {
         "sentence": "(   ) 를 확인했다.",
-        "answer": "주가"
+        "answer": "주가를"
       },
       {
         "sentence": "(   ) 에 영향을 미친다.",
-        "answer": "주가"
+        "answer": "주가에"
       },
       {
         "sentence": "(   ) 의 흐름을 분석했다.",
-        "answer": "주가"
+        "answer": "주가의"
       }
     ]
   },
@@ -6555,23 +6555,23 @@
     "quiz": [
       {
         "sentence": "데이터 (   ) 이 밝혀졌다.",
-        "answer": "조작"
+        "answer": "조작이"
       },
       {
         "sentence": "(   ) 된 결과이다.",
-        "answer": "조작"
+        "answer": "조작된"
       },
       {
         "sentence": "그는 (   ) 을 시도했다.",
-        "answer": "조작"
+        "answer": "조작을"
       },
       {
         "sentence": "(   ) 하면 안 된다.",
-        "answer": "조작"
+        "answer": "조작하면"
       },
       {
         "sentence": "(   ) 으로 이득을 취했다.",
-        "answer": "조작"
+        "answer": "조작으로"
       }
     ]
   },
@@ -6579,7 +6579,7 @@
     "quiz": [
       {
         "sentence": "회삿돈 (   ) 이 발각됐다.",
-        "answer": "횡령"
+        "answer": "횡령이"
       },
       {
         "sentence": "그는 (   ) 혐의를 받았다.",
@@ -6587,15 +6587,15 @@
       },
       {
         "sentence": "(   ) 으로 구속되었다.",
-        "answer": "횡령"
+        "answer": "횡령으로"
       },
       {
         "sentence": "(   ) 한 돈을 돌려주었다.",
-        "answer": "횡령"
+        "answer": "횡령한"
       },
       {
         "sentence": "(   ) 에 대한 조사가 시작됐다.",
-        "answer": "횡령"
+        "answer": "횡령에"
       }
     ]
   },
@@ -6603,23 +6603,23 @@
     "quiz": [
       {
         "sentence": "그 범죄는 정말 (   ).",
-        "answer": "흉악"
+        "answer": "흉악하다"
       },
       {
         "sentence": "(   ) 사건이 발생했다.",
-        "answer": "흉악"
+        "answer": "흉악한"
       },
       {
         "sentence": "그는 (   ) 행동했다.",
-        "answer": "흉악"
+        "answer": "흉악하게"
       },
       {
         "sentence": "그 일은 너무 (   ) 모두 놀랐다.",
-        "answer": "흉악"
+        "answer": "흉악해서"
       },
       {
         "sentence": "어제는 (   ) 범죄자가 잡혔다.",
-        "answer": "흉악"
+        "answer": "흉악했던"
       }
     ]
   },
@@ -6747,23 +6747,23 @@
     "quiz": [
       {
         "sentence": "그의 아이디어는 (   ).",
-        "answer": "독창적"
+        "answer": "독창적이다"
       },
       {
         "sentence": "(   ) 디자인이 필요하다.",
-        "answer": "독창적"
+        "answer": "독창적인"
       },
       {
         "sentence": "그는 항상 (   ) 생각한다.",
-        "answer": "독창적"
+        "answer": "독창적으로"
       },
       {
         "sentence": "그의 작품은 (   ) 모두 좋아한다.",
-        "answer": "독창적"
+        "answer": "독창적이어서"
       },
       {
         "sentence": "그 아이디어는 (   ) 평가받았다.",
-        "answer": "독창적"
+        "answer": "독창적이었다"
       }
     ]
   },
