@@ -23,6 +23,9 @@ type TopTab = "test" | "review";
 
 export default function App() {
   const [accessGranted, setAccessGranted] = useState(() => isAccessGranted());
+  const [topTab, setTopTab] = useState<TopTab>("test");
+  const [selectedReviewSet, setSelectedReviewSet] = useState<QuizSet | null>(null);
+  const [clearedSets, setClearedSets] = useState<Set<number>>(() => getClearedSets());
   const [selectedTestId, setSelectedTestId] = useState<string>(tests[0].id);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [basket, setBasket] = useState<VocabWord[]>([]);
