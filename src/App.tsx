@@ -191,57 +191,101 @@ export default function App() {
         onToggleTranslation={() => setShowTranslation((v) => !v)}
       />
 
-      <div className="flex flex-1 overflow-hidden">
-        <main className="flex-1 overflow-y-auto">
-          <div className="max-w-2xl mx-auto px-4 py-6">
-            <TestSelector
-              tests={tests}
-              selectedId={selectedTestId}
-              onSelect={handleSelectTest}
-            />
-            <QuestionNav
-              current={questionIndex + 1}
-              total={selectedTest.questions.length}
-              onPrev={() => handleQuestionChange(Math.max(0, questionIndex - 1))}
-              onNext={() => handleQuestionChange(Math.min(selectedTest.questions.length - 1, questionIndex + 1))}
-            />
-            <QuestionView
-              question={question}
-              testId={selectedTestId}
-              basket={basket}
-              apiKey={apiKey}
-              selectedAnswer={selectedAnswer}
-              onSelectAnswer={handleSelectAnswer}
-              onWordSaved={handleWordSaved}
-              showTranslation={showTranslation}
-            />
-            {/* Submit modal trigger — only when all questions answered */}
-            {!showSubmitModal && (
-              <div className="mt-6 flex justify-end">
-                <button
-                  type="button"
-                  onClick={() => {
-                    const missing = selectedTest.questions
-                      .filter((q) => !(`${selectedTestId}-${q.문제_번호}` in answers))
-                      .map((q) => q.문제_번호)
-                      .sort((a, b) => a - b);
-                    if (missing.length > 0) {
-                      setIncompleteNumbers(missing);
-                    } else {
-                      setShowSubmitModal(true);
-                    }
-                  }}
-                  className="rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2.5 transition-colors"
-                >
-                  Submit Test
-                </button>
-              </div>
-            )}
-          </div>
-        </main>
+      {/* Top-level navbar */}
+      <nav className="bg-white border-b border-gray-200 px-4">
+        <div className="max-w-2xl mx-auto flex gap-1">
+          <button
+            onClick={() => setTopTab("test")}
+            className={`px-4 py-2.5 text-sm font-medium border-b-2 transition-colors ${
+              topTab === "test"
+                ? "border-blue-600 text-blue-600"
+                : "border-transparent text-gray-500 hover:text-gray-700"
+            }`}
+          >
+            TOPIK Test
+          </button>
+          <button
+            onClick={() => { setTopTab("review"); setSelectedReviewSet(null); }}
+            className={`px-4 py-2.5 text-sm font-medium border-b-2 transition-colors ${
+              topTab === "review"
+                ? "border-blue-600 text-blue-600"
+                : "border-transparent text-gray-500 hover:text-gray-700"
+            }`}
+          >
+            Review
+          </button>
+        </div>
+      </nav>
 
-        <Sidebar basket={basket} onWordRemoved={handleWordRemoved} showTranslation={showTranslation} />
-      </div>
+      {topTab === "review" ? (
+        <main className="flex-1 overflow-y-auto">
+          {selectedReviewSet ? (
+            <ReviewView
+              quizSet={selectedReviewSet}
+              onBack={() => setSelectedReviewSet(null)}
+              onSetCleared={(id) => setClearedSets((prev) => new Set([...prev, id]))}
+            />
+          ) : (
+            <ReviewSetList
+              quizSets={quizSets}
+              clearedSets={clearedSets}
+              onSelectSet={setSelectedReviewSet}
+            />
+          )}
+        </main>
+      ) : (
+        <div className="flex flex-1 overflow-hidden">
+          <main className="flex-1 overflow-y-auto">
+            <div className="max-w-2xl mx-auto px-4 py-6">
+              <TestSelector
+                tests={tests}
+                selectedId={selectedTestId}
+                onSelect={handleSelectTest}
+              />
+              <QuestionNav
+                current={questionIndex + 1}
+                total={selectedTest.questions.length}
+                onPrev={() => handleQuestionChange(Math.max(0, questionIndex - 1))}
+                onNext={() => handleQuestionChange(Math.min(selectedTest.questions.length - 1, questionIndex + 1))}
+              />
+              <QuestionView
+                question={question}
+                testId={selectedTestId}
+                basket={basket}
+                apiKey={apiKey}
+                selectedAnswer={selectedAnswer}
+                onSelectAnswer={handleSelectAnswer}
+                onWordSaved={handleWordSaved}
+                showTranslation={showTranslation}
+              />
+              {/* Submit modal trigger — only when all questions answered */}
+              {!showSubmitModal && (
+                <div className="mt-6 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const missing = selectedTest.questions
+                        .filter((q) => !(`${selectedTestId}-${q.문제_번호}` in answers))
+                        .map((q) => q.문제_번호)
+                        .sort((a, b) => a - b);
+                      if (missing.length > 0) {
+                        setIncompleteNumbers(missing);
+                      } else {
+                        setShowSubmitModal(true);
+                      }
+                    }}
+                    className="rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2.5 transition-colors"
+                  >
+                    Submit Test
+                  </button>
+                </div>
+              )}
+            </div>
+          </main>
+
+          <Sidebar basket={basket} onWordRemoved={handleWordRemoved} showTranslation={showTranslation} />
+        </div>
+      )}
 
       <BasketDrawer
         open={drawerOpen}
