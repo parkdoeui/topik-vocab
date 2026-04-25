@@ -1,0 +1,1678 @@
+{
+  "없다": {
+    "root": "없다",
+    "english": "to not exist/cannot"
+  },
+  "있는": {
+    "root": "있다",
+    "english": "to exist"
+  },
+  "관람할": {
+    "root": "관람하다",
+    "english": "to watch/view"
+  },
+  "있으며": {
+    "root": "있다",
+    "english": "to exist/and"
+  },
+  "있다": {
+    "root": "있다",
+    "english": "to exist/can"
+  },
+  "있는데": {
+    "root": "있다",
+    "english": "to exist/but"
+  },
+  "있다고": {
+    "root": "있다",
+    "english": "to exist/can"
+  },
+  "예산이": {
+    "root": "예산",
+    "english": "budget"
+  },
+  "예산을": {
+    "root": "예산",
+    "english": "budget"
+  },
+  "부담한다": {
+    "root": "부담하다",
+    "english": "to bear/cover"
+  },
+  "얽힌": {
+    "root": "얽히다",
+    "english": "to be tangled"
+  },
+  "기혼": {
+    "root": "기혼",
+    "english": "married"
+  },
+  "이유는": {
+    "root": "이유",
+    "english": "reason"
+  },
+  "가사와": {
+    "root": "가사",
+    "english": "housework"
+  },
+  "육아에": {
+    "root": "육아",
+    "english": "childcare"
+  },
+  "보름달이": {
+    "root": "보름달",
+    "english": "full moon"
+  },
+  "송편은": {
+    "root": "송편",
+    "english": "songpyeon"
+  },
+  "반달": {
+    "root": "반달",
+    "english": "half moon"
+  },
+  "반달이": {
+    "root": "반달",
+    "english": "half moon"
+  },
+  "보름달은": {
+    "root": "보름달",
+    "english": "full moon"
+  },
+  "반달은": {
+    "root": "반달",
+    "english": "half moon"
+  },
+  "송편의": {
+    "root": "송편",
+    "english": "songpyeon"
+  },
+  "일이": {
+    "root": "일",
+    "english": "work/matter"
+  },
+  "있게": {
+    "root": "있다",
+    "english": "to exist/can"
+  },
+  "포크가": {
+    "root": "포크",
+    "english": "fork"
+  },
+  "포크는": {
+    "root": "포크",
+    "english": "fork"
+  },
+  "횟수로": {
+    "root": "횟수",
+    "english": "number of times"
+  },
+  "포크에서": {
+    "root": "포크",
+    "english": "fork"
+  },
+  "경고음이": {
+    "root": "경고음",
+    "english": "warning sound"
+  },
+  "물질이": {
+    "root": "물질",
+    "english": "substance"
+  },
+  "물질로": {
+    "root": "물질",
+    "english": "substance"
+  },
+  "숙성된": {
+    "root": "숙성되다",
+    "english": "to be matured/ripened"
+  },
+  "지속적으로": {
+    "root": "지속적",
+    "english": "continuously"
+  },
+  "있을": {
+    "root": "있다",
+    "english": "to exist/can"
+  },
+  "없는": {
+    "root": "없다",
+    "english": "to not exist"
+  },
+  "매출까지": {
+    "root": "매출",
+    "english": "sales"
+  },
+  "없었다": {
+    "root": "없다",
+    "english": "to not exist/cannot"
+  },
+  "흰": {
+    "root": "희다",
+    "english": "to be white"
+  },
+  "봉투를": {
+    "root": "봉투",
+    "english": "envelope"
+  },
+  "천하를": {
+    "root": "천하",
+    "english": "the whole world"
+  },
+  "간판": {
+    "root": "간판",
+    "english": "sign/billboard"
+  },
+  "석": {
+    "root": "석",
+    "english": "three"
+  },
+  "달째": {
+    "root": "달",
+    "english": "month"
+  },
+  "제자리걸음": {
+    "root": "제자리걸음",
+    "english": "marking time/standstill"
+  },
+  "대책": {
+    "root": "대책",
+    "english": "countermeasure/plan"
+  },
+  "상자": {
+    "root": "상자",
+    "english": "box"
+  },
+  "구속이라": {
+    "root": "구속",
+    "english": "restriction/confinement"
+  },
+  "반발심을": {
+    "root": "반발심",
+    "english": "feeling of resistance"
+  },
+  "일": {
+    "root": "일",
+    "english": "work/thing"
+  },
+  "의논하여": {
+    "root": "의논하다",
+    "english": "to discuss"
+  },
+  "있도록": {
+    "root": "있다",
+    "english": "to exist/can"
+  },
+  "궁중에서": {
+    "root": "궁중",
+    "english": "royal court"
+  },
+  "잔치를": {
+    "root": "잔치",
+    "english": "feast/banquet"
+  },
+  "잔치에": {
+    "root": "잔치",
+    "english": "feast"
+  },
+  "일부": {
+    "root": "일부",
+    "english": "part/some"
+  },
+  "잔치가": {
+    "root": "잔치",
+    "english": "feast"
+  },
+  "과학적": {
+    "root": "과학적",
+    "english": "scientific"
+  },
+  "대기": {
+    "root": "대기",
+    "english": "atmosphere"
+  },
+  "붉게": {
+    "root": "붉다",
+    "english": "to be red"
+  },
+  "산업화가": {
+    "root": "산업화",
+    "english": "industrialization"
+  },
+  "붉다": {
+    "root": "붉다",
+    "english": "to be red"
+  },
+  "항공사들은": {
+    "root": "항공사",
+    "english": "airline"
+  },
+  "수분이": {
+    "root": "수분",
+    "english": "moisture"
+  },
+  "고도가": {
+    "root": "고도",
+    "english": "altitude"
+  },
+  "둔해지는": {
+    "root": "둔해지다",
+    "english": "to become dull"
+  },
+  "적합한": {
+    "root": "적합하다",
+    "english": "to be suitable"
+  },
+  "있어": {
+    "root": "있다",
+    "english": "to exist"
+  },
+  "농촌에": {
+    "root": "농촌",
+    "english": "farming village"
+  },
+  "농약": {
+    "root": "농약",
+    "english": "agricultural pesticide"
+  },
+  "이유라고": {
+    "root": "이유",
+    "english": "reason"
+  },
+  "소비가": {
+    "root": "소비",
+    "english": "consumption"
+  },
+  "따라": {
+    "root": "따르다",
+    "english": "to follow/according to"
+  },
+  "비혼이라는": {
+    "root": "비혼",
+    "english": "unmarried by choice"
+  },
+  "독신": {
+    "root": "독신",
+    "english": "single"
+  },
+  "색상": {
+    "root": "색상",
+    "english": "color"
+  },
+  "바람직하다": {
+    "root": "바람직하다",
+    "english": "to be desirable"
+  },
+  "상대": {
+    "root": "상대",
+    "english": "opponent/partner"
+  },
+  "부드러운": {
+    "root": "부드럽다",
+    "english": "to be soft"
+  },
+  "상징하는": {
+    "root": "상징하다",
+    "english": "to symbolize"
+  },
+  "색상의": {
+    "root": "색상",
+    "english": "color"
+  },
+  "소진증후군을": {
+    "root": "소진증후군",
+    "english": "burnout syndrome"
+  },
+  "증상으로는": {
+    "root": "증상",
+    "english": "symptom"
+  },
+  "앓게": {
+    "root": "앓다",
+    "english": "to suffer from"
+  },
+  "재충전을": {
+    "root": "재충전",
+    "english": "recharge"
+  },
+  "심신의": {
+    "root": "심신",
+    "english": "mind and body"
+  },
+  "일에": {
+    "root": "일",
+    "english": "thing/work"
+  },
+  "예방하는": {
+    "root": "예방하다",
+    "english": "to prevent"
+  },
+  "있다는": {
+    "root": "있다",
+    "english": "to exist"
+  },
+  "기자들은": {
+    "root": "기자",
+    "english": "reporter"
+  },
+  "심층": {
+    "root": "심층",
+    "english": "in-depth"
+  },
+  "기사": {
+    "root": "기사",
+    "english": "article"
+  },
+  "작성에": {
+    "root": "작성",
+    "english": "writing/creation"
+  },
+  "직결되는": {
+    "root": "직결되다",
+    "english": "to be directly connected"
+  },
+  "차선이": {
+    "root": "차선",
+    "english": "lane"
+  },
+  "반사": {
+    "root": "반사",
+    "english": "reflection"
+  },
+  "성능을": {
+    "root": "성능",
+    "english": "performance"
+  },
+  "유리알이": {
+    "root": "유리알",
+    "english": "glass bead"
+  },
+  "혼합된": {
+    "root": "혼합되다",
+    "english": "to be mixed"
+  },
+  "대상으로": {
+    "root": "대상",
+    "english": "target/subject"
+  },
+  "상속": {
+    "root": "상속",
+    "english": "inheritance"
+  },
+  "축적": {
+    "root": "축적",
+    "english": "accumulation"
+  },
+  "유형에": {
+    "root": "유형",
+    "english": "type"
+  },
+  "자녀에게": {
+    "root": "자녀",
+    "english": "child"
+  },
+  "물려주겠다고": {
+    "root": "물려주다",
+    "english": "to pass down"
+  },
+  "자수성가형": {
+    "root": "자수성가형",
+    "english": "self-made type"
+  },
+  "자녀": {
+    "root": "자녀",
+    "english": "child"
+  },
+  "물려준다고": {
+    "root": "물려주다",
+    "english": "to pass down"
+  },
+  "비법": {
+    "root": "비법",
+    "english": "secret method"
+  },
+  "물려주려는": {
+    "root": "물려주다",
+    "english": "to pass down"
+  },
+  "이유에서도": {
+    "root": "이유",
+    "english": "reason"
+  },
+  "집단이": {
+    "root": "집단",
+    "english": "group"
+  },
+  "일종의": {
+    "root": "일종",
+    "english": "kind of"
+  },
+  "경영서이다": {
+    "root": "경영서이다",
+    "english": "to be a management book"
+  },
+  "탁월한": {
+    "root": "탁월하다",
+    "english": "to be excellent"
+  },
+  "없었더라면": {
+    "root": "없다",
+    "english": "to not exist"
+  },
+  "창제와": {
+    "root": "창제",
+    "english": "creation"
+  },
+  "업적은": {
+    "root": "업적",
+    "english": "achievement"
+  },
+  "신분이나": {
+    "root": "신분",
+    "english": "status"
+  },
+  "역량만을": {
+    "root": "역량",
+    "english": "capability"
+  },
+  "기준으로": {
+    "root": "기준",
+    "english": "standard"
+  },
+  "인재의": {
+    "root": "인재",
+    "english": "talented person"
+  },
+  "등용에서도": {
+    "root": "등용",
+    "english": "appointment"
+  },
+  "시행을": {
+    "root": "시행",
+    "english": "implementation"
+  },
+  "총량을": {
+    "root": "총량",
+    "english": "total amount"
+  },
+  "업종별로": {
+    "root": "업종",
+    "english": "industry type"
+  },
+  "할당한다는": {
+    "root": "할당하다",
+    "english": "to allocate"
+  },
+  "제도는": {
+    "root": "제도",
+    "english": "system"
+  },
+  "지구온난화의": {
+    "root": "지구온난화",
+    "english": "global warming"
+  },
+  "업체별로": {
+    "root": "업체",
+    "english": "business"
+  },
+  "배출량을": {
+    "root": "배출량",
+    "english": "emission amount"
+  },
+  "기준보다": {
+    "root": "기준",
+    "english": "standard"
+  },
+  "제도이다": {
+    "root": "제도이다",
+    "english": "to be a system"
+  },
+  "구입해야": {
+    "root": "구입하다",
+    "english": "to purchase"
+  },
+  "악화로": {
+    "root": "악화",
+    "english": "worsening"
+  },
+  "가동하지": {
+    "root": "가동하다",
+    "english": "to operate"
+  },
+  "있기": {
+    "root": "있다",
+    "english": "to exist"
+  },
+  "제도의": {
+    "root": "제도",
+    "english": "system"
+  },
+  "정착을": {
+    "root": "정착",
+    "english": "settlement"
+  },
+  "시행": {
+    "root": "시행",
+    "english": "implementation"
+  },
+  "마련되어야": {
+    "root": "마련되다",
+    "english": "to be prepared"
+  },
+  "2위를": {
+    "root": "2위",
+    "english": "2nd place"
+  },
+  "면하지": {
+    "root": "면하다",
+    "english": "to avoid"
+  },
+  "합병을": {
+    "root": "합병",
+    "english": "merger"
+  },
+  "예고된다": {
+    "root": "예고되다",
+    "english": "to be predicted/announced"
+  },
+  "재계의": {
+    "root": "재계",
+    "english": "financial world"
+  },
+  "양분된다": {
+    "root": "양분되다",
+    "english": "to be divided in two"
+  },
+  "결합했을": {
+    "root": "결합하다",
+    "english": "to combine"
+  },
+  "역량이": {
+    "root": "역량",
+    "english": "capability"
+  },
+  "일에는": {
+    "root": "일",
+    "english": "work"
+  },
+  "공동": {
+    "root": "공동",
+    "english": "joint"
+  },
+  "소규모": {
+    "root": "소규모",
+    "english": "small scale"
+  },
+  "대처한다는": {
+    "root": "대처하다",
+    "english": "to cope with"
+  },
+  "몸집이": {
+    "root": "몸집",
+    "english": "body size"
+  },
+  "이유로": {
+    "root": "이유",
+    "english": "reason"
+  },
+  "합병": {
+    "root": "합병",
+    "english": "merger"
+  },
+  "역량을": {
+    "root": "역량",
+    "english": "capability"
+  },
+  "관한": {
+    "root": "관하다",
+    "english": "to be about"
+  },
+  "제정이": {
+    "root": "제정",
+    "english": "enactment"
+  },
+  "쟁점으로": {
+    "root": "쟁점",
+    "english": "issue"
+  },
+  "부각되고": {
+    "root": "부각되다",
+    "english": "to be highlighted"
+  },
+  "적용하기로": {
+    "root": "적용하다",
+    "english": "to apply"
+  },
+  "찬성": {
+    "root": "찬성",
+    "english": "agreement"
+  },
+  "형성되어": {
+    "root": "형성되다",
+    "english": "to be formed"
+  },
+  "잠재한": {
+    "root": "잠재하다",
+    "english": "to be latent"
+  },
+  "측면을": {
+    "root": "측면",
+    "english": "aspect"
+  },
+  "동조이다": {
+    "root": "동조이다",
+    "english": "to be agreement"
+  },
+  "부작용을": {
+    "root": "부작용",
+    "english": "side effect"
+  },
+  "흉악범에": {
+    "root": "흉악범",
+    "english": "heinous criminal"
+  },
+  "부조리나": {
+    "root": "부조리",
+    "english": "absurdity/irrationality"
+  },
+  "공직자의": {
+    "root": "공직자",
+    "english": "public official"
+  },
+  "비리를": {
+    "root": "비리",
+    "english": "corruption"
+  },
+  "고발한": {
+    "root": "고발하다",
+    "english": "to accuse/report"
+  },
+  "기사라면": {
+    "root": "기사",
+    "english": "article"
+  },
+  "시행의": {
+    "root": "시행",
+    "english": "enforcement"
+  },
+  "있겠는가": {
+    "root": "있다",
+    "english": "to exist/can"
+  },
+  "예컨대": {
+    "root": "예컨대",
+    "english": "for example"
+  },
+  "후속": {
+    "root": "후속",
+    "english": "follow-up"
+  },
+  "대상이": {
+    "root": "대상",
+    "english": "target"
+  },
+  "있고": {
+    "root": "있다",
+    "english": "to exist"
+  },
+  "행적을": {
+    "root": "행적",
+    "english": "past record"
+  },
+  "조작한": {
+    "root": "조작하다",
+    "english": "to manipulate"
+  },
+  "선거에서": {
+    "root": "선거",
+    "english": "election"
+  },
+  "당선될": {
+    "root": "당선되다",
+    "english": "to be elected"
+  },
+  "존중하려는": {
+    "root": "존중하다",
+    "english": "to respect"
+  },
+  "장치가": {
+    "root": "장치",
+    "english": "device"
+  },
+  "서울국제꽃박람회": {
+    "root": "서울국제꽃박람회",
+    "english": "Seoul International Flower Exhibition"
+  },
+  "구입": {
+    "root": "구입",
+    "english": "purchase"
+  },
+  "놀이": {
+    "root": "놀이",
+    "english": "play/amusement"
+  },
+  "시설을": {
+    "root": "시설",
+    "english": "facility"
+  },
+  "있습니다": {
+    "root": "있다",
+    "english": "to exist/can"
+  },
+  "대중교통을": {
+    "root": "대중교통",
+    "english": "public transportation"
+  },
+  "있어서": {
+    "root": "있다",
+    "english": "to be/exist"
+  },
+  "대상": {
+    "root": "대상",
+    "english": "target"
+  },
+  "면세점에서": {
+    "root": "면세점",
+    "english": "duty-free shop"
+  },
+  "콩나물을": {
+    "root": "콩나물",
+    "english": "bean sprouts"
+  },
+  "주부들이": {
+    "root": "주부",
+    "english": "housewife"
+  },
+  "콩나물은": {
+    "root": "콩나물",
+    "english": "bean sprouts"
+  },
+  "콩나물보다": {
+    "root": "콩나물",
+    "english": "bean sprouts"
+  },
+  "영양가가": {
+    "root": "영양가",
+    "english": "nutritional value"
+  },
+  "일처럼": {
+    "root": "일",
+    "english": "work/task"
+  },
+  "일을": {
+    "root": "일",
+    "english": "work/task"
+  },
+  "있어서이다": {
+    "root": "있다",
+    "english": "to be/exist"
+  },
+  "있지만": {
+    "root": "있다",
+    "english": "to exist/be"
+  },
+  "일이다": {
+    "root": "일",
+    "english": "matter/work"
+  },
+  "건의할": {
+    "root": "건의하다",
+    "english": "to propose/suggest"
+  },
+  "가상공간에서": {
+    "root": "가상공간",
+    "english": "virtual space"
+  },
+  "한의학에서는": {
+    "root": "한의학",
+    "english": "Eastern medicine"
+  },
+  "있어야만": {
+    "root": "있다",
+    "english": "to have/exist"
+  },
+  "없나": {
+    "root": "없다",
+    "english": "to not exist"
+  },
+  "있었다": {
+    "root": "있다",
+    "english": "to be"
+  },
+  "화창": {
+    "root": "화창하다",
+    "english": "sunny/clear"
+  },
+  "빗방울": {
+    "root": "빗방울",
+    "english": "raindrop"
+  },
+  "불황에도": {
+    "root": "불황",
+    "english": "recession/depression"
+  },
+  "소비": {
+    "root": "소비",
+    "english": "consumption"
+  },
+  "지배적이었다": {
+    "root": "지배적이다",
+    "english": "dominant"
+  },
+  "돌파구를": {
+    "root": "돌파구",
+    "english": "breakthrough"
+  },
+  "화가들에게": {
+    "root": "화가",
+    "english": "painter"
+  },
+  "없었던": {
+    "root": "없다",
+    "english": "not to exist"
+  },
+  "화가는": {
+    "root": "화가",
+    "english": "painter"
+  },
+  "문구류와": {
+    "root": "문구류",
+    "english": "stationery"
+  },
+  "물질": {
+    "root": "물질",
+    "english": "matter/substance"
+  },
+  "고무에": {
+    "root": "고무",
+    "english": "rubber"
+  },
+  "약품을": {
+    "root": "약품",
+    "english": "medicine/chemical"
+  },
+  "고무": {
+    "root": "고무",
+    "english": "rubber"
+  },
+  "분자들이": {
+    "root": "분자",
+    "english": "molecule"
+  },
+  "결합하게": {
+    "root": "결합하다",
+    "english": "to combine/bond"
+  },
+  "약품은": {
+    "root": "약품",
+    "english": "chemical/medicine"
+  },
+  "문구류를": {
+    "root": "문구류",
+    "english": "stationery"
+  },
+  "자아도취적인": {
+    "root": "자아도취적",
+    "english": "narcissistic"
+  },
+  "형식으로": {
+    "root": "형식",
+    "english": "format/form"
+  },
+  "집단적": {
+    "root": "집단적",
+    "english": "collective"
+  },
+  "격려하고": {
+    "root": "격려하다",
+    "english": "to encourage"
+  },
+  "자유분방한": {
+    "root": "자유분방하다",
+    "english": "free-spirited"
+  },
+  "사관이": {
+    "root": "사관",
+    "english": "historian"
+  },
+  "사관은": {
+    "root": "사관",
+    "english": "historian"
+  },
+  "간섭도": {
+    "root": "간섭",
+    "english": "interference"
+  },
+  "사관의": {
+    "root": "사관",
+    "english": "historian"
+  },
+  "언행을": {
+    "root": "언행",
+    "english": "words and actions"
+  },
+  "장치로서": {
+    "root": "장치",
+    "english": "device/mechanism"
+  },
+  "있으면": {
+    "root": "있다",
+    "english": "to exist/be"
+  },
+  "심혈관": {
+    "root": "심혈관",
+    "english": "cardiovascular"
+  },
+  "질환과": {
+    "root": "질환",
+    "english": "disease"
+  },
+  "일부의": {
+    "root": "일부",
+    "english": "some/part"
+  },
+  "없어서는": {
+    "root": "없다",
+    "english": "without"
+  },
+  "상대의": {
+    "root": "상대",
+    "english": "other party"
+  },
+  "상대에게": {
+    "root": "상대",
+    "english": "other party"
+  },
+  "과학적으로": {
+    "root": "과학적",
+    "english": "scientifically"
+  },
+  "'규약문'이라": {
+    "root": "규약문",
+    "english": "terms of agreement"
+  },
+  "규약문은": {
+    "root": "규약문",
+    "english": "terms of agreement"
+  },
+  "규약문을": {
+    "root": "규약문",
+    "english": "terms of agreement"
+  },
+  "공정하고": {
+    "root": "공정하다",
+    "english": "fair"
+  },
+  "부당하게": {
+    "root": "부당하다",
+    "english": "unfairly"
+  },
+  "침해받지": {
+    "root": "침해받다",
+    "english": "to be infringed"
+  },
+  "달부터": {
+    "root": "달",
+    "english": "month"
+  },
+  "'자율근무제'를": {
+    "root": "자율근무제",
+    "english": "flexible working hours"
+  },
+  "기존의": {
+    "root": "기존",
+    "english": "existing"
+  },
+  "자율근무제를": {
+    "root": "자율근무제",
+    "english": "flexible working hours"
+  },
+  "자율근무제": {
+    "root": "자율근무제",
+    "english": "flexible working hours"
+  },
+  "시행에": {
+    "root": "시행",
+    "english": "implementation"
+  },
+  "유형의": {
+    "root": "유형",
+    "english": "type"
+  },
+  "결합해": {
+    "root": "결합하다",
+    "english": "to combine"
+  },
+  "없던": {
+    "root": "없다",
+    "english": "not existing"
+  },
+  "현상을": {
+    "root": "현상",
+    "english": "phenomenon"
+  },
+  "없고": {
+    "root": "없다",
+    "english": "not to exist"
+  },
+  "일일까": {
+    "root": "일",
+    "english": "matter/thing"
+  },
+  "집단의": {
+    "root": "집단",
+    "english": "group"
+  },
+  "얽혀": {
+    "root": "얽히다",
+    "english": "to be entangled"
+  },
+  "쟁점을": {
+    "root": "쟁점",
+    "english": "issue/point of dispute"
+  },
+  "따른": {
+    "root": "따르다",
+    "english": "according to"
+  },
+  "이웃을": {
+    "root": "이웃",
+    "english": "neighbor"
+  },
+  "부드럽게": {
+    "root": "부드럽다",
+    "english": "softly"
+  },
+  "올해도": {
+    "root": "올해",
+    "english": "this year too"
+  },
+  "기사가": {
+    "root": "기사",
+    "english": "mechanic"
+  },
+  "없었지만": {
+    "root": "없다",
+    "english": "was none but"
+  },
+  "달": {
+    "root": "달",
+    "english": "month"
+  },
+  "타조는": {
+    "root": "타조",
+    "english": "ostrich"
+  },
+  "적이": {
+    "root": "적",
+    "english": "enemy"
+  },
+  "타조에": {
+    "root": "타조",
+    "english": "to ostrich"
+  },
+  "비유하곤": {
+    "root": "비유하다",
+    "english": "often compare"
+  },
+  "청각이": {
+    "root": "청각",
+    "english": "hearing"
+  },
+  "섬유": {
+    "root": "섬유",
+    "english": "fabric/fiber"
+  },
+  "섬유에": {
+    "root": "섬유",
+    "english": "to fabric"
+  },
+  "섬유의": {
+    "root": "섬유",
+    "english": "fabric's"
+  },
+  "일은": {
+    "root": "일",
+    "english": "work/thing"
+  },
+  "매서운": {
+    "root": "매섭다",
+    "english": "fierce/bitter"
+  },
+  "남극의": {
+    "root": "남극",
+    "english": "Antarctica's"
+  },
+  "겹겹이": {
+    "root": "겹겹이",
+    "english": "in layers"
+  },
+  "수요가": {
+    "root": "수요",
+    "english": "demand"
+  },
+  "복제품": {
+    "root": "복제품",
+    "english": "replica/reproduction"
+  },
+  "관람객들은": {
+    "root": "관람객",
+    "english": "visitors"
+  },
+  "우려한다": {
+    "root": "우려하다",
+    "english": "worry"
+  },
+  "무순처럼": {
+    "root": "무순",
+    "english": "like radish sprouts"
+  },
+  "풍성해지기": {
+    "root": "풍성해지다",
+    "english": "becoming abundant"
+  },
+  "대상을": {
+    "root": "대상",
+    "english": "target/object"
+  },
+  "올해": {
+    "root": "올해",
+    "english": "this year"
+  },
+  "대출": {
+    "root": "대출",
+    "english": "loan"
+  },
+  "금리": {
+    "root": "금리",
+    "english": "interest rate"
+  },
+  "하락세": {
+    "root": "하락세",
+    "english": "downtrend"
+  },
+  "부동산": {
+    "root": "부동산",
+    "english": "real estate"
+  },
+  "기지개": {
+    "root": "기지개",
+    "english": "stretching (reviving)"
+  },
+  "자외선": {
+    "root": "자외선",
+    "english": "ultraviolet"
+  },
+  "동적인": {
+    "root": "동적",
+    "english": "dynamic"
+  },
+  "폭포": {
+    "root": "폭포",
+    "english": "waterfall"
+  },
+  "생동감을": {
+    "root": "생동감",
+    "english": "liveliness/vitality"
+  },
+  "있음에도": {
+    "root": "있다",
+    "english": "even though there is"
+  },
+  "빈약해도": {
+    "root": "빈약하다",
+    "english": "even if poor/scant"
+  },
+  "성직자가": {
+    "root": "성직자",
+    "english": "clergy"
+  },
+  "겸하는": {
+    "root": "겸하다",
+    "english": "serving concurrently as"
+  },
+  "성직자용": {
+    "root": "성직자용",
+    "english": "for clergy"
+  },
+  "세균으로": {
+    "root": "세균",
+    "english": "with bacteria"
+  },
+  "오염된": {
+    "root": "오염되다",
+    "english": "contaminated"
+  },
+  "세균": {
+    "root": "세균",
+    "english": "bacteria"
+  },
+  "감염의": {
+    "root": "감염",
+    "english": "infection's"
+  },
+  "품종인": {
+    "root": "품종이다",
+    "english": "which is a variety"
+  },
+  "품종이다": {
+    "root": "품종이다",
+    "english": "is a variety"
+  },
+  "함유돼": {
+    "root": "함유되다",
+    "english": "contained"
+  },
+  "예방과": {
+    "root": "예방",
+    "english": "prevention and"
+  },
+  "병해충에도": {
+    "root": "병해충",
+    "english": "against pests and diseases also"
+  },
+  "고소득": {
+    "root": "고소득",
+    "english": "high income"
+  },
+  "서유구가": {
+    "root": "서유구",
+    "english": "Seo Yu-gu"
+  },
+  "탐색한": {
+    "root": "탐색하다",
+    "english": "explored"
+  },
+  "서유구는": {
+    "root": "서유구",
+    "english": "Seo Yu-gu"
+  },
+  "서적들을": {
+    "root": "서적",
+    "english": "books"
+  },
+  "논평을": {
+    "root": "논평",
+    "english": "commentary"
+  },
+  "서지학적": {
+    "root": "서지학적",
+    "english": "bibliographical"
+  },
+  "방대하고": {
+    "root": "방대하다",
+    "english": "vast and"
+  },
+  "유칼립투스라는": {
+    "root": "유칼립투스이다",
+    "english": "called eucalyptus"
+  },
+  "분해하는": {
+    "root": "분해하다",
+    "english": "breaking down"
+  },
+  "없어서": {
+    "root": "없다",
+    "english": "not exist so"
+  },
+  "배설물을": {
+    "root": "배설물",
+    "english": "excrement"
+  },
+  "태양계에": {
+    "root": "태양계",
+    "english": "in the solar system"
+  },
+  "소행성에는": {
+    "root": "소행성",
+    "english": "in asteroids"
+  },
+  "광물이": {
+    "root": "광물",
+    "english": "minerals"
+  },
+  "소행성에": {
+    "root": "소행성",
+    "english": "on asteroid"
+  },
+  "광물": {
+    "root": "광물",
+    "english": "mineral"
+  },
+  "시료를": {
+    "root": "시료",
+    "english": "samples"
+  },
+  "채취하는": {
+    "root": "채취하다",
+    "english": "collecting"
+  },
+  "소행성": {
+    "root": "소행성",
+    "english": "asteroid"
+  },
+  "탐사가": {
+    "root": "탐사",
+    "english": "exploration"
+  },
+  "탐사에": {
+    "root": "탐사",
+    "english": "in exploration"
+  },
+  "침체에": {
+    "root": "침체",
+    "english": "in recession"
+  },
+  "소비보다는": {
+    "root": "소비",
+    "english": "rather than consumption"
+  },
+  "저축을": {
+    "root": "저축",
+    "english": "savings"
+  },
+  "저축이": {
+    "root": "저축",
+    "english": "saving"
+  },
+  "매출이": {
+    "root": "매출",
+    "english": "sales"
+  },
+  "고용이": {
+    "root": "고용",
+    "english": "employment"
+  },
+  "소비를": {
+    "root": "소비",
+    "english": "consumption"
+  },
+  "쿼터제는": {
+    "root": "쿼터제",
+    "english": "quota system"
+  },
+  "무분별한": {
+    "root": "무분별하다",
+    "english": "indiscreet/reckless"
+  },
+  "포획을": {
+    "root": "포획",
+    "english": "capture"
+  },
+  "어획량을": {
+    "root": "어획량",
+    "english": "catch amount"
+  },
+  "어획량이": {
+    "root": "어획량",
+    "english": "catch amount"
+  },
+  "배정돼": {
+    "root": "배정되다",
+    "english": "is allocated"
+  },
+  "연안에서는": {
+    "root": "연안",
+    "english": "in coastal waters"
+  },
+  "수온이": {
+    "root": "수온",
+    "english": "water temperature"
+  },
+  "연안에": {
+    "root": "연안",
+    "english": "to coast"
+  },
+  "유입되는": {
+    "root": "유입되다",
+    "english": "flowing in"
+  },
+  "쿼터제": {
+    "root": "쿼터제",
+    "english": "quota system"
+  },
+  "쿼터제의": {
+    "root": "쿼터제",
+    "english": "quota system's"
+  },
+  "개체": {
+    "root": "개체",
+    "english": "individual/population"
+  },
+  "증감을": {
+    "root": "증감",
+    "english": "increase/decrease"
+  },
+  "반영한": {
+    "root": "반영하다",
+    "english": "reflected"
+  },
+  "융통성": {
+    "root": "융통성",
+    "english": "flexibility"
+  },
+  "조정이": {
+    "root": "조정",
+    "english": "adjustment"
+  },
+  "획기적인": {
+    "root": "획기적",
+    "english": "groundbreaking"
+  },
+  "선정을": {
+    "root": "선정",
+    "english": "selection"
+  },
+  "필연적으로": {
+    "root": "필연적",
+    "english": "inevitably"
+  },
+  "사각지대가": {
+    "root": "사각지대",
+    "english": "blind spot"
+  },
+  "득점이나": {
+    "root": "득점",
+    "english": "scoring or"
+  },
+  "초고속": {
+    "root": "초고속",
+    "english": "high-speed"
+  },
+  "지중해": {
+    "root": "지중해",
+    "english": "Mediterranean"
+  },
+  "퇴적층을": {
+    "root": "퇴적층",
+    "english": "sedimentary layer"
+  },
+  "대륙으로": {
+    "root": "대륙",
+    "english": "by continent"
+  },
+  "지중해라고": {
+    "root": "지중해",
+    "english": "Mediterranean"
+  },
+  "연안은": {
+    "root": "연안",
+    "english": "coast"
+  },
+  "기후가": {
+    "root": "기후",
+    "english": "climate"
+  },
+  "온화해서": {
+    "root": "온화하다",
+    "english": "mild so"
+  },
+  "손꼽힌다": {
+    "root": "손꼽히다",
+    "english": "is counted/considered"
+  },
+  "지중해는": {
+    "root": "지중해",
+    "english": "Mediterranean"
+  },
+  "퇴적층은": {
+    "root": "퇴적층",
+    "english": "sedimentary layer"
+  },
+  "증발되고": {
+    "root": "증발되다",
+    "english": "is evaporated and"
+  },
+  "지중해가": {
+    "root": "지중해",
+    "english": "Mediterranean"
+  },
+  "지중해에": {
+    "root": "지중해",
+    "english": "in Mediterranean"
+  },
+  "상소문들을": {
+    "root": "상소문",
+    "english": "appeals/memorials"
+  },
+  "저자는": {
+    "root": "저자",
+    "english": "author"
+  },
+  "깨우침의": {
+    "root": "깨우침",
+    "english": "enlightenment/awakening"
+  },
+  "죽비": {
+    "root": "죽비",
+    "english": "bamboo clapper"
+  },
+  "비유하고": {
+    "root": "비유하다",
+    "english": "compare"
+  },
+  "신하의": {
+    "root": "신하",
+    "english": "subject/vassal's"
+  },
+  "노여움을": {
+    "root": "노여움",
+    "english": "anger"
+  },
+  "무릅쓰고": {
+    "root": "무릅쓰다",
+    "english": "risking/braving"
+  },
+  "신하가": {
+    "root": "신하",
+    "english": "subject"
+  },
+  "상소문을": {
+    "root": "상소문",
+    "english": "appeal"
+  },
+  "있었다는": {
+    "root": "있다",
+    "english": "was"
+  },
+  "신화는": {
+    "root": "신화",
+    "english": "myth"
+  },
+  "신화와": {
+    "root": "신화",
+    "english": "with myth"
+  },
+  "유사하다": {
+    "root": "유사하다",
+    "english": "is similar"
+  },
+  "낙동강": {
+    "root": "낙동강",
+    "english": "Nakdong River"
+  },
+  "하류에": {
+    "root": "하류",
+    "english": "in the downstream"
+  },
+  "황금알": {
+    "root": "황금알",
+    "english": "golden egg"
+  },
+  "황금알은": {
+    "root": "황금알",
+    "english": "golden egg"
+  },
+  "상징하는데": {
+    "root": "상징하다",
+    "english": "symbolize"
+  },
+  "주가": {
+    "root": "주가",
+    "english": "stock price"
+  },
+  "조작이나": {
+    "root": "조작",
+    "english": "manipulation or"
+  },
+  "횡령": {
+    "root": "횡령",
+    "english": "embezzlement"
+  },
+  "흉악": {
+    "root": "흉악",
+    "english": "heinous"
+  },
+  "막심하다": {
+    "root": "막심하다",
+    "english": "is severe"
+  },
+  "증권사": {
+    "root": "증권사",
+    "english": "securities firm"
+  },
+  "조작으로": {
+    "root": "조작",
+    "english": "due to manipulation"
+  },
+  "직결될": {
+    "root": "직결되다",
+    "english": "to be directly connected"
+  },
+  "확립하기": {
+    "root": "확립하다",
+    "english": "to establish"
+  },
+  "미진했던": {
+    "root": "미진하다",
+    "english": "was inadequate"
+  },
+  "재발되지": {
+    "root": "재발되다",
+    "english": "recur"
+  },
+  "독창적인": {
+    "root": "독창적",
+    "english": "creative/original"
+  },
+  "고령화되는": {
+    "root": "고령화되다",
+    "english": "aging"
+  },
+  "현상이": {
+    "root": "현상",
+    "english": "phenomenon"
+  },
+  "복지법'이": {
+    "root": "복지법",
+    "english": "Welfare Act"
+  },
+  "복지법이": {
+    "root": "복지법",
+    "english": "Welfare Act"
+  },
+  "고용": {
+    "root": "고용",
+    "english": "employment"
+  }
+}

@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 .thunder
 .gstack/
+analysis/.venv/

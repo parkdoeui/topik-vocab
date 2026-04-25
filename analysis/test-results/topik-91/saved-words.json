@@ -1,0 +1,552 @@
+[
+    {
+        "korean": "이웃",
+        "english": "neighbor",
+        "questionNumber": 3
+    },
+    {
+        "korean": "올해",
+        "english": "this year too",
+        "questionNumber": 11
+    },
+    {
+        "korean": "타조",
+        "english": "ostrich",
+        "questionNumber": 16
+    },
+    {
+        "korean": "적",
+        "english": "enemy",
+        "questionNumber": 16
+    },
+    {
+        "korean": "청각",
+        "english": "hearing",
+        "questionNumber": 16
+    },
+    {
+        "korean": "섬유",
+        "english": "fabric/fiber",
+        "questionNumber": 17
+    },
+    {
+        "korean": "매섭다",
+        "english": "fierce/bitter",
+        "questionNumber": 19
+    },
+    {
+        "korean": "남극",
+        "english": "Antarctica's",
+        "questionNumber": 19
+    },
+    {
+        "korean": "겹겹이",
+        "english": "in layers",
+        "questionNumber": 19
+    },
+    {
+        "korean": "수요",
+        "english": "demand",
+        "questionNumber": 21
+    },
+    {
+        "korean": "일부",
+        "english": "some",
+        "questionNumber": 21
+    },
+    {
+        "korean": "복제품",
+        "english": "replica/reproduction",
+        "questionNumber": 21
+    },
+    {
+        "korean": "관람객",
+        "english": "visitors",
+        "questionNumber": 22
+    },
+    {
+        "korean": "우려하다",
+        "english": "worry",
+        "questionNumber": 22
+    },
+    {
+        "korean": "무순",
+        "english": "like radish sprouts",
+        "questionNumber": 23
+    },
+    {
+        "korean": "풍성해지다",
+        "english": "becoming abundant",
+        "questionNumber": 23
+    },
+    {
+        "korean": "대출",
+        "english": "loan",
+        "questionNumber": 27
+    },
+    {
+        "korean": "금리",
+        "english": "interest rate",
+        "questionNumber": 27
+    },
+    {
+        "korean": "기지개",
+        "english": "stretching (reviving)",
+        "questionNumber": 27
+    },
+    {
+        "korean": "하락세",
+        "english": "downtrend",
+        "questionNumber": 27
+    },
+    {
+        "korean": "부동산",
+        "english": "real estate",
+        "questionNumber": 27
+    },
+    {
+        "korean": "자외선",
+        "english": "ultraviolet",
+        "questionNumber": 28
+    },
+    {
+        "korean": "동적",
+        "english": "dynamic",
+        "questionNumber": 29
+    },
+    {
+        "korean": "폭포",
+        "english": "waterfall",
+        "questionNumber": 29
+    },
+    {
+        "korean": "생동감",
+        "english": "liveliness/vitality",
+        "questionNumber": 29
+    },
+    {
+        "korean": "빈약하다",
+        "english": "even if poor/scant",
+        "questionNumber": 30
+    },
+    {
+        "korean": "성직자",
+        "english": "clergy",
+        "questionNumber": 31
+    },
+    {
+        "korean": "겸하다",
+        "english": "serving concurrently as",
+        "questionNumber": 31
+    },
+    {
+        "korean": "성직자용",
+        "english": "for clergy",
+        "questionNumber": 31
+    },
+    {
+        "korean": "세균",
+        "english": "with bacteria",
+        "questionNumber": 31
+    },
+    {
+        "korean": "감염",
+        "english": "infection's",
+        "questionNumber": 31
+    },
+    {
+        "korean": "오염되다",
+        "english": "contaminated",
+        "questionNumber": 31
+    },
+    {
+        "korean": "품종이다",
+        "english": "which is a variety",
+        "questionNumber": 32
+    },
+    {
+        "korean": "함유되다",
+        "english": "contained",
+        "questionNumber": 32
+    },
+    {
+        "korean": "예방",
+        "english": "prevention and",
+        "questionNumber": 32
+    },
+    {
+        "korean": "병해충",
+        "english": "against pests and diseases also",
+        "questionNumber": 32
+    },
+    {
+        "korean": "고소득",
+        "english": "high income",
+        "questionNumber": 32
+    },
+    {
+        "korean": "서유구",
+        "english": "Seo Yu-gu",
+        "questionNumber": 33
+    },
+    {
+        "korean": "탐색하다",
+        "english": "explored",
+        "questionNumber": 33
+    },
+    {
+        "korean": "서적",
+        "english": "books",
+        "questionNumber": 33
+    },
+    {
+        "korean": "논평",
+        "english": "commentary",
+        "questionNumber": 33
+    },
+    {
+        "korean": "서지학적",
+        "english": "bibliographical",
+        "questionNumber": 33
+    },
+    {
+        "korean": "방대하다",
+        "english": "vast and",
+        "questionNumber": 33
+    },
+    {
+        "korean": "유칼립투스이다",
+        "english": "called eucalyptus",
+        "questionNumber": 34
+    },
+    {
+        "korean": "분해하다",
+        "english": "breaking down",
+        "questionNumber": 34
+    },
+    {
+        "korean": "배설물",
+        "english": "excrement",
+        "questionNumber": 34
+    },
+    {
+        "korean": "광물",
+        "english": "minerals",
+        "questionNumber": 35
+    },
+    {
+        "korean": "태양계",
+        "english": "in the solar system",
+        "questionNumber": 35
+    },
+    {
+        "korean": "채취하다",
+        "english": "collecting",
+        "questionNumber": 35
+    },
+    {
+        "korean": "시료",
+        "english": "samples",
+        "questionNumber": 35
+    },
+    {
+        "korean": "탐사",
+        "english": "exploration",
+        "questionNumber": 35
+    },
+    {
+        "korean": "소행성",
+        "english": "in asteroids",
+        "questionNumber": 35
+    },
+    {
+        "korean": "침체",
+        "english": "in recession",
+        "questionNumber": 36
+    },
+    {
+        "korean": "저축",
+        "english": "savings",
+        "questionNumber": 36
+    },
+    {
+        "korean": "매출",
+        "english": "sales",
+        "questionNumber": 36
+    },
+    {
+        "korean": "고용",
+        "english": "employment",
+        "questionNumber": 36
+    },
+    {
+        "korean": "무분별하다",
+        "english": "indiscreet/reckless",
+        "questionNumber": 37
+    },
+    {
+        "korean": "포획",
+        "english": "capture",
+        "questionNumber": 37
+    },
+    {
+        "korean": "어획량",
+        "english": "catch amount",
+        "questionNumber": 37
+    },
+    {
+        "korean": "배정되다",
+        "english": "is allocated",
+        "questionNumber": 37
+    },
+    {
+        "korean": "연안",
+        "english": "in coastal waters",
+        "questionNumber": 37
+    },
+    {
+        "korean": "수온",
+        "english": "water temperature",
+        "questionNumber": 37
+    },
+    {
+        "korean": "유입되다",
+        "english": "flowing in",
+        "questionNumber": 37
+    },
+    {
+        "korean": "쿼터제",
+        "english": "quota system",
+        "questionNumber": 37
+    },
+    {
+        "korean": "증감",
+        "english": "increase/decrease",
+        "questionNumber": 37
+    },
+    {
+        "korean": "개체",
+        "english": "individual/population",
+        "questionNumber": 37
+    },
+    {
+        "korean": "반영하다",
+        "english": "reflected",
+        "questionNumber": 37
+    },
+    {
+        "korean": "융통성",
+        "english": "flexibility",
+        "questionNumber": 37
+    },
+    {
+        "korean": "있다",
+        "english": "are",
+        "questionNumber": 37
+    },
+    {
+        "korean": "조정",
+        "english": "adjustment",
+        "questionNumber": 37
+    },
+    {
+        "korean": "획기적",
+        "english": "groundbreaking",
+        "questionNumber": 38
+    },
+    {
+        "korean": "필연적",
+        "english": "inevitably",
+        "questionNumber": 39
+    },
+    {
+        "korean": "사각지대",
+        "english": "blind spot",
+        "questionNumber": 39
+    },
+    {
+        "korean": "선정",
+        "english": "selection",
+        "questionNumber": 39
+    },
+    {
+        "korean": "득점",
+        "english": "scoring or",
+        "questionNumber": 39
+    },
+    {
+        "korean": "초고속",
+        "english": "high-speed",
+        "questionNumber": 39
+    },
+    {
+        "korean": "퇴적층",
+        "english": "sedimentary layer",
+        "questionNumber": 40
+    },
+    {
+        "korean": "지중해",
+        "english": "Mediterranean",
+        "questionNumber": 40
+    },
+    {
+        "korean": "대륙",
+        "english": "by continent",
+        "questionNumber": 40
+    },
+    {
+        "korean": "온화하다",
+        "english": "mild so",
+        "questionNumber": 40
+    },
+    {
+        "korean": "기후",
+        "english": "climate",
+        "questionNumber": 40
+    },
+    {
+        "korean": "손꼽히다",
+        "english": "is counted/considered",
+        "questionNumber": 40
+    },
+    {
+        "korean": "증발되다",
+        "english": "is evaporated and",
+        "questionNumber": 40
+    },
+    {
+        "korean": "상소문",
+        "english": "appeals/memorials",
+        "questionNumber": 41
+    },
+    {
+        "korean": "저자",
+        "english": "author",
+        "questionNumber": 41
+    },
+    {
+        "korean": "깨우침",
+        "english": "enlightenment/awakening",
+        "questionNumber": 41
+    },
+    {
+        "korean": "비유하다",
+        "english": "compare",
+        "questionNumber": 41
+    },
+    {
+        "korean": "죽비",
+        "english": "bamboo clapper",
+        "questionNumber": 41
+    },
+    {
+        "korean": "신하",
+        "english": "subject/vassal's",
+        "questionNumber": 41
+    },
+    {
+        "korean": "노여움",
+        "english": "anger",
+        "questionNumber": 41
+    },
+    {
+        "korean": "무릅쓰다",
+        "english": "risking/braving",
+        "questionNumber": 41
+    },
+    {
+        "korean": "신화",
+        "english": "with myth",
+        "questionNumber": 44
+    },
+    {
+        "korean": "유사하다",
+        "english": "is similar",
+        "questionNumber": 44
+    },
+    {
+        "korean": "낙동강",
+        "english": "Nakdong River",
+        "questionNumber": 44
+    },
+    {
+        "korean": "하류",
+        "english": "in the downstream",
+        "questionNumber": 44
+    },
+    {
+        "korean": "황금알",
+        "english": "golden egg",
+        "questionNumber": 44
+    },
+    {
+        "korean": "상징하다",
+        "english": "symbolize",
+        "questionNumber": 45
+    },
+    {
+        "korean": "주가",
+        "english": "stock price",
+        "questionNumber": 46
+    },
+    {
+        "korean": "조작",
+        "english": "manipulation or",
+        "questionNumber": 46
+    },
+    {
+        "korean": "횡령",
+        "english": "embezzlement",
+        "questionNumber": 46
+    },
+    {
+        "korean": "흉악",
+        "english": "heinous",
+        "questionNumber": 46
+    },
+    {
+        "korean": "막심하다",
+        "english": "is severe",
+        "questionNumber": 46
+    },
+    {
+        "korean": "증권사",
+        "english": "securities firm",
+        "questionNumber": 46
+    },
+    {
+        "korean": "확립하다",
+        "english": "to establish",
+        "questionNumber": 46
+    },
+    {
+        "korean": "미진하다",
+        "english": "was inadequate",
+        "questionNumber": 46
+    },
+    {
+        "korean": "재발되다",
+        "english": "recur",
+        "questionNumber": 46
+    },
+    {
+        "korean": "독창적",
+        "english": "creative/original",
+        "questionNumber": 48
+    },
+    {
+        "korean": "고령화되다",
+        "english": "aging",
+        "questionNumber": 48
+    },
+    {
+        "korean": "현상",
+        "english": "phenomenon",
+        "questionNumber": 48
+    },
+    {
+        "korean": "복지법",
+        "english": "Welfare Act",
+        "questionNumber": 48
+    }
+]

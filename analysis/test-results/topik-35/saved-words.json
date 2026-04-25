@@ -1,0 +1,692 @@
+[
+    {
+        "korean": "서울국제꽃박람회",
+        "english": "Seoul International Flower Exhibition",
+        "questionNumber": 9
+    },
+    {
+        "korean": "구입",
+        "english": "purchase",
+        "questionNumber": 9
+    },
+    {
+        "korean": "놀이",
+        "english": "play/amusement",
+        "questionNumber": 9
+    },
+    {
+        "korean": "시설",
+        "english": "facility",
+        "questionNumber": 9
+    },
+    {
+        "korean": "대중교통",
+        "english": "public transportation",
+        "questionNumber": 9
+    },
+    {
+        "korean": "관람하다",
+        "english": "to watch/view",
+        "questionNumber": 11
+    },
+    {
+        "korean": "예산",
+        "english": "budget",
+        "questionNumber": 15
+    },
+    {
+        "korean": "부담하다",
+        "english": "to bear/cover",
+        "questionNumber": 15
+    },
+    {
+        "korean": "얽히다",
+        "english": "to be tangled",
+        "questionNumber": 16
+    },
+    {
+        "korean": "기혼",
+        "english": "married",
+        "questionNumber": 16
+    },
+    {
+        "korean": "육아",
+        "english": "childcare",
+        "questionNumber": 16
+    },
+    {
+        "korean": "가사",
+        "english": "housework",
+        "questionNumber": 16
+    },
+    {
+        "korean": "보름달",
+        "english": "full moon",
+        "questionNumber": 17
+    },
+    {
+        "korean": "송편",
+        "english": "songpyeon",
+        "questionNumber": 17
+    },
+    {
+        "korean": "반달",
+        "english": "half moon",
+        "questionNumber": 17
+    },
+    {
+        "korean": "횟수",
+        "english": "number of times",
+        "questionNumber": 18
+    },
+    {
+        "korean": "포크",
+        "english": "fork",
+        "questionNumber": 18
+    },
+    {
+        "korean": "경고음",
+        "english": "warning sound",
+        "questionNumber": 18
+    },
+    {
+        "korean": "물질",
+        "english": "substance",
+        "questionNumber": 19
+    },
+    {
+        "korean": "숙성되다",
+        "english": "to be matured/ripened",
+        "questionNumber": 19
+    },
+    {
+        "korean": "지속적",
+        "english": "continuously",
+        "questionNumber": 19
+    },
+    {
+        "korean": "희다",
+        "english": "to be white",
+        "questionNumber": 23
+    },
+    {
+        "korean": "봉투",
+        "english": "envelope",
+        "questionNumber": 23
+    },
+    {
+        "korean": "천하",
+        "english": "the whole world",
+        "questionNumber": 23
+    },
+    {
+        "korean": "간판",
+        "english": "sign/billboard",
+        "questionNumber": 26
+    },
+    {
+        "korean": "대책",
+        "english": "countermeasure/plan",
+        "questionNumber": 27
+    },
+    {
+        "korean": "달",
+        "english": "month",
+        "questionNumber": 27
+    },
+    {
+        "korean": "제자리걸음",
+        "english": "marking time/standstill",
+        "questionNumber": 27
+    },
+    {
+        "korean": "석",
+        "english": "three",
+        "questionNumber": 27
+    },
+    {
+        "korean": "상자",
+        "english": "box",
+        "questionNumber": 28
+    },
+    {
+        "korean": "반발심",
+        "english": "feeling of resistance",
+        "questionNumber": 28
+    },
+    {
+        "korean": "구속",
+        "english": "restriction/confinement",
+        "questionNumber": 28
+    },
+    {
+        "korean": "의논하다",
+        "english": "to discuss",
+        "questionNumber": 28
+    },
+    {
+        "korean": "궁중",
+        "english": "royal court",
+        "questionNumber": 30
+    },
+    {
+        "korean": "잔치",
+        "english": "feast/banquet",
+        "questionNumber": 30
+    },
+    {
+        "korean": "대기",
+        "english": "atmosphere",
+        "questionNumber": 31
+    },
+    {
+        "korean": "붉다",
+        "english": "to be red",
+        "questionNumber": 31
+    },
+    {
+        "korean": "산업화",
+        "english": "industrialization",
+        "questionNumber": 31
+    },
+    {
+        "korean": "항공사",
+        "english": "airline",
+        "questionNumber": 32
+    },
+    {
+        "korean": "수분",
+        "english": "moisture",
+        "questionNumber": 32
+    },
+    {
+        "korean": "둔해지다",
+        "english": "to become dull",
+        "questionNumber": 32
+    },
+    {
+        "korean": "고도",
+        "english": "altitude",
+        "questionNumber": 32
+    },
+    {
+        "korean": "적합하다",
+        "english": "to be suitable",
+        "questionNumber": 33
+    },
+    {
+        "korean": "농촌",
+        "english": "farming village",
+        "questionNumber": 33
+    },
+    {
+        "korean": "농약",
+        "english": "agricultural pesticide",
+        "questionNumber": 33
+    },
+    {
+        "korean": "소비",
+        "english": "consumption",
+        "questionNumber": 34
+    },
+    {
+        "korean": "비혼",
+        "english": "unmarried by choice",
+        "questionNumber": 35
+    },
+    {
+        "korean": "독신",
+        "english": "single",
+        "questionNumber": 35
+    },
+    {
+        "korean": "바람직하다",
+        "english": "to be desirable",
+        "questionNumber": 36
+    },
+    {
+        "korean": "색상",
+        "english": "color",
+        "questionNumber": 36
+    },
+    {
+        "korean": "부드럽다",
+        "english": "to be soft",
+        "questionNumber": 36
+    },
+    {
+        "korean": "상징하다",
+        "english": "to symbolize",
+        "questionNumber": 36
+    },
+    {
+        "korean": "소진증후군",
+        "english": "burnout syndrome",
+        "questionNumber": 37
+    },
+    {
+        "korean": "증상",
+        "english": "symptom",
+        "questionNumber": 37
+    },
+    {
+        "korean": "앓다",
+        "english": "to suffer from",
+        "questionNumber": 37
+    },
+    {
+        "korean": "재충전",
+        "english": "recharge",
+        "questionNumber": 37
+    },
+    {
+        "korean": "예방하다",
+        "english": "to prevent",
+        "questionNumber": 37
+    },
+    {
+        "korean": "심신",
+        "english": "mind and body",
+        "questionNumber": 37
+    },
+    {
+        "korean": "심층",
+        "english": "in-depth",
+        "questionNumber": 38
+    },
+    {
+        "korean": "기자",
+        "english": "reporter",
+        "questionNumber": 38
+    },
+    {
+        "korean": "작성",
+        "english": "writing/creation",
+        "questionNumber": 38
+    },
+    {
+        "korean": "차선",
+        "english": "lane",
+        "questionNumber": 39
+    },
+    {
+        "korean": "직결되다",
+        "english": "to be directly connected",
+        "questionNumber": 39
+    },
+    {
+        "korean": "성능",
+        "english": "performance",
+        "questionNumber": 39
+    },
+    {
+        "korean": "반사",
+        "english": "reflection",
+        "questionNumber": 39
+    },
+    {
+        "korean": "유리알",
+        "english": "glass bead",
+        "questionNumber": 39
+    },
+    {
+        "korean": "혼합되다",
+        "english": "to be mixed",
+        "questionNumber": 39
+    },
+    {
+        "korean": "상속",
+        "english": "inheritance",
+        "questionNumber": 40
+    },
+    {
+        "korean": "대상",
+        "english": "target/subject",
+        "questionNumber": 40
+    },
+    {
+        "korean": "축적",
+        "english": "accumulation",
+        "questionNumber": 40
+    },
+    {
+        "korean": "따르다",
+        "english": "according to",
+        "questionNumber": 40
+    },
+    {
+        "korean": "유형",
+        "english": "type",
+        "questionNumber": 40
+    },
+    {
+        "korean": "자수성가형",
+        "english": "self-made type",
+        "questionNumber": 40
+    },
+    {
+        "korean": "자녀",
+        "english": "child",
+        "questionNumber": 40
+    },
+    {
+        "korean": "이유",
+        "english": "reason",
+        "questionNumber": 40
+    },
+    {
+        "korean": "물려주다",
+        "english": "to pass down",
+        "questionNumber": 40
+    },
+    {
+        "korean": "비법",
+        "english": "secret method",
+        "questionNumber": 40
+    },
+    {
+        "korean": "집단",
+        "english": "group",
+        "questionNumber": 40
+    },
+    {
+        "korean": "경영서이다",
+        "english": "to be a management book",
+        "questionNumber": 41
+    },
+    {
+        "korean": "역량",
+        "english": "capability",
+        "questionNumber": 41
+    },
+    {
+        "korean": "신분",
+        "english": "status",
+        "questionNumber": 41
+    },
+    {
+        "korean": "인재",
+        "english": "talented person",
+        "questionNumber": 41
+    },
+    {
+        "korean": "등용",
+        "english": "appointment",
+        "questionNumber": 41
+    },
+    {
+        "korean": "일종",
+        "english": "kind of",
+        "questionNumber": 41
+    },
+    {
+        "korean": "탁월하다",
+        "english": "to be excellent",
+        "questionNumber": 41
+    },
+    {
+        "korean": "창제",
+        "english": "creation",
+        "questionNumber": 41
+    },
+    {
+        "korean": "업적",
+        "english": "achievement",
+        "questionNumber": 41
+    },
+    {
+        "korean": "없다",
+        "english": "to not exist",
+        "questionNumber": 41
+    },
+    {
+        "korean": "제도이다",
+        "english": "to be a system",
+        "questionNumber": 44
+    },
+    {
+        "korean": "마련되다",
+        "english": "to be prepared",
+        "questionNumber": 44
+    },
+    {
+        "korean": "총량",
+        "english": "total amount",
+        "questionNumber": 44
+    },
+    {
+        "korean": "시행",
+        "english": "implementation",
+        "questionNumber": 44
+    },
+    {
+        "korean": "업종",
+        "english": "industry type",
+        "questionNumber": 44
+    },
+    {
+        "korean": "할당하다",
+        "english": "to allocate",
+        "questionNumber": 44
+    },
+    {
+        "korean": "지구온난화",
+        "english": "global warming",
+        "questionNumber": 44
+    },
+    {
+        "korean": "업체",
+        "english": "business",
+        "questionNumber": 44
+    },
+    {
+        "korean": "배출량",
+        "english": "emission amount",
+        "questionNumber": 44
+    },
+    {
+        "korean": "가동하다",
+        "english": "to operate",
+        "questionNumber": 44
+    },
+    {
+        "korean": "악화",
+        "english": "worsening",
+        "questionNumber": 44
+    },
+    {
+        "korean": "구입하다",
+        "english": "to purchase",
+        "questionNumber": 44
+    },
+    {
+        "korean": "정착",
+        "english": "settlement",
+        "questionNumber": 44
+    },
+    {
+        "korean": "기준",
+        "english": "standard",
+        "questionNumber": 44
+    },
+    {
+        "korean": "2위",
+        "english": "2nd place",
+        "questionNumber": 46
+    },
+    {
+        "korean": "양분되다",
+        "english": "to be divided in two",
+        "questionNumber": 46
+    },
+    {
+        "korean": "면하다",
+        "english": "to avoid",
+        "questionNumber": 46
+    },
+    {
+        "korean": "합병",
+        "english": "merger",
+        "questionNumber": 46
+    },
+    {
+        "korean": "예고되다",
+        "english": "to be predicted/announced",
+        "questionNumber": 46
+    },
+    {
+        "korean": "재계",
+        "english": "financial world",
+        "questionNumber": 46
+    },
+    {
+        "korean": "일",
+        "english": "work",
+        "questionNumber": 46
+    },
+    {
+        "korean": "공동",
+        "english": "joint",
+        "questionNumber": 46
+    },
+    {
+        "korean": "소규모",
+        "english": "small scale",
+        "questionNumber": 47
+    },
+    {
+        "korean": "대처하다",
+        "english": "to cope with",
+        "questionNumber": 47
+    },
+    {
+        "korean": "몸집",
+        "english": "body size",
+        "questionNumber": 47
+    },
+    {
+        "korean": "쟁점",
+        "english": "issue",
+        "questionNumber": 48
+    },
+    {
+        "korean": "제정",
+        "english": "enactment",
+        "questionNumber": 48
+    },
+    {
+        "korean": "부각되다",
+        "english": "to be highlighted",
+        "questionNumber": 48
+    },
+    {
+        "korean": "적용하다",
+        "english": "to apply",
+        "questionNumber": 48
+    },
+    {
+        "korean": "형성되다",
+        "english": "to be formed",
+        "questionNumber": 48
+    },
+    {
+        "korean": "찬성",
+        "english": "agreement",
+        "questionNumber": 48
+    },
+    {
+        "korean": "잠재하다",
+        "english": "to be latent",
+        "questionNumber": 48
+    },
+    {
+        "korean": "측면",
+        "english": "aspect",
+        "questionNumber": 48
+    },
+    {
+        "korean": "동조이다",
+        "english": "to be agreement",
+        "questionNumber": 48
+    },
+    {
+        "korean": "부작용",
+        "english": "side effect",
+        "questionNumber": 48
+    },
+    {
+        "korean": "흉악범",
+        "english": "heinous criminal",
+        "questionNumber": 48
+    },
+    {
+        "korean": "부조리",
+        "english": "absurdity/irrationality",
+        "questionNumber": 48
+    },
+    {
+        "korean": "공직자",
+        "english": "public official",
+        "questionNumber": 48
+    },
+    {
+        "korean": "비리",
+        "english": "corruption",
+        "questionNumber": 48
+    },
+    {
+        "korean": "고발하다",
+        "english": "to accuse/report",
+        "questionNumber": 48
+    },
+    {
+        "korean": "기사",
+        "english": "article",
+        "questionNumber": 48
+    },
+    {
+        "korean": "예컨대",
+        "english": "for example",
+        "questionNumber": 48
+    },
+    {
+        "korean": "후속",
+        "english": "follow-up",
+        "questionNumber": 48
+    },
+    {
+        "korean": "행적",
+        "english": "past record",
+        "questionNumber": 48
+    },
+    {
+        "korean": "선거",
+        "english": "election",
+        "questionNumber": 48
+    },
+    {
+        "korean": "조작하다",
+        "english": "to manipulate",
+        "questionNumber": 48
+    },
+    {
+        "korean": "당선되다",
+        "english": "to be elected",
+        "questionNumber": 48
+    },
+    {
+        "korean": "장치",
+        "english": "device",
+        "questionNumber": 48
+    },
+    {
+        "korean": "관하다",
+        "english": "to be about",
+        "questionNumber": 49
+    },
+    {
+        "korean": "존중하다",
+        "english": "to respect",
+        "questionNumber": 49
+    }
+]
