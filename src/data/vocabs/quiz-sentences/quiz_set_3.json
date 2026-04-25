@@ -3,7 +3,7 @@
     "quiz": [
       {
         "sentence": "그는 평생 (   ).",
-        "answer": "독신이다"
+        "answer": "독신"
       },
       {
         "sentence": "나는 (   ) 생활이 좋다.",
@@ -11,15 +11,15 @@
       },
       {
         "sentence": "그녀는 (   ) 살고 있다.",
-        "answer": "독신으로"
+        "answer": "독신"
       },
       {
         "sentence": "혹시 (   )?",
-        "answer": "독신이세요"
+        "answer": "독신"
       },
       {
         "sentence": "그는 (   )이었다.",
-        "answer": "독신이었어요"
+        "answer": "독신"
       }
     ]
   },
@@ -27,7 +27,7 @@
     "quiz": [
       {
         "sentence": "이 옷의 (   )이 예쁘다.",
-        "answer": "색상이"
+        "answer": "색상"
       },
       {
         "sentence": "어떤 (   )을 좋아해요?",
@@ -35,15 +35,15 @@
       },
       {
         "sentence": "밝은 (   )으로 칠했다.",
-        "answer": "색상으로"
+        "answer": "색상"
       },
       {
         "sentence": "두 (   )이 잘 어울린다.",
-        "answer": "색상과"
+        "answer": "색상"
       },
       {
         "sentence": "그는 (   )에 민감하다.",
-        "answer": "색상에"
+        "answer": "색상"
       }
     ]
   },
@@ -79,19 +79,19 @@
       },
       {
         "sentence": "(   )를 존중해야 한다.",
-        "answer": "상대를"
+        "answer": "상대"
       },
       {
         "sentence": "(   )의 의견을 듣자.",
-        "answer": "상대의"
+        "answer": "상대"
       },
       {
         "sentence": "(   )에게 친절하세요.",
-        "answer": "상대에게"
+        "answer": "상대"
       },
       {
         "sentence": "(   )가 바뀌었다.",
-        "answer": "상대가"
+        "answer": "상대"
       }
     ]
   },
@@ -147,11 +147,11 @@
     "quiz": [
       {
         "sentence": "나는 (   )을 겪었다.",
-        "answer": "소진증후군을"
+        "answer": "소진증후군"
       },
       {
         "sentence": "(   )이 심각하다.",
-        "answer": "소진증후군이"
+        "answer": "소진증후군"
       },
       {
         "sentence": "(   )은 위험하다.",
@@ -159,11 +159,11 @@
       },
       {
         "sentence": "(   )과 싸워야 한다.",
-        "answer": "소진증후군과"
+        "answer": "소진증후군"
       },
       {
         "sentence": "(   )에 대한 이해.",
-        "answer": "소진증후군에"
+        "answer": "소진증후군"
       }
     ]
   },
@@ -171,11 +171,11 @@
     "quiz": [
       {
         "sentence": "감기 (   )이 나타났다.",
-        "answer": "증상이"
+        "answer": "증상"
       },
       {
         "sentence": "어떤 (   )을 보이나요?",
-        "answer": "증상을"
+        "answer": "증상"
       },
       {
         "sentence": "주요 (   )은 발열이다.",
@@ -183,11 +183,11 @@
       },
       {
         "sentence": "이것은 병의 (   )이다.",
-        "answer": "증상이다"
+        "answer": "증상"
       },
       {
         "sentence": "(   )으로 판단하기 어렵다.",
-        "answer": "증상으로"
+        "answer": "증상"
       }
     ]
   },
@@ -219,11 +219,11 @@
     "quiz": [
       {
         "sentence": "나는 (   )이 필요하다.",
-        "answer": "재충전이"
+        "answer": "재충전"
       },
       {
         "sentence": "주말에 (   )을 했다.",
-        "answer": "재충전을"
+        "answer": "재충전"
       },
       {
         "sentence": "(   )의 시간을 갖자.",
@@ -231,11 +231,11 @@
       },
       {
         "sentence": "(   )으로 힘을 얻었다.",
-        "answer": "재충전으로"
+        "answer": "재충전"
       },
       {
         "sentence": "이것은 완전한 (   )이다.",
-        "answer": "재충전이다"
+        "answer": "재충전"
       }
     ]
   },
@@ -243,15 +243,15 @@
     "quiz": [
       {
         "sentence": "(   )이 지쳐 있었다.",
-        "answer": "심신이"
+        "answer": "심신"
       },
       {
         "sentence": "(   )을 단련해야 한다.",
-        "answer": "심신을"
+        "answer": "심신"
       },
       {
         "sentence": "(   )의 건강이 중요하다.",
-        "answer": "심신의"
+        "answer": "심신"
       },
       {
         "sentence": "(   )을 편안하게 쉬세요.",
@@ -259,7 +259,7 @@
       },
       {
         "sentence": "(   )으로 건강해졌다.",
-        "answer": "심신으로"
+        "answer": "심신"
       }
     ]
   },
@@ -295,19 +295,19 @@
       },
       {
         "sentence": "(   )가 질문했다.",
-        "answer": "기자가"
+        "answer": "기자"
       },
       {
         "sentence": "유명한 (   )를 만났다.",
-        "answer": "기자를"
+        "answer": "기자"
       },
       {
         "sentence": "(   )에게 연락했다.",
-        "answer": "기자에게"
+        "answer": "기자"
       },
       {
         "sentence": "그는 베테랑 (   )이다.",
-        "answer": "기자이다"
+        "answer": "기자"
       }
     ]
   },
@@ -319,19 +319,19 @@
       },
       {
         "sentence": "(   )적인 연구를 했다.",
-        "answer": "심층적인"
+        "answer": "심층"
       },
       {
         "sentence": "문제를 (   )적으로 다뤘다.",
-        "answer": "심층적으로"
+        "answer": "심층"
       },
       {
         "sentence": "(   )의 의미를 찾았다.",
-        "answer": "심층의"
+        "answer": "심층"
       },
       {
         "sentence": "(   )에 들어가 보자.",
-        "answer": "심층에"
+        "answer": "심층"
       }
     ]
   },
@@ -343,19 +343,19 @@
       },
       {
         "sentence": "(   )가 발행되었다.",
-        "answer": "기사가"
+        "answer": "기사"
       },
       {
         "sentence": "(   )를 작성해야 한다.",
-        "answer": "기사를"
+        "answer": "기사"
       },
       {
         "sentence": "그 (   )에서 정보를 얻었다.",
-        "answer": "기사에서"
+        "answer": "기사"
       },
       {
         "sentence": "이것은 중요한 (   )이다.",
-        "answer": "기사이다"
+        "answer": "기사"
       }
     ]
   },
@@ -367,19 +367,19 @@
       },
       {
         "sentence": "(   )에 시간이 걸린다.",
-        "answer": "작성에"
+        "answer": "작성"
       },
       {
         "sentence": "(   )을 시작했다.",
-        "answer": "작성을"
+        "answer": "작성"
       },
       {
         "sentence": "문서 (   )이 어렵다.",
-        "answer": "작성이"
+        "answer": "작성"
       },
       {
         "sentence": "이것은 (   )된 문서이다.",
-        "answer": "작성된"
+        "answer": "작성"
       }
     ]
   },
@@ -419,15 +419,15 @@
       },
       {
         "sentence": "(   )이 막혀 있다.",
-        "answer": "차선이"
+        "answer": "차선"
       },
       {
         "sentence": "(   )을 바꾸세요.",
-        "answer": "차선을"
+        "answer": "차선"
       },
       {
         "sentence": "이것은 1차 (   )이다.",
-        "answer": "차선이다"
+        "answer": "차선"
       }
     ]
   },
@@ -443,15 +443,15 @@
       },
       {
         "sentence": "(   )가 잘 된다.",
-        "answer": "반사가"
+        "answer": "반사"
       },
       {
         "sentence": "빛을 (   )하는 거울.",
-        "answer": "반사하는"
+        "answer": "반사"
       },
       {
         "sentence": "이것은 빛을 (   ).",
-        "answer": "반사한다"
+        "answer": "반사"
       }
     ]
   },
@@ -459,11 +459,11 @@
     "quiz": [
       {
         "sentence": "이 차의 (   )이 좋다.",
-        "answer": "성능이"
+        "answer": "성능"
       },
       {
         "sentence": "(   )을 개선해야 한다.",
-        "answer": "성능을"
+        "answer": "성능"
       },
       {
         "sentence": "새로운 (   )을 자랑한다.",
@@ -471,11 +471,11 @@
       },
       {
         "sentence": "(   )과 가격을 비교했다.",
-        "answer": "성능과"
+        "answer": "성능"
       },
       {
         "sentence": "이것은 최고의 (   )이다.",
-        "answer": "성능이다"
+        "answer": "성능"
       }
     ]
   },
@@ -483,19 +483,19 @@
     "quiz": [
       {
         "sentence": "(   )이 반짝인다.",
-        "answer": "유리알이"
+        "answer": "유리알"
       },
       {
         "sentence": "(   )을 주웠다.",
-        "answer": "유리알을"
+        "answer": "유리알"
       },
       {
         "sentence": "(   )처럼 맑은 눈.",
-        "answer": "유리알처럼"
+        "answer": "유리알"
       },
       {
         "sentence": "이것은 진짜 (   )이다.",
-        "answer": "유리알이다"
+        "answer": "유리알"
       },
       {
         "sentence": "작은 (   )들이 많다.",
@@ -535,19 +535,19 @@
       },
       {
         "sentence": "(   )이 누구인가요?",
-        "answer": "대상이"
+        "answer": "대상"
       },
       {
         "sentence": "(   )을 정해야 한다.",
-        "answer": "대상을"
+        "answer": "대상"
       },
       {
         "sentence": "아이들을 (   )으로 한 교육.",
-        "answer": "대상으로"
+        "answer": "대상"
       },
       {
         "sentence": "(   )은 학생들이다.",
-        "answer": "대상이다"
+        "answer": "대상"
       }
     ]
   },
@@ -555,7 +555,7 @@
     "quiz": [
       {
         "sentence": "그는 (   )을 받았다.",
-        "answer": "상속을"
+        "answer": "상속"
       },
       {
         "sentence": "(   ) 재산이 많다.",
@@ -563,15 +563,15 @@
       },
       {
         "sentence": "(   )이 복잡하다.",
-        "answer": "상속이"
+        "answer": "상속"
       },
       {
         "sentence": "(   )세를 내야 한다.",
-        "answer": "상속세"
+        "answer": "상속"
       },
       {
         "sentence": "(   )받은 돈이 많다.",
-        "answer": "상속받은"
+        "answer": "상속"
       }
     ]
   },
@@ -583,11 +583,11 @@
       },
       {
         "sentence": "(   )된 지식이 많다.",
-        "answer": "축적된"
+        "answer": "축적"
       },
       {
         "sentence": "데이터 (   )이 이루어졌다.",
-        "answer": "축적이"
+        "answer": "축적"
       },
       {
         "sentence": "자료를 (   )하는 중이다.",
@@ -595,7 +595,7 @@
       },
       {
         "sentence": "(   )은 시간이 걸린다.",
-        "answer": "축적은"
+        "answer": "축적"
       }
     ]
   }

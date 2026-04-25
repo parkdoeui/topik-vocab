@@ -7,19 +7,19 @@
       },
       {
         "sentence": "여름에는 (   ) 강하다.",
-        "answer": "자외선이"
+        "answer": "자외선"
       },
       {
         "sentence": "피부 보호를 위해 (   ) 바른다.",
-        "answer": "자외선을"
+        "answer": "자외선"
       },
       {
         "sentence": "(   ) 피부를 보호하자.",
-        "answer": "자외선으로부터"
+        "answer": "자외선"
       },
       {
         "sentence": "(   ) 노출을 피하세요.",
-        "answer": "자외선에"
+        "answer": "자외선"
       }
     ]
   },
@@ -27,7 +27,7 @@
     "quiz": [
       {
         "sentence": "그는 참 (   ) 사람이다.",
-        "answer": "동적인"
+        "answer": "동적"
       },
       {
         "sentence": "이 그림은 (   ) 느낌을 준다.",
@@ -35,15 +35,15 @@
       },
       {
         "sentence": "그의 움직임은 (   ) 변한다.",
-        "answer": "동적으로"
+        "answer": "동적"
       },
       {
         "sentence": "이것은 매우 (   ).",
-        "answer": "동적이다"
+        "answer": "동적"
       },
       {
         "sentence": "그 시스템은 (   ) 않았다.",
-        "answer": "동적이지"
+        "answer": "동적"
       }
     ]
   },
@@ -55,19 +55,19 @@
       },
       {
         "sentence": "(   ) 시원하게 흐른다.",
-        "answer": "폭포가"
+        "answer": "폭포"
       },
       {
         "sentence": "우리는 (   ) 보러 갔다.",
-        "answer": "폭포를"
+        "answer": "폭포"
       },
       {
         "sentence": "(   ) 물줄기가 떨어진다.",
-        "answer": "폭포에서"
+        "answer": "폭포"
       },
       {
         "sentence": "머리카락이 (   ) 내려온다.",
-        "answer": "폭포처럼"
+        "answer": "폭포"
       }
     ]
   },
@@ -79,19 +79,19 @@
       },
       {
         "sentence": "이 그림은 (   ) 있다.",
-        "answer": "생동감이"
+        "answer": "생동감"
       },
       {
         "sentence": "작가님은 (   ) 표현했다.",
-        "answer": "생동감을"
+        "answer": "생동감"
       },
       {
         "sentence": "(   ) 그림을 그렸다.",
-        "answer": "생동감 있는"
+        "answer": "생동감"
       },
       {
         "sentence": "그는 (   ) 연기를 보여줬다.",
-        "answer": "생동감 넘치는"
+        "answer": "생동감"
       }
     ]
   },
@@ -127,19 +127,19 @@
       },
       {
         "sentence": "(   ) 설교를 시작했다.",
-        "answer": "성직자가"
+        "answer": "성직자"
       },
       {
         "sentence": "사람들은 (   ) 존경한다.",
-        "answer": "성직자를"
+        "answer": "성직자"
       },
       {
         "sentence": "(   ) 삶은 경건하다.",
-        "answer": "성직자의"
+        "answer": "성직자"
       },
       {
         "sentence": "그는 (   ) 되었다.",
-        "answer": "성직자로"
+        "answer": "성직자"
       }
     ]
   },
@@ -175,19 +175,19 @@
       },
       {
         "sentence": "(   ) 성경이 따로 있다.",
-        "answer": "성직자용의"
+        "answer": "성직자용"
       },
       {
         "sentence": "그것은 (   ) 만들어졌다.",
-        "answer": "성직자용으로"
+        "answer": "성직자용"
       },
       {
         "sentence": "이 물건은 (   ).",
-        "answer": "성직자용이다"
+        "answer": "성직자용"
       },
       {
         "sentence": "교회에 (   ) 물품이 많다.",
-        "answer": "성직자용품"
+        "answer": "성직자용"
       }
     ]
   },
@@ -199,19 +199,19 @@
       },
       {
         "sentence": "(   ) 질병을 일으킨다.",
-        "answer": "세균이"
+        "answer": "세균"
       },
       {
         "sentence": "손을 씻어 (   ) 없앤다.",
-        "answer": "세균을"
+        "answer": "세균"
       },
       {
         "sentence": "물건이 (   ) 오염되었다.",
-        "answer": "세균으로"
+        "answer": "세균"
       },
       {
         "sentence": "(   ) 싸워야 한다.",
-        "answer": "세균과"
+        "answer": "세균"
       }
     ]
   },
@@ -247,19 +247,19 @@
       },
       {
         "sentence": "(   ) 확산되고 있다.",
-        "answer": "감염이"
+        "answer": "감염"
       },
       {
         "sentence": "(   ) 막는 것이 중요하다.",
-        "answer": "감염을"
+        "answer": "감염"
       },
       {
         "sentence": "(   ) 위험이 높다.",
-        "answer": "감염의"
+        "answer": "감염"
       },
       {
         "sentence": "(   ) 보호해야 한다.",
-        "answer": "감염으로부터"
+        "answer": "감염"
       }
     ]
   },
@@ -319,19 +319,19 @@
       },
       {
         "sentence": "(   ) 최선이다.",
-        "answer": "예방이"
+        "answer": "예방"
       },
       {
         "sentence": "우리는 질병 (   ) 노력한다.",
-        "answer": "예방을"
+        "answer": "예방"
       },
       {
         "sentence": "치료 (   ) 중요하다.",
-        "answer": "예방과"
+        "answer": "예방"
       },
       {
         "sentence": "(   ) 손을 씻자.",
-        "answer": "예방을 위해"
+        "answer": "예방"
       }
     ]
   },
@@ -343,19 +343,19 @@
       },
       {
         "sentence": "(   ) 농작물을 망친다.",
-        "answer": "병해충이"
+        "answer": "병해충"
       },
       {
         "sentence": "농부들은 (   ) 막는다.",
-        "answer": "병해충을"
+        "answer": "병해충"
       },
       {
         "sentence": "이 식물은 (   ) 강하다.",
-        "answer": "병해충에도"
+        "answer": "병해충"
       },
       {
         "sentence": "(   ) 보호해야 한다.",
-        "answer": "병해충으로부터"
+        "answer": "병해충"
       }
     ]
   },
@@ -367,19 +367,19 @@
       },
       {
         "sentence": "(   ) 사람들은 세금을 많이 낸다.",
-        "answer": "고소득자"
+        "answer": "고소득"
       },
       {
         "sentence": "(   ) 세율이 높다.",
-        "answer": "고소득층"
+        "answer": "고소득"
       },
       {
         "sentence": "(   ) 직업을 원한다.",
-        "answer": "고소득의"
+        "answer": "고소득"
       },
       {
         "sentence": "(   ) 생활한다.",
-        "answer": "고소득으로"
+        "answer": "고소득"
       }
     ]
   },
@@ -391,19 +391,19 @@
       },
       {
         "sentence": "(   ) 많은 책을 썼다.",
-        "answer": "서유구가"
+        "answer": "서유구"
       },
       {
         "sentence": "(   ) 실학자였다.",
-        "answer": "서유구는"
+        "answer": "서유구"
       },
       {
         "sentence": "(   ) 연구는 깊이가 있다.",
-        "answer": "서유구의"
+        "answer": "서유구"
       },
       {
         "sentence": "(   ) 대한 기록이 있다.",
-        "answer": "서유구에"
+        "answer": "서유구"
       }
     ]
   },
@@ -439,19 +439,19 @@
       },
       {
         "sentence": "(   ) 많아서 행복하다.",
-        "answer": "서적이"
+        "answer": "서적"
       },
       {
         "sentence": "나는 (   ) 읽는 것을 좋아한다.",
-        "answer": "서적을"
+        "answer": "서적"
       },
       {
         "sentence": "오래된 (   ) 연구했다.",
-        "answer": "서적들을"
+        "answer": "서적"
       },
       {
         "sentence": "(   ) 정보를 찾았다.",
-        "answer": "서적에서"
+        "answer": "서적"
       }
     ]
   },
@@ -463,19 +463,19 @@
       },
       {
         "sentence": "(   ) 날카롭다.",
-        "answer": "논평이"
+        "answer": "논평"
       },
       {
         "sentence": "기자는 (   ) 남겼다.",
-        "answer": "논평을"
+        "answer": "논평"
       },
       {
         "sentence": "기사와 (   ) 함께 실렸다.",
-        "answer": "논평과"
+        "answer": "논평"
       },
       {
         "sentence": "(   ) 질문이 많았다.",
-        "answer": "논평에"
+        "answer": "논평"
       }
     ]
   },
@@ -487,19 +487,19 @@
       },
       {
         "sentence": "그는 (   ) 지식이 깊다.",
-        "answer": "서지학적인"
+        "answer": "서지학적"
       },
       {
         "sentence": "문헌을 (   ) 분석했다.",
-        "answer": "서지학적으로"
+        "answer": "서지학적"
       },
       {
         "sentence": "이것은 매우 (   ).",
-        "answer": "서지학적이다"
+        "answer": "서지학적"
       },
       {
         "sentence": "그의 주장은 (   ) 않았다.",
-        "answer": "서지학적이지"
+        "answer": "서지학적"
       }
     ]
   },
@@ -583,19 +583,19 @@
       },
       {
         "sentence": "(   ) 청소해야 한다.",
-        "answer": "배설물을"
+        "answer": "배설물"
       },
       {
         "sentence": "(   ) 오염의 원인이다.",
-        "answer": "배설물이"
+        "answer": "배설물"
       },
       {
         "sentence": "(   ) 처리하는 방법.",
-        "answer": "배설물의"
+        "answer": "배설물"
       },
       {
         "sentence": "(   ) 쓰레기를 버렸다.",
-        "answer": "배설물과"
+        "answer": "배설물"
       }
     ]
   }

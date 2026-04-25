@@ -75,15 +75,15 @@
     "quiz": [
       {
         "sentence": "올해 (   )이 부족하다.",
-        "answer": "예산이"
+        "answer": "예산"
       },
       {
         "sentence": "정부는 (   )을 편성했다.",
-        "answer": "예산을"
+        "answer": "예산"
       },
       {
         "sentence": "(   )은 줄여야 한다.",
-        "answer": "예산은"
+        "answer": "예산"
       },
       {
         "sentence": "(   ) 문제로 취소됐다.",
@@ -155,11 +155,11 @@
       },
       {
         "sentence": "(   )은 배우자가 있다.",
-        "answer": "기혼은"
+        "answer": "기혼"
       },
       {
         "sentence": "(   )이 늘고 있다.",
-        "answer": "기혼이"
+        "answer": "기혼"
       },
       {
         "sentence": "그는 (   )임을 밝혔다.",
@@ -171,19 +171,19 @@
     "quiz": [
       {
         "sentence": "(   )가 뭐예요?",
-        "answer": "이유가"
+        "answer": "이유"
       },
       {
         "sentence": "(   )는 간단하다.",
-        "answer": "이유는"
+        "answer": "이유"
       },
       {
         "sentence": "그 (   )로 거절했다.",
-        "answer": "이유로"
+        "answer": "이유"
       },
       {
         "sentence": "그게 (   )라고 말했다.",
-        "answer": "이유라고"
+        "answer": "이유"
       },
       {
         "sentence": "(   ) 없이 가지 마.",
@@ -195,19 +195,19 @@
     "quiz": [
       {
         "sentence": "(   )를 돕는다.",
-        "answer": "가사를"
+        "answer": "가사"
       },
       {
         "sentence": "(   )는 힘들다.",
-        "answer": "가사는"
+        "answer": "가사"
       },
       {
         "sentence": "(   )가 많다.",
-        "answer": "가사가"
+        "answer": "가사"
       },
       {
         "sentence": "(   ) 육아를 병행한다.",
-        "answer": "가사와"
+        "answer": "가사"
       },
       {
         "sentence": "(   ) 노동은 힘들다.",
@@ -219,19 +219,19 @@
     "quiz": [
       {
         "sentence": "(   )를 돕는다.",
-        "answer": "육아를"
+        "answer": "육아"
       },
       {
         "sentence": "(   )는 어렵다.",
-        "answer": "육아는"
+        "answer": "육아"
       },
       {
         "sentence": "(   )가 중요하다.",
-        "answer": "육아가"
+        "answer": "육아"
       },
       {
         "sentence": "(   )에 힘쓰고 있다.",
-        "answer": "육아에"
+        "answer": "육아"
       },
       {
         "sentence": "(   ) 휴직을 신청했다.",
@@ -243,15 +243,15 @@
     "quiz": [
       {
         "sentence": "하늘에 (   )이 떴다.",
-        "answer": "보름달이"
+        "answer": "보름달"
       },
       {
         "sentence": "(   )은 둥글다.",
-        "answer": "보름달은"
+        "answer": "보름달"
       },
       {
         "sentence": "(   )을 봤다.",
-        "answer": "보름달을"
+        "answer": "보름달"
       },
       {
         "sentence": "(   )처럼 둥근 얼굴.",
@@ -267,19 +267,19 @@
     "quiz": [
       {
         "sentence": "(   )을 만들었다.",
-        "answer": "송편을"
+        "answer": "송편"
       },
       {
         "sentence": "(   )은 맛있다.",
-        "answer": "송편은"
+        "answer": "송편"
       },
       {
         "sentence": "(   )이 많다.",
-        "answer": "송편이"
+        "answer": "송편"
       },
       {
         "sentence": "(   ) 맛이 좋다.",
-        "answer": "송편의"
+        "answer": "송편"
       },
       {
         "sentence": "(   ) 만들기 체험.",
@@ -291,15 +291,15 @@
     "quiz": [
       {
         "sentence": "하늘에 (   )이 보였다.",
-        "answer": "반달이"
+        "answer": "반달"
       },
       {
         "sentence": "(   )은 초승달이다.",
-        "answer": "반달은"
+        "answer": "반달"
       },
       {
         "sentence": "(   )을 그렸다.",
-        "answer": "반달을"
+        "answer": "반달"
       },
       {
         "sentence": "(   ) 모양의 빵.",
@@ -315,23 +315,23 @@
     "quiz": [
       {
         "sentence": "(   )이 많다.",
-        "answer": "일이"
+        "answer": "일"
       },
       {
         "sentence": "(   )을 한다.",
-        "answer": "일을"
+        "answer": "일"
       },
       {
         "sentence": "(   )은 어렵다.",
-        "answer": "일은"
+        "answer": "일"
       },
       {
         "sentence": "그 (   )에 신경 쓴다.",
-        "answer": "일에"
+        "answer": "일"
       },
       {
         "sentence": "이것은 내 (   ).",
-        "answer": "일이다"
+        "answer": "일"
       }
     ]
   },
@@ -339,19 +339,19 @@
     "quiz": [
       {
         "sentence": "(   )가 없다.",
-        "answer": "포크가"
+        "answer": "포크"
       },
       {
         "sentence": "(   )는 필요 없다.",
-        "answer": "포크는"
+        "answer": "포크"
       },
       {
         "sentence": "(   )를 사용한다.",
-        "answer": "포크를"
+        "answer": "포크"
       },
       {
         "sentence": "(   )로 먹어요.",
-        "answer": "포크로"
+        "answer": "포크"
       },
       {
         "sentence": "(   ) 나이프 세트.",
@@ -363,15 +363,15 @@
     "quiz": [
       {
         "sentence": "(   )가 늘었다.",
-        "answer": "횟수가"
+        "answer": "횟수"
       },
       {
         "sentence": "(   )는 중요하다.",
-        "answer": "횟수는"
+        "answer": "횟수"
       },
       {
         "sentence": "(   )를 세어보자.",
-        "answer": "횟수로"
+        "answer": "횟수"
       },
       {
         "sentence": "(   ) 제한이 있다.",
@@ -379,7 +379,7 @@
       },
       {
         "sentence": "(   )를 줄였다.",
-        "answer": "횟수를"
+        "answer": "횟수"
       }
     ]
   },
@@ -387,15 +387,15 @@
     "quiz": [
       {
         "sentence": "(   )이 울렸다.",
-        "answer": "경고음이"
+        "answer": "경고음"
       },
       {
         "sentence": "(   )을 들었다.",
-        "answer": "경고음을"
+        "answer": "경고음"
       },
       {
         "sentence": "(   )은 위험 신호다.",
-        "answer": "경고음은"
+        "answer": "경고음"
       },
       {
         "sentence": "(   ) 장치가 작동했다.",
@@ -411,15 +411,15 @@
     "quiz": [
       {
         "sentence": "새로운 (   )이 발견됐다.",
-        "answer": "물질이"
+        "answer": "물질"
       },
       {
         "sentence": "이것은 어떤 (   )로 만들었나요?",
-        "answer": "물질로"
+        "answer": "물질"
       },
       {
         "sentence": "(   )은 중요하다.",
-        "answer": "물질은"
+        "answer": "물질"
       },
       {
         "sentence": "(   ) 안전 검사.",
@@ -427,7 +427,7 @@
       },
       {
         "sentence": "(   )을 분석했다.",
-        "answer": "물질을"
+        "answer": "물질"
       }
     ]
   },
@@ -459,11 +459,11 @@
     "quiz": [
       {
         "sentence": "그는 (   )으로 노력했다.",
-        "answer": "지속적으로"
+        "answer": "지속적"
       },
       {
         "sentence": "(   )인 발전이 필요하다.",
-        "answer": "지속적인"
+        "answer": "지속적"
       },
       {
         "sentence": "그의 연구는 (   )이다.",
@@ -483,15 +483,15 @@
     "quiz": [
       {
         "sentence": "(   )이 올랐다.",
-        "answer": "매출이"
+        "answer": "매출"
       },
       {
         "sentence": "(   )을 늘렸다.",
-        "answer": "매출을"
+        "answer": "매출"
       },
       {
         "sentence": "(   )은 중요하다.",
-        "answer": "매출은"
+        "answer": "매출"
       },
       {
         "sentence": "(   ) 목표를 세웠다.",
@@ -499,7 +499,7 @@
       },
       {
         "sentence": "(   )까지 포함해서 계산했다.",
-        "answer": "매출까지"
+        "answer": "매출"
       }
     ]
   },
@@ -531,19 +531,19 @@
     "quiz": [
       {
         "sentence": "(   )를 뜯었다.",
-        "answer": "봉투를"
+        "answer": "봉투"
       },
       {
         "sentence": "(   )가 도착했다.",
-        "answer": "봉투가"
+        "answer": "봉투"
       },
       {
         "sentence": "(   )는 비어 있었다.",
-        "answer": "봉투는"
+        "answer": "봉투"
       },
       {
         "sentence": "(   )에 편지를 넣었다.",
-        "answer": "봉투에"
+        "answer": "봉투"
       },
       {
         "sentence": "(   ) 편지.",
@@ -555,15 +555,15 @@
     "quiz": [
       {
         "sentence": "(   )를 얻었다.",
-        "answer": "천하를"
+        "answer": "천하"
       },
       {
         "sentence": "(   )가 평화롭다.",
-        "answer": "천하가"
+        "answer": "천하"
       },
       {
         "sentence": "(   )는 넓다.",
-        "answer": "천하는"
+        "answer": "천하"
       },
       {
         "sentence": "(   ) 제일의 미인.",
@@ -571,7 +571,7 @@
       },
       {
         "sentence": "(   )에 이름이 알려졌다.",
-        "answer": "천하에"
+        "answer": "천하"
       }
     ]
   },
@@ -579,19 +579,19 @@
     "quiz": [
       {
         "sentence": "(   )을 걸었다.",
-        "answer": "간판을"
+        "answer": "간판"
       },
       {
         "sentence": "(   )이 떨어졌다.",
-        "answer": "간판이"
+        "answer": "간판"
       },
       {
         "sentence": "(   )은 밝았다.",
-        "answer": "간판은"
+        "answer": "간판"
       },
       {
         "sentence": "(   )에 불이 켜졌다.",
-        "answer": "간판에"
+        "answer": "간판"
       },
       {
         "sentence": "(   ) 글씨가 예쁘다.",
