@@ -24,6 +24,12 @@ body {
   padding-bottom: max(1rem, env(safe-area-inset-bottom));
 }
 
+/* Confetti fall animation */
+@keyframes confettiFall {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+
 /* Smooth card flip placeholder (unused now but reserve) */
 .line-clamp-2 {
   display: -webkit-box;
