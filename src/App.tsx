@@ -4,6 +4,8 @@ import { sendSessionData } from "./services/analytics";
 import { saveSession } from "./services/session";
 import type { SavedWordRecord, TestSession } from "./services/session";
 import type { VocabWord } from "./types";
+import { quizSets, getClearedSets } from "./data/quizData";
+import type { QuizSet } from "./data/quizData";
 import Header from "./components/Header";
 import TestSelector from "./components/TestSelector";
 import QuestionView from "./components/QuestionView";
@@ -14,6 +16,10 @@ import AccessGate, { isAccessGranted } from "./components/AccessGate";
 import CompletionView from "./components/CompletionView";
 import SubmitModal from "./components/SubmitModal";
 import IncompleteModal from "./components/IncompleteModal";
+import ReviewSetList from "./components/ReviewSetList";
+import ReviewView from "./components/ReviewView";
+
+type TopTab = "test" | "review";
 
 export default function App() {
   const [accessGranted, setAccessGranted] = useState(() => isAccessGranted());
