@@ -7,19 +7,19 @@
       },
       {
         "sentence": "그는 특이한 (   )의 사람이다.",
-        "answer": "유형의"
+        "answer": "유형"
       },
       {
         "sentence": "여러 (   )으로 분류할 수 있다.",
-        "answer": "유형으로"
+        "answer": "유형"
       },
       {
         "sentence": "당신의 학습 (   )은 무엇입니까?",
-        "answer": "유형은"
+        "answer": "유형"
       },
       {
         "sentence": "이 게임은 두 가지 (   )이 있다.",
-        "answer": "유형이"
+        "answer": "유형"
       }
     ]
   },
@@ -31,15 +31,15 @@
       },
       {
         "sentence": "그는 (   )에게 사랑을 준다.",
-        "answer": "자녀에게"
+        "answer": "자녀"
       },
       {
         "sentence": "(   )를 잘 키우는 것이 중요하다.",
-        "answer": "자녀를"
+        "answer": "자녀"
       },
       {
         "sentence": "나의 (   )는 세 명이다.",
-        "answer": "자녀는"
+        "answer": "자녀"
       },
       {
         "sentence": "(   ) 교육에 힘썼다.",
@@ -75,7 +75,7 @@
     "quiz": [
       {
         "sentence": "그는 전형적인 (   )이다.",
-        "answer": "자수성가형이다"
+        "answer": "자수성가형"
       },
       {
         "sentence": "우리 아버지는 (   ) 사람이다.",
@@ -87,7 +87,7 @@
       },
       {
         "sentence": "그는 (   )으로 성공했다.",
-        "answer": "자수성가형으로"
+        "answer": "자수성가형"
       },
       {
         "sentence": "(   ) 사업가가 되었다.",
@@ -103,19 +103,19 @@
       },
       {
         "sentence": "그 요리 (   )을 배우고 싶다.",
-        "answer": "비법을"
+        "answer": "비법"
       },
       {
         "sentence": "나만의 (   )이 있다.",
-        "answer": "비법이"
+        "answer": "비법"
       },
       {
         "sentence": "이 음식은 특별한 (   )으로 만든다.",
-        "answer": "비법으로"
+        "answer": "비법"
       },
       {
         "sentence": "어머니의 김치 (   )은 최고다.",
-        "answer": "비법은"
+        "answer": "비법"
       }
     ]
   },
@@ -127,15 +127,15 @@
       },
       {
         "sentence": "이 (   )의 목표는 크다.",
-        "answer": "집단의"
+        "answer": "집단"
       },
       {
         "sentence": "(   )으로 모여 회의했다.",
-        "answer": "집단으로"
+        "answer": "집단"
       },
       {
         "sentence": "그 (   )은 힘이 세다.",
-        "answer": "집단은"
+        "answer": "집단"
       },
       {
         "sentence": "(   ) 행동을 보였다.",
@@ -147,7 +147,7 @@
     "quiz": [
       {
         "sentence": "그의 말은 (   )의 경고였다.",
-        "answer": "일종의"
+        "answer": "일종"
       },
       {
         "sentence": "이것은 예술의 (   )이다.",
@@ -155,15 +155,15 @@
       },
       {
         "sentence": "스트레스도 (   )이다.",
-        "answer": "일종이다"
+        "answer": "일종"
       },
       {
         "sentence": "그 행동은 (   )으로 볼 수 있다.",
-        "answer": "일종으로"
+        "answer": "일종"
       },
       {
         "sentence": "(   )은 놀이의 한 형태다.",
-        "answer": "일종은"
+        "answer": "일종"
       }
     ]
   },
@@ -227,7 +227,7 @@
       },
       {
         "sentence": "문자의 (   )는 쉽지 않다.",
-        "answer": "창제는"
+        "answer": "창제"
       },
       {
         "sentence": "새로운 제도를 (   )했다.",
@@ -235,7 +235,7 @@
       },
       {
         "sentence": "그의 (   )와 노력은 대단하다.",
-        "answer": "창제와"
+        "answer": "창제"
       }
     ]
   },
@@ -247,19 +247,19 @@
       },
       {
         "sentence": "많은 (   )을 남겼다.",
-        "answer": "업적을"
+        "answer": "업적"
       },
       {
         "sentence": "역사적인 (   )이다.",
-        "answer": "업적이다"
+        "answer": "업적"
       },
       {
         "sentence": "그의 (   )은 인정받았다.",
-        "answer": "업적은"
+        "answer": "업적"
       },
       {
         "sentence": "위대한 (   )으로 기록되었다.",
-        "answer": "업적으로"
+        "answer": "업적"
       }
     ]
   },
@@ -271,19 +271,19 @@
       },
       {
         "sentence": "낮은 (   )에도 성공했다.",
-        "answer": "신분에도"
+        "answer": "신분"
       },
       {
         "sentence": "(   )을 숨기고 살았다.",
-        "answer": "신분을"
+        "answer": "신분"
       },
       {
         "sentence": "(   )이 중요하다.",
-        "answer": "신분이"
+        "answer": "신분"
       },
       {
         "sentence": "(   )에 따라 대우가 다르다.",
-        "answer": "신분에"
+        "answer": "신분"
       }
     ]
   },
@@ -295,15 +295,15 @@
       },
       {
         "sentence": "충분한 (   )을 갖췄다.",
-        "answer": "역량을"
+        "answer": "역량"
       },
       {
         "sentence": "그는 (   )이 부족하다.",
-        "answer": "역량이"
+        "answer": "역량"
       },
       {
         "sentence": "(   )에 따라 임무가 주어진다.",
-        "answer": "역량에"
+        "answer": "역량"
       },
       {
         "sentence": "(   )을 키우는 것이 중요하다.",
@@ -319,19 +319,19 @@
       },
       {
         "sentence": "어떤 (   )으로 평가할까?",
-        "answer": "기준으로"
+        "answer": "기준"
       },
       {
         "sentence": "새로운 (   )을 세웠다.",
-        "answer": "기준을"
+        "answer": "기준"
       },
       {
         "sentence": "이 (   )에 맞춰야 한다.",
-        "answer": "기준에"
+        "answer": "기준"
       },
       {
         "sentence": "나의 (   )은 매우 높다.",
-        "answer": "기준은"
+        "answer": "기준"
       }
     ]
   },
@@ -343,7 +343,7 @@
       },
       {
         "sentence": "(   )를 발굴하는 것이 중요하다.",
-        "answer": "인재를"
+        "answer": "인재"
       },
       {
         "sentence": "많은 (   )들이 모였다.",
@@ -351,11 +351,11 @@
       },
       {
         "sentence": "(   )의 중요성을 강조했다.",
-        "answer": "인재의"
+        "answer": "인재"
       },
       {
         "sentence": "우리 회사는 (   )가 필요하다.",
-        "answer": "인재가"
+        "answer": "인재"
       }
     ]
   },
@@ -371,7 +371,7 @@
       },
       {
         "sentence": "그의 (   )은 모두를 놀라게 했다.",
-        "answer": "등용은"
+        "answer": "등용"
       },
       {
         "sentence": "젊은 인재를 (   )했다.",
@@ -379,7 +379,7 @@
       },
       {
         "sentence": "(   )에 대한 논의가 있었다.",
-        "answer": "등용에"
+        "answer": "등용"
       }
     ]
   },
@@ -395,7 +395,7 @@
       },
       {
         "sentence": "법률 (   )은 늦어졌다.",
-        "answer": "시행은"
+        "answer": "시행"
       },
       {
         "sentence": "계획을 (   )했다.",
@@ -403,7 +403,7 @@
       },
       {
         "sentence": "(   )에 앞서 준비가 필요하다.",
-        "answer": "시행에"
+        "answer": "시행"
       }
     ]
   },
@@ -415,19 +415,19 @@
       },
       {
         "sentence": "(   )을 제한하는 정책이다.",
-        "answer": "총량을"
+        "answer": "총량"
       },
       {
         "sentence": "생산 (   )이 증가했다.",
-        "answer": "총량이"
+        "answer": "총량"
       },
       {
         "sentence": "(   )으로 계산해 보자.",
-        "answer": "총량으로"
+        "answer": "총량"
       },
       {
         "sentence": "연간 (   )은 정해져 있다.",
-        "answer": "총량은"
+        "answer": "총량"
       }
     ]
   },
@@ -439,19 +439,19 @@
       },
       {
         "sentence": "(   )별로 지원책이 다르다.",
-        "answer": "업종별로"
+        "answer": "업종"
       },
       {
         "sentence": "새로운 (   )에 도전했다.",
-        "answer": "업종에"
+        "answer": "업종"
       },
       {
         "sentence": "이 (   )은 경쟁이 치열하다.",
-        "answer": "업종은"
+        "answer": "업종"
       },
       {
         "sentence": "특정 (   )을 규제한다.",
-        "answer": "업종을"
+        "answer": "업종"
       }
     ]
   },
@@ -491,15 +491,15 @@
       },
       {
         "sentence": "(   )를 개선해야 한다.",
-        "answer": "제도를"
+        "answer": "제도"
       },
       {
         "sentence": "(   )의 변화가 필요하다.",
-        "answer": "제도의"
+        "answer": "제도"
       },
       {
         "sentence": "(   )에 따라 처리된다.",
-        "answer": "제도에"
+        "answer": "제도"
       }
     ]
   },
@@ -511,19 +511,19 @@
       },
       {
         "sentence": "(   )의 원인은 다양하다.",
-        "answer": "지구온난화의"
+        "answer": "지구온난화"
       },
       {
         "sentence": "(   )를 막기 위해 노력하자.",
-        "answer": "지구온난화를"
+        "answer": "지구온난화"
       },
       {
         "sentence": "(   )가 진행되고 있다.",
-        "answer": "지구온난화가"
+        "answer": "지구온난화"
       },
       {
         "sentence": "(   )에 대한 연구가 필요하다.",
-        "answer": "지구온난화에"
+        "answer": "지구온난화"
       }
     ]
   },
@@ -535,19 +535,19 @@
       },
       {
         "sentence": "(   )별로 경쟁이 치열하다.",
-        "answer": "업체별로"
+        "answer": "업체"
       },
       {
         "sentence": "새로운 (   )를 찾고 있다.",
-        "answer": "업체를"
+        "answer": "업체"
       },
       {
         "sentence": "이 (   )는 유명하다.",
-        "answer": "업체는"
+        "answer": "업체"
       },
       {
         "sentence": "(   )에 문의했다.",
-        "answer": "업체에"
+        "answer": "업체"
       }
     ]
   },
@@ -563,15 +563,15 @@
       },
       {
         "sentence": "(   )을 측정하는 중이다.",
-        "answer": "배출량을"
+        "answer": "배출량"
       },
       {
         "sentence": "공장의 (   )이 많다.",
-        "answer": "배출량이"
+        "answer": "배출량"
       },
       {
         "sentence": "(   )에 따라 세금을 부과한다.",
-        "answer": "배출량에"
+        "answer": "배출량"
       }
     ]
   },

@@ -31,7 +31,7 @@
       },
       {
         "sentence": "상황 (   ) 걱정이다.",
-        "answer": "악화가"
+        "answer": "악화"
       },
       {
         "sentence": "병이 더 (   ) 안 된다.",
@@ -43,7 +43,7 @@
       },
       {
         "sentence": "경제 (   ) 모두 힘들다.",
-        "answer": "악화로"
+        "answer": "악화"
       }
     ]
   },
@@ -87,7 +87,7 @@
       },
       {
         "sentence": "외국인들의 (   ) 돕는다.",
-        "answer": "정착을"
+        "answer": "정착"
       },
       {
         "sentence": "이곳에 (   ) 사람들이 많다.",
@@ -123,15 +123,15 @@
     "quiz": [
       {
         "sentence": "우리 팀이 (   ) 했다.",
-        "answer": "2위를"
+        "answer": "2위"
       },
       {
         "sentence": "그는 대회에서 (   ) 차지했다.",
-        "answer": "2위를"
+        "answer": "2위"
       },
       {
         "sentence": "이번 달 매출은 (   ) 올랐다.",
-        "answer": "2위로"
+        "answer": "2위"
       },
       {
         "sentence": "(   ) 팀은 상을 받는다.",
@@ -139,7 +139,7 @@
       },
       {
         "sentence": "우리 회사가 시장 점유율 (   ).",
-        "answer": "2위이다"
+        "answer": "2위"
       }
     ]
   },
@@ -175,7 +175,7 @@
       },
       {
         "sentence": "그들은 (   ) 논의 중이다.",
-        "answer": "합병을"
+        "answer": "합병"
       },
       {
         "sentence": "회사는 작년에 (   ).",
@@ -223,7 +223,7 @@
       },
       {
         "sentence": "(   ) 큰 이슈가 되었다.",
-        "answer": "재계에서"
+        "answer": "재계"
       },
       {
         "sentence": "(   ) 거물들이 참석했다.",
@@ -231,11 +231,11 @@
       },
       {
         "sentence": "(   ) 동향을 주시한다.",
-        "answer": "재계는"
+        "answer": "재계"
       },
       {
         "sentence": "한국 (   ) 영향력이 크다.",
-        "answer": "재계의"
+        "answer": "재계"
       }
     ]
   },
@@ -295,15 +295,15 @@
       },
       {
         "sentence": "우리는 (   ) 목표를 가지고 있다.",
-        "answer": "공동의"
+        "answer": "공동"
       },
       {
         "sentence": "이 문제는 우리 (   ) 숙제다.",
-        "answer": "공동의"
+        "answer": "공동"
       },
       {
         "sentence": "(   ) 작업을 마쳤다.",
-        "answer": "공동으로"
+        "answer": "공동"
       },
       {
         "sentence": "우리는 (   ) 운명이다.",
@@ -319,11 +319,11 @@
       },
       {
         "sentence": "이 상점은 (   ) 운영된다.",
-        "answer": "소규모로"
+        "answer": "소규모"
       },
       {
         "sentence": "(   ) 사업을 시작했다.",
-        "answer": "소규모의"
+        "answer": "소규모"
       },
       {
         "sentence": "(   ) 투자가 안전하다.",
@@ -363,19 +363,19 @@
     "quiz": [
       {
         "sentence": "코끼리는 (   ) 크다.",
-        "answer": "몸집이"
+        "answer": "몸집"
       },
       {
         "sentence": "작은 (   ) 강아지다.",
-        "answer": "몸집의"
+        "answer": "몸집"
       },
       {
         "sentence": "회사는 (   ) 키웠다.",
-        "answer": "몸집을"
+        "answer": "몸집"
       },
       {
         "sentence": "그의 (   ) 아주 작다.",
-        "answer": "몸집은"
+        "answer": "몸집"
       },
       {
         "sentence": "작은 (   ) 새들이 날아다닌다.",
@@ -415,7 +415,7 @@
       },
       {
         "sentence": "법 (   ) 논의 중이다.",
-        "answer": "제정이"
+        "answer": "제정"
       },
       {
         "sentence": "(   ) 법안이 통과되었다.",
@@ -427,7 +427,7 @@
       },
       {
         "sentence": "법 (   ) 서둘러야 한다.",
-        "answer": "제정을"
+        "answer": "제정"
       }
     ]
   },
@@ -435,19 +435,19 @@
     "quiz": [
       {
         "sentence": "이 문제가 큰 (   ) 되었다.",
-        "answer": "쟁점이"
+        "answer": "쟁점"
       },
       {
         "sentence": "주요 (   ) 논의했다.",
-        "answer": "쟁점을"
+        "answer": "쟁점"
       },
       {
         "sentence": "토론의 (   ) 무엇인가?",
-        "answer": "쟁점은"
+        "answer": "쟁점"
       },
       {
         "sentence": "환경 문제가 (   ) 떠올랐다.",
-        "answer": "쟁점으로"
+        "answer": "쟁점"
       },
       {
         "sentence": "(   ) 사항을 정리했다.",
@@ -519,7 +519,7 @@
       },
       {
         "sentence": "(   ) 반대가 나뉘었다.",
-        "answer": "찬성과"
+        "answer": "찬성"
       },
       {
         "sentence": "그녀는 그 계획에 (   ).",
@@ -579,15 +579,15 @@
     "quiz": [
       {
         "sentence": "이 문제에는 여러 (   ) 있다.",
-        "answer": "측면이"
+        "answer": "측면"
       },
       {
         "sentence": "긍정적인 (   ) 강조했다.",
-        "answer": "측면을"
+        "answer": "측면"
       },
       {
         "sentence": "모든 (   ) 고려해야 한다.",
-        "answer": "측면에서"
+        "answer": "측면"
       },
       {
         "sentence": "이것은 하나의 (   ) 불과하다.",
@@ -595,7 +595,7 @@
       },
       {
         "sentence": "다른 (   ) 보면 다르다.",
-        "answer": "측면으로"
+        "answer": "측면"
       }
     ]
   }
