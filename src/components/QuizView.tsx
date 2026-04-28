@@ -46,16 +46,18 @@ function ConfettiPiece({ style }: { style: React.CSSProperties }) {
 const CONFETTI_COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899"];
 
 function Confetti() {
-  const pieces = Array.from({ length: 60 }, (_, i) => ({
-    key: i,
-    style: {
-      left: `${Math.random() * 100}%`,
-      top: `${Math.random() * -20}%`,
-      backgroundColor: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-      transform: `rotate(${Math.random() * 360}deg)`,
-      animation: `confettiFall ${1.5 + Math.random() * 2}s ease-in ${Math.random() * 0.5}s forwards`,
-    } as React.CSSProperties,
-  }));
+  const [pieces] = React.useState(() =>
+    Array.from({ length: 60 }, (_, i) => ({
+      key: i,
+      style: {
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * -20}%`,
+        backgroundColor: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+        transform: `rotate(${Math.random() * 360}deg)`,
+        animation: `confettiFall ${1.5 + Math.random() * 2}s ease-in ${Math.random() * 0.5}s forwards`,
+      } as React.CSSProperties,
+    }))
+  );
 
   return (
     <div className="pointer-events-none fixed inset-0 overflow-hidden z-50">
