@@ -3,8 +3,9 @@ import type { QuizSet } from "../data/quizData";
 import { markSetCleared } from "../data/quizData";
 import FlashcardView from "./FlashcardView";
 import QuizView from "./QuizView";
+import ChallengeView from "./ChallengeView";
 
-type Mode = "flashcard" | "quiz";
+type Mode = "flashcard" | "quiz" | "challenge";
 
 interface ReviewViewProps {
   quizSet: QuizSet;
