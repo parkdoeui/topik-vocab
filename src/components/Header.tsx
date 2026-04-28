@@ -5,6 +5,8 @@ interface HeaderProps {
   onBasketClick: () => void;
   apiKey: string;
   onApiKeyChange: (key: string) => void;
+  geminiApiKey: string;
+  onGeminiApiKeyChange: (key: string) => void;
   showTranslation: boolean;
   onToggleTranslation: () => void;
 }
@@ -14,16 +16,22 @@ export default function Header({
   onBasketClick,
   apiKey,
   onApiKeyChange,
+  geminiApiKey,
+  onGeminiApiKeyChange,
   showTranslation,
   onToggleTranslation,
 }: HeaderProps) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [keyInput, setKeyInput] = useState(apiKey);
+  const [geminiKeyInput, setGeminiKeyInput] = useState(geminiApiKey);
 
   const handleSaveKey = () => {
     const trimmed = keyInput.trim();
     onApiKeyChange(trimmed);
     localStorage.setItem("krdict-api-key", trimmed);
+    const geminiTrimmed = geminiKeyInput.trim();
+    onGeminiApiKeyChange(geminiTrimmed);
+    localStorage.setItem("gemini-api-key", geminiTrimmed);
     setSettingsOpen(false);
   };
 
