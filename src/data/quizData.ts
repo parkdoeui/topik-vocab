@@ -35,7 +35,7 @@ type UniqueWordsJson = Record<string, { english: string; variations: string[] }>
 
 const uniqueWordsData = uniqueWords as UniqueWordsJson;
 
-const rawSets: RawQuizJson[] = [quizSet1, quizSet2, quizSet3, quizSet4, quizSet5, quizSet6] as RawQuizJson[];
+const rawSets: RawQuizJson[] = [quizSet1, quizSet2, quizSet3, quizSet4, quizSet5, quizSet6, quizSet7, quizSet8, quizSet9, quizSet10, quizSet11, quizSet12] as RawQuizJson[];
 
 function buildSet(raw: RawQuizJson, id: number): QuizSet {
   const cards: FlashcardEntry[] = Object.entries(raw).map(([word, data]) => {
