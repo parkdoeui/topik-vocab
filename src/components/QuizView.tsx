@@ -46,7 +46,7 @@ function ConfettiPiece({ style }: { style: React.CSSProperties }) {
 const CONFETTI_COLORS = ["#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899"];
 
 function Confetti() {
-  const [pieces] = React.useState(() =>
+  const [pieces] = useState(() =>
     Array.from({ length: 60 }, (_, i) => ({
       key: i,
       style: {
