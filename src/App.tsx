@@ -39,8 +39,10 @@ export default function App() {
   const [questionTimings, setQuestionTimings] = useState<Record<string, number>>({});
 
   // Session timing refs (don't trigger re-renders)
-  const sessionStartRef = useRef<number>(Date.now());
-  const questionEnteredAtRef = useRef<number>(Date.now());
+  const sessionStartRef = useRef<number>(0);
+  const questionEnteredAtRef = useRef<number>(0);
+  if (sessionStartRef.current === 0) sessionStartRef.current = Date.now();
+  if (questionEnteredAtRef.current === 0) questionEnteredAtRef.current = Date.now();
 
   const selectedTest = tests.find((t) => t.id === selectedTestId) ?? tests[0];
   const question = selectedTest.questions[questionIndex];
