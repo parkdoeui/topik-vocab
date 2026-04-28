@@ -1,24 +1,30 @@
 # CLAUDE.md
 
+## Before pushing changes to master
+
+Always run build and lint locally before pushing:
+```
+npm run build
+npm run lint
+```
+
 ## After pushing changes to master
 
 The deploy workflow runs automatically on push to `master` and publishes to GitHub Pages.
 
-To verify a change is working after deployment:
+After pushing, check whether the deploy succeeded:
 
-1. **Run build and lint locally first:**
-   ```
-   npm run build
-   npm run lint
-   ```
+```
+gh run list --limit 5
+```
 
-2. **Check the GitHub Actions workflow:**
-   ```
-   gh run list --limit 5
-   gh run watch
-   ```
+If the latest run shows `failure`, inspect the logs:
 
-3. **Visit the deployed site:**
-   https://parkdoeui.github.io/topik-vocab/
+```
+gh run view <run-id> --log-failed
+```
 
-   Confirm the change is live and the page loads correctly.
+**If the deploy failed, fix the errors and push a follow-up commit.** Do not leave master in a broken deploy state.
+
+Once the deploy succeeds, visit the deployed site to confirm:
+https://parkdoeui.github.io/topik-vocab/
