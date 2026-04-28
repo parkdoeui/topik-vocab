@@ -5,7 +5,7 @@ const KRDICT_API = "https://krdict.korean.go.kr/api/search";
 
 // Strip trailing punctuation from a word token for lookup
 function normalize(word: string): string {
-  return word.replace(/[.,!?;:'"()\[\]{}·…。、]/g, "").trim();
+  return word.replace(/[.,!?;:'"()[\]{}·…。、]/g, "").trim();
 }
 
 async function lookupKrdict(
