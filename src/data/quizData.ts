@@ -4,6 +4,12 @@ import quizSet3 from "./vocabs/quiz-sentences/quiz_set_3.json";
 import quizSet4 from "./vocabs/quiz-sentences/quiz_set_4.json";
 import quizSet5 from "./vocabs/quiz-sentences/quiz_set_5.json";
 import quizSet6 from "./vocabs/quiz-sentences/quiz_set_6.json";
+import quizSet7 from "./vocabs/quiz-sentences/quiz_set_7.json";
+import quizSet8 from "./vocabs/quiz-sentences/quiz_set_8.json";
+import quizSet9 from "./vocabs/quiz-sentences/quiz_set_9.json";
+import quizSet10 from "./vocabs/quiz-sentences/quiz_set_10.json";
+import quizSet11 from "./vocabs/quiz-sentences/quiz_set_11.json";
+import quizSet12 from "./vocabs/quiz-sentences/quiz_set_12.json";
 import uniqueWords from "./vocabs/unique-words.json";
 
 export interface QuizSentence {
