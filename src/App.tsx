@@ -35,6 +35,9 @@ export default function App() {
   const [apiKey, setApiKey] = useState<string>(
     () => localStorage.getItem("krdict-api-key") ?? ""
   );
+  const [geminiApiKey, setGeminiApiKey] = useState<string>(
+    () => localStorage.getItem("gemini-api-key") ?? ""
+  );
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [questionTimings, setQuestionTimings] = useState<Record<string, number>>({});
 
