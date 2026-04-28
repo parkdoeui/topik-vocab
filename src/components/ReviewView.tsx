@@ -60,13 +60,25 @@ export default function ReviewView({ quizSet, onBack, onSetCleared }: ReviewView
         >
           Take Quiz
         </button>
+        <button
+          onClick={() => setMode("challenge")}
+          className={`flex-1 py-2 rounded-lg text-sm font-medium transition-colors ${
+            mode === "challenge"
+              ? "bg-white text-gray-900 shadow-sm"
+              : "text-gray-500 hover:text-gray-700"
+          }`}
+        >
+          Challenge
+        </button>
       </div>
 
       {/* Content */}
       {mode === "flashcard" ? (
         <FlashcardView cards={quizSet.cards} />
-      ) : (
+      ) : mode === "quiz" ? (
         <QuizView cards={quizSet.cards} onCleared={handleCleared} />
+      ) : (
+        <ChallengeView cards={quizSet.cards} />
       )}
     </div>
   );
