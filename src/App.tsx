@@ -195,6 +195,8 @@ export default function App() {
         onBasketClick={() => setDrawerOpen(true)}
         apiKey={apiKey}
         onApiKeyChange={setApiKey}
+        geminiApiKey={geminiApiKey}
+        onGeminiApiKeyChange={setGeminiApiKey}
         showTranslation={showTranslation}
         onToggleTranslation={() => setShowTranslation((v) => !v)}
       />
