@@ -3,6 +3,7 @@ import { useState } from "react";
 const ACCESS_CODE = "아현아 사랑해";
 const SESSION_KEY = "topik-access-granted";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function isAccessGranted(): boolean {
   return sessionStorage.getItem(SESSION_KEY) === "1";
 }
