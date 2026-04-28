@@ -104,6 +104,31 @@ export default function Header({
                 placeholder="Paste API key here…"
                 className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 mb-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
               />
+              {apiKey && (
+                <p className="text-xs text-green-600 mb-3">
+                  ✓ API key set — using krdict
+                </p>
+              )}
+
+              <h3 className="text-sm font-semibold text-gray-800 mb-2 mt-1">
+                Gemini API Key
+              </h3>
+              <p className="text-xs text-gray-500 mb-3">
+                Required for Challenge mode grading.
+              </p>
+              <input
+                type="password"
+                value={geminiKeyInput}
+                onChange={(e) => setGeminiKeyInput(e.target.value)}
+                placeholder="Paste Gemini key here…"
+                className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2 mb-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              />
+              {geminiApiKey && (
+                <p className="text-xs text-green-600 mb-3">
+                  ✓ Gemini key set
+                </p>
+              )}
+
               <div className="flex gap-2">
                 <button
                   onClick={handleSaveKey}
@@ -118,11 +143,6 @@ export default function Header({
                   Cancel
                 </button>
               </div>
-              {apiKey && (
-                <p className="text-xs text-green-600 mt-2">
-                  ✓ API key set — using krdict
-                </p>
-              )}
             </div>
           )}
         </div>
