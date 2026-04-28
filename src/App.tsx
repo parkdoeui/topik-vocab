@@ -41,8 +41,11 @@ export default function App() {
   // Session timing refs (don't trigger re-renders)
   const sessionStartRef = useRef<number>(0);
   const questionEnteredAtRef = useRef<number>(0);
-  if (sessionStartRef.current === 0) sessionStartRef.current = Date.now();
-  if (questionEnteredAtRef.current === 0) questionEnteredAtRef.current = Date.now();
+  useEffect(() => {
+    const now = Date.now();
+    if (sessionStartRef.current === 0) sessionStartRef.current = now;
+    if (questionEnteredAtRef.current === 0) questionEnteredAtRef.current = now;
+  }, []);
 
   const selectedTest = tests.find((t) => t.id === selectedTestId) ?? tests[0];
   const question = selectedTest.questions[questionIndex];
