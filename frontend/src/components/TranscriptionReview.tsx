@@ -100,7 +100,7 @@ export function TranscriptionReview() {
       </div>
 
       {test.questions.map((q) => {
-        const imgs = draft.images[q.number] ?? [];
+        const imgs = sessionImages?.[q.number] ?? [];
         const text = transcriptions[q.number] ?? "";
         const chars = countChars(text);
 
