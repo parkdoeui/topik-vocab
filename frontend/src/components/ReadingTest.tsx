@@ -106,7 +106,7 @@ export function ReadingTest() {
         <div className="flex-1 overflow-y-auto p-4 md:p-6">
           <QuestionCard
             question={question}
-            index={questionIndex}
+
             total={questions.length}
             selected={answers[String(question.number)] ?? null}
             onSelect={(choice) => handleSelect(question.number, choice)}
