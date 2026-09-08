@@ -5,6 +5,7 @@ import { transcribeImages } from "../services/api";
 import {
   newSessionId,
   saveWritingDraft,
+  setSessionImages,
   type WritingImageEntry,
 } from "../services/session";
 import type { WritingQuestion } from "../types";
