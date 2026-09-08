@@ -6,20 +6,15 @@ export interface AnswerRecord {
   timeSpentMs: number;
 }
 
-export interface SavedWordRecord {
-  korean: string;
-  english: string;
-  questionNumber: number;
-}
-
 export interface TestSession {
   testId: string;
+  section: "reading" | "listening";
   startedAt: string;
   completedAt: string;
   totalTimeMs: number;
   answers: Record<string, AnswerRecord>;
-  savedWords: SavedWordRecord[];
   score: { correct: number; total: number };
+  syncStatus?: "local-only" | "synced";
 }
 
 export function saveSession(session: TestSession): void {
@@ -29,6 +24,6 @@ export function saveSession(session: TestSession): void {
       JSON.stringify(session)
     );
   } catch {
-    // Silently swallow — session tracking must never break the app
+    // session tracking must never break the app
   }
 }
