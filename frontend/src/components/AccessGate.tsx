@@ -19,8 +19,9 @@ export default function AccessGate({ onGranted }: AccessGateProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (code === ACCESS_CODE) {
+    if (!ACCESS_CODE || code === ACCESS_CODE) {
       sessionStorage.setItem(SESSION_KEY, "1");
+      localStorage.setItem(PASSCODE_STORAGE_KEY, code);
       onGranted();
     } else {
       setError(true);
