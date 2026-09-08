@@ -1,43 +1,39 @@
-const SESSION_KEY_PREFIX = "topik-session-";
+const WRITING_SESSION_PREFIX = "topik-writing-";
 
 export function newSessionId(): string {
   return crypto.randomUUID();
 }
 
-export interface AnswerRecord {
-  selected: number;
-  correct: boolean;
-  timeSpentMs: number;
-  topic?: string;
+export interface WritingImageEntry {
+  data: string;
+  mime_type: string;
 }
 
-export interface TestSession {
+export interface WritingSessionDraft {
   id: string;
   testId: string;
-  section: "reading" | "listening";
   startedAt: string;
-  completedAt: string;
-  totalTimeMs: number;
-  answers: Record<string, AnswerRecord>;
-  score: { correct: number; total: number };
-  syncStatus?: "local-only" | "synced";
+  elapsedMs: number;
+  images: Record<number, WritingImageEntry[]>;
+  transcriptions: Record<number, string>;
+  charCounts: Record<number, number>;
 }
 
-export function saveSession(session: TestSession): void {
+export function saveWritingDraft(draft: WritingSessionDraft): void {
   try {
     localStorage.setItem(
-      `${SESSION_KEY_PREFIX}${session.id}`,
-      JSON.stringify(session)
+      `${WRITING_SESSION_PREFIX}${draft.id}`,
+      JSON.stringify(draft)
     );
   } catch {
     // session tracking must never break the app
   }
 }
 
-export function loadSession(id: string): TestSession | null {
+export function loadWritingDraft(id: string): WritingSessionDraft | null {
   try {
-    const raw = localStorage.getItem(`${SESSION_KEY_PREFIX}${id}`);
-    return raw ? (JSON.parse(raw) as TestSession) : null;
+    const raw = localStorage.getItem(`${WRITING_SESSION_PREFIX}${id}`);
+    return raw ? (JSON.parse(raw) as WritingSessionDraft) : null;
   } catch {
     return null;
   }
