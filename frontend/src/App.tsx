@@ -26,9 +26,7 @@ function NavBar() {
       <Link to="/" className="font-bold text-gray-900 text-sm md:text-base">
         TOPIK Practice
       </Link>
-      {navLink("/reading", "Reading")}
-      {navLink("/listening", "Listening")}
-      {navLink("/writing", "Writing")}
+      {navLink("/", "쓰기")}
       {navLink("/progress", "Progress")}
     </nav>
   );
