@@ -1,12 +1,20 @@
+import { v4 as uuidv4 } from "uuid";
+
 const SESSION_KEY_PREFIX = "topik-session-";
+
+export function newSessionId(): string {
+  return uuidv4();
+}
 
 export interface AnswerRecord {
   selected: number;
   correct: boolean;
   timeSpentMs: number;
+  topic?: string;
 }
 
 export interface TestSession {
+  id: string;
   testId: string;
   section: "reading" | "listening";
   startedAt: string;
@@ -20,10 +28,19 @@ export interface TestSession {
 export function saveSession(session: TestSession): void {
   try {
     localStorage.setItem(
-      `${SESSION_KEY_PREFIX}${session.testId}-${session.startedAt}`,
+      `${SESSION_KEY_PREFIX}${session.id}`,
       JSON.stringify(session)
     );
   } catch {
     // session tracking must never break the app
+  }
+}
+
+export function loadSession(id: string): TestSession | null {
+  try {
+    const raw = localStorage.getItem(`${SESSION_KEY_PREFIX}${id}`);
+    return raw ? (JSON.parse(raw) as TestSession) : null;
+  } catch {
+    return null;
   }
 }
