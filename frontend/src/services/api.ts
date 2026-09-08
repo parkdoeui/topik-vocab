@@ -84,17 +84,21 @@ export interface WritingSessionPayload {
   answers: Record<string, WritingAnswerPayload>;
 }
 
-export interface CriterionScore {
-  score: number;
-  max: number;
-  comment: string;
-}
-
 export interface QuestionGrading {
   score: number;
   max_score: number;
-  feedback: string;
-  criteria: Record<string, CriterionScore>;
+  criteria: Record<string, number>;               // 내용_및_과제수행 / 전개구조 / 언어사용 → 점수
+  criterion_evidence: Record<string, string>;
+  detailed_improvement_points: Record<string, string[]>;
+  current_state: string;
+  primary_goal: string;
+  sample_answer: string;
+}
+
+export interface WritingGrading {
+  total_score: number;
+  questions: Record<string, QuestionGrading>;
+  action_points: string[];
 }
 
 export interface WritingSessionResponse {
@@ -104,7 +108,7 @@ export interface WritingSessionResponse {
   completed_at: string;
   total_time_ms: number;
   answers: Record<string, WritingAnswerPayload>;
-  grading: Record<string, QuestionGrading>;
+  grading: WritingGrading;
 }
 
 export async function submitWritingSession(
