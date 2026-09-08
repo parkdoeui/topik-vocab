@@ -1,24 +1,17 @@
-import type { TopikTest, TopikQuestion } from "../types";
+import type { StructuredReadingTest, ListeningTest, WritingTest } from "../types";
 
-import chunk_35 from "./reading/35/index.ts";
-import chunk_41 from "./reading/41/index.ts";
-// To add a new test:
-// 1. Import its chunk files above
-// 2. Add an entry to TEST_REGISTRY below
+import test35 from "./reading-tests/topik2-35.json";
+import test41 from "./reading-tests/topik2-41.json";
+import test91 from "./reading-tests/topik2-91.json";
 
-const TEST_REGISTRY: TopikTest[] = [
-  {
-    id: "topik2-35",
-    title: "제35회 TOPIK II 읽기",
-    level: "TOPIK II",
-    questions: chunk_35 as TopikQuestion[],
-  },
-  {
-    id: "topik2-41",
-    title: "제41회 TOPIK II 읽기",
-    level: "TOPIK II",
-    questions: chunk_41 as TopikQuestion[],
-  }
+// Add new tests here — structured tests need one JSON file in reading-tests/,
+// pdf tests need a pdf_url + answer_key JSON.
+export const readingTests: StructuredReadingTest[] = [
+  test35 as StructuredReadingTest,
+  test41 as StructuredReadingTest,
+  test91 as StructuredReadingTest,
 ];
 
-export const tests: TopikTest[] = TEST_REGISTRY;
+export const listeningTests: ListeningTest[] = [];
+
+export const writingTests: WritingTest[] = [];
