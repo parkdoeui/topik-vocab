@@ -1,9 +1,7 @@
-import { v4 as uuidv4 } from "uuid";
-
 const SESSION_KEY_PREFIX = "topik-session-";
 
 export function newSessionId(): string {
-  return uuidv4();
+  return crypto.randomUUID();
 }
 
 export interface AnswerRecord {
