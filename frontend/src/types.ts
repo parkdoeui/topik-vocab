@@ -10,7 +10,7 @@ export interface StructuredQuestion {
   passage_id?: string;
   image_url?: string;
   choices: Record<string, string>;
-  answer: number;
+  answer: number | null;  // null for copyright-withheld questions
   topic?: string;
 }
 
