@@ -31,31 +31,30 @@ function ScoreBar({ score, max }: { score: number; max: number }) {
 
 export function WritingResultsView() {
   const { id } = useParams<{ id: string }>();
-  const [result, setResult] = useState<WritingSessionResponse | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [result, setResult] = useState<WritingSessionResponse | null>(() => {
+    try {
+      const cached = localStorage.getItem(`topik-writing-result-${id}`);
+      return cached ? (JSON.parse(cached) as WritingSessionResponse) : null;
+    } catch {
+      return null;
+    }
+  });
+  const [loading, setLoading] = useState(() => {
+    try {
+      return !localStorage.getItem(`topik-writing-result-${id}`);
+    } catch {
+      return true;
+    }
+  });
 
   useEffect(() => {
-    // Try localStorage first (fast path)
-    const cached = localStorage.getItem(`topik-writing-result-${id}`);
-    if (cached) {
-      try {
-        setResult(JSON.parse(cached) as WritingSessionResponse);
-        setLoading(false);
-        return;
-      } catch {
-        // fall through to API fetch
-      }
-    }
-    // Fetch from API
-    if (id) {
-      getWritingSession(id).then((r) => {
-        setResult(r);
-        setLoading(false);
-      });
-    } else {
+    if (result) return;
+    if (!id) { setLoading(false); return; }
+    getWritingSession(id).then((r) => {
+      setResult(r);
       setLoading(false);
-    }
-  }, [id]);
+    });
+  }, [id, result]);
 
   if (loading) {
     return (
