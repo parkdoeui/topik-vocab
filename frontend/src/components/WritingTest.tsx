@@ -179,16 +179,20 @@ export function WritingTest() {
         offset += e.imgs.length;
       }
 
-      const draft = {
+      // Images stay in memory (too large for localStorage); only the small
+      // draft metadata is persisted so a refresh on the review page still works.
+      setSessionImages(
+        sessionId.current,
+        Object.fromEntries(entries.map((e) => [e.qNum, e.imgs]))
+      );
+      saveWritingDraft({
         id: sessionId.current,
         testId: test!.id,
         startedAt: startedAt.current,
         elapsedMs,
-        images: Object.fromEntries(entries.map((e) => [e.qNum, e.imgs])),
         transcriptions,
         charCounts,
-      };
-      saveWritingDraft(draft);
+      });
 
       navigate(`/writing/${test!.id}/transcribe?session=${sessionId.current}`);
     } catch (err) {
