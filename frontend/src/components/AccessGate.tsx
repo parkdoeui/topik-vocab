@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-const ACCESS_CODE = "아현아 사랑해";
+const ACCESS_CODE = import.meta.env.VITE_VALID_PASSCODE as string | undefined;
 const SESSION_KEY = "topik-access-granted";
+const PASSCODE_STORAGE_KEY = "topik_passcode";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export function isAccessGranted(): boolean {
@@ -39,11 +40,10 @@ export default function AccessGate({ onGranted }: AccessGateProps) {
             onChange={(e) => { setCode(e.target.value); setError(false); }}
             placeholder="Access code"
             autoFocus
-            className={`w-full rounded-lg border px-4 py-2.5 text-gray-900 text-sm outline-none transition-colors ${
-              error
-                ? "border-red-400 focus:border-red-500"
-                : "border-gray-300 focus:border-blue-500"
-            }`}
+            className={`w-full rounded-lg border px-4 py-2.5 text-gray-900 text-sm outline-none transition-colors ${error
+              ? "border-red-400 focus:border-red-500"
+              : "border-gray-300 focus:border-blue-500"
+              }`}
           />
           {error && (
             <p className="text-xs text-red-500">Incorrect code. Try again.</p>
