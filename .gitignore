@@ -26,3 +26,11 @@ dist-ssr
 .gstack/
 analysis/.venv/
 .env
+
+# Python / backend
+__pycache__/
+*.pyc
+*.db
+backend/.venv/
+backend/.venv-smoke/
+backend/.env
