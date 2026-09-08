@@ -36,6 +36,7 @@ export function TranscriptionReview() {
   const test = writingTests.find((t) => t.id === id);
   const sessionId = searchParams.get("session") ?? "";
   const draft = loadWritingDraft(sessionId);
+  const sessionImages = getSessionImages(sessionId);
 
   const [transcriptions, setTranscriptions] = useState<Record<number, string>>(
     () => draft?.transcriptions ?? {}
