@@ -31,30 +31,25 @@ function ScoreBar({ score, max }: { score: number; max: number }) {
 
 export function WritingResultsView() {
   const { id } = useParams<{ id: string }>();
-  const [result, setResult] = useState<WritingSessionResponse | null>(() => {
+  const cached = (() => {
     try {
-      const cached = localStorage.getItem(`topik-writing-result-${id}`);
-      return cached ? (JSON.parse(cached) as WritingSessionResponse) : null;
+      const raw = localStorage.getItem(`topik-writing-result-${id}`);
+      return raw ? (JSON.parse(raw) as WritingSessionResponse) : null;
     } catch {
       return null;
     }
-  });
-  const [loading, setLoading] = useState(() => {
-    try {
-      return !localStorage.getItem(`topik-writing-result-${id}`);
-    } catch {
-      return true;
-    }
-  });
+  })();
+
+  const [result, setResult] = useState<WritingSessionResponse | null>(cached);
+  const [loading, setLoading] = useState(!cached && !!id);
 
   useEffect(() => {
-    if (result) return;
-    if (!id) { setLoading(false); return; }
+    if (cached || !id) return;
     getWritingSession(id).then((r) => {
       setResult(r);
       setLoading(false);
     });
-  }, [id, result]);
+  }, [id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) {
     return (
