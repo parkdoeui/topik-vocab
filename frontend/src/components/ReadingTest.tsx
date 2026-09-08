@@ -57,13 +57,13 @@ export function ReadingTest() {
   };
 
   const handleNavigate = (newIndex: number) => {
-    recordTiming(question.문제_번호 ?? questionIndex + 1);
+    recordTiming(question.number);
     setQuestionIndex(newIndex);
     questionEnteredAtRef.current = Date.now();
   };
 
   const handleSubmit = async () => {
-    recordTiming(question.문제_번호 ?? questionIndex + 1);
+    recordTiming(question.number);
     const finalTimings = { ...timings };
     const graded = gradeStructured(questions, answers, finalTimings);
     const now = new Date().toISOString();
