@@ -4,8 +4,7 @@
 
 Always run build and lint locally before pushing:
 ```
-npm run build
-npm run lint
+cd frontend && npm run build && npm run lint
 ```
 
 ## After pushing changes to master
