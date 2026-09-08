@@ -1,5 +1,3 @@
-import type { TestSession } from "./session";
-
 const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 const PASSCODE_KEY = "topik_passcode";
 
@@ -47,61 +45,109 @@ export async function loginWithPasscode(passcode: string): Promise<boolean> {
   }
 }
 
-export interface SessionPayload {
+// --- Writing API ---
+
+export interface ImagePayload {
+  data: string;      // base64-encoded
+  mime_type: string;
+}
+
+export interface TranscriptionResult {
+  transcription: string;
+  char_count: number;
+}
+
+export async function transcribeImages(
+  images: ImagePayload[]
+): Promise<TranscriptionResult[]> {
+  const res = await apiFetch("/api/writing-sessions/transcribe", {
+    method: "POST",
+    body: JSON.stringify({ images }),
+  });
+  if (!res.ok) throw new Error(`Transcription failed: ${res.status}`);
+  const data = await res.json() as { results: TranscriptionResult[] };
+  return data.results;
+}
+
+export interface WritingAnswerPayload {
+  image_urls: string[];
+  transcription: string;
+  char_count: number;
+}
+
+export interface WritingSessionPayload {
   id: string;
   test_id: string;
-  section: "reading" | "listening";
   started_at: string;
   completed_at: string;
   total_time_ms: number;
-  answers: Array<{
-    question_number: number;
-    selected: number;
-    is_correct: boolean;
-    time_spent_ms: number;
-    topic?: string | null;
-  }>;
-  score: { correct: number; total: number };
+  answers: Record<string, WritingAnswerPayload>;
 }
 
-export async function syncSession(session: TestSession): Promise<boolean> {
+export interface CriterionScore {
+  score: number;
+  max: number;
+  comment: string;
+}
+
+export interface QuestionGrading {
+  score: number;
+  max_score: number;
+  feedback: string;
+  criteria: Record<string, CriterionScore>;
+}
+
+export interface WritingSessionResponse {
+  id: string;
+  test_id: string;
+  started_at: string;
+  completed_at: string;
+  total_time_ms: number;
+  answers: Record<string, WritingAnswerPayload>;
+  grading: Record<string, QuestionGrading>;
+}
+
+export async function submitWritingSession(
+  payload: WritingSessionPayload
+): Promise<WritingSessionResponse | null> {
   try {
-    const payload: SessionPayload = {
-      id: session.id,
-      test_id: session.testId,
-      section: session.section,
-      started_at: session.startedAt,
-      completed_at: session.completedAt,
-      total_time_ms: session.totalTimeMs,
-      answers: Object.entries(session.answers).map(([num, a]) => ({
-        question_number: parseInt(num),
-        selected: a.selected,
-        is_correct: a.correct,
-        time_spent_ms: a.timeSpentMs,
-        topic: a.topic ?? null,
-      })),
-      score: session.score,
-    };
-    const res = await apiFetch("/api/sessions", {
+    const res = await apiFetch("/api/writing-sessions", {
       method: "POST",
       body: JSON.stringify(payload),
     });
-    return res.ok || res.status === 409; // 409 = already exists, that's fine
+    if (!res.ok) return null;
+    return res.json() as Promise<WritingSessionResponse>;
   } catch {
-    return false;
+    return null;
   }
 }
 
-export interface SectionAccuracy { correct: number; total: number }
-export interface TopicAccuracy { topic: string; correct: number; total: number; accuracy: number }
-export interface ScoreHistoryItem {
-  date: string; test_id: string; section: string; correct: number; total: number;
+export async function getWritingSession(
+  id: string
+): Promise<WritingSessionResponse | null> {
+  try {
+    const res = await apiFetch(`/api/writing-sessions/${id}`);
+    if (!res.ok) return null;
+    return res.json() as Promise<WritingSessionResponse>;
+  } catch {
+    return null;
+  }
 }
+
+// --- Progress API ---
+
+export interface WritingSessionSummary {
+  id: string;
+  test_id: string;
+  date: string;
+  total_score: number;
+  max_score: number;
+}
+
 export interface ProgressData {
   total_sessions: number;
-  per_section_accuracy: { reading: SectionAccuracy; listening: SectionAccuracy };
-  score_history: ScoreHistoryItem[];
-  per_topic_accuracy: TopicAccuracy[];
+  average_score: number;
+  sessions: WritingSessionSummary[];
 }
 
 export async function getProgress(): Promise<ProgressData | null> {
