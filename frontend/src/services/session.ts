@@ -1,39 +1,60 @@
-const WRITING_SESSION_PREFIX = "topik-writing-";
+const WRITING_DRAFT_PREFIX = "topik-writing-";
 
 export function newSessionId(): string {
   return crypto.randomUUID();
 }
 
 export interface WritingImageEntry {
-  data: string;
+  data: string; // base64-encoded
   mime_type: string;
 }
 
-export interface WritingSessionDraft {
+/**
+ * Uploaded photos are held in memory only — base64-encoded phone photos are
+ * several MB each and would blow the ~5MB localStorage origin quota. They live
+ * for the duration of the SPA session (upload → transcribe → review); on a hard
+ * refresh the thumbnails are lost but the confirmed transcriptions persist.
+ */
+const imageStore = new Map<string, Record<number, WritingImageEntry[]>>();
+
+export function setSessionImages(
+  id: string,
+  images: Record<number, WritingImageEntry[]>
+): void {
+  imageStore.set(id, images);
+}
+
+export function getSessionImages(
+  id: string
+): Record<number, WritingImageEntry[]> | null {
+  return imageStore.get(id) ?? null;
+}
+
+/** Small, persistable draft metadata (no images). */
+export interface WritingDraft {
   id: string;
   testId: string;
   startedAt: string;
   elapsedMs: number;
-  images: Record<number, WritingImageEntry[]>;
   transcriptions: Record<number, string>;
   charCounts: Record<number, number>;
 }
 
-export function saveWritingDraft(draft: WritingSessionDraft): void {
+export function saveWritingDraft(draft: WritingDraft): void {
   try {
     localStorage.setItem(
-      `${WRITING_SESSION_PREFIX}${draft.id}`,
+      `${WRITING_DRAFT_PREFIX}${draft.id}`,
       JSON.stringify(draft)
     );
   } catch {
-    // session tracking must never break the app
+    // draft persistence must never break the flow
   }
 }
 
-export function loadWritingDraft(id: string): WritingSessionDraft | null {
+export function loadWritingDraft(id: string): WritingDraft | null {
   try {
-    const raw = localStorage.getItem(`${WRITING_SESSION_PREFIX}${id}`);
-    return raw ? (JSON.parse(raw) as WritingSessionDraft) : null;
+    const raw = localStorage.getItem(`${WRITING_DRAFT_PREFIX}${id}`);
+    return raw ? (JSON.parse(raw) as WritingDraft) : null;
   } catch {
     return null;
   }
