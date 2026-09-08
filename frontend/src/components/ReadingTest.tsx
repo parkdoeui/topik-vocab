@@ -17,7 +17,7 @@ export function ReadingTest() {
   const [timings, setTimings] = useState<Record<string, number>>({});
   const sessionIdRef = useRef(newSessionId());
   const startedAtRef = useRef(new Date().toISOString());
-  const questionEnteredAtRef = useRef(Date.now());
+  const questionEnteredAtRef = useRef(0);
 
   const recordTiming = useCallback((questionNumber: number) => {
     const elapsed = Date.now() - questionEnteredAtRef.current;
