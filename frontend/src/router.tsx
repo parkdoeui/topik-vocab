@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router";
 import { App } from "./App";
-import { Dashboard } from "./components/Dashboard";
-import { ReadingTest } from "./components/ReadingTest";
-import { ResultsView } from "./components/ResultsView";
+import { WritingHome } from "./components/WritingHome";
+import { WritingTest } from "./components/WritingTest";
+import { TranscriptionReview } from "./components/TranscriptionReview";
+import { WritingResultsView } from "./components/WritingResultsView";
 import { ProgressDashboard } from "./components/ProgressDashboard";
 
 export const router = createBrowserRouter(
@@ -11,9 +12,10 @@ export const router = createBrowserRouter(
       path: "/",
       element: <App />,
       children: [
-        { index: true, element: <Dashboard /> },
-        { path: "reading/:id", element: <ReadingTest /> },
-        { path: "reading-results/:id", element: <ResultsView section="reading" /> },
+        { index: true, element: <WritingHome /> },
+        { path: "writing/:id", element: <WritingTest /> },
+        { path: "writing/:id/transcribe", element: <TranscriptionReview /> },
+        { path: "writing-results/:id", element: <WritingResultsView /> },
         { path: "progress", element: <ProgressDashboard /> },
       ],
     },
