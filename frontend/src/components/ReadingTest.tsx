@@ -169,7 +169,6 @@ export function ReadingTest() {
 
 function QuestionCard({
   question,
-  index,
   total,
   selected,
   onSelect,
