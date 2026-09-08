@@ -174,7 +174,6 @@ function QuestionCard({
   onSelect,
 }: {
   question: StructuredQuestion;
-  index: number;
   total: number;
   selected: number | null;
   onSelect: (choice: number) => void;
