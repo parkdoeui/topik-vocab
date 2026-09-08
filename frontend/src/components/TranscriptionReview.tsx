@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router";
 import { writingTests } from "../data/tests";
 import { submitWritingSession } from "../services/api";
-import { loadWritingDraft } from "../services/session";
+import { getSessionImages, loadWritingDraft } from "../services/session";
 
 function countChars(s: string): number {
   return s.replace(/\s/g, "").length;
