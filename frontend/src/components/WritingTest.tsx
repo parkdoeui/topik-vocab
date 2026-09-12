@@ -17,6 +17,11 @@ function formatTime(ms: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
+// Matches TranscriptionReview.countChars: whitespace is not counted.
+function countChars(s: string): number {
+  return s.replace(/\s/g, "").length;
+}
+
 const TYPE_LABELS: Record<string, string> = {
   "short-blank": "단문 쓰기",
   "chart-description": "도표 설명",
