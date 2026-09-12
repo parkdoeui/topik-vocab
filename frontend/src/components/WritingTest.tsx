@@ -330,7 +330,7 @@ export function WritingTest() {
       {/* Overview dots */}
       <div className="flex justify-center gap-2">
         {test.questions.map((q, i) => {
-          const hasImg = (images[q.number] ?? []).length > 0;
+          const answered = isAnswered(q);
           return (
             <button
               key={q.number}
@@ -338,7 +338,7 @@ export function WritingTest() {
               className={`w-2.5 h-2.5 rounded-full transition-colors ${
                 i === qIdx
                   ? "bg-blue-600"
-                  : hasImg
+                  : answered
                   ? "bg-green-400"
                   : "bg-gray-200"
               }`}
