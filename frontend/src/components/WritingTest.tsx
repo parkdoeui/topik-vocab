@@ -69,9 +69,7 @@ function UploadZone({
           사진을 여기에 드래그하거나 <span className="text-blue-600 underline">클릭</span>하여 업로드
         </p>
         <p className="text-xs text-gray-400 mt-1">
-          {question.number === 51 || question.number === 52
-            ? "답안 사진 1장"
-            : question.number === 53
+          {question.number === 53
             ? `200–300자 · 사진 1–3장`
             : `600–700자 · 사진 1–5장`}
         </p>
