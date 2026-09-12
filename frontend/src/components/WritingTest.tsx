@@ -163,35 +163,45 @@ export function WritingTest() {
   const remainingMs = Math.max(0, timeLimitMs - elapsedMs);
 
   async function handleSubmit() {
-    if (!allHaveImages) return;
+    if (!allAnswered) return;
     setSubmitting(true);
     setError(null);
 
     try {
-      const entries = test!.questions.map((q) => ({
-        qNum: q.number,
-        imgs: images[q.number] ?? [],
-      }));
-
-      const flatImages = entries.flatMap((e) => e.imgs);
-      const results = await transcribeImages(flatImages);
-
-      let offset = 0;
       const transcriptions: Record<number, string> = {};
       const charCounts: Record<number, number> = {};
 
-      for (const e of entries) {
-        const slice = results.slice(offset, offset + e.imgs.length);
-        transcriptions[e.qNum] = slice.map((r) => r.transcription).join("\n\n");
-        charCounts[e.qNum] = slice.reduce((acc, r) => acc + r.char_count, 0);
-        offset += e.imgs.length;
+      // Short-blank answers are typed directly — no OCR needed.
+      for (const q of test!.questions) {
+        if (q.type === "short-blank") {
+          const text = (texts[q.number] ?? "").trim();
+          transcriptions[q.number] = text;
+          charCounts[q.number] = countChars(text);
+        }
+      }
+
+      // Handwriting answers (chart / essay) are OCR'd via Gemini.
+      const imageEntries = test!.questions
+        .filter((q) => q.type !== "short-blank")
+        .map((q) => ({ qNum: q.number, imgs: images[q.number] ?? [] }));
+
+      const flatImages = imageEntries.flatMap((e) => e.imgs);
+      if (flatImages.length > 0) {
+        const results = await transcribeImages(flatImages);
+        let offset = 0;
+        for (const e of imageEntries) {
+          const slice = results.slice(offset, offset + e.imgs.length);
+          transcriptions[e.qNum] = slice.map((r) => r.transcription).join("\n\n");
+          charCounts[e.qNum] = slice.reduce((acc, r) => acc + r.char_count, 0);
+          offset += e.imgs.length;
+        }
       }
 
       // Images stay in memory (too large for localStorage); only the small
       // draft metadata is persisted so a refresh on the review page still works.
       setSessionImages(
         sessionId.current,
-        Object.fromEntries(entries.map((e) => [e.qNum, e.imgs]))
+        Object.fromEntries(imageEntries.map((e) => [e.qNum, e.imgs]))
       );
       saveWritingDraft({
         id: sessionId.current,
