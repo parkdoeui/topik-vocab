@@ -319,7 +319,7 @@ export function WritingTest() {
         ) : (
           <button
             onClick={handleSubmit}
-            disabled={!allHaveImages || submitting}
+            disabled={!allAnswered || submitting}
             className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white text-sm font-medium transition-colors"
           >
             {submitting ? "업로드 중…" : "제출하기"}
