@@ -154,7 +154,11 @@ export function WritingTest() {
   }
 
   const question = test.questions[qIdx];
-  const allHaveImages = test.questions.every((q) => (images[q.number] ?? []).length > 0);
+  const isAnswered = (q: WritingQuestion) =>
+    q.type === "short-blank"
+      ? (texts[q.number] ?? "").trim().length > 0
+      : (images[q.number] ?? []).length > 0;
+  const allAnswered = test.questions.every(isAnswered);
   const timeLimitMs = test.time_limit_minutes * 60 * 1000;
   const remainingMs = Math.max(0, timeLimitMs - elapsedMs);
 
