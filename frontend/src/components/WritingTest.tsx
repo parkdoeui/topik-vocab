@@ -347,9 +347,9 @@ export function WritingTest() {
         })}
       </div>
 
-      {!allHaveImages && qIdx === test.questions.length - 1 && (
+      {!allAnswered && qIdx === test.questions.length - 1 && (
         <p className="text-xs text-center text-amber-600">
-          모든 문제에 사진을 업로드해야 제출할 수 있습니다.
+          모든 문제에 답안을 입력하거나 사진을 업로드해야 제출할 수 있습니다.
         </p>
       )}
 
