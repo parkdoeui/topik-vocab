@@ -270,12 +270,32 @@ export function WritingTest() {
           </p>
         )}
 
-        <UploadZone
-          question={question}
-          images={images[question.number] ?? []}
-          onAdd={(entry) => addImage(question.number, entry)}
-          onRemove={(idx) => removeImage(question.number, idx)}
-        />
+        {question.type === "short-blank" ? (
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between">
+              <label className="text-xs font-medium text-gray-600">답안 입력</label>
+              <span className="text-xs font-mono text-gray-400">
+                {countChars(texts[question.number] ?? "")}자
+              </span>
+            </div>
+            <textarea
+              value={texts[question.number] ?? ""}
+              onChange={(e) =>
+                setTexts((prev) => ({ ...prev, [question.number]: e.target.value }))
+              }
+              rows={4}
+              className="w-full text-sm text-gray-800 border border-gray-200 rounded-xl p-3 resize-y focus:outline-none focus:ring-2 focus:ring-blue-300"
+              placeholder={"㉠에 들어갈 문장을 쓰세요.\n㉡에 들어갈 문장을 쓰세요."}
+            />
+          </div>
+        ) : (
+          <UploadZone
+            question={question}
+            images={images[question.number] ?? []}
+            onAdd={(entry) => addImage(question.number, entry)}
+            onRemove={(idx) => removeImage(question.number, idx)}
+          />
+        )}
       </div>
 
       {/* Navigation */}
