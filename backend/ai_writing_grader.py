@@ -335,6 +335,12 @@ def grade_writing_submission(
             "sample_answer": str(q.get("sample_answer", "")).strip(),
         }
 
+    # Without response_schema enforcement, a model could return a shape we can't
+    # parse. Fail loudly (→ 502, retryable) rather than persisting empty grading,
+    # which would burn the session id (resubmit → 409).
+    if not questions_out:
+        raise WritingGraderError("Writing grader returned no question grades")
+
     action_points = list(payload.get("action_points", []))
     if len(action_points) < 3:
         action_points = action_points + [
