@@ -294,8 +294,12 @@ def grade_writing_submission(
             model=model,
             contents=prompt,
             config=types.GenerateContentConfig(
+                # NB: response_schema is intentionally omitted. WritingGradingResponse
+                # has a dict-typed `questions` field, which the SDK renders with
+                # `additionalProperties` — rejected by the Gemini Developer API
+                # (api-key mode). The prompt already specifies the exact JSON shape
+                # and the payload is parsed/normalized manually below.
                 response_mime_type="application/json",
-                response_schema=WritingGradingResponse,
                 temperature=0,
             ),
         )
