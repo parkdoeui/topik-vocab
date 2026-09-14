@@ -319,9 +319,8 @@ def grade_writing_submission(
     )
 
     try:
-        response = _generate_with_fallback(
-            client,
-            _model_candidates(model),
+        response = client.models.generate_content(
+            model=model,
             contents=prompt,
             config=types.GenerateContentConfig(
                 # NB: response_schema is intentionally omitted. WritingGradingResponse
