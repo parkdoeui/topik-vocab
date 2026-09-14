@@ -11,9 +11,8 @@ class Settings(BaseSettings):
     vertex_project: Optional[str] = None
     vertex_credentials_json: Optional[str] = None
     vertex_location: str = "us-central1"
-    # Comma-separated fallback chain: the grader tries each model in order,
-    # falling back to the next on a transient 503 (overloaded) error.
-    writing_grader_model: str = "gemini-3.7-flash,gemini-3.6-flash"
+    # Pro model served via Vertex AI (region "global"). Requires VERTEX_PROJECT.
+    writing_grader_model: str = "gemini-3.1-pro-preview"
 
     @property
     def allowed_frontend_origins(self) -> list[str]:
