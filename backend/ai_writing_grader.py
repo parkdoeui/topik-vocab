@@ -109,6 +109,35 @@ def _extract_text_from_response(response: Any) -> str:
     raise WritingGraderError("Writing grader returned no text")
 
 
+def _model_candidates(model: str) -> list[str]:
+    """WRITING_GRADER_MODEL may be a comma-separated fallback chain, e.g.
+    "gemini-3.7-flash,gemini-3.6-flash" — try each in order."""
+    candidates = [m.strip() for m in model.split(",") if m.strip()]
+    return candidates or ["gemini-3.6-flash"]
+
+
+def _is_overloaded(exc: Exception) -> bool:
+    """True for transient provider overload (503) — worth retrying a fallback model."""
+    text = str(exc).lower()
+    return "503" in text or "unavailable" in text or "high demand" in text or "overloaded" in text
+
+
+def _generate_with_fallback(client: Any, models: list[str], *, contents: Any, config: Any) -> Any:
+    """Call generate_content, falling back to the next model on an overloaded (503) error.
+    Any non-overload error is raised immediately (no point retrying a 404/400/429 elsewhere)."""
+    last_exc: Exception | None = None
+    for m in models:
+        try:
+            return client.models.generate_content(model=m, contents=contents, config=config)
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            if _is_overloaded(exc):
+                continue
+            raise
+    assert last_exc is not None
+    raise last_exc
+
+
 # ---------- Transcription ----------
 
 class TranscriptionResult(BaseModel):
