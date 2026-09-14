@@ -180,8 +180,9 @@ def transcribe_handwriting(
     results: list[dict[str, Any]] = []
     for image_bytes, mime_type in zip(images, mime_types):
         try:
-            response = client.models.generate_content(
-                model=model,
+            response = _generate_with_fallback(
+                client,
+                _model_candidates(model),
                 contents=[
                     types.Part.from_text(text=prompt_text),
                     types.Part.from_bytes(data=image_bytes, mime_type=mime_type),
