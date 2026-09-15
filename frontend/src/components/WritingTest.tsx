@@ -118,6 +118,7 @@ export function WritingTest() {
   const [qIdx, setQIdx] = useState(0);
   const [images, setImages] = useState<Record<number, WritingImageEntry[]>>({});
   const [texts, setTexts] = useState<Record<number, string>>({});
+  const [zoomSrc, setZoomSrc] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [elapsedMs, setElapsedMs] = useState(0);
