@@ -15,21 +15,36 @@ export function encodePasscodeForTransport(passcode: string): string {
 }
 
 function authHeaders(): Record<string, string> {
-  const passcode = localStorage.getItem(PASSCODE_KEY) ?? "";
+  let passcode = "";
+  try {
+    passcode = localStorage.getItem(PASSCODE_KEY) ?? "";
+  } catch {
+    // Cookie authentication can still work when storage is unavailable.
+  }
   return passcode
     ? { "X-TOPIK-Passcode": encodePasscodeForTransport(passcode) }
     : {};
 }
 
-async function apiFetch(path: string, init?: RequestInit): Promise<Response> {
+async function apiFetch(
+  path: string,
+  init?: RequestInit,
+  includeStoredPasscode = true
+): Promise<Response> {
+  const headers = new Headers(init?.headers);
+  if (init?.body && !headers.has("Content-Type")) {
+    headers.set("Content-Type", "application/json");
+  }
+  if (includeStoredPasscode) {
+    for (const [name, value] of Object.entries(authHeaders())) {
+      headers.set(name, value);
+    }
+  }
+
   return fetch(`${API_BASE}${path}`, {
     ...init,
     credentials: "include",
-    headers: {
-      "Content-Type": "application/json",
-      ...authHeaders(),
-      ...init?.headers,
-    },
+    headers,
   });
 }
 
@@ -49,9 +64,13 @@ export async function loginWithPasscode(passcode: string): Promise<boolean> {
     const res = await apiFetch("/api/auth/login", {
       method: "POST",
       body: JSON.stringify({ passcode }),
-    });
+    }, false);
     if (res.ok) {
-      localStorage.setItem(PASSCODE_KEY, passcode);
+      try {
+        localStorage.setItem(PASSCODE_KEY, passcode);
+      } catch {
+        // The HTTP-only cookie remains available where the browser permits it.
+      }
       return true;
     }
     return false;

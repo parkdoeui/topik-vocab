@@ -1,13 +1,5 @@
 import { useState } from "react";
-
-const ACCESS_CODE = import.meta.env.VITE_VALID_PASSCODE as string | undefined;
-const SESSION_KEY = "topik-access-granted";
-const PASSCODE_STORAGE_KEY = "topik_passcode";
-
-// eslint-disable-next-line react-refresh/only-export-components
-export function isAccessGranted(): boolean {
-  return sessionStorage.getItem(SESSION_KEY) === "1";
-}
+import { loginWithPasscode } from "../services/api";
 
 interface AccessGateProps {
   onGranted: () => void;
@@ -16,16 +8,19 @@ interface AccessGateProps {
 export default function AccessGate({ onGranted }: AccessGateProps) {
   const [code, setCode] = useState("");
   const [error, setError] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!ACCESS_CODE || code === ACCESS_CODE) {
-      sessionStorage.setItem(SESSION_KEY, "1");
-      localStorage.setItem(PASSCODE_STORAGE_KEY, code);
+    setSubmitting(true);
+    setError(false);
+
+    if (await loginWithPasscode(code)) {
       onGranted();
     } else {
       setError(true);
       setCode("");
+      setSubmitting(false);
     }
   };
 
@@ -36,7 +31,7 @@ export default function AccessGate({ onGranted }: AccessGateProps) {
         <p className="text-sm text-gray-500 mb-6">Enter the access code to continue.</p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
-            type="text"
+            type="password"
             value={code}
             onChange={(e) => { setCode(e.target.value); setError(false); }}
             placeholder="Access code"
@@ -51,9 +46,10 @@ export default function AccessGate({ onGranted }: AccessGateProps) {
           )}
           <button
             type="submit"
-            className="w-full rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2.5 transition-colors"
+            disabled={submitting || !code}
+            className="w-full rounded-lg bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white text-sm font-semibold py-2.5 transition-colors"
           >
-            Enter
+            {submitting ? "Checking…" : "Enter"}
           </button>
         </form>
       </div>

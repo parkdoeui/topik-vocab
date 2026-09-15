@@ -41,7 +41,6 @@ jobs:
         run: npm run build
         env:
           VITE_API_URL: ${{ vars.VITE_API_URL }}
-          VITE_VALID_PASSCODE: ${{ vars.VITE_VALID_PASSCODE }}
 
       - name: SPA fallback
         run: cp frontend/dist/index.html frontend/dist/404.html

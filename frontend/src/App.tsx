@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink, Outlet } from "react-router";
-import AccessGate, { isAccessGranted } from "./components/AccessGate";
+import AccessGate from "./components/AccessGate";
+import { checkAuthSession } from "./services/api";
 
 const navClass = ({ isActive }: { isActive: boolean }) =>
   `text-sm font-medium transition-colors ${isActive ? "text-blue-600" : "text-gray-500 hover:text-gray-900"}`;
@@ -18,7 +19,25 @@ function NavBar() {
 }
 
 export function App() {
-  const [accessGranted, setAccessGranted] = useState(() => isAccessGranted());
+  const [accessGranted, setAccessGranted] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    checkAuthSession().then((authenticated) => {
+      if (!cancelled) setAccessGranted(authenticated);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  if (accessGranted === null) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center text-sm text-gray-400">
+        로그인 확인 중…
+      </div>
+    );
+  }
 
   if (!accessGranted) {
     return <AccessGate onGranted={() => setAccessGranted(true)} />;
