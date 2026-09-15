@@ -1,9 +1,24 @@
 const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 const PASSCODE_KEY = "topik_passcode";
 
+// Fetch header values are restricted to ByteString/ISO-8859-1. Encode the
+// UTF-8 bytes so Korean and other Unicode access codes are safe to transport.
+export function encodePasscodeForTransport(passcode: string): string {
+  const bytes = new TextEncoder().encode(passcode);
+  let binary = "";
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  const encoded = btoa(binary)
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
+  return `v1.${encoded}`;
+}
+
 function authHeaders(): Record<string, string> {
   const passcode = localStorage.getItem(PASSCODE_KEY) ?? "";
-  return passcode ? { "X-TOPIK-Passcode": passcode } : {};
+  return passcode
+    ? { "X-TOPIK-Passcode": encodePasscodeForTransport(passcode) }
+    : {};
 }
 
 async function apiFetch(path: string, init?: RequestInit): Promise<Response> {
@@ -87,7 +102,8 @@ export interface WritingSessionPayload {
 export interface QuestionGrading {
   score: number;
   max_score: number;
-  criteria: Record<string, number>;               // 내용_및_과제수행 / 전개구조 / 언어사용 → 점수
+  criteria: Record<string, number>;
+  criteria_max_scores?: Record<string, number>;
   criterion_evidence: Record<string, string>;
   detailed_improvement_points: Record<string, string[]>;
   current_state: string;

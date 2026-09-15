@@ -16,6 +16,7 @@ from ai_writing_grader import (
     grade_writing_submission,
     WritingGraderError,
 )
+from auth import encode_passcode_for_transport, passcode_matches_transport
 
 Base.metadata.create_all(bind=engine)
 
@@ -120,9 +121,9 @@ def require_authenticated(
     passcode_cookie: Optional[str] = Cookie(default=None, alias="topik_passcode"),
 ) -> None:
     """Header is primary (Safari blocks third-party cookies); cookie is secondary convenience."""
-    if passcode_header == settings.valid_passcode:
+    if passcode_matches_transport(passcode_header, settings.valid_passcode):
         return
-    if passcode_cookie == settings.valid_passcode:
+    if passcode_matches_transport(passcode_cookie, settings.valid_passcode):
         return
     raise HTTPException(status_code=403, detail="Authentication required")
 
@@ -168,7 +169,7 @@ def login(payload: LoginRequest, request: Request, response: Response):
     verify_passcode(payload.passcode)
     response.set_cookie(
         key="topik_passcode",
-        value=settings.valid_passcode,
+        value=encode_passcode_for_transport(settings.valid_passcode),
         httponly=True,
         **cookie_settings_for_request(request),
     )
@@ -180,8 +181,8 @@ def auth_session(
     passcode_cookie: Optional[str] = Cookie(default=None, alias="topik_passcode"),
 ):
     authenticated = (
-        passcode_header == settings.valid_passcode
-        or passcode_cookie == settings.valid_passcode
+        passcode_matches_transport(passcode_header, settings.valid_passcode)
+        or passcode_matches_transport(passcode_cookie, settings.valid_passcode)
     )
     return AuthSessionResponse(authenticated=authenticated)
 

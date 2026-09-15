@@ -4,8 +4,16 @@ import { writingTests } from "../data/tests";
 import { getWritingSession } from "../services/api";
 import type { QuestionGrading, WritingSessionResponse } from "../services/api";
 
-const CRITERIA_ORDER = ["내용_및_과제수행", "전개구조", "언어사용"] as const;
+const CRITERIA_ORDER = [
+  "㉠",
+  "㉡",
+  "내용_및_과제수행",
+  "전개구조",
+  "언어사용",
+] as const;
 const CRITERIA_LABELS: Record<string, string> = {
+  "㉠": "㉠ 답안",
+  "㉡": "㉡ 답안",
   "내용_및_과제수행": "내용 및 과제 수행",
   "전개구조": "글의 전개 구조",
   "언어사용": "언어 사용",
@@ -42,6 +50,12 @@ function QuestionCard({
   transcription?: string;
 }) {
   const maxScore = grading.max_score || maxPoints;
+  const criteriaKeys = [
+    ...CRITERIA_ORDER.filter((key) => grading.criteria?.[key] !== undefined),
+    ...Object.keys(grading.criteria ?? {}).filter(
+      (key) => !CRITERIA_ORDER.includes(key as (typeof CRITERIA_ORDER)[number])
+    ),
+  ];
 
   return (
     <div className="bg-white rounded-2xl border border-gray-200 p-5 space-y-4">
@@ -75,9 +89,10 @@ function QuestionCard({
 
       {/* Criteria breakdown */}
       <div className="space-y-3 pt-1">
-        {CRITERIA_ORDER.map((key) => {
+        {criteriaKeys.map((key) => {
           const score = grading.criteria?.[key];
           if (score === undefined) return null;
+          const criterionMax = grading.criteria_max_scores?.[key];
           const evidence = grading.criterion_evidence?.[key];
           const points = grading.detailed_improvement_points?.[key] ?? [];
           return (
@@ -86,7 +101,9 @@ function QuestionCard({
                 <span className="text-sm font-medium text-gray-700">
                   {CRITERIA_LABELS[key] ?? key}
                 </span>
-                <span className="text-sm tabular-nums text-gray-500">{score}점</span>
+                <span className="text-sm tabular-nums text-gray-500">
+                  {score}{criterionMax !== undefined ? `/${criterionMax}` : ""}점
+                </span>
               </div>
               {evidence && (
                 <p className="text-xs text-gray-500 leading-relaxed mt-1">{evidence}</p>
@@ -184,6 +201,9 @@ export function WritingResultsView() {
   const scorePct = maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0;
 
   const actionPoints = grading?.action_points ?? [];
+  const usesOfficialRubric = Object.values(questions).some(
+    (question) => question.criteria_max_scores !== undefined
+  );
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8 w-full space-y-6">
@@ -196,6 +216,11 @@ export function WritingResultsView() {
         </p>
         <p className="text-sm text-gray-400">{scorePct}%</p>
         {test && <p className="text-xs text-gray-400 mt-1">{test.title}</p>}
+        <p className="text-xs text-gray-400 mt-3">
+          {usesOfficialRubric
+            ? "공개된 TOPIK II PBT 쓰기 채점 기준을 반영한 AI 추정치이며 공식 성적이 아닙니다."
+            : "AI가 산정한 연습용 추정치이며 공식 성적이 아닙니다."}
+        </p>
       </div>
 
       {/* Per-question breakdown */}

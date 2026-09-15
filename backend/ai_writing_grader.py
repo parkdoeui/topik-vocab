@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import base64
 import json
+import math
 import pathlib
 import re
 from typing import Any
@@ -186,34 +187,29 @@ def transcribe_handwriting(
 
 # ---------- Grading ----------
 
-class TopikCriteriaSchema(BaseModel):
-    내용_및_과제수행: float = 0.0
-    전개구조: float = 0.0
-    언어사용: float = 0.0
-
-
-class TopikCriterionEvidenceSchema(BaseModel):
-    내용_및_과제수행: str = ""
-    전개구조: str = ""
-    언어사용: str = ""
-
-
-class TopikImprovementPointsSchema(BaseModel):
-    내용_및_과제수행: list[str] = Field(default_factory=list)
-    전개구조: list[str] = Field(default_factory=list)
-    언어사용: list[str] = Field(default_factory=list)
+# Published TOPIK II PBT writing rubric. The language-use score for questions
+# 53 and 54 is a raw 0–8/0–13 score multiplied by two.
+# Source: https://exam.topik.go.kr/nasdata/webnas/raonkeditordata/uploadId/2024/02/20240227_175504804_07236.pdf
+_OFFICIAL_RUBRICS: dict[str, tuple[dict[str, int], dict[str, int]]] = {
+    "short-blank": ({"㉠": 5, "㉡": 5}, {"㉠": 1, "㉡": 1}),
+    "chart-description": (
+        {"내용_및_과제수행": 7, "전개구조": 7, "언어사용": 16},
+        {"내용_및_과제수행": 1, "전개구조": 1, "언어사용": 2},
+    ),
+    "essay": (
+        {"내용_및_과제수행": 12, "전개구조": 12, "언어사용": 26},
+        {"내용_및_과제수행": 1, "전개구조": 1, "언어사용": 2},
+    ),
+}
 
 
 class TopikQuestionGradeSchema(BaseModel):
     score: float = 0.0
     max_score: float = 0.0
-    criteria: TopikCriteriaSchema = Field(default_factory=TopikCriteriaSchema)
-    criterion_evidence: TopikCriterionEvidenceSchema = Field(
-        default_factory=TopikCriterionEvidenceSchema
-    )
-    detailed_improvement_points: TopikImprovementPointsSchema = Field(
-        default_factory=TopikImprovementPointsSchema
-    )
+    criteria: dict[str, float] = Field(default_factory=dict)
+    criteria_max_scores: dict[str, float] = Field(default_factory=dict)
+    criterion_evidence: dict[str, str] = Field(default_factory=dict)
+    detailed_improvement_points: dict[str, list[str]] = Field(default_factory=dict)
     current_state: str = ""
     primary_goal: str = ""
     sample_answer: str = ""
@@ -227,23 +223,55 @@ class WritingGradingResponse(BaseModel):
 
 def _normalize_score(value: Any, default: float = 0.0) -> float:
     try:
-        return float(value)
+        result = float(value)
     except (TypeError, ValueError):
         return default
+    return result if math.isfinite(result) else default
 
 
-def _normalize_criteria(payload: dict[str, Any]) -> dict[str, float]:
-    keys = ["내용_및_과제수행", "전개구조", "언어사용"]
-    return {key: _normalize_score(payload.get(key, 0.0)) for key in keys}
+def _rubric_for_question(
+    question: dict[str, Any],
+) -> tuple[dict[str, int], dict[str, int]]:
+    question_type = str(question.get("type", ""))
+    rubric = _OFFICIAL_RUBRICS.get(question_type)
+    if rubric is None:
+        raise WritingGraderError(f"Unsupported TOPIK writing question type: {question_type}")
+
+    max_score = _normalize_score(question.get("max_points", 0.0))
+    criterion_caps, score_steps = rubric
+    if sum(criterion_caps.values()) != max_score:
+        raise WritingGraderError(
+            f"Question {question.get('number')} max_points does not match its official rubric"
+        )
+    return criterion_caps, score_steps
 
 
-def _normalize_criterion_evidence(payload: dict[str, Any]) -> dict[str, str]:
-    keys = ["내용_및_과제수행", "전개구조", "언어사용"]
+def _quantize_criterion_score(value: Any, cap: int, step: int) -> int:
+    score = max(0.0, min(float(cap), _normalize_score(value)))
+    # Scores in the official table are whole points; language use is doubled.
+    return min(cap, int(math.floor(score / step + 0.5)) * step)
+
+
+def _normalize_criteria(
+    payload: dict[str, Any],
+    criterion_caps: dict[str, int],
+    score_steps: dict[str, int],
+) -> dict[str, int]:
+    return {
+        key: _quantize_criterion_score(payload.get(key, 0), cap, score_steps[key])
+        for key, cap in criterion_caps.items()
+    }
+
+
+def _normalize_criterion_evidence(
+    payload: dict[str, Any], keys: list[str]
+) -> dict[str, str]:
     return {key: str(payload.get(key, "")).strip() for key in keys}
 
 
-def _normalize_improvement_points(payload: dict[str, Any]) -> dict[str, list[str]]:
-    keys = ["내용_및_과제수행", "전개구조", "언어사용"]
+def _normalize_improvement_points(
+    payload: dict[str, Any], keys: list[str]
+) -> dict[str, list[str]]:
     result: dict[str, list[str]] = {}
     for key in keys:
         values = payload.get(key, [])
@@ -251,6 +279,73 @@ def _normalize_improvement_points(payload: dict[str, Any]) -> dict[str, list[str
             values = [values]
         result[key] = [str(v).strip() for v in values if str(v).strip()][:3]
     return result
+
+
+def _as_dict(value: Any) -> dict[str, Any]:
+    return value if isinstance(value, dict) else {}
+
+
+def _normalize_grading_payload(
+    test: dict[str, Any], payload: dict[str, Any]
+) -> dict[str, Any]:
+    """Enforce official caps and recompute all totals instead of trusting the model."""
+    questions_raw = _as_dict(payload.get("questions"))
+    questions_out: dict[str, dict[str, Any]] = {}
+
+    for question in test.get("questions", []):
+        qid = str(question.get("number", ""))
+        raw_question = questions_raw.get(qid)
+        if not qid or not isinstance(raw_question, dict):
+            raise WritingGraderError(f"Writing grader omitted question {qid or '(unknown)'}")
+
+        criterion_caps, score_steps = _rubric_for_question(question)
+        criteria_raw = _as_dict(raw_question.get("criteria"))
+        missing_criteria = [key for key in criterion_caps if key not in criteria_raw]
+        if missing_criteria:
+            raise WritingGraderError(
+                f"Writing grader omitted criteria for question {qid}: "
+                f"{', '.join(missing_criteria)}"
+            )
+
+        keys = list(criterion_caps)
+        criteria = _normalize_criteria(criteria_raw, criterion_caps, score_steps)
+        questions_out[qid] = {
+            "score": sum(criteria.values()),
+            "max_score": sum(criterion_caps.values()),
+            "criteria": criteria,
+            "criteria_max_scores": criterion_caps,
+            "criterion_evidence": _normalize_criterion_evidence(
+                _as_dict(raw_question.get("criterion_evidence")), keys
+            ),
+            "detailed_improvement_points": _normalize_improvement_points(
+                _as_dict(raw_question.get("detailed_improvement_points")), keys
+            ),
+            "current_state": str(raw_question.get("current_state", "")).strip(),
+            "primary_goal": str(raw_question.get("primary_goal", "")).strip(),
+            "sample_answer": str(raw_question.get("sample_answer", "")).strip(),
+        }
+
+    if not questions_out:
+        raise WritingGraderError("Writing test contains no questions")
+
+    action_points_raw = payload.get("action_points", [])
+    if not isinstance(action_points_raw, list):
+        action_points_raw = []
+    action_points = [
+        str(point).strip() for point in action_points_raw if str(point).strip()
+    ]
+    if len(action_points) < 3:
+        action_points += [
+            "답안을 쓰기 전에 개요를 작성하세요.",
+            "다양한 문장 구조와 접속 표현을 사용하세요.",
+            "문법과 맞춤법을 검토할 시간을 남겨두세요.",
+        ]
+
+    return {
+        "total_score": sum(q["score"] for q in questions_out.values()),
+        "questions": questions_out,
+        "action_points": action_points[:4],
+    }
 
 
 def grade_writing_submission(
@@ -314,46 +409,6 @@ def grade_writing_submission(
     except json.JSONDecodeError as exc:
         raise WritingGraderError("Writing grader returned invalid JSON") from exc
 
-    # Normalize questions
-    questions_raw = payload.get("questions", {})
-    questions_out: dict[str, dict[str, Any]] = {}
-    for qid, q in questions_raw.items():
-        if not isinstance(q, dict):
-            continue
-        questions_out[qid] = {
-            "score": _normalize_score(q.get("score", 0.0)),
-            "max_score": _normalize_score(q.get("max_score", 0.0)),
-            "criteria": _normalize_criteria(q.get("criteria", {})),
-            "criterion_evidence": _normalize_criterion_evidence(
-                q.get("criterion_evidence", {})
-            ),
-            "detailed_improvement_points": _normalize_improvement_points(
-                q.get("detailed_improvement_points", {})
-            ),
-            "current_state": str(q.get("current_state", "")).strip(),
-            "primary_goal": str(q.get("primary_goal", "")).strip(),
-            "sample_answer": str(q.get("sample_answer", "")).strip(),
-        }
-
-    # Without response_schema enforcement, a model could return a shape we can't
-    # parse. Fail loudly (→ 502, retryable) rather than persisting empty grading,
-    # which would burn the session id (resubmit → 409).
-    if not questions_out:
-        raise WritingGraderError("Writing grader returned no question grades")
-
-    action_points = list(payload.get("action_points", []))
-    if len(action_points) < 3:
-        action_points = action_points + [
-            "답안을 쓰기 전에 개요를 작성하세요.",
-            "다양한 문장 구조와 접속 표현을 사용하세요.",
-            "문법과 맞춤법을 검토할 시간을 남겨두세요.",
-        ]
-    action_points = action_points[:4]
-
-    total_score = _normalize_score(payload.get("total_score", 0.0))
-
-    return {
-        "total_score": total_score,
-        "questions": questions_out,
-        "action_points": action_points,
-    }
+    if not isinstance(payload, dict):
+        raise WritingGraderError("Writing grader returned an invalid JSON shape")
+    return _normalize_grading_payload(test, payload)
