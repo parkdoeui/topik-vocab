@@ -226,10 +226,14 @@ export function WritingTest() {
         </div>
         <div
           className={`text-sm font-mono font-semibold tabular-nums ${
-            remainingMs < 5 * 60 * 1000 ? "text-red-500" : "text-gray-700"
+            remainingMs === 0
+              ? "text-red-600"
+              : remainingMs < 5 * 60 * 1000
+              ? "text-red-500"
+              : "text-gray-700"
           }`}
         >
-          {formatTime(remainingMs)} 남음
+          {remainingMs === 0 ? "⏱ 시간 종료" : `${formatTime(remainingMs)} 남음`}
         </div>
       </div>
 
@@ -240,6 +244,12 @@ export function WritingTest() {
           style={{ width: `${((qIdx + 1) / test.questions.length) * 100}%` }}
         />
       </div>
+
+      {remainingMs === 0 && (
+        <p className="text-xs text-center text-amber-600">
+          시험 시간이 종료되었습니다. 답안은 계속 작성하고 제출할 수 있습니다.
+        </p>
+      )}
 
       {/* Question card */}
       <div className="bg-white rounded-2xl border border-gray-200 p-5 space-y-4">
