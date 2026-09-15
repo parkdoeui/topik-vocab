@@ -300,10 +300,9 @@ export function WritingTest() {
           </div>
         ) : (
           <UploadZone
-            question={question}
-            images={images[question.number] ?? []}
-            onAdd={(entry) => addImage(question.number, entry)}
-            onRemove={(idx) => removeImage(question.number, idx)}
+            image={(images[question.number] ?? [])[0]}
+            onSet={(entry) => setImage(question.number, entry)}
+            onRemove={() => clearImage(question.number)}
           />
         )}
       </div>
