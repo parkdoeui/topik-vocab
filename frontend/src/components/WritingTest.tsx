@@ -365,6 +365,28 @@ export function WritingTest() {
       {error && (
         <p className="text-xs text-center text-red-500">{error}</p>
       )}
+
+      {/* Fullscreen image viewer (tap anywhere to close) */}
+      {zoomSrc && (
+        <div
+          onClick={() => setZoomSrc(null)}
+          className="fixed inset-0 z-50 bg-black/85 flex items-center justify-center p-4"
+        >
+          <img
+            src={zoomSrc}
+            alt="문제 자료 확대"
+            className="max-w-full max-h-full rounded-lg"
+          />
+          <button
+            type="button"
+            onClick={() => setZoomSrc(null)}
+            className="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/90 text-gray-800 text-2xl leading-none flex items-center justify-center"
+            aria-label="닫기"
+          >
+            ×
+          </button>
+        </div>
+      )}
     </div>
   );
 }
