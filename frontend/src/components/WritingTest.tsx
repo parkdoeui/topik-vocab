@@ -312,7 +312,7 @@ export function WritingTest() {
         {qIdx > 0 && (
           <button
             onClick={() => setQIdx((i) => i - 1)}
-            className="flex-1 py-2.5 rounded-xl border border-gray-200 text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors"
+            className="flex-1 py-3.5 rounded-xl border border-gray-200 text-base font-medium text-gray-600 hover:bg-gray-50 active:bg-gray-100 transition-colors"
           >
             이전
           </button>
@@ -321,7 +321,7 @@ export function WritingTest() {
         {qIdx < test.questions.length - 1 ? (
           <button
             onClick={() => setQIdx((i) => i + 1)}
-            className="flex-1 py-2.5 rounded-xl bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-colors"
+            className="flex-1 py-3.5 rounded-xl bg-gray-900 text-white text-base font-medium hover:bg-gray-800 active:bg-gray-700 transition-colors"
           >
             다음
           </button>
@@ -329,7 +329,7 @@ export function WritingTest() {
           <button
             onClick={handleSubmit}
             disabled={!allAnswered || submitting}
-            className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white text-sm font-medium transition-colors"
+            className="flex-1 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 active:bg-blue-800 disabled:bg-gray-300 text-white text-base font-medium transition-colors"
           >
             {submitting ? "업로드 중…" : "제출하기"}
           </button>
