@@ -1,7 +1,14 @@
+import json
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
-from ai_writing_grader import WritingGraderError, _normalize_grading_payload
+from ai_writing_grader import (
+    WritingGraderError,
+    _build_grading_contents,
+    _load_question_image,
+    _normalize_grading_payload,
+)
 
 
 TEST = {
@@ -38,6 +45,62 @@ class GradingNormalizationTests(unittest.TestCase):
 
         self.assertIn('"51"', prompt)
         self.assertIn('"54"', prompt)
+
+    def test_topik_102_graph_is_in_json_and_attached_to_grading_request(self) -> None:
+        backend_dir = Path(__file__).parents[1]
+        test = json.loads(
+            (backend_dir / "data" / "writing_tests" / "topik-102.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        template = (backend_dir / "prompts" / "writing_grader.txt").read_text(
+            encoding="utf-8"
+        )
+        prompt = template.format(
+            test_json=json.dumps(test, ensure_ascii=False), answers_json="{}"
+        )
+
+        class FakePart:
+            @staticmethod
+            def from_text(*, text: str):
+                return ("text", text)
+
+            @staticmethod
+            def from_bytes(*, data: bytes, mime_type: str):
+                return ("image", data, mime_type)
+
+        class FakeTypes:
+            Part = FakePart
+
+        with patch(
+            "ai_writing_grader._load_question_image",
+            return_value=(b"graph-png", "image/png"),
+        ) as load_image:
+            contents = _build_grading_contents(
+                prompt,
+                test,
+                FakeTypes,
+                "https://example.test/topik-vocab/",
+            )
+
+        self.assertIn("한국 캠핑 인구의 변화", contents[0][1])
+        self.assertIn("2019년 340만 명", contents[0][1])
+        self.assertNotIn("2018년 340만 명", contents[0][1])
+        self.assertIn("문항 53", contents[1][1])
+        self.assertEqual(contents[2], ("image", b"graph-png", "image/png"))
+        load_image.assert_called_once_with(
+            "tests/topik-102-q53.png",
+            "d95dae0d20281b13215d128410cbd4e78b6f373df3541635ccc9809eaab37ce7",
+            "https://example.test/topik-vocab/",
+        )
+
+    def test_question_image_loader_rejects_absolute_asset_urls(self) -> None:
+        with self.assertRaisesRegex(WritingGraderError, "path is not allowed"):
+            _load_question_image(
+                "https://example.test/replacement.png",
+                "0" * 64,
+                "https://assets.example.test/topik/",
+            )
 
     def test_enforces_official_rubrics_and_recomputes_totals(self) -> None:
         payload = {

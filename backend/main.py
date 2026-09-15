@@ -252,6 +252,7 @@ def create_writing_session(
             location=settings.vertex_location,
             credentials_json=settings.vertex_credentials_json,
             model=settings.writing_grader_model,
+            question_asset_base_url=settings.question_asset_base_url,
         )
     except WritingGraderError as exc:
         raise HTTPException(status_code=502, detail=str(exc)) from exc

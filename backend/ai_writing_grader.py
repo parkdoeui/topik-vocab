@@ -8,17 +8,146 @@ Two public functions:
 from __future__ import annotations
 
 import base64
+import hashlib
 import json
 import math
 import pathlib
 import re
+from functools import lru_cache
+from pathlib import PurePosixPath
 from typing import Any
+from urllib.parse import urljoin, urlsplit
 
 from pydantic import BaseModel, Field
 
 
 class WritingGraderError(Exception):
     pass
+
+
+_MAX_QUESTION_IMAGE_BYTES = 10 * 1024 * 1024
+_QUESTION_IMAGE_MIME_TYPES = {"image/jpeg", "image/png", "image/webp"}
+
+
+def _has_valid_image_signature(content: bytes, mime_type: str) -> bool:
+    signatures = {
+        "image/jpeg": content.startswith(b"\xff\xd8\xff"),
+        "image/png": content.startswith(b"\x89PNG\r\n\x1a\n"),
+        "image/webp": content.startswith(b"RIFF") and content[8:12] == b"WEBP",
+    }
+    return signatures.get(mime_type, False)
+
+
+@lru_cache(maxsize=32)
+def _load_question_image(
+    image_url: str, expected_sha256: str, question_asset_base_url: str
+) -> tuple[bytes, str]:
+    """Load a canonical question image once and return its bytes and MIME type."""
+    import httpx
+
+    image_reference = urlsplit(image_url)
+    image_path = PurePosixPath(image_reference.path)
+    if (
+        image_reference.scheme
+        or image_reference.netloc
+        or image_reference.query
+        or image_reference.fragment
+        or image_path.is_absolute()
+        or ".." in image_path.parts
+    ):
+        raise WritingGraderError(f"Question image path is not allowed: {image_url}")
+
+    base_url = urlsplit(question_asset_base_url)
+    if base_url.scheme not in {"http", "https"} or not base_url.netloc:
+        raise WritingGraderError("Question asset base URL is invalid")
+
+    asset_url = urljoin(
+        f"{question_asset_base_url.rstrip('/')}/", image_url.lstrip("/")
+    )
+    try:
+        content = bytearray()
+        with httpx.stream(
+            "GET", asset_url, follow_redirects=False, timeout=15.0
+        ) as response:
+            response.raise_for_status()
+            mime_type = (
+                response.headers.get("content-type", "")
+                .split(";", 1)[0]
+                .lower()
+            )
+            if mime_type not in _QUESTION_IMAGE_MIME_TYPES:
+                raise WritingGraderError(
+                    f"Question image {image_url} has an unsupported content type"
+                )
+            for chunk in response.iter_bytes():
+                content.extend(chunk)
+                if len(content) > _MAX_QUESTION_IMAGE_BYTES:
+                    raise WritingGraderError(
+                        f"Question image {image_url} exceeds the size limit"
+                    )
+    except Exception as exc:
+        if isinstance(exc, WritingGraderError):
+            raise
+        raise WritingGraderError(
+            f"Failed to load question image {image_url}: {_provider_error_message(exc)}"
+        ) from exc
+
+    image_bytes = bytes(content)
+    if not image_bytes or not _has_valid_image_signature(image_bytes, mime_type):
+        raise WritingGraderError(f"Question image {image_url} is not a valid image")
+    actual_sha256 = hashlib.sha256(image_bytes).hexdigest()
+    if actual_sha256 != expected_sha256:
+        raise WritingGraderError(f"Question image {image_url} failed integrity validation")
+    return image_bytes, mime_type
+
+
+def _build_grading_contents(
+    prompt: str,
+    test: dict[str, Any],
+    types: Any,
+    question_asset_base_url: str,
+) -> list[Any]:
+    """Build a multimodal prompt with every referenced question image attached."""
+    contents: list[Any] = [types.Part.from_text(text=prompt)]
+    questions = test.get("questions", [])
+    if not isinstance(questions, list):
+        raise WritingGraderError("Writing test questions must be a list")
+
+    seen_question_numbers: set[str] = set()
+    for question in questions:
+        if not isinstance(question, dict):
+            raise WritingGraderError("Writing test contains an invalid question")
+        question_number = str(question.get("number", "")).strip()
+        if not question_number or question_number in seen_question_numbers:
+            raise WritingGraderError("Writing test question numbers must be unique")
+        seen_question_numbers.add(question_number)
+
+        image_url = question.get("image_url")
+        if not isinstance(image_url, str) or not image_url.strip():
+            continue
+
+        expected_sha256 = question.get("image_sha256")
+        if not isinstance(expected_sha256, str) or not re.fullmatch(
+            r"[0-9a-f]{64}", expected_sha256
+        ):
+            raise WritingGraderError(
+                f"Question {question_number} image is missing a valid SHA-256 checksum"
+            )
+        image_bytes, mime_type = _load_question_image(
+            image_url, expected_sha256, question_asset_base_url
+        )
+        contents.extend(
+            [
+                types.Part.from_text(
+                    text=(
+                        f"문항 {question_number}의 제시 자료 이미지입니다. "
+                        "시험 정보 JSON의 해당 문항과 함께 확인하여 채점하세요."
+                    )
+                ),
+                types.Part.from_bytes(data=image_bytes, mime_type=mime_type),
+            ]
+        )
+    return contents
 
 
 def _provider_error_message(exc: Exception) -> str:
@@ -357,11 +486,14 @@ def grade_writing_submission(
     location: str = "us-central1",
     credentials_json: str | None = None,
     model: str = "gemini-2.5-pro",
+    question_asset_base_url: str = "https://parkdoeui.github.io/topik-vocab/",
 ) -> dict[str, Any]:
     """
     Grade a TOPIK II writing submission.
 
     `answers` maps question id (str) to {image_urls, transcription, char_count}.
+    Questions that reference an image are sent with both their full JSON and
+    the actual image bytes so content accuracy can be graded visually.
     Returns a dict matching WritingGradingResponse shape.
     """
     from google.genai import types
@@ -383,11 +515,14 @@ def grade_writing_submission(
         test_json=json.dumps(test, ensure_ascii=False),
         answers_json=json.dumps(answers, ensure_ascii=False),
     )
+    contents = _build_grading_contents(
+        prompt, test, types, question_asset_base_url
+    )
 
     try:
         response = client.models.generate_content(
             model=model,
-            contents=prompt,
+            contents=contents,
             config=types.GenerateContentConfig(
                 # NB: response_schema is intentionally omitted. WritingGradingResponse
                 # has a dict-typed `questions` field, which the SDK renders with

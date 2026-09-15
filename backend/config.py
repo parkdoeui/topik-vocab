@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     vertex_project: Optional[str] = None
     vertex_credentials_json: Optional[str] = None
     vertex_location: str = "us-central1"
+    question_asset_base_url: str = "https://parkdoeui.github.io/topik-vocab/"
     # Pro model served via Vertex AI (region "global"). Requires VERTEX_PROJECT.
     writing_grader_model: str = "gemini-3.1-pro-preview"
 

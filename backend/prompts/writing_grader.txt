@@ -10,6 +10,7 @@
 ## 절대 규칙
 
 - 시험 정보의 모든 문항을 채점하세요. questions의 키는 문항 number의 문자열이어야 합니다.
+- 시험 정보 JSON에서 image_url이 있는 문항은 JSON 뒤에 문항 번호가 표시된 실제 제시 자료 이미지가 첨부됩니다. 해당 이미지를 반드시 직접 확인하고, JSON의 instruction·prompt와 함께 대조하여 채점하세요. 제시 자료의 수치·항목·관계를 추측하거나 학생 답안만 보고 재구성하지 마세요.
 - max_score는 해당 문항의 max_points와 정확히 같아야 합니다.
 - score는 criteria 점수의 합과 정확히 같아야 하며 0 이상 max_score 이하여야 합니다.
 - total_score는 모든 문항 score의 합과 정확히 같아야 합니다.

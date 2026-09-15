@@ -6,6 +6,7 @@ export interface WritingQuestion {
   instruction: string;
   prompt: string;
   image_url?: string;
+  image_sha256?: string;
   blanks?: string[];
   min_chars?: number;
   max_chars?: number;
