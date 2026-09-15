@@ -254,11 +254,18 @@ export function WritingTest() {
         <p className="text-sm text-gray-600 leading-relaxed">{question.instruction}</p>
 
         {question.image_url ? (
-          <img
-            src={`${import.meta.env.BASE_URL}${question.image_url}`}
-            alt="문제 자료"
-            className="w-full rounded-xl border border-gray-200"
-          />
+          <button
+            type="button"
+            onClick={() => setZoomSrc(`${import.meta.env.BASE_URL}${question.image_url}`)}
+            className="block w-full"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}${question.image_url}`}
+              alt="문제 자료"
+              className="w-full rounded-xl border border-gray-200"
+            />
+            <span className="mt-1.5 block text-xs text-gray-400">🔍 탭하여 크게 보기</span>
+          </button>
         ) : (
           <div className="bg-gray-50 rounded-xl p-4">
             <p className="text-sm text-gray-800 leading-loose whitespace-pre-line">
