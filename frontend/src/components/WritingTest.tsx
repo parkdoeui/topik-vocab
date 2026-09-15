@@ -28,81 +28,84 @@ const TYPE_LABELS: Record<string, string> = {
   "essay": "논설문",
 };
 
+// Single-image upload (one photo per question). On mobile the whole zone is a
+// large tap target; the remove button is always visible (no hover needed).
 function UploadZone({
-  question,
-  images,
-  onAdd,
+  image,
+  onSet,
   onRemove,
 }: {
-  question: WritingQuestion;
-  images: WritingImageEntry[];
-  onAdd: (entry: WritingImageEntry) => void;
-  onRemove: (idx: number) => void;
+  image: WritingImageEntry | undefined;
+  onSet: (entry: WritingImageEntry) => void;
+  onRemove: () => void;
 }) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleFiles = (files: FileList | null) => {
-    if (!files) return;
-    Array.from(files).forEach((file) => {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        const dataUrl = e.target?.result as string;
-        const base64 = dataUrl.split(",")[1];
-        onAdd({ data: base64, mime_type: file.type });
-      };
-      reader.readAsDataURL(file);
-    });
+    if (!files || files.length === 0) return;
+    const file = files[0]; // limit to a single picture
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const dataUrl = e.target?.result as string;
+      const base64 = dataUrl.split(",")[1];
+      onSet({ data: base64, mime_type: file.type });
+    };
+    reader.readAsDataURL(file);
   };
 
-  return (
-    <div className="space-y-3">
-      <div
-        onClick={() => inputRef.current?.click()}
-        onDragOver={(e) => e.preventDefault()}
-        onDrop={(e) => {
-          e.preventDefault();
-          handleFiles(e.dataTransfer.files);
-        }}
-        className="border-2 border-dashed border-gray-300 hover:border-blue-400 rounded-xl p-6 text-center cursor-pointer transition-colors"
-      >
-        <p className="text-sm text-gray-500">
-          사진을 여기에 드래그하거나 <span className="text-blue-600 underline">클릭</span>하여 업로드
-        </p>
-        <p className="text-xs text-gray-400 mt-1">
-          {question.number === 53
-            ? `200–300자 · 사진 1–3장`
-            : `600–700자 · 사진 1–5장`}
-        </p>
-        <input
-          ref={inputRef}
-          type="file"
-          accept="image/*"
-          multiple
-          capture="environment"
-          className="hidden"
-          onChange={(e) => handleFiles(e.target.files)}
+  if (image) {
+    return (
+      <div className="space-y-3">
+        <img
+          src={`data:${image.mime_type};base64,${image.data}`}
+          alt="업로드한 답안"
+          className="w-full rounded-xl border border-gray-200"
         />
+        <button
+          type="button"
+          onClick={onRemove}
+          className="w-full py-3.5 rounded-xl border border-red-200 text-red-600 text-base font-semibold hover:bg-red-50 active:bg-red-100 transition-colors"
+        >
+          🗑  사진 삭제
+        </button>
       </div>
+    );
+  }
 
-      {images.length > 0 && (
-        <div className="flex flex-wrap gap-2">
-          {images.map((img, idx) => (
-            <div key={idx} className="relative group">
-              <img
-                src={`data:${img.mime_type};base64,${img.data}`}
-                alt={`답안 ${idx + 1}`}
-                className="w-20 h-20 object-cover rounded-lg border border-gray-200"
-              />
-              <button
-                onClick={() => onRemove(idx)}
-                className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-red-500 text-white rounded-full text-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-              >
-                ×
-              </button>
-            </div>
-          ))}
-        </div>
-      )}
+  return (
+    <div
+      onClick={() => inputRef.current?.click()}
+      onDragOver={(e) => e.preventDefault()}
+      onDrop={(e) => {
+        e.preventDefault();
+        handleFiles(e.dataTransfer.files);
+      }}
+      className="border-2 border-dashed border-gray-300 hover:border-blue-400 active:bg-gray-50 rounded-2xl px-6 py-10 text-center cursor-pointer transition-colors"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        className="mx-auto w-16 h-16 text-blue-500"
+        aria-hidden="true"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+      </svg>
+      <div className="mt-4 inline-block rounded-xl bg-blue-600 text-white text-base font-semibold px-6 py-3">
+        클릭하여 업로드
+      </div>
+      <p className="text-sm text-gray-400 mt-3">답안을 촬영하거나 사진 1장을 선택하세요</p>
+      <input
+        ref={inputRef}
+        type="file"
+        accept="image/*"
+        capture="environment"
+        className="hidden"
+        onChange={(e) => handleFiles(e.target.files)}
+      />
     </div>
   );
 }
