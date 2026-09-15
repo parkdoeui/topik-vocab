@@ -3,6 +3,7 @@ import { useNavigate, useParams, useSearchParams } from "react-router";
 import { writingTests } from "../data/tests";
 import { submitWritingSession } from "../services/api";
 import { getSessionImages, loadWritingDraft } from "../services/session";
+import { LoadingSpinner } from "./LoadingSpinner";
 
 function countChars(s: string): number {
   return s.replace(/\s/g, "").length;
@@ -147,14 +148,22 @@ export function TranscriptionReview() {
         );
       })}
 
-      {error && <p className="text-sm text-red-500 text-center">{error}</p>}
+      {error && <p role="alert" className="text-sm text-red-500 text-center">{error}</p>}
 
       <button
         onClick={handleConfirm}
         disabled={submitting}
+        aria-busy={submitting}
         className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white font-semibold transition-colors"
       >
-        {submitting ? "채점 중…" : "채점 요청"}
+        {submitting ? (
+          <span className="flex items-center justify-center gap-2">
+            <LoadingSpinner />
+            채점 중…
+          </span>
+        ) : (
+          "채점 요청"
+        )}
       </button>
     </div>
   );

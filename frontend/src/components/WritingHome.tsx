@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { writingTests } from "../data/tests";
+import { getProgress } from "../services/api";
 
 const TYPE_LABELS: Record<string, string> = {
   "short-blank": "단문 쓰기",
@@ -8,6 +10,31 @@ const TYPE_LABELS: Record<string, string> = {
 };
 
 export function WritingHome() {
+  const [latestResultByTest, setLatestResultByTest] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    let cancelled = false;
+    getProgress().then((progress) => {
+      if (cancelled || !progress) return;
+
+      const latest: Record<string, { id: string; date: string }> = {};
+      for (const session of progress.sessions) {
+        const current = latest[session.test_id];
+        if (!current || session.date > current.date) {
+          latest[session.test_id] = { id: session.id, date: session.date };
+        }
+      }
+      setLatestResultByTest(
+        Object.fromEntries(
+          Object.entries(latest).map(([testId, session]) => [testId, session.id])
+        )
+      );
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   return (
     <div className="max-w-2xl mx-auto px-4 py-10 w-full">
       <h1 className="text-2xl font-bold text-gray-900 mb-2">TOPIK II 쓰기</h1>
@@ -19,6 +46,7 @@ export function WritingHome() {
         {writingTests.map((test) => {
           const types = [...new Set(test.questions.map((q) => TYPE_LABELS[q.type] ?? q.type))];
           const totalPoints = test.questions.reduce((s, q) => s + q.max_points, 0);
+          const resultId = latestResultByTest[test.id];
 
           return (
             <div
@@ -41,12 +69,22 @@ export function WritingHome() {
                   ))}
                 </div>
               </div>
-              <Link
-                to={`/writing/${test.id}`}
-                className="shrink-0 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-xl transition-colors"
-              >
-                시작
-              </Link>
+              <div className="flex shrink-0 flex-col gap-2">
+                <Link
+                  to={`/writing/${test.id}`}
+                  className="rounded-xl bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                >
+                  {resultId ? "다시 풀기" : "시작"}
+                </Link>
+                {resultId && (
+                  <Link
+                    to={`/writing-results/${resultId}`}
+                    className="rounded-xl border border-blue-200 px-4 py-2 text-center text-sm font-medium text-blue-700 transition-colors hover:bg-blue-50"
+                  >
+                    채점 결과 보기
+                  </Link>
+                )}
+              </div>
             </div>
           );
         })}

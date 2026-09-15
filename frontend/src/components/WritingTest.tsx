@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { writingTests } from "../data/tests";
 import { transcribeImages } from "../services/api";
+import { LoadingSpinner } from "./LoadingSpinner";
 import {
   newSessionId,
   saveWritingDraft,
@@ -28,84 +29,165 @@ const TYPE_LABELS: Record<string, string> = {
   "essay": "논설문",
 };
 
-// Single-image upload (one photo per question). On mobile the whole zone is a
-// large tap target; the remove button is always visible (no hover needed).
+const MAX_IMAGES_PER_LONG_QUESTION = 5;
+const MAX_IMAGE_SIZE_BYTES = 10 * 1024 * 1024;
+
+function readImage(file: File): Promise<WritingImageEntry> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const dataUrl = reader.result;
+      if (typeof dataUrl !== "string") {
+        reject(new Error("사진을 읽을 수 없습니다."));
+        return;
+      }
+      resolve({ data: dataUrl.split(",")[1], mime_type: file.type });
+    };
+    reader.onerror = () => reject(new Error("사진을 읽을 수 없습니다."));
+    reader.readAsDataURL(file);
+  });
+}
+
 function UploadZone({
-  image,
-  onSet,
+  disabled,
+  images,
+  onAdd,
+  onError,
+  onReadingChange,
   onRemove,
+  questionNumber,
 }: {
-  image: WritingImageEntry | undefined;
-  onSet: (entry: WritingImageEntry) => void;
-  onRemove: () => void;
+  disabled: boolean;
+  images: WritingImageEntry[];
+  onAdd: (entries: WritingImageEntry[]) => void;
+  onError: (message: string) => void;
+  onReadingChange: (reading: boolean) => void;
+  onRemove: (index: number) => void;
+  questionNumber: number;
 }) {
   const inputRef = useRef<HTMLInputElement>(null);
+  const readingRef = useRef(false);
+  const remaining = MAX_IMAGES_PER_LONG_QUESTION - images.length;
 
-  const handleFiles = (files: FileList | null) => {
-    if (!files || files.length === 0) return;
-    const file = files[0]; // limit to a single picture
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const dataUrl = e.target?.result as string;
-      const base64 = dataUrl.split(",")[1];
-      onSet({ data: base64, mime_type: file.type });
-    };
-    reader.readAsDataURL(file);
+  const handleFiles = async (files: FileList | null) => {
+    if (
+      disabled ||
+      readingRef.current ||
+      !files ||
+      files.length === 0 ||
+      remaining <= 0
+    ) return;
+
+    const selected = Array.from(files).slice(0, remaining);
+    const invalid = selected.find(
+      (file) => !file.type.startsWith("image/") || file.size > MAX_IMAGE_SIZE_BYTES
+    );
+    if (invalid) {
+      onError("10MB 이하의 이미지 파일만 추가할 수 있습니다.");
+      if (inputRef.current) inputRef.current.value = "";
+      return;
+    }
+
+    readingRef.current = true;
+    onReadingChange(true);
+    try {
+      const entries = await Promise.all(selected.map(readImage));
+      onAdd(entries);
+      if (files.length > remaining) {
+        onError(`최대 ${MAX_IMAGES_PER_LONG_QUESTION}장까지만 추가했습니다.`);
+      }
+    } catch {
+      onError("사진을 읽을 수 없습니다. 다른 사진을 선택해 주세요.");
+    } finally {
+      readingRef.current = false;
+      onReadingChange(false);
+      if (inputRef.current) inputRef.current.value = "";
+    }
   };
 
-  if (image) {
-    return (
-      <div className="space-y-3">
-        <img
-          src={`data:${image.mime_type};base64,${image.data}`}
-          alt="업로드한 답안"
-          className="w-full rounded-xl border border-gray-200"
-        />
-        <button
-          type="button"
-          onClick={onRemove}
-          className="w-full py-3.5 rounded-xl border border-red-200 text-red-600 text-base font-semibold hover:bg-red-50 active:bg-red-100 transition-colors"
-        >
-          🗑  사진 삭제
-        </button>
-      </div>
-    );
-  }
-
   return (
-    <div
-      onClick={() => inputRef.current?.click()}
-      onDragOver={(e) => e.preventDefault()}
-      onDrop={(e) => {
-        e.preventDefault();
-        handleFiles(e.dataTransfer.files);
-      }}
-      className="border-2 border-dashed border-gray-300 hover:border-blue-400 active:bg-gray-50 rounded-2xl px-6 py-10 text-center cursor-pointer transition-colors"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        className="mx-auto w-16 h-16 text-blue-500"
-        aria-hidden="true"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
-      </svg>
-      <div className="mt-4 inline-block rounded-xl bg-blue-600 text-white text-base font-semibold px-6 py-3">
-        클릭하여 업로드
-      </div>
-      <p className="text-sm text-gray-400 mt-3">답안을 촬영하거나 사진 1장을 선택하세요</p>
-      <input
-        ref={inputRef}
-        type="file"
-        accept="image/*"
-        capture="environment"
-        className="hidden"
-        onChange={(e) => handleFiles(e.target.files)}
-      />
+    <div className="space-y-3">
+      {images.length > 0 && (
+        <div className="grid grid-cols-2 gap-3">
+          {images.map((image, index) => (
+            <div key={`${image.data.slice(0, 24)}-${index}`} className="relative">
+              <img
+                src={`data:${image.mime_type};base64,${image.data}`}
+                alt={`${questionNumber}번 답안 사진 ${index + 1}`}
+                className="aspect-[4/3] w-full rounded-xl border border-gray-200 object-cover"
+              />
+              <span className="absolute left-2 top-2 rounded-full bg-black/65 px-2 py-0.5 text-xs font-semibold text-white">
+                {index + 1}
+              </span>
+              <button
+                type="button"
+                onClick={() => onRemove(index)}
+                disabled={disabled}
+                className="absolute right-2 top-2 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-xl text-red-600 shadow-sm disabled:opacity-50"
+                aria-label={`${index + 1}번째 사진 삭제`}
+              >
+                ×
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {remaining > 0 && (
+        <div
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            if (!disabled) void handleFiles(e.dataTransfer.files);
+          }}
+        >
+          <button
+            type="button"
+            onClick={() => inputRef.current?.click()}
+            disabled={disabled}
+            className={`w-full rounded-2xl border-2 border-dashed border-gray-300 px-6 text-center transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 ${
+              disabled
+                ? "cursor-not-allowed opacity-60"
+                : "cursor-pointer hover:border-blue-400 active:bg-gray-50"
+            } ${images.length > 0 ? "py-6" : "py-10"}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.5}
+              className={`mx-auto text-blue-500 ${images.length > 0 ? "h-10 w-10" : "h-16 w-16"}`}
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+            </svg>
+            <span className="mt-3 inline-block rounded-xl bg-blue-600 px-6 py-3 text-base font-semibold text-white">
+              {images.length > 0 ? "사진 추가" : "클릭하여 업로드"}
+            </span>
+            <span className="mt-3 block text-sm text-gray-400">
+              최대 {MAX_IMAGES_PER_LONG_QUESTION}장 · 선택한 순서대로 인식합니다
+            </span>
+          </button>
+          <input
+            ref={inputRef}
+            type="file"
+            accept="image/*"
+            capture="environment"
+            multiple
+            disabled={disabled}
+            className="hidden"
+            onChange={(e) => void handleFiles(e.target.files)}
+          />
+        </div>
+      )}
+
+      {remaining === 0 && (
+        <p className="text-center text-xs text-gray-400">
+          사진 {MAX_IMAGES_PER_LONG_QUESTION}장을 모두 추가했습니다.
+        </p>
+      )}
     </div>
   );
 }
@@ -119,6 +201,7 @@ export function WritingTest() {
   const [images, setImages] = useState<Record<number, WritingImageEntry[]>>({});
   const [texts, setTexts] = useState<Record<number, string>>({});
   const [zoomSrc, setZoomSrc] = useState<string | null>(null);
+  const [readingImages, setReadingImages] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [elapsedMs, setElapsedMs] = useState(0);
@@ -131,13 +214,21 @@ export function WritingTest() {
     return () => clearInterval(interval);
   }, []);
 
-  // One picture per question: setting replaces, removing clears.
-  const setImage = useCallback((qNum: number, entry: WritingImageEntry) => {
-    setImages((prev) => ({ ...prev, [qNum]: [entry] }));
+  const addImages = useCallback((qNum: number, entries: WritingImageEntry[]) => {
+    setImages((prev) => ({
+      ...prev,
+      [qNum]: [...(prev[qNum] ?? []), ...entries].slice(
+        0,
+        MAX_IMAGES_PER_LONG_QUESTION
+      ),
+    }));
   }, []);
 
-  const clearImage = useCallback((qNum: number) => {
-    setImages((prev) => ({ ...prev, [qNum]: [] }));
+  const removeImage = useCallback((qNum: number, index: number) => {
+    setImages((prev) => ({
+      ...prev,
+      [qNum]: (prev[qNum] ?? []).filter((_, imageIndex) => imageIndex !== index),
+    }));
   }, []);
 
   if (!test) {
@@ -158,7 +249,7 @@ export function WritingTest() {
   const remainingMs = Math.max(0, timeLimitMs - elapsedMs);
 
   async function handleSubmit() {
-    if (!allAnswered) return;
+    if (!allAnswered || readingImages) return;
     setSubmitting(true);
     setError(null);
 
@@ -183,6 +274,9 @@ export function WritingTest() {
       const flatImages = imageEntries.flatMap((e) => e.imgs);
       if (flatImages.length > 0) {
         const results = await transcribeImages(flatImages);
+        if (results.length !== flatImages.length) {
+          throw new Error("사진 일부를 인식하지 못했습니다. 다시 시도해 주세요.");
+        }
         let offset = 0;
         for (const e of imageEntries) {
           const slice = results.slice(offset, offset + e.imgs.length);
@@ -310,9 +404,16 @@ export function WritingTest() {
           </div>
         ) : (
           <UploadZone
-            image={(images[question.number] ?? [])[0]}
-            onSet={(entry) => setImage(question.number, entry)}
-            onRemove={() => clearImage(question.number)}
+            disabled={submitting || readingImages}
+            images={images[question.number] ?? []}
+            onAdd={(entries) => {
+              setError(null);
+              addImages(question.number, entries);
+            }}
+            onError={setError}
+            onReadingChange={setReadingImages}
+            onRemove={(index) => removeImage(question.number, index)}
+            questionNumber={question.number}
           />
         )}
       </div>
@@ -322,7 +423,8 @@ export function WritingTest() {
         {qIdx > 0 && (
           <button
             onClick={() => setQIdx((i) => i - 1)}
-            className="flex-1 py-3.5 rounded-xl border border-gray-200 text-base font-medium text-gray-600 hover:bg-gray-50 active:bg-gray-100 transition-colors"
+            disabled={submitting || readingImages}
+            className="flex-1 py-3.5 rounded-xl border border-gray-200 text-base font-medium text-gray-600 hover:bg-gray-50 active:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50 transition-colors"
           >
             이전
           </button>
@@ -331,17 +433,31 @@ export function WritingTest() {
         {qIdx < test.questions.length - 1 ? (
           <button
             onClick={() => setQIdx((i) => i + 1)}
-            className="flex-1 py-3.5 rounded-xl bg-gray-900 text-white text-base font-medium hover:bg-gray-800 active:bg-gray-700 transition-colors"
+            disabled={submitting || readingImages}
+            className="flex-1 py-3.5 rounded-xl bg-gray-900 text-white text-base font-medium hover:bg-gray-800 active:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-50 transition-colors"
           >
             다음
           </button>
         ) : (
           <button
             onClick={handleSubmit}
-            disabled={!allAnswered || submitting}
+            disabled={!allAnswered || submitting || readingImages}
+            aria-busy={submitting || readingImages}
             className="flex-1 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 active:bg-blue-800 disabled:bg-gray-300 text-white text-base font-medium transition-colors"
           >
-            {submitting ? "업로드 중…" : "제출하기"}
+            {readingImages ? (
+              <span className="flex items-center justify-center gap-2">
+                <LoadingSpinner />
+                사진 불러오는 중…
+              </span>
+            ) : submitting ? (
+              <span className="flex items-center justify-center gap-2">
+                <LoadingSpinner />
+                답안 인식 중…
+              </span>
+            ) : (
+              "제출하기"
+            )}
           </button>
         )}
       </div>
@@ -354,6 +470,8 @@ export function WritingTest() {
             <button
               key={q.number}
               onClick={() => setQIdx(i)}
+              disabled={submitting || readingImages}
+              aria-label={`${q.number}번 문제${answered ? ", 답변 완료" : ""}`}
               className={`w-2.5 h-2.5 rounded-full transition-colors ${
                 i === qIdx
                   ? "bg-blue-600"
@@ -373,7 +491,7 @@ export function WritingTest() {
       )}
 
       {error && (
-        <p className="text-xs text-center text-red-500">{error}</p>
+        <p role="alert" className="text-xs text-center text-red-500">{error}</p>
       )}
 
       {/* Fullscreen image viewer (tap anywhere to close) */}
