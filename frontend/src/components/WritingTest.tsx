@@ -258,11 +258,19 @@ export function WritingTest() {
 
         <p className="text-sm text-gray-600 leading-relaxed">{question.instruction}</p>
 
-        <div className="bg-gray-50 rounded-xl p-4">
-          <p className="text-sm text-gray-800 leading-loose whitespace-pre-line">
-            {question.prompt}
-          </p>
-        </div>
+        {question.image_url ? (
+          <img
+            src={`${import.meta.env.BASE_URL}${question.image_url}`}
+            alt="문제 자료"
+            className="w-full rounded-xl border border-gray-200"
+          />
+        ) : (
+          <div className="bg-gray-50 rounded-xl p-4">
+            <p className="text-sm text-gray-800 leading-loose whitespace-pre-line">
+              {question.prompt}
+            </p>
+          </div>
+        )}
 
         {(question.min_chars || question.max_chars) && (
           <p className="text-xs text-blue-600">
