@@ -131,22 +131,13 @@ export function WritingTest() {
     return () => clearInterval(interval);
   }, []);
 
-  const addImage = useCallback(
-    (qNum: number, entry: WritingImageEntry) => {
-      setImages((prev) => ({
-        ...prev,
-        [qNum]: [...(prev[qNum] ?? []), entry],
-      }));
-    },
-    []
-  );
+  // One picture per question: setting replaces, removing clears.
+  const setImage = useCallback((qNum: number, entry: WritingImageEntry) => {
+    setImages((prev) => ({ ...prev, [qNum]: [entry] }));
+  }, []);
 
-  const removeImage = useCallback((qNum: number, idx: number) => {
-    setImages((prev) => {
-      const updated = [...(prev[qNum] ?? [])];
-      updated.splice(idx, 1);
-      return { ...prev, [qNum]: updated };
-    });
+  const clearImage = useCallback((qNum: number) => {
+    setImages((prev) => ({ ...prev, [qNum]: [] }));
   }, []);
 
   if (!test) {
