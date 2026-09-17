@@ -55,12 +55,11 @@ export function ProgressDashboard() {
       {/* Session history */}
       {data.sessions.length > 0 && (
         <div className="bg-white rounded-2xl border border-gray-200 p-5">
-          <h3 className="text-sm font-semibold text-gray-700 mb-3">최근 세션</h3>
+          <h3 className="text-sm font-semibold text-gray-700 mb-3">풀이 기록</h3>
           <div className="space-y-3">
             {data.sessions
               .slice()
               .reverse()
-              .slice(0, 10)
               .map((s) => {
                 const pct =
                   s.max_score > 0

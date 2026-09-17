@@ -34,8 +34,6 @@ export function getSessionImages(
 export interface WritingDraft {
   id: string;
   testId: string;
-  startedAt: string;
-  elapsedMs: number;
   transcriptions: Record<number, string>;
   charCounts: Record<number, number>;
 }

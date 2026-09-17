@@ -57,7 +57,6 @@ export function TranscriptionReview() {
     setSubmitting(true);
     setError(null);
 
-    const completedAt = new Date().toISOString();
     const answers: Record<string, { image_urls: string[]; transcription: string; char_count: number }> = {};
 
     for (const q of test!.questions) {
@@ -72,9 +71,6 @@ export function TranscriptionReview() {
     const result = await submitWritingSession({
       id: draft!.id,
       test_id: draft!.testId,
-      started_at: draft!.startedAt,
-      completed_at: completedAt,
-      total_time_ms: draft!.elapsedMs,
       answers,
     });
 

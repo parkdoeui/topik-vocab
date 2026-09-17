@@ -109,12 +109,22 @@ export interface WritingAnswerPayload {
   char_count: number;
 }
 
-export interface WritingSessionPayload {
+export interface WritingSessionStartPayload {
+  id: string;
+  test_id: string;
+}
+
+export interface WritingSessionStartResponse {
   id: string;
   test_id: string;
   started_at: string;
-  completed_at: string;
-  total_time_ms: number;
+  completed_at: string | null;
+  total_time_ms: number | null;
+}
+
+export interface WritingSessionPayload {
+  id: string;
+  test_id: string;
   answers: Record<string, WritingAnswerPayload>;
 }
 
@@ -144,6 +154,35 @@ export interface WritingSessionResponse {
   total_time_ms: number;
   answers: Record<string, WritingAnswerPayload>;
   grading: WritingGrading;
+}
+
+export async function startWritingSession(
+  payload: WritingSessionStartPayload
+): Promise<WritingSessionStartResponse | null> {
+  try {
+    const res = await apiFetch("/api/writing-sessions/start", {
+      method: "POST",
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) return null;
+    return res.json() as Promise<WritingSessionStartResponse>;
+  } catch {
+    return null;
+  }
+}
+
+export async function finishWritingSession(
+  id: string
+): Promise<WritingSessionStartResponse | null> {
+  try {
+    const res = await apiFetch(`/api/writing-sessions/${id}/finish`, {
+      method: "POST",
+    });
+    if (!res.ok) return null;
+    return res.json() as Promise<WritingSessionStartResponse>;
+  } catch {
+    return null;
+  }
 }
 
 export async function submitWritingSession(

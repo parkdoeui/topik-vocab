@@ -23,6 +23,19 @@ class WritingSessionRecord(Base):
     grading_json = Column(JSON, nullable=False)
 
 
+class WritingSessionStartRecord(Base):
+    """Tracks the server-owned timing window for one full Q51–Q54 attempt."""
+
+    __tablename__ = "writing_session_starts"
+
+    id = Column(String, primary_key=True)
+    test_id = Column(String, nullable=False, index=True)
+    passcode = Column(String, nullable=False, index=True)
+    started_at = Column(DateTime, nullable=False)
+    completed_at = Column(DateTime, nullable=True)
+    total_time_ms = Column(Integer, nullable=True)
+
+
 class PracticeAttemptRecord(Base):
     """Stores an immutable, self-review snapshot for one rapid-practice run."""
 

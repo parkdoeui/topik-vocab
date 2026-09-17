@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { writingTests } from "../data/tests";
-import { getProgress } from "../services/api";
+import { getProgress, startWritingSession } from "../services/api";
 import type { WritingSessionResponse } from "../services/api";
+import { newSessionId } from "../services/session";
 
 const TYPE_LABELS: Record<string, string> = {
   "short-blank": "단문 쓰기",
@@ -43,8 +44,11 @@ function getCachedLatestResults(): Record<string, LatestResult> {
 }
 
 export function WritingHome() {
+  const navigate = useNavigate();
   const [latestResultByTest, setLatestResultByTest] =
     useState<Record<string, LatestResult>>(getCachedLatestResults);
+  const [startingTestId, setStartingTestId] = useState<string | null>(null);
+  const [startError, setStartError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -67,12 +71,34 @@ export function WritingHome() {
     };
   }, []);
 
+  async function startTest(testId: string): Promise<void> {
+    if (startingTestId) return;
+    const sessionId = newSessionId();
+    setStartingTestId(testId);
+    setStartError(null);
+
+    const started = await startWritingSession({ id: sessionId, test_id: testId });
+    if (!started) {
+      setStartError("시험 시작 시간을 저장하지 못했습니다. 다시 시도해 주세요.");
+      setStartingTestId(null);
+      return;
+    }
+
+    navigate(`/writing/${testId}?session=${sessionId}`);
+  }
+
   return (
     <div className="max-w-2xl mx-auto px-4 py-10 w-full">
       <h1 className="text-2xl font-bold text-gray-900 mb-2">TOPIK II 쓰기</h1>
       <p className="text-sm text-gray-500 mb-8">
         손으로 쓴 답안 사진을 업로드하면 AI가 채점합니다.
       </p>
+
+      {startError && (
+        <p role="alert" className="mb-4 rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">
+          {startError}
+        </p>
+      )}
 
       <div className="space-y-3">
         {writingTests.map((test) => {
@@ -102,12 +128,14 @@ export function WritingHome() {
                 </div>
               </div>
               <div className="flex w-full shrink-0 flex-row gap-2 sm:w-auto">
-                <Link
-                  to={`/writing/${test.id}`}
-                  className="flex-1 whitespace-nowrap rounded-xl bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700 sm:flex-none"
+                <button
+                  type="button"
+                  onClick={() => void startTest(test.id)}
+                  disabled={startingTestId !== null}
+                  className="flex-1 whitespace-nowrap rounded-xl bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700 disabled:bg-gray-300 sm:flex-none"
                 >
-                  시작
-                </Link>
+                  {startingTestId === test.id ? "시작 중…" : "시작"}
+                </button>
                 {result && (
                   <Link
                     to={`/writing-results/${result.id}`}

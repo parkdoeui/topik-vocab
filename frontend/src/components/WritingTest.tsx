@@ -1,10 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate, useParams, useSearchParams } from "react-router";
 import { writingTests } from "../data/tests";
-import { transcribeImages } from "../services/api";
+import { finishWritingSession, transcribeImages } from "../services/api";
 import { LoadingSpinner } from "./LoadingSpinner";
 import {
-  newSessionId,
   saveWritingDraft,
   setSessionImages,
   type WritingImageEntry,
@@ -195,7 +194,9 @@ function UploadZone({
 export function WritingTest() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const test = writingTests.find((t) => t.id === id);
+  const sessionId = searchParams.get("session");
 
   const [qIdx, setQIdx] = useState(0);
   const [images, setImages] = useState<Record<number, WritingImageEntry[]>>({});
@@ -205,9 +206,6 @@ export function WritingTest() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [elapsedMs, setElapsedMs] = useState(0);
-
-  const startedAt = useRef(new Date().toISOString());
-  const sessionId = useRef(newSessionId());
 
   useEffect(() => {
     const interval = setInterval(() => setElapsedMs((p) => p + 1000), 1000);
@@ -231,10 +229,10 @@ export function WritingTest() {
     }));
   }, []);
 
-  if (!test) {
+  if (!test || !sessionId) {
     return (
       <div className="flex-1 flex items-center justify-center text-gray-400 text-sm">
-        시험을 찾을 수 없습니다.
+        {!test ? "시험을 찾을 수 없습니다." : "홈에서 새 시험을 시작해 주세요."}
       </div>
     );
   }
@@ -249,11 +247,16 @@ export function WritingTest() {
   const remainingMs = Math.max(0, timeLimitMs - elapsedMs);
 
   async function handleSubmit() {
-    if (!allAnswered || readingImages) return;
+    if (!allAnswered || readingImages || !sessionId) return;
     setSubmitting(true);
     setError(null);
 
     try {
+      const finished = await finishWritingSession(sessionId);
+      if (!finished) {
+        throw new Error("시험 종료 시간을 저장하지 못했습니다. 다시 시도해 주세요.");
+      }
+
       const transcriptions: Record<number, string> = {};
       const charCounts: Record<number, number> = {};
 
@@ -289,19 +292,17 @@ export function WritingTest() {
       // Images stay in memory (too large for localStorage); only the small
       // draft metadata is persisted so a refresh on the review page still works.
       setSessionImages(
-        sessionId.current,
+        sessionId,
         Object.fromEntries(imageEntries.map((e) => [e.qNum, e.imgs]))
       );
       saveWritingDraft({
-        id: sessionId.current,
+        id: sessionId,
         testId: test!.id,
-        startedAt: startedAt.current,
-        elapsedMs,
         transcriptions,
         charCounts,
       });
 
-      navigate(`/writing/${test!.id}/transcribe?session=${sessionId.current}`);
+      navigate(`/writing/${test!.id}/transcribe?session=${sessionId}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "오류가 발생했습니다.");
       setSubmitting(false);

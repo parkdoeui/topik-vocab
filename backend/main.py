@@ -1,5 +1,5 @@
 import base64
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Optional
 
 from fastapi import FastAPI, Depends, HTTPException, Response, Cookie, Request, Header
@@ -9,7 +9,12 @@ from sqlalchemy.orm import Session
 
 from config import settings
 from database import engine, get_db
-from models import Base, PracticeAttemptRecord, WritingSessionRecord
+from models import (
+    Base,
+    PracticeAttemptRecord,
+    WritingSessionRecord,
+    WritingSessionStartRecord,
+)
 from writing_tests import get_test, max_score_for
 from ai_writing_grader import (
     transcribe_handwriting,
@@ -48,12 +53,22 @@ class WritingAnswerInput(BaseModel):
     char_count: int = Field(default=0, ge=0)
 
 
+class WritingSessionStartRequest(BaseModel):
+    id: str = Field(min_length=1, max_length=120)
+    test_id: str = Field(min_length=1, max_length=120)
+
+
+class WritingSessionStartResponse(BaseModel):
+    id: str
+    test_id: str
+    started_at: str
+    completed_at: Optional[str] = None
+    total_time_ms: Optional[int] = None
+
+
 class WritingSubmitRequest(BaseModel):
     id: str = Field(min_length=1, max_length=120)
     test_id: str = Field(min_length=1, max_length=120)
-    started_at: str
-    completed_at: str
-    total_time_ms: int
     answers: dict[str, WritingAnswerInput] = Field(default_factory=dict)
 
     @field_validator("answers")
@@ -209,6 +224,15 @@ def require_authenticated(
     raise HTTPException(status_code=403, detail="Authentication required")
 
 
+def utc_isoformat(value: datetime) -> str:
+    """Render database timestamps as unambiguous UTC values for browser clients."""
+    if value.tzinfo is None:
+        value = value.replace(tzinfo=timezone.utc)
+    else:
+        value = value.astimezone(timezone.utc)
+    return value.isoformat().replace("+00:00", "Z")
+
+
 def cookie_settings_for_request(request: Request) -> dict[str, Any]:
     origin = request.headers.get("origin", "")
     if origin.startswith("https://"):
@@ -216,18 +240,24 @@ def cookie_settings_for_request(request: Request) -> dict[str, Any]:
     return {"samesite": "lax", "secure": False}
 
 
-def parse_iso_datetime(value: str) -> datetime:
-    if value.endswith("Z"):
-        value = f"{value[:-1]}+00:00"
-    return datetime.fromisoformat(value)
+def writing_session_start_to_response(
+    record: WritingSessionStartRecord,
+) -> WritingSessionStartResponse:
+    return WritingSessionStartResponse(
+        id=record.id,
+        test_id=record.test_id,
+        started_at=utc_isoformat(record.started_at),
+        completed_at=utc_isoformat(record.completed_at) if record.completed_at else None,
+        total_time_ms=record.total_time_ms,
+    )
 
 
 def writing_session_to_response(record: WritingSessionRecord) -> WritingSessionResponse:
     return WritingSessionResponse(
         id=record.id,
         test_id=record.test_id,
-        started_at=record.started_at.isoformat(),
-        completed_at=record.completed_at.isoformat(),
+        started_at=utc_isoformat(record.started_at),
+        completed_at=utc_isoformat(record.completed_at),
         total_time_ms=record.total_time_ms,
         answers=record.answers_json,  # type: ignore[arg-type]
         grading=record.grading_json,  # type: ignore[arg-type]
@@ -241,8 +271,8 @@ def practice_attempt_to_response(record: PracticeAttemptRecord) -> PracticeAttem
         set_id=record.set_id,
         set_title=record.set_title,
         question_type=str(snapshot.get("question_type", "practice")),
-        started_at=record.started_at.isoformat(),
-        completed_at=record.completed_at.isoformat(),
+        started_at=utc_isoformat(record.started_at),
+        completed_at=utc_isoformat(record.completed_at),
         total_time_ms=record.total_time_ms,
         target_seconds_per_question=record.target_seconds_per_question,
         question_count=record.question_count,
@@ -321,9 +351,73 @@ def transcribe(
     )
 
 
+@app.post(
+    "/api/writing-sessions/start",
+    response_model=WritingSessionStartResponse,
+    status_code=201,
+)
+def start_writing_session(
+    payload: WritingSessionStartRequest,
+    response: Response,
+    db: Session = Depends(get_db),
+    _: None = Depends(require_authenticated),
+):
+    """Begin a new full-writing attempt when the student enters Q51."""
+    if not get_test(payload.test_id):
+        raise HTTPException(status_code=404, detail=f"Unknown test_id: {payload.test_id}")
+
+    completed = db.get(WritingSessionRecord, payload.id)
+    if completed:
+        raise HTTPException(status_code=409, detail="Writing session already completed")
+
+    existing = db.get(WritingSessionStartRecord, payload.id)
+    if existing:
+        if existing.test_id != payload.test_id:
+            raise HTTPException(status_code=409, detail="Session id belongs to another test")
+        response.status_code = 200
+        return writing_session_start_to_response(existing)
+
+    record = WritingSessionStartRecord(
+        id=payload.id,
+        test_id=payload.test_id,
+        passcode=settings.valid_passcode,
+        started_at=datetime.utcnow(),
+    )
+    db.add(record)
+    db.commit()
+    db.refresh(record)
+    return writing_session_start_to_response(record)
+
+
+@app.post(
+    "/api/writing-sessions/{session_id}/finish",
+    response_model=WritingSessionStartResponse,
+)
+def finish_writing_session(
+    session_id: str,
+    db: Session = Depends(get_db),
+    _: None = Depends(require_authenticated),
+):
+    """Freeze the Q51–Q54 timing window before transcription and grading."""
+    record = db.get(WritingSessionStartRecord, session_id)
+    if not record:
+        raise HTTPException(status_code=404, detail="Writing session start not found")
+
+    if record.completed_at is None:
+        completed_at = datetime.utcnow()
+        record.completed_at = completed_at
+        record.total_time_ms = max(
+            0, int((completed_at - record.started_at).total_seconds() * 1000)
+        )
+        db.commit()
+        db.refresh(record)
+    return writing_session_start_to_response(record)
+
+
 @app.post("/api/writing-sessions", response_model=WritingSessionResponse, status_code=201)
 def create_writing_session(
     payload: WritingSubmitRequest,
+    response: Response,
     db: Session = Depends(get_db),
     _: None = Depends(require_authenticated),
 ):
@@ -336,10 +430,17 @@ def create_writing_session(
 
     existing = db.get(WritingSessionRecord, payload.id)
     if existing:
-        raise HTTPException(status_code=409, detail="Writing session already exists")
+        # A browser retry after receiving no response must not regrade or duplicate an attempt.
+        response.status_code = 200
+        return writing_session_to_response(existing)
 
-    # Build answers JSON (keyed by question id string)
-    answers_json = {qid: a.model_dump() for qid, a in payload.answers.items()}
+    started = db.get(WritingSessionStartRecord, payload.id)
+    if not started or started.test_id != payload.test_id:
+        raise HTTPException(status_code=409, detail="Writing session was not started")
+    if started.completed_at is None or started.total_time_ms is None:
+        raise HTTPException(status_code=409, detail="Finish the writing session before grading")
+
+    answers_json = {qid: answer.model_dump() for qid, answer in payload.answers.items()}
 
     try:
         grading = grade_writing_submission(
@@ -361,13 +462,14 @@ def create_writing_session(
         id=payload.id,
         test_id=payload.test_id,
         passcode=settings.valid_passcode,
-        started_at=parse_iso_datetime(payload.started_at),
-        completed_at=parse_iso_datetime(payload.completed_at),
-        total_time_ms=payload.total_time_ms,
+        started_at=started.started_at,
+        completed_at=started.completed_at,
+        total_time_ms=started.total_time_ms,
         answers_json=answers_json,
         grading_json=grading,
     )
     db.add(record)
+    db.delete(started)
     db.commit()
     db.refresh(record)
     return writing_session_to_response(record)
@@ -380,11 +482,10 @@ def list_writing_sessions(
 ):
     records = (
         db.query(WritingSessionRecord)
-        .filter(WritingSessionRecord.passcode == settings.valid_passcode)
         .order_by(WritingSessionRecord.completed_at.desc())
         .all()
     )
-    return [writing_session_to_response(r) for r in records]
+    return [writing_session_to_response(record) for record in records]
 
 
 @app.get("/api/writing-sessions/{session_id}", response_model=WritingSessionResponse)
@@ -396,8 +497,6 @@ def get_writing_session(
     record = db.get(WritingSessionRecord, session_id)
     if not record:
         raise HTTPException(status_code=404, detail="Writing session not found")
-    if record.passcode != settings.valid_passcode:
-        raise HTTPException(status_code=403, detail="Authentication required")
     return writing_session_to_response(record)
 
 
@@ -418,8 +517,6 @@ def create_practice_attempt(
 
     existing = db.get(PracticeAttemptRecord, payload.id)
     if existing:
-        if existing.passcode != settings.valid_passcode:
-            raise HTTPException(status_code=403, detail="Authentication required")
         # A retry after a network failure must not create duplicate history.
         response.status_code = 200
         return practice_attempt_to_response(existing)
@@ -461,7 +558,6 @@ def list_practice_attempts(
 ):
     records = (
         db.query(PracticeAttemptRecord)
-        .filter(PracticeAttemptRecord.passcode == settings.valid_passcode)
         .order_by(PracticeAttemptRecord.completed_at.desc())
         .all()
     )
@@ -470,7 +566,7 @@ def list_practice_attempts(
             id=record.id,
             set_id=record.set_id,
             set_title=record.set_title,
-            completed_at=record.completed_at.isoformat(),
+            completed_at=utc_isoformat(record.completed_at),
             total_time_ms=record.total_time_ms,
             question_count=record.question_count,
             within_target_count=record.within_target_count,
@@ -490,8 +586,6 @@ def get_practice_attempt(
     record = db.get(PracticeAttemptRecord, attempt_id)
     if not record:
         raise HTTPException(status_code=404, detail="Practice attempt not found")
-    if record.passcode != settings.valid_passcode:
-        raise HTTPException(status_code=403, detail="Authentication required")
     return practice_attempt_to_response(record)
 
 
@@ -502,7 +596,6 @@ def get_progress(
 ):
     records = (
         db.query(WritingSessionRecord)
-        .filter(WritingSessionRecord.passcode == settings.valid_passcode)
         .order_by(WritingSessionRecord.completed_at.asc())
         .all()
     )
@@ -522,7 +615,7 @@ def get_progress(
             WritingSessionSummary(
                 id=r.id,
                 test_id=r.test_id,
-                date=r.completed_at.isoformat(),
+                date=utc_isoformat(r.completed_at),
                 total_score=total_score,
                 max_score=max_score,
             )
