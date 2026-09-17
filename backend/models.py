@@ -19,6 +19,9 @@ class WritingSessionRecord(Base):
     total_time_ms = Column(Integer, nullable=False)
     # {question_id: {image_urls: [...], transcription: str, char_count: int}}
     answers_json = Column(JSON, nullable=False)
+    # Server-calculated, non-whitespace counts saved for the long answers.
+    q53_char_count = Column(Integer, nullable=True)
+    q54_char_count = Column(Integer, nullable=True)
     # {total_score, questions: {qid: {...}}, action_points: [...]}
     grading_json = Column(JSON, nullable=False)
 

@@ -8,6 +8,8 @@ from ai_writing_grader import (
     _build_grading_contents,
     _load_question_image,
     _normalize_grading_payload,
+    count_non_whitespace_characters,
+    normalize_ocr_transcription,
 )
 
 
@@ -36,6 +38,23 @@ def question(criteria: dict[str, float]) -> dict:
 
 
 class GradingNormalizationTests(unittest.TestCase):
+    def test_ocr_text_is_flattened_and_counted_after_normalization(self) -> None:
+        transcription = normalize_ocr_transcription("첫 줄\n  둘째 줄\r\n셋째 줄")
+
+        self.assertEqual(transcription, "첫 줄 둘째 줄 셋째 줄")
+        self.assertEqual(count_non_whitespace_characters(transcription), 8)
+
+    def test_transcriber_prompt_rejects_picture_layout_line_breaks(self) -> None:
+        prompt = (
+            Path(__file__).parents[1] / "prompts" / "handwriting_transcriber.txt"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("줄 바꿈", prompt)
+        self.assertIn("넣지 마세요", prompt)
+        self.assertIn('{"transcription"', prompt)
+        self.assertNotIn('{{"transcription"', prompt)
+        self.assertNotIn("char_count", prompt)
+
     def test_prompt_template_formats_with_json_payloads(self) -> None:
         template = (
             Path(__file__).parents[1] / "prompts" / "writing_grader.txt"

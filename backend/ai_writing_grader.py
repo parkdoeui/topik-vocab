@@ -241,9 +241,22 @@ def _extract_text_from_response(response: Any) -> str:
 
 # ---------- Transcription ----------
 
+class OcrTranscriptionPayload(BaseModel):
+    transcription: str = ""
+
+
 class TranscriptionResult(BaseModel):
     transcription: str = ""
     char_count: int = 0
+
+
+def normalize_ocr_transcription(value: object) -> str:
+    """Flatten picture-layout line breaks into readable, continuous text."""
+    return " ".join(str(value).split())
+
+
+def count_non_whitespace_characters(value: object) -> int:
+    return sum(not character.isspace() for character in str(value))
 
 
 def transcribe_handwriting(
@@ -289,7 +302,7 @@ def transcribe_handwriting(
                 ],
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    response_schema=TranscriptionResult,
+                    response_schema=OcrTranscriptionPayload,
                     temperature=0,
                 ),
             )
@@ -304,10 +317,12 @@ def transcribe_handwriting(
         except json.JSONDecodeError as exc:
             raise WritingGraderError("Transcription returned invalid JSON") from exc
 
+        transcription = normalize_ocr_transcription(payload.get("transcription", ""))
         results.append(
             {
-                "transcription": str(payload.get("transcription", "")).strip(),
-                "char_count": int(payload.get("char_count", 0)),
+                "transcription": transcription,
+                # Derive the count from the normalized text rather than trusting OCR.
+                "char_count": count_non_whitespace_characters(transcription),
             }
         )
 

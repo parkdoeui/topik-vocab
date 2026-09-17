@@ -152,6 +152,8 @@ export interface WritingSessionResponse {
   started_at: string;
   completed_at: string;
   total_time_ms: number;
+  q53_char_count: number;
+  q54_char_count: number;
   answers: Record<string, WritingAnswerPayload>;
   grading: WritingGrading;
 }

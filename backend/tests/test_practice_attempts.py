@@ -11,9 +11,10 @@ os.environ["DATABASE_URL"] = f"sqlite:///{Path(_temp_dir.name) / 'practice.db'}"
 os.environ["VALID_PASSCODE"] = "practice-test-passcode"
 
 from fastapi.testclient import TestClient
+from sqlalchemy import inspect, text
 
 from database import SessionLocal, engine
-from main import app
+from main import app, ensure_writing_session_count_columns
 from models import Base, WritingSessionRecord, WritingSessionStartRecord
 
 
@@ -111,6 +112,17 @@ class PracticeAttemptApiTests(unittest.TestCase):
         )
         self.assertEqual(invalid.status_code, 422)
 
+    def test_existing_writing_database_receives_count_columns(self) -> None:
+        Base.metadata.drop_all(bind=engine)
+        with engine.begin() as connection:
+            connection.execute(text("CREATE TABLE writing_sessions (id VARCHAR PRIMARY KEY)"))
+
+        ensure_writing_session_count_columns()
+        ensure_writing_session_count_columns()
+
+        columns = {column["name"] for column in inspect(engine).get_columns("writing_sessions")}
+        self.assertTrue({"q53_char_count", "q54_char_count"}.issubset(columns))
+
     def test_writing_attempts_share_a_test_but_keep_server_timing(self) -> None:
         session_ids = ["writing-attempt-1", "writing-attempt-2"]
         for session_id in session_ids:
@@ -160,13 +172,14 @@ class PracticeAttemptApiTests(unittest.TestCase):
                             },
                             "53": {
                                 "image_urls": [],
-                                "transcription": "답안",
-                                "char_count": 2,
+                                "transcription": "가 나\n다",
+                                # The server must never persist a client-supplied count.
+                                "char_count": 999,
                             },
                             "54": {
                                 "image_urls": [],
-                                "transcription": "답안",
-                                "char_count": 2,
+                                "transcription": "라 마 바",
+                                "char_count": 0,
                             },
                         },
                     },
@@ -174,6 +187,10 @@ class PracticeAttemptApiTests(unittest.TestCase):
                 )
                 self.assertEqual(submitted.status_code, 201)
                 self.assertGreaterEqual(submitted.json()["total_time_ms"], 120_000)
+                self.assertEqual(submitted.json()["q53_char_count"], 3)
+                self.assertEqual(submitted.json()["q54_char_count"], 3)
+                self.assertEqual(submitted.json()["answers"]["53"]["char_count"], 3)
+                self.assertEqual(submitted.json()["answers"]["54"]["char_count"], 3)
 
         db = SessionLocal()
         try:

@@ -5,6 +5,7 @@ from typing import Any, Optional
 from fastapi import FastAPI, Depends, HTTPException, Response, Cookie, Request, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field, field_validator
+from sqlalchemy import inspect, text
 from sqlalchemy.orm import Session
 
 from config import settings
@@ -18,12 +19,36 @@ from models import (
 from writing_tests import get_test, max_score_for
 from ai_writing_grader import (
     transcribe_handwriting,
+    count_non_whitespace_characters,
     grade_writing_submission,
     WritingGraderError,
 )
 from auth import encode_passcode_for_transport, passcode_matches_transport
 
 Base.metadata.create_all(bind=engine)
+
+
+def ensure_writing_session_count_columns() -> None:
+    """Add saved long-answer counts to databases created before this release."""
+    inspector = inspect(engine)
+    if "writing_sessions" not in inspector.get_table_names():
+        return
+
+    existing = {column["name"] for column in inspector.get_columns("writing_sessions")}
+    missing = [
+        column
+        for column in ("q53_char_count", "q54_char_count")
+        if column not in existing
+    ]
+    if not missing:
+        return
+
+    with engine.begin() as connection:
+        for column in missing:
+            connection.execute(text(f"ALTER TABLE writing_sessions ADD COLUMN {column} INTEGER"))
+
+
+ensure_writing_session_count_columns()
 
 app = FastAPI(title="TOPIK II Writing API")
 
@@ -85,6 +110,8 @@ class WritingSessionResponse(BaseModel):
     started_at: str
     completed_at: str
     total_time_ms: int
+    q53_char_count: int
+    q54_char_count: int
     answers: dict[str, Any]
     grading: dict[str, Any]
 
@@ -252,6 +279,19 @@ def writing_session_start_to_response(
     )
 
 
+def saved_long_answer_count(record: WritingSessionRecord, question_id: str) -> int:
+    column = f"q{question_id}_char_count"
+    stored_count = getattr(record, column, None)
+    if isinstance(stored_count, int) and stored_count >= 0:
+        return stored_count
+
+    answers: dict[str, Any] = record.answers_json  # type: ignore[assignment]
+    answer = answers.get(question_id, {})
+    if not isinstance(answer, dict):
+        return 0
+    return count_non_whitespace_characters(answer.get("transcription", ""))
+
+
 def writing_session_to_response(record: WritingSessionRecord) -> WritingSessionResponse:
     return WritingSessionResponse(
         id=record.id,
@@ -259,6 +299,8 @@ def writing_session_to_response(record: WritingSessionRecord) -> WritingSessionR
         started_at=utc_isoformat(record.started_at),
         completed_at=utc_isoformat(record.completed_at),
         total_time_ms=record.total_time_ms,
+        q53_char_count=saved_long_answer_count(record, "53"),
+        q54_char_count=saved_long_answer_count(record, "54"),
         answers=record.answers_json,  # type: ignore[arg-type]
         grading=record.grading_json,  # type: ignore[arg-type]
     )
@@ -440,7 +482,16 @@ def create_writing_session(
     if started.completed_at is None or started.total_time_ms is None:
         raise HTTPException(status_code=409, detail="Finish the writing session before grading")
 
-    answers_json = {qid: answer.model_dump() for qid, answer in payload.answers.items()}
+    # Count text on the server so saved lengths always match the submitted answer.
+    answers_json = {
+        qid: {
+            **answer.model_dump(),
+            "char_count": count_non_whitespace_characters(answer.transcription),
+        }
+        for qid, answer in payload.answers.items()
+    }
+    q53_char_count = int(answers_json.get("53", {}).get("char_count", 0))
+    q54_char_count = int(answers_json.get("54", {}).get("char_count", 0))
 
     try:
         grading = grade_writing_submission(
@@ -466,6 +517,8 @@ def create_writing_session(
         completed_at=started.completed_at,
         total_time_ms=started.total_time_ms,
         answers_json=answers_json,
+        q53_char_count=q53_char_count,
+        q54_char_count=q54_char_count,
         grading_json=grading,
     )
     db.add(record)

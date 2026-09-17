@@ -43,11 +43,17 @@ function QuestionCard({
   maxPoints,
   grading,
   transcription,
+  charCount,
+  minChars,
+  maxChars,
 }: {
   number: number;
   maxPoints: number;
   grading: QuestionGrading;
   transcription?: string;
+  charCount?: number;
+  minChars?: number;
+  maxChars?: number;
 }) {
   const maxScore = grading.max_score || maxPoints;
   const criteriaKeys = [
@@ -59,11 +65,20 @@ function QuestionCard({
 
   return (
     <div className="bg-white rounded-2xl border border-gray-200 p-5 space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-3">
         <span className="font-bold text-gray-900">{number}번</span>
-        <span className="text-sm font-semibold text-gray-700">
-          {grading.score}/{maxScore}점
-        </span>
+        <div className="flex items-center gap-3">
+          {charCount !== undefined && (
+            <span className="text-xs text-gray-500 tabular-nums">
+              {charCount}자{minChars !== undefined && maxChars !== undefined
+                ? ` (${minChars}–${maxChars}자)`
+                : ""}
+            </span>
+          )}
+          <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">
+            {grading.score}/{maxScore}점
+          </span>
+        </div>
       </div>
 
       <ScoreBar score={grading.score} max={maxScore} />
@@ -234,6 +249,15 @@ export function WritingResultsView() {
             maxPoints={q.max_points}
             grading={g}
             transcription={result.answers?.[String(q.number)]?.transcription}
+            charCount={
+              q.number === 53
+                ? result.q53_char_count
+                : q.number === 54
+                ? result.q54_char_count
+                : undefined
+            }
+            minChars={q.min_chars}
+            maxChars={q.max_chars}
           />
         );
       })}

@@ -283,8 +283,12 @@ export function WritingTest() {
         let offset = 0;
         for (const e of imageEntries) {
           const slice = results.slice(offset, offset + e.imgs.length);
-          transcriptions[e.qNum] = slice.map((r) => r.transcription).join("\n\n");
-          charCounts[e.qNum] = slice.reduce((acc, r) => acc + r.char_count, 0);
+          const transcription = slice
+            .map((result) => result.transcription)
+            .filter(Boolean)
+            .join(" ");
+          transcriptions[e.qNum] = transcription;
+          charCounts[e.qNum] = countChars(transcription);
           offset += e.imgs.length;
         }
       }
