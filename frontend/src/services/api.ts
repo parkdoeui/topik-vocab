@@ -198,3 +198,83 @@ export async function getProgress(): Promise<ProgressData | null> {
     return null;
   }
 }
+
+// --- Rapid practice API ---
+
+export interface PracticeBlankPayload {
+  marker: string;
+  submitted_answer: string;
+  model_answer: string;
+  accepted_variants: string[];
+  focus: string;
+  feedback: string;
+}
+
+export interface PracticeQuestionPayload {
+  id: string;
+  prompt: string;
+  elapsed_ms: number;
+  blanks: PracticeBlankPayload[];
+}
+
+export interface PracticeAttemptPayload {
+  id: string;
+  set_id: string;
+  set_title: string;
+  question_type: string;
+  started_at: string;
+  completed_at: string;
+  total_time_ms: number;
+  target_seconds_per_question: number;
+  questions: PracticeQuestionPayload[];
+}
+
+export interface PracticeAttemptSummary {
+  id: string;
+  set_id: string;
+  set_title: string;
+  completed_at: string;
+  total_time_ms: number;
+  question_count: number;
+  within_target_count: number;
+}
+
+export interface PracticeAttemptResponse extends PracticeAttemptSummary {
+  question_type: string;
+  started_at: string;
+  target_seconds_per_question: number;
+  questions: PracticeQuestionPayload[];
+}
+
+export async function submitPracticeAttempt(
+  payload: PracticeAttemptPayload
+): Promise<PracticeAttemptResponse> {
+  const res = await apiFetch("/api/practice-attempts", {
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) throw new Error(`Practice attempt save failed: ${res.status}`);
+  return res.json() as Promise<PracticeAttemptResponse>;
+}
+
+export async function getPracticeAttempts(): Promise<PracticeAttemptSummary[] | null> {
+  try {
+    const res = await apiFetch("/api/practice-attempts");
+    if (!res.ok) return null;
+    return res.json() as Promise<PracticeAttemptSummary[]>;
+  } catch {
+    return null;
+  }
+}
+
+export async function getPracticeAttempt(
+  id: string
+): Promise<PracticeAttemptResponse | null> {
+  try {
+    const res = await apiFetch(`/api/practice-attempts/${id}`);
+    if (!res.ok) return null;
+    return res.json() as Promise<PracticeAttemptResponse>;
+  } catch {
+    return null;
+  }
+}

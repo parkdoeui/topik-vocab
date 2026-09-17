@@ -21,3 +21,22 @@ class WritingSessionRecord(Base):
     answers_json = Column(JSON, nullable=False)
     # {total_score, questions: {qid: {...}}, action_points: [...]}
     grading_json = Column(JSON, nullable=False)
+
+
+class PracticeAttemptRecord(Base):
+    """Stores an immutable, self-review snapshot for one rapid-practice run."""
+
+    __tablename__ = "practice_attempts"
+
+    id = Column(String, primary_key=True)
+    set_id = Column(String, nullable=False, index=True)
+    set_title = Column(String, nullable=False)
+    passcode = Column(String, nullable=False, index=True)
+    started_at = Column(DateTime, nullable=False)
+    completed_at = Column(DateTime, nullable=False, index=True)
+    total_time_ms = Column(Integer, nullable=False)
+    target_seconds_per_question = Column(Integer, nullable=False)
+    question_count = Column(Integer, nullable=False)
+    within_target_count = Column(Integer, nullable=False)
+    # {question_type, questions: [{id, prompt, elapsed_ms, blanks: [...]}]}
+    attempt_json = Column(JSON, nullable=False)

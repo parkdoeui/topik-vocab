@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from config import settings
 from database import engine, get_db
-from models import Base, WritingSessionRecord
+from models import Base, PracticeAttemptRecord, WritingSessionRecord
 from writing_tests import get_test, max_score_for
 from ai_writing_grader import (
     transcribe_handwriting,
@@ -109,6 +109,87 @@ class ProgressResponse(BaseModel):
     sessions: list[WritingSessionSummary]
 
 
+class PracticeBlankInput(BaseModel):
+    marker: str = Field(min_length=1, max_length=20)
+    submitted_answer: str = Field(min_length=1, max_length=500)
+    model_answer: str = Field(min_length=1, max_length=500)
+    accepted_variants: list[str] = Field(default_factory=list, max_length=10)
+    focus: str = Field(min_length=1, max_length=120)
+    feedback: str = Field(min_length=1, max_length=1000)
+
+    @field_validator("submitted_answer", "model_answer", "focus", "feedback")
+    @classmethod
+    def trim_required_text(cls, value: str) -> str:
+        trimmed = value.strip()
+        if not trimmed:
+            raise ValueError("value must not be blank")
+        return trimmed
+
+    @field_validator("accepted_variants")
+    @classmethod
+    def trim_variants(cls, value: list[str]) -> list[str]:
+        variants = [variant.strip() for variant in value if variant.strip()]
+        if len(variants) != len(value):
+            raise ValueError("accepted_variants must not contain blank values")
+        return variants
+
+
+class PracticeQuestionInput(BaseModel):
+    id: str = Field(min_length=1, max_length=120)
+    prompt: str = Field(min_length=1, max_length=10000)
+    elapsed_ms: int = Field(ge=0, le=3_600_000)
+    blanks: list[PracticeBlankInput] = Field(min_length=1, max_length=5)
+
+    @field_validator("blanks")
+    @classmethod
+    def require_unique_markers(
+        cls, value: list[PracticeBlankInput]
+    ) -> list[PracticeBlankInput]:
+        markers = [blank.marker for blank in value]
+        if len(markers) != len(set(markers)):
+            raise ValueError("blank markers must be unique within a question")
+        return value
+
+
+class PracticeAttemptSubmitRequest(BaseModel):
+    id: str = Field(min_length=1, max_length=120)
+    set_id: str = Field(min_length=1, max_length=120)
+    set_title: str = Field(min_length=1, max_length=240)
+    question_type: str = Field(min_length=1, max_length=120)
+    started_at: datetime
+    completed_at: datetime
+    total_time_ms: int = Field(ge=0, le=36_000_000)
+    target_seconds_per_question: int = Field(ge=1, le=3600)
+    questions: list[PracticeQuestionInput] = Field(min_length=10, max_length=10)
+
+    @field_validator("questions")
+    @classmethod
+    def require_unique_question_ids(
+        cls, value: list[PracticeQuestionInput]
+    ) -> list[PracticeQuestionInput]:
+        ids = [question.id for question in value]
+        if len(ids) != len(set(ids)):
+            raise ValueError("question ids must be unique")
+        return value
+
+
+class PracticeAttemptSummary(BaseModel):
+    id: str
+    set_id: str
+    set_title: str
+    completed_at: str
+    total_time_ms: int
+    question_count: int
+    within_target_count: int
+
+
+class PracticeAttemptResponse(PracticeAttemptSummary):
+    question_type: str
+    started_at: str
+    target_seconds_per_question: int
+    questions: list[PracticeQuestionInput]
+
+
 # ---------- Helpers ----------
 
 def verify_passcode(passcode: str) -> None:
@@ -150,6 +231,23 @@ def writing_session_to_response(record: WritingSessionRecord) -> WritingSessionR
         total_time_ms=record.total_time_ms,
         answers=record.answers_json,  # type: ignore[arg-type]
         grading=record.grading_json,  # type: ignore[arg-type]
+    )
+
+
+def practice_attempt_to_response(record: PracticeAttemptRecord) -> PracticeAttemptResponse:
+    snapshot: dict[str, Any] = record.attempt_json  # type: ignore[assignment]
+    return PracticeAttemptResponse(
+        id=record.id,
+        set_id=record.set_id,
+        set_title=record.set_title,
+        question_type=str(snapshot.get("question_type", "practice")),
+        started_at=record.started_at.isoformat(),
+        completed_at=record.completed_at.isoformat(),
+        total_time_ms=record.total_time_ms,
+        target_seconds_per_question=record.target_seconds_per_question,
+        question_count=record.question_count,
+        within_target_count=record.within_target_count,
+        questions=snapshot.get("questions", []),
     )
 
 
@@ -301,6 +399,100 @@ def get_writing_session(
     if record.passcode != settings.valid_passcode:
         raise HTTPException(status_code=403, detail="Authentication required")
     return writing_session_to_response(record)
+
+
+@app.post(
+    "/api/practice-attempts",
+    response_model=PracticeAttemptResponse,
+    status_code=201,
+)
+def create_practice_attempt(
+    payload: PracticeAttemptSubmitRequest,
+    response: Response,
+    db: Session = Depends(get_db),
+    _: None = Depends(require_authenticated),
+):
+    """Save a completed rapid-practice set and its review content."""
+    if payload.completed_at < payload.started_at:
+        raise HTTPException(status_code=422, detail="completed_at must follow started_at")
+
+    existing = db.get(PracticeAttemptRecord, payload.id)
+    if existing:
+        if existing.passcode != settings.valid_passcode:
+            raise HTTPException(status_code=403, detail="Authentication required")
+        # A retry after a network failure must not create duplicate history.
+        response.status_code = 200
+        return practice_attempt_to_response(existing)
+
+    within_target_count = sum(
+        question.elapsed_ms <= payload.target_seconds_per_question * 1000
+        for question in payload.questions
+    )
+    snapshot = {
+        "question_type": payload.question_type,
+        "questions": [question.model_dump() for question in payload.questions],
+    }
+    record = PracticeAttemptRecord(
+        id=payload.id,
+        set_id=payload.set_id,
+        set_title=payload.set_title,
+        passcode=settings.valid_passcode,
+        started_at=payload.started_at,
+        completed_at=payload.completed_at,
+        total_time_ms=payload.total_time_ms,
+        target_seconds_per_question=payload.target_seconds_per_question,
+        question_count=len(payload.questions),
+        within_target_count=within_target_count,
+        attempt_json=snapshot,
+    )
+    db.add(record)
+    db.commit()
+    db.refresh(record)
+    return practice_attempt_to_response(record)
+
+
+@app.get(
+    "/api/practice-attempts",
+    response_model=list[PracticeAttemptSummary],
+)
+def list_practice_attempts(
+    db: Session = Depends(get_db),
+    _: None = Depends(require_authenticated),
+):
+    records = (
+        db.query(PracticeAttemptRecord)
+        .filter(PracticeAttemptRecord.passcode == settings.valid_passcode)
+        .order_by(PracticeAttemptRecord.completed_at.desc())
+        .all()
+    )
+    return [
+        PracticeAttemptSummary(
+            id=record.id,
+            set_id=record.set_id,
+            set_title=record.set_title,
+            completed_at=record.completed_at.isoformat(),
+            total_time_ms=record.total_time_ms,
+            question_count=record.question_count,
+            within_target_count=record.within_target_count,
+        )
+        for record in records
+    ]
+
+
+@app.get(
+    "/api/practice-attempts/{attempt_id}", response_model=PracticeAttemptResponse
+)
+def get_practice_attempt(
+    attempt_id: str,
+    db: Session = Depends(get_db),
+    _: None = Depends(require_authenticated),
+):
+    record = db.get(PracticeAttemptRecord, attempt_id)
+    if not record:
+        raise HTTPException(status_code=404, detail="Practice attempt not found")
+    if record.passcode != settings.valid_passcode:
+        raise HTTPException(status_code=403, detail="Authentication required")
+    return practice_attempt_to_response(record)
 
 
 @app.get("/api/progress", response_model=ProgressResponse)
