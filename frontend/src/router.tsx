@@ -8,6 +8,10 @@ import { ProgressDashboard } from "./components/ProgressDashboard";
 import { PracticeHome } from "./components/PracticeHome";
 import { PracticeSession } from "./components/PracticeSession";
 import { PracticeAttemptReview } from "./components/PracticeAttemptReview";
+import { ReviewHome } from "./components/ReviewHome";
+import { ReviewSession } from "./components/ReviewSession";
+import { ReviewResults } from "./components/ReviewResults";
+import { MyErrors } from "./components/MyErrors";
 
 export const router = createBrowserRouter(
   [
@@ -23,6 +27,10 @@ export const router = createBrowserRouter(
         { path: "practice", element: <PracticeHome /> },
         { path: "practice/:setId", element: <PracticeSession /> },
         { path: "practice-attempts/:attemptId", element: <PracticeAttemptReview /> },
+        { path: "review", element: <ReviewHome /> },
+        { path: "review/:setId", element: <ReviewSession /> },
+        { path: "review-results/:sessionId", element: <ReviewResults /> },
+        { path: "my-errors", element: <MyErrors /> },
       ],
     },
   ],

@@ -4,6 +4,7 @@ import { writingTests } from "../data/tests";
 import { submitWritingSession } from "../services/api";
 import { getSessionImages, loadWritingDraft } from "../services/session";
 import { LoadingSpinner } from "./LoadingSpinner";
+import { StoredWritingImage } from "./StoredWritingImage";
 
 function countChars(s: string): number {
   return s.replace(/\s/g, "").length;
@@ -57,12 +58,16 @@ export function TranscriptionReview() {
     setSubmitting(true);
     setError(null);
 
-    const answers: Record<string, { image_urls: string[]; transcription: string; char_count: number }> = {};
+    const answers: Record<
+      string,
+      { image_urls: string[]; answer_image_urls: string[]; transcription: string; char_count: number }
+    > = {};
 
     for (const q of test!.questions) {
       const text = transcriptions[q.number] ?? "";
       answers[String(q.number)] = {
         image_urls: [],
+        answer_image_urls: draft!.answerImageUrls?.[q.number] ?? [],
         transcription: text,
         char_count: countChars(text),
       };
@@ -98,6 +103,7 @@ export function TranscriptionReview() {
 
       {test.questions.map((q) => {
         const imgs = sessionImages?.[q.number] ?? [];
+        const persistedImageUrls = draft.answerImageUrls?.[q.number] ?? [];
         const text = transcriptions[q.number] ?? "";
         const chars = countChars(text);
 
@@ -117,6 +123,19 @@ export function TranscriptionReview() {
                     src={`data:${img.mime_type};base64,${img.data}`}
                     alt={`답안 사진 ${i + 1}`}
                     className="h-24 w-auto rounded-lg border border-gray-200 shrink-0"
+                  />
+                ))}
+              </div>
+            )}
+
+            {imgs.length === 0 && persistedImageUrls.length > 0 && (
+              <div className="flex gap-2 overflow-x-auto pb-1">
+                {persistedImageUrls.map((url, i) => (
+                  <StoredWritingImage
+                    key={url}
+                    path={url}
+                    alt={`답안 사진 ${i + 1}`}
+                    className="h-24 w-auto shrink-0 rounded-lg border border-gray-200"
                   />
                 ))}
               </div>

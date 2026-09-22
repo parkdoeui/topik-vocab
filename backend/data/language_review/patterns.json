@@ -1,0 +1,655 @@
+[
+  {
+    "id": "pattern-01-n에-직면하다",
+    "pattern": "N에 직면하다",
+    "category": "verb_collocation",
+    "explanation": "직면하다는 대상과 조사 '에'를 결합한다.",
+    "correctExamples": [
+      "문제에 직면하다",
+      "위기에 직면하다",
+      "어려움에 직면하다"
+    ],
+    "commonMistakes": [
+      "문제를 직면하다"
+    ],
+    "frequency": 1,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-02-n이-가-생기다",
+    "pattern": "N이/가 생기다",
+    "category": "particle",
+    "explanation": "생기다는 자동사이므로 생기는 대상에 주격 조사 '이/가'를 쓴다.",
+    "correctExamples": [
+      "자신감이 생기다",
+      "관심이 생기다",
+      "문제가 생기다"
+    ],
+    "commonMistakes": [
+      "자신감을 생기다",
+      "문제들을 생기다"
+    ],
+    "frequency": 3,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-03-n에-대한",
+    "pattern": "N에 대한",
+    "category": "particle",
+    "explanation": "'대한'은 앞말과 '에 대한'으로 결합한다.",
+    "correctExamples": [
+      "변화에 대한 조사",
+      "문제에 대한 해결책",
+      "교육에 대한 관심"
+    ],
+    "commonMistakes": [
+      "변화의 대한",
+      "문제를 대한"
+    ],
+    "frequency": 2,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-04-n이-가-활성화되다",
+    "pattern": "N이/가 활성화되다",
+    "category": "intransitive_transitive",
+    "explanation": "어떤 모임이나 활동이 활발해진 결과는 '활성화되다'로 쓴다.",
+    "correctExamples": [
+      "모임이 활성화되다",
+      "지역 경제가 활성화되다",
+      "교류가 활성화되다"
+    ],
+    "commonMistakes": [
+      "모임을 활성화되다"
+    ],
+    "frequency": 1,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-05-n이-가-증가하다",
+    "pattern": "N이/가 증가하다",
+    "category": "intransitive_transitive",
+    "explanation": "증가하다는 자동사이므로 늘어나는 수량을 주어로 둔다.",
+    "correctExamples": [
+      "참가자 수가 증가하다",
+      "비율이 증가하다",
+      "수요가 증가하다"
+    ],
+    "commonMistakes": [
+      "참가자들을 증가하다"
+    ],
+    "frequency": 2,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-06-n의-필요성을-느끼다",
+    "pattern": "N의 필요성을 느끼다",
+    "category": "noun_verb_collocation",
+    "explanation": "필요성의 대상은 'N의 필요성'으로 만들고 '느끼다'와 결합한다.",
+    "correctExamples": [
+      "창의력의 필요성을 느끼다",
+      "교육의 필요성을 느끼다",
+      "예방의 필요성을 느끼다"
+    ],
+    "commonMistakes": [
+      "창의력이 필요성을 느끼다"
+    ],
+    "frequency": 1,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-07-n을-를-발휘하다",
+    "pattern": "N을/를 발휘하다",
+    "category": "noun_verb_collocation",
+    "explanation": "창의력·능력·전문성은 목적어로 두고 '발휘하다'와 결합한다.",
+    "correctExamples": [
+      "창의력을 발휘하다",
+      "능력을 발휘하다",
+      "전문성을 발휘하다"
+    ],
+    "commonMistakes": [
+      "창의력이 발휘하다",
+      "창의력을 행사시키다"
+    ],
+    "frequency": 2,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-08-n에-지장을-주다",
+    "pattern": "N에 지장을 주다",
+    "category": "verb_collocation",
+    "explanation": "생활·업무·건강에 부정적 방해를 준다는 뜻은 '지장을 주다'를 쓴다.",
+    "correctExamples": [
+      "직장 생활에 지장을 주다",
+      "건강에 지장을 주다",
+      "학습에 지장을 주다"
+    ],
+    "commonMistakes": [
+      "직장 생활에 침해되다"
+    ],
+    "frequency": 2,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-09-n을-를-받을-경우",
+    "pattern": "N을/를 받을 경우",
+    "category": "particle",
+    "explanation": "받다의 대상에는 목적격 조사 '을/를'을 쓰며 '경우' 뒤에 조사를 덧붙이지 않는다.",
+    "correctExamples": [
+      "문자를 받을 경우",
+      "전화를 받을 경우",
+      "안내를 받을 경우"
+    ],
+    "commonMistakes": [
+      "문자 받을 경우의"
+    ],
+    "frequency": 1,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-10-n을-를-느끼다",
+    "pattern": "N을/를 느끼다",
+    "category": "noun_verb_collocation",
+    "explanation": "소외감·부담감·필요성처럼 마음속 상태는 목적어로 두고 '느끼다'와 결합한다.",
+    "correctExamples": [
+      "소외감을 느끼다",
+      "부담감을 느끼다",
+      "필요성을 느끼다"
+    ],
+    "commonMistakes": [
+      "소외감 느끼다"
+    ],
+    "frequency": 1,
+    "difficulty": 2,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-11-n에-영향을-미치다",
+    "pattern": "N에 영향을 미치다",
+    "category": "verb_collocation",
+    "explanation": "영향이 미치는 대상에는 조사 '에'를 쓴다.",
+    "correctExamples": [
+      "건강에 영향을 미치다",
+      "사회에 영향을 미치다",
+      "학습 태도에 영향을 미치다"
+    ],
+    "commonMistakes": [
+      "건강을 영향을 미치다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-12-n을-를-해결하다",
+    "pattern": "N을/를 해결하다",
+    "category": "noun_verb_collocation",
+    "explanation": "문제·갈등·과제를 목적어로 두고 '해결하다'와 결합한다.",
+    "correctExamples": [
+      "문제를 해결하다",
+      "갈등을 해결하다",
+      "과제를 해결하다"
+    ],
+    "commonMistakes": [
+      "문제에 해결하다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-13-성과를-거두다",
+    "pattern": "성과를 거두다",
+    "category": "noun_verb_collocation",
+    "explanation": "성과나 결과는 목적어로 두고 '거두다'와 결합한다.",
+    "correctExamples": [
+      "성과를 거두다",
+      "좋은 결과를 거두다",
+      "성공을 거두다"
+    ],
+    "commonMistakes": [
+      "성과에 거두다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-14-능력을-향상시키다",
+    "pattern": "능력을 향상시키다",
+    "category": "noun_verb_collocation",
+    "explanation": "능력·실력·효율은 목적어로 두고 '향상시키다'와 결합한다.",
+    "correctExamples": [
+      "능력을 향상시키다",
+      "의사소통 능력을 향상시키다",
+      "업무 능력을 향상시키다"
+    ],
+    "commonMistakes": [
+      "능력이 향상시키다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-15-n에게-기회를-제공하다",
+    "pattern": "N에게 기회를 제공하다",
+    "category": "noun_verb_collocation",
+    "explanation": "사람에게 어떤 기회를 준다는 뜻은 'N에게 기회를 제공하다'로 쓴다.",
+    "correctExamples": [
+      "청년에게 기회를 제공하다",
+      "학생에게 교육 기회를 제공하다",
+      "주민에게 참여 기회를 제공하다"
+    ],
+    "commonMistakes": [
+      "청년을 기회를 제공하다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-16-환경을-조성하다",
+    "pattern": "환경을 조성하다",
+    "category": "noun_verb_collocation",
+    "explanation": "학습·근무·토론 환경은 목적어로 두고 '조성하다'와 결합한다.",
+    "correctExamples": [
+      "학습 환경을 조성하다",
+      "안전한 근무 환경을 조성하다",
+      "토론 환경을 조성하다"
+    ],
+    "commonMistakes": [
+      "환경이 조성하다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-17-n에-도움이-되다",
+    "pattern": "N에 도움이 되다",
+    "category": "verb_collocation",
+    "explanation": "도움이 되는 대상에는 조사 '에'를 쓴다.",
+    "correctExamples": [
+      "학습에 도움이 되다",
+      "건강 관리에 도움이 되다",
+      "문제 해결에 도움이 되다"
+    ],
+    "commonMistakes": [
+      "학습을 도움이 되다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-18-n의-원인이-되다",
+    "pattern": "N의 원인이 되다",
+    "category": "noun_verb_collocation",
+    "explanation": "어떤 결과를 낳는 원인은 'N의 원인이 되다'로 쓴다.",
+    "correctExamples": [
+      "갈등의 원인이 되다",
+      "사고의 원인이 되다",
+      "문제의 원인이 되다"
+    ],
+    "commonMistakes": [
+      "문제에 원인이 되다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-19-n으로-이어지다",
+    "pattern": "N으로 이어지다",
+    "category": "verb_collocation",
+    "explanation": "결과나 변화로 연결될 때는 'N으로 이어지다'를 쓴다.",
+    "correctExamples": [
+      "갈등으로 이어지다",
+      "건강 악화로 이어지다",
+      "삶의 질 저하로 이어지다"
+    ],
+    "commonMistakes": [
+      "문제에 이어지다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-20-n을-를-예방하다",
+    "pattern": "N을/를 예방하다",
+    "category": "noun_verb_collocation",
+    "explanation": "사고·질병·범죄 같은 발생 가능한 문제를 목적어로 두고 '예방하다'와 결합한다.",
+    "correctExamples": [
+      "사고를 예방하다",
+      "질병을 예방하다",
+      "범죄를 예방하다"
+    ],
+    "commonMistakes": [
+      "범죄에 예방하다"
+    ],
+    "frequency": 0,
+    "difficulty": 2,
+    "source": "general_topik",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-extra-n-사용법을-배우다",
+    "pattern": "N 사용법을 배우다",
+    "category": "particle",
+    "explanation": "'디지털 기기 사용법'은 하나의 명사구이므로 중간에 목적격 조사를 넣지 않는다.",
+    "correctExamples": [
+      "디지털 기기 사용법"
+    ],
+    "commonMistakes": [
+      "디지털 기기를 사용법"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.98
+  },
+  {
+    "id": "pattern-extra-n과-와",
+    "pattern": "N과/와",
+    "category": "particle",
+    "explanation": "받침이 있는 명사 '시설' 뒤에는 접속 조사 '과'를 쓴다.",
+    "correctExamples": [
+      "시설과"
+    ],
+    "commonMistakes": [
+      "시설와"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-n로-으로",
+    "pattern": "N로/으로",
+    "category": "particle",
+    "explanation": "받침이 없거나 ㄹ 받침인 명사 뒤에는 '로'를 쓴다.",
+    "correctExamples": [
+      "뉴스로"
+    ],
+    "commonMistakes": [
+      "뉴스으로"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-n에-생기다",
+    "pattern": "N에 생기다",
+    "category": "particle",
+    "explanation": "어떤 상황에서 생기는 일을 말할 때는 '경우에 생기는'처럼 조사 '에'를 쓴다.",
+    "correctExamples": [
+      "경우에 생기다"
+    ],
+    "commonMistakes": [
+      "경우의 생기다"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-n을-를-많이-볼-수-있다",
+    "pattern": "N을/를 많이 볼 수 있다",
+    "category": "particle",
+    "explanation": "보다의 대상을 나타내는 '사람들' 뒤에는 목적격 조사 '을/를'이 필요하다.",
+    "correctExamples": [
+      "사람들을 많이"
+    ],
+    "commonMistakes": [
+      "사람들 많이"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-n이-가-늘어나다",
+    "pattern": "N이/가 늘어나다",
+    "category": "noun_verb_collocation",
+    "explanation": "독립은 보통 수를 세어 '많아지다'라고 하기보다 '독립이 늘어나다'처럼 표현한다.",
+    "correctExamples": [
+      "독립이 늘어나다"
+    ],
+    "commonMistakes": [
+      "독립 수가 많아지다"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.93
+  },
+  {
+    "id": "pattern-extra-n이-가-사용하는",
+    "pattern": "N이/가 사용하는",
+    "category": "particle",
+    "explanation": "관형절에서 '사용하는'의 주체인 사람들 뒤에는 주격 조사 '이/가'가 필요하다.",
+    "correctExamples": [
+      "젊은 사람들이 사용하는"
+    ],
+    "commonMistakes": [
+      "젊은 사람들 사용하는"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-n이-가-약해져서",
+    "pattern": "N이/가 약해져서",
+    "category": "awkward_expression",
+    "explanation": "상태 변화를 원인으로 말할 때는 '시력이 약해져서'가 자연스럽다.",
+    "correctExamples": [
+      "약해져서"
+    ],
+    "commonMistakes": [
+      "약함으로써"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.96
+  },
+  {
+    "id": "pattern-extra-n한-방향으로",
+    "pattern": "N한 방향으로",
+    "category": "awkward_expression",
+    "explanation": "명사 '방향'은 부사 '올바르게'가 아니라 관형사형 '올바른'으로 수식한다.",
+    "correctExamples": [
+      "올바른 방향으로"
+    ],
+    "commonMistakes": [
+      "올바르게 방향으로"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-extra-관형사형-+-때",
+    "pattern": "관형사형 + 때",
+    "category": "spacing",
+    "explanation": "의존 명사 '때'는 앞말과 띄어 쓴다.",
+    "correctExamples": [
+      "접했을 때",
+      "자유로울 때"
+    ],
+    "commonMistakes": [
+      "접했을때",
+      "자유로울때"
+    ],
+    "frequency": 2,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-깊숙이",
+    "pattern": "깊숙이",
+    "category": "spelling",
+    "explanation": "부사 '깊숙이'는 '히'가 아니라 '이'로 쓴다.",
+    "correctExamples": [
+      "깊숙이"
+    ],
+    "commonMistakes": [
+      "깊숙히"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-드러내다",
+    "pattern": "드러내다",
+    "category": "spelling",
+    "explanation": "특징이나 개성은 밖으로 나타난다는 뜻의 '드러내다'를 쓴다.",
+    "correctExamples": [
+      "드러내다"
+    ],
+    "commonMistakes": [
+      "들어내다"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.99
+  },
+  {
+    "id": "pattern-extra-매우-빠르게",
+    "pattern": "매우 빠르게",
+    "category": "awkward_expression",
+    "explanation": "'가짜'는 속도 정도를 수식하지 않으므로 '매우 빠르게'처럼 쓴다.",
+    "correctExamples": [
+      "매우 빠르게"
+    ],
+    "commonMistakes": [
+      "가짜 빠르게"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.97
+  },
+  {
+    "id": "pattern-extra-보장되다",
+    "pattern": "보장되다",
+    "category": "spelling",
+    "explanation": "'보당'은 '보장'의 맞춤법 오류이다.",
+    "correctExamples": [
+      "보장된다"
+    ],
+    "commonMistakes": [
+      "보당된다"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-연령대가-많다",
+    "pattern": "연령대가 많다",
+    "category": "awkward_expression",
+    "explanation": "연령대를 나타낼 때는 '20대와 30대가 가장 많다'처럼 간결하게 쓴다.",
+    "correctExamples": [
+      "20대와 30대"
+    ],
+    "commonMistakes": [
+      "20대와 30대인들"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.97
+  },
+  {
+    "id": "pattern-extra-일으키다",
+    "pattern": "일으키다",
+    "category": "spelling",
+    "explanation": "문제나 변화를 발생하게 한다는 뜻은 '일으키다'로 쓴다.",
+    "correctExamples": [
+      "일으키다"
+    ],
+    "commonMistakes": [
+      "이르키다"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-추구하다",
+    "pattern": "추구하다",
+    "category": "spelling",
+    "explanation": "목표나 가치를 좇는다는 뜻은 '추구하다'로 쓴다.",
+    "correctExamples": [
+      "추구하다"
+    ],
+    "commonMistakes": [
+      "추고하다"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 1.0
+  },
+  {
+    "id": "pattern-extra-활력을-얻다",
+    "pattern": "활력을 얻다",
+    "category": "formal_writing",
+    "explanation": "TOPIK 논설문에서는 구어적인 '기운차게 하다'보다 '활력을 얻다'가 자연스럽다.",
+    "correctExamples": [
+      "활력을 얻을 수 있다"
+    ],
+    "commonMistakes": [
+      "기운차게 할 수 있다"
+    ],
+    "frequency": 1,
+    "difficulty": 1,
+    "source": "user_error",
+    "confidence": 0.92
+  }
+]

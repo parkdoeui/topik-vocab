@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router";
 import { writingTests } from "../data/tests";
 import { getWritingSession } from "../services/api";
 import type { QuestionGrading, WritingSessionResponse } from "../services/api";
+import { StoredWritingImage } from "./StoredWritingImage";
 
 const CRITERIA_ORDER = [
   "㉠",
@@ -46,6 +47,7 @@ function QuestionCard({
   charCount,
   minChars,
   maxChars,
+  answerImageUrls,
 }: {
   number: number;
   maxPoints: number;
@@ -54,6 +56,7 @@ function QuestionCard({
   charCount?: number;
   minChars?: number;
   maxChars?: number;
+  answerImageUrls?: string[];
 }) {
   const maxScore = grading.max_score || maxPoints;
   const criteriaKeys = [
@@ -82,6 +85,22 @@ function QuestionCard({
       </div>
 
       <ScoreBar score={grading.score} max={maxScore} />
+
+      {answerImageUrls && answerImageUrls.length > 0 && (
+        <details className="text-xs text-gray-500">
+          <summary className="cursor-pointer hover:text-gray-700">제출한 답안 사진 보기</summary>
+          <div className="mt-2 flex gap-2 overflow-x-auto pb-1">
+            {answerImageUrls.map((url, index) => (
+              <StoredWritingImage
+                key={url}
+                path={url}
+                alt={`${number}번 답안 사진 ${index + 1}`}
+                className="h-32 w-auto shrink-0 rounded-lg border border-gray-200"
+              />
+            ))}
+          </div>
+        </details>
+      )}
 
       {/* Current state / next goal */}
       {(grading.current_state || grading.primary_goal) && (
@@ -205,7 +224,7 @@ export function WritingResultsView() {
     );
   }
 
-  const test = writingTests.find((t) => t.id === result.test_id);
+  const test = result.test ?? writingTests.find((t) => t.id === result.test_id);
   const grading = result.grading;
   const questions = grading?.questions ?? {};
 
@@ -258,6 +277,7 @@ export function WritingResultsView() {
             }
             minChars={q.min_chars}
             maxChars={q.max_chars}
+            answerImageUrls={result.answers?.[String(q.number)]?.answer_image_urls}
           />
         );
       })}

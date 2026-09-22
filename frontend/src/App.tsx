@@ -14,6 +14,7 @@ function NavBar() {
       </Link>
       <NavLink to="/" end className={navClass}>쓰기</NavLink>
       <NavLink to="/practice" className={navClass}>빠른 훈련</NavLink>
+      <NavLink to="/review" className={navClass}>표현 복습</NavLink>
       <NavLink to="/progress" className={navClass}>Progress</NavLink>
     </nav>
   );

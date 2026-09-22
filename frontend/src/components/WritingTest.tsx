@@ -30,6 +30,7 @@ const TYPE_LABELS: Record<string, string> = {
 
 const MAX_IMAGES_PER_LONG_QUESTION = 5;
 const MAX_IMAGE_SIZE_BYTES = 10 * 1024 * 1024;
+const ALLOWED_IMAGE_TYPES = new Set(["image/jpeg", "image/png", "image/webp"]);
 
 function readImage(file: File): Promise<WritingImageEntry> {
   return new Promise((resolve, reject) => {
@@ -40,7 +41,7 @@ function readImage(file: File): Promise<WritingImageEntry> {
         reject(new Error("사진을 읽을 수 없습니다."));
         return;
       }
-      resolve({ data: dataUrl.split(",")[1], mime_type: file.type });
+      resolve({ id: crypto.randomUUID(), data: dataUrl.split(",")[1], mime_type: file.type });
     };
     reader.onerror = () => reject(new Error("사진을 읽을 수 없습니다."));
     reader.readAsDataURL(file);
@@ -79,10 +80,10 @@ function UploadZone({
 
     const selected = Array.from(files).slice(0, remaining);
     const invalid = selected.find(
-      (file) => !file.type.startsWith("image/") || file.size > MAX_IMAGE_SIZE_BYTES
+      (file) => !ALLOWED_IMAGE_TYPES.has(file.type) || file.size > MAX_IMAGE_SIZE_BYTES
     );
     if (invalid) {
-      onError("10MB 이하의 이미지 파일만 추가할 수 있습니다.");
+      onError("10MB 이하의 JPEG, PNG, WebP 이미지만 추가할 수 있습니다.");
       if (inputRef.current) inputRef.current.value = "";
       return;
     }
@@ -172,7 +173,7 @@ function UploadZone({
           <input
             ref={inputRef}
             type="file"
-            accept="image/*"
+            accept="image/jpeg,image/png,image/webp"
             capture="environment"
             multiple
             disabled={disabled}
@@ -274,9 +275,15 @@ export function WritingTest() {
         .filter((q) => q.type !== "short-blank")
         .map((q) => ({ qNum: q.number, imgs: images[q.number] ?? [] }));
 
-      const flatImages = imageEntries.flatMap((e) => e.imgs);
+      const flatImages = imageEntries.flatMap((entry) =>
+        entry.imgs.map((image) => ({
+          ...image,
+          question_id: String(entry.qNum),
+        }))
+      );
+      const answerImageUrls: Record<number, string[]> = {};
       if (flatImages.length > 0) {
-        const results = await transcribeImages(flatImages);
+        const results = await transcribeImages(sessionId, flatImages);
         if (results.length !== flatImages.length) {
           throw new Error("사진 일부를 인식하지 못했습니다. 다시 시도해 주세요.");
         }
@@ -289,12 +296,12 @@ export function WritingTest() {
             .join(" ");
           transcriptions[e.qNum] = transcription;
           charCounts[e.qNum] = countChars(transcription);
+          answerImageUrls[e.qNum] = slice.map((result) => result.image_url);
           offset += e.imgs.length;
         }
       }
 
-      // Images stay in memory (too large for localStorage); only the small
-      // draft metadata is persisted so a refresh on the review page still works.
+      // Raw images stay in memory; their durable server URLs survive a refresh.
       setSessionImages(
         sessionId,
         Object.fromEntries(imageEntries.map((e) => [e.qNum, e.imgs]))
@@ -304,6 +311,7 @@ export function WritingTest() {
         testId: test!.id,
         transcriptions,
         charCounts,
+        answerImageUrls,
       });
 
       navigate(`/writing/${test!.id}/transcribe?session=${sessionId}`);

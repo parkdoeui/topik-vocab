@@ -4,7 +4,7 @@
 시험 정보 JSON:
 {test_json}
 
-학생 답안 JSON (question_id → {{image_urls, transcription, char_count}}):
+학생 답안 JSON (question_id → {{image_urls, question_image_urls, answer_image_urls, transcription, char_count}}):
 {answers_json}
 
 ## 절대 규칙

@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "review-1-01-1",
+    "setId": "review-set-1",
+    "setPosition": 1,
+    "type": "particle_choice",
+    "question": "현대 사회에서는 예상하지 못한 문제___ 직면할 수 있다.",
+    "options": [
+      "를",
+      "가",
+      "에",
+      "으로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "직면하다는 대상과 조사 '에'를 결합한다.",
+    "targetPattern": "N에 직면하다",
+    "patternId": "pattern-01-n에-직면하다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-01-2",
+    "setId": "review-set-1",
+    "setPosition": 2,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "지역 사회는 환경 문제를 직면하고 있다.",
+      "지역 사회는 환경 문제에 직면하고 있다.",
+      "지역 사회는 환경 문제가 직면하고 있다.",
+      "지역 사회는 환경 문제로 직면하고 있다."
+    ],
+    "answer": "지역 사회는 환경 문제에 직면하고 있다.",
+    "acceptedAnswers": [
+      "지역 사회는 환경 문제에 직면하고 있다."
+    ],
+    "explanation": "직면하다는 대상과 조사 '에'를 결합한다.",
+    "targetPattern": "N에 직면하다",
+    "patternId": "pattern-01-n에-직면하다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-01-3",
+    "setId": "review-set-1",
+    "setPosition": 3,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n많은 기업이 인력 부족 문제를 직면하고 있다.",
+    "options": [],
+    "answer": "많은 기업이 인력 부족 문제에 직면하고 있다.",
+    "acceptedAnswers": [
+      "많은 기업이 인력 부족 문제에 직면하고 있다."
+    ],
+    "explanation": "직면하다는 대상과 조사 '에'를 결합한다.",
+    "targetPattern": "N에 직면하다",
+    "patternId": "pattern-01-n에-직면하다",
+    "category": "verb_collocation",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-01-4",
+    "setId": "review-set-1",
+    "setPosition": 4,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n예상하지 못한 위기에 ______",
+    "options": [],
+    "answer": "직면하다",
+    "acceptedAnswers": [
+      "직면하다"
+    ],
+    "explanation": "직면하다는 대상과 조사 '에'를 결합한다.",
+    "targetPattern": "N에 직면하다",
+    "patternId": "pattern-01-n에-직면하다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-01-5",
+    "setId": "review-set-1",
+    "setPosition": 5,
+    "type": "particle_choice",
+    "question": "기업은 급격한 시장 변화로 인한 위기___ 직면했다.",
+    "options": [
+      "에",
+      "를",
+      "가",
+      "와"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "직면하다는 대상과 조사 '에'를 결합한다.",
+    "targetPattern": "N에 직면하다",
+    "patternId": "pattern-01-n에-직면하다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-02-1",
+    "setId": "review-set-1",
+    "setPosition": 6,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "새로운 경험을 하면 자신감을 생길 수 있다.",
+      "새로운 경험을 하면 자신감이 생길 수 있다.",
+      "새로운 경험을 하면 자신감에 생길 수 있다.",
+      "새로운 경험을 하면 자신감으로 생길 수 있다."
+    ],
+    "answer": "새로운 경험을 하면 자신감이 생길 수 있다.",
+    "acceptedAnswers": [
+      "새로운 경험을 하면 자신감이 생길 수 있다."
+    ],
+    "explanation": "생기다는 자동사이므로 생기는 대상에 주격 조사 '이/가'를 쓴다.",
+    "targetPattern": "N이/가 생기다",
+    "patternId": "pattern-02-n이-가-생기다",
+    "category": "particle",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-02-2",
+    "setId": "review-set-1",
+    "setPosition": 7,
+    "type": "particle_choice",
+    "question": "창의적인 활동을 하면 자신감___ 생길 수 있다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "으로"
+    ],
+    "answer": "이",
+    "acceptedAnswers": [
+      "이"
+    ],
+    "explanation": "생기다는 자동사이므로 생기는 대상에 주격 조사 '이/가'를 쓴다.",
+    "targetPattern": "N이/가 생기다",
+    "patternId": "pattern-02-n이-가-생기다",
+    "category": "particle",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-02-3",
+    "setId": "review-set-1",
+    "setPosition": 8,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n학생들은 발표 경험을 통해 자신감을 생길 수 있다.",
+    "options": [],
+    "answer": "학생들은 발표 경험을 통해 자신감이 생길 수 있다.",
+    "acceptedAnswers": [
+      "학생들은 발표 경험을 통해 자신감이 생길 수 있다."
+    ],
+    "explanation": "생기다는 자동사이므로 생기는 대상에 주격 조사 '이/가'를 쓴다.",
+    "targetPattern": "N이/가 생기다",
+    "patternId": "pattern-02-n이-가-생기다",
+    "category": "particle",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-02-4",
+    "setId": "review-set-1",
+    "setPosition": 9,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n새로운 관심이 ______",
+    "options": [],
+    "answer": "생기다",
+    "acceptedAnswers": [
+      "생기다"
+    ],
+    "explanation": "생기다는 자동사이므로 생기는 대상에 주격 조사 '이/가'를 쓴다.",
+    "targetPattern": "N이/가 생기다",
+    "patternId": "pattern-02-n이-가-생기다",
+    "category": "particle",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-02-5",
+    "setId": "review-set-1",
+    "setPosition": 10,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "작은 문제가 생기면 즉시 해결해야 한다.",
+      "작은 문제를 생기면 즉시 해결해야 한다.",
+      "작은 문제에 생기면 즉시 해결해야 한다.",
+      "작은 문제로 생기면 즉시 해결해야 한다."
+    ],
+    "answer": "작은 문제가 생기면 즉시 해결해야 한다.",
+    "acceptedAnswers": [
+      "작은 문제가 생기면 즉시 해결해야 한다."
+    ],
+    "explanation": "생기다는 자동사이므로 생기는 대상에 주격 조사 '이/가'를 쓴다.",
+    "targetPattern": "N이/가 생기다",
+    "patternId": "pattern-02-n이-가-생기다",
+    "category": "particle",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-03-1",
+    "setId": "review-set-1",
+    "setPosition": 11,
+    "type": "particle_choice",
+    "question": "국내 캠핑 문화의 변화___ 대한 조사를 실시하였다.",
+    "options": [
+      "의",
+      "에",
+      "를",
+      "로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "'대한'은 앞말과 '에 대한'으로 결합한다.",
+    "targetPattern": "N에 대한",
+    "patternId": "pattern-03-n에-대한",
+    "category": "particle",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-03-2",
+    "setId": "review-set-1",
+    "setPosition": 12,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "디지털 격차의 대한 해결 방안이 필요하다.",
+      "디지털 격차에 대한 해결 방안이 필요하다.",
+      "디지털 격차를 대한 해결 방안이 필요하다.",
+      "디지털 격차로 대한 해결 방안이 필요하다."
+    ],
+    "answer": "디지털 격차에 대한 해결 방안이 필요하다.",
+    "acceptedAnswers": [
+      "디지털 격차에 대한 해결 방안이 필요하다."
+    ],
+    "explanation": "'대한'은 앞말과 '에 대한'으로 결합한다.",
+    "targetPattern": "N에 대한",
+    "patternId": "pattern-03-n에-대한",
+    "category": "particle",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-03-3",
+    "setId": "review-set-1",
+    "setPosition": 13,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n환경 문제의 대한 관심을 높여야 한다.",
+    "options": [],
+    "answer": "환경 문제에 대한 관심을 높여야 한다.",
+    "acceptedAnswers": [
+      "환경 문제에 대한 관심을 높여야 한다."
+    ],
+    "explanation": "'대한'은 앞말과 '에 대한'으로 결합한다.",
+    "targetPattern": "N에 대한",
+    "patternId": "pattern-03-n에-대한",
+    "category": "particle",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-03-4",
+    "setId": "review-set-1",
+    "setPosition": 14,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n청년 고용 문제___ 대한 정책",
+    "options": [],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "'대한'은 앞말과 '에 대한'으로 결합한다.",
+    "targetPattern": "N에 대한",
+    "patternId": "pattern-03-n에-대한",
+    "category": "particle",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-03-5",
+    "setId": "review-set-1",
+    "setPosition": 15,
+    "type": "particle_choice",
+    "question": "연구진은 인구 변화___ 대한 보고서를 발표했다.",
+    "options": [
+      "에",
+      "의",
+      "가",
+      "로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "'대한'은 앞말과 '에 대한'으로 결합한다.",
+    "targetPattern": "N에 대한",
+    "patternId": "pattern-03-n에-대한",
+    "category": "particle",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-04-1",
+    "setId": "review-set-1",
+    "setPosition": 16,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "온라인 모임을 활성화되면서 참여자가 늘었다.",
+      "온라인 모임이 활성화되면서 참여자가 늘었다.",
+      "온라인 모임에 활성화되면서 참여자가 늘었다.",
+      "온라인 모임으로 활성화되면서 참여자가 늘었다."
+    ],
+    "answer": "온라인 모임이 활성화되면서 참여자가 늘었다.",
+    "acceptedAnswers": [
+      "온라인 모임이 활성화되면서 참여자가 늘었다."
+    ],
+    "explanation": "어떤 모임이나 활동이 활발해진 결과는 '활성화되다'로 쓴다.",
+    "targetPattern": "N이/가 활성화되다",
+    "patternId": "pattern-04-n이-가-활성화되다",
+    "category": "intransitive_transitive",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-04-2",
+    "setId": "review-set-1",
+    "setPosition": 17,
+    "type": "particle_choice",
+    "question": "지역 축제___ 활성화되면 상권에도 활기가 생긴다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "으로"
+    ],
+    "answer": "이",
+    "acceptedAnswers": [
+      "이"
+    ],
+    "explanation": "어떤 모임이나 활동이 활발해진 결과는 '활성화되다'로 쓴다.",
+    "targetPattern": "N이/가 활성화되다",
+    "patternId": "pattern-04-n이-가-활성화되다",
+    "category": "intransitive_transitive",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-04-3",
+    "setId": "review-set-1",
+    "setPosition": 18,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n지역 모임을 활성화되었다.",
+    "options": [],
+    "answer": "지역 모임이 활성화되었다.",
+    "acceptedAnswers": [
+      "지역 모임이 활성화되었다."
+    ],
+    "explanation": "어떤 모임이나 활동이 활발해진 결과는 '활성화되다'로 쓴다.",
+    "targetPattern": "N이/가 활성화되다",
+    "patternId": "pattern-04-n이-가-활성화되다",
+    "category": "intransitive_transitive",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-04-4",
+    "setId": "review-set-1",
+    "setPosition": 19,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n지역 경제가 ______",
+    "options": [],
+    "answer": "활성화되다",
+    "acceptedAnswers": [
+      "활성화되다"
+    ],
+    "explanation": "어떤 모임이나 활동이 활발해진 결과는 '활성화되다'로 쓴다.",
+    "targetPattern": "N이/가 활성화되다",
+    "patternId": "pattern-04-n이-가-활성화되다",
+    "category": "intransitive_transitive",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-1-04-5",
+    "setId": "review-set-1",
+    "setPosition": 20,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "주민 간 교류가 활성화될 필요가 있다.",
+      "주민 간 교류를 활성화될 필요가 있다.",
+      "주민 간 교류에 활성화될 필요가 있다.",
+      "주민 간 교류로 활성화될 필요가 있다."
+    ],
+    "answer": "주민 간 교류가 활성화될 필요가 있다.",
+    "acceptedAnswers": [
+      "주민 간 교류가 활성화될 필요가 있다."
+    ],
+    "explanation": "어떤 모임이나 활동이 활발해진 결과는 '활성화되다'로 쓴다.",
+    "targetPattern": "N이/가 활성화되다",
+    "patternId": "pattern-04-n이-가-활성화되다",
+    "category": "intransitive_transitive",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-05-1",
+    "setId": "review-set-2",
+    "setPosition": 1,
+    "type": "particle_choice",
+    "question": "마라톤 참가자 수___ 2배로 증가하였다.",
+    "options": [
+      "를",
+      "가",
+      "에",
+      "으로"
+    ],
+    "answer": "가",
+    "acceptedAnswers": [
+      "가"
+    ],
+    "explanation": "증가하다는 자동사이므로 늘어나는 수량을 주어로 둔다.",
+    "targetPattern": "N이/가 증가하다",
+    "patternId": "pattern-05-n이-가-증가하다",
+    "category": "intransitive_transitive",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-05-2",
+    "setId": "review-set-2",
+    "setPosition": 2,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "1인 가구 비율을 크게 증가하였다.",
+      "1인 가구 비율이 크게 증가하였다.",
+      "1인 가구 비율에 크게 증가하였다.",
+      "1인 가구 비율로 크게 증가하였다."
+    ],
+    "answer": "1인 가구 비율이 크게 증가하였다.",
+    "acceptedAnswers": [
+      "1인 가구 비율이 크게 증가하였다."
+    ],
+    "explanation": "증가하다는 자동사이므로 늘어나는 수량을 주어로 둔다.",
+    "targetPattern": "N이/가 증가하다",
+    "patternId": "pattern-05-n이-가-증가하다",
+    "category": "intransitive_transitive",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-05-3",
+    "setId": "review-set-2",
+    "setPosition": 3,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n온라인 이용자들을 지난해보다 증가했다.",
+    "options": [],
+    "answer": "온라인 이용자 수가 지난해보다 증가했다.",
+    "acceptedAnswers": [
+      "온라인 이용자 수가 지난해보다 증가했다."
+    ],
+    "explanation": "증가하다는 자동사이므로 늘어나는 수량을 주어로 둔다.",
+    "targetPattern": "N이/가 증가하다",
+    "patternId": "pattern-05-n이-가-증가하다",
+    "category": "intransitive_transitive",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-05-4",
+    "setId": "review-set-2",
+    "setPosition": 4,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n청년층의 참여 비율이 ______",
+    "options": [],
+    "answer": "증가하다",
+    "acceptedAnswers": [
+      "증가하다"
+    ],
+    "explanation": "증가하다는 자동사이므로 늘어나는 수량을 주어로 둔다.",
+    "targetPattern": "N이/가 증가하다",
+    "patternId": "pattern-05-n이-가-증가하다",
+    "category": "intransitive_transitive",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-05-5",
+    "setId": "review-set-2",
+    "setPosition": 5,
+    "type": "particle_choice",
+    "question": "친환경 제품에 대한 수요___ 꾸준히 증가하고 있다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "로"
+    ],
+    "answer": "이",
+    "acceptedAnswers": [
+      "이"
+    ],
+    "explanation": "증가하다는 자동사이므로 늘어나는 수량을 주어로 둔다.",
+    "targetPattern": "N이/가 증가하다",
+    "patternId": "pattern-05-n이-가-증가하다",
+    "category": "intransitive_transitive",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-06-1",
+    "setId": "review-set-2",
+    "setPosition": 6,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "많은 사람이 안전 교육이 필요성을 느낀다.",
+      "많은 사람이 안전 교육의 필요성을 느낀다.",
+      "많은 사람이 안전 교육을 필요성을 느낀다.",
+      "많은 사람이 안전 교육에 필요성을 느낀다."
+    ],
+    "answer": "많은 사람이 안전 교육의 필요성을 느낀다.",
+    "acceptedAnswers": [
+      "많은 사람이 안전 교육의 필요성을 느낀다."
+    ],
+    "explanation": "필요성의 대상은 'N의 필요성'으로 만들고 '느끼다'와 결합한다.",
+    "targetPattern": "N의 필요성을 느끼다",
+    "patternId": "pattern-06-n의-필요성을-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-06-2",
+    "setId": "review-set-2",
+    "setPosition": 7,
+    "type": "particle_choice",
+    "question": "정기 검진___ 필요성을 널리 알릴 필요가 있다.",
+    "options": [
+      "이",
+      "의",
+      "을",
+      "에"
+    ],
+    "answer": "의",
+    "acceptedAnswers": [
+      "의"
+    ],
+    "explanation": "필요성의 대상은 'N의 필요성'으로 만들고 '느끼다'와 결합한다.",
+    "targetPattern": "N의 필요성을 느끼다",
+    "patternId": "pattern-06-n의-필요성을-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-06-3",
+    "setId": "review-set-2",
+    "setPosition": 8,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n정부는 환경 보호가 필요성을 느껴 관련 제도를 마련했다.",
+    "options": [],
+    "answer": "정부는 환경 보호의 필요성을 느껴 관련 제도를 마련했다.",
+    "acceptedAnswers": [
+      "정부는 환경 보호의 필요성을 느껴 관련 제도를 마련했다."
+    ],
+    "explanation": "필요성의 대상은 'N의 필요성'으로 만들고 '느끼다'와 결합한다.",
+    "targetPattern": "N의 필요성을 느끼다",
+    "patternId": "pattern-06-n의-필요성을-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-06-4",
+    "setId": "review-set-2",
+    "setPosition": 9,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n예방의 필요성을 ______",
+    "options": [],
+    "answer": "느끼다",
+    "acceptedAnswers": [
+      "느끼다"
+    ],
+    "explanation": "필요성의 대상은 'N의 필요성'으로 만들고 '느끼다'와 결합한다.",
+    "targetPattern": "N의 필요성을 느끼다",
+    "patternId": "pattern-06-n의-필요성을-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-06-5",
+    "setId": "review-set-2",
+    "setPosition": 10,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "학생들은 진로 상담의 필요성을 느낄 수 있다.",
+      "학생들은 진로 상담이 필요성을 느낄 수 있다.",
+      "학생들은 진로 상담을 필요성을 느낄 수 있다.",
+      "학생들은 진로 상담에 필요성을 느낄 수 있다."
+    ],
+    "answer": "학생들은 진로 상담의 필요성을 느낄 수 있다.",
+    "acceptedAnswers": [
+      "학생들은 진로 상담의 필요성을 느낄 수 있다."
+    ],
+    "explanation": "필요성의 대상은 'N의 필요성'으로 만들고 '느끼다'와 결합한다.",
+    "targetPattern": "N의 필요성을 느끼다",
+    "patternId": "pattern-06-n의-필요성을-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-07-1",
+    "setId": "review-set-2",
+    "setPosition": 11,
+    "type": "particle_choice",
+    "question": "학생들은 프로젝트에서 창의력___ 발휘할 수 있다.",
+    "options": [
+      "이",
+      "을",
+      "에",
+      "으로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "창의력·능력·전문성은 목적어로 두고 '발휘하다'와 결합한다.",
+    "targetPattern": "N을/를 발휘하다",
+    "patternId": "pattern-07-n을-를-발휘하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-07-2",
+    "setId": "review-set-2",
+    "setPosition": 12,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "구성원은 각자의 전문성이 발휘해야 한다.",
+      "구성원은 각자의 전문성을 발휘해야 한다.",
+      "구성원은 각자의 전문성에 발휘해야 한다.",
+      "구성원은 각자의 전문성으로 발휘해야 한다."
+    ],
+    "answer": "구성원은 각자의 전문성을 발휘해야 한다.",
+    "acceptedAnswers": [
+      "구성원은 각자의 전문성을 발휘해야 한다."
+    ],
+    "explanation": "창의력·능력·전문성은 목적어로 두고 '발휘하다'와 결합한다.",
+    "targetPattern": "N을/를 발휘하다",
+    "patternId": "pattern-07-n을-를-발휘하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-07-3",
+    "setId": "review-set-2",
+    "setPosition": 13,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n개인의 능력이 발휘하여 문제를 해결할 수 있다.",
+    "options": [],
+    "answer": "개인이 능력을 발휘하여 문제를 해결할 수 있다.",
+    "acceptedAnswers": [
+      "개인이 능력을 발휘하여 문제를 해결할 수 있다."
+    ],
+    "explanation": "창의력·능력·전문성은 목적어로 두고 '발휘하다'와 결합한다.",
+    "targetPattern": "N을/를 발휘하다",
+    "patternId": "pattern-07-n을-를-발휘하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-07-4",
+    "setId": "review-set-2",
+    "setPosition": 14,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n리더십을 ______",
+    "options": [],
+    "answer": "발휘하다",
+    "acceptedAnswers": [
+      "발휘하다"
+    ],
+    "explanation": "창의력·능력·전문성은 목적어로 두고 '발휘하다'와 결합한다.",
+    "targetPattern": "N을/를 발휘하다",
+    "patternId": "pattern-07-n을-를-발휘하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-07-5",
+    "setId": "review-set-2",
+    "setPosition": 15,
+    "type": "particle_choice",
+    "question": "위기 상황에서는 문제 해결 능력___ 발휘해야 한다.",
+    "options": [
+      "이",
+      "을",
+      "에",
+      "로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "창의력·능력·전문성은 목적어로 두고 '발휘하다'와 결합한다.",
+    "targetPattern": "N을/를 발휘하다",
+    "patternId": "pattern-07-n을-를-발휘하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-08-1",
+    "setId": "review-set-2",
+    "setPosition": 16,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "소음은 학습 환경을 지장을 줄 수 있다.",
+      "소음은 학습 환경에 지장을 줄 수 있다.",
+      "소음은 학습 환경이 지장을 줄 수 있다.",
+      "소음은 학습 환경으로 지장을 줄 수 있다."
+    ],
+    "answer": "소음은 학습 환경에 지장을 줄 수 있다.",
+    "acceptedAnswers": [
+      "소음은 학습 환경에 지장을 줄 수 있다."
+    ],
+    "explanation": "생활·업무·건강에 부정적 방해를 준다는 뜻은 '지장을 주다'를 쓴다.",
+    "targetPattern": "N에 지장을 주다",
+    "patternId": "pattern-08-n에-지장을-주다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-08-2",
+    "setId": "review-set-2",
+    "setPosition": 17,
+    "type": "particle_choice",
+    "question": "과도한 업무는 건강___ 지장을 줄 수 있다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "으로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "생활·업무·건강에 부정적 방해를 준다는 뜻은 '지장을 주다'를 쓴다.",
+    "targetPattern": "N에 지장을 주다",
+    "patternId": "pattern-08-n에-지장을-주다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-08-3",
+    "setId": "review-set-2",
+    "setPosition": 18,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n공사 소음이 주민의 일상생활을 지장을 주고 있다.",
+    "options": [],
+    "answer": "공사 소음이 주민의 일상생활에 지장을 주고 있다.",
+    "acceptedAnswers": [
+      "공사 소음이 주민의 일상생활에 지장을 주고 있다."
+    ],
+    "explanation": "생활·업무·건강에 부정적 방해를 준다는 뜻은 '지장을 주다'를 쓴다.",
+    "targetPattern": "N에 지장을 주다",
+    "patternId": "pattern-08-n에-지장을-주다",
+    "category": "verb_collocation",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-08-4",
+    "setId": "review-set-2",
+    "setPosition": 19,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n업무에 지장을 ______",
+    "options": [],
+    "answer": "주다",
+    "acceptedAnswers": [
+      "주다"
+    ],
+    "explanation": "생활·업무·건강에 부정적 방해를 준다는 뜻은 '지장을 주다'를 쓴다.",
+    "targetPattern": "N에 지장을 주다",
+    "patternId": "pattern-08-n에-지장을-주다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-2-08-5",
+    "setId": "review-set-2",
+    "setPosition": 20,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "지나친 스트레스는 건강에 지장을 준다.",
+      "지나친 스트레스는 건강을 지장을 준다.",
+      "지나친 스트레스는 건강이 지장을 준다.",
+      "지나친 스트레스는 건강으로 지장을 준다."
+    ],
+    "answer": "지나친 스트레스는 건강에 지장을 준다.",
+    "acceptedAnswers": [
+      "지나친 스트레스는 건강에 지장을 준다."
+    ],
+    "explanation": "생활·업무·건강에 부정적 방해를 준다는 뜻은 '지장을 주다'를 쓴다.",
+    "targetPattern": "N에 지장을 주다",
+    "patternId": "pattern-08-n에-지장을-주다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-09-1",
+    "setId": "review-set-3",
+    "setPosition": 1,
+    "type": "particle_choice",
+    "question": "의심스러운 문자___ 받을 경우 즉시 확인해야 한다.",
+    "options": [
+      "가",
+      "를",
+      "에",
+      "로"
+    ],
+    "answer": "를",
+    "acceptedAnswers": [
+      "를"
+    ],
+    "explanation": "받다의 대상에는 목적격 조사 '을/를'을 쓰며 '경우' 뒤에 조사를 덧붙이지 않는다.",
+    "targetPattern": "N을/를 받을 경우",
+    "patternId": "pattern-09-n을-를-받을-경우",
+    "category": "particle",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-09-2",
+    "setId": "review-set-3",
+    "setPosition": 2,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "낯선 전화를 받을 경우에는 개인정보를 주지 말아야 한다.",
+      "낯선 전화가 받을 경우에는 개인정보를 주지 말아야 한다.",
+      "낯선 전화에 받을 경우에는 개인정보를 주지 말아야 한다.",
+      "낯선 전화로 받을 경우에는 개인정보를 주지 말아야 한다."
+    ],
+    "answer": "낯선 전화를 받을 경우에는 개인정보를 주지 말아야 한다.",
+    "acceptedAnswers": [
+      "낯선 전화를 받을 경우에는 개인정보를 주지 말아야 한다."
+    ],
+    "explanation": "받다의 대상에는 목적격 조사 '을/를'을 쓰며 '경우' 뒤에 조사를 덧붙이지 않는다.",
+    "targetPattern": "N을/를 받을 경우",
+    "patternId": "pattern-09-n을-를-받을-경우",
+    "category": "particle",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-09-3",
+    "setId": "review-set-3",
+    "setPosition": 3,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n의심스러운 문자를 받을 경우의 즉시 삭제해야 한다.",
+    "options": [],
+    "answer": "의심스러운 문자를 받을 경우 즉시 삭제해야 한다.",
+    "acceptedAnswers": [
+      "의심스러운 문자를 받을 경우 즉시 삭제해야 한다."
+    ],
+    "explanation": "받다의 대상에는 목적격 조사 '을/를'을 쓰며 '경우' 뒤에 조사를 덧붙이지 않는다.",
+    "targetPattern": "N을/를 받을 경우",
+    "patternId": "pattern-09-n을-를-받을-경우",
+    "category": "particle",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-09-4",
+    "setId": "review-set-3",
+    "setPosition": 4,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n안내 문자를 ______ 경우",
+    "options": [],
+    "answer": "받다",
+    "acceptedAnswers": [
+      "받다"
+    ],
+    "explanation": "받다의 대상에는 목적격 조사 '을/를'을 쓰며 '경우' 뒤에 조사를 덧붙이지 않는다.",
+    "targetPattern": "N을/를 받을 경우",
+    "patternId": "pattern-09-n을-를-받을-경우",
+    "category": "particle",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-09-5",
+    "setId": "review-set-3",
+    "setPosition": 5,
+    "type": "particle_choice",
+    "question": "피해 사실___ 통보받았을 때 관련 기관에 연락해야 한다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "받다의 대상에는 목적격 조사 '을/를'을 쓰며 '경우' 뒤에 조사를 덧붙이지 않는다.",
+    "targetPattern": "N을/를 받을 경우",
+    "patternId": "pattern-09-n을-를-받을-경우",
+    "category": "particle",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-10-1",
+    "setId": "review-set-3",
+    "setPosition": 6,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "노인들은 디지털 환경에서 소외감 느낄 수 있다.",
+      "노인들은 디지털 환경에서 소외감을 느낄 수 있다.",
+      "노인들은 디지털 환경에서 소외감이 느낄 수 있다.",
+      "노인들은 디지털 환경에서 소외감에 느낄 수 있다."
+    ],
+    "answer": "노인들은 디지털 환경에서 소외감을 느낄 수 있다.",
+    "acceptedAnswers": [
+      "노인들은 디지털 환경에서 소외감을 느낄 수 있다."
+    ],
+    "explanation": "소외감·부담감·필요성처럼 마음속 상태는 목적어로 두고 '느끼다'와 결합한다.",
+    "targetPattern": "N을/를 느끼다",
+    "patternId": "pattern-10-n을-를-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-10-2",
+    "setId": "review-set-3",
+    "setPosition": 7,
+    "type": "particle_choice",
+    "question": "학생들은 진로 선택 과정에서 부담감___ 느낄 수 있다.",
+    "options": [
+      "이",
+      "을",
+      "에",
+      "으로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "소외감·부담감·필요성처럼 마음속 상태는 목적어로 두고 '느끼다'와 결합한다.",
+    "targetPattern": "N을/를 느끼다",
+    "patternId": "pattern-10-n을-를-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-10-3",
+    "setId": "review-set-3",
+    "setPosition": 8,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n일부 주민은 정책 변화로 불안감 느끼고 있다.",
+    "options": [],
+    "answer": "일부 주민은 정책 변화로 불안감을 느끼고 있다.",
+    "acceptedAnswers": [
+      "일부 주민은 정책 변화로 불안감을 느끼고 있다."
+    ],
+    "explanation": "소외감·부담감·필요성처럼 마음속 상태는 목적어로 두고 '느끼다'와 결합한다.",
+    "targetPattern": "N을/를 느끼다",
+    "patternId": "pattern-10-n을-를-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-10-4",
+    "setId": "review-set-3",
+    "setPosition": 9,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n심리적 부담을 ______",
+    "options": [],
+    "answer": "느끼다",
+    "acceptedAnswers": [
+      "느끼다"
+    ],
+    "explanation": "소외감·부담감·필요성처럼 마음속 상태는 목적어로 두고 '느끼다'와 결합한다.",
+    "targetPattern": "N을/를 느끼다",
+    "patternId": "pattern-10-n을-를-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-10-5",
+    "setId": "review-set-3",
+    "setPosition": 10,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "학생들은 학습 과정에서 성취감을 느낄 수 있다.",
+      "학생들은 학습 과정에서 성취감이 느낄 수 있다.",
+      "학생들은 학습 과정에서 성취감에 느낄 수 있다.",
+      "학생들은 학습 과정에서 성취감으로 느낄 수 있다."
+    ],
+    "answer": "학생들은 학습 과정에서 성취감을 느낄 수 있다.",
+    "acceptedAnswers": [
+      "학생들은 학습 과정에서 성취감을 느낄 수 있다."
+    ],
+    "explanation": "소외감·부담감·필요성처럼 마음속 상태는 목적어로 두고 '느끼다'와 결합한다.",
+    "targetPattern": "N을/를 느끼다",
+    "patternId": "pattern-10-n을-를-느끼다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "user_error"
+  },
+  {
+    "id": "review-3-11-1",
+    "setId": "review-set-3",
+    "setPosition": 11,
+    "type": "particle_choice",
+    "question": "수면 부족은 집중력___ 영향을 미칠 수 있다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "으로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "영향이 미치는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 영향을 미치다",
+    "patternId": "pattern-11-n에-영향을-미치다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-11-2",
+    "setId": "review-set-3",
+    "setPosition": 12,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "미디어는 청소년의 가치관에 영향을 미친다.",
+      "미디어는 청소년의 가치관을 영향을 미친다.",
+      "미디어는 청소년의 가치관이 영향을 미친다.",
+      "미디어는 청소년의 가치관으로 영향을 미친다."
+    ],
+    "answer": "미디어는 청소년의 가치관에 영향을 미친다.",
+    "acceptedAnswers": [
+      "미디어는 청소년의 가치관에 영향을 미친다."
+    ],
+    "explanation": "영향이 미치는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 영향을 미치다",
+    "patternId": "pattern-11-n에-영향을-미치다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-11-3",
+    "setId": "review-set-3",
+    "setPosition": 13,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n기후 변화는 농업 생산을 큰 영향을 미치고 있다.",
+    "options": [],
+    "answer": "기후 변화는 농업 생산에 큰 영향을 미치고 있다.",
+    "acceptedAnswers": [
+      "기후 변화는 농업 생산에 큰 영향을 미치고 있다."
+    ],
+    "explanation": "영향이 미치는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 영향을 미치다",
+    "patternId": "pattern-11-n에-영향을-미치다",
+    "category": "verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-11-4",
+    "setId": "review-set-3",
+    "setPosition": 14,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n사회에 영향을 ______",
+    "options": [],
+    "answer": "미치다",
+    "acceptedAnswers": [
+      "미치다"
+    ],
+    "explanation": "영향이 미치는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 영향을 미치다",
+    "patternId": "pattern-11-n에-영향을-미치다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-11-5",
+    "setId": "review-set-3",
+    "setPosition": 15,
+    "type": "particle_choice",
+    "question": "부모의 태도는 자녀의 학습 습관___ 영향을 준다.",
+    "options": [
+      "에",
+      "을",
+      "이",
+      "로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "영향이 미치는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 영향을 미치다",
+    "patternId": "pattern-11-n에-영향을-미치다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-12-1",
+    "setId": "review-set-3",
+    "setPosition": 16,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "정부는 주거 문제에 해결하기 위한 정책을 마련했다.",
+      "정부는 주거 문제를 해결하기 위한 정책을 마련했다.",
+      "정부는 주거 문제가 해결하기 위한 정책을 마련했다.",
+      "정부는 주거 문제로 해결하기 위한 정책을 마련했다."
+    ],
+    "answer": "정부는 주거 문제를 해결하기 위한 정책을 마련했다.",
+    "acceptedAnswers": [
+      "정부는 주거 문제를 해결하기 위한 정책을 마련했다."
+    ],
+    "explanation": "문제·갈등·과제를 목적어로 두고 '해결하다'와 결합한다.",
+    "targetPattern": "N을/를 해결하다",
+    "patternId": "pattern-12-n을-를-해결하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-12-2",
+    "setId": "review-set-3",
+    "setPosition": 17,
+    "type": "particle_choice",
+    "question": "지역 간 갈등___ 해결하기 위해 대화가 필요하다.",
+    "options": [
+      "이",
+      "을",
+      "에",
+      "으로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "문제·갈등·과제를 목적어로 두고 '해결하다'와 결합한다.",
+    "targetPattern": "N을/를 해결하다",
+    "patternId": "pattern-12-n을-를-해결하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-12-3",
+    "setId": "review-set-3",
+    "setPosition": 18,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n시민과 정부가 함께 환경 문제에 해결해야 한다.",
+    "options": [],
+    "answer": "시민과 정부가 함께 환경 문제를 해결해야 한다.",
+    "acceptedAnswers": [
+      "시민과 정부가 함께 환경 문제를 해결해야 한다."
+    ],
+    "explanation": "문제·갈등·과제를 목적어로 두고 '해결하다'와 결합한다.",
+    "targetPattern": "N을/를 해결하다",
+    "patternId": "pattern-12-n을-를-해결하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-12-4",
+    "setId": "review-set-3",
+    "setPosition": 19,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n사회 문제를 ______",
+    "options": [],
+    "answer": "해결하다",
+    "acceptedAnswers": [
+      "해결하다"
+    ],
+    "explanation": "문제·갈등·과제를 목적어로 두고 '해결하다'와 결합한다.",
+    "targetPattern": "N을/를 해결하다",
+    "patternId": "pattern-12-n을-를-해결하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-3-12-5",
+    "setId": "review-set-3",
+    "setPosition": 20,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "대화를 통해 세대 간 갈등을 해결할 수 있다.",
+      "대화를 통해 세대 간 갈등이 해결할 수 있다.",
+      "대화를 통해 세대 간 갈등에 해결할 수 있다.",
+      "대화를 통해 세대 간 갈등으로 해결할 수 있다."
+    ],
+    "answer": "대화를 통해 세대 간 갈등을 해결할 수 있다.",
+    "acceptedAnswers": [
+      "대화를 통해 세대 간 갈등을 해결할 수 있다."
+    ],
+    "explanation": "문제·갈등·과제를 목적어로 두고 '해결하다'와 결합한다.",
+    "targetPattern": "N을/를 해결하다",
+    "patternId": "pattern-12-n을-를-해결하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-13-1",
+    "setId": "review-set-4",
+    "setPosition": 1,
+    "type": "particle_choice",
+    "question": "연구팀은 국제 대회에서 뛰어난 성과___ 거두었다.",
+    "options": [
+      "가",
+      "를",
+      "에",
+      "로"
+    ],
+    "answer": "를",
+    "acceptedAnswers": [
+      "를"
+    ],
+    "explanation": "성과나 결과는 목적어로 두고 '거두다'와 결합한다.",
+    "targetPattern": "성과를 거두다",
+    "patternId": "pattern-13-성과를-거두다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-13-2",
+    "setId": "review-set-4",
+    "setPosition": 2,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "꾸준한 노력은 좋은 결과를 거둘 수 있다.",
+      "꾸준한 노력은 좋은 결과가 거둘 수 있다.",
+      "꾸준한 노력은 좋은 결과에 거둘 수 있다.",
+      "꾸준한 노력은 좋은 결과로 거둘 수 있다."
+    ],
+    "answer": "꾸준한 노력은 좋은 결과를 거둘 수 있다.",
+    "acceptedAnswers": [
+      "꾸준한 노력은 좋은 결과를 거둘 수 있다."
+    ],
+    "explanation": "성과나 결과는 목적어로 두고 '거두다'와 결합한다.",
+    "targetPattern": "성과를 거두다",
+    "patternId": "pattern-13-성과를-거두다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-13-3",
+    "setId": "review-set-4",
+    "setPosition": 3,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n연구팀은 새로운 기술 개발에서 성과에 거두었다.",
+    "options": [],
+    "answer": "연구팀은 새로운 기술 개발에서 성과를 거두었다.",
+    "acceptedAnswers": [
+      "연구팀은 새로운 기술 개발에서 성과를 거두었다."
+    ],
+    "explanation": "성과나 결과는 목적어로 두고 '거두다'와 결합한다.",
+    "targetPattern": "성과를 거두다",
+    "patternId": "pattern-13-성과를-거두다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-13-4",
+    "setId": "review-set-4",
+    "setPosition": 4,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n우수한 성과를 ______",
+    "options": [],
+    "answer": "거두다",
+    "acceptedAnswers": [
+      "거두다"
+    ],
+    "explanation": "성과나 결과는 목적어로 두고 '거두다'와 결합한다.",
+    "targetPattern": "성과를 거두다",
+    "patternId": "pattern-13-성과를-거두다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-13-5",
+    "setId": "review-set-4",
+    "setPosition": 5,
+    "type": "particle_choice",
+    "question": "참가자들은 협력을 통해 성공___ 거둘 수 있었다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "으로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "성과나 결과는 목적어로 두고 '거두다'와 결합한다.",
+    "targetPattern": "성과를 거두다",
+    "patternId": "pattern-13-성과를-거두다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-14-1",
+    "setId": "review-set-4",
+    "setPosition": 6,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "교육은 문제 해결 능력이 향상시킨다.",
+      "교육은 문제 해결 능력을 향상시킨다.",
+      "교육은 문제 해결 능력에 향상시킨다.",
+      "교육은 문제 해결 능력으로 향상시킨다."
+    ],
+    "answer": "교육은 문제 해결 능력을 향상시킨다.",
+    "acceptedAnswers": [
+      "교육은 문제 해결 능력을 향상시킨다."
+    ],
+    "explanation": "능력·실력·효율은 목적어로 두고 '향상시키다'와 결합한다.",
+    "targetPattern": "능력을 향상시키다",
+    "patternId": "pattern-14-능력을-향상시키다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-14-2",
+    "setId": "review-set-4",
+    "setPosition": 7,
+    "type": "particle_choice",
+    "question": "토론 수업은 의사소통 능력___ 향상시키는 데 도움이 된다.",
+    "options": [
+      "이",
+      "을",
+      "에",
+      "으로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "능력·실력·효율은 목적어로 두고 '향상시키다'와 결합한다.",
+    "targetPattern": "능력을 향상시키다",
+    "patternId": "pattern-14-능력을-향상시키다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-14-3",
+    "setId": "review-set-4",
+    "setPosition": 8,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n반복 연습은 발표 능력이 향상시킨다.",
+    "options": [],
+    "answer": "반복 연습은 발표 능력을 향상시킨다.",
+    "acceptedAnswers": [
+      "반복 연습은 발표 능력을 향상시킨다."
+    ],
+    "explanation": "능력·실력·효율은 목적어로 두고 '향상시키다'와 결합한다.",
+    "targetPattern": "능력을 향상시키다",
+    "patternId": "pattern-14-능력을-향상시키다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-14-4",
+    "setId": "review-set-4",
+    "setPosition": 9,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n업무 능력을 ______",
+    "options": [],
+    "answer": "향상시키다",
+    "acceptedAnswers": [
+      "향상시키다"
+    ],
+    "explanation": "능력·실력·효율은 목적어로 두고 '향상시키다'와 결합한다.",
+    "targetPattern": "능력을 향상시키다",
+    "patternId": "pattern-14-능력을-향상시키다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-14-5",
+    "setId": "review-set-4",
+    "setPosition": 10,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "디지털 교육은 정보 활용 능력을 향상시킨다.",
+      "디지털 교육은 정보 활용 능력이 향상시킨다.",
+      "디지털 교육은 정보 활용 능력에 향상시킨다.",
+      "디지털 교육은 정보 활용 능력으로 향상시킨다."
+    ],
+    "answer": "디지털 교육은 정보 활용 능력을 향상시킨다.",
+    "acceptedAnswers": [
+      "디지털 교육은 정보 활용 능력을 향상시킨다."
+    ],
+    "explanation": "능력·실력·효율은 목적어로 두고 '향상시키다'와 결합한다.",
+    "targetPattern": "능력을 향상시키다",
+    "patternId": "pattern-14-능력을-향상시키다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-15-1",
+    "setId": "review-set-4",
+    "setPosition": 11,
+    "type": "particle_choice",
+    "question": "정부는 청년___ 취업 기회를 제공해야 한다.",
+    "options": [
+      "을",
+      "에게",
+      "이",
+      "으로"
+    ],
+    "answer": "에게",
+    "acceptedAnswers": [
+      "에게"
+    ],
+    "explanation": "사람에게 어떤 기회를 준다는 뜻은 'N에게 기회를 제공하다'로 쓴다.",
+    "targetPattern": "N에게 기회를 제공하다",
+    "patternId": "pattern-15-n에게-기회를-제공하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-15-2",
+    "setId": "review-set-4",
+    "setPosition": 12,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "학교는 학생에게 다양한 경험의 기회를 제공한다.",
+      "학교는 학생을 다양한 경험의 기회를 제공한다.",
+      "학교는 학생이 다양한 경험의 기회를 제공한다.",
+      "학교는 학생으로 다양한 경험의 기회를 제공한다."
+    ],
+    "answer": "학교는 학생에게 다양한 경험의 기회를 제공한다.",
+    "acceptedAnswers": [
+      "학교는 학생에게 다양한 경험의 기회를 제공한다."
+    ],
+    "explanation": "사람에게 어떤 기회를 준다는 뜻은 'N에게 기회를 제공하다'로 쓴다.",
+    "targetPattern": "N에게 기회를 제공하다",
+    "patternId": "pattern-15-n에게-기회를-제공하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-15-3",
+    "setId": "review-set-4",
+    "setPosition": 13,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n지역 사회는 주민을 문화 활동 기회를 제공할 필요가 있다.",
+    "options": [],
+    "answer": "지역 사회는 주민에게 문화 활동 기회를 제공할 필요가 있다.",
+    "acceptedAnswers": [
+      "지역 사회는 주민에게 문화 활동 기회를 제공할 필요가 있다."
+    ],
+    "explanation": "사람에게 어떤 기회를 준다는 뜻은 'N에게 기회를 제공하다'로 쓴다.",
+    "targetPattern": "N에게 기회를 제공하다",
+    "patternId": "pattern-15-n에게-기회를-제공하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-15-4",
+    "setId": "review-set-4",
+    "setPosition": 14,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n학생에게 참여 기회를 ______",
+    "options": [],
+    "answer": "제공하다",
+    "acceptedAnswers": [
+      "제공하다"
+    ],
+    "explanation": "사람에게 어떤 기회를 준다는 뜻은 'N에게 기회를 제공하다'로 쓴다.",
+    "targetPattern": "N에게 기회를 제공하다",
+    "patternId": "pattern-15-n에게-기회를-제공하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-15-5",
+    "setId": "review-set-4",
+    "setPosition": 15,
+    "type": "particle_choice",
+    "question": "기업은 신입 사원___ 실무 교육 기회를 마련했다.",
+    "options": [
+      "을",
+      "에게",
+      "이",
+      "로"
+    ],
+    "answer": "에게",
+    "acceptedAnswers": [
+      "에게"
+    ],
+    "explanation": "사람에게 어떤 기회를 준다는 뜻은 'N에게 기회를 제공하다'로 쓴다.",
+    "targetPattern": "N에게 기회를 제공하다",
+    "patternId": "pattern-15-n에게-기회를-제공하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-16-1",
+    "setId": "review-set-4",
+    "setPosition": 16,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "학교는 자유로운 토론 환경이 조성해야 한다.",
+      "학교는 자유로운 토론 환경을 조성해야 한다.",
+      "학교는 자유로운 토론 환경에 조성해야 한다.",
+      "학교는 자유로운 토론 환경으로 조성해야 한다."
+    ],
+    "answer": "학교는 자유로운 토론 환경을 조성해야 한다.",
+    "acceptedAnswers": [
+      "학교는 자유로운 토론 환경을 조성해야 한다."
+    ],
+    "explanation": "학습·근무·토론 환경은 목적어로 두고 '조성하다'와 결합한다.",
+    "targetPattern": "환경을 조성하다",
+    "patternId": "pattern-16-환경을-조성하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-16-2",
+    "setId": "review-set-4",
+    "setPosition": 17,
+    "type": "particle_choice",
+    "question": "기업은 안전한 근무 환경___ 조성할 책임이 있다.",
+    "options": [
+      "이",
+      "을",
+      "에",
+      "으로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "학습·근무·토론 환경은 목적어로 두고 '조성하다'와 결합한다.",
+    "targetPattern": "환경을 조성하다",
+    "patternId": "pattern-16-환경을-조성하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-16-3",
+    "setId": "review-set-4",
+    "setPosition": 18,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n지역 사회는 청소년을 위한 학습 환경이 조성해야 한다.",
+    "options": [],
+    "answer": "지역 사회는 청소년을 위한 학습 환경을 조성해야 한다.",
+    "acceptedAnswers": [
+      "지역 사회는 청소년을 위한 학습 환경을 조성해야 한다."
+    ],
+    "explanation": "학습·근무·토론 환경은 목적어로 두고 '조성하다'와 결합한다.",
+    "targetPattern": "환경을 조성하다",
+    "patternId": "pattern-16-환경을-조성하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-16-4",
+    "setId": "review-set-4",
+    "setPosition": 19,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n창의적인 환경을 ______",
+    "options": [],
+    "answer": "조성하다",
+    "acceptedAnswers": [
+      "조성하다"
+    ],
+    "explanation": "학습·근무·토론 환경은 목적어로 두고 '조성하다'와 결합한다.",
+    "targetPattern": "환경을 조성하다",
+    "patternId": "pattern-16-환경을-조성하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-4-16-5",
+    "setId": "review-set-4",
+    "setPosition": 20,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "상호 존중하는 조직 문화를 조성하는 것이 중요하다.",
+      "상호 존중하는 조직 문화가 조성하는 것이 중요하다.",
+      "상호 존중하는 조직 문화에 조성하는 것이 중요하다.",
+      "상호 존중하는 조직 문화로 조성하는 것이 중요하다."
+    ],
+    "answer": "상호 존중하는 조직 문화를 조성하는 것이 중요하다.",
+    "acceptedAnswers": [
+      "상호 존중하는 조직 문화를 조성하는 것이 중요하다."
+    ],
+    "explanation": "학습·근무·토론 환경은 목적어로 두고 '조성하다'와 결합한다.",
+    "targetPattern": "환경을 조성하다",
+    "patternId": "pattern-16-환경을-조성하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-17-1",
+    "setId": "review-set-5",
+    "setPosition": 1,
+    "type": "particle_choice",
+    "question": "독서는 어휘력 향상___ 도움이 된다.",
+    "options": [
+      "을",
+      "이",
+      "에",
+      "으로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "도움이 되는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 도움이 되다",
+    "patternId": "pattern-17-n에-도움이-되다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-17-2",
+    "setId": "review-set-5",
+    "setPosition": 2,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "규칙적인 운동은 건강 관리에 도움이 된다.",
+      "규칙적인 운동은 건강 관리를 도움이 된다.",
+      "규칙적인 운동은 건강 관리가 도움이 된다.",
+      "규칙적인 운동은 건강 관리로 도움이 된다."
+    ],
+    "answer": "규칙적인 운동은 건강 관리에 도움이 된다.",
+    "acceptedAnswers": [
+      "규칙적인 운동은 건강 관리에 도움이 된다."
+    ],
+    "explanation": "도움이 되는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 도움이 되다",
+    "patternId": "pattern-17-n에-도움이-되다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-17-3",
+    "setId": "review-set-5",
+    "setPosition": 3,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n다양한 독서 경험은 사고력 향상을 도움이 된다.",
+    "options": [],
+    "answer": "다양한 독서 경험은 사고력 향상에 도움이 된다.",
+    "acceptedAnswers": [
+      "다양한 독서 경험은 사고력 향상에 도움이 된다."
+    ],
+    "explanation": "도움이 되는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 도움이 되다",
+    "patternId": "pattern-17-n에-도움이-되다",
+    "category": "verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-17-4",
+    "setId": "review-set-5",
+    "setPosition": 4,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n문제 해결에 도움이 ______",
+    "options": [],
+    "answer": "되다",
+    "acceptedAnswers": [
+      "되다"
+    ],
+    "explanation": "도움이 되는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 도움이 되다",
+    "patternId": "pattern-17-n에-도움이-되다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-17-5",
+    "setId": "review-set-5",
+    "setPosition": 5,
+    "type": "particle_choice",
+    "question": "상담은 진로 선택___ 실질적인 도움이 될 수 있다.",
+    "options": [
+      "에",
+      "을",
+      "이",
+      "로"
+    ],
+    "answer": "에",
+    "acceptedAnswers": [
+      "에"
+    ],
+    "explanation": "도움이 되는 대상에는 조사 '에'를 쓴다.",
+    "targetPattern": "N에 도움이 되다",
+    "patternId": "pattern-17-n에-도움이-되다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-18-1",
+    "setId": "review-set-5",
+    "setPosition": 6,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "과도한 경쟁은 갈등의 원인이 될 수 있다.",
+      "과도한 경쟁은 갈등에 원인이 될 수 있다.",
+      "과도한 경쟁은 갈등을 원인이 될 수 있다.",
+      "과도한 경쟁은 갈등으로 원인이 될 수 있다."
+    ],
+    "answer": "과도한 경쟁은 갈등의 원인이 될 수 있다.",
+    "acceptedAnswers": [
+      "과도한 경쟁은 갈등의 원인이 될 수 있다."
+    ],
+    "explanation": "어떤 결과를 낳는 원인은 'N의 원인이 되다'로 쓴다.",
+    "targetPattern": "N의 원인이 되다",
+    "patternId": "pattern-18-n의-원인이-되다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-18-2",
+    "setId": "review-set-5",
+    "setPosition": 7,
+    "type": "particle_choice",
+    "question": "부주의한 운전은 교통사고___ 원인이 된다.",
+    "options": [
+      "이",
+      "의",
+      "을",
+      "에"
+    ],
+    "answer": "의",
+    "acceptedAnswers": [
+      "의"
+    ],
+    "explanation": "어떤 결과를 낳는 원인은 'N의 원인이 되다'로 쓴다.",
+    "targetPattern": "N의 원인이 되다",
+    "patternId": "pattern-18-n의-원인이-되다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-18-3",
+    "setId": "review-set-5",
+    "setPosition": 8,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n무분별한 개발은 환경 문제에 원인이 될 수 있다.",
+    "options": [],
+    "answer": "무분별한 개발은 환경 문제의 원인이 될 수 있다.",
+    "acceptedAnswers": [
+      "무분별한 개발은 환경 문제의 원인이 될 수 있다."
+    ],
+    "explanation": "어떤 결과를 낳는 원인은 'N의 원인이 되다'로 쓴다.",
+    "targetPattern": "N의 원인이 되다",
+    "patternId": "pattern-18-n의-원인이-되다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-18-4",
+    "setId": "review-set-5",
+    "setPosition": 9,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n사회 문제의 원인이 ______",
+    "options": [],
+    "answer": "되다",
+    "acceptedAnswers": [
+      "되다"
+    ],
+    "explanation": "어떤 결과를 낳는 원인은 'N의 원인이 되다'로 쓴다.",
+    "targetPattern": "N의 원인이 되다",
+    "patternId": "pattern-18-n의-원인이-되다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-18-5",
+    "setId": "review-set-5",
+    "setPosition": 10,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "소통 부족은 오해의 원인이 되기 쉽다.",
+      "소통 부족은 오해에 원인이 되기 쉽다.",
+      "소통 부족은 오해를 원인이 되기 쉽다.",
+      "소통 부족은 오해로 원인이 되기 쉽다."
+    ],
+    "answer": "소통 부족은 오해의 원인이 되기 쉽다.",
+    "acceptedAnswers": [
+      "소통 부족은 오해의 원인이 되기 쉽다."
+    ],
+    "explanation": "어떤 결과를 낳는 원인은 'N의 원인이 되다'로 쓴다.",
+    "targetPattern": "N의 원인이 되다",
+    "patternId": "pattern-18-n의-원인이-되다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-19-1",
+    "setId": "review-set-5",
+    "setPosition": 11,
+    "type": "particle_choice",
+    "question": "과도한 업무는 건강 악화___ 이어질 수 있다.",
+    "options": [
+      "에",
+      "으로",
+      "을",
+      "이"
+    ],
+    "answer": "으로",
+    "acceptedAnswers": [
+      "으로"
+    ],
+    "explanation": "결과나 변화로 연결될 때는 'N으로 이어지다'를 쓴다.",
+    "targetPattern": "N으로 이어지다",
+    "patternId": "pattern-19-n으로-이어지다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-19-2",
+    "setId": "review-set-5",
+    "setPosition": 12,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "작은 오해가 심각한 갈등으로 이어질 수 있다.",
+      "작은 오해가 심각한 갈등에 이어질 수 있다.",
+      "작은 오해가 심각한 갈등을 이어질 수 있다.",
+      "작은 오해가 심각한 갈등이 이어질 수 있다."
+    ],
+    "answer": "작은 오해가 심각한 갈등으로 이어질 수 있다.",
+    "acceptedAnswers": [
+      "작은 오해가 심각한 갈등으로 이어질 수 있다."
+    ],
+    "explanation": "결과나 변화로 연결될 때는 'N으로 이어지다'를 쓴다.",
+    "targetPattern": "N으로 이어지다",
+    "patternId": "pattern-19-n으로-이어지다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-19-3",
+    "setId": "review-set-5",
+    "setPosition": 13,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n지속적인 스트레스는 정신 건강 문제에 이어질 수 있다.",
+    "options": [],
+    "answer": "지속적인 스트레스는 정신 건강 문제로 이어질 수 있다.",
+    "acceptedAnswers": [
+      "지속적인 스트레스는 정신 건강 문제로 이어질 수 있다."
+    ],
+    "explanation": "결과나 변화로 연결될 때는 'N으로 이어지다'를 쓴다.",
+    "targetPattern": "N으로 이어지다",
+    "patternId": "pattern-19-n으로-이어지다",
+    "category": "verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-19-4",
+    "setId": "review-set-5",
+    "setPosition": 14,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n삶의 질 저하로 ______",
+    "options": [],
+    "answer": "이어지다",
+    "acceptedAnswers": [
+      "이어지다"
+    ],
+    "explanation": "결과나 변화로 연결될 때는 'N으로 이어지다'를 쓴다.",
+    "targetPattern": "N으로 이어지다",
+    "patternId": "pattern-19-n으로-이어지다",
+    "category": "verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-19-5",
+    "setId": "review-set-5",
+    "setPosition": 15,
+    "type": "particle_choice",
+    "question": "무분별한 소비는 가계 부담___ 이어질 수 있다.",
+    "options": [
+      "으로",
+      "에",
+      "을",
+      "이"
+    ],
+    "answer": "으로",
+    "acceptedAnswers": [
+      "으로"
+    ],
+    "explanation": "결과나 변화로 연결될 때는 'N으로 이어지다'를 쓴다.",
+    "targetPattern": "N으로 이어지다",
+    "patternId": "pattern-19-n으로-이어지다",
+    "category": "verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-20-1",
+    "setId": "review-set-5",
+    "setPosition": 16,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "안전 교육은 사고를 예방하는 데 필요하다.",
+      "안전 교육은 사고가 예방하는 데 필요하다.",
+      "안전 교육은 사고에 예방하는 데 필요하다.",
+      "안전 교육은 사고로 예방하는 데 필요하다."
+    ],
+    "answer": "안전 교육은 사고를 예방하는 데 필요하다.",
+    "acceptedAnswers": [
+      "안전 교육은 사고를 예방하는 데 필요하다."
+    ],
+    "explanation": "사고·질병·범죄 같은 발생 가능한 문제를 목적어로 두고 '예방하다'와 결합한다.",
+    "targetPattern": "N을/를 예방하다",
+    "patternId": "pattern-20-n을-를-예방하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-20-2",
+    "setId": "review-set-5",
+    "setPosition": 17,
+    "type": "particle_choice",
+    "question": "정기 검진은 질병___ 예방하는 데 도움이 된다.",
+    "options": [
+      "이",
+      "을",
+      "에",
+      "으로"
+    ],
+    "answer": "을",
+    "acceptedAnswers": [
+      "을"
+    ],
+    "explanation": "사고·질병·범죄 같은 발생 가능한 문제를 목적어로 두고 '예방하다'와 결합한다.",
+    "targetPattern": "N을/를 예방하다",
+    "patternId": "pattern-20-n을-를-예방하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 1,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-20-3",
+    "setId": "review-set-5",
+    "setPosition": 18,
+    "type": "error_correction",
+    "question": "다음 문장에서 잘못된 부분을 고쳐 쓰시오.\n\n정부는 범죄에 예방하기 위해 조명을 늘렸다.",
+    "options": [],
+    "answer": "정부는 범죄를 예방하기 위해 조명을 늘렸다.",
+    "acceptedAnswers": [
+      "정부는 범죄를 예방하기 위해 조명을 늘렸다."
+    ],
+    "explanation": "사고·질병·범죄 같은 발생 가능한 문제를 목적어로 두고 '예방하다'와 결합한다.",
+    "targetPattern": "N을/를 예방하다",
+    "patternId": "pattern-20-n을-를-예방하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 3,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-20-4",
+    "setId": "review-set-5",
+    "setPosition": 19,
+    "type": "collocation_completion",
+    "question": "다음 표현을 자연스럽게 완성하시오.\n\n감염병을 ______",
+    "options": [],
+    "answer": "예방하다",
+    "acceptedAnswers": [
+      "예방하다"
+    ],
+    "explanation": "사고·질병·범죄 같은 발생 가능한 문제를 목적어로 두고 '예방하다'와 결합한다.",
+    "targetPattern": "N을/를 예방하다",
+    "patternId": "pattern-20-n을-를-예방하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  },
+  {
+    "id": "review-5-20-5",
+    "setId": "review-set-5",
+    "setPosition": 20,
+    "type": "natural_sentence",
+    "question": "가장 자연스러운 문장을 고르시오.",
+    "options": [
+      "개인정보 보호는 금융 범죄를 예방하는 첫걸음이다.",
+      "개인정보 보호는 금융 범죄가 예방하는 첫걸음이다.",
+      "개인정보 보호는 금융 범죄에 예방하는 첫걸음이다.",
+      "개인정보 보호는 금융 범죄로 예방하는 첫걸음이다."
+    ],
+    "answer": "개인정보 보호는 금융 범죄를 예방하는 첫걸음이다.",
+    "acceptedAnswers": [
+      "개인정보 보호는 금융 범죄를 예방하는 첫걸음이다."
+    ],
+    "explanation": "사고·질병·범죄 같은 발생 가능한 문제를 목적어로 두고 '예방하다'와 결합한다.",
+    "targetPattern": "N을/를 예방하다",
+    "patternId": "pattern-20-n을-를-예방하다",
+    "category": "noun_verb_collocation",
+    "difficulty": 2,
+    "source": "general_topik"
+  }
+]

@@ -5,6 +5,7 @@ export function newSessionId(): string {
 }
 
 export interface WritingImageEntry {
+  id: string;
   data: string; // base64-encoded
   mime_type: string;
 }
@@ -30,12 +31,13 @@ export function getSessionImages(
   return imageStore.get(id) ?? null;
 }
 
-/** Small, persistable draft metadata (no images). */
+/** Small, persistable draft metadata with durable server image references. */
 export interface WritingDraft {
   id: string;
   testId: string;
   transcriptions: Record<number, string>;
   charCounts: Record<number, number>;
+  answerImageUrls: Record<number, string[]>;
 }
 
 export function saveWritingDraft(draft: WritingDraft): void {

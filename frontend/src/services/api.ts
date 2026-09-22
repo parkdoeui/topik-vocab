@@ -1,3 +1,5 @@
+import type { WritingTest } from "../types";
+
 const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 const PASSCODE_KEY = "topik_passcode";
 
@@ -26,7 +28,7 @@ function authHeaders(): Record<string, string> {
     : {};
 }
 
-async function apiFetch(
+export async function apiFetch(
   path: string,
   init?: RequestInit,
   includeStoredPasscode = true
@@ -82,6 +84,8 @@ export async function loginWithPasscode(passcode: string): Promise<boolean> {
 // --- Writing API ---
 
 export interface ImagePayload {
+  id: string;
+  question_id: string;
   data: string;      // base64-encoded
   mime_type: string;
 }
@@ -89,14 +93,16 @@ export interface ImagePayload {
 export interface TranscriptionResult {
   transcription: string;
   char_count: number;
+  image_url: string;
 }
 
 export async function transcribeImages(
+  sessionId: string,
   images: ImagePayload[]
 ): Promise<TranscriptionResult[]> {
   const res = await apiFetch("/api/writing-sessions/transcribe", {
     method: "POST",
-    body: JSON.stringify({ images }),
+    body: JSON.stringify({ session_id: sessionId, images }),
   });
   if (!res.ok) throw new Error(`Transcription failed: ${res.status}`);
   const data = await res.json() as { results: TranscriptionResult[] };
@@ -105,6 +111,8 @@ export async function transcribeImages(
 
 export interface WritingAnswerPayload {
   image_urls: string[];
+  question_image_urls?: string[];
+  answer_image_urls: string[];
   transcription: string;
   char_count: number;
 }
@@ -117,6 +125,7 @@ export interface WritingSessionStartPayload {
 export interface WritingSessionStartResponse {
   id: string;
   test_id: string;
+  status: string;
   started_at: string;
   completed_at: string | null;
   total_time_ms: number | null;
@@ -149,13 +158,24 @@ export interface WritingGrading {
 export interface WritingSessionResponse {
   id: string;
   test_id: string;
+  status: string;
   started_at: string;
   completed_at: string;
   total_time_ms: number;
   q53_char_count: number;
   q54_char_count: number;
+  test: WritingTest;
   answers: Record<string, WritingAnswerPayload>;
   grading: WritingGrading;
+}
+
+export async function fetchWritingImage(path: string): Promise<Blob | null> {
+  try {
+    const res = await apiFetch(path);
+    return res.ok ? res.blob() : null;
+  } catch {
+    return null;
+  }
 }
 
 export async function startWritingSession(

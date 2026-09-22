@@ -506,7 +506,8 @@ def grade_writing_submission(
     """
     Grade a TOPIK II writing submission.
 
-    `answers` maps question id (str) to {image_urls, transcription, char_count}.
+    `answers` maps question ids to transcription/count data plus durable question
+    and submitted-answer image references.
     Questions that reference an image are sent with both their full JSON and
     the actual image bytes so content accuracy can be graded visually.
     Returns a dict matching WritingGradingResponse shape.
