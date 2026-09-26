@@ -7,6 +7,9 @@ from config import settings
 _url = settings.database_url
 if _url.startswith("postgres://"):
     _url = "postgresql://" + _url[len("postgres://"):]
+if _url.startswith("postgresql://"):
+    # SQLAlchemy 2.1 defaults this URL to psycopg 3; our installed driver is psycopg2.
+    _url = "postgresql+psycopg2://" + _url[len("postgresql://"):]
 
 engine_kwargs: dict = {}
 if _url.startswith("sqlite"):
