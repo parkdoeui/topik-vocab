@@ -1,11 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { ReviewQuestion } from "./reviewApi";
 import {
-  answerPlaceholder,
   insertReplacementQuestion,
-  isAnswerReady,
-  isChoiceQuestion,
-  submittedAnswer,
 } from "./reviewSession";
 
 const question = (id: string, type: ReviewQuestion["type"] = "particle_choice"): ReviewQuestion => ({
@@ -14,7 +10,7 @@ const question = (id: string, type: ReviewQuestion["type"] = "particle_choice"):
   setPosition: 1,
   type,
   question: "문제___ 직면하다.",
-  options: type === "particle_choice" ? ["를", "에"] : undefined,
+  options: ["를", "에", "가", "으로"],
   targetPattern: "N에 직면하다",
   category: "verb_collocation",
   difficulty: 1,
@@ -52,13 +48,4 @@ describe("review session UI helpers", () => {
       .toThrow(/3–7/);
   });
 
-  it("uses choice values for A/B and text values for C/D", () => {
-    const correction = question("q-c", "error_correction");
-    expect(isChoiceQuestion(question("q-a").type)).toBe(true);
-    expect(isChoiceQuestion(correction.type)).toBe(false);
-    expect(isAnswerReady(question("q-a"), "에", "")).toBe(true);
-    expect(isAnswerReady(correction, "", "문제에 직면하다.")).toBe(true);
-    expect(submittedAnswer(correction, "", "  문제에 직면하다. ")).toBe("문제에 직면하다.");
-    expect(answerPlaceholder("collocation_completion")).toContain("동사");
-  });
 });

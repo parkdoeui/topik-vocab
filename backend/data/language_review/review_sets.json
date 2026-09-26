@@ -1,32 +1,32 @@
 [
   {
-    "id": "review-set-1",
+    "id": "review-v2-set-1",
     "title": "1세트 · 실제 오류 핵심",
     "description": "자주 틀린 조사와 자동사를 먼저 바로잡습니다.",
-    "setPosition": 1
+    "setPosition": 6
   },
   {
-    "id": "review-set-2",
+    "id": "review-v2-set-2",
     "title": "2세트 · 결합 정확도",
     "description": "명사·조사·동사 결합을 문장 안에서 연습합니다.",
-    "setPosition": 2
+    "setPosition": 7
   },
   {
-    "id": "review-set-3",
+    "id": "review-v2-set-3",
     "title": "3세트 · 문어체 표현",
     "description": "TOPIK 쓰기에서 자주 쓰는 문제 해결 표현을 익힙니다.",
-    "setPosition": 3
+    "setPosition": 8
   },
   {
-    "id": "review-set-4",
+    "id": "review-v2-set-4",
     "title": "4세트 · 성과와 환경",
     "description": "논설문에 재사용하기 좋은 핵심 결합을 연습합니다.",
-    "setPosition": 4
+    "setPosition": 9
   },
   {
-    "id": "review-set-5",
-    "title": "5세트 · 종합 생산",
-    "description": "원인·결과와 예방 표현을 직접 생산합니다.",
-    "setPosition": 5
+    "id": "review-v2-set-5",
+    "title": "5세트 · 종합 선택",
+    "description": "원인·결과와 예방 표현을 문장 속에서 선택합니다.",
+    "setPosition": 10
   }
 ]

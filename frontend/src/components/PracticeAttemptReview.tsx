@@ -72,7 +72,7 @@ export function PracticeAttemptReview() {
           return (
             <article key={question.id} className="rounded-2xl border border-gray-200 bg-white p-5 space-y-4">
               <div className="flex items-center justify-between gap-3">
-                <h2 className="font-bold text-gray-900">{questionIndex + 1}번</h2>
+                <h2 className="font-bold text-gray-900">{questionIndex + 1}번{question.question_number ? ` · Q${question.question_number}` : ""}</h2>
                 <span className={`rounded-full px-2.5 py-1 text-xs font-medium tabular-nums ${withinTarget ? "bg-blue-50 text-blue-700" : "bg-amber-50 text-amber-700"}`}>
                   {formatDuration(question.elapsed_ms)} {withinTarget ? "· 1분 안" : "· 시간 초과"}
                 </span>

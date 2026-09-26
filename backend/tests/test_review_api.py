@@ -45,7 +45,7 @@ class ReviewApiTests(unittest.TestCase):
     def start(self, session_id: str = "review-session-1") -> dict:
         response = self.client.post(
             "/api/review/sessions",
-            json={"id": session_id, "set_id": "review-set-1"},
+            json={"id": session_id, "set_id": "review-v2-set-1"},
             headers=self.headers(),
         )
         self.assertEqual(response.status_code, 201)
@@ -60,6 +60,7 @@ class ReviewApiTests(unittest.TestCase):
         session = self.start()
         self.assertEqual(session["initialQuestionCount"], 20)
         self.assertEqual(len(session["questions"]), 20)
+        self.assertTrue(all(len(item["options"]) == 4 for item in session["questions"]))
         self.assertNotIn("answer", session["questions"][0])
         self.assertNotIn("explanation", session["questions"][0])
 
@@ -72,6 +73,38 @@ class ReviewApiTests(unittest.TestCase):
             self.assertEqual(len(saved.session_json["initialQuestionIds"]), 20)
         finally:
             db.close()
+
+    def test_legacy_set_is_hidden_but_completed_result_remains_readable(self) -> None:
+        from datetime import datetime
+
+        db = SessionLocal()
+        try:
+            db.add(ReviewSetRecord(
+                id="review-set-1", title="기존 세트", description="보관용",
+                set_position=1, question_count=20,
+            ))
+            db.add(ReviewSessionRecord(
+                id="legacy-review-result", set_id="review-set-1", status="completed",
+                started_at=datetime(2026, 9, 1), completed_at=datetime(2026, 9, 1),
+                initial_question_count=20, attempted_count=0, correct_count=0,
+                base_correct_count=0,
+                session_json={"initialQuestionIds": [], "supplementalQuestionIds": []},
+            ))
+            db.commit()
+        finally:
+            db.close()
+        listed = self.client.get("/api/review/sets", headers=self.headers())
+        self.assertEqual(len(listed.json()), 5)
+        self.assertTrue(all(item["id"].startswith("review-v2-") for item in listed.json()))
+        old = self.client.get("/api/review/sessions/legacy-review-result", headers=self.headers())
+        self.assertEqual(old.status_code, 200)
+        self.assertEqual(old.json()["setTitle"], "기존 세트")
+        rejected = self.client.post(
+            "/api/review/sessions",
+            json={"id": "new-old", "set_id": "review-set-1"},
+            headers=self.headers(),
+        )
+        self.assertEqual(rejected.status_code, 404)
 
     def test_review_seed_is_idempotent_and_preserves_progress(self) -> None:
         db = SessionLocal()
@@ -146,6 +179,25 @@ class ReviewApiTests(unittest.TestCase):
             assert progress is not None
             self.assertEqual(progress.incorrect_count, 1)
             self.assertEqual(progress.streak, 0)
+        finally:
+            db.close()
+
+    def test_new_review_set_rejects_non_choice_answer(self) -> None:
+        session = self.start("choice-only-session")
+        question = session["questions"][0]
+        response = self.client.post(
+            "/api/review/sessions/choice-only-session/answers",
+            json={
+                "id": "typed-answer", "question_id": question["id"],
+                "sequence_index": 0, "submitted_answer": "임의의 답안",
+                "excluded_question_ids": [],
+            },
+            headers=self.headers(),
+        )
+        self.assertEqual(response.status_code, 409)
+        db = SessionLocal()
+        try:
+            self.assertEqual(db.query(ReviewAnswerRecord).count(), 0)
         finally:
             db.close()
 

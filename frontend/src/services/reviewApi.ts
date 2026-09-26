@@ -12,7 +12,7 @@ export interface ReviewQuestion {
   setPosition: number;
   type: ReviewQuestionType;
   question: string;
-  options?: string[];
+  options: string[];
   targetPattern: string;
   category: string;
   difficulty: 1 | 2 | 3;

@@ -273,6 +273,7 @@ export interface PracticeBlankPayload {
 
 export interface PracticeQuestionPayload {
   id: string;
+  question_number?: 51 | 52 | 53 | 54;
   prompt: string;
   elapsed_ms: number;
   blanks: PracticeBlankPayload[];

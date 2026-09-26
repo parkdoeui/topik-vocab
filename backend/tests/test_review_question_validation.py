@@ -30,6 +30,16 @@ class ReviewQuestionValidationTests(unittest.TestCase):
         self.assertTrue(any("normalized duplicate" in error for error in errors))
         self.assertTrue(any("unknown setId" in error for error in errors))
 
+    def test_correction_and_completion_require_four_single_answer_choices(self) -> None:
+        questions = copy.deepcopy(load_questions())
+        correction = next(item for item in questions if item["type"] == "error_correction")
+        completion = next(item for item in questions if item["type"] == "collocation_completion")
+        correction["options"] = []
+        completion["acceptedAnswers"].append(completion["options"][1])
+        errors = validate_questions(questions)
+        self.assertTrue(any(correction["id"] in error and "four options" in error for error in errors))
+        self.assertTrue(any(completion["id"] in error and "only the canonical" in error for error in errors))
+
     def test_every_set_has_twenty_questions_and_required_mix(self) -> None:
         questions = load_questions()
         for set_id in {question["setId"] for question in questions}:

@@ -59,6 +59,7 @@ describe("ReviewSession", () => {
         setPosition: 2,
         type: "error_correction",
         question: "문제를 직면했다.",
+        options: ["문제를 직면했다.", "문제에 직면했다.", "문제가 직면했다.", "문제로 직면했다."],
         targetPattern: "N에 직면하다",
         category: "verb_collocation",
         difficulty: 3,
@@ -91,6 +92,35 @@ describe("ReviewSession", () => {
     });
 
     expect(screen.getByRole("button", { name: "다음 문제" })).toBeTruthy();
+    expect(screen.queryByRole("textbox")).toBeNull();
+  });
+
+  it("offers radio choices for an error-correction question", async () => {
+    reviewApi.startReviewSession.mockResolvedValueOnce({
+      id: "session-c",
+      setId: "review-set-1",
+      setTitle: "교정",
+      initialQuestionCount: 1,
+      questions: [{
+        id: "correction",
+        setId: "review-set-1",
+        setPosition: 1,
+        type: "error_correction",
+        question: "문제를 직면했다.",
+        options: ["문제를 직면했다.", "문제에 직면했다.", "문제가 직면했다.", "문제로 직면했다."],
+        targetPattern: "N에 직면하다",
+        category: "verb_collocation",
+        difficulty: 3,
+        source: "user_error",
+      }],
+    });
+    const user = userEvent.setup();
+    render(<MemoryRouter initialEntries={["/review/review-set-1"]}><Routes><Route path="/review/:setId" element={<ReviewSession />} /></Routes></MemoryRouter>);
+    await screen.findByRole("radio", { name: "문제를 직면했다." });
+    expect(screen.getAllByRole("radio")).toHaveLength(4);
+    expect(screen.queryByRole("textbox")).toBeNull();
+    await user.click(screen.getByRole("radio", { name: "문제에 직면했다." }));
+    await waitFor(() => expect(reviewApi.submitReviewAnswer).toHaveBeenCalledWith("session-c", expect.objectContaining({ submitted_answer: "문제에 직면했다." })));
   });
 
   it("reuses the answer id when a saved response is retried after a network failure", async () => {

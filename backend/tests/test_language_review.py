@@ -53,8 +53,9 @@ class LanguageReviewAlgorithmTests(unittest.TestCase):
                 now=now + timedelta(days=index),
             )
 
-        self.assertEqual(progress.mastery_level, 4)
-        self.assertEqual(progress.next_review_at, now + timedelta(days=19 + 14))
+        # Multiple-choice recognition does not prove free production mastery.
+        self.assertEqual(progress.mastery_level, 2)
+        self.assertEqual(progress.next_review_at, now + timedelta(days=19 + 3))
 
     def test_priority_orders_real_repeated_recent_errors_first(self) -> None:
         now = datetime(2026, 9, 22, 10, 0, 0)

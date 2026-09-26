@@ -1,0 +1,102 @@
+[
+  {
+    "id": "q53-q54-mixed-01",
+    "title": "Q53·Q54 혼합 1세트 · 교육과 학습",
+    "question_type": "q53-q54-mixed",
+    "target_seconds_per_question": 60,
+    "description": "TOPIK II 53번 자료 서술과 54번 주장 전개의 일부를 짧게 연습합니다. 각 5문항씩 번갈아 풀며, 모든 수치는 연습용입니다.",
+    "accepted_variants_policy": "예시 답안은 유일한 정답이 아닙니다. 문맥과 자료에 맞는 자연스러운 답을 비교하며 복습합니다.",
+    "questions": [
+      {"id":"mixed-01-01","question_number":53,"prompt":"[연습용 조사: 공공도서관 월평균 방문자] 2022년 1,200명 → 2025년 1,800명.\n자료를 보고 문장을 완성하십시오.\n방문자는 2022년 1,200명에서 2025년 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"1,800명으로 증가했다","accepted_variants":[],"focus":"시점별 수치 비교","feedback":"끝 시점의 수치와 증가 방향을 함께 쓰되 자료에 없는 원인은 덧붙이지 않습니다."}]},
+      {"id":"mixed-01-02","question_number":54,"prompt":"[주제: 학교의 토론 수업 / 주장: 토론 수업을 확대해야 한다]\n주장을 뒷받침하는 문장을 완성하십시오.\n토론 수업은 학생들이 서로 다른 의견을 듣고 자신의 생각을 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"논리적으로 표현하는 데 도움이 된다","accepted_variants":[],"focus":"주장과 근거 연결","feedback":"토론의 효과를 추상적인 칭찬보다 구체적인 학습 행동으로 설명합니다."}]},
+      {"id":"mixed-01-03","question_number":53,"prompt":"[연습용 조사: 온라인 강좌 수강 비율] 20대 46%, 60대 이상 18%.\n두 집단을 비교하십시오.\n온라인 강좌 수강 비율은 20대가 46%로, 60대 이상의 18%보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"28%포인트 높았다","accepted_variants":[],"focus":"집단 간 차이","feedback":"46%와 18%의 차이는 28%포인트입니다. 비율의 차이에는 퍼센트포인트를 씁니다."}]},
+      {"id":"mixed-01-04","question_number":54,"prompt":"[주제: 독서 습관]\n문제에 대한 실천 방안을 완성하십시오.\n학생들의 독서 시간을 늘리려면 학교는 다양한 분야의 책을 쉽게 접할 수 있는 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"환경을 조성해야 한다","accepted_variants":[],"focus":"실행 가능한 대안","feedback":"막연히 독서를 권하기보다 학교가 마련할 수 있는 환경을 제안합니다."}]},
+      {"id":"mixed-01-05","question_number":53,"prompt":"[연습용 조사: 학교 동아리 참여자] 1학기 240명, 2학기 300명.\n변화를 한 문장으로 쓰십시오.\n2학기 동아리 참여자는 1학기보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"60명 많았다","accepted_variants":[],"focus":"절대 수량 변화","feedback":"300명에서 240명을 빼 증가 인원을 표현합니다."}]},
+      {"id":"mixed-01-06","question_number":54,"prompt":"[주제: 평생 학습]\n주장의 이유를 완성하십시오.\n평생 학습은 새로운 직무에 적응해야 하는 사람에게 필요한 지식과 기술을 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"익힐 기회를 제공한다","accepted_variants":[],"focus":"필요성 설명","feedback":"평생 학습이 누구에게 어떤 도움을 주는지 분명히 씁니다."}]},
+      {"id":"mixed-01-07","question_number":53,"prompt":"[연습용 조사: 방과 후 프로그램 만족도] 2023년 62%, 2025년 74%.\n두 시점의 수치를 반영하십시오.\n만족도는 2023년 62%에서 2025년 74%로 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"12%포인트 상승했다","accepted_variants":[],"focus":"만족도 변화","feedback":"두 비율의 차이는 12%포인트입니다. 증가 원인은 주어지지 않았습니다."}]},
+      {"id":"mixed-01-08","question_number":54,"prompt":"[주제: 진로 상담]\n문제와 해결책을 연결하십시오.\n진로 정보를 충분히 얻지 못하는 학생을 위해 학교는 전문가와 상담할 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"기회를 제공해야 한다","accepted_variants":[],"focus":"대상에 맞는 대안","feedback":"정보 부족이라는 문제에 직접 대응하는 상담 기회를 제안합니다."}]},
+      {"id":"mixed-01-09","question_number":53,"prompt":"[연습용 조사: 학습 장소 선호] 집 55%, 도서관 30%, 카페 15%.\n가장 높은 항목을 쓰십시오.\n학습 장소로 집을 선호한다는 응답이 55%로 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"가장 높았다","accepted_variants":[],"focus":"최댓값 서술","feedback":"세 항목 가운데 집의 비율이 가장 높다는 사실만 표현합니다."}]},
+      {"id":"mixed-01-10","question_number":54,"prompt":"[주제: 협력 학습 / 앞선 주장: 함께 과제를 수행하면 협력 능력을 기를 수 있다]\n결론 문장을 완성하십시오.\n따라서 학교는 학생들이 함께 과제를 수행하며 협력 능력을 기를 수 있도록 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"모둠 활동을 확대할 필요가 있다","accepted_variants":[],"focus":"결론과 제안","feedback":"제시된 주장인 협력 능력 향상과 연결되는 구체적인 제안을 씁니다."}]}
+    ]
+  },
+  {
+    "id": "q53-q54-mixed-02",
+    "title": "Q53·Q54 혼합 2세트 · 환경과 이동",
+    "question_type": "q53-q54-mixed",
+    "target_seconds_per_question": 60,
+    "description": "교통·자원·에너지 자료를 서술하고 환경 관련 논지를 전개합니다. 모든 수치는 연습용입니다.",
+    "accepted_variants_policy": "예시 답안은 유일한 정답이 아닙니다. 문맥과 자료에 맞는 자연스러운 답을 비교하며 복습합니다.",
+    "questions": [
+      {"id":"mixed-02-01","question_number":53,"prompt":"[연습용 조사: 시내버스 일평균 이용자] 2021년 8만 명, 2025년 10만 명.\n변화를 서술하십시오.\n일평균 이용자는 2021년 8만 명에서 2025년 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"10만 명으로 늘었다","accepted_variants":[],"focus":"이용량 추세","feedback":"두 시점의 정확한 수치를 쓰고 증가 방향을 나타냅니다."}]},
+      {"id":"mixed-02-02","question_number":54,"prompt":"[주제: 대중교통 이용]\n실천 방안을 완성하십시오.\n시민의 대중교통 이용을 늘리기 위해서는 배차 간격을 줄이고 환승을 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"더 편리하게 만들어야 한다","accepted_variants":[],"focus":"구체적인 개선 방안","feedback":"이용 편의라는 한 가지 방향으로 두 대안을 자연스럽게 연결합니다."}]},
+      {"id":"mixed-02-03","question_number":53,"prompt":"[연습용 조사: 재활용품 분리배출 참여율] A구 78%, B구 64%.\n지역 차이를 쓰십시오.\nA구의 참여율은 B구보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"14%포인트 높았다","accepted_variants":[],"focus":"지역 간 비율 비교","feedback":"78%와 64%의 차이인 14%포인트를 사용합니다."}]},
+      {"id":"mixed-02-04","question_number":54,"prompt":"[주제: 일회용품 사용]\n원인에 대한 대안을 완성하십시오.\n일회용품 사용을 줄이려면 소비자가 다회용기를 선택하기 쉬운 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"환경을 조성해야 한다","accepted_variants":[],"focus":"선택을 돕는 조건","feedback":"개인의 노력만 요구하지 않고 실천 가능한 조건을 제안합니다."}]},
+      {"id":"mixed-02-05","question_number":53,"prompt":"[연습용 조사: 자전거 출퇴근 비율] 2020년 6%, 2025년 11%.\n변화의 폭을 쓰십시오.\n자전거 출퇴근 비율은 5년 사이에 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"5%포인트 상승했다","accepted_variants":[],"focus":"비율 변화의 폭","feedback":"11%에서 6%를 빼 5%포인트로 서술합니다."}]},
+      {"id":"mixed-02-06","question_number":54,"prompt":"[주제: 자전거 이용]\n안전을 고려한 정책 제안을 완성하십시오.\n자전거 이용을 장려하려면 먼저 차량과 분리된 자전거 도로를 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"확충할 필요가 있다","accepted_variants":[],"focus":"안전 중심 정책","feedback":"이용 장려와 안전을 함께 고려한 시설 대안을 제시합니다."}]},
+      {"id":"mixed-02-07","question_number":53,"prompt":"[연습용 조사: 가정의 월평균 전력 사용량] 1월 290kWh, 5월 210kWh.\n두 달을 비교하십시오.\n5월의 월평균 전력 사용량은 1월보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"80kWh 적었다","accepted_variants":[],"focus":"단위 포함 비교","feedback":"290에서 210을 뺀 차이와 kWh 단위를 함께 표시합니다."}]},
+      {"id":"mixed-02-08","question_number":54,"prompt":"[주제: 에너지 절약]\n실천 제안을 완성하십시오.\n가정에서 에너지 소비를 줄이려면 사용하지 않는 전자 기기의 전원을 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"끄는 습관을 들여야 한다","accepted_variants":[],"focus":"생활 속 실천","feedback":"실행 가능한 행동을 하나 제시해 주장을 구체화합니다."}]},
+      {"id":"mixed-02-09","question_number":53,"prompt":"[연습용 조사: 공원 방문 목적] 산책 48%, 운동 32%, 휴식 20%.\n가장 낮은 응답을 서술하십시오.\n공원 방문 목적 가운데 휴식은 20%로 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"가장 낮은 비율을 차지했다","accepted_variants":[],"focus":"최솟값 서술","feedback":"제시된 세 목적 중 휴식의 비율이 가장 낮습니다."}]},
+      {"id":"mixed-02-10","question_number":54,"prompt":"[주제: 도시 공원]\n결론을 완성하십시오.\n도시 공원은 주민이 가까운 곳에서 쉬고 운동할 수 있게 하므로 접근성을 높이는 방향으로 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"조성할 필요가 있다","accepted_variants":[],"focus":"이유에 맞는 결론","feedback":"공원의 기능과 접근성이라는 기준을 이어 결론을 만듭니다."}]}
+    ]
+  },
+  {
+    "id": "q53-q54-mixed-03",
+    "title": "Q53·Q54 혼합 3세트 · 디지털 생활",
+    "question_type": "q53-q54-mixed",
+    "target_seconds_per_question": 60,
+    "description": "디지털 이용 자료와 기술 활용에 관한 주장 문장을 연습합니다. 모든 수치는 연습용입니다.",
+    "accepted_variants_policy": "예시 답안은 유일한 정답이 아닙니다. 문맥과 자료에 맞는 자연스러운 답을 비교하며 복습합니다.",
+    "questions": [
+      {"id":"mixed-03-01","question_number":53,"prompt":"[연습용 조사: 60대 이상 모바일 금융 이용률] 2021년 35%, 2025년 52%.\n변화를 쓰십시오.\n이용률은 2021년 35%에서 2025년 52%로 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"17%포인트 상승했다","accepted_variants":[],"focus":"비율의 증가","feedback":"35%와 52%의 차이는 17%포인트입니다."}]},
+      {"id":"mixed-03-02","question_number":54,"prompt":"[주제: 디지털 소외]\n지원 방안을 완성하십시오.\n온라인 서비스 이용이 어려운 사람을 위해서는 대면 안내 창구를 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"유지할 필요가 있다","accepted_variants":[],"focus":"소외를 줄이는 대안","feedback":"모든 이용자가 온라인으로만 절차를 진행할 수 있다고 가정하지 않습니다."}]},
+      {"id":"mixed-03-03","question_number":53,"prompt":"[연습용 조사: 원격 근무 희망 비율] 사무직 63%, 생산직 27%.\n두 직군을 비교하십시오.\n원격 근무를 희망하는 비율은 사무직이 생산직보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"36%포인트 높았다","accepted_variants":[],"focus":"집단 간 차이","feedback":"63%와 27%를 비교하되 희망 이유를 추측하지 않습니다."}]},
+      {"id":"mixed-03-04","question_number":54,"prompt":"[주제: 원격 근무]\n균형 잡힌 주장을 완성하십시오.\n원격 근무는 이동 시간을 줄일 수 있지만 협업이 필요한 업무에서는 원활한 소통을 위한 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"방안을 마련해야 한다","accepted_variants":[],"focus":"장단점 균형","feedback":"장점 뒤에 예상되는 어려움과 대응책을 연결합니다."}]},
+      {"id":"mixed-03-05","question_number":53,"prompt":"[연습용 조사: 온라인 보안 교육 참여자] 작년 400명, 올해 650명.\n증가 인원을 쓰십시오.\n올해 참여자는 작년보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"250명 많았다","accepted_variants":[],"focus":"절대 수량 비교","feedback":"650명에서 400명을 빼 증가 인원을 씁니다."}]},
+      {"id":"mixed-03-06","question_number":54,"prompt":"[주제: 개인정보 보호]\n실천 방안을 완성하십시오.\n개인정보 유출을 예방하려면 이용자는 비밀번호를 정기적으로 바꾸고 알 수 없는 링크를 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"함부로 열지 않아야 한다","accepted_variants":[],"focus":"예방 행동","feedback":"두 실천 행동을 나란히 제시해 주장에 구체성을 더합니다."}]},
+      {"id":"mixed-03-07","question_number":53,"prompt":"[연습용 조사: 온라인 강의 접속 기기] 스마트폰 58%, 노트북 34%, 태블릿 8%.\n두 번째로 높은 항목을 쓰십시오.\n노트북은 34%로, 세 기기 중 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"두 번째로 높은 비율을 보였다","accepted_variants":[],"focus":"순위 서술","feedback":"스마트폰 58% 다음으로 노트북 34%가 높습니다."}]},
+      {"id":"mixed-03-08","question_number":54,"prompt":"[주제: 온라인 정보 판별]\n교육의 필요성을 완성하십시오.\n검증되지 않은 정보가 빠르게 퍼질 수 있으므로 학생들은 정보의 출처를 확인하는 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"습관을 길러야 한다","accepted_variants":[],"focus":"원인과 대응","feedback":"정보 확산의 위험을 출처 확인이라는 행동으로 연결합니다."}]},
+      {"id":"mixed-03-09","question_number":53,"prompt":"[연습용 조사: 전자책 대출 건수] 2023년 9천 건, 2024년 1만 2천 건.\n변화를 쓰십시오.\n전자책 대출 건수는 한 해 동안 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"3천 건 증가했다","accepted_variants":[],"focus":"건수 변화","feedback":"1만 2천 건에서 9천 건을 빼 증가 건수를 씁니다."}]},
+      {"id":"mixed-03-10","question_number":54,"prompt":"[주제: 디지털 학습 도구]\n결론을 완성하십시오.\n학습 도구를 선택할 때는 새로운 기능의 수보다 실제 학습 목표에 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"도움이 되는지를 살펴야 한다","accepted_variants":[],"focus":"판단 기준 제시","feedback":"도구의 인기보다 학습 목표와의 관련성을 기준으로 삼습니다."}]}
+    ]
+  },
+  {
+    "id": "q53-q54-mixed-04",
+    "title": "Q53·Q54 혼합 4세트 · 건강과 공동체",
+    "question_type": "q53-q54-mixed",
+    "target_seconds_per_question": 60,
+    "description": "건강·지역 활동 자료를 읽고 공동체에 관한 대안을 짧게 씁니다. 모든 수치는 연습용입니다.",
+    "accepted_variants_policy": "예시 답안은 유일한 정답이 아닙니다. 문맥과 자료에 맞는 자연스러운 답을 비교하며 복습합니다.",
+    "questions": [
+      {"id":"mixed-04-01","question_number":53,"prompt":"[연습용 조사: 주 3회 이상 운동하는 비율] 2020년 29%, 2025년 41%.\n변화를 서술하십시오.\n주 3회 이상 운동하는 비율은 5년 사이에 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"12%포인트 높아졌다","accepted_variants":[],"focus":"비율 변화","feedback":"41%와 29%의 차이를 퍼센트포인트로 표시합니다."}]},
+      {"id":"mixed-04-02","question_number":54,"prompt":"[주제: 생활 속 운동]\n참여를 늘릴 방안을 완성하십시오.\n운동을 꾸준히 하려면 먼 체육관에 가기보다 집 근처에서 실천할 수 있는 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"활동을 찾는 것이 좋다","accepted_variants":[],"focus":"실천 가능성","feedback":"지속 가능한 운동 습관을 만드는 현실적인 방안을 씁니다."}]},
+      {"id":"mixed-04-03","question_number":53,"prompt":"[연습용 조사: 지역 봉사활동 참여자] 상반기 320명, 하반기 280명.\n감소 인원을 쓰십시오.\n하반기 참여자는 상반기보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"40명 적었다","accepted_variants":[],"focus":"감소 수량","feedback":"320명과 280명의 차이를 감소 방향으로 표현합니다."}]},
+      {"id":"mixed-04-04","question_number":54,"prompt":"[주제: 이웃 간 교류]\n효과를 설명하는 문장을 완성하십시오.\n주민들이 정기적으로 만나 의견을 나누면 서로에 대한 이해를 높이고 갈등을 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"줄이는 데 도움이 된다","accepted_variants":[],"focus":"활동의 효과","feedback":"교류 활동이 어떤 관계 개선으로 이어지는지 설명합니다."}]},
+      {"id":"mixed-04-05","question_number":53,"prompt":"[연습용 조사: 복지관 프로그램 참여자] 건강 강좌 90명, 취미 강좌 120명.\n두 강좌를 비교하십시오.\n취미 강좌 참여자는 건강 강좌 참여자보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"30명 많았다","accepted_variants":[],"focus":"항목 비교","feedback":"120명과 90명의 차이를 정확히 씁니다."}]},
+      {"id":"mixed-04-06","question_number":54,"prompt":"[주제: 고령층의 사회 참여]\n대안을 완성하십시오.\n고령층이 지역 활동에 참여할 수 있도록 복지관은 관심사에 맞는 프로그램을 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"다양하게 마련해야 한다","accepted_variants":[],"focus":"대상에 맞는 프로그램","feedback":"참여 대상의 관심사를 고려한 운영 방안을 제시합니다."}]},
+      {"id":"mixed-04-07","question_number":53,"prompt":"[연습용 조사: 하루 평균 수면 시간] A집단 7.2시간, B집단 6.5시간.\n집단 간 차이를 쓰십시오.\nA집단의 하루 평균 수면 시간은 B집단보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"0.7시간 길었다","accepted_variants":[],"focus":"소수 단위 비교","feedback":"7.2시간에서 6.5시간을 뺀 차이는 0.7시간입니다."}]},
+      {"id":"mixed-04-08","question_number":54,"prompt":"[주제: 충분한 휴식]\n문제 상황에 맞는 제안을 완성하십시오.\n휴식 시간이 부족한 직원이 많다면 조직은 업무량을 점검하고 휴가를 사용하기 쉬운 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"환경을 조성해야 한다","accepted_variants":[],"focus":"조직 차원의 대안","feedback":"개인의 의지만 강조하지 않고 조직이 바꿀 수 있는 조건을 제시합니다."}]},
+      {"id":"mixed-04-09","question_number":53,"prompt":"[연습용 조사: 동네 걷기 모임 참가자] 3월 45명, 6월 75명.\n변화의 폭을 서술하십시오.\n참가자는 3월보다 6월에 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"30명 증가했다","accepted_variants":[],"focus":"기간별 변화","feedback":"75명에서 45명을 빼 증가 인원을 씁니다."}]},
+      {"id":"mixed-04-10","question_number":54,"prompt":"[주제: 지역 자원봉사]\n결론을 완성하십시오.\n자원봉사 활동이 오래 이어지려면 참여자에게 역할을 분명히 안내하고 활동 경험을 나눌 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"기회를 제공할 필요가 있다","accepted_variants":[],"focus":"활동 지속 조건","feedback":"역할 안내와 경험 공유를 연결해 지속 가능한 운영 방안을 씁니다."}]}
+    ]
+  },
+  {
+    "id": "q53-q54-mixed-05",
+    "title": "Q53·Q54 혼합 5세트 · 일과 문화",
+    "question_type": "q53-q54-mixed",
+    "target_seconds_per_question": 60,
+    "description": "고용·여가 자료를 정확히 요약하고 일과 문화에 관한 논지를 완성합니다. 모든 수치는 연습용입니다.",
+    "accepted_variants_policy": "예시 답안은 유일한 정답이 아닙니다. 문맥과 자료에 맞는 자연스러운 답을 비교하며 복습합니다.",
+    "questions": [
+      {"id":"mixed-05-01","question_number":53,"prompt":"[연습용 조사: 청년 직무 교육 수강자] 2022년 500명, 2025년 800명.\n변화를 쓰십시오.\n직무 교육 수강자는 3년 동안 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"300명 증가했다","accepted_variants":[],"focus":"인원 변화","feedback":"800명에서 500명을 빼 증가 인원을 씁니다."}]},
+      {"id":"mixed-05-02","question_number":54,"prompt":"[주제: 취업 준비]\n실행 가능한 지원책을 완성하십시오.\n취업 준비생에게는 단순한 정보 제공뿐 아니라 실제 업무를 경험할 수 있는 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"기회를 제공해야 한다","accepted_variants":[],"focus":"정보와 경험 구분","feedback":"정보 제공을 넘어 실제 직무 경험이라는 대안을 제시합니다."}]},
+      {"id":"mixed-05-03","question_number":53,"prompt":"[연습용 조사: 직장 만족도] 유연 근무 이용자 76%, 미이용자 61%.\n두 집단을 비교하십시오.\n직장 만족도는 유연 근무 이용자가 미이용자보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"15%포인트 높았다","accepted_variants":[],"focus":"상관관계와 차이","feedback":"집단 간 15%포인트 차이만 서술하고 인과관계는 단정하지 않습니다."}]},
+      {"id":"mixed-05-04","question_number":54,"prompt":"[주제: 유연 근무]\n조건을 덧붙여 주장을 완성하십시오.\n유연 근무를 도입할 때는 직원의 선택권을 넓히는 동시에 업무 인수인계 기준을 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"명확히 해야 한다","accepted_variants":[],"focus":"정책 도입의 조건","feedback":"제도의 장점과 운영에 필요한 기준을 함께 제시합니다."}]},
+      {"id":"mixed-05-05","question_number":53,"prompt":"[연습용 조사: 지역 공연 관람객] 봄 1,500명, 가을 2,100명.\n계절별 차이를 쓰십시오.\n가을 관람객은 봄 관람객보다 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"600명 많았다","accepted_variants":[],"focus":"계절별 관람객 비교","feedback":"2,100명과 1,500명의 차이는 600명입니다."}]},
+      {"id":"mixed-05-06","question_number":54,"prompt":"[주제: 지역 문화 활동]\n참여 확대 방안을 완성하십시오.\n지역 공연의 관람 기회를 넓히려면 대중교통으로 접근하기 쉬운 장소에서 행사를 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"개최하는 것이 좋다","accepted_variants":[],"focus":"접근성 개선","feedback":"문화 활동 참여에 영향을 줄 수 있는 이동 편의를 고려합니다."}]},
+      {"id":"mixed-05-07","question_number":53,"prompt":"[연습용 조사: 창업 상담 신청] 2024년 180건, 2025년 240건.\n신청 건수의 변화를 쓰십시오.\n창업 상담 신청은 1년 사이 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"60건 증가했다","accepted_variants":[],"focus":"건수 변화","feedback":"240건에서 180건을 빼 증가 건수를 서술합니다."}]},
+      {"id":"mixed-05-08","question_number":54,"prompt":"[주제: 청년 창업]\n위험을 줄이는 지원책을 완성하십시오.\n창업을 준비하는 청년에게는 초기 비용 지원과 함께 사업 계획을 점검할 수 있는 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"상담 기회가 필요하다","accepted_variants":[],"focus":"복합적인 지원","feedback":"자금 지원과 계획 점검을 함께 제안합니다."}]},
+      {"id":"mixed-05-09","question_number":53,"prompt":"[연습용 조사: 문화센터 강좌 신청] 요리 42%, 음악 33%, 미술 25%.\n가장 높은 항목을 쓰십시오.\n문화센터 강좌 가운데 요리 강좌의 신청 비율이 42%로 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"가장 높았다","accepted_variants":[],"focus":"최고 비율","feedback":"세 강좌 중 요리의 신청 비율이 가장 높습니다."}]},
+      {"id":"mixed-05-10","question_number":54,"prompt":"[주제: 지역 문화 교육]\n마무리 제안을 완성하십시오.\n주민의 문화 활동을 활성화하려면 연령과 관심사에 맞는 강좌를 꾸준히 ( ㉠ ).","blanks":[{"marker":"㉠","model_answer":"운영할 필요가 있다","accepted_variants":[],"focus":"지속성 있는 제안","feedback":"단발성 행사가 아닌 지속적인 강좌 운영을 결론으로 제시합니다."}]}
+    ]
+  }
+]

@@ -195,6 +195,7 @@ class PracticeBlankInput(BaseModel):
 
 class PracticeQuestionInput(BaseModel):
     id: str = Field(min_length=1, max_length=120)
+    question_number: int | None = Field(default=None, ge=51, le=54)
     prompt: str = Field(min_length=1, max_length=10000)
     elapsed_ms: int = Field(ge=0, le=3_600_000)
     blanks: list[PracticeBlankInput] = Field(min_length=1, max_length=5)

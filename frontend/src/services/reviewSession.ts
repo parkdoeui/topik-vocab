@@ -1,27 +1,4 @@
-import type { ReviewQuestion, ReviewQuestionType } from "./reviewApi";
-
-export function isChoiceQuestion(type: ReviewQuestionType): boolean {
-  switch (type) {
-    case "particle_choice":
-    case "natural_sentence":
-      return true;
-    case "error_correction":
-    case "collocation_completion":
-      return false;
-  }
-}
-
-export function answerPlaceholder(type: ReviewQuestionType): string {
-  switch (type) {
-    case "collocation_completion":
-      return "자연스러운 동사를 입력하세요";
-    case "error_correction":
-      return "고친 문장을 입력하세요";
-    case "particle_choice":
-    case "natural_sentence":
-      throw new Error("Choice questions do not use a text-answer placeholder.");
-  }
-}
+import type { ReviewQuestion } from "./reviewApi";
 
 /**
  * Put a wrong-pattern variation after 3–7 intervening questions. The server
@@ -63,22 +40,4 @@ export function insertReplacementQuestion(
     replacement,
     ...withoutReplacement.slice(insertionIndex),
   ];
-}
-
-export function isAnswerReady(
-  question: ReviewQuestion,
-  choice: string,
-  textAnswer: string
-): boolean {
-  return isChoiceQuestion(question.type)
-    ? choice.trim().length > 0
-    : textAnswer.trim().length > 0;
-}
-
-export function submittedAnswer(
-  question: ReviewQuestion,
-  choice: string,
-  textAnswer: string
-): string {
-  return isChoiceQuestion(question.type) ? choice.trim() : textAnswer.trim();
 }

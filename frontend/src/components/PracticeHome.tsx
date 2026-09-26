@@ -17,7 +17,7 @@ function formatDuration(milliseconds: number): string {
 }
 
 function practiceLabel(questionType: string): string {
-  return questionType.startsWith("q51") ? "Q51" : "Q52";
+  return questionType.startsWith("q51") ? "Q51" : questionType.startsWith("q52") ? "Q52" : "Q53 + Q54";
 }
 
 export function PracticeHome() {
@@ -62,7 +62,7 @@ export function PracticeHome() {
       <header>
         <h1 className="text-2xl font-bold text-gray-900">빠른 훈련</h1>
         <p className="mt-2 text-sm leading-relaxed text-gray-500">
-          Q51·Q52를 한 문제씩 1분 안에 풀고, 끝난 뒤 예시 답안과 함께 복습하세요.
+          Q51·Q52 단문과 Q53 자료 서술·Q54 주장 전개의 짧은 문장 훈련입니다. 문제당 1분을 목표로 풀고 예시 답안과 비교해 보세요. 실제 시험의 전체 답안 작성이나 자동 채점은 아닙니다.
         </p>
       </header>
 

@@ -103,6 +103,7 @@ export function PracticeSession() {
       target_seconds_per_question: practiceSet.target_seconds_per_question,
       questions: practiceSet.questions.map((practiceQuestion) => ({
         id: practiceQuestion.id,
+        question_number: practiceQuestion.question_number,
         prompt: practiceQuestion.prompt,
         elapsed_ms: finalElapsedByQuestion[practiceQuestion.id] ?? 0,
         blanks: practiceQuestion.blanks.map((blank) => ({
@@ -163,7 +164,7 @@ export function PracticeSession() {
       <article className="rounded-2xl border border-gray-200 bg-white p-5 space-y-5">
         <div className="flex items-center justify-between">
           <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-semibold text-gray-600">
-            {practiceSet.question_type.startsWith("q51") ? "Q51" : "Q52"}
+            {question.question_number ? `Q${question.question_number}` : practiceSet.question_type.startsWith("q51") ? "Q51" : "Q52"}
           </span>
           <span className="text-xs text-gray-400">한 문제에 집중해 보세요</span>
         </div>

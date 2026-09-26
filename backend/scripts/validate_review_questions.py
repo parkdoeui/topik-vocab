@@ -30,7 +30,6 @@ SET_TYPES = {
     "error_correction": 4,
     "collocation_completion": 4,
 }
-CHOICE_TYPES = {"particle_choice", "natural_sentence"}
 
 
 def validate_questions(
@@ -96,18 +95,13 @@ def validate_questions(
         normalized_options = [normalize_expression(str(option)) for option in options]
         if len(normalized_options) != len(set(normalized_options)):
             errors.append(f"{question_id}: options must be unique")
-        if qtype in CHOICE_TYPES:
-            if len(options) != 4:
-                errors.append(f"{question_id}: choice question requires four options")
-            if normalized_options.count(normalize_expression(answer)) != 1:
-                errors.append(f"{question_id}: choice answer must match exactly one option")
-        elif options:
-            errors.append(f"{question_id}: free-response question must not have options")
+        if len(options) != 4:
+            errors.append(f"{question_id}: every question requires four options")
+        if normalized_options.count(normalize_expression(answer)) != 1:
+            errors.append(f"{question_id}: answer must match exactly one option")
         accepted = question.get("acceptedAnswers", [])
-        if not isinstance(accepted, list) or normalize_expression(answer) not in {
-            normalize_expression(str(value)) for value in accepted
-        }:
-            errors.append(f"{question_id}: canonical answer must be accepted")
+        if not isinstance(accepted, list) or len(accepted) != 1 or normalize_expression(str(accepted[0])) != normalize_expression(answer):
+            errors.append(f"{question_id}: only the canonical choice answer may be accepted")
 
     if set(by_set) != expected_set_ids:
         errors.append("question set membership does not match review set definitions")

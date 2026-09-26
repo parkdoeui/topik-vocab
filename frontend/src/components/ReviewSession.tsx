@@ -9,11 +9,7 @@ import {
   type ReviewSessionResponse,
 } from "../services/reviewApi";
 import {
-  answerPlaceholder,
   insertReplacementQuestion,
-  isAnswerReady,
-  isChoiceQuestion,
-  submittedAnswer,
 } from "../services/reviewSession";
 
 function questionKind(question: ReviewQuestion): string {
@@ -33,7 +29,6 @@ export function ReviewSession() {
   const [queue, setQueue] = useState<ReviewQuestion[]>([]);
   const [index, setIndex] = useState(0);
   const [choice, setChoice] = useState("");
-  const [textAnswer, setTextAnswer] = useState("");
   const [feedback, setFeedback] = useState<ReviewFeedback | null>(null);
   const [answeredIds, setAnsweredIds] = useState<string[]>([]);
   const [answerIds, setAnswerIds] = useState<Record<string, string>>({});
@@ -114,7 +109,6 @@ export function ReviewSession() {
     }
     setIndex((current) => current + 1);
     setChoice("");
-    setTextAnswer("");
     setFeedback(null);
     setError(null);
   }
@@ -130,8 +124,6 @@ export function ReviewSession() {
       </div>
     );
   }
-  const isChoice = isChoiceQuestion(question.type);
-  const selected = submittedAnswer(question, choice, textAnswer);
   const percentage = Math.min(100, ((index + 1) / Math.max(session.initialQuestionCount, 1)) * 100);
 
   return (
@@ -155,9 +147,8 @@ export function ReviewSession() {
       <article className="rounded-2xl border border-gray-200 bg-white p-5 space-y-5">
         <p className="whitespace-pre-line text-lg leading-loose text-gray-900">{question.question}</p>
 
-        {isChoice ? (
-          <div className="space-y-2" role="radiogroup" aria-label="답안 선택">
-            {question.options?.map((option) => {
+        <div className="space-y-2" role="radiogroup" aria-label="답안 선택">
+            {question.options.map((option) => {
               const selectedOption = choice === option;
               const isCorrect = feedback?.correctAnswer === option;
               const isWrongSelection = feedback && selectedOption && !feedback.correct;
@@ -187,36 +178,13 @@ export function ReviewSession() {
               );
             })}
           </div>
-        ) : (
-          <div className="space-y-3">
-            <label htmlFor="review-answer" className="text-sm font-medium text-gray-700">답안</label>
-            <textarea
-              id="review-answer"
-              value={textAnswer}
-              disabled={Boolean(feedback) || submitting}
-              onChange={(event) => setTextAnswer(event.target.value)}
-              placeholder={answerPlaceholder(question.type)}
-              className="min-h-28 w-full rounded-xl border border-gray-200 px-3 py-3 text-sm leading-relaxed text-gray-900 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 disabled:bg-gray-50"
-            />
-            {!feedback && (
-              <button
-                type="button"
-                disabled={!isAnswerReady(question, choice, textAnswer) || submitting}
-                onClick={() => void grade(selected)}
-                className="rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-blue-700 disabled:bg-gray-300"
-              >
-                {submitting ? "확인 중…" : "정답 확인"}
-              </button>
-            )}
-          </div>
-        )}
 
         {feedback && (
           <section role="status" className={`rounded-xl border p-4 ${feedback.correct ? "border-green-200 bg-green-50" : "border-amber-200 bg-amber-50"}`}>
             <p className={`text-sm font-bold ${feedback.correct ? "text-green-800" : "text-amber-800"}`}>
               {feedback.correct ? "✓ 정답입니다" : "✕ 다시 익혀 볼 표현입니다"}
             </p>
-            {!feedback.correct && <p className="mt-2 text-sm text-gray-700">내 답: {selected}</p>}
+            {!feedback.correct && <p className="mt-2 text-sm text-gray-700">내 답: {choice}</p>}
             <p className="mt-2 text-base font-semibold text-gray-900">{feedback.correctAnswer}</p>
             <p className="mt-1 text-sm leading-relaxed text-gray-700">{feedback.explanation}</p>
             {feedback.replacementQuestion && (

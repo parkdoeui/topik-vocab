@@ -115,6 +115,24 @@ class PracticeAttemptApiTests(unittest.TestCase):
         )
         self.assertEqual(invalid.status_code, 422)
 
+    def test_mixed_q53_q54_question_numbers_are_saved(self) -> None:
+        payload = self.payload("mixed-attempt")
+        payload["set_id"] = "q53-q54-mixed-01"
+        payload["question_type"] = "q53-q54-mixed"
+        for index, question in enumerate(payload["questions"]):
+            question["question_number"] = 53 if index % 2 == 0 else 54
+
+        created = self.client.post(
+            "/api/practice-attempts", json=payload, headers=self.headers()
+        )
+        self.assertEqual(created.status_code, 201)
+        reopened = self.client.get(
+            "/api/practice-attempts/mixed-attempt", headers=self.headers()
+        )
+        self.assertEqual(reopened.status_code, 200)
+        numbers = [item["question_number"] for item in reopened.json()["questions"]]
+        self.assertEqual(numbers, [53, 54] * 5)
+
     def test_existing_writing_database_is_migrated_into_one_lifecycle_table(self) -> None:
         Base.metadata.drop_all(bind=engine)
         with engine.begin() as connection:

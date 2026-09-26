@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 from typing import Any
 
 from sqlalchemy.orm import Session
+from language_review_data import load_review_sets
 
 from models import (
     LanguageErrorExampleRecord,
@@ -21,9 +22,10 @@ from models import (
 TYPE_CAPABILITY = {
     "particle_choice": 2,
     "natural_sentence": 2,
-    "error_correction": 3,
-    "collocation_completion": 4,
+    "error_correction": 2,
+    "collocation_completion": 2,
 }
+CURRENT_REVIEW_SET_IDS = tuple(item["id"] for item in load_review_sets())
 REVIEW_INTERVAL_DAYS = (0, 1, 3, 7, 14)
 
 
@@ -105,7 +107,7 @@ def build_review_session(
     db: Session, session_id: str, set_id: str, now: datetime
 ) -> dict[str, Any]:
     review_set = db.get(ReviewSetRecord, set_id)
-    if review_set is None:
+    if review_set is None or set_id not in CURRENT_REVIEW_SET_IDS:
         raise LookupError("Review set not found")
     questions = (
         db.query(ReviewQuestionRecord)
@@ -237,6 +239,8 @@ def save_answer_and_update_progress(
     question = db.get(ReviewQuestionRecord, question_id)
     if question is None:
         raise LookupError("Review question not found")
+    if question.set_id in CURRENT_REVIEW_SET_IDS and submitted_answer not in question.question_json.get("options", []):
+        raise ValueError("Submitted answer must be one of the displayed choices")
     progress = _progress_for(db, question.pattern_id)
     correct = answer_is_correct(question.question_json, submitted_answer)
     update_progress(progress, correct=correct, question_type=question.question_type, now=now)
@@ -244,13 +248,20 @@ def save_answer_and_update_progress(
     insert_after: int | None = None
     if not correct:
         seen = set(excluded_question_ids) | {question_id}
-        candidates = (
+        candidate_query = (
             db.query(ReviewQuestionRecord)
             .filter(ReviewQuestionRecord.pattern_id == question.pattern_id)
             .filter(ReviewQuestionRecord.id.not_in(seen))
-            .order_by(ReviewQuestionRecord.set_id, ReviewQuestionRecord.set_position)
-            .all()
         )
+        if question.set_id in CURRENT_REVIEW_SET_IDS:
+            candidate_query = candidate_query.filter(
+                ReviewQuestionRecord.set_id.in_(CURRENT_REVIEW_SET_IDS)
+            )
+        else:
+            candidate_query = candidate_query.filter(ReviewQuestionRecord.set_id == question.set_id)
+        candidates = candidate_query.order_by(
+            ReviewQuestionRecord.set_id, ReviewQuestionRecord.set_position
+        ).all()
         if candidates:
             replacement = candidates[0]
             insert_after = wrong_answer_offset(question.pattern_id, progress.incorrect_count)
@@ -340,7 +351,9 @@ def complete_review_session(db: Session, session_id: str, now: datetime) -> dict
 
 def review_set_summaries(db: Session) -> list[dict[str, Any]]:
     results: list[dict[str, Any]] = []
-    for review_set in db.query(ReviewSetRecord).order_by(ReviewSetRecord.set_position).all():
+    for review_set in db.query(ReviewSetRecord).filter(
+        ReviewSetRecord.id.in_(CURRENT_REVIEW_SET_IDS)
+    ).order_by(ReviewSetRecord.set_position).all():
         latest = (
             db.query(ReviewSessionRecord)
             .filter(ReviewSessionRecord.set_id == review_set.id)
