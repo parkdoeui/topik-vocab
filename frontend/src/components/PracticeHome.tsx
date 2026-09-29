@@ -17,6 +17,7 @@ function formatDuration(milliseconds: number): string {
 }
 
 function practiceLabel(questionType: string): string {
+  if (questionType === "q51-q52-mixed") return "Q51 + Q52";
   return questionType.startsWith("q51") ? "Q51" : questionType.startsWith("q52") ? "Q52" : "Q53 + Q54";
 }
 
@@ -60,9 +61,9 @@ export function PracticeHome() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-8 w-full space-y-8">
       <header>
-        <h1 className="text-2xl font-bold text-gray-900">빠른 훈련</h1>
+        <h1 className="text-2xl font-bold text-gray-900">Q51/Q52 연습</h1>
         <p className="mt-2 text-sm leading-relaxed text-gray-500">
-          Q51·Q52 단문과 Q53 자료 서술·Q54 주장 전개의 짧은 문장 훈련입니다. 문제당 1분을 목표로 풀고 예시 답안과 비교해 보세요. 실제 시험의 전체 답안 작성이나 자동 채점은 아닙니다.
+          기술·환경·도시·문화·경제·공공정책의 6개 주제별 세트입니다. 세트마다 Q51 안내·문의 글 5문항과 Q52 설명 글 5문항을 번갈아 풀어 보세요. 각 문항의 두 빈칸을 합쳐 1분이 목표입니다. 직접 만든 연습 자료이며, 자동 채점 대신 제출 후 예시 답안과 비교합니다.
         </p>
       </header>
 

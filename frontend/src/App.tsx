@@ -8,12 +8,12 @@ const navClass = ({ isActive }: { isActive: boolean }) =>
 
 function NavBar() {
   return (
-    <nav className="border-b border-gray-200 bg-white px-4 md:px-6 py-3 flex items-center gap-6 shrink-0">
+    <nav className="border-b border-gray-200 bg-white px-4 md:px-6 py-3 flex flex-wrap items-center gap-x-4 gap-y-2 md:gap-x-6 shrink-0">
       <Link to="/" className="font-bold text-gray-900 text-sm md:text-base">
         TOPIK Practice
       </Link>
       <NavLink to="/" end className={navClass}>쓰기</NavLink>
-      <NavLink to="/practice" className={navClass}>빠른 훈련</NavLink>
+      <NavLink to="/practice" className={navClass}>Q51/Q52 연습</NavLink>
       <NavLink to="/review" className={navClass}>표현 복습</NavLink>
       <NavLink to="/progress" className={navClass}>Progress</NavLink>
     </nav>

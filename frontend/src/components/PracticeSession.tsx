@@ -42,7 +42,7 @@ export function PracticeSession() {
     return (
       <div className="flex-1 flex flex-col items-center justify-center gap-3 text-sm text-gray-500">
         <p>연습 세트를 찾을 수 없습니다.</p>
-        <Link to="/practice" className="text-blue-600 hover:underline">빠른 훈련으로</Link>
+        <Link to="/practice" className="text-blue-600 hover:underline">Q51/Q52 연습으로</Link>
       </div>
     );
   }
@@ -136,7 +136,7 @@ export function PracticeSession() {
     <div className="max-w-2xl mx-auto px-4 py-6 w-full space-y-5">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <Link to="/practice" className="text-xs font-medium text-blue-600 hover:underline">← 빠른 훈련</Link>
+          <Link to="/practice" className="text-xs font-medium text-blue-600 hover:underline">← Q51/Q52 연습</Link>
           <p className="mt-2 text-xs text-gray-400">{practiceSet.title}</p>
           <p className="text-sm font-semibold text-gray-700">{questionIndex + 1} / {practiceSet.questions.length}</p>
         </div>
@@ -166,10 +166,13 @@ export function PracticeSession() {
           <span className="rounded-full bg-gray-100 px-2.5 py-1 text-xs font-semibold text-gray-600">
             {question.question_number ? `Q${question.question_number}` : practiceSet.question_type.startsWith("q51") ? "Q51" : "Q52"}
           </span>
-          <span className="text-xs text-gray-400">한 문제에 집중해 보세요</span>
+          <span className="text-xs text-gray-400">두 빈칸을 합쳐 1분</span>
         </div>
 
         <div className="rounded-xl bg-gray-50 p-4">
+          <p className="mb-3 text-xs leading-relaxed text-gray-500">
+            ㉠과 ㉡에 들어갈 표현을 써서 문장을 완성하세요. 빈칸 앞뒤의 말과 문장 부호는 다시 쓰지 마세요.
+          </p>
           <p className="whitespace-pre-line text-sm leading-loose text-gray-800">{question.prompt}</p>
         </div>
 

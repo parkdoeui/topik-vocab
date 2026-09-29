@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
+import { getPracticeSet } from "../data/practiceSets";
 import { getPracticeAttempt, type PracticeAttemptResponse } from "../services/api";
 
 function formatDuration(milliseconds: number): string {
@@ -37,7 +38,7 @@ export function PracticeAttemptReview() {
     return (
       <div className="flex-1 flex flex-col items-center justify-center gap-3 text-sm text-gray-500">
         <p>풀이 결과를 찾을 수 없습니다.</p>
-        <Link to="/practice" className="text-blue-600 hover:underline">빠른 훈련으로</Link>
+        <Link to="/practice" className="text-blue-600 hover:underline">Q51/Q52 연습으로</Link>
       </div>
     );
   }
@@ -120,10 +121,10 @@ export function PracticeAttemptReview() {
           풀이 기록
         </Link>
         <Link
-          to={`/practice/${attempt.set_id}`}
+          to={getPracticeSet(attempt.set_id) ? `/practice/${attempt.set_id}` : "/practice"}
           className="rounded-xl bg-blue-600 px-4 py-3 text-center text-sm font-medium text-white hover:bg-blue-700"
         >
-          다시 풀기
+          {getPracticeSet(attempt.set_id) ? "다시 풀기" : "새 세트 고르기"}
         </Link>
       </div>
     </div>

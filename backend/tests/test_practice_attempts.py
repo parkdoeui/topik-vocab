@@ -133,6 +133,70 @@ class PracticeAttemptApiTests(unittest.TestCase):
         numbers = [item["question_number"] for item in reopened.json()["questions"]]
         self.assertEqual(numbers, [53, 54] * 5)
 
+    def test_all_six_themed_q51_q52_sets_save_complete_snapshots(self) -> None:
+        import json
+
+        # Read the same canonical authored bank imported by the frontend.
+        bank_path = Path(__file__).resolve().parents[2] / (
+            "frontend/src/data/writing-practice/q51-q52-themed-sets.json"
+        )
+        sets = json.loads(bank_path.read_text(encoding="utf-8"))
+        self.assertEqual(len(sets), 6)
+        for practice_set in sets:
+            with self.subTest(set_id=practice_set["id"]):
+                attempt_id = f"saved-{practice_set['id']}"
+                payload = self.payload(attempt_id)
+                payload.update(
+                    set_id=practice_set["id"],
+                    set_title=practice_set["title"],
+                    question_type=practice_set["question_type"],
+                    target_seconds_per_question=practice_set["target_seconds_per_question"],
+                    questions=[
+                        {
+                            **question,
+                            "elapsed_ms": 45_000,
+                            "blanks": [
+                                {**blank, "submitted_answer": f" {blank['model_answer']} "}
+                                for blank in question["blanks"]
+                            ],
+                        }
+                        for question in practice_set["questions"]
+                    ],
+                )
+                created = self.client.post(
+                    "/api/practice-attempts", json=payload, headers=self.headers()
+                )
+                self.assertEqual(created.status_code, 201, created.text)
+                retry = self.client.post(
+                    "/api/practice-attempts", json=payload, headers=self.headers()
+                )
+                self.assertEqual(retry.status_code, 200)
+                reopened = self.client.get(
+                    f"/api/practice-attempts/{attempt_id}", headers=self.headers()
+                )
+                self.assertEqual(reopened.status_code, 200)
+                saved = reopened.json()
+                self.assertEqual(saved["question_type"], "q51-q52-mixed")
+                self.assertEqual(saved["question_count"], 10)
+                self.assertEqual(saved["within_target_count"], 10)
+                self.assertEqual(saved["target_seconds_per_question"], 60)
+                self.assertEqual(
+                    [question["question_number"] for question in saved["questions"]],
+                    [51, 52] * 5,
+                )
+                for source, question in zip(practice_set["questions"], saved["questions"]):
+                    self.assertEqual(question["id"], source["id"])
+                    self.assertEqual(question["prompt"], source["prompt"])
+                    self.assertEqual(len(question["blanks"]), 2)
+                    for source_blank, saved_blank in zip(source["blanks"], question["blanks"]):
+                        self.assertEqual(saved_blank, {
+                            **source_blank, "submitted_answer": source_blank["model_answer"]
+                        })
+
+        history = self.client.get("/api/practice-attempts", headers=self.headers())
+        self.assertEqual(history.status_code, 200)
+        self.assertEqual(len(history.json()), 6)
+
     def test_existing_writing_database_is_migrated_into_one_lifecycle_table(self) -> None:
         Base.metadata.drop_all(bind=engine)
         with engine.begin() as connection:
