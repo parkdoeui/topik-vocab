@@ -13,8 +13,10 @@ const TYPE_LABELS: Record<string, string> = {
 
 type LatestResult = { id: string; date: string };
 
-function getCachedLatestResults(): Record<string, LatestResult> {
-  const latest: Record<string, LatestResult> = {};
+type WritingHistory = Record<string, { latest: LatestResult; count: number }>;
+
+function getCachedHistory(): WritingHistory {
+  const history: WritingHistory = {};
 
   try {
     for (let index = 0; index < localStorage.length; index += 1) {
@@ -28,10 +30,13 @@ function getCachedLatestResults(): Record<string, LatestResult> {
         const result = JSON.parse(raw) as Partial<WritingSessionResponse>;
         if (!result?.id || !result.test_id || !result.completed_at) continue;
 
-        const current = latest[result.test_id];
-        if (!current || result.completed_at > current.date) {
-          latest[result.test_id] = { id: result.id, date: result.completed_at };
-        }
+        const current = history[result.test_id];
+        history[result.test_id] = {
+          latest: !current || result.completed_at > current.latest.date
+            ? { id: result.id, date: result.completed_at }
+            : current.latest,
+          count: (current?.count ?? 0) + 1,
+        };
       } catch {
         // Ignore an invalid cached result without hiding the remaining results.
       }
@@ -40,13 +45,12 @@ function getCachedLatestResults(): Record<string, LatestResult> {
     // Server progress still provides result links when storage is unavailable.
   }
 
-  return latest;
+  return history;
 }
 
 export function WritingHome() {
   const navigate = useNavigate();
-  const [latestResultByTest, setLatestResultByTest] =
-    useState<Record<string, LatestResult>>(getCachedLatestResults);
+  const [historyByTest, setHistoryByTest] = useState<WritingHistory>(getCachedHistory);
   const [startingTestId, setStartingTestId] = useState<string | null>(null);
   const [startError, setStartError] = useState<string | null>(null);
 
@@ -55,15 +59,18 @@ export function WritingHome() {
     getProgress().then((progress) => {
       if (cancelled || !progress) return;
 
-      setLatestResultByTest((currentResults) => {
-        const latest = { ...currentResults };
+      setHistoryByTest(() => {
+        const history: WritingHistory = {};
         for (const session of progress.sessions) {
-          const current = latest[session.test_id];
-          if (!current || session.date > current.date) {
-            latest[session.test_id] = { id: session.id, date: session.date };
-          }
+          const current = history[session.test_id];
+          history[session.test_id] = {
+            latest: !current || session.date > current.latest.date
+              ? { id: session.id, date: session.date }
+              : current.latest,
+            count: (current?.count ?? 0) + 1,
+          };
         }
-        return latest;
+        return history;
       });
     });
     return () => {
@@ -104,7 +111,8 @@ export function WritingHome() {
         {writingTests.map((test) => {
           const types = [...new Set(test.questions.map((q) => TYPE_LABELS[q.type] ?? q.type))];
           const totalPoints = test.questions.reduce((s, q) => s + q.max_points, 0);
-          const result = latestResultByTest[test.id];
+          const history = historyByTest[test.id];
+          const result = history?.latest;
 
           return (
             <div
@@ -116,6 +124,7 @@ export function WritingHome() {
                 <p className="text-xs text-gray-400 mt-0.5">
                   {test.questions.length}문제 · {totalPoints}점 · {test.time_limit_minutes}분
                 </p>
+                <p className="mt-1 text-xs font-medium text-gray-600">완료 {history?.count ?? 0}회</p>
                 <div className="flex flex-wrap gap-1 mt-2">
                   {types.map((t) => (
                     <span
@@ -134,14 +143,14 @@ export function WritingHome() {
                   disabled={startingTestId !== null}
                   className="flex-1 whitespace-nowrap rounded-xl bg-blue-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-blue-700 disabled:bg-gray-300 sm:flex-none"
                 >
-                  {startingTestId === test.id ? "시작 중…" : "시작"}
+                  {startingTestId === test.id ? "시작 중…" : result ? "다시 풀기" : "시작"}
                 </button>
                 {result && (
                   <Link
                     to={`/writing-results/${result.id}`}
                     className="flex-1 whitespace-nowrap rounded-xl border border-blue-200 px-4 py-2 text-center text-sm font-medium text-blue-700 transition-colors hover:bg-blue-50 sm:flex-none"
                   >
-                    채점 결과 보기
+                    최근 채점 결과
                   </Link>
                 )}
               </div>

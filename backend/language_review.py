@@ -331,6 +331,17 @@ def review_result(db: Session, session: ReviewSessionRecord) -> dict[str, Any]:
         "baseCorrectCount": sum(1 for answer in answers if answer.correct and not answer.is_supplemental),
         "supplementalAttemptCount": sum(1 for answer in answers if answer.is_supplemental),
         "missedPatterns": list(missed.values()),
+        "answers": [
+            {
+                "question": str(answer.answer_json.get("question", {}).get("question", "")),
+                "submittedAnswer": answer.submitted_answer,
+                "correctAnswer": str(answer.answer_json.get("feedback", {}).get("correctAnswer", "")),
+                "correct": answer.correct,
+                "explanation": str(answer.answer_json.get("feedback", {}).get("explanation", "")),
+                "isSupplemental": answer.is_supplemental,
+            }
+            for answer in answers
+        ],
     }
 
 
@@ -368,6 +379,7 @@ def review_set_summaries(db: Session) -> list[dict[str, Any]]:
             "questionCount": review_set.question_count,
             "latestBaseCorrectCount": latest.base_correct_count if latest else None,
             "latestCompletedAt": latest.completed_at.isoformat() if latest and latest.completed_at else None,
+            "latestSessionId": latest.id if latest else None,
         })
     return results
 

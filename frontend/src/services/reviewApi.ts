@@ -26,6 +26,7 @@ export interface ReviewSetSummary {
   questionCount: number;
   latestBaseCorrectCount: number | null;
   latestCompletedAt: string | null;
+  latestSessionId: string | null;
 }
 
 export interface ReviewSessionResponse {
@@ -72,6 +73,14 @@ export interface ReviewResult {
   missedPatterns: Array<{
     pattern: string;
     naturalExpression: string;
+  }>;
+  answers: Array<{
+    question: string;
+    submittedAnswer: string;
+    correctAnswer: string;
+    correct: boolean;
+    explanation: string;
+    isSupplemental: boolean;
   }>;
 }
 

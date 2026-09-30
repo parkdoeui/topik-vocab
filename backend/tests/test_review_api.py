@@ -230,12 +230,49 @@ class ReviewApiTests(unittest.TestCase):
         self.assertEqual(result["status"], "completed")
         self.assertEqual(result["attemptedCount"], 1)
         self.assertIsNotNone(result["completedAt"])
+        self.assertEqual(result["answers"], [{
+            "question": question["question"],
+            "submittedAnswer": "에",
+            "correctAnswer": "에",
+            "correct": True,
+            "explanation": response.json()["explanation"],
+            "isSupplemental": False,
+        }])
+
+        sets = self.client.get("/api/review/sets", headers=self.headers()).json()
+        completed_set = next(item for item in sets if item["id"] == session["setId"])
+        self.assertEqual(completed_set["latestSessionId"], "review-session-result")
 
         reopened = self.client.get(
             "/api/review/sessions/review-session-result", headers=self.headers()
         )
         self.assertEqual(reopened.status_code, 200)
         self.assertEqual(reopened.json()["attemptedCount"], 1)
+        self.assertEqual(reopened.json()["answers"], result["answers"])
+
+    def test_result_retains_wrong_answer_and_correct_choice(self) -> None:
+        session = self.start("wrong-result")
+        question = next(
+            item for item in session["questions"]
+            if item["targetPattern"] == "N에 직면하다" and item["type"] == "particle_choice"
+        )
+        wrong = next(option for option in question["options"] if option != "에")
+        response = self.client.post(
+            "/api/review/sessions/wrong-result/answers",
+            json={
+                "id": "wrong-answer", "question_id": question["id"],
+                "sequence_index": 0, "submitted_answer": wrong,
+                "excluded_question_ids": [question["id"]],
+            },
+            headers=self.headers(),
+        )
+        self.assertEqual(response.status_code, 200)
+        result = self.client.post(
+            "/api/review/sessions/wrong-result/complete", headers=self.headers()
+        ).json()
+        self.assertEqual(result["answers"][0]["submittedAnswer"], wrong)
+        self.assertEqual(result["answers"][0]["correctAnswer"], "에")
+        self.assertFalse(result["answers"][0]["correct"])
 
     def test_my_errors_is_frequency_sorted_and_review_routes_require_auth(self) -> None:
         unauthenticated = self.client.get("/api/review/errors")

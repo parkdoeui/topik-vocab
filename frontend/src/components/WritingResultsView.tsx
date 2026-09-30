@@ -47,6 +47,9 @@ function QuestionCard({
   charCount,
   minChars,
   maxChars,
+  instruction,
+  prompt,
+  questionImageUrls,
   answerImageUrls,
 }: {
   number: number;
@@ -56,6 +59,9 @@ function QuestionCard({
   charCount?: number;
   minChars?: number;
   maxChars?: number;
+  instruction: string;
+  prompt: string;
+  questionImageUrls: string[];
   answerImageUrls?: string[];
 }) {
   const maxScore = grading.max_score || maxPoints;
@@ -86,20 +92,38 @@ function QuestionCard({
 
       <ScoreBar score={grading.score} max={maxScore} />
 
+      <section className="space-y-3" aria-label={`${number}번 문제 지문`}>
+        <h3 className="text-sm font-semibold text-gray-900">문제 지문</h3>
+        <p className="text-sm leading-relaxed text-gray-600">{instruction}</p>
+        {prompt && (
+          <p className="whitespace-pre-line rounded-xl bg-gray-50 p-4 text-sm leading-loose text-gray-800">
+            {prompt}
+          </p>
+        )}
+        {questionImageUrls.map((url, index) => (
+          <img
+            key={url}
+            src={url}
+            alt={`${number}번 문제 자료 ${index + 1}`}
+            className="w-full rounded-xl border border-gray-200"
+          />
+        ))}
+      </section>
+
       {answerImageUrls && answerImageUrls.length > 0 && (
-        <details className="text-xs text-gray-500">
-          <summary className="cursor-pointer hover:text-gray-700">제출한 답안 사진 보기</summary>
-          <div className="mt-2 flex gap-2 overflow-x-auto pb-1">
+        <section className="space-y-3" aria-label={`${number}번 제출한 답안 사진`}>
+          <h3 className="text-sm font-semibold text-gray-900">제출한 답안 사진</h3>
+          <div className="space-y-3">
             {answerImageUrls.map((url, index) => (
               <StoredWritingImage
                 key={url}
                 path={url}
                 alt={`${number}번 답안 사진 ${index + 1}`}
-                className="h-32 w-auto shrink-0 rounded-lg border border-gray-200"
+                className="w-full rounded-xl border border-gray-200 bg-gray-50"
               />
             ))}
           </div>
-        </details>
+        </section>
       )}
 
       {/* Current state / next goal */}
@@ -172,7 +196,7 @@ function QuestionCard({
       {/* Submitted answer */}
       {transcription && (
         <details className="text-xs text-gray-400">
-          <summary className="cursor-pointer hover:text-gray-600">제출한 답안 보기</summary>
+          <summary className="cursor-pointer hover:text-gray-600">인식된 답안 텍스트 보기</summary>
           <p className="mt-2 leading-relaxed whitespace-pre-wrap text-gray-600 bg-gray-50 rounded-lg p-3">
             {transcription}
           </p>
@@ -261,13 +285,22 @@ export function WritingResultsView() {
       {(test?.questions ?? []).map((q) => {
         const g = questions[String(q.number)];
         if (!g) return null;
+        const questionImageUrls = q.image_urls?.length
+          ? q.image_urls
+          : q.image_url ? [`${import.meta.env.BASE_URL}${q.image_url}`] : [];
+        const answer = result.answers?.[String(q.number)];
+        const answerImageUrls = answer?.answer_image_urls?.length
+          ? answer.answer_image_urls
+          : answer?.image_urls?.filter((url) =>
+              !questionImageUrls.includes(url) && !answer.question_image_urls?.includes(url)
+            );
         return (
           <QuestionCard
             key={q.number}
             number={q.number}
             maxPoints={q.max_points}
             grading={g}
-            transcription={result.answers?.[String(q.number)]?.transcription}
+            transcription={answer?.transcription}
             charCount={
               q.number === 53
                 ? result.q53_char_count
@@ -277,7 +310,10 @@ export function WritingResultsView() {
             }
             minChars={q.min_chars}
             maxChars={q.max_chars}
-            answerImageUrls={result.answers?.[String(q.number)]?.answer_image_urls}
+            instruction={q.instruction}
+            prompt={q.prompt}
+            questionImageUrls={questionImageUrls}
+            answerImageUrls={answerImageUrls}
           />
         );
       })}

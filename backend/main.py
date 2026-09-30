@@ -283,6 +283,15 @@ class ReviewFeedbackResponse(BaseModel):
     replacementIsSupplemental: Optional[bool] = None
 
 
+class ReviewAnswerResult(BaseModel):
+    question: str
+    submittedAnswer: str
+    correctAnswer: str
+    correct: bool
+    explanation: str
+    isSupplemental: bool
+
+
 class ReviewResultResponse(BaseModel):
     id: str
     setId: str
@@ -296,6 +305,7 @@ class ReviewResultResponse(BaseModel):
     baseCorrectCount: int
     supplementalAttemptCount: int
     missedPatterns: list[dict[str, str]]
+    answers: list[ReviewAnswerResult]
 
 
 class ReviewSetSummary(BaseModel):
@@ -305,6 +315,7 @@ class ReviewSetSummary(BaseModel):
     questionCount: int
     latestBaseCorrectCount: Optional[int] = None
     latestCompletedAt: Optional[str] = None
+    latestSessionId: Optional[str] = None
 
 
 class MyErrorResponse(BaseModel):

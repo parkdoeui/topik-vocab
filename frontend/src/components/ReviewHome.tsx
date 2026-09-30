@@ -61,12 +61,21 @@ export function ReviewHome() {
                     </p>
                   )}
                 </div>
-                <Link
-                  to={`/review/${set.id}`}
-                  className="shrink-0 rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
-                >
-                  시작하기
-                </Link>
+                {set.latestSessionId ? (
+                  <Link
+                    to={`/review-results/${set.latestSessionId}`}
+                    className="shrink-0 rounded-xl border border-blue-200 px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50"
+                  >
+                    결과 보기
+                  </Link>
+                ) : (
+                  <Link
+                    to={`/review/${set.id}`}
+                    className="shrink-0 rounded-xl bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+                  >
+                    시작하기
+                  </Link>
+                )}
               </div>
             </article>
           ))}
