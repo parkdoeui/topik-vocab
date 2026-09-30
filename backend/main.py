@@ -1,5 +1,6 @@
 import base64
 import binascii
+import hashlib
 from datetime import datetime, timezone
 from typing import Any, Optional
 
@@ -148,6 +149,7 @@ class TranscribeResult(BaseModel):
     transcription: str
     char_count: int
     image_url: str
+    sha256: str
 
 
 class TranscribeResponse(BaseModel):
@@ -567,11 +569,22 @@ def transcribe(
         )
     db.commit()
 
+    # Read back the persisted bytes so the client can verify its preview
+    # against the exact image that future result pages will serve.
+    db.expire_all()
+    saved_hashes = {}
+    for image in payload.images:
+        saved = db.get(WritingSessionImageRecord, image.id)
+        if saved is None:
+            raise HTTPException(status_code=500, detail="Uploaded image was not saved")
+        saved_hashes[image.id] = hashlib.sha256(saved.image_bytes).hexdigest()
+
     return TranscribeResponse(
         results=[
             TranscribeResult(
                 **result,
                 image_url=writing_image_url(payload.session_id, image.id),
+                sha256=saved_hashes[image.id],
             )
             for image, result in zip(payload.images, results)
         ]

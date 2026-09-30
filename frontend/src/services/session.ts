@@ -8,6 +8,7 @@ export interface WritingImageEntry {
   id: string;
   data: string; // base64-encoded
   mime_type: string;
+  sha256: string;
 }
 
 /**

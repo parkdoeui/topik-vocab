@@ -120,6 +120,7 @@ function QuestionCard({
                 path={url}
                 alt={`${number}번 답안 사진 ${index + 1}`}
                 className="w-full rounded-xl border border-gray-200 bg-gray-50"
+                enhanceDark
               />
             ))}
           </div>

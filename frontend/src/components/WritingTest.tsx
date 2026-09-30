@@ -8,6 +8,7 @@ import {
   setSessionImages,
   type WritingImageEntry,
 } from "../services/session";
+import { prepareWritingImage } from "../services/writingImages";
 import type { WritingQuestion } from "../types";
 
 function formatTime(ms: number): string {
@@ -31,22 +32,6 @@ const TYPE_LABELS: Record<string, string> = {
 const MAX_IMAGES_PER_LONG_QUESTION = 5;
 const MAX_IMAGE_SIZE_BYTES = 10 * 1024 * 1024;
 const ALLOWED_IMAGE_TYPES = new Set(["image/jpeg", "image/png", "image/webp"]);
-
-function readImage(file: File): Promise<WritingImageEntry> {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      const dataUrl = reader.result;
-      if (typeof dataUrl !== "string") {
-        reject(new Error("사진을 읽을 수 없습니다."));
-        return;
-      }
-      resolve({ id: crypto.randomUUID(), data: dataUrl.split(",")[1], mime_type: file.type });
-    };
-    reader.onerror = () => reject(new Error("사진을 읽을 수 없습니다."));
-    reader.readAsDataURL(file);
-  });
-}
 
 function UploadZone({
   disabled,
@@ -91,13 +76,13 @@ function UploadZone({
     readingRef.current = true;
     onReadingChange(true);
     try {
-      const entries = await Promise.all(selected.map(readImage));
+      const entries = await Promise.all(selected.map(prepareWritingImage));
       onAdd(entries);
       if (files.length > remaining) {
         onError(`최대 ${MAX_IMAGES_PER_LONG_QUESTION}장까지만 추가했습니다.`);
       }
-    } catch {
-      onError("사진을 읽을 수 없습니다. 다른 사진을 선택해 주세요.");
+    } catch (error) {
+      onError(error instanceof Error ? error.message : "사진을 읽을 수 없습니다. 다른 사진을 선택해 주세요.");
     } finally {
       readingRef.current = false;
       onReadingChange(false);
@@ -277,7 +262,9 @@ export function WritingTest() {
 
       const flatImages = imageEntries.flatMap((entry) =>
         entry.imgs.map((image) => ({
-          ...image,
+          id: image.id,
+          data: image.data,
+          mime_type: image.mime_type,
           question_id: String(entry.qNum),
         }))
       );
@@ -286,6 +273,10 @@ export function WritingTest() {
         const results = await transcribeImages(sessionId, flatImages);
         if (results.length !== flatImages.length) {
           throw new Error("사진 일부를 인식하지 못했습니다. 다시 시도해 주세요.");
+        }
+        const uploadedImages = imageEntries.flatMap((entry) => entry.imgs);
+        if (results.some((result, index) => result.sha256 !== uploadedImages[index].sha256)) {
+          throw new Error("저장된 사진이 미리보기와 일치하지 않습니다. 다시 시도해 주세요.");
         }
         let offset = 0;
         for (const e of imageEntries) {

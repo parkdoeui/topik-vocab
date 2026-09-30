@@ -94,6 +94,7 @@ export interface TranscriptionResult {
   transcription: string;
   char_count: number;
   image_url: string;
+  sha256: string;
 }
 
 export async function transcribeImages(

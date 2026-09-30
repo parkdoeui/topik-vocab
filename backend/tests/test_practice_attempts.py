@@ -1,5 +1,6 @@
 import os
 import base64
+import hashlib
 import tempfile
 import unittest
 from datetime import datetime, timedelta
@@ -415,7 +416,9 @@ class PracticeAttemptApiTests(unittest.TestCase):
                 headers=self.headers(),
             )
         self.assertEqual(transcribed.status_code, 200)
-        image_url = transcribed.json()["results"][0]["image_url"]
+        transcribed_image = transcribed.json()["results"][0]
+        image_url = transcribed_image["image_url"]
+        self.assertEqual(transcribed_image["sha256"], hashlib.sha256(image_bytes).hexdigest())
 
         downloaded = self.client.get(image_url, headers=self.headers())
         self.assertEqual(downloaded.status_code, 200)
