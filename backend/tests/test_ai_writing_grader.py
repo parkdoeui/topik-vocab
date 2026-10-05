@@ -1,7 +1,7 @@
 import json
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from ai_writing_grader import (
     WritingGraderError,
@@ -10,6 +10,7 @@ from ai_writing_grader import (
     _normalize_grading_payload,
     count_non_whitespace_characters,
     normalize_ocr_transcription,
+    transcribe_handwriting,
 )
 
 
@@ -39,10 +40,33 @@ def question(criteria: dict[str, float]) -> dict:
 
 class GradingNormalizationTests(unittest.TestCase):
     def test_ocr_text_is_flattened_and_counted_after_normalization(self) -> None:
-        transcription = normalize_ocr_transcription("첫 줄\n  둘째 줄\r\n셋째 줄")
+        transcription = normalize_ocr_transcription("학교에\n서  직업 체험을 한다\r\n")
 
-        self.assertEqual(transcription, "첫 줄 둘째 줄 셋째 줄")
-        self.assertEqual(count_non_whitespace_characters(transcription), 8)
+        self.assertEqual(transcription, "학교에서  직업 체험을 한다")
+        self.assertEqual(count_non_whitespace_characters(transcription), 11)
+
+    def test_ocr_cleanup_preserves_spaces_at_line_boundaries(self) -> None:
+        transcription = normalize_ocr_transcription("학교에 \n 서  체험을 한다")
+
+        self.assertEqual(transcription, "학교에  서  체험을 한다")
+
+    def test_transcription_preserves_student_errors_and_unclear_characters(self) -> None:
+        handwritten_answer = "많은사람 들은  건강을 중요하개 생각한다 교□은 필요하다"
+        client = Mock()
+        client.models.generate_content.return_value.text = json.dumps(
+            {"transcription": handwritten_answer}, ensure_ascii=False
+        )
+
+        with patch("ai_writing_grader._build_client", return_value=client):
+            results = transcribe_handwriting([b"scanned-answer"], ["image/png"])
+
+        self.assertEqual(
+            results,
+            [{
+                "transcription": handwritten_answer,
+                "char_count": len(handwritten_answer.replace(" ", "")),
+            }],
+        )
 
     def test_transcriber_prompt_rejects_picture_layout_line_breaks(self) -> None:
         prompt = (

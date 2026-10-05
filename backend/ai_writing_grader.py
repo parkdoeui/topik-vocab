@@ -251,8 +251,8 @@ class TranscriptionResult(BaseModel):
 
 
 def normalize_ocr_transcription(value: object) -> str:
-    """Flatten picture-layout line breaks into readable, continuous text."""
-    return " ".join(str(value).split())
+    """Remove layout line breaks without adding or repairing word spacing."""
+    return re.sub(r"[\r\n]", "", str(value)).strip()
 
 
 def count_non_whitespace_characters(value: object) -> int:
