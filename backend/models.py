@@ -76,7 +76,7 @@ class PracticeAttemptRecord(Base):
 
 
 class ReadingAttemptRecord(Base):
-    """One completed four-question reading set with its immutable answer review."""
+    """One completed reading set with its immutable answer review."""
 
     __tablename__ = "reading_attempts"
 

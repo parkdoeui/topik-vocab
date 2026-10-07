@@ -1,6 +1,7 @@
 import os
 import tempfile
 import unittest
+from collections import Counter
 from copy import deepcopy
 from pathlib import Path
 from unittest.mock import patch
@@ -12,9 +13,9 @@ os.environ["VALID_PASSCODE"] = "reading-test-passcode"
 from fastapi.testclient import TestClient
 
 from config import settings
-from database import engine
+from database import SessionLocal, engine
 from main import app
-from models import Base
+from models import Base, ReadingAttemptRecord
 from reading_practice import READING_SETS, TOPICS
 
 
@@ -123,7 +124,9 @@ class ReadingPracticeApiTests(unittest.TestCase):
 
     def test_each_set_can_be_completed_and_results_appear_in_history(self) -> None:
         ids = []
-        for set_id in READING_SETS:
+        for set_id, practice_set in READING_SETS.items():
+            if practice_set["practice_type"] != "28-31":
+                continue
             payload = self.payload(f"attempt-{set_id}", set_id)
             created = self.client.post("/api/reading-attempts", json=payload, headers=self.headers())
             self.assertEqual(created.status_code, 201, created.text)
@@ -131,6 +134,110 @@ class ReadingPracticeApiTests(unittest.TestCase):
             ids.append(payload["id"])
         history = self.client.get("/api/reading-attempts", headers=self.headers())
         self.assertEqual([attempt["id"] for attempt in history.json()], list(reversed(ids)))
+
+    def test_reading_19_sets_balance_all_twelve_categories_and_cover_every_question_once(self) -> None:
+        catalogue = self.client.get("/api/reading-sets?practice_type=19", headers=self.headers())
+        self.assertEqual(catalogue.status_code, 200)
+        self.assertEqual(len(catalogue.json()), 6)
+        seen_ids = []
+        source_numbers = []
+        category_counts = Counter()
+        combinations = set()
+        for summary in catalogue.json():
+            self.assertEqual(summary["practice_type"], "19")
+            self.assertEqual(summary["question_count"], 6)
+            self.assertEqual(len(set(summary["topics"])), 6)
+            self.assertTrue(summary["guidance"])
+            combinations.add(frozenset(summary["topics"]))
+            detail = self.client.get(f"/api/reading-sets/{summary['id']}", headers=self.headers())
+            self.assertEqual(detail.status_code, 200)
+            questions = detail.json()["questions"]
+            self.assertEqual(len(questions), 6)
+            for question in questions:
+                self.assertEqual(len(question["options"]), 4)
+                self.assertNotIn("correct_option", question)
+                self.assertNotIn("explanation", question)
+                self.assertNotIn("category_description", question)
+                seen_ids.append(question["id"])
+                category_counts[question["topic"]] += 1
+            source_numbers.extend(question["source_number"] for question in READING_SETS[summary["id"]]["questions"])
+        self.assertEqual(len(set(seen_ids)), 36)
+        self.assertEqual(sorted(source_numbers), list(range(1, 37)))
+        self.assertEqual(len(category_counts), 12)
+        self.assertEqual(set(category_counts.values()), {3})
+        self.assertEqual(len(combinations), 6)
+        self.assertEqual(self.client.get("/api/reading-sets?practice_type=unknown", headers=self.headers()).status_code, 422)
+
+    def test_reading_19_saves_all_six_answers_and_explanations_and_separates_history(self) -> None:
+        original = self.client.post("/api/reading-attempts", json=self.payload(), headers=self.headers())
+        ids = []
+        for index in range(1, 7):
+            set_id = f"reading-19-{index:02d}"
+            payload = self.payload(f"reading-19-attempt-{index}", set_id)
+            correct_option = payload["answers"][0]["selected_option"]
+            payload["answers"][0]["selected_option"] = correct_option % 4 + 1
+            payload["answers"].reverse()
+            created = self.client.post("/api/reading-attempts", json=payload, headers=self.headers())
+            self.assertEqual(created.status_code, 201, created.text)
+            result = created.json()
+            self.assertEqual(result["practice_type"], "19")
+            self.assertEqual((result["correct_count"], result["question_count"], result["score"], result["max_score"]), (5, 6, 5, 6))
+            self.assertFalse(result["questions"][0]["correct"])
+            self.assertEqual(result["questions"][0]["selected_option"], correct_option % 4 + 1)
+            for saved, question in zip(result["questions"], READING_SETS[set_id]["questions"]):
+                self.assertEqual(saved["correct_option"], question["correct_option"])
+                self.assertEqual(saved["explanation"], question["explanation"])
+                self.assertEqual(saved["topic"], question["topic"])
+                self.assertEqual(saved["category_description"], question["category_description"])
+            reopened = self.client.get(f"/api/reading-attempts/{payload['id']}", headers=self.headers())
+            self.assertEqual(reopened.json(), result)
+            retry = self.client.post("/api/reading-attempts", json=payload, headers=self.headers())
+            self.assertEqual(retry.status_code, 200)
+            self.assertEqual(retry.json(), result)
+            payload["answers"][0]["selected_option"] = payload["answers"][0]["selected_option"] % 4 + 1
+            self.assertEqual(self.client.post("/api/reading-attempts", json=payload, headers=self.headers()).status_code, 409)
+            ids.append(result["id"])
+        history = self.client.get("/api/reading-attempts?practice_type=19", headers=self.headers())
+        self.assertEqual([attempt["id"] for attempt in history.json()], list(reversed(ids)))
+        existing_history = self.client.get("/api/reading-attempts", headers=self.headers())
+        self.assertEqual([attempt["id"] for attempt in existing_history.json()], [original.json()["id"]])
+
+    def test_reading_19_rejects_missing_extra_duplicate_and_foreign_answers(self) -> None:
+        invalid_payloads = []
+        for count in (4, 5, 7):
+            payload = self.payload(set_id="reading-19-01")
+            payload["answers"] = (payload["answers"] + [deepcopy(payload["answers"][0])])[:count]
+            invalid_payloads.append(payload)
+        duplicate = self.payload(set_id="reading-19-01")
+        duplicate["answers"][1] = deepcopy(duplicate["answers"][0])
+        invalid_payloads.append(duplicate)
+        foreign = self.payload(set_id="reading-19-01")
+        foreign["answers"][0]["question_id"] = READING_SETS["reading-19-02"]["questions"][0]["id"]
+        invalid_payloads.append(foreign)
+        extra_original = self.payload()
+        extra_original["answers"].append(deepcopy(extra_original["answers"][0]))
+        invalid_payloads.append(extra_original)
+        for payload in invalid_payloads:
+            with self.subTest(payload=payload):
+                self.assertEqual(self.client.post("/api/reading-attempts", json=payload, headers=self.headers()).status_code, 422)
+        self.assertEqual(self.client.get("/api/reading-attempts?practice_type=19", headers=self.headers()).json(), [])
+
+    def test_preexisting_reviews_without_a_practice_type_still_reopen_and_retry(self) -> None:
+        payload = self.payload()
+        created = self.client.post("/api/reading-attempts", json=payload, headers=self.headers())
+        with SessionLocal() as db:
+            record = db.get(ReadingAttemptRecord, payload["id"])
+            snapshot = deepcopy(record.attempt_json)
+            snapshot.pop("practice_type")
+            record.attempt_json = snapshot
+            db.commit()
+        reopened = self.client.get(f"/api/reading-attempts/{payload['id']}", headers=self.headers())
+        self.assertEqual(reopened.json(), created.json())
+        retry = self.client.post("/api/reading-attempts", json=payload, headers=self.headers())
+        self.assertEqual(retry.status_code, 200)
+        self.assertEqual(retry.json(), created.json())
+        self.assertEqual(len(self.client.get("/api/reading-attempts", headers=self.headers()).json()), 1)
+        self.assertEqual(self.client.get("/api/reading-attempts?practice_type=19", headers=self.headers()).json(), [])
 
     def test_retry_is_idempotent_and_different_answers_cannot_overwrite_a_review(self) -> None:
         payload = self.payload()
@@ -166,7 +273,7 @@ class ReadingPracticeApiTests(unittest.TestCase):
         self.assertEqual(self.client.get("/api/reading-attempts", headers=self.headers()).json(), [])
 
     def test_reading_routes_require_auth_and_unknown_ids_return_not_found(self) -> None:
-        for path in ("/api/reading-sets", "/api/reading-sets/reading-28-31-01", "/api/reading-attempts", "/api/reading-attempts/missing"):
+        for path in ("/api/reading-sets", "/api/reading-sets/reading-28-31-01", "/api/reading-sets?practice_type=19", "/api/reading-sets/reading-19-01", "/api/reading-attempts?practice_type=19", "/api/reading-attempts", "/api/reading-attempts/missing"):
             self.assertEqual(self.client.get(path).status_code, 403)
         self.assertEqual(self.client.post("/api/reading-attempts", json=self.payload()).status_code, 403)
         self.assertEqual(self.client.get("/api/reading-sets/missing", headers=self.headers()).status_code, 404)

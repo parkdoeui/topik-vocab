@@ -3,18 +3,21 @@ import { Link, useNavigate, useParams } from "react-router";
 import {
   getReadingSet,
   readingOptionMarkers,
+  readingPracticeConfig,
   submitReadingAttempt,
   type ReadingAttemptPayload,
   type ReadingOption,
+  type ReadingPracticeType,
   type ReadingSet,
 } from "../services/readingApi";
 
-export function ReadingPracticeSession() {
+export function ReadingPracticeSession({ practiceType = "28-31" }: { practiceType?: ReadingPracticeType }) {
   const { setId } = useParams<{ setId: string }>();
-  return <ReadingSession key={setId} setId={setId ?? ""} />;
+  return <ReadingSession key={`${practiceType}:${setId}`} setId={setId ?? ""} practiceType={practiceType} />;
 }
 
-function ReadingSession({ setId }: { setId: string }) {
+function ReadingSession({ setId, practiceType }: { setId: string; practiceType: ReadingPracticeType }) {
+  const config = readingPracticeConfig[practiceType];
   const navigate = useNavigate();
   const [set, setSet] = useState<ReadingSet | null>(null);
   const [loading, setLoading] = useState(true);
@@ -26,15 +29,20 @@ function ReadingSession({ setId }: { setId: string }) {
   const [saving, setSaving] = useState(false);
   const [saveFailed, setSaveFailed] = useState(false);
   const submitting = useRef(false);
+  const sessionActive = useRef(false);
 
   useEffect(() => {
     let active = true;
+    sessionActive.current = true;
     void getReadingSet(setId)
-      .then((data) => { if (active) setSet(data); })
+      .then((data) => {
+        if (data.practice_type !== practiceType) throw new Error("Reading practice type mismatch");
+        if (active) setSet(data);
+      })
       .catch(() => { if (active) setLoadFailed(true); })
       .finally(() => { if (active) setLoading(false); });
-    return () => { active = false; };
-  }, [setId]);
+    return () => { active = false; sessionActive.current = false; };
+  }, [setId, practiceType]);
 
   const allAnswered = set?.questions.every((question) => answers[question.id] !== undefined) ?? false;
 
@@ -51,12 +59,12 @@ function ReadingSession({ setId }: { setId: string }) {
     setSubmittedPayload(payload);
     try {
       const attempt = await submitReadingAttempt(payload);
-      navigate(`/reading-attempts/${attempt.id}`, { replace: true });
+      if (sessionActive.current) navigate(`${config.reviewPath}/${attempt.id}`, { replace: true });
     } catch {
-      setSaveFailed(true);
+      if (sessionActive.current) setSaveFailed(true);
     } finally {
       submitting.current = false;
-      setSaving(false);
+      if (sessionActive.current) setSaving(false);
     }
   }
 
@@ -64,7 +72,7 @@ function ReadingSession({ setId }: { setId: string }) {
   if (loadFailed || !set) return (
     <div className="px-4 py-16 text-center text-sm text-gray-500">
       <p role="alert">읽기 문제를 불러오지 못했습니다. 세트를 다시 선택해 주세요.</p>
-      <Link to="/reading" className="mt-3 inline-block text-blue-600 hover:underline">읽기 연습으로</Link>
+      <Link to={config.homePath} className="mt-3 inline-block text-blue-600 hover:underline">읽기 연습으로</Link>
     </div>
   );
 
@@ -74,18 +82,18 @@ function ReadingSession({ setId }: { setId: string }) {
   return (
     <div className="max-w-2xl mx-auto px-4 py-6 w-full space-y-5">
       <header>
-        <Link to="/reading" className="text-xs font-medium text-blue-600 hover:underline">← 읽기 28–31 연습</Link>
+        <Link to={config.homePath} className="text-xs font-medium text-blue-600 hover:underline">← {config.title}</Link>
         <p className="mt-2 text-xs text-gray-400">{set.title}</p>
         <div className="mt-1 flex items-center justify-between gap-3">
           <h1 className="text-sm font-semibold text-gray-700">{questionIndex + 1} / {set.questions.length}문항</h1>
-          <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">{question.topic}</span>
+          <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">{practiceType === "19" ? config.badge : question.topic}</span>
         </div>
       </header>
 
       <div className="h-1.5 overflow-hidden rounded-full bg-gray-100" role="progressbar" aria-label="답안 선택 진행률" aria-valuemin={0} aria-valuemax={set.questions.length} aria-valuenow={Object.keys(answers).length}>
         <div className="h-full rounded-full bg-blue-500 transition-all" style={{ width: `${(Object.keys(answers).length / set.questions.length) * 100}%` }} />
       </div>
-      <p className="text-xs leading-relaxed text-gray-500">보기 하나를 선택한 뒤 다음 문제로 이동하세요. 네 문항을 모두 풀면 마지막 문제에서 제출할 수 있습니다.</p>
+      <p className="text-xs leading-relaxed text-gray-500">보기 하나를 선택한 뒤 다음 문제로 이동하세요. {set.questions.length}문항을 모두 풀면 마지막 문제에서 제출할 수 있습니다.</p>
 
       <article className="rounded-2xl border border-gray-200 bg-white p-5 space-y-5">
         <p className="text-sm font-semibold leading-relaxed text-gray-700">{set.instruction}</p>
@@ -113,11 +121,11 @@ function ReadingSession({ setId }: { setId: string }) {
       <div className="flex flex-wrap gap-2" aria-label="문항 이동">
         {set.questions.map((item, index) => (
           <button key={item.id} type="button" disabled={saving} aria-current={questionIndex === index ? "step" : undefined} onClick={() => setQuestionIndex(index)} className={`rounded-lg border px-3 py-2 text-xs font-medium ${questionIndex === index ? "border-blue-400 bg-blue-50 text-blue-700" : answers[item.id] ? "border-green-200 bg-green-50 text-green-700" : "border-gray-200 bg-white text-gray-500"}`}>
-            {index + 1}. {item.topic}{answers[item.id] ? " · 선택 완료" : ""}
+            {index + 1}. {practiceType === "19" ? "문항" : item.topic}{answers[item.id] ? " · 선택 완료" : ""}
           </button>
         ))}
       </div>
-      {!allAnswered && questionIndex === set.questions.length - 1 && <p className="text-xs text-gray-500">네 문항의 보기를 모두 선택하면 제출할 수 있습니다.</p>}
+      {!allAnswered && questionIndex === set.questions.length - 1 && <p className="text-xs text-gray-500">{set.questions.length}문항의 보기를 모두 선택하면 제출할 수 있습니다.</p>}
       {saveFailed && <p role="alert" className="rounded-xl bg-red-50 p-4 text-sm text-red-700">답안 저장을 확인하지 못했습니다. 제출한 답은 유지됩니다. 같은 답으로 다시 제출해 주세요.</p>}
     </div>
   );
