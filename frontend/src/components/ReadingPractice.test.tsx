@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { MemoryRouter, Route, Routes } from "react-router";
 import bank from "../../../backend/data/reading_practice/questions.json";
+import additionalSets from "../../../backend/data/reading_practice/additional-sets.json";
 import { ReadingPracticeHome } from "./ReadingPracticeHome";
 import { ReadingPracticeSession } from "./ReadingPracticeSession";
 import { ReadingPracticeReview } from "./ReadingPracticeReview";
@@ -32,6 +33,14 @@ const sets: ReadingSet[] = Array.from({ length: 5 }, (_, index) => ({
   question_count: 4,
   questions: bank.questions.filter((question) => (question.source_number - 1) % 5 === index).map(({ id, topic, prompt, options }) => ({ id, topic, prompt, options })),
 }));
+const extraSet: ReadingSet = {
+  ...sets[0],
+  id: additionalSets[0].id,
+  title: additionalSets[0].title,
+  topics: additionalSets[0].questions.map((question) => question.topic),
+  questions: additionalSets[0].questions.map(({ id, topic, prompt, options }) => ({ id, topic, prompt, options })),
+};
+sets.push(extraSet);
 
 const review: ReadingAttemptReview = {
   id: "saved-reading",
@@ -55,6 +64,20 @@ const review: ReadingAttemptReview = {
       vocabulary: original.vocabulary,
     };
   }),
+};
+const extraReview: ReadingAttemptReview = {
+  ...review,
+  id: "saved-science-history",
+  set_id: extraSet.id,
+  set_title: extraSet.title,
+  correct_count: 4,
+  score: 8,
+  questions: additionalSets[0].questions.map((question) => ({
+    ...question,
+    selected_option: question.correct_option as ReadingOption,
+    correct_option: question.correct_option as ReadingOption,
+    correct: true,
+  })),
 };
 
 function renderReading(path: string) {
@@ -81,23 +104,24 @@ beforeEach(() => {
 
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
-async function answerSet(user: ReturnType<typeof userEvent.setup>) {
-  await screen.findByText(sets[0].questions[0].prompt, { normalizer: (text) => text });
-  for (const [index, question] of review.questions.entries()) {
+async function answerSet(user: ReturnType<typeof userEvent.setup>, attemptReview = review) {
+  await screen.findByText(attemptReview.questions[0].prompt, { normalizer: (text) => text });
+  for (const [index, question] of attemptReview.questions.entries()) {
     await user.click(screen.getByRole("radio", { name: `${readingOptionMarkers[question.selected_option - 1]} ${question.options[question.selected_option - 1]}` }));
     if (index < 3) await user.click(screen.getByRole("button", { name: "다음 문제" }));
   }
 }
 
 describe("reading 28–31 practice", () => {
-  it("lists five four-question sets and links saved attempts to their reviews", async () => {
+  it("lists the original five sets plus a science/history set and saved reviews", async () => {
     readingApi.getReadingAttempts.mockResolvedValue([review]);
     renderReading("/reading");
     const catalogue = await screen.findByRole("region", { name: "읽기 연습 세트" });
-    await waitFor(() => expect(within(catalogue).getAllByRole("link", { name: "시작하기" })).toHaveLength(5));
+    await waitFor(() => expect(within(catalogue).getAllByRole("link", { name: "시작하기" })).toHaveLength(6));
     expect(within(catalogue).getAllByRole("link").map((link) => link.getAttribute("href"))).toEqual(sets.map((set) => `/reading/${set.id}`));
     expect(within(catalogue).getAllByText("기술 · 환경 · 도시 · 문화 · 주제별 1문항")).toHaveLength(5);
-    expect(within(catalogue).getAllByText("4문항 · 문항별 2점 · 총 8점")).toHaveLength(5);
+    expect(within(catalogue).getByText("과학 2문항 · 한국 역사 2문항")).toBeTruthy();
+    expect(within(catalogue).getAllByText("4문항 · 문항별 2점 · 총 8점")).toHaveLength(6);
     const history = screen.getByRole("region", { name: "저장된 읽기 풀이" });
     expect(within(history).getByRole("link").getAttribute("href")).toBe("/reading-attempts/saved-reading");
   });
@@ -156,6 +180,33 @@ describe("reading 28–31 practice", () => {
     expect(readingApi.submitReadingAttempt.mock.calls[1][0]).toEqual(firstPayload);
   });
 
+  it("completes the science/history set and shows all explanations and sources", async () => {
+    readingApi.getReadingSet.mockResolvedValue(extraSet);
+    readingApi.submitReadingAttempt.mockResolvedValue(extraReview);
+    readingApi.getReadingAttempt.mockResolvedValue(extraReview);
+    const user = userEvent.setup();
+    renderReading(`/reading/${extraSet.id}`);
+    await answerSet(user, extraReview);
+    await user.click(screen.getByRole("button", { name: "제출하고 해설 보기" }));
+    await screen.findByRole("heading", { name: "읽기 연습 결과" });
+    expect(readingApi.submitReadingAttempt).toHaveBeenCalledWith({
+      id: "reading-client-id",
+      set_id: extraSet.id,
+      answers: extraReview.questions.map((question) => ({ question_id: question.id, selected_option: question.selected_option })),
+    });
+    expect(screen.getByText("8 / 8점")).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "1. 과학" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "2. 과학" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "3. 한국 역사" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "4. 한국 역사" })).toBeTruthy();
+    for (const question of extraReview.questions) {
+      expect(screen.getByText(question.explanation)).toBeTruthy();
+      for (const source of question.sources ?? []) {
+        expect(screen.getByRole("link", { name: source.title }).getAttribute("href")).toBe(source.url);
+      }
+    }
+  });
+
   it("reopens a saved review directly and retries a failed result load", async () => {
     readingApi.getReadingAttempt.mockRejectedValueOnce(new Error("offline")).mockResolvedValueOnce(review);
     const user = userEvent.setup();
@@ -172,7 +223,7 @@ describe("reading 28–31 practice", () => {
     const user = userEvent.setup();
     renderReading("/reading");
     await screen.findByRole("alert");
-    expect(screen.getAllByRole("link", { name: "시작하기" })).toHaveLength(5);
+    expect(screen.getAllByRole("link", { name: "시작하기" })).toHaveLength(6);
     await user.click(screen.getByRole("button", { name: "새로 고침" }));
     await screen.findByText("아직 저장된 풀이가 없습니다. 첫 세트를 시작해 보세요.");
     expect(screen.queryByRole("alert")).toBeNull();

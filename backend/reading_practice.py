@@ -36,6 +36,18 @@ READING_SETS = {
     }
     for index in range(5)
 }
+_additional_sets = json.loads(
+    (Path(__file__).parent / "data/reading_practice/additional-sets.json").read_text(
+        encoding="utf-8"
+    )
+)
+for practice_set in _additional_sets:
+    READING_SETS[practice_set["id"]] = {
+        "instruction": _bank["instruction"],
+        "notice": _bank["notice"],
+        "points_per_question": _bank["points_per_question"],
+        **practice_set,
+    }
 
 router = APIRouter(prefix="/api", tags=["reading practice"])
 
@@ -56,7 +68,7 @@ def set_summary(practice_set: dict[str, Any]) -> dict[str, Any]:
         key: practice_set[key]
         for key in ("id", "title", "notice", "points_per_question")
     } | {
-        "topics": list(TOPICS),
+        "topics": [question["topic"] for question in practice_set["questions"]],
         "question_count": len(practice_set["questions"]),
     }
 

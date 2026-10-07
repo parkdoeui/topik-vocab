@@ -68,6 +68,12 @@ function ReadingReview({ attemptId }: { attemptId: string }) {
               <p className="mt-2 text-sm leading-relaxed text-blue-950">{question.explanation}</p>
             </div>
             <p className="text-xs leading-relaxed text-gray-500">사용 어휘: {question.vocabulary.join(" · ")}</p>
+            {question.sources && question.sources.length > 0 && (
+              <div className="space-y-1 text-xs leading-relaxed text-gray-500">
+                <p>지문 참고 자료</p>
+                {question.sources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">{source.title}</a>)}
+              </div>
+            )}
           </article>
         ))}
       </section>

@@ -47,6 +47,7 @@ export interface ReadingQuestionReview extends ReadingQuestion {
   correct: boolean;
   explanation: string;
   vocabulary: string[];
+  sources?: Array<{ title: string; url: string }>;
 }
 
 export interface ReadingAttemptReview extends ReadingAttemptSummary {

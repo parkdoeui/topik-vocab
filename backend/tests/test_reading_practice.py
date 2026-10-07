@@ -52,10 +52,10 @@ class ReadingPracticeApiTests(unittest.TestCase):
     def test_five_sets_cover_all_twenty_questions_once_without_revealing_answers(self) -> None:
         catalogue = self.client.get("/api/reading-sets", headers=self.headers())
         self.assertEqual(catalogue.status_code, 200)
-        self.assertEqual(len(catalogue.json()), 5)
+        self.assertEqual(len(catalogue.json()), 6)
         seen_ids = []
         source_numbers = []
-        for summary in catalogue.json():
+        for summary in catalogue.json()[:5]:
             self.assertEqual(summary["question_count"], 4)
             self.assertEqual(summary["points_per_question"], 2)
             detail = self.client.get(f"/api/reading-sets/{summary['id']}", headers=self.headers())
@@ -70,6 +70,31 @@ class ReadingPracticeApiTests(unittest.TestCase):
             source_numbers.extend(question["source_number"] for question in READING_SETS[summary["id"]]["questions"])
         self.assertEqual(len(set(seen_ids)), 20)
         self.assertEqual(sorted(source_numbers), list(range(1, 21)))
+
+    def test_extra_set_has_two_science_and_two_history_questions_with_saved_explanations(self) -> None:
+        set_id = "reading-28-31-06"
+        detail = self.client.get(f"/api/reading-sets/{set_id}", headers=self.headers())
+        self.assertEqual(detail.status_code, 200)
+        expected_topics = ["과학", "과학", "한국 역사", "한국 역사"]
+        self.assertEqual(detail.json()["topics"], expected_topics)
+        questions = detail.json()["questions"]
+        self.assertEqual([question["topic"] for question in questions], expected_topics)
+        original_ids = {question["id"] for practice_set in list(READING_SETS.values())[:5] for question in practice_set["questions"]}
+        self.assertTrue(original_ids.isdisjoint(question["id"] for question in questions))
+        self.assertTrue(all(len(question["options"]) == 4 for question in questions))
+        self.assertTrue(all("correct_option" not in question and "explanation" not in question for question in questions))
+        payload = self.payload("science-history-attempt", set_id)
+        payload["answers"][1]["selected_option"] = 4
+        created = self.client.post("/api/reading-attempts", json=payload, headers=self.headers())
+        self.assertEqual(created.status_code, 201, created.text)
+        result = created.json()
+        self.assertEqual((result["correct_count"], result["score"], result["max_score"]), (3, 6, 8))
+        self.assertEqual([question["correct_option"] for question in result["questions"]], [3, 1, 4, 2])
+        for saved, original in zip(result["questions"], READING_SETS[set_id]["questions"]):
+            self.assertEqual(saved["explanation"], original["explanation"])
+            self.assertEqual(saved["sources"], original["sources"])
+        reopened = self.client.get(f"/api/reading-attempts/{payload['id']}", headers=self.headers())
+        self.assertEqual(reopened.json(), result)
 
     def test_grades_mixed_answers_and_reopens_the_original_explanations(self) -> None:
         payload = self.payload()
