@@ -46,6 +46,7 @@ from language_review import (
     review_set_summaries,
     save_answer_and_update_progress,
 )
+from reading_practice import router as reading_router
 
 migrate_database(engine, settings.question_asset_base_url)
 
@@ -348,6 +349,9 @@ def require_authenticated(
     if passcode_matches_transport(passcode_cookie, settings.valid_passcode):
         return
     raise HTTPException(status_code=403, detail="Authentication required")
+
+
+app.include_router(reading_router, dependencies=[Depends(require_authenticated)])
 
 
 def utc_isoformat(value: datetime) -> str:

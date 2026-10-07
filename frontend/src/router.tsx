@@ -12,6 +12,9 @@ import { ReviewHome } from "./components/ReviewHome";
 import { ReviewSession } from "./components/ReviewSession";
 import { ReviewResults } from "./components/ReviewResults";
 import { MyErrors } from "./components/MyErrors";
+import { ReadingPracticeHome } from "./components/ReadingPracticeHome";
+import { ReadingPracticeSession } from "./components/ReadingPracticeSession";
+import { ReadingPracticeReview } from "./components/ReadingPracticeReview";
 
 export const router = createBrowserRouter(
   [
@@ -27,6 +30,9 @@ export const router = createBrowserRouter(
         { path: "practice", element: <PracticeHome /> },
         { path: "practice/:setId", element: <PracticeSession /> },
         { path: "practice-attempts/:attemptId", element: <PracticeAttemptReview /> },
+        { path: "reading", element: <ReadingPracticeHome /> },
+        { path: "reading/:setId", element: <ReadingPracticeSession /> },
+        { path: "reading-attempts/:attemptId", element: <ReadingPracticeReview /> },
         { path: "review", element: <ReviewHome /> },
         { path: "review/:setId", element: <ReviewSession /> },
         { path: "review-results/:sessionId", element: <ReviewResults /> },
