@@ -15,6 +15,9 @@ import { MyErrors } from "./components/MyErrors";
 import { ReadingPracticeHome } from "./components/ReadingPracticeHome";
 import { ReadingPracticeSession } from "./components/ReadingPracticeSession";
 import { ReadingPracticeReview } from "./components/ReadingPracticeReview";
+import { ListeningPracticeHome } from "./components/ListeningPracticeHome";
+import { ListeningPracticeSession } from "./components/ListeningPracticeSession";
+import { ListeningPracticeReview } from "./components/ListeningPracticeReview";
 
 export const router = createBrowserRouter(
   [
@@ -36,6 +39,12 @@ export const router = createBrowserRouter(
         { path: "reading-19", element: <ReadingPracticeHome practiceType="19" /> },
         { path: "reading-19/:setId", element: <ReadingPracticeSession practiceType="19" /> },
         { path: "reading-19-attempts/:attemptId", element: <ReadingPracticeReview practiceType="19" /> },
+        { path: "listening", element: <ListeningPracticeHome /> },
+        { path: "listening/:setId", element: <ListeningPracticeSession /> },
+        { path: "listening-attempts/:attemptId", element: <ListeningPracticeReview /> },
+        { path: "listening-39", element: <ListeningPracticeHome practiceType="39-40" /> },
+        { path: "listening-39/:setId", element: <ListeningPracticeSession practiceType="39-40" /> },
+        { path: "listening-39-attempts/:attemptId", element: <ListeningPracticeReview practiceType="39-40" /> },
         { path: "review", element: <ReviewHome /> },
         { path: "review/:setId", element: <ReviewSession /> },
         { path: "review-results/:sessionId", element: <ReviewResults /> },

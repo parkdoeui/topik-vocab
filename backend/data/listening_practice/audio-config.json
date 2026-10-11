@@ -1,0 +1,11 @@
+{
+  "voice": "ko-KR-Wavenet-C",
+  "language": "ko-KR",
+  "speaking_rate": 0.8,
+  "pitch": 0.0,
+  "sample_rate": 24000,
+  "sentence_pause_ms": 600,
+  "repeat_cue": "다시 들으십시오.",
+  "repeat_gap_seconds": 5,
+  "play_count": 2
+}

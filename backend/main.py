@@ -47,6 +47,7 @@ from language_review import (
     save_answer_and_update_progress,
 )
 from reading_practice import router as reading_router
+from listening_practice import router as listening_router
 
 migrate_database(engine, settings.question_asset_base_url)
 
@@ -352,6 +353,7 @@ def require_authenticated(
 
 
 app.include_router(reading_router, dependencies=[Depends(require_authenticated)])
+app.include_router(listening_router, dependencies=[Depends(require_authenticated)])
 
 
 def utc_isoformat(value: datetime) -> str:

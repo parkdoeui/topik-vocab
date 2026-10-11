@@ -89,6 +89,20 @@ class ReadingAttemptRecord(Base):
     attempt_json = Column(JSON, nullable=False)
 
 
+class ListeningAttemptRecord(Base):
+    """One graded listening set, including replay usage and its original transcript."""
+
+    __tablename__ = "listening_attempts"
+
+    id = Column(String, primary_key=True)
+    set_id = Column(String, nullable=False, index=True)
+    set_title = Column(String, nullable=False)
+    completed_at = Column(DateTime, nullable=False, index=True)
+    correct_count = Column(Integer, nullable=False)
+    replay_count = Column(Integer, nullable=False)
+    attempt_json = Column(JSON, nullable=False)
+
+
 class LanguageErrorPatternRecord(Base):
     """A reusable Korean particle/collocation pattern for writing review."""
 

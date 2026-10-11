@@ -1,0 +1,16 @@
+{
+  "language": "ko-KR",
+  "voices": {
+    "여자": "ko-KR-Wavenet-A",
+    "남자": "ko-KR-Wavenet-C"
+  },
+  "speaking_rate": 0.8,
+  "pitch": 0.0,
+  "sample_rate": 24000,
+  "sentence_pause_ms": 600,
+  "speaker_gap_ms": 600,
+  "repeat_cue": "다시 들으십시오.",
+  "repeat_cue_voice": "ko-KR-Wavenet-C",
+  "repeat_gap_seconds": 5,
+  "play_count": 2
+}

@@ -1,0 +1,77 @@
+{
+  "config_sha256": "6166bb1c73be40562526ceab6609a26c5f454d475453e64bbec340fee6bde0eb",
+  "tracks": {
+    "set_01": {
+      "path": "audio/listening-39-40/set-01-0391b357ad2c.m4a",
+      "source_sha256": "2b6262b6a077e68eab5bd8ec80712a3f26c26673398e16bacd63ea9c6dcd9c09",
+      "audio_sha256": "925ed68a057f95cc704b912efa9d6c90079b9e05093de1c315d58d82aabe4ead",
+      "duration_seconds": 131.3095,
+      "stages": {
+        "first_end": 59.96095833333333,
+        "cue_start": 64.96095833333334,
+        "cue_end": 66.34854166666668,
+        "second_start": 71.34854166666668
+      }
+    },
+    "set_02": {
+      "path": "audio/listening-39-40/set-02-f1cb685bd42f.m4a",
+      "source_sha256": "ea59f6b1e943a6be5269193d2546ce3dc48f96551b9efda4f26c8096de0bc6fe",
+      "audio_sha256": "2eb21f443ea26a686b45e798df5ac86e340c9f5dfb1226bf68747797972517b1",
+      "duration_seconds": 138.749,
+      "stages": {
+        "first_end": 63.680708333333335,
+        "cue_start": 68.68070833333334,
+        "cue_end": 70.06829166666668,
+        "second_start": 75.06829166666668
+      }
+    },
+    "set_03": {
+      "path": "audio/listening-39-40/set-03-aa2ab6570211.m4a",
+      "source_sha256": "82cfea9d43766e4d40b9afeab7162fcdf9d0646f7c1cec83050e90150e6eca7b",
+      "audio_sha256": "6e475b658e27d20ec9efbba61629fe9a4125aa3f0c07abc492d2a321d07b6de5",
+      "duration_seconds": 149.00508333333335,
+      "stages": {
+        "first_end": 68.80875,
+        "cue_start": 73.80875,
+        "cue_end": 75.19633333333334,
+        "second_start": 80.19633333333334
+      }
+    },
+    "set_04": {
+      "path": "audio/listening-39-40/set-04-d1e12f5dfc37.m4a",
+      "source_sha256": "031952bd84e873b051f5f0f5de519064edda893d6570007075a93393fe5adfc4",
+      "audio_sha256": "1ce956d1d22aec36d3ff5fea181a00391d41e46f5a10abb71184141e90c08614",
+      "duration_seconds": 146.501,
+      "stages": {
+        "first_end": 67.55670833333333,
+        "cue_start": 72.55670833333333,
+        "cue_end": 73.94429166666667,
+        "second_start": 78.94429166666667
+      }
+    },
+    "set_05": {
+      "path": "audio/listening-39-40/set-05-5a10a7bf0148.m4a",
+      "source_sha256": "72714040dffe37f8037286da3f5302de32c1e430efdc79eb0b46e23434493b66",
+      "audio_sha256": "667d350ad5ad2a731d426b14a494c0d6f6a5d9b3ea9c1c6d4e63c99fe53929b8",
+      "duration_seconds": 151.35075,
+      "stages": {
+        "first_end": 69.98158333333333,
+        "cue_start": 74.98158333333333,
+        "cue_end": 76.36916666666667,
+        "second_start": 81.36916666666667
+      }
+    },
+    "set_06": {
+      "path": "audio/listening-39-40/set-06-9cb068d3260e.m4a",
+      "source_sha256": "4687ef101ba110ace00b6c7a97a30cf17ea259857d2f4512c8aa8d07be00d1a3",
+      "audio_sha256": "288ae54aae4397e2618a1f9085e549ba33e9bb41a1a88f1d6522db2b9d5fe417",
+      "duration_seconds": 150.33166666666668,
+      "stages": {
+        "first_end": 69.47204166666667,
+        "cue_start": 74.47204166666667,
+        "cue_end": 75.85962500000001,
+        "second_start": 80.85962500000001
+      }
+    }
+  }
+}

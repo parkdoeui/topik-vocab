@@ -16,6 +16,8 @@ function NavBar() {
       <NavLink to="/practice" className={navClass}>Q51/Q52 연습</NavLink>
       <NavLink to="/reading-19" className={navClass}>읽기 19번 연습</NavLink>
       <NavLink to="/reading" className={navClass}>읽기 28–31 연습</NavLink>
+      <NavLink to="/listening-39" className={navClass}>듣기 39–40 연습</NavLink>
+      <NavLink to="/listening" className={navClass}>듣기 43–44 연습</NavLink>
       <NavLink to="/review" className={navClass}>표현 복습</NavLink>
       <NavLink to="/progress" className={navClass}>Progress</NavLink>
     </nav>
