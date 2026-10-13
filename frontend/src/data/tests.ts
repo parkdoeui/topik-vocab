@@ -11,6 +11,7 @@ import topik47 from "./writing-tests/topik-47.json";
 import topik41 from "./writing-tests/topik-41.json";
 import topik37 from "./writing-tests/topik-37.json";
 import topik36 from "./writing-tests/topik-36.json";
+import topik35 from "./writing-tests/topik-35.json";
 import writingSample from "./writing-tests/writing-sample.json";
 
 export const writingTests: WritingTest[] = [
@@ -25,5 +26,6 @@ export const writingTests: WritingTest[] = [
   topik41 as WritingTest,
   topik37 as WritingTest,
   topik36 as WritingTest,
+  topik35 as WritingTest,
   writingSample as WritingTest,
 ];

@@ -9,6 +9,7 @@ export interface WritingQuestion {
   image_urls?: string[];
   image_sha256?: string;
   blanks?: string[];
+  reference_answers?: Record<string, string[]>;
   min_chars?: number;
   max_chars?: number;
   max_points: number;
